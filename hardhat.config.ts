@@ -2,7 +2,7 @@ import "@nomiclabs/hardhat-waffle";
 import "@typechain/hardhat";
 import "hardhat-gas-reporter";
 import "solidity-coverage";
-import '@openzeppelin/hardhat-upgrades';
+import "@openzeppelin/hardhat-upgrades";
 import "@nomiclabs/hardhat-etherscan";
 import "hardhat-contract-sizer";
 
@@ -45,6 +45,15 @@ const config: HardhatUserConfig = {
       url: "https://speedy-nodes-nyc.moralis.io/bdd2a4b14a469f0e3a230d4d/eth/rinkeby",
       accounts: [process.env.PRIVATE_KEY || ""],
     },
+    harmony: {
+      url: `https://api.harmony.one`,
+      accounts: [process.env.PRIVATE_KEY || ''],
+    },
+    harmony_test: {
+      url: `https://api.s0.b.hmny.io`,
+      accounts: [process.env.PRIVATE_KEY || ''],
+    },
+
     //ropsten: getChainConfig("ropsten"),
   },
   paths: {
@@ -77,7 +86,7 @@ const config: HardhatUserConfig = {
     },
   },
   typechain: {
-    outDir: 'types',
+    outDir: "types",
     target: "ethers-v5",
   },
   contractSizer: {
