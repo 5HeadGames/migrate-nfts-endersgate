@@ -16,7 +16,6 @@ contract ExchangeERC1155 is Ownable {
     uint256[] memory targetIds
   ) {
     require(nftAddresses.length == nftIds.length, "Wrong input");
-
     for (uint8 i = 0; i < nftAddresses.length; i++)
       nftToId[nftAddresses[i]][nftIds[i]] = targetIds[i];
   }

@@ -3,14 +3,24 @@
   "proxies": [
     {
       "address": "0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512",
-      "txHash": "0xe6d6d4297f42375a200883d07c6427f2bce92cf3c9e4eb82f9beecda5835140a",
+      "txHash": "0xa0d3392f33c883aa47e2bc0acd5826e8008d1bfd0c0a52cf78903c4db6091092",
+      "kind": "uups"
+    },
+    {
+      "address": "0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0",
+      "txHash": "0x01a1bb09f346ac97535a48c3350c8bc5d3fe784bb42b6b8ac42af114dd0a5f10",
+      "kind": "uups"
+    },
+    {
+      "address": "0x0165878A594ca255338adfa4d48449f69242Eb8F",
+      "txHash": "0x9a6e6b3576bbe99973cdcfa59145280b80ec43305c822977eea26d9d0be17fa0",
       "kind": "uups"
     }
   ],
   "impls": {
     "bc14e297149fb64abf3c17185a66c8b7cbae74f54f4f9e9b33f3f04866b9e3cc": {
       "address": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
-      "txHash": "0xf2b4a2d03824512d7eaf03a4b9421b9423e8bdb0bb506482350c5f222e4a2073",
+      "txHash": "0x24221c15d492447cda0af24c91bdd628cdd30936c70a8dd7885f8a6cd7ef5ee1",
       "layout": {
         "storage": [
           {

@@ -13,17 +13,25 @@ describe("Exchange", function () {
     oldNft2: ERC1155card,
     accounts: SignerWithAddress[];
 
-  it('Should deploy properly', async () => {
-    newNft = (await upgrades.deployProxy(await ethers.getContractFactory("EndersGate"), {
-      kind: "uups",
-    })) as EndersGate;
-    oldNft = await (await ethers.getContractFactory("ERC1155card")).deploy("Dracul");
-    oldNft2 = await (await ethers.getContractFactory("ERC1155card")).deploy("Eross");
+  it("Should deploy properly", async () => {
+    newNft = (await upgrades.deployProxy(
+      await ethers.getContractFactory("EndersGate"),
+      {
+        kind: "uups",
+      }
+    )) as EndersGate;
+    oldNft = await (
+      await ethers.getContractFactory("ERC1155card")
+    ).deploy("Dracul");
+    oldNft2 = await (
+      await ethers.getContractFactory("ERC1155card")
+    ).deploy("Eross");
     exchange = await (
       await ethers.getContractFactory("ExchangeERC1155")
     ).deploy([oldNft.address, oldNft2.address], [1, 1], [1, 2]);
-    expect(true, "Deploy failed")
+    const nftToId1 = await exchange.nftToId(oldNft.address, 1);
+    const nftToId2 = await exchange.nftToId(oldNft2.address, 1);
+    expect(nftToId1).to.equal(1);
+    expect(nftToId2).to.equal(2);
   });
-
-  it("Should create portfolio manager", async () => {});
 });
