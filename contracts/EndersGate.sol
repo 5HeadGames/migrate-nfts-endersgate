@@ -18,6 +18,9 @@ contract EndersGate is
   bytes32 public constant MINTER_ROLE = keccak256("MINTER_ROLE");
   bytes32 public constant UPGRADER_ROLE = keccak256("UPGRADER_ROLE");
 
+  mapping(uint256 => bytes) idToIpfs;
+  uint256 public idCount;
+
   /// @custom:oz-upgrades-unsafe-allow constructor
   constructor() initializer {}
 
@@ -43,6 +46,12 @@ contract EndersGate is
     uint256 amount,
     bytes memory data
   ) public onlyRole(MINTER_ROLE) {
+    bytes[] memory hashes = new bytes[](1);
+    uint256[] memory ids = new uint256[](1);
+    hashes[0] = data;
+    ids[0] = id;
+
+    _setIpfsHashBatch(hashes, ids);
     _mint(account, id, amount, data);
   }
 
@@ -50,9 +59,10 @@ contract EndersGate is
     address to,
     uint256[] memory ids,
     uint256[] memory amounts,
-    bytes memory data
+    bytes[] memory data
   ) public onlyRole(MINTER_ROLE) {
-    _mintBatch(to, ids, amounts, data);
+    _setIpfsHashBatch(data, ids);
+    _mintBatch(to, ids, amounts, "");
   }
 
   function _authorizeUpgrade(address newImplementation)
@@ -70,5 +80,24 @@ contract EndersGate is
     returns (bool)
   {
     return super.supportsInterface(interfaceId);
+  }
+
+  function uri(uint256 id) public view override returns (string memory) {
+    bytes memory ipfsHash = idToIpfs[id];
+    return
+      bytes(super.uri(id)).length > 0 ? string(abi.encodePacked(super.uri(id), ipfsHash)) : "";
+  }
+
+  function setIpfsHashBatch(bytes[] memory hashes, uint256[] memory ids)
+    public
+    onlyRole(URI_SETTER_ROLE)
+  {
+    _setIpfsHashBatch(hashes, ids);
+  }
+
+  function _setIpfsHashBatch(bytes[] memory hashes, uint256[] memory ids) internal {
+    for (uint256 i = 0; i < ids.length; i++) {
+      idToIpfs[ids[i]] = hashes[i];
+    }
   }
 }

@@ -31,16 +31,18 @@ export interface EndersGateInterface extends utils.Interface {
     "getRoleAdmin(bytes32)": FunctionFragment;
     "grantRole(bytes32,address)": FunctionFragment;
     "hasRole(bytes32,address)": FunctionFragment;
+    "idCount()": FunctionFragment;
     "initialize()": FunctionFragment;
     "isApprovedForAll(address,address)": FunctionFragment;
     "mint(address,uint256,uint256,bytes)": FunctionFragment;
-    "mintBatch(address,uint256[],uint256[],bytes)": FunctionFragment;
+    "mintBatch(address,uint256[],uint256[],bytes[])": FunctionFragment;
     "proxiableUUID()": FunctionFragment;
     "renounceRole(bytes32,address)": FunctionFragment;
     "revokeRole(bytes32,address)": FunctionFragment;
     "safeBatchTransferFrom(address,address,uint256[],uint256[],bytes)": FunctionFragment;
     "safeTransferFrom(address,address,uint256,uint256,bytes)": FunctionFragment;
     "setApprovalForAll(address,bool)": FunctionFragment;
+    "setIpfsHashBatch(bytes[],uint256[])": FunctionFragment;
     "setURI(string)": FunctionFragment;
     "supportsInterface(bytes4)": FunctionFragment;
     "upgradeTo(address)": FunctionFragment;
@@ -92,6 +94,7 @@ export interface EndersGateInterface extends utils.Interface {
     functionFragment: "hasRole",
     values: [BytesLike, string]
   ): string;
+  encodeFunctionData(functionFragment: "idCount", values?: undefined): string;
   encodeFunctionData(
     functionFragment: "initialize",
     values?: undefined
@@ -106,7 +109,7 @@ export interface EndersGateInterface extends utils.Interface {
   ): string;
   encodeFunctionData(
     functionFragment: "mintBatch",
-    values: [string, BigNumberish[], BigNumberish[], BytesLike]
+    values: [string, BigNumberish[], BigNumberish[], BytesLike[]]
   ): string;
   encodeFunctionData(
     functionFragment: "proxiableUUID",
@@ -131,6 +134,10 @@ export interface EndersGateInterface extends utils.Interface {
   encodeFunctionData(
     functionFragment: "setApprovalForAll",
     values: [string, boolean]
+  ): string;
+  encodeFunctionData(
+    functionFragment: "setIpfsHashBatch",
+    values: [BytesLike[], BigNumberish[]]
   ): string;
   encodeFunctionData(functionFragment: "setURI", values: [string]): string;
   encodeFunctionData(
@@ -173,6 +180,7 @@ export interface EndersGateInterface extends utils.Interface {
   ): Result;
   decodeFunctionResult(functionFragment: "grantRole", data: BytesLike): Result;
   decodeFunctionResult(functionFragment: "hasRole", data: BytesLike): Result;
+  decodeFunctionResult(functionFragment: "idCount", data: BytesLike): Result;
   decodeFunctionResult(functionFragment: "initialize", data: BytesLike): Result;
   decodeFunctionResult(
     functionFragment: "isApprovedForAll",
@@ -199,6 +207,10 @@ export interface EndersGateInterface extends utils.Interface {
   ): Result;
   decodeFunctionResult(
     functionFragment: "setApprovalForAll",
+    data: BytesLike
+  ): Result;
+  decodeFunctionResult(
+    functionFragment: "setIpfsHashBatch",
     data: BytesLike
   ): Result;
   decodeFunctionResult(functionFragment: "setURI", data: BytesLike): Result;
@@ -390,6 +402,8 @@ export interface EndersGate extends BaseContract {
       overrides?: CallOverrides
     ): Promise<[boolean]>;
 
+    idCount(overrides?: CallOverrides): Promise<[BigNumber]>;
+
     initialize(
       overrides?: Overrides & { from?: string | Promise<string> }
     ): Promise<ContractTransaction>;
@@ -412,7 +426,7 @@ export interface EndersGate extends BaseContract {
       to: string,
       ids: BigNumberish[],
       amounts: BigNumberish[],
-      data: BytesLike,
+      data: BytesLike[],
       overrides?: Overrides & { from?: string | Promise<string> }
     ): Promise<ContractTransaction>;
 
@@ -454,6 +468,12 @@ export interface EndersGate extends BaseContract {
       overrides?: Overrides & { from?: string | Promise<string> }
     ): Promise<ContractTransaction>;
 
+    setIpfsHashBatch(
+      hashes: BytesLike[],
+      ids: BigNumberish[],
+      overrides?: Overrides & { from?: string | Promise<string> }
+    ): Promise<ContractTransaction>;
+
     setURI(
       newuri: string,
       overrides?: Overrides & { from?: string | Promise<string> }
@@ -475,7 +495,7 @@ export interface EndersGate extends BaseContract {
       overrides?: PayableOverrides & { from?: string | Promise<string> }
     ): Promise<ContractTransaction>;
 
-    uri(arg0: BigNumberish, overrides?: CallOverrides): Promise<[string]>;
+    uri(id: BigNumberish, overrides?: CallOverrides): Promise<[string]>;
   };
 
   DEFAULT_ADMIN_ROLE(overrides?: CallOverrides): Promise<string>;
@@ -526,6 +546,8 @@ export interface EndersGate extends BaseContract {
     overrides?: CallOverrides
   ): Promise<boolean>;
 
+  idCount(overrides?: CallOverrides): Promise<BigNumber>;
+
   initialize(
     overrides?: Overrides & { from?: string | Promise<string> }
   ): Promise<ContractTransaction>;
@@ -548,7 +570,7 @@ export interface EndersGate extends BaseContract {
     to: string,
     ids: BigNumberish[],
     amounts: BigNumberish[],
-    data: BytesLike,
+    data: BytesLike[],
     overrides?: Overrides & { from?: string | Promise<string> }
   ): Promise<ContractTransaction>;
 
@@ -590,6 +612,12 @@ export interface EndersGate extends BaseContract {
     overrides?: Overrides & { from?: string | Promise<string> }
   ): Promise<ContractTransaction>;
 
+  setIpfsHashBatch(
+    hashes: BytesLike[],
+    ids: BigNumberish[],
+    overrides?: Overrides & { from?: string | Promise<string> }
+  ): Promise<ContractTransaction>;
+
   setURI(
     newuri: string,
     overrides?: Overrides & { from?: string | Promise<string> }
@@ -611,7 +639,7 @@ export interface EndersGate extends BaseContract {
     overrides?: PayableOverrides & { from?: string | Promise<string> }
   ): Promise<ContractTransaction>;
 
-  uri(arg0: BigNumberish, overrides?: CallOverrides): Promise<string>;
+  uri(id: BigNumberish, overrides?: CallOverrides): Promise<string>;
 
   callStatic: {
     DEFAULT_ADMIN_ROLE(overrides?: CallOverrides): Promise<string>;
@@ -662,6 +690,8 @@ export interface EndersGate extends BaseContract {
       overrides?: CallOverrides
     ): Promise<boolean>;
 
+    idCount(overrides?: CallOverrides): Promise<BigNumber>;
+
     initialize(overrides?: CallOverrides): Promise<void>;
 
     isApprovedForAll(
@@ -682,7 +712,7 @@ export interface EndersGate extends BaseContract {
       to: string,
       ids: BigNumberish[],
       amounts: BigNumberish[],
-      data: BytesLike,
+      data: BytesLike[],
       overrides?: CallOverrides
     ): Promise<void>;
 
@@ -724,6 +754,12 @@ export interface EndersGate extends BaseContract {
       overrides?: CallOverrides
     ): Promise<void>;
 
+    setIpfsHashBatch(
+      hashes: BytesLike[],
+      ids: BigNumberish[],
+      overrides?: CallOverrides
+    ): Promise<void>;
+
     setURI(newuri: string, overrides?: CallOverrides): Promise<void>;
 
     supportsInterface(
@@ -742,7 +778,7 @@ export interface EndersGate extends BaseContract {
       overrides?: CallOverrides
     ): Promise<void>;
 
-    uri(arg0: BigNumberish, overrides?: CallOverrides): Promise<string>;
+    uri(id: BigNumberish, overrides?: CallOverrides): Promise<string>;
   };
 
   filters: {
@@ -896,6 +932,8 @@ export interface EndersGate extends BaseContract {
       overrides?: CallOverrides
     ): Promise<BigNumber>;
 
+    idCount(overrides?: CallOverrides): Promise<BigNumber>;
+
     initialize(
       overrides?: Overrides & { from?: string | Promise<string> }
     ): Promise<BigNumber>;
@@ -918,7 +956,7 @@ export interface EndersGate extends BaseContract {
       to: string,
       ids: BigNumberish[],
       amounts: BigNumberish[],
-      data: BytesLike,
+      data: BytesLike[],
       overrides?: Overrides & { from?: string | Promise<string> }
     ): Promise<BigNumber>;
 
@@ -960,6 +998,12 @@ export interface EndersGate extends BaseContract {
       overrides?: Overrides & { from?: string | Promise<string> }
     ): Promise<BigNumber>;
 
+    setIpfsHashBatch(
+      hashes: BytesLike[],
+      ids: BigNumberish[],
+      overrides?: Overrides & { from?: string | Promise<string> }
+    ): Promise<BigNumber>;
+
     setURI(
       newuri: string,
       overrides?: Overrides & { from?: string | Promise<string> }
@@ -981,7 +1025,7 @@ export interface EndersGate extends BaseContract {
       overrides?: PayableOverrides & { from?: string | Promise<string> }
     ): Promise<BigNumber>;
 
-    uri(arg0: BigNumberish, overrides?: CallOverrides): Promise<BigNumber>;
+    uri(id: BigNumberish, overrides?: CallOverrides): Promise<BigNumber>;
   };
 
   populateTransaction: {
@@ -1038,6 +1082,8 @@ export interface EndersGate extends BaseContract {
       overrides?: CallOverrides
     ): Promise<PopulatedTransaction>;
 
+    idCount(overrides?: CallOverrides): Promise<PopulatedTransaction>;
+
     initialize(
       overrides?: Overrides & { from?: string | Promise<string> }
     ): Promise<PopulatedTransaction>;
@@ -1060,7 +1106,7 @@ export interface EndersGate extends BaseContract {
       to: string,
       ids: BigNumberish[],
       amounts: BigNumberish[],
-      data: BytesLike,
+      data: BytesLike[],
       overrides?: Overrides & { from?: string | Promise<string> }
     ): Promise<PopulatedTransaction>;
 
@@ -1102,6 +1148,12 @@ export interface EndersGate extends BaseContract {
       overrides?: Overrides & { from?: string | Promise<string> }
     ): Promise<PopulatedTransaction>;
 
+    setIpfsHashBatch(
+      hashes: BytesLike[],
+      ids: BigNumberish[],
+      overrides?: Overrides & { from?: string | Promise<string> }
+    ): Promise<PopulatedTransaction>;
+
     setURI(
       newuri: string,
       overrides?: Overrides & { from?: string | Promise<string> }
@@ -1124,7 +1176,7 @@ export interface EndersGate extends BaseContract {
     ): Promise<PopulatedTransaction>;
 
     uri(
-      arg0: BigNumberish,
+      id: BigNumberish,
       overrides?: CallOverrides
     ): Promise<PopulatedTransaction>;
   };
