@@ -2,9 +2,11 @@ import "@nomiclabs/hardhat-waffle";
 import "@typechain/hardhat";
 import "hardhat-gas-reporter";
 import "solidity-coverage";
+import '@openzeppelin/hardhat-upgrades';
+import "@nomiclabs/hardhat-etherscan";
+import "hardhat-contract-sizer";
 
-import "./tasks/attack";
-import "./tasks/deploy";
+import "./tasks";
 
 import {resolve} from "path";
 
@@ -40,8 +42,8 @@ const config: HardhatUserConfig = {
     //goerli: getChainConfig("goerli"),
     //kovan: getChainConfig("kovan"),
     rinkeby: {
-      url: 'https://speedy-nodes-nyc.moralis.io/bdd2a4b14a469f0e3a230d4d/eth/rinkeby',
-      accounts: [process.env.PRIVATE_KEY || '']
+      url: "https://speedy-nodes-nyc.moralis.io/bdd2a4b14a469f0e3a230d4d/eth/rinkeby",
+      accounts: [process.env.PRIVATE_KEY || ""],
     },
     //ropsten: getChainConfig("ropsten"),
   },
@@ -54,7 +56,10 @@ const config: HardhatUserConfig = {
   solidity: {
     compilers: [
       {
-        version: "0.8.11",
+        version: "0.8.10",
+      },
+      {
+        version: "0.8.0",
       },
     ],
     settings: {
@@ -72,8 +77,22 @@ const config: HardhatUserConfig = {
     },
   },
   typechain: {
-    outDir: "src/types",
+    outDir: 'types',
     target: "ethers-v5",
+  },
+  contractSizer: {
+    alphaSort: true,
+    disambiguatePaths: false,
+    runOnCompile: true,
+    strict: false,
+  },
+  mocha: {
+    timeout: 60000,
+  },
+  etherscan: {
+    // Your API key for Etherscan
+    // Obtain one at https://etherscan.io/
+    apiKey: process.env.ETHERSCAN_API_KEY,
   },
 };
 
