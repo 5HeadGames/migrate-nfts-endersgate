@@ -68,21 +68,8 @@
     "access": "public"
   },
   "scripts": {
-    "clean": "shx rm -rf ./artifacts ./cache ./coverage ./src/types ./coverage.json",
-    "commit": "git-cz",
     "build": "hardhat compile",
-    "coverage": "yarn typechain && hardhat coverage --solcoverjs ./.solcover.js --temp artifacts --testfiles \"./test/**/*.ts\"",
-    "deploy": "hardhat deploy",
-    "lint": "yarn lint:sol && yarn lint:ts && yarn prettier:check",
-    "lint:sol": "solhint --config ./.solhint.json --max-warnings 0 \"contracts/**/*.sol\"",
-    "lint:ts": "eslint --config ./.eslintrc.yaml --ignore-path ./.eslintignore --ext .js,.ts .",
-    "postinstall": "husky install",
-    "postpublish": "pinst --enable",
-    "prepublishOnly": "pinst --disable",
-    "prettier": "prettier --config ./.prettierrc.yaml --write \"**/*.{js,json,md,sol,ts}\"",
-    "prettier:check": "prettier --check --config ./.prettierrc.yaml \"**/*.{js,json,md,sol,ts}\"",
-    "test": "hardhat test",
-    "typechain": "cross-env TS_NODE_TRANSPILE_ONLY=true hardhat typechain"
+    "test": "hardhat test"
   },
   "dependencies": {
     "@nomiclabs/hardhat-etherscan": "^3.0.1",

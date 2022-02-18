@@ -1,6 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.10;
 
+import "hardhat/console.sol";
 import "@openzeppelin/contracts-upgradeable/token/ERC1155/ERC1155Upgradeable.sol";
 import "@openzeppelin/contracts-upgradeable/access/AccessControlUpgradeable.sol";
 import "@openzeppelin/contracts-upgradeable/token/ERC1155/extensions/ERC1155BurnableUpgradeable.sol";
@@ -18,7 +19,7 @@ contract EndersGate is
   bytes32 public constant MINTER_ROLE = keccak256("MINTER_ROLE");
   bytes32 public constant UPGRADER_ROLE = keccak256("UPGRADER_ROLE");
 
-  mapping(uint256 => bytes) idToIpfs;
+  mapping(uint256 => string) idToIpfs;
   uint256 public idCount;
 
   /// @custom:oz-upgrades-unsafe-allow constructor
@@ -44,31 +45,31 @@ contract EndersGate is
     address account,
     uint256 id,
     uint256 amount,
-    bytes memory data
+    string memory hash
   ) public onlyRole(MINTER_ROLE) {
-    bytes[] memory hashes = new bytes[](1);
+    string[] memory hashes = new string[](1);
     uint256[] memory ids = new uint256[](1);
-    hashes[0] = data;
+    hashes[0] = hash;
     ids[0] = id;
 
-    _setIpfsHashBatch(hashes, ids);
-    _mint(account, id, amount, data);
+    _setIpfsHashBatch(ids, hashes);
+    _mint(account, id, amount, "");
   }
 
   function mintBatch(
     address to,
     uint256[] memory ids,
     uint256[] memory amounts,
-    bytes[] memory data
+    string[] memory data
   ) public onlyRole(MINTER_ROLE) {
-    _setIpfsHashBatch(data, ids);
+    _setIpfsHashBatch(ids, data);
     _mintBatch(to, ids, amounts, "");
   }
 
   function _authorizeUpgrade(address newImplementation)
     internal
     override
-    onlyRole(UPGRADER_ROLE)
+    onlyRole(UPGRADER_ROLE) //only upgrader role is authorized
   {}
 
   // The following functions are overrides required by Solidity.
@@ -83,19 +84,19 @@ contract EndersGate is
   }
 
   function uri(uint256 id) public view override returns (string memory) {
-    bytes memory ipfsHash = idToIpfs[id];
+    string memory ipfsHash = idToIpfs[id];
     return
       bytes(super.uri(id)).length > 0 ? string(abi.encodePacked(super.uri(id), ipfsHash)) : "";
   }
 
-  function setIpfsHashBatch(bytes[] memory hashes, uint256[] memory ids)
+  function setIpfsHashBatch(uint256[] memory ids, string[] memory hashes)
     public
     onlyRole(URI_SETTER_ROLE)
   {
-    _setIpfsHashBatch(hashes, ids);
+    _setIpfsHashBatch(ids, hashes);
   }
 
-  function _setIpfsHashBatch(bytes[] memory hashes, uint256[] memory ids) internal {
+  function _setIpfsHashBatch(uint256[] memory ids, string[] memory hashes) internal {
     for (uint256 i = 0; i < ids.length; i++) {
       idToIpfs[ids[i]] = hashes[i];
     }

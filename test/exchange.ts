@@ -3,8 +3,8 @@ import {expect} from "chai";
 import {SignerWithAddress} from "@nomiclabs/hardhat-ethers/dist/src/signer-with-address";
 
 import {ExchangeERC1155} from "../types/ExchangeERC1155";
-import {EndersGate} from "../types/EndersGate";
-import {ERC1155card} from "../types/ERC1155card";
+import {EndersGate} from "../types";
+import {ERC1155card} from "../types";
 
 describe("Exchange", function () {
   let exchange: ExchangeERC1155,
