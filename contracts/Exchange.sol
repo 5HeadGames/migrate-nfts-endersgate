@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity 0.8.10;
+pragma solidity ^0.8.10;
 
 import "@openzeppelin/contracts/token/ERC1155/IERC1155.sol";
 import "@openzeppelin/contracts/token/ERC1155/utils/ERC1155Receiver.sol";
@@ -16,7 +16,6 @@ contract ExchangeERC1155 is Ownable {
     uint256[] memory targetIds
   ) {
     require(nftAddresses.length == nftIds.length, "Wrong input");
-
     for (uint8 i = 0; i < nftAddresses.length; i++)
       nftToId[nftAddresses[i]][nftIds[i]] = targetIds[i];
   }
