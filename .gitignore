@@ -25,7 +25,7 @@ yarn-debug.log*
 yarn-error.log*
 
 # types
-src/types/*
+types/*
 !src/types/common.ts
 !src/types/Greeter.ts
 
