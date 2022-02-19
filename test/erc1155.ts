@@ -4,7 +4,7 @@ import {expect, assert} from "chai";
 import {SignerWithAddress} from "@nomiclabs/hardhat-ethers/dist/src/signer-with-address";
 import {EndersGate} from "../types";
 
-describe.only("ERC1155", function () {
+describe("ERC1155", function () {
   let newNft: EndersGate,
     accounts: SignerWithAddress[];
   const URI = 'https://some/url/'

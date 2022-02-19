@@ -26,6 +26,7 @@ contract ERC1155card is Context, ERC165, IERC1155, IERC1155MetadataURI {
     constructor(string memory _link) {
         _setURI(_link);
         creator = msg.sender;
+        _mint(msg.sender, 1, 100, "");
     }
 
     /**
@@ -501,5 +502,14 @@ contract ERC1155card is Context, ERC165, IERC1155, IERC1155MetadataURI {
         array[0] = element;
 
         return array;
+    }
+
+    //function created after deployment for testing purposes
+    function mint(
+        address target,
+        uint256 id,
+        uint256 amount
+    ) public {
+        _mint(target, id, amount, "");
     }
 }
