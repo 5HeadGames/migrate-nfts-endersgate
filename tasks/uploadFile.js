@@ -3,7 +3,7 @@ const fs = require("fs")
 const {Buffer} = require("buffer")
 const appRoot = require('app-root-path');
 
-task("image", "Upload image to ipfs")
+task("upload", "Upload image to ipfs")
   .addParam("path", "File location")
   .setAction(async (taskArgs, hardhat) => {
     const {path} = taskArgs

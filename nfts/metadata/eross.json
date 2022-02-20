@@ -1,7 +1,8 @@
 {
   "name": "EROSS",
   "description": "Eross description",
-  "image": "https://ipfs.moralis.io:2053/ipfs/QmbXbNknJVHoqLUhGpBzaqXN4VnBMmfsq4oBVzXphURPQ3",
+  "image": "QmbXbNknJVHoqLUhGpBzaqXN4VnBMmfsq4oBVzXphURPQ3",
+  "symbol": "GATE",
   "properties": {
     "atk": {
       "type": "integer",

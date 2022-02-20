@@ -45,14 +45,8 @@ contract EndersGate is
     address account,
     uint256 id,
     uint256 amount,
-    string memory hash
+    bytes memory data
   ) public onlyRole(MINTER_ROLE) {
-    string[] memory hashes = new string[](1);
-    uint256[] memory ids = new uint256[](1);
-    hashes[0] = hash;
-    ids[0] = id;
-
-    _setIpfsHashBatch(ids, hashes);
     _mint(account, id, amount, "");
   }
 
@@ -60,9 +54,8 @@ contract EndersGate is
     address to,
     uint256[] memory ids,
     uint256[] memory amounts,
-    string[] memory data
+    bytes memory data
   ) public onlyRole(MINTER_ROLE) {
-    _setIpfsHashBatch(ids, data);
     _mintBatch(to, ids, amounts, "");
   }
 
