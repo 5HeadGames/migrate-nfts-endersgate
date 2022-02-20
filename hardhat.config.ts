@@ -5,6 +5,7 @@ import "solidity-coverage";
 import "@openzeppelin/hardhat-upgrades";
 import "@nomiclabs/hardhat-etherscan";
 import "hardhat-contract-sizer";
+import path from 'path'
 
 import "./tasks";
 

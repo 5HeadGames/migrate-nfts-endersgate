@@ -16,7 +16,7 @@
 **/node_modules
 
 # OpenZeppelin
-.openzeppelin/*.json
+.openzeppelin/dev-*.json
 .openzeppelin/.session
 
 # files
