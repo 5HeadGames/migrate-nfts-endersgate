@@ -1,44 +1,48 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.10;
 
-import "hardhat/console.sol";
-import "@openzeppelin/contracts-upgradeable/token/ERC1155/ERC1155Upgradeable.sol";
-import "@openzeppelin/contracts-upgradeable/access/AccessControlUpgradeable.sol";
-import "@openzeppelin/contracts-upgradeable/token/ERC1155/extensions/ERC1155BurnableUpgradeable.sol";
-import "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol";
-import "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol";
+import "@openzeppelin/contracts/token/ERC1155/ERC1155.sol";
+import "@openzeppelin/contracts/access/AccessControl.sol";
+import "@openzeppelin/contracts/token/ERC1155/extensions/ERC1155Burnable.sol";
 
-contract EndersGate is
-  Initializable,
-  ERC1155Upgradeable,
-  AccessControlUpgradeable,
-  ERC1155BurnableUpgradeable,
-  UUPSUpgradeable
-{
+contract EndersGate is ERC1155, AccessControl, ERC1155Burnable {
   bytes32 public constant URI_SETTER_ROLE = keccak256("URI_SETTER_ROLE");
   bytes32 public constant MINTER_ROLE = keccak256("MINTER_ROLE");
-  bytes32 public constant UPGRADER_ROLE = keccak256("UPGRADER_ROLE");
+
+  address public owner;
+  string public name;
+  string public symbol;
+  string public contractURI;
+  string public tokenURIPrefix;
 
   mapping(uint256 => string) idToIpfs;
   uint256 public idCount;
 
   /// @custom:oz-upgrades-unsafe-allow constructor
-  constructor() initializer {}
 
-  function initialize() public initializer {
-    __ERC1155_init("");
-    __AccessControl_init();
-    __ERC1155Burnable_init();
-    __UUPSUpgradeable_init();
-
+  constructor(
+    string memory _name,
+    string memory _symbol,
+    string memory _contractURI,
+    string memory _tokenURIPrefix
+  ) ERC1155(_contractURI) {
     _grantRole(DEFAULT_ADMIN_ROLE, msg.sender);
     _grantRole(URI_SETTER_ROLE, msg.sender);
     _grantRole(MINTER_ROLE, msg.sender);
-    _grantRole(UPGRADER_ROLE, msg.sender);
+
+    owner = address(msg.sender);
+    name = _name;
+    symbol = _symbol;
+    contractURI = _contractURI;
+    tokenURIPrefix = _tokenURIPrefix;
   }
 
   function setURI(string memory newuri) public onlyRole(URI_SETTER_ROLE) {
-    _setURI(newuri);
+    tokenURIPrefix = newuri;
+  }
+
+  function setContractURI(string memory newuri) public onlyRole(URI_SETTER_ROLE) {
+    contractURI = newuri;
   }
 
   function mint(
@@ -59,18 +63,10 @@ contract EndersGate is
     _mintBatch(to, ids, amounts, "");
   }
 
-  function _authorizeUpgrade(address newImplementation)
-    internal
-    override
-    onlyRole(UPGRADER_ROLE) //only upgrader role is authorized
-  {}
-
-  // The following functions are overrides required by Solidity.
-
   function supportsInterface(bytes4 interfaceId)
     public
     view
-    override(ERC1155Upgradeable, AccessControlUpgradeable)
+    override(ERC1155, AccessControl)
     returns (bool)
   {
     return super.supportsInterface(interfaceId);
@@ -79,7 +75,9 @@ contract EndersGate is
   function uri(uint256 id) public view override returns (string memory) {
     string memory ipfsHash = idToIpfs[id];
     return
-      bytes(super.uri(id)).length > 0 ? string(abi.encodePacked(super.uri(id), ipfsHash)) : "";
+      bytes(tokenURIPrefix).length > 0
+        ? string(abi.encodePacked(tokenURIPrefix, ipfsHash))
+        : "";
   }
 
   function setIpfsHashBatch(uint256[] memory ids, string[] memory hashes)

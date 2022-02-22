@@ -6,18 +6,24 @@ import {ExchangeERC1155} from "../types/ExchangeERC1155";
 import {EndersGate} from "../types";
 import {ERC1155card} from "../types";
 
-describe.only("Exchange", function () {
+describe("Exchange", function () {
   let exchange: ExchangeERC1155,
     endersGate: EndersGate,
     oldNft: ERC1155card,
     oldNft2: ERC1155card,
     accounts: SignerWithAddress[];
+  const hash = ethers.utils.id(Math.random().toString());
 
   it("Should deploy properly", async () => {
     accounts = await ethers.getSigners();
-    endersGate = (await upgrades.deployProxy(await ethers.getContractFactory("EndersGate"), {
-      kind: "uups",
-    })) as EndersGate;
+    endersGate = (await (
+      await ethers.getContractFactory("EndersGate")
+    ).deploy(
+      "Enders Gate",
+      "GATE",
+      hash,
+      "https://ipfs.io/ipfs/"
+    )) as EndersGate;
     oldNft = await (await ethers.getContractFactory("ERC1155card")).deploy("Dracul");
     oldNft2 = await (await ethers.getContractFactory("ERC1155card")).deploy("Eross");
     exchange = await (

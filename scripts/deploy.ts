@@ -1,7 +1,8 @@
 import {ethers, network, upgrades} from "hardhat";
 import fs from "fs";
 
-import {EndersGate} from '../types'
+import {EndersGate} from "../types";
+import {uploadIpfs} from "../utils";
 
 const loadJsonFile = (file: string) => {
   try {
@@ -13,23 +14,37 @@ const loadJsonFile = (file: string) => {
 };
 
 async function main(): Promise<void> {
+  const fileName = `addresses.${network.name}.json`;
+  const fileData = loadJsonFile(fileName);
+
   const accounts = await ethers.getSigners();
-  const endersGate = (await upgrades.deployProxy(
-    await ethers.getContractFactory("EndersGate"),
-    {
-      kind: "uups",
-    }
-  )) as EndersGate;
+  const ipfsHash = fileData?.ipfs
+    ? fileData.ipfs
+    : await uploadIpfs({path: "/nfts/metadata/contract.json"});
+  console.log("IPFS", ipfsHash.split('/').reverse()[0]);
+
   const dracul = await (await ethers.getContractFactory("ERC1155card")).deploy("Dracul");
+  console.log("Dracul", dracul.address);
+
   const eross = await (await ethers.getContractFactory("ERC1155card")).deploy("Eross");
+  console.log("Eross", eross.address);
+
+  const endersGate = await (await ethers.getContractFactory("EndersGate")).deploy("Enders Gate", "GATE", ipfsHash.split('/').reverse()[0], "https://ipfs.io/ipfs/") as EndersGate;
+  console.log("Enders Gate", endersGate.address);
+  //const endersGate = (await upgrades.deployProxy(
+  //await ethers.getContractFactory("EndersGate"),
+  //["Enders Gate", "GATE", ipfsHash.split('/').reverse()[0], "https://ipfs.io/ipfs/"],
+  //{
+  //kind: "uups",
+  //}
+  //)) as EndersGate;
+
   const exchange = await (
     await ethers.getContractFactory("ExchangeERC1155")
   ).deploy([dracul.address, eross.address], [1, 1], [1, 2], endersGate.address);
+  console.log("Exchange", exchange.address);
 
   await endersGate.grantRole(await endersGate.MINTER_ROLE(), exchange.address);
-
-  const fileName = `addresses.${network.name}.json`;
-  const fileData = loadJsonFile(fileName);
 
   const configData = JSON.stringify(
     {
@@ -37,7 +52,8 @@ async function main(): Promise<void> {
       endersGate: endersGate.address,
       dracul: dracul.address,
       eross: eross.address,
-      exchange: exchange.address
+      exchange: exchange.address,
+      ipfs: ipfsHash,
     },
     null,
     2
@@ -53,4 +69,3 @@ main()
     console.error(error);
     process.exit(1);
   });
-
