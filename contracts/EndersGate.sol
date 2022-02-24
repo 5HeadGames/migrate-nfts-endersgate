@@ -49,8 +49,15 @@ contract EndersGate is ERC1155, AccessControl, ERC1155Burnable {
     address account,
     uint256 id,
     uint256 amount,
-    bytes memory data
+    string memory hash
   ) public onlyRole(MINTER_ROLE) {
+    string[] memory hashes = new string[](1);
+    uint256[] memory ids = new uint256[](1);
+    hashes[0] = hash;
+    ids[0] = id;
+    idCount++;
+
+    _setIpfsHashBatch(ids, hashes);
     _mint(account, id, amount, "");
   }
 
@@ -58,8 +65,10 @@ contract EndersGate is ERC1155, AccessControl, ERC1155Burnable {
     address to,
     uint256[] memory ids,
     uint256[] memory amounts,
-    bytes memory data
+    string[] memory data
   ) public onlyRole(MINTER_ROLE) {
+    idCount += ids.length;
+    _setIpfsHashBatch(ids, data);
     _mintBatch(to, ids, amounts, "");
   }
 

@@ -46,13 +46,13 @@ describe("ERC1155", function () {
     await expect(endersGate.connect(accounts[1]).setURI("SOME FALCE URI")).to.revertedWith("");
   });
 
-  it("Should mint nft", async () => {
-    const hash = ethers.utils.id(Math.random().toString());
-    const id = 1;
+  it('Should mint nft with ipfs hash', async () => {
+    const hash = ethers.utils.id(Math.random().toString())
+    const id = 1
     await endersGate.mint(accounts[0].address, id, 1, hash);
-    const balance = await endersGate.balanceOf(accounts[0].address, id)
-    expect(balance.toString()).to.be.equal('1')
-  });
+    const uri = await endersGate.uri(id)
+    expect(uri).to.be.equal(URI + hash);
+  })
 
   it("Should set ipfs only setter role", async () => {
     const ids = [1];
