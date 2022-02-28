@@ -9,6 +9,9 @@ contract EndersGate is ERC1155, AccessControl, ERC1155Burnable {
   bytes32 public constant URI_SETTER_ROLE = keccak256("URI_SETTER_ROLE");
   bytes32 public constant MINTER_ROLE = keccak256("MINTER_ROLE");
 
+  /***
+  /*@dev owner, name, symbol, contractURI and tokenURIPrefix are necesarty to make harmony explorer detect the contract (as erc1155)
+  ***/
   address public owner;
   string public name;
   string public symbol;
@@ -98,7 +101,7 @@ contract EndersGate is ERC1155, AccessControl, ERC1155Burnable {
 
   function _setIpfsHashBatch(uint256[] memory ids, string[] memory hashes) internal {
     for (uint256 i = 0; i < ids.length; i++) {
-      idToIpfs[ids[i]] = hashes[i];
+      if (bytes(hashes[i]).length > 0) idToIpfs[ids[i]] = hashes[i];
     }
   }
 }

@@ -13,17 +13,16 @@ describe("Exchange", function () {
     oldNft2: ERC1155card,
     accounts: SignerWithAddress[];
   const hash = ethers.utils.id(Math.random().toString());
+  const nftHashes = [
+    ethers.utils.id(Math.random().toString()),
+    ethers.utils.id(Math.random().toString()),
+  ];
 
   it("Should deploy properly", async () => {
     accounts = await ethers.getSigners();
     endersGate = (await (
       await ethers.getContractFactory("EndersGate")
-    ).deploy(
-      "Enders Gate",
-      "GATE",
-      hash,
-      "https://ipfs.io/ipfs/"
-    )) as EndersGate;
+    ).deploy("Enders Gate", "GATE", hash, "https://ipfs.io/ipfs/")) as EndersGate;
     oldNft = await (await ethers.getContractFactory("ERC1155card")).deploy("Dracul");
     oldNft2 = await (await ethers.getContractFactory("ERC1155card")).deploy("Eross");
     exchange = await (
@@ -32,7 +31,9 @@ describe("Exchange", function () {
 
     const nftToId1 = await exchange.nftToId(oldNft.address, 1);
     const nftToId2 = await exchange.nftToId(oldNft2.address, 1);
+
     await endersGate.grantRole(await endersGate.MINTER_ROLE(), exchange.address);
+    await endersGate.setIpfsHashBatch([1, 2], nftHashes);
     await oldNft.safeTransferFrom(accounts[0].address, accounts[1].address, 1, 50, []);
 
     expect(nftToId1).to.equal(1);
@@ -69,6 +70,12 @@ describe("Exchange", function () {
     expect(newBalances).to.eql(expected);
   });
 
+  it("Should not remove nfts uri when minting", async () => {
+    const uris = await Promise.all([endersGate.uri(1), endersGate.uri(2)]);
+    const hashes = uris.map((uri) => uri.split("/").reverse()[0]);
+    expect(hashes).to.satisfy((hash: string[]) => hash.every((cur, i) => cur === hash[i]));
+  });
+
   it("Should not mint if you dont have balances", async () => {
     await expect(
       exchange.exchangeAllERC1155([oldNft.address, oldNft2.address], [1, 1])
@@ -87,15 +94,4 @@ describe("Exchange", function () {
         .safeTransferFrom(accounts[1].address, exchange.address, 1, 50, [])
     ).to.be.revertedWith("");
   });
-
-  it('Should allow owner withdraw stuck erc1155', async () => {
-    //await oldNft.mint(exchange.address, 1, 100) // not possible
-    //const prevBalance = await oldNft.balanceOf(exchange.address, 1)
-
-    //await exchange.safeWithdrawal(oldNft.address, 1)
-    //const postBalance = await oldNft.balanceOf(exchange.address, 1)
-
-    //expect(prevBalance.toString()).to.be.equal('100')
-    //expect(postBalance.toString()).to.be.equal('0')
-  })
 });

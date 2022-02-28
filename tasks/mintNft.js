@@ -31,7 +31,7 @@ task("mint", "Mint nft")
       metadata = getFile(name)[name]
     }
 
-    console.log({image, metadata})
-    //const tx = await endersGate.mint(signer.address, id, amount, metadata.hash)
-    //console.log('SUCCESS', (await tx.wait()))
+    console.log('Minting', signer.address, id, amount, metadata.hash)
+    const tx = await endersGate.mint(signer.address, id, amount, metadata.hash)
+    console.log('SUCCESS', (await tx.wait()).transactionHash)
   });
