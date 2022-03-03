@@ -5,6 +5,7 @@ pragma solidity ^0.8.10;
 import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
 import "@openzeppelin/contracts/token/ERC1155/ERC1155.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
+import "@openzeppelin/contracts/token/ERC1155/utils/ERC1155Receiver.sol";
 
 import "./LootBoxRandomness.sol";
 
@@ -13,7 +14,7 @@ import "./LootBoxRandomness.sol";
  * CreatureAccessoryLootBox - a randomized and openable lootbox of Creature
  * Accessories.
  */
-contract EndersPack is ERC1155, ReentrancyGuard, Ownable {
+contract EndersPack is ERC1155, ReentrancyGuard, Ownable, ERC1155Receiver {
   using LootBoxRandomness for LootBoxRandomness.LootBoxRandomnessState;
 
   LootBoxRandomness.LootBoxRandomnessState state;
@@ -49,8 +50,12 @@ contract EndersPack is ERC1155, ReentrancyGuard, Ownable {
     LootBoxRandomness.initState(state, _factoryAddress, _numOptions, _numClasses, _seed);
   }
 
-  function setTokenIdsForClass(uint256 _classId, uint256[] memory _tokenIds) public onlyOwner {
-    LootBoxRandomness.setTokenIdsForClass(state, _classId, _tokenIds);
+  function setTokenIdsForClass(
+    uint256 _classId,
+    uint256[] memory _tokenIds,
+    uint256[] memory _tokenAmounts
+  ) public onlyOwner {
+    LootBoxRandomness.setTokenIdsForClass(state, _classId, _tokenIds, _tokenAmounts);
   }
 
   function setOptionSettings(
@@ -108,5 +113,42 @@ contract EndersPack is ERC1155, ReentrancyGuard, Ownable {
   ) internal override {
     tokenSupply[_id] = tokenSupply[_id] + _quantity;
     super._mint(_to, _id, _quantity, _data);
+  }
+
+  function onERC1155Received(
+    address operator,
+    address from,
+    uint256 id,
+    uint256 value,
+    bytes calldata data
+  ) external returns (bytes4) {
+    return bytes4(keccak256("onERC1155Received(address,address,uint256,uint256,bytes)"));
+  }
+
+  function onERC1155BatchReceived(
+    address operator,
+    address from,
+    uint256[] calldata ids,
+    uint256[] calldata values,
+    bytes calldata data
+  ) external returns (bytes4) {
+    return
+      bytes4(keccak256("onERC1155BatchReceived(address,address,uint256[],uint256[],bytes)"));
+  }
+
+  function supportsInterface(bytes4 interfaceId)
+    public
+    view
+    virtual
+    override(ERC1155, ERC1155Receiver)
+    returns (bool)
+  {
+    return
+      interfaceId == type(IERC1155Receiver).interfaceId ||
+      super.supportsInterface(interfaceId);
+  }
+
+  fallback() external {
+    require(false, "DONT_SEND_MONEY");
   }
 }

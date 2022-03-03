@@ -1,6 +1,7 @@
 // SPDX-License-Identifier: MIT
 
 pragma solidity ^0.8.10;
+import "hardhat/console.sol";
 
 /*
   DESIGN NOTES:
@@ -26,10 +27,10 @@ pragma solidity ^0.8.10;
 
 abstract contract Factory {
   function mint(
-    uint256 _optionId,
     address _toAddress,
+    uint256 _optionId,
     uint256 _amount,
-    bytes calldata _data
+    string memory _data
   ) external virtual;
 
   function balanceOf(address _owner, uint256 _optionId) public view virtual returns (uint256);
@@ -58,10 +59,6 @@ library LootBoxRandomness {
     uint256 maxQuantityPerOpen;
     // Probability in basis points (out of 10,000) of receiving each class (descending)
     uint16[] classProbabilities;
-    // Whether to enable `guarantees` below
-    bool hasGuaranteedClasses;
-    // Number of items you're guaranteed to get, for each class
-    uint16[] guarantees;
   }
 
   struct LootBoxRandomnessState {
@@ -70,6 +67,7 @@ library LootBoxRandomness {
     uint256 numClasses;
     mapping(uint256 => OptionSettings) optionToSettings;
     mapping(uint256 => uint256[]) classToTokenIds;
+    mapping(uint256 => uint256[]) classToTokenAmount;
     uint256 seed;
   }
 
@@ -100,10 +98,11 @@ library LootBoxRandomness {
   function setClassForTokenId(
     LootBoxRandomnessState storage _state,
     uint256 _tokenId,
+    uint256 _tokenAmount,
     uint256 _classId
   ) public {
     require(_classId < _state.numClasses, "_class out of range");
-    _addTokenIdToClass(_state, _classId, _tokenId);
+    _addTokenIdToClass(_state, _classId, _tokenId, _tokenAmount);
   }
 
   /**
@@ -113,10 +112,12 @@ library LootBoxRandomness {
   function setTokenIdsForClass(
     LootBoxRandomnessState storage _state,
     uint256 _classId,
-    uint256[] memory _tokenIds
+    uint256[] memory _tokenIds,
+    uint256[] memory _tokenAmount
   ) public {
     require(_classId < _state.numClasses, "_class out of range");
     _state.classToTokenIds[_classId] = _tokenIds;
+    _state.classToTokenAmount[_classId] = _tokenAmount;
   }
 
   /**
@@ -162,20 +163,10 @@ library LootBoxRandomness {
     uint16[] memory _guarantees
   ) public {
     require(_option < _state.numOptions, "_option out of range");
-    // Allow us to skip guarantees and save gas at mint time
-    // if there are no classes with guarantees
-    bool hasGuaranteedClasses = false;
-    for (uint256 i = 0; i < _guarantees.length; i++) {
-      if (_guarantees[i] > 0) {
-        hasGuaranteedClasses = true;
-      }
-    }
 
     OptionSettings memory settings = OptionSettings({
       maxQuantityPerOpen: _maxQuantityPerOpen,
-      classProbabilities: _classProbabilities,
-      hasGuaranteedClasses: hasGuaranteedClasses,
-      guarantees: _guarantees
+      classProbabilities: _classProbabilities
     });
 
     _state.optionToSettings[uint256(_option)] = settings;
@@ -220,22 +211,9 @@ library LootBoxRandomness {
     for (uint256 i = 0; i < _amount; i++) {
       // Iterate over the box's set quantity
       uint256 quantitySent = 0;
-      if (settings.hasGuaranteedClasses) {
-        // Process guaranteed token ids
-        for (uint256 classId = 0; classId < settings.guarantees.length; classId++) {
-          uint256 quantityOfGuaranteed = settings.guarantees[classId];
-          if (quantityOfGuaranteed > 0) {
-            _sendTokenWithClass(_state, classId, _toAddress, quantityOfGuaranteed, _owner);
-            quantitySent += quantityOfGuaranteed;
-          }
-        }
-      }
-
-      // Process non-guaranteed ids
       while (quantitySent < settings.maxQuantityPerOpen) {
-        uint256 quantityOfRandomized = 1;
         uint256 class = _pickRandomClass(_state, settings.classProbabilities);
-        _sendTokenWithClass(_state, class, _toAddress, quantityOfRandomized, _owner);
+        uint256 quantityOfRandomized = _sendTokenWithClass(_state, class, _toAddress, _owner);
         quantitySent += quantityOfRandomized;
       }
 
@@ -255,16 +233,18 @@ library LootBoxRandomness {
     LootBoxRandomnessState storage _state,
     uint256 _classId,
     address _toAddress,
-    uint256 _amount,
     address _owner
   ) internal returns (uint256) {
     require(_classId < _state.numClasses, "_class out of range");
     Factory factory = Factory(_state.factoryAddress);
-    uint256 tokenId = _pickRandomAvailableTokenIdForClass(_state, _classId, _amount, _owner);
-    // This may mint, create or transfer. We don't handle that here.
-    // We use tokenId as an option ID here.
-    factory.mint(tokenId, _toAddress, _amount, "");
-    return tokenId;
+    uint256 amount = 0;
+    for (uint256 i = 0; i < _state.classToTokenIds[_classId].length; i++) {
+      uint256 tokenAmount = _state.classToTokenAmount[_classId][i];
+      uint256 tokenId = _state.classToTokenIds[_classId][i];
+      factory.mint(_toAddress, tokenId, tokenAmount, "");
+      amount += tokenAmount;
+    }
+    return amount;
   }
 
   function _pickRandomClass(
@@ -286,30 +266,6 @@ library LootBoxRandomness {
     return 0;
   }
 
-  function _pickRandomAvailableTokenIdForClass(
-    LootBoxRandomnessState storage _state,
-    uint256 _classId,
-    uint256 _minAmount,
-    address _owner
-  ) internal returns (uint256) {
-    require(_classId < _state.numClasses, "_class out of range");
-    uint256[] memory tokenIds = _state.classToTokenIds[_classId];
-    require(tokenIds.length > 0, "No token ids for _classId");
-    uint256 randIndex = _random(_state) % tokenIds.length;
-    // Make sure owner() owns or can mint enough
-    Factory factory = Factory(_state.factoryAddress);
-    for (uint256 i = randIndex; i < randIndex + tokenIds.length; i++) {
-      uint256 tokenId = tokenIds[i % tokenIds.length];
-      // We use tokenId as an option id here
-      if (factory.balanceOf(_owner, tokenId) >= _minAmount) {
-        return tokenId;
-      }
-    }
-    revert(
-      "LootBoxRandomness#_pickRandomAvailableTokenIdForClass: NOT_ENOUGH_TOKENS_FOR_CLASS"
-    );
-  }
-
   /**
    * @dev Pseudo-random number generator
    * NOTE: to improve randomness, generate it with an oracle
@@ -325,11 +281,13 @@ library LootBoxRandomness {
   function _addTokenIdToClass(
     LootBoxRandomnessState storage _state,
     uint256 _classId,
-    uint256 _tokenId
+    uint256 _tokenId,
+    uint256 _tokenAmount
   ) internal {
     // This is called by code that has already checked this, sometimes in a
     // loop, so don't pay the gas cost of checking this here.
     //require(_classId < _state.numClasses, "_class out of range");
     _state.classToTokenIds[_classId].push(_tokenId);
+    _state.classToTokenAmount[_classId].push(_tokenAmount);
   }
 }
