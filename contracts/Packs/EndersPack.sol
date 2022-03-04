@@ -45,9 +45,17 @@ contract EndersPack is ERC1155, ReentrancyGuard, Ownable, ERC1155Receiver {
     address _factoryAddress,
     uint256 _numOptions,
     uint256 _numClasses,
+    uint256 _numTypes,
     uint256 _seed
   ) public onlyOwner {
-    LootBoxRandomness.initState(state, _factoryAddress, _numOptions, _numClasses, _seed);
+    LootBoxRandomness.initState(
+      state,
+      _factoryAddress,
+      _numOptions,
+      _numClasses,
+      _numTypes,
+      _seed
+    );
   }
 
   function setTokenIdsForClass(

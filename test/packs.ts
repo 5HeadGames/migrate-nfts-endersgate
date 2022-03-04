@@ -4,12 +4,6 @@ import {expect, assert} from "chai";
 import {SignerWithAddress} from "@nomiclabs/hardhat-ethers/dist/src/signer-with-address";
 import {EndersGate, EndersPack} from "../types";
 
-const CLASSES = {
-  wood: 0,
-  stone: 1,
-  gold: 2,
-};
-
 const CONFIG = {
   classes: [
     {
@@ -56,7 +50,8 @@ const CONFIG = {
 const hash = ethers.utils.id(Math.random().toString());
 const URI = "https://some/url/",
   NUM_OPTIONS = 10,
-  NUM_CLASSES = 5;
+  NUM_CLASSES = 5,
+  NUM_TYPES = 5;
 
 describe.only("Packs ERC1155", function () {
   let endersGate: EndersGate, accounts: SignerWithAddress[], pack: EndersPack;

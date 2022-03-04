@@ -65,9 +65,11 @@ library LootBoxRandomness {
     address factoryAddress;
     uint256 numOptions;
     uint256 numClasses;
+    uint256 numTypes;
     mapping(uint256 => OptionSettings) optionToSettings;
-    mapping(uint256 => uint256[]) classToTokenIds;
-    mapping(uint256 => uint256[]) classToTokenAmount;
+    mapping(uint256 => uint256[]) classToTokenType;
+    mapping(uint256 => uint256[]) classToTypeAmount;
+    mapping(uint256 => uint256[]) typeTotokens;
     uint256 seed;
   }
 
@@ -83,11 +85,13 @@ library LootBoxRandomness {
     address _factoryAddress,
     uint256 _numOptions,
     uint256 _numClasses,
+    uint256 _numTypes,
     uint256 _seed
   ) public {
     _state.factoryAddress = _factoryAddress;
     _state.numOptions = _numOptions;
     _state.numClasses = _numClasses;
+    _state.numTypes = _numTypes;
     _state.seed = _seed;
   }
 
@@ -112,12 +116,21 @@ library LootBoxRandomness {
   function setTokenIdsForClass(
     LootBoxRandomnessState storage _state,
     uint256 _classId,
-    uint256[] memory _tokenIds,
+    uint256[] memory _tokenTypes,
     uint256[] memory _tokenAmount
   ) public {
     require(_classId < _state.numClasses, "_class out of range");
-    _state.classToTokenIds[_classId] = _tokenIds;
-    _state.classToTokenAmount[_classId] = _tokenAmount;
+    _state.classToTokenType[_classId] = _tokenTypes;
+    _state.classToTypeAmount[_classId] = _tokenAmount;
+  }
+
+  function setTokensForTypes(
+    LootBoxRandomnessState storage _state,
+    uint256 _typeId,
+    uint256[] memory _tokenIds
+  ) public {
+    require(_typeId < _state.numTypes, "_class out of range");
+    _state.typeTotokens[_typeId] = _tokenIds;
   }
 
   /**
@@ -126,23 +139,8 @@ library LootBoxRandomness {
    */
   function resetClass(LootBoxRandomnessState storage _state, uint256 _classId) public {
     require(_classId < _state.numClasses, "_class out of range");
-    delete _state.classToTokenIds[_classId];
+    delete _state.classToTokenType[_classId];
   }
-
-  /**
-   * @dev Set token IDs for each rarity class. Bulk version of `setTokenIdForClass`
-   * @param _tokenIds List of token IDs to set for each class, specified above in order
-   */
-  //Requires ABIEncoderV2
-  /*function setTokenIdsForClasses(
-    LootBoxRandomnessState storage _state,
-    uint256[][] memory _tokenIds
-  ) public {
-    require(_tokenIds.length == _state.numClasses, "wrong _tokenIds length");
-    for (uint256 i = 0; i < _tokenIds.length; i++) {
-      setTokenIdsForClass(_state, i, _tokenIds[i]);
-    }
-    }*/
 
   /**
    * @dev Set the settings for a particular lootbox option
@@ -213,7 +211,7 @@ library LootBoxRandomness {
       uint256 quantitySent = 0;
       while (quantitySent < settings.maxQuantityPerOpen) {
         uint256 class = _pickRandomClass(_state, settings.classProbabilities);
-        uint256 quantityOfRandomized = _sendTokenWithClass(_state, class, _toAddress, _owner);
+        uint256 quantityOfRandomized = _sendTokensWithClass(_state, class, _toAddress, _owner);
         quantitySent += quantityOfRandomized;
       }
 
@@ -229,7 +227,7 @@ library LootBoxRandomness {
   /////
 
   // Returns the tokenId sent to _toAddress
-  function _sendTokenWithClass(
+  function _sendTokensWithClass(
     LootBoxRandomnessState storage _state,
     uint256 _classId,
     address _toAddress,
@@ -238,11 +236,17 @@ library LootBoxRandomness {
     require(_classId < _state.numClasses, "_class out of range");
     Factory factory = Factory(_state.factoryAddress);
     uint256 amount = 0;
-    for (uint256 i = 0; i < _state.classToTokenIds[_classId].length; i++) {
-      uint256 tokenAmount = _state.classToTokenAmount[_classId][i];
-      uint256 tokenId = _state.classToTokenIds[_classId][i];
-      factory.mint(_toAddress, tokenId, tokenAmount, "");
-      amount += tokenAmount;
+    for (uint256 i = 0; i < _state.classToTokenType[_classId].length; i++) {
+      uint256 typeAmount = _state.classToTypeAmount[_classId][i];
+      uint256 tokenType = _state.classToTokenType[_classId][i];
+      uint256[] memory tokenIds = _state.typeTotokens[tokenType];
+
+      for (uint256 j = 0; j < typeAmount; j++) {
+        uint256 tokenId = tokenIds[_random(_state) % tokenIds.length];
+        factory.mint(_toAddress, tokenId, 1, "");
+      }
+
+      amount += typeAmount;
     }
     return amount;
   }
@@ -287,7 +291,7 @@ library LootBoxRandomness {
     // This is called by code that has already checked this, sometimes in a
     // loop, so don't pay the gas cost of checking this here.
     //require(_classId < _state.numClasses, "_class out of range");
-    _state.classToTokenIds[_classId].push(_tokenId);
-    _state.classToTokenAmount[_classId].push(_tokenAmount);
+    _state.classToTokenType[_classId].push(_tokenId);
+    _state.classToTypeAmount[_classId].push(_tokenAmount);
   }
 }
