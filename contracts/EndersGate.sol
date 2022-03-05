@@ -18,8 +18,8 @@ contract EndersGate is ERC1155, AccessControl, ERC1155Burnable {
   string public contractURI;
   string public tokenURIPrefix;
 
-  mapping(uint256 => string) idToIpfs;
-  uint256 public idCount;
+  mapping(uint256 => string) public idToIpfs;
+  mapping(uint256 => uint256) public totalSupply;
 
   /// @custom:oz-upgrades-unsafe-allow constructor
 
@@ -58,7 +58,8 @@ contract EndersGate is ERC1155, AccessControl, ERC1155Burnable {
     uint256[] memory ids = new uint256[](1);
     hashes[0] = hash;
     ids[0] = id;
-    idCount++;
+
+    totalSupply[id] += amount;
 
     _setIpfsHashBatch(ids, hashes);
     _mint(account, id, amount, "");
@@ -70,9 +71,16 @@ contract EndersGate is ERC1155, AccessControl, ERC1155Burnable {
     uint256[] memory amounts,
     string[] memory data
   ) public onlyRole(MINTER_ROLE) {
-    idCount += ids.length;
+    for (uint256 i = 0; i < ids.length; i++) totalSupply[ids[i]] += amounts[i];
+
     _setIpfsHashBatch(ids, data);
     _mintBatch(to, ids, amounts, "");
+  }
+
+  function totalSupplyBatch(uint256[] memory ids) public view returns (uint256[] memory) {
+    uint256[] memory supply = new uint256[](ids.length);
+    for (uint256 i = 0; i < ids.length; i++) supply[i] = totalSupply[ids[i]];
+    return supply;
   }
 
   function supportsInterface(bytes4 interfaceId)

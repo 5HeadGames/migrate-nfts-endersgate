@@ -54,11 +54,8 @@ library LootBoxRandomness {
 
   // NOTE: Price of the lootbox is set via sell orders on OpenSea
   struct OptionSettings {
-    // Number of items to send per open.
-    // Set to 0 to disable this Option.
-    uint256 maxQuantityPerOpen;
-    // Probability in basis points (out of 10,000) of receiving each class (descending)
-    uint16[] classProbabilities;
+    uint256[] classIds;
+    uint256[] classProbabilities;
   }
 
   struct LootBoxRandomnessState {
@@ -113,7 +110,7 @@ library LootBoxRandomness {
    * @dev Alternate way to add token ids to a class
    * Note: resets the full list for the class instead of adding each token id
    */
-  function setTokenIdsForClass(
+  function setTokenTypeForClass(
     LootBoxRandomnessState storage _state,
     uint256 _classId,
     uint256[] memory _tokenTypes,
@@ -142,32 +139,22 @@ library LootBoxRandomness {
     delete _state.classToTokenType[_classId];
   }
 
-  /**
-   * @dev Set the settings for a particular lootbox option
-   * @param _option The Option to set settings for
-   * @param _maxQuantityPerOpen Maximum number of items to mint per open.
-   *                            Set to 0 to disable this option.
-   * @param _classProbabilities Array of probabilities (basis points, so integers out of 10,000)
-   *                            of receiving each class (the index in the array).
-   *                            Should add up to 10k and be descending in value.
-   * @param _guarantees         Array of the number of guaranteed items received for each class
-   *                            (the index in the array).
-   */
   function setOptionSettings(
     LootBoxRandomnessState storage _state,
     uint256 _option,
-    uint256 _maxQuantityPerOpen,
-    uint16[] memory _classProbabilities,
-    uint16[] memory _guarantees
+    uint256[] memory _classIds,
+    uint256[] memory _classProbabilities
   ) public {
     require(_option < _state.numOptions, "_option out of range");
+    require(_classIds.length == _classProbabilities.length, "_options lenght mismatch");
+    require(_classIds.length > 0, "_options lenght is zero");
 
     OptionSettings memory settings = OptionSettings({
-      maxQuantityPerOpen: _maxQuantityPerOpen,
+      classIds: _classIds,
       classProbabilities: _classProbabilities
     });
 
-    _state.optionToSettings[uint256(_option)] = settings;
+    _state.optionToSettings[_option] = settings;
   }
 
   /**
@@ -202,18 +189,14 @@ library LootBoxRandomness {
     // Load settings for this box option
     OptionSettings memory settings = _state.optionToSettings[_optionId];
 
-    require(settings.maxQuantityPerOpen > 0, "LootBoxRandomness#_mint: OPTION_NOT_ALLOWED");
-
     uint256 totalMinted = 0;
     // Iterate over the quantity of boxes specified
     for (uint256 i = 0; i < _amount; i++) {
       // Iterate over the box's set quantity
       uint256 quantitySent = 0;
-      while (quantitySent < settings.maxQuantityPerOpen) {
-        uint256 class = _pickRandomClass(_state, settings.classProbabilities);
-        uint256 quantityOfRandomized = _sendTokensWithClass(_state, class, _toAddress, _owner);
-        quantitySent += quantityOfRandomized;
-      }
+      uint256 class = _pickRandomClass(_state, settings.classProbabilities, settings.classIds);
+      uint256 quantityOfRandomized = _sendTokensWithClass(_state, class, _toAddress, _owner);
+      quantitySent += quantityOfRandomized;
 
       totalMinted += quantitySent;
     }
@@ -253,21 +236,22 @@ library LootBoxRandomness {
 
   function _pickRandomClass(
     LootBoxRandomnessState storage _state,
-    uint16[] memory _classProbabilities
+    uint256[] memory _classProbabilities,
+    uint256[] memory _classIds
   ) internal returns (uint256) {
-    uint16 value = uint16(_random(_state) % (INVERSE_BASIS_POINT));
+    uint256 value = uint256(_random(_state) % (INVERSE_BASIS_POINT));
     // Start at top class (length - 1)
     // skip common (0), we default to it
     for (uint256 i = _classProbabilities.length - 1; i > 0; i--) {
-      uint16 probability = _classProbabilities[i];
+      uint256 probability = _classProbabilities[i];
       if (value < probability) {
-        return i;
+        return _classIds[i];
       } else {
         value = value - probability;
       }
     }
     //FIXME: assumes zero is common!
-    return 0;
+    return _classIds[0];
   }
 
   /**

@@ -30,6 +30,7 @@ const formatCardData = (data) => {
 const init = async () => {
   await workbook.xlsx.readFile("cards.xlsx");
   let cards = {};
+  let cardId = 0;
 
   workbook.worksheets.forEach((sheet, i) => {
     if (i <= 0) return;
@@ -40,7 +41,7 @@ const init = async () => {
       if (i == 1 || i == 2) {
         //action/reaction cards
         const insertValue = formatCardData({
-          id: values[1],
+          id: cardId++,
           name: values[2],
           type: values[3],
           ADOTurn: values[4],
@@ -53,7 +54,7 @@ const init = async () => {
       } else if (i < 8) {
         //omit avatars
         const insertValue = formatCardData({
-          id: values[1],
+          id: cardId++,
           name: values[2],
           element: values[3],
           role: values[4],

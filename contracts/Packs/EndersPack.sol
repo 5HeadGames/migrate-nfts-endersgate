@@ -58,27 +58,24 @@ contract EndersPack is ERC1155, ReentrancyGuard, Ownable, ERC1155Receiver {
     );
   }
 
-  function setTokenIdsForClass(
+  function setTokenTypeForClass(
     uint256 _classId,
     uint256[] memory _tokenIds,
     uint256[] memory _tokenAmounts
   ) public onlyOwner {
-    LootBoxRandomness.setTokenIdsForClass(state, _classId, _tokenIds, _tokenAmounts);
+    LootBoxRandomness.setTokenTypeForClass(state, _classId, _tokenIds, _tokenAmounts);
   }
 
   function setOptionSettings(
     uint256 _option,
-    uint256 _maxQuantityPerOpen,
-    uint16[] memory _classProbabilities,
-    uint16[] memory _guarantees
+    uint256[] memory _classIds,
+    uint256[] memory _classProbabilities
   ) public onlyOwner {
-    LootBoxRandomness.setOptionSettings(
-      state,
-      _option,
-      _maxQuantityPerOpen,
-      _classProbabilities,
-      _guarantees
-    );
+    LootBoxRandomness.setOptionSettings(state, _option, _classIds, _classProbabilities);
+  }
+
+  function setTokensForTypes(uint256 _typeId, uint256[] memory _tokenIds) public onlyOwner {
+    LootBoxRandomness.setTokensForTypes(state, _typeId, _tokenIds);
   }
 
   ///////
@@ -104,10 +101,19 @@ contract EndersPack is ERC1155, ReentrancyGuard, Ownable, ERC1155Receiver {
     uint256 _optionId,
     uint256 _amount,
     bytes memory _data
-  ) public nonReentrant {
+  ) public onlyOwner nonReentrant {
     require(_optionId < state.numOptions, "Lootbox: Invalid Option");
     // Option ID is used as a token ID here
     _mint(_to, _optionId, _amount, _data);
+  }
+
+  function mintBatch(
+    address to,
+    uint256[] memory ids,
+    uint256[] memory amounts,
+    bytes memory
+  ) public onlyOwner nonReentrant {
+    _mintBatch(to, ids, amounts, "");
   }
 
   /**

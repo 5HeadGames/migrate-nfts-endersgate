@@ -1,5 +1,6 @@
 import Moralis from "moralis/node";
 import fs from "fs";
+import {TransactionReceipt} from "@ethersproject/providers";
 
 const appRoot = require("app-root-path");
 
@@ -46,3 +47,8 @@ export const writeJsonFile = (args: {path: string; data: any}) => {
     fs.writeFileSync(appRoot + args.path, parsedData);
     console.log(`Generated ${appRoot}${args.path}`);
 };
+
+export const getEventLogs = (iface: any, logs: TransactionReceipt['logs'], filter: (log: any) => boolean) => {
+    return logs.filter(filter).map(logs => iface.parseLog(logs))
+}
+
