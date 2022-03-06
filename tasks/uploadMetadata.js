@@ -1,7 +1,7 @@
 
 const {uploadIpfs, writeJsonFile} = require("../utils");
 
-subtask("upload:metadata", "Upload metadata to ipfs")
+task("upload:metadata", "Upload metadata to ipfs")
   .addOptionalParam("path", "File location")
   .addParam("name", "Nft name")
   .setAction(async (taskArgs, hardhat) => {

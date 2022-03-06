@@ -35,7 +35,7 @@ type Card = {
     classes: {id: number}[];
 };
 
-class PacksConfig {
+export class PacksConfig {
     NUM_TYPES: number;
     NUM_CLASSES: number;
     NUM_CARDS: number;

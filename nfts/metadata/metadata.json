@@ -2,5 +2,9 @@
   "eross": {
     "ipfs": "https://ipfs.moralis.io:2053/ipfs/QmeM5ZeV5fU7y33PRmHa59PdemmypAPf1qyG9S7yWTYRfq",
     "hash": "QmeM5ZeV5fU7y33PRmHa59PdemmypAPf1qyG9S7yWTYRfq"
+  },
+  "packs_common": {
+    "ipfs": "https://ipfs.moralis.io:2053/ipfs/QmSug6ooWW4iWQkCCeo9aQhTYfqWD9BMDLMh33thYFbp5h",
+    "hash": "QmSug6ooWW4iWQkCCeo9aQhTYfqWD9BMDLMh33thYFbp5h"
   }
 }

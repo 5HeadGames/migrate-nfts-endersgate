@@ -28,6 +28,7 @@ contract EndersPack is ERC1155, ReentrancyGuard, Ownable, ERC1155Receiver {
   string public tokenURIPrefix;
 
   mapping(uint256 => uint256) public tokenSupply;
+  mapping(uint256 => string) public idToIpfs;
 
   constructor(
     string memory _name,
@@ -160,6 +161,32 @@ contract EndersPack is ERC1155, ReentrancyGuard, Ownable, ERC1155Receiver {
     return
       interfaceId == type(IERC1155Receiver).interfaceId ||
       super.supportsInterface(interfaceId);
+  }
+
+  function uri(uint256 id) public view override returns (string memory) {
+    string memory ipfsHash = idToIpfs[id];
+    return
+      bytes(tokenURIPrefix).length > 0
+        ? string(abi.encodePacked(tokenURIPrefix, ipfsHash))
+        : "";
+  }
+
+  function setURI(string memory newuri) public onlyOwner {
+    tokenURIPrefix = newuri;
+  }
+
+  function setContractURI(string memory newuri) public onlyOwner {
+    contractURI = newuri;
+  }
+
+  function setIpfsHashBatch(uint256[] memory ids, string[] memory hashes) public onlyOwner {
+    _setIpfsHashBatch(ids, hashes);
+  }
+
+  function _setIpfsHashBatch(uint256[] memory ids, string[] memory hashes) internal {
+    for (uint256 i = 0; i < ids.length; i++) {
+      if (bytes(hashes[i]).length > 0) idToIpfs[ids[i]] = hashes[i];
+    }
   }
 
   fallback() external {

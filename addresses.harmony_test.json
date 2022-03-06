@@ -3,5 +3,8 @@
   "dracul": "0x09c1b4B44Db575dB26F468528918bb7F6c93bac2",
   "eross": "0xc2E90B807F0B225Ed7E395AC1dBd74979E05E993",
   "exchange": "0x0F64be301e827aB20d44311e216873534DBC3356",
-  "ipfs": "https://ipfs.moralis.io:2053/ipfs/QmXWojzVzRo2NERK3LtrscCXwJ5CrZ8xbnchTgWnTyLDvw"
+  "ipfs": "https://ipfs.moralis.io:2053/ipfs/QmXWojzVzRo2NERK3LtrscCXwJ5CrZ8xbnchTgWnTyLDvw",
+  "pack": "0x94297F3F6C1de13Eb64c9dBA550d855bCD4A1196",
+  "packIpfs": "https://ipfs.moralis.io:2053/ipfs/QmbYVtH6UHn3jmXsnE7kFuuqgk7epdzrMn8LZBGDXsCyXL",
+  "library": "0xc01f4C420C3B537C2461DEfb56135163BdEE6fC1"
 }

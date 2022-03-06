@@ -1,6 +1,6 @@
 const {uploadIpfs, writeJsonFile} = require("../utils");
 
-subtask("upload:image", "Upload image to ipfs")
+task("upload:image", "Upload image to ipfs")
   .addOptionalParam("path", "File location")
   .addParam("name", "File name")
   .setAction(async (taskArgs, hardhat) => {

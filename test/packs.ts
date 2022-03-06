@@ -8,7 +8,7 @@ import {getPacksConfig} from "../utils/packs";
 const hash = ethers.utils.id(Math.random().toString());
 const URI = "https://some/url/";
 
-describe.only("Packs ERC1155", function () {
+describe("Packs ERC1155", function () {
   let endersGate: EndersGate, accounts: SignerWithAddress[], pack: EndersPack;
   const packsConfig = getPacksConfig();
 
@@ -268,4 +268,22 @@ describe.only("Packs ERC1155", function () {
     });
   });
 
+  describe("URI settings and minting", async () => {
+    it("Should set uri for only setter role", async () => {
+      await pack.setURI(URI);
+      await expect(pack.connect(accounts[1]).setURI("SOME FALCE URI")).to.revertedWith("");
+      expect(await pack.tokenURIPrefix(), "URI Not set properly").to.be.equal(URI);
+    });
+
+    it("Should set ipfs only setter role", async () => {
+      const ids = [1];
+      const hashes = [ethers.utils.id(Math.random().toString())];
+
+      await expect(
+        pack.connect(accounts[1]).setIpfsHashBatch(ids, hashes)
+      ).to.revertedWith("");
+      await expect(pack.setIpfsHashBatch(ids, hashes)).to.not.revertedWith("");
+      expect(await pack.uri(ids[0])).to.be.equal(URI + hashes[0]);
+    });
+  });
 });

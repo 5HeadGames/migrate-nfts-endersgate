@@ -34,7 +34,7 @@ export const loadJsonFile = (file: string) => {
 
 export const writeJsonFile = (args: {path: string; data: any}) => {
     const appRoot = require("app-root-path");
-    const prevData = loadJsonFile(args.path);
+    const prevData = loadJsonFile(appRoot + args.path);
     const parsedData = JSON.stringify(
         {
             ...prevData,
