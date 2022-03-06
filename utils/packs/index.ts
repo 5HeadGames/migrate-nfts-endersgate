@@ -216,7 +216,7 @@ export const getPacksConfig = () => {
         },
         {
             types: [{amount: 5, id: 2}],
-            probability: 10,
+            probability: 1000,
         },
         {
             types: [

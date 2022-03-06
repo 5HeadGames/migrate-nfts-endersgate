@@ -86,7 +86,7 @@ contract EndersPack is ERC1155, ReentrancyGuard, Ownable, ERC1155Receiver {
     uint256 _optionId,
     address _toAddress,
     uint256 _amount
-  ) external {
+  ) external nonReentrant {
     // This will underflow if _msgSender() does not own enough tokens.
     _burn(_msgSender(), _optionId, _amount);
     // Mint nfts contained by LootBox
@@ -101,7 +101,7 @@ contract EndersPack is ERC1155, ReentrancyGuard, Ownable, ERC1155Receiver {
     uint256 _optionId,
     uint256 _amount,
     bytes memory _data
-  ) public onlyOwner nonReentrant {
+  ) public onlyOwner {
     require(_optionId < state.numOptions, "Lootbox: Invalid Option");
     // Option ID is used as a token ID here
     _mint(_to, _optionId, _amount, _data);
@@ -112,7 +112,7 @@ contract EndersPack is ERC1155, ReentrancyGuard, Ownable, ERC1155Receiver {
     uint256[] memory ids,
     uint256[] memory amounts,
     bytes memory
-  ) public onlyOwner nonReentrant {
+  ) public onlyOwner {
     _mintBatch(to, ids, amounts, "");
   }
 

@@ -4,7 +4,6 @@ import {expect, assert} from "chai";
 import {SignerWithAddress} from "@nomiclabs/hardhat-ethers/dist/src/signer-with-address";
 import {EndersGate, EndersPack} from "../types";
 import {getPacksConfig} from "../utils/packs";
-import {getEventLogs} from "../utils";
 
 const hash = ethers.utils.id(Math.random().toString());
 const URI = "https://some/url/";
@@ -49,19 +48,41 @@ describe.only("Packs ERC1155", function () {
           classes.map(({probability}) => probability)
         );
       }
+      const testCard = packsConfig.cards[0];
+      const testClass = testCard.classes.map(({id}) => packsConfig.getClass(id));
+      await expect(
+        pack.connect(accounts[1]).setOptionSettings(
+          testCard.id,
+          testClass.map(({id}) => id),
+          testClass.map(({probability}) => probability)
+        )
+      ).to.be.revertedWith("");
     });
 
     it("Should set type for each class", async () => {
-      for await (let i of packsConfig.classes)
+      for await (let i of packsConfig.classes) {
         await pack.setTokenTypeForClass(
           i.id,
           i.types.map(({id}) => id),
           i.types.map(({amount}) => amount)
         );
+      }
+      const testClass = packsConfig.classes[0];
+      await expect(
+        pack.connect(accounts[1]).setTokenTypeForClass(
+          testClass.id,
+          testClass.types.map(({id}) => id),
+          testClass.types.map(({amount}) => amount)
+        )
+      ).to.be.revertedWith("");
     });
 
     it("Should set tokens for each type", async () => {
       for await (let i of packsConfig.types) await pack.setTokensForTypes(i.id, i.nftsIds);
+      const testType = packsConfig.types[0];
+      await expect(
+        pack.connect(accounts[1]).setTokensForTypes(testType.id, testType.nftsIds)
+      ).to.be.revertedWith("");
     });
 
     it("Only owner should mint packs normally", async () => {
@@ -95,13 +116,12 @@ describe.only("Packs ERC1155", function () {
   });
 
   describe("Unpack nfts", () => {
-
-    const errorMargin = 1000 // 10%%
+    const errorMargin = 1000; // 10%%
     const isWithinMargin = (amount: number, realAmount: number) => {
-      const lowerBound = amount - amount / 1000 * errorMargin;
-      const upperBound = amount + amount / 1000 * errorMargin;
+      const lowerBound = amount - (amount / 1000) * errorMargin;
+      const upperBound = amount + (amount / 1000) * errorMargin;
       return lowerBound < realAmount && upperBound > realAmount;
-    }
+    };
 
     it("COMMON_PACK", async () => {
       const option = packsConfig.COMMON_ID,
@@ -112,7 +132,10 @@ describe.only("Packs ERC1155", function () {
         sent.map(() => accounts[0].address),
         sent.map(({id}) => id)
       );
-      const averageMinted = packsConfig.getAverageMintedOfCard({cardId: packsConfig.COMMON_ID, amountMinted: amount * 5})
+      const averageMinted = packsConfig.getAverageMintedOfCard({
+        cardId: packsConfig.COMMON_ID,
+        amountMinted: amount * 5,
+      });
 
       assert(
         actualBalance.every((bal, i) => bal.toNumber() === sent[i].amount),
@@ -126,14 +149,8 @@ describe.only("Packs ERC1155", function () {
         Object.keys(types).every((type) => Number(type) === 1 || Number(type) === 0),
         "Not sent other type than 0 or 1"
       );
-      assert(
-        isWithinMargin(averageMinted[0], types[0]),
-        'Wood batch minted incorrectly'
-      )
-      assert(
-        isWithinMargin(averageMinted[1], types[1]),
-        'Stone batch minted incorrectly'
-      )
+      assert(isWithinMargin(averageMinted[0], types[0]), "Wood batch minted incorrectly");
+      assert(isWithinMargin(averageMinted[1], types[1]), "Stone batch minted incorrectly");
       expect(
         Object.values(types).reduce((acc, cur) => acc + cur, 0),
         "Not guaranteed to be 5 nfts/pack"
@@ -151,7 +168,10 @@ describe.only("Packs ERC1155", function () {
         sent.map(({id}) => id)
       );
       const typesOfCard = packsConfig.getTypesOfCard(option);
-      const averageMinted = packsConfig.getAverageMintedOfCard({cardId: packsConfig.RARE_ID, amountMinted: amount * 5})
+      const averageMinted = packsConfig.getAverageMintedOfCard({
+        cardId: packsConfig.RARE_ID,
+        amountMinted: amount * 5,
+      });
 
       assert(
         actualBalance.every((bal, i) => bal.toNumber() === sent[i].amount),
@@ -165,18 +185,9 @@ describe.only("Packs ERC1155", function () {
         Object.keys(types).every((type) => typesOfCard[Number(type)] === 1),
         "Not sent other type than allowed"
       );
-      assert(
-        isWithinMargin(averageMinted[0], types[0]),
-        'Wood batch minted incorrectly'
-      )
-      assert(
-        isWithinMargin(averageMinted[1], types[1]),
-        'Stone batch minted incorrectly'
-      )
-      assert(
-        isWithinMargin(averageMinted[2], types[2]),
-        'Gold batch minted incorrectly'
-      )
+      assert(isWithinMargin(averageMinted[0], types[0]), "Wood batch minted incorrectly");
+      assert(isWithinMargin(averageMinted[1], types[1]), "Stone batch minted incorrectly");
+      assert(isWithinMargin(averageMinted[2], types[2]), "Gold batch minted incorrectly");
       expect(
         Object.values(types).reduce((acc, cur) => acc + cur, 0),
         "Not guaranteed to be 5 nfts/pack"
@@ -194,7 +205,10 @@ describe.only("Packs ERC1155", function () {
         sent.map(({id}) => id)
       );
       const typesOfCard = packsConfig.getTypesOfCard(option);
-      const averageMinted = packsConfig.getAverageMintedOfCard({cardId: packsConfig.EPIC_ID, amountMinted: amount * 5})
+      const averageMinted = packsConfig.getAverageMintedOfCard({
+        cardId: packsConfig.EPIC_ID,
+        amountMinted: amount * 5,
+      });
 
       assert(
         actualBalance.every((bal, i) => bal.toNumber() === sent[i].amount),
@@ -208,19 +222,9 @@ describe.only("Packs ERC1155", function () {
         Object.keys(types).every((type) => typesOfCard[Number(type)] === 1),
         "Not sent other type than allowed"
       );
-      assert(
-        isWithinMargin(averageMinted[1], types[1]),
-        'Stone batch minted incorrectly'
-      )
-      assert(
-        isWithinMargin(averageMinted[2], types[2]),
-        'Gold batch minted incorrectly'
-      )
-      console.log(averageMinted[3], types[3])
-      assert(
-        isWithinMargin(averageMinted[3], types[3]),
-        'Legendary batch minted incorrectly'
-      )
+      assert(isWithinMargin(averageMinted[1], types[1]), "Stone batch minted incorrectly");
+      assert(isWithinMargin(averageMinted[2], types[2]), "Gold batch minted incorrectly");
+      assert(isWithinMargin(averageMinted[3], types[3]), "Legendary batch minted incorrectly");
       expect(
         Object.values(types).reduce((acc, cur) => acc + cur, 0),
         "Not guaranteed to be 5 nfts/pack"
@@ -238,7 +242,10 @@ describe.only("Packs ERC1155", function () {
         sent.map(({id}) => id)
       );
       const typesOfCard = packsConfig.getTypesOfCard(option);
-      const averageMinted = packsConfig.getAverageMintedOfCard({cardId: packsConfig.LEGENDARY_ID, amountMinted: amount * 5})
+      const averageMinted = packsConfig.getAverageMintedOfCard({
+        cardId: packsConfig.LEGENDARY_ID,
+        amountMinted: amount * 5,
+      });
 
       assert(
         actualBalance.every((bal, i) => bal.toNumber() === sent[i].amount),
@@ -252,18 +259,13 @@ describe.only("Packs ERC1155", function () {
         Object.keys(types).every((type) => typesOfCard[Number(type)] === 1),
         "Not sent other type than allowed"
       );
-      assert(
-        isWithinMargin(averageMinted[2], types[2]),
-        'Gold batch minted incorrectly'
-      )
-      assert(
-        isWithinMargin(averageMinted[3], types[3]),
-        'Legendary batch minted incorrectly'
-      )
+      assert(isWithinMargin(averageMinted[2], types[2]), "Gold batch minted incorrectly");
+      assert(isWithinMargin(averageMinted[3], types[3]), "Legendary batch minted incorrectly");
       expect(
         Object.values(types).reduce((acc, cur) => acc + cur, 0),
         "Not guaranteed to be 5 nfts/pack"
       ).to.be.equal(amount * 5);
     });
   });
+
 });
