@@ -2,6 +2,8 @@
 
 pragma solidity ^0.8.10;
 
+import "hardhat/console.sol";
+
 abstract contract Factory {
   function mint(
     address _toAddress,
@@ -25,25 +27,22 @@ library LootBoxRandomness {
     uint256 boxesPurchased,
     uint256 itemsMinted
   );
-  event Warning(string message, address account);
 
   uint256 constant INVERSE_BASIS_POINT = 10000;
 
-  // NOTE: Price of the lootbox is set via sell orders on OpenSea
   struct OptionSettings {
-    uint256[] classIds;
-    uint256[] classProbabilities;
+    uint256[] typeIds;
+    uint256[] typeInferiorLimit;
+    uint256[] typeSuperiorLimit;
+    uint256 mintLimit;
   }
 
   struct LootBoxRandomnessState {
     address factoryAddress;
     uint256 numOptions;
-    uint256 numClasses;
     uint256 numTypes;
     mapping(uint256 => OptionSettings) optionToSettings;
-    mapping(uint256 => uint256[]) classToTokenType;
-    mapping(uint256 => uint256[]) classToTypeAmount;
-    mapping(uint256 => uint256[]) typeTotokens;
+    mapping(uint256 => uint256[]) typeToTokens;
     uint256 seed;
   }
 
@@ -58,13 +57,11 @@ library LootBoxRandomness {
     LootBoxRandomnessState storage _state,
     address _factoryAddress,
     uint256 _numOptions,
-    uint256 _numClasses,
     uint256 _numTypes,
     uint256 _seed
   ) public {
     _state.factoryAddress = _factoryAddress;
     _state.numOptions = _numOptions;
-    _state.numClasses = _numClasses;
     _state.numTypes = _numTypes;
     _state.seed = _seed;
   }
@@ -73,62 +70,42 @@ library LootBoxRandomness {
    * @dev If the tokens for some class are pre-minted and owned by the
    * contract owner, they can be used for a given class by setting them here
    */
-  function setClassForTokenId(
-    LootBoxRandomnessState storage _state,
-    uint256 _tokenId,
-    uint256 _tokenAmount,
-    uint256 _classId
-  ) public {
-    require(_classId < _state.numClasses, "_class out of range");
-    _addTokenIdToClass(_state, _classId, _tokenId, _tokenAmount);
-  }
-
-  /**
-   * @dev Alternate way to add token ids to a class
-   * Note: resets the full list for the class instead of adding each token id
-   */
-  function setTokenTypeForClass(
-    LootBoxRandomnessState storage _state,
-    uint256 _classId,
-    uint256[] memory _tokenTypes,
-    uint256[] memory _tokenAmount
-  ) public {
-    require(_classId < _state.numClasses, "_class out of range");
-    _state.classToTokenType[_classId] = _tokenTypes;
-    _state.classToTypeAmount[_classId] = _tokenAmount;
-  }
-
   function setTokensForTypes(
     LootBoxRandomnessState storage _state,
     uint256 _typeId,
     uint256[] memory _tokenIds
   ) public {
-    require(_typeId < _state.numTypes, "_class out of range");
-    _state.typeTotokens[_typeId] = _tokenIds;
+    require(_typeId < _state.numTypes, "type out of range");
+    _state.typeToTokens[_typeId] = _tokenIds;
   }
 
   /**
    * @dev Remove all token id for a given class, causing it to fall back to
    * creating/minting into the nft address
    */
-  function resetClass(LootBoxRandomnessState storage _state, uint256 _classId) public {
-    require(_classId < _state.numClasses, "_class out of range");
-    delete _state.classToTokenType[_classId];
+  function resetOption(LootBoxRandomnessState storage _state, uint256 _option) public {
+    require(_option < _state.numOptions, "_typeId out of range");
+    delete _state.optionToSettings[_option];
   }
 
   function setOptionSettings(
     LootBoxRandomnessState storage _state,
     uint256 _option,
-    uint256[] memory _classIds,
-    uint256[] memory _classProbabilities
+    uint256 _mintLimit,
+    uint256[] memory _typeIds,
+    uint256[] memory _typeInferiorLimit,
+    uint256[] memory _typeSuperiorLimit
   ) public {
     require(_option < _state.numOptions, "_option out of range");
-    require(_classIds.length == _classProbabilities.length, "_options lenght mismatch");
-    require(_classIds.length > 0, "_options lenght is zero");
+    require(_typeIds.length == _typeInferiorLimit.length, "params lenght mismatch");
+    require(_typeIds.length == _typeSuperiorLimit.length, "params lenght mismatch");
+    require(_typeIds.length > 0, "_options lenght is zero");
 
     OptionSettings memory settings = OptionSettings({
-      classIds: _classIds,
-      classProbabilities: _classProbabilities
+      typeIds: _typeIds,
+      typeInferiorLimit: _typeInferiorLimit,
+      typeSuperiorLimit: _typeSuperiorLimit,
+      mintLimit: _mintLimit
     });
 
     _state.optionToSettings[_option] = settings;
@@ -143,16 +120,8 @@ library LootBoxRandomness {
     _state.seed = _newSeed;
   }
 
-  ///////
-  // MAIN FUNCTIONS
-  //////
-
   /**
    * @dev Main minting logic for lootboxes
-   * This is called via safeTransferFrom when CreatureAccessoryLootBox extends
-   * CreatureAccessoryFactory.
-   * NOTE: prices and fees are determined by the sell order on OpenSea.
-   * WARNING: Make sure msg.sender can mint!
    */
   function _mint(
     LootBoxRandomnessState storage _state,
@@ -163,72 +132,55 @@ library LootBoxRandomness {
     address _owner
   ) internal {
     require(_optionId < _state.numOptions, "_option out of range");
-    // Load settings for this box option
+
     OptionSettings memory settings = _state.optionToSettings[_optionId];
+    uint256 finalMinted = 0;
 
-    uint256 totalMinted = 0;
-    // Iterate over the quantity of boxes specified
     for (uint256 i = 0; i < _amount; i++) {
-      // Iterate over the box's set quantity
-      uint256 quantitySent = 0;
-      uint256 class = _pickRandomClass(_state, settings.classProbabilities, settings.classIds);
-      uint256 quantityOfRandomized = _sendTokensWithClass(_state, class, _toAddress, _owner);
-      quantitySent += quantityOfRandomized;
+      uint256 totalMinted = 0;
+      uint256[] memory typesMinted = new uint256[](settings.typeIds.length);
 
-      totalMinted += quantitySent;
+      for (uint256 j = 0; j < settings.typeIds.length; j++) {
+        //send guaranteed
+        if (settings.typeInferiorLimit[j] > 0) {
+          uint256 amount = settings.typeInferiorLimit[j];
+          _sendTokensWithType(_state, _toAddress, settings.typeIds[j], amount);
+          totalMinted += amount;
+          typesMinted[j] += amount;
+        }
+      }
+
+      for (; totalMinted < settings.mintLimit; ) {
+        uint256 typeIndex = uint256(_random(_state) % settings.typeIds.length);
+
+        if (typesMinted[typeIndex] > settings.typeSuperiorLimit[typeIndex]) continue;
+        _sendTokensWithType(_state, _toAddress, settings.typeIds[typeIndex], 1);
+
+        totalMinted++;
+        typesMinted[typeIndex]++;
+      }
+
+      finalMinted += totalMinted;
     }
 
     // Event emissions
-    emit LootBoxOpened(_optionId, _toAddress, _amount, totalMinted);
+    emit LootBoxOpened(_optionId, _toAddress, _amount, finalMinted);
   }
 
-  /////
-  // HELPER FUNCTIONS
-  /////
-
-  // Returns the tokenId sent to _toAddress
-  function _sendTokensWithClass(
+  function _sendTokensWithType(
     LootBoxRandomnessState storage _state,
-    uint256 _classId,
     address _toAddress,
-    address _owner
-  ) internal returns (uint256) {
-    require(_classId < _state.numClasses, "_class out of range");
+    uint256 _typeId,
+    uint256 amount
+  ) internal {
+    require(_typeId < _state.numTypes, "type out of range");
     Factory factory = Factory(_state.factoryAddress);
-    uint256 amount = 0;
-    for (uint256 i = 0; i < _state.classToTokenType[_classId].length; i++) {
-      uint256 typeAmount = _state.classToTypeAmount[_classId][i];
-      uint256 tokenType = _state.classToTokenType[_classId][i];
-      uint256[] memory tokenIds = _state.typeTotokens[tokenType];
 
-      for (uint256 j = 0; j < typeAmount; j++) {
-        uint256 tokenId = tokenIds[_random(_state) % tokenIds.length];
-        factory.mint(_toAddress, tokenId, 1, "");
-      }
-
-      amount += typeAmount;
+    for (uint256 i = 0; i < amount; i++) {
+      uint256 tokenIndex = uint256(_random(_state) % _state.typeToTokens[_typeId].length);
+      uint256 tokenId = _state.typeToTokens[_typeId][tokenIndex];
+      factory.mint(_toAddress, tokenId, 1, "");
     }
-    return amount;
-  }
-
-  function _pickRandomClass(
-    LootBoxRandomnessState storage _state,
-    uint256[] memory _classProbabilities,
-    uint256[] memory _classIds
-  ) internal returns (uint256) {
-    uint256 value = uint256(_random(_state) % (INVERSE_BASIS_POINT));
-    // Start at top class (length - 1)
-    // skip common (0), we default to it
-    for (uint256 i = _classProbabilities.length - 1; i > 0; i--) {
-      uint256 probability = _classProbabilities[i];
-      if (value < probability) {
-        return _classIds[i];
-      } else {
-        value = value - probability;
-      }
-    }
-    //FIXME: assumes zero is common!
-    return _classIds[0];
   }
 
   /**
@@ -241,18 +193,5 @@ library LootBoxRandomness {
     );
     _state.seed = randomNumber;
     return randomNumber;
-  }
-
-  function _addTokenIdToClass(
-    LootBoxRandomnessState storage _state,
-    uint256 _classId,
-    uint256 _tokenId,
-    uint256 _tokenAmount
-  ) internal {
-    // This is called by code that has already checked this, sometimes in a
-    // loop, so don't pay the gas cost of checking this here.
-    //require(_classId < _state.numClasses, "_class out of range");
-    _state.classToTokenType[_classId].push(_tokenId);
-    _state.classToTypeAmount[_classId].push(_tokenAmount);
   }
 }

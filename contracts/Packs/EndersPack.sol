@@ -45,34 +45,27 @@ contract EndersPack is ERC1155, ReentrancyGuard, Ownable, ERC1155Receiver {
   function setState(
     address _factoryAddress,
     uint256 _numOptions,
-    uint256 _numClasses,
     uint256 _numTypes,
     uint256 _seed
   ) public onlyOwner {
-    LootBoxRandomness.initState(
-      state,
-      _factoryAddress,
-      _numOptions,
-      _numClasses,
-      _numTypes,
-      _seed
-    );
-  }
-
-  function setTokenTypeForClass(
-    uint256 _classId,
-    uint256[] memory _tokenIds,
-    uint256[] memory _tokenAmounts
-  ) public onlyOwner {
-    LootBoxRandomness.setTokenTypeForClass(state, _classId, _tokenIds, _tokenAmounts);
+    LootBoxRandomness.initState(state, _factoryAddress, _numOptions, _numTypes, _seed);
   }
 
   function setOptionSettings(
     uint256 _option,
-    uint256[] memory _classIds,
-    uint256[] memory _classProbabilities
+    uint256 _mintLimit,
+    uint256[] memory _typeIds,
+    uint256[] memory _typeInferiorLimit,
+    uint256[] memory _typeSuperiorLimit
   ) public onlyOwner {
-    LootBoxRandomness.setOptionSettings(state, _option, _classIds, _classProbabilities);
+    LootBoxRandomness.setOptionSettings(
+      state,
+      _option,
+      _mintLimit,
+      _typeIds,
+      _typeInferiorLimit,
+      _typeSuperiorLimit
+    );
   }
 
   function setTokensForTypes(uint256 _typeId, uint256[] memory _tokenIds) public onlyOwner {
