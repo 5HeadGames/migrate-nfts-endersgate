@@ -153,7 +153,7 @@ library LootBoxRandomness {
       for (; totalMinted < settings.mintLimit; ) {
         uint256 typeIndex = uint256(_random(_state) % settings.typeIds.length);
 
-        if (typesMinted[typeIndex] > settings.typeSuperiorLimit[typeIndex]) continue;
+        if (typesMinted[typeIndex] >= settings.typeSuperiorLimit[typeIndex]) continue;
         _sendTokensWithType(_state, _toAddress, settings.typeIds[typeIndex], 1);
 
         totalMinted++;

@@ -55,8 +55,7 @@ export class PacksConfig {
         ).filter(({name, args}) => name === "TransferSingle" || name === "TransferBatch");
 
         const uniqueSent = eventLogs.reduce((acc, log) => {
-            const {args} = log
-            console.log(log)
+            const {args} = log;
             const id = Number(args[3]),
                 to = args[2],
                 amount = Number(args[4]);
@@ -80,7 +79,31 @@ export class PacksConfig {
             };
         }, {} as Record<string, number>);
 
-        return {types, sent};
+        const typesByID = sent.reduce((acc, cur) => {
+            const nftType = packsConfig.getNftType(cur.id);
+            return {
+                ...acc,
+                [nftType.id]: (acc[nftType.id] || 0) + cur.amount,
+            };
+        }, {} as Record<string, number>);
+
+        return {types, typesByID, sent};
+    }
+
+    getTypeAverage(cardId: number, typeId: number, cardsAmount: number) {
+        const totalNfts = cardsAmount * 5;
+        const card = this.getCard(cardId);
+        const type = card.types.find(({id}) => id === typeId);
+
+        if (!type) throw new Error(`Type ${typeId} doesnt belong to card ${cardId}`);
+
+        const assured = card.types.reduce((acc, cur) => cur.inferiorLimit + acc, 0)
+        const totalAssured = assured * cardsAmount
+        const noAssured = totalNfts - totalAssured;
+        const amountAssured = type.inferiorLimit * cardsAmount;
+        const mintLeft = type.superiorLimit - type.inferiorLimit
+
+        return noAssured / (card.types.length) + amountAssured
     }
 
     getNftType(nftId: number) {
@@ -100,7 +123,7 @@ export class PacksConfig {
 
 let packsConfig: PacksConfig;
 
-const parseType = (name: TypeName): Omit<Type, 'id'> => ({
+const parseType = (name: TypeName): Omit<Type, "id"> => ({
     name,
     nftsIds: AllNfts[name].map(
         ({properties: {id}}: {properties: {id: {value: number}}}) => id.value
@@ -148,7 +171,7 @@ export const getPacksConfig = () => {
                 getCardType("action", 1, 4),
                 getCardType("reaction", 1, 4),
                 getCardType("wood", 0, 3),
-                getCardType("stone", 2, 5),
+                getCardType("stone", 1, 5),
                 getCardType("iron", 0, 2),
                 getCardType("gold", 0, 1),
             ],
@@ -160,8 +183,8 @@ export const getPacksConfig = () => {
                 getCardType("action", 1, 4),
                 getCardType("reaction", 1, 4),
                 getCardType("stone", 0, 3),
-                getCardType("iron", 1, 5),
-                getCardType("gold", 2, 3),
+                getCardType("iron", 0, 5),
+                getCardType("gold", 1, 3),
                 getCardType("legendary", 0, 1),
             ],
         },
@@ -170,10 +193,10 @@ export const getPacksConfig = () => {
             mintLimit: 5,
             types: [
                 getCardType("action", 1, 4),
-                getCardType("reaction", 1, 4),
+                getCardType("reaction", 0, 4),
                 getCardType("stone", 0, 1),
-                getCardType("iron", 1, 3),
-                getCardType("gold", 2, 4),
+                getCardType("iron", 0, 3),
+                getCardType("gold", 1, 4),
                 getCardType("legendary", 1, 3),
             ],
         },

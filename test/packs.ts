@@ -101,30 +101,245 @@ describe.only("Packs ERC1155", function () {
       return lowerBound < realAmount && upperBound > realAmount;
     };
 
-    it("COMMON_PACK", async () => {
+    it("COMMON_PACK: individual quantities", async () => {
       const option = packsConfig.COMMON_ID,
-        amount = 10;
-      const receipt = await (await pack.unpack(option, accounts[0].address, amount)).wait();
-      const {types, sent} = packsConfig.getCountsInReceipt(receipt, endersGate);
+        amount = 30,
+        card = packsConfig.getCard(packsConfig.COMMON_ID);
+
+      for (let i = 0; i < amount; i++) {
+        const account = ethers.Wallet.createRandom();
+        const receipt = await (await pack.unpack(option, account.address, 1)).wait();
+
+        const {types, sent, typesByID} = packsConfig.getCountsInReceipt(receipt, endersGate);
+        const actualBalance = await endersGate.balanceOfBatch(
+          sent.map(() => account.address),
+          sent.map(({id}) => id)
+        );
+
+        const mintCorrectly = sent.every(
+          ({amount}, i) => amount === actualBalance[i].toNumber()
+        );
+        const guaranteed = card.types.every(
+          (typ) => typ.inferiorLimit <= (typesByID[typ.id] || 0)
+        );
+        const superiorLimit = card.types.every(
+          (typ) => typ.superiorLimit >= (typesByID[typ.id] || 0)
+        );
+
+        if (!mintCorrectly || !guaranteed || !superiorLimit) {
+          console.log(types, sent, actualBalance, {
+            mintCorrectly,
+            guaranteed,
+            superiorLimit,
+          });
+          throw new Error("yikes");
+        }
+        assert(mintCorrectly, "Mint correctly");
+        assert(guaranteed, "Not guaranteed");
+        assert(superiorLimit, "Superior limit");
+      }
+    });
+
+    it("COMMON_PACK: overall quantities", async () => {
+      const account = ethers.Wallet.createRandom();
+      const option = packsConfig.COMMON_ID,
+        amount = 50,
+        card = packsConfig.getCard(packsConfig.COMMON_ID),
+        receipt = await (await pack.unpack(option, account.address, amount)).wait();
+
+      const {types, sent, typesByID} = packsConfig.getCountsInReceipt(receipt, endersGate);
       const actualBalance = await endersGate.balanceOfBatch(
-        sent.map(() => accounts[0].address),
+        sent.map(() => account.address),
         sent.map(({id}) => id)
       );
       const mintAmount = actualBalance.reduce((acc, cur) => acc + cur.toNumber(), 0);
 
-      console.log(types)
-      expect(mintAmount, 'Incorrect mint amount').to.be.equal(amount * 5)
+      expect(mintAmount, "Incorrect mint amount").to.be.equal(amount * 5);
       expect(
         Object.values(types).reduce((acc, cur) => acc + cur, 0),
         "Mint amount mismatch"
       ).to.be.equal(mintAmount);
     });
 
-    it("RARE_PACK", async () => {});
+    it("RARE_PACK:individual quantities", async () => {
+      const option = packsConfig.RARE_ID,
+        amount = 30,
+        card = packsConfig.getCard(packsConfig.RARE_ID);
 
-    it("EPIC_PACK", async () => {});
+      for (let i = 0; i < amount; i++) {
+        const account = ethers.Wallet.createRandom();
+        const receipt = await (await pack.unpack(option, account.address, 1)).wait();
 
-    it("LEGENDARY_PACK", async () => {});
+        const {types, sent, typesByID} = packsConfig.getCountsInReceipt(receipt, endersGate);
+        const actualBalance = await endersGate.balanceOfBatch(
+          sent.map(() => account.address),
+          sent.map(({id}) => id)
+        );
+
+        const mintCorrectly = sent.every(
+          ({amount}, i) => amount === actualBalance[i].toNumber()
+        );
+        const guaranteed = card.types.every(
+          (typ) => typ.inferiorLimit <= (typesByID[typ.id] || 0)
+        );
+        const superiorLimit = card.types.every(
+          (typ) => typ.superiorLimit >= (typesByID[typ.id] || 0)
+        );
+
+        if (!mintCorrectly || !guaranteed || !superiorLimit) {
+          console.log(types, sent, actualBalance, {
+            mintCorrectly,
+            guaranteed,
+            superiorLimit,
+          });
+          throw new Error("yikes");
+        }
+        assert(mintCorrectly, "Mint correctly");
+        assert(guaranteed, "Not guaranteed");
+        assert(superiorLimit, "Superior limit");
+      }
+    });
+
+    it("RARE_PACK: overall quantities", async () => {
+      const account = ethers.Wallet.createRandom();
+      const option = packsConfig.RARE_ID,
+        amount = 50,
+        card = packsConfig.getCard(packsConfig.RARE_ID),
+        receipt = await (await pack.unpack(option, account.address, amount)).wait();
+
+      const {types, sent} = packsConfig.getCountsInReceipt(receipt, endersGate);
+      const actualBalance = await endersGate.balanceOfBatch(
+        sent.map(() => account.address),
+        sent.map(({id}) => id)
+      );
+      const mintAmount = actualBalance.reduce((acc, cur) => acc + cur.toNumber(), 0);
+
+      expect(mintAmount, "Incorrect mint amount").to.be.equal(amount * 5);
+      expect(
+        Object.values(types).reduce((acc, cur) => acc + cur, 0),
+        "Mint amount mismatch"
+      ).to.be.equal(mintAmount);
+    });
+
+    it("EPIC_PACK:individual quantities", async () => {
+      const option = packsConfig.EPIC_ID,
+        amount = 30,
+        card = packsConfig.getCard(packsConfig.EPIC_ID);
+
+      for (let i = 0; i < amount; i++) {
+        const account = ethers.Wallet.createRandom();
+        const receipt = await (await pack.unpack(option, account.address, 1)).wait();
+
+        const {types, sent, typesByID} = packsConfig.getCountsInReceipt(receipt, endersGate);
+        const actualBalance = await endersGate.balanceOfBatch(
+          sent.map(() => account.address),
+          sent.map(({id}) => id)
+        );
+
+        const mintCorrectly = sent.every(
+          ({amount}, i) => amount === actualBalance[i].toNumber()
+        );
+        const guaranteed = card.types.every(
+          (typ) => typ.inferiorLimit <= (typesByID[typ.id] || 0)
+        );
+        const superiorLimit = card.types.every(
+          (typ) => typ.superiorLimit >= (typesByID[typ.id] || 0)
+        );
+
+        if (!mintCorrectly || !guaranteed || !superiorLimit) {
+          console.log(types, sent, actualBalance, {
+            mintCorrectly,
+            guaranteed,
+            superiorLimit,
+          });
+          throw new Error("yikes");
+        }
+        assert(mintCorrectly, "Mint correctly");
+        assert(guaranteed, "Not guaranteed");
+        assert(superiorLimit, "Superior limit");
+      }
+    });
+
+    it("EPIC_PACK: overall quantities", async () => {
+      const account = ethers.Wallet.createRandom();
+      const option = packsConfig.EPIC_ID,
+        amount = 50,
+        card = packsConfig.getCard(packsConfig.EPIC_ID),
+        receipt = await (await pack.unpack(option, account.address, amount)).wait();
+
+      const {types, sent} = packsConfig.getCountsInReceipt(receipt, endersGate);
+      const actualBalance = await endersGate.balanceOfBatch(
+        sent.map(() => account.address),
+        sent.map(({id}) => id)
+      );
+      const mintAmount = actualBalance.reduce((acc, cur) => acc + cur.toNumber(), 0);
+
+      expect(mintAmount, "Incorrect mint amount").to.be.equal(amount * 5);
+      expect(
+        Object.values(types).reduce((acc, cur) => acc + cur, 0),
+        "Mint amount mismatch"
+      ).to.be.equal(mintAmount);
+    });
+
+    it("LEGENDARY_PACK:individual quantities", async () => {
+      const option = packsConfig.LEGENDARY_ID,
+        amount = 30,
+        card = packsConfig.getCard(packsConfig.LEGENDARY_ID);
+
+      for (let i = 0; i < amount; i++) {
+        const account = ethers.Wallet.createRandom();
+        const receipt = await (await pack.unpack(option, account.address, 1)).wait();
+
+        const {types, sent, typesByID} = packsConfig.getCountsInReceipt(receipt, endersGate);
+        const actualBalance = await endersGate.balanceOfBatch(
+          sent.map(() => account.address),
+          sent.map(({id}) => id)
+        );
+
+        const mintCorrectly = sent.every(
+          ({amount}, i) => amount === actualBalance[i].toNumber()
+        );
+        const guaranteed = card.types.every(
+          (typ) => typ.inferiorLimit <= (typesByID[typ.id] || 0)
+        );
+        const superiorLimit = card.types.every(
+          (typ) => typ.superiorLimit >= (typesByID[typ.id] || 0)
+        );
+
+        if (!mintCorrectly || !guaranteed || !superiorLimit) {
+          console.log(types, sent, actualBalance, {
+            mintCorrectly,
+            guaranteed,
+            superiorLimit,
+          });
+          throw new Error("yikes");
+        }
+        assert(mintCorrectly, "Mint correctly");
+        assert(guaranteed, "Not guaranteed");
+        assert(superiorLimit, "Superior limit");
+      }
+    });
+
+    it("LEGENDARY_PACK: overall quantities", async () => {
+      const account = ethers.Wallet.createRandom();
+      const option = packsConfig.LEGENDARY_ID,
+        amount = 50,
+        card = packsConfig.getCard(packsConfig.LEGENDARY_ID),
+        receipt = await (await pack.unpack(option, account.address, amount)).wait();
+
+      const {types, sent} = packsConfig.getCountsInReceipt(receipt, endersGate);
+      const actualBalance = await endersGate.balanceOfBatch(
+        sent.map(() => account.address),
+        sent.map(({id}) => id)
+      );
+      const mintAmount = actualBalance.reduce((acc, cur) => acc + cur.toNumber(), 0);
+
+      expect(mintAmount, "Incorrect mint amount").to.be.equal(amount * 5);
+      expect(
+        Object.values(types).reduce((acc, cur) => acc + cur, 0),
+        "Mint amount mismatch"
+      ).to.be.equal(mintAmount);
+    });
   });
 
   describe("URI settings and minting", async () => {
