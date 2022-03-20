@@ -16,7 +16,11 @@ const setPacksState = async ({
   endersGate: EndersGate;
 }) => {
   await endersGate.grantRole(await endersGate.MINTER_ROLE(), pack.address);
+  console.log('MINTER ROLE')
+
   await pack.setState(endersGate.address, packsConfig.NUM_CARDS, packsConfig.NUM_TYPES, 5);
+  console.log('CONFIG')
+
   for await (let i of packsConfig.cards) {
     await pack.setOptionSettings(
       i.id,
@@ -26,7 +30,10 @@ const setPacksState = async ({
       i.types.map(({superiorLimit}) => superiorLimit)
     );
   }
+  console.log('CARDS')
+
   for await (let i of packsConfig.types) await pack.setTokensForTypes(i.id, i.nftsIds);
+  console.log('TYPES')
 
   const hashesData = Object.entries(metadataLinks).map((entry: any) => ({
     id: entry[0],
@@ -36,6 +43,7 @@ const setPacksState = async ({
     hashesData.map(({id}) => id),
     hashesData.map(({hash}) => hash)
   );
+  console.log('HASHES')
 };
 
 async function main(): Promise<void> {

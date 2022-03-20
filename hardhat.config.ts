@@ -53,6 +53,7 @@ const config: HardhatUserConfig = {
     harmony_test: {
       url: `https://api.s0.b.hmny.io`,
       accounts: [process.env.PRIVATE_KEY || ''],
+      timeout: 120000000,
     },
 
     //ropsten: getChainConfig("ropsten"),
