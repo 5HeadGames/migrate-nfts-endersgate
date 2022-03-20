@@ -4,6 +4,8 @@ import {EndersGate, EndersPack} from "../types";
 import {uploadIpfs, loadJsonFile, writeJsonFile} from "../utils";
 import {getPacksConfig, PacksConfig} from "../utils/packs";
 
+const metadataLinks = require("../nfts/metadata/packsMetadata.json");
+
 const setPacksState = async ({
   pack,
   packsConfig,
@@ -14,34 +16,26 @@ const setPacksState = async ({
   endersGate: EndersGate;
 }) => {
   await endersGate.grantRole(await endersGate.MINTER_ROLE(), pack.address);
-  console.log("ROLE");
-  await pack.setState(
-    endersGate.address,
-    packsConfig.NUM_CARDS,
-    packsConfig.NUM_CLASSES,
-    packsConfig.NUM_TYPES,
-    5
-  );
-  console.log("STATE");
+  await pack.setState(endersGate.address, packsConfig.NUM_CARDS, packsConfig.NUM_TYPES, 5);
   for await (let i of packsConfig.cards) {
-    const classes = i.classes.map(({id}) => packsConfig.getClass(id));
     await pack.setOptionSettings(
       i.id,
-      classes.map(({id}) => id),
-      classes.map(({probability}) => probability)
-    );
-  }
-  console.log("CARDS");
-  for await (let i of packsConfig.classes) {
-    await pack.setTokenTypeForClass(
-      i.id,
+      i.mintLimit,
       i.types.map(({id}) => id),
-      i.types.map(({amount}) => amount)
+      i.types.map(({inferiorLimit}) => inferiorLimit),
+      i.types.map(({superiorLimit}) => superiorLimit)
     );
   }
-  console.log("CLASSES");
   for await (let i of packsConfig.types) await pack.setTokensForTypes(i.id, i.nftsIds);
-  console.log("TYPES");
+
+  const hashesData = Object.entries(metadataLinks).map((entry: any) => ({
+    id: entry[0],
+    hash: entry[1].split("/").reverse()[0],
+  }));
+  await endersGate.setIpfsHashBatch(
+    hashesData.map(({id}) => id),
+    hashesData.map(({hash}) => hash)
+  );
 };
 
 async function main(): Promise<void> {
@@ -71,7 +65,7 @@ async function main(): Promise<void> {
     "Enders Gate Pack",
     "PACK",
     ipfsHash.split("/").reverse()[0],
-    "https://ipfs.io/ipfs/"
+    "https://ipfs.moralis.io:2053/ipfs/"
   );
   console.log("Pack", pack.address);
 

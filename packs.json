@@ -1,0 +1,174 @@
+{
+  "common": {
+    "name": "Common Pack",
+    "type": "ERC1155",
+    "description": "Enders Gate Common pack",
+    "image": "QmNTGpChMTisB1j2UnynCGn9ihT1VyEiEir48EP5NgsqyY",
+    "symbol": "PACK",
+    "properties": {
+      "id": {
+        "name": "id",
+        "value": 0
+      },
+      "name": {
+        "name": "name",
+        "value": "Common pack"
+      },
+      "description": {
+        "name": "description",
+        "value": "Enders Gate Common pack"
+      },
+      "image": {
+        "name": "image",
+        "value": "https://ipfs.moralis.io:2053/ipfs/QmNTGpChMTisB1j2UnynCGn9ihT1VyEiEir48EP5NgsqyY"
+      }
+    },
+    "attributes": [
+      {
+        "trait_type": "id",
+        "value": 0
+      },
+      {
+        "trait_type": "name",
+        "value": "Common pack"
+      },
+      {
+        "trait_type": "description",
+        "value": "Enders Gate Common pack"
+      },
+      {
+        "trait_type": "image",
+        "value": "https://ipfs.moralis.io:2053/ipfs/QmNTGpChMTisB1j2UnynCGn9ihT1VyEiEir48EP5NgsqyY"
+      }
+    ]
+  },
+  "rare": {
+    "name": "Rare Pack",
+    "type": "ERC1155",
+    "description": "Enders Gate Rare pack",
+    "image": "QmNTGpChMTisB1j2UnynCGn9ihT1VyEiEir48EP5NgsqyY",
+    "symbol": "PACK",
+    "properties": {
+      "id": {
+        "name": "id",
+        "value": 1
+      },
+      "name": {
+        "name": "name",
+        "value": "Rare pack"
+      },
+      "description": {
+        "name": "description",
+        "value": "Enders Gate Rare pack"
+      },
+      "image": {
+        "name": "image",
+        "value": "https://ipfs.moralis.io:2053/ipfs/QmNTGpChMTisB1j2UnynCGn9ihT1VyEiEir48EP5NgsqyY"
+      }
+    },
+    "attributes": [
+      {
+        "trait_type": "id",
+        "value": 1
+      },
+      {
+        "trait_type": "name",
+        "value": "Rare pack"
+      },
+      {
+        "trait_type": "description",
+        "value": "Enders Gate Rare pack"
+      },
+      {
+        "trait_type": "image",
+        "value": "https://ipfs.moralis.io:2053/ipfs/QmNTGpChMTisB1j2UnynCGn9ihT1VyEiEir48EP5NgsqyY"
+      }
+    ]
+  },
+  "epic": {
+    "name": "Epic Pack",
+    "type": "ERC1155",
+    "description": "Enders Gate Epic pack",
+    "image": "QmNTGpChMTisB1j2UnynCGn9ihT1VyEiEir48EP5NgsqyY",
+    "symbol": "PACK",
+    "properties": {
+      "id": {
+        "name": "id",
+        "value": 2
+      },
+      "name": {
+        "name": "name",
+        "value": "Epic pack"
+      },
+      "description": {
+        "name": "description",
+        "value": "Enders Gate Epic pack"
+      },
+      "image": {
+        "name": "image",
+        "value": "https://ipfs.moralis.io:2053/ipfs/QmNTGpChMTisB1j2UnynCGn9ihT1VyEiEir48EP5NgsqyY"
+      }
+    },
+    "attributes": [
+      {
+        "trait_type": "id",
+        "value": 2
+      },
+      {
+        "trait_type": "name",
+        "value": "Epic pack"
+      },
+      {
+        "trait_type": "description",
+        "value": "Enders Gate Epic pack"
+      },
+      {
+        "trait_type": "image",
+        "value": "https://ipfs.moralis.io:2053/ipfs/QmNTGpChMTisB1j2UnynCGn9ihT1VyEiEir48EP5NgsqyY"
+      }
+    ]
+  },
+  "legendary": {
+    "name": "Legendary Pack",
+    "type": "ERC1155",
+    "description": "Enders Gate Legendary pack",
+    "image": "QmNTGpChMTisB1j2UnynCGn9ihT1VyEiEir48EP5NgsqyY",
+    "symbol": "PACK",
+    "properties": {
+      "id": {
+        "name": "id",
+        "value": 3
+      },
+      "name": {
+        "name": "name",
+        "value": "Legendary pack"
+      },
+      "description": {
+        "name": "description",
+        "value": "Enders Gate Legendary pack"
+      },
+      "image": {
+        "name": "image",
+        "value": "https://ipfs.moralis.io:2053/ipfs/QmNTGpChMTisB1j2UnynCGn9ihT1VyEiEir48EP5NgsqyY"
+      }
+    },
+    "attributes": [
+      {
+        "trait_type": "id",
+        "value": 3
+      },
+      {
+        "trait_type": "name",
+        "value": "Legendary pack"
+      },
+      {
+        "trait_type": "description",
+        "value": "Enders Gate Legendary pack"
+      },
+      {
+        "trait_type": "image",
+        "value": "https://ipfs.moralis.io:2053/ipfs/QmNTGpChMTisB1j2UnynCGn9ihT1VyEiEir48EP5NgsqyY"
+      }
+    ]
+  }
+}
