@@ -5,22 +5,33 @@ import {TransactionReceipt} from "@ethersproject/providers";
 const appRoot = require("app-root-path");
 
 export const uploadIpfs = async ({path}: {path: string}) => {
-    const name = path.split("/").reverse()[0];
+    try {
+        const name = path
+            .split("/")
+            .reverse()[0]
+            .replace(".", "")
+            .replace("'", "")
+            .replace(":", "")
+            .replace("&", "")
+            .replace("_", "").replace('-', '');
 
-    await Moralis.start({
-        serverUrl: process.env.MORALIS_SERVER_URL,
-        appId: process.env.MORALIS_APP_ID,
-        masterKey: process.env.MORALIS_MASTER_KEY,
-    });
+        await Moralis.start({
+            serverUrl: process.env.MORALIS_SERVER_URL,
+            appId: process.env.MORALIS_APP_ID,
+            masterKey: process.env.MORALIS_MASTER_KEY,
+        });
 
-    console.log({path: `${appRoot}${path}`});
-    const buff = fs.readFileSync(`${appRoot}${path}`).toString("base64");
-    const file = new Moralis.File(name, {base64: buff});
+        const buff = fs.readFileSync(`${appRoot}${path}`).toString("base64");
+        const file = new Moralis.File(name, {base64: buff});
 
-    console.log("UPLOADING...", `${appRoot}${path}`);
-    await file.saveIPFS({useMasterKey: true});
+        console.log("UPLOADING...", `${appRoot}${path}`);
+        await file.saveIPFS({useMasterKey: true});
 
-    return (file as any).ipfs();
+        return (file as any).ipfs();
+    } catch (err: any) {
+        console.log(`ERROR upload ${path}`, err.message);
+    }
+    return "";
 };
 
 export const loadJsonFile = (file: string) => {
@@ -43,12 +54,15 @@ export const writeJsonFile = (args: {path: string; data: any}) => {
         null,
         2
     );
-    console.log('Writting', appRoot + args.path)
+    console.log("Writting", appRoot + args.path);
     fs.writeFileSync(appRoot + args.path, parsedData);
     console.log(`Generated ${appRoot}${args.path}`);
 };
 
-export const getEventLogs = (iface: any, logs: TransactionReceipt['logs'], filter: (log: any) => boolean) => {
-    return logs.filter(filter).map(logs => iface.parseLog(logs))
-}
-
+export const getEventLogs = (
+    iface: any,
+    logs: TransactionReceipt["logs"],
+    filter: (log: any) => boolean
+) => {
+    return logs.filter(filter).map((logs) => iface.parseLog(logs));
+};

@@ -1,14 +1,15 @@
-const ExcelJS = require("exceljs");
-const {writeJsonFile} = require("./utils/index");
+import hardhat from "hardhat";
+import {writeJsonFile, uploadIpfs} from "../utils/index";
 
+const ExcelJS = require("exceljs");
 const workbook = new ExcelJS.Workbook();
 
-const formatCardData = (data) => {
+const formatCardData = (data: Record<string, string | number>) => {
   return {
     name: data.name,
     type: "ERC1155",
     description: data.description,
-    image: "",
+    image: data.image,
     symbol: "GATE",
     properties: Object.entries(data).reduce(
       (acc, cur) => ({
@@ -29,12 +30,12 @@ const formatCardData = (data) => {
 
 const init = async () => {
   await workbook.xlsx.readFile("cards.xlsx");
-  let cards = {};
+  let cards = {} as Record<string, any>;
   let cardId = 0;
 
-  workbook.worksheets.forEach((sheet, i) => {
+  workbook.worksheets.forEach((sheet: any, i: number) => {
     if (i <= 0) return;
-    sheet.eachRow((row, j) => {
+    sheet.eachRow((row: any, j: number) => {
       if (j <= 3) return;
       const index = sheet.name.toLowerCase();
       const {values} = row;
@@ -47,12 +48,14 @@ const init = async () => {
           ADOTurn: values[4],
           rarity: values[5],
           description: values[6],
-          image: values[7],
+          image: `${index}.${values[2].toUpperCase()}`,
         });
         if (Array.isArray(cards[index])) cards[index].push(insertValue);
         else cards[index] = [insertValue];
       } else if (i < 8) {
         //omit avatars
+        if (values[2] === undefined) return;
+
         const insertValue = formatCardData({
           id: cardId++,
           name: values[2],
@@ -64,13 +67,36 @@ const init = async () => {
           gold: values[8],
           description: values[9],
           duplicates: values[10] || 0,
-          image: values[11] || 0,
+          image: `${index}.${values[2].toUpperCase()}`,
         });
         if (Array.isArray(cards[index])) cards[index].push(insertValue);
         else cards[index] = [insertValue];
       }
     });
   });
+
+  const allCards = Object.values(cards).reduce((acc: any[], cur) => acc.concat(cur), []);
+  for await (let cardType of allCards) {
+    try {
+      const [type, fileName] = [
+        cardType.image.split(".")[0],
+        cardType.image.split(".").slice(1).join("."),
+      ];
+      const path = `/nfts/images/${cardType.image.replace(".", "/")}.png`;
+      const ipfs = await uploadIpfs({path});
+      const id = cardType.properties.id.value;
+      const index = cards[type].findIndex((card: any) => Number(card.properties.id.value) === id);
+      const traitImageIndex = cards[type][index].attributes.findIndex(
+        ({trait_type}: any) => trait_type === "image"
+      );
+
+      cards[type][index].image = ipfs.split("/").reverse()[0];
+      cards[type][index].properties.image.value = ipfs;
+      cards[type][index].attributes[traitImageIndex].value = ipfs;
+    } catch (err: any) {
+      console.log("WEIRD ERROR", cardType.properties.id.value, err.message);
+    }
+  }
 
   writeJsonFile({
     path: "/cards.json",

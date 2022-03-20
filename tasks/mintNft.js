@@ -21,17 +21,17 @@ task("mint", "Mint nft")
     const signer = await ethers.getSigner()
     const endersGate = (await ethers.getContractFactory('EndersGate')).attach(addresses.endersGate)
 
-    if (!image) {
-      await hardhat.run('upload:image', {name})
-      image = getFile(name)[name]
-    }
+    //if (!image) {
+    //await hardhat.run('upload:image', {name})
+    //image = getFile(name)[name]
+    //}
 
-    if (!metadata) {
-      await hardhat.run('upload:metadata', {name})
-      metadata = getFile(name)[name]
-    }
+    //if (!metadata) {
+    //await hardhat.run('upload:metadata', {name})
+    //metadata = getFile(name)[name]
+    //}
 
-    console.log('Minting', signer.address, id, amount, metadata.hash)
-    const tx = await endersGate.mint(signer.address, id, amount, metadata.hash)
-    console.log('SUCCESS', (await tx.wait()).transactionHash)
+    //console.log('Minting', signer.address, id, amount, metadata.hash)
+    //const tx = await endersGate.mint(signer.address, id, amount, metadata.hash)
+    //console.log('SUCCESS', (await tx.wait()).transactionHash)
   });
