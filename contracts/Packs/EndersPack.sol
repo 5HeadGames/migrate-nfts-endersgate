@@ -17,6 +17,13 @@ import "./LootBoxRandomness.sol";
 contract EndersPack is ERC1155, ReentrancyGuard, Ownable, ERC1155Receiver {
   using LootBoxRandomness for LootBoxRandomness.LootBoxRandomnessState;
 
+  event LootBoxOpened(
+    uint256 indexed optionId,
+    address indexed buyer,
+    uint256 boxesPurchased,
+    uint256 itemsMinted
+  );
+
   LootBoxRandomness.LootBoxRandomnessState state;
 
   /***

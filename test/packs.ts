@@ -7,14 +7,15 @@ import {getPacksConfig} from "../utils/packs";
 
 const hash = ethers.utils.id(Math.random().toString());
 const URI = "https://some/url/";
+const TEST_AMOUNT = 1;
 
 describe.only("Packs ERC1155", function () {
-  let endersGate: EndersGate, accounts: SignerWithAddress[], pack: EndersPack;
+  let endersGate: EndersGate, accounts: SignerWithAddress[], pack: EndersPack, library: any;
   const packsConfig = getPacksConfig();
 
   describe("Configuration", () => {
     it("Should deploy properly", async () => {
-      const library = await (await ethers.getContractFactory("LootBoxRandomness")).deploy();
+      library = await (await ethers.getContractFactory("LootBoxRandomness")).deploy();
 
       accounts = await ethers.getSigners();
       endersGate = (await (
@@ -103,7 +104,7 @@ describe.only("Packs ERC1155", function () {
 
     it("COMMON_PACK: individual quantities", async () => {
       const option = packsConfig.COMMON_ID,
-        amount = 30,
+        amount = TEST_AMOUNT,
         card = packsConfig.getCard(packsConfig.COMMON_ID);
 
       for (let i = 0; i < amount; i++) {
@@ -143,7 +144,7 @@ describe.only("Packs ERC1155", function () {
     it("COMMON_PACK: overall quantities", async () => {
       const account = ethers.Wallet.createRandom();
       const option = packsConfig.COMMON_ID,
-        amount = 50,
+        amount = TEST_AMOUNT,
         card = packsConfig.getCard(packsConfig.COMMON_ID),
         receipt = await (await pack.unpack(option, account.address, amount)).wait();
 
@@ -163,7 +164,7 @@ describe.only("Packs ERC1155", function () {
 
     it("RARE_PACK:individual quantities", async () => {
       const option = packsConfig.RARE_ID,
-        amount = 30,
+        amount = TEST_AMOUNT,
         card = packsConfig.getCard(packsConfig.RARE_ID);
 
       for (let i = 0; i < amount; i++) {
@@ -203,7 +204,7 @@ describe.only("Packs ERC1155", function () {
     it("RARE_PACK: overall quantities", async () => {
       const account = ethers.Wallet.createRandom();
       const option = packsConfig.RARE_ID,
-        amount = 50,
+        amount = TEST_AMOUNT,
         card = packsConfig.getCard(packsConfig.RARE_ID),
         receipt = await (await pack.unpack(option, account.address, amount)).wait();
 
@@ -223,7 +224,7 @@ describe.only("Packs ERC1155", function () {
 
     it("EPIC_PACK:individual quantities", async () => {
       const option = packsConfig.EPIC_ID,
-        amount = 30,
+        amount = TEST_AMOUNT,
         card = packsConfig.getCard(packsConfig.EPIC_ID);
 
       for (let i = 0; i < amount; i++) {
@@ -263,7 +264,7 @@ describe.only("Packs ERC1155", function () {
     it("EPIC_PACK: overall quantities", async () => {
       const account = ethers.Wallet.createRandom();
       const option = packsConfig.EPIC_ID,
-        amount = 50,
+        amount = TEST_AMOUNT,
         card = packsConfig.getCard(packsConfig.EPIC_ID),
         receipt = await (await pack.unpack(option, account.address, amount)).wait();
 
@@ -283,7 +284,7 @@ describe.only("Packs ERC1155", function () {
 
     it("LEGENDARY_PACK:individual quantities", async () => {
       const option = packsConfig.LEGENDARY_ID,
-        amount = 30,
+        amount = TEST_AMOUNT,
         card = packsConfig.getCard(packsConfig.LEGENDARY_ID);
 
       for (let i = 0; i < amount; i++) {
@@ -323,7 +324,7 @@ describe.only("Packs ERC1155", function () {
     it("LEGENDARY_PACK: overall quantities", async () => {
       const account = ethers.Wallet.createRandom();
       const option = packsConfig.LEGENDARY_ID,
-        amount = 50,
+        amount = TEST_AMOUNT,
         card = packsConfig.getCard(packsConfig.LEGENDARY_ID),
         receipt = await (await pack.unpack(option, account.address, amount)).wait();
 
@@ -358,6 +359,19 @@ describe.only("Packs ERC1155", function () {
       );
       await expect(pack.setIpfsHashBatch(ids, hashes)).to.not.revertedWith("");
       expect(await pack.uri(ids[0])).to.be.equal(URI + hashes[0]);
+    });
+  });
+
+  describe("Packs should emmit unpack event", async () => {
+    it("Should have fired the unpack event on this block", async () => {
+      const logs = (
+        await ethers.provider.getLogs({address: pack.address, fromBlock: 0})
+      ).map((ev) =>
+        ev.topics[0] === "0xd8c55eae4f6ffa3dfbfba23f50cb5e242e86d347736fe1b910ad11bff616d839"
+          ? library.interface.parseLog(ev)
+          : pack.interface.parseLog(ev)
+      );
+      console.log(logs);
     });
   });
 });

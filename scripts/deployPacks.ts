@@ -39,7 +39,7 @@ const setPacksState = async ({
     id: entry[0],
     hash: entry[1].split("/").reverse()[0],
   }));
-  await endersGate.setIpfsHashBatch(
+  await pack.setIpfsHashBatch(
     hashesData.map(({id}) => id),
     hashesData.map(({hash}) => hash)
   );
