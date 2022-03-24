@@ -1,5 +1,4 @@
-import {ethers, upgrades, network} from "hardhat";
-import {BigNumber, BigNumberish} from "@ethersproject/bignumber";
+import {ethers, network} from "hardhat";
 import {expect, assert} from "chai";
 import {SignerWithAddress} from "@nomiclabs/hardhat-ethers/dist/src/signer-with-address";
 import {EndersGate, EndersPack} from "../types";
@@ -30,7 +29,7 @@ describe.only("Packs ERC1155", function () {
       ).deploy("Enders Gate Pack", "PACK", URI, "https://ipfs.io/ipfs/");
 
       await endersGate.grantRole(await endersGate.MINTER_ROLE(), pack.address);
-      await endersGate.mintBatch(pack.address, [0, 1, 2], [100, 100, 100], ["", "", ""]);
+      await endersGate.mintBatch(pack.address, [0, 1, 2], [200, 200, 200], ["", "", ""]);
       await pack.setState(endersGate.address, packsConfig.NUM_CARDS, packsConfig.NUM_TYPES, 5);
     });
 
@@ -343,7 +342,7 @@ describe.only("Packs ERC1155", function () {
     });
   });
 
-  describe("URI settings and minting", async () => {
+  describe("URI settings and minting/burning", async () => {
     it("Should set uri for only setter role", async () => {
       await pack.setURI(URI);
       await expect(pack.connect(accounts[1]).setURI("SOME FALCE URI")).to.revertedWith("");
@@ -360,18 +359,81 @@ describe.only("Packs ERC1155", function () {
       await expect(pack.setIpfsHashBatch(ids, hashes)).to.not.revertedWith("");
       expect(await pack.uri(ids[0])).to.be.equal(URI + hashes[0]);
     });
+
+    it("Should burn tokens", async () => {
+      const balance = await pack.balanceOf(accounts[0].address, packsConfig.COMMON_ID);
+      await pack.burn(accounts[0].address, packsConfig.COMMON_ID, 1);
+      const currentBalance = await pack.balanceOf(accounts[0].address, packsConfig.COMMON_ID);
+
+      expect(balance.sub(1).toString()).to.equal(currentBalance.toString());
+    });
+
+    it("Should burn batch tokens", async () => {
+      const balances = await pack.balanceOfBatch(
+        [accounts[0].address, accounts[0].address],
+        [packsConfig.COMMON_ID, packsConfig.LEGENDARY_ID]
+      );
+      await pack.burnBatch(accounts[0].address, [packsConfig.COMMON_ID, packsConfig.LEGENDARY_ID], [1, 1]);
+      const currentBalances = await pack.balanceOfBatch(
+        [accounts[0].address, accounts[0].address],
+        [packsConfig.COMMON_ID, packsConfig.LEGENDARY_ID]
+      );
+
+      balances.forEach((bal, i) => {
+        expect(bal.sub(1).toString()).to.equal(currentBalances[i].toString())
+      })
+    });
   });
 
-  describe("Packs should emmit unpack event", async () => {
+  describe("Packs should emmit correct events", async () => {
     it("Should have fired the unpack event on this block", async () => {
-      const logs = (
-        await ethers.provider.getLogs({address: pack.address, fromBlock: 0})
-      ).map((ev) =>
-        ev.topics[0] === "0xd8c55eae4f6ffa3dfbfba23f50cb5e242e86d347736fe1b910ad11bff616d839"
-          ? library.interface.parseLog(ev)
-          : pack.interface.parseLog(ev)
+      await network.provider.send("evm_mine");
+
+      const account = ethers.Wallet.createRandom();
+      const option = packsConfig.COMMON_ID,
+        amount = 10;
+      const currentBlock = await ethers.provider.getBlockNumber();
+
+      await (await pack.unpack(option, account.address, amount)).wait();
+
+      const packLogs = (
+        await ethers.provider.getLogs({address: pack.address, fromBlock: currentBlock})
+      ).map((ev) => pack.interface.parseLog(ev));
+      const nftLogs = (
+        await ethers.provider.getLogs({address: endersGate.address, fromBlock: currentBlock})
+      ).map((ev) => endersGate.interface.parseLog(ev));
+
+      expect(packLogs.filter(({name}) => name === "LootBoxOpened").length).to.be.equal(
+        amount
       );
-      console.log(logs);
+      expect(nftLogs.filter(({name}) => name === "TransferSingle").length).to.be.equal(
+        amount * 5
+      );
+    });
+  });
+
+  describe("Security checks", async () => {
+    it("Should not allow contracts to unpack", async () => {
+      const amount = 10;
+      const ID = packsConfig.COMMON_ID;
+      const accountContract = await (await ethers.getContractFactory("Account")).deploy();
+
+      const signature = pack.interface.encodeFunctionData("unpack", [
+        ID,
+        accountContract.address,
+        amount,
+      ]);
+
+      await pack.safeTransferFrom(
+        accounts[0].address,
+        accountContract.address,
+        ID,
+        amount,
+        []
+      );
+      await expect(
+        accountContract.execute([pack.address], [0], [signature])
+      ).to.be.revertedWith("");
     });
   });
 });

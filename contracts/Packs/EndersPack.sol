@@ -4,8 +4,10 @@ pragma solidity ^0.8.10;
 
 import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
 import "@openzeppelin/contracts/token/ERC1155/ERC1155.sol";
+import "@openzeppelin/contracts/token/ERC1155/extensions/ERC1155Burnable.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/token/ERC1155/utils/ERC1155Receiver.sol";
+import "@openzeppelin/contracts/utils/Address.sol";
 
 import "./LootBoxRandomness.sol";
 
@@ -14,7 +16,8 @@ import "./LootBoxRandomness.sol";
  * CreatureAccessoryLootBox - a randomized and openable lootbox of Creature
  * Accessories.
  */
-contract EndersPack is ERC1155, ReentrancyGuard, Ownable, ERC1155Receiver {
+contract EndersPack is ERC1155, ERC1155Burnable, ReentrancyGuard, Ownable, ERC1155Receiver {
+  using Address for address;
   using LootBoxRandomness for LootBoxRandomness.LootBoxRandomnessState;
 
   event LootBoxOpened(
@@ -54,7 +57,7 @@ contract EndersPack is ERC1155, ReentrancyGuard, Ownable, ERC1155Receiver {
     uint256 _numOptions,
     uint256 _numTypes,
     uint256 _seed
-  ) public onlyOwner {
+  ) external onlyOwner {
     LootBoxRandomness.initState(state, _factoryAddress, _numOptions, _numTypes, _seed);
   }
 
@@ -64,7 +67,7 @@ contract EndersPack is ERC1155, ReentrancyGuard, Ownable, ERC1155Receiver {
     uint256[] memory _typeIds,
     uint256[] memory _typeInferiorLimit,
     uint256[] memory _typeSuperiorLimit
-  ) public onlyOwner {
+  ) external onlyOwner {
     LootBoxRandomness.setOptionSettings(
       state,
       _option,
@@ -75,7 +78,7 @@ contract EndersPack is ERC1155, ReentrancyGuard, Ownable, ERC1155Receiver {
     );
   }
 
-  function setTokensForTypes(uint256 _typeId, uint256[] memory _tokenIds) public onlyOwner {
+  function setTokensForTypes(uint256 _typeId, uint256[] memory _tokenIds) external onlyOwner {
     LootBoxRandomness.setTokensForTypes(state, _typeId, _tokenIds);
   }
 
@@ -87,11 +90,13 @@ contract EndersPack is ERC1155, ReentrancyGuard, Ownable, ERC1155Receiver {
     uint256 _optionId,
     address _toAddress,
     uint256 _amount
-  ) external nonReentrant {
+  ) external nonReentrant returns (uint256) {
+    require(!_msgSender().isContract(), "Only EOA accounts");
+    require(!_toAddress.isContract(), "Only EOA accounts");
     // This will underflow if _msgSender() does not own enough tokens.
     _burn(_msgSender(), _optionId, _amount);
     // Mint nfts contained by LootBox
-    LootBoxRandomness._mint(state, _optionId, _toAddress, _amount, "", address(this));
+    return LootBoxRandomness._mint(state, _optionId, _toAddress, _amount, "", address(this));
   }
 
   /**
@@ -102,7 +107,7 @@ contract EndersPack is ERC1155, ReentrancyGuard, Ownable, ERC1155Receiver {
     uint256 _optionId,
     uint256 _amount,
     bytes memory _data
-  ) public onlyOwner {
+  ) external onlyOwner {
     require(_optionId < state.numOptions, "Lootbox: Invalid Option");
     // Option ID is used as a token ID here
     _mint(_to, _optionId, _amount, _data);
@@ -113,7 +118,7 @@ contract EndersPack is ERC1155, ReentrancyGuard, Ownable, ERC1155Receiver {
     uint256[] memory ids,
     uint256[] memory amounts,
     bytes memory
-  ) public onlyOwner {
+  ) external onlyOwner {
     _mintBatch(to, ids, amounts, "");
   }
 
@@ -171,15 +176,15 @@ contract EndersPack is ERC1155, ReentrancyGuard, Ownable, ERC1155Receiver {
         : "";
   }
 
-  function setURI(string memory newuri) public onlyOwner {
+  function setURI(string memory newuri) external onlyOwner {
     tokenURIPrefix = newuri;
   }
 
-  function setContractURI(string memory newuri) public onlyOwner {
+  function setContractURI(string memory newuri) external onlyOwner {
     contractURI = newuri;
   }
 
-  function setIpfsHashBatch(uint256[] memory ids, string[] memory hashes) public onlyOwner {
+  function setIpfsHashBatch(uint256[] memory ids, string[] memory hashes) external onlyOwner {
     _setIpfsHashBatch(ids, hashes);
   }
 

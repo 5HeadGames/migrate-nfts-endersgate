@@ -130,7 +130,7 @@ library LootBoxRandomness {
     uint256 _amount,
     bytes memory, /* _data */
     address _owner
-  ) internal {
+  ) internal returns (uint256) {
     require(_optionId < _state.numOptions, "_option out of range");
 
     OptionSettings memory settings = _state.optionToSettings[_optionId];
@@ -161,10 +161,11 @@ library LootBoxRandomness {
       }
 
       finalMinted += totalMinted;
+      emit LootBoxOpened(_optionId, _toAddress, _amount, totalMinted);
     }
 
     // Event emissions
-    emit LootBoxOpened(_optionId, _toAddress, _amount, finalMinted);
+    return finalMinted;
   }
 
   function _sendTokensWithType(
