@@ -1,4 +1,5 @@
 import {ethers, network} from "hardhat";
+import {getContractAddress} from "@ethersproject/address";
 import {expect, assert} from "chai";
 import {SignerWithAddress} from "@nomiclabs/hardhat-ethers/dist/src/signer-with-address";
 import {EndersGate, EndersPack} from "../types";
@@ -7,7 +8,7 @@ import {getPacksConfig} from "../utils/packs";
 const hash = ethers.utils.id(Math.random().toString());
 const URI = "https://some/url/";
 const TEST_AMOUNT = 1;
-let accountCount = 3
+let accountCount = 3;
 
 describe("Packs ERC1155", function () {
   let endersGate: EndersGate, accounts: SignerWithAddress[], pack: EndersPack, library: any;
@@ -382,15 +383,19 @@ describe("Packs ERC1155", function () {
         [accounts[0].address, accounts[0].address],
         [packsConfig.COMMON_ID, packsConfig.LEGENDARY_ID]
       );
-      await pack.burnBatch(accounts[0].address, [packsConfig.COMMON_ID, packsConfig.LEGENDARY_ID], [1, 1]);
+      await pack.burnBatch(
+        accounts[0].address,
+        [packsConfig.COMMON_ID, packsConfig.LEGENDARY_ID],
+        [1, 1]
+      );
       const currentBalances = await pack.balanceOfBatch(
         [accounts[0].address, accounts[0].address],
         [packsConfig.COMMON_ID, packsConfig.LEGENDARY_ID]
       );
 
       balances.forEach((bal, i) => {
-        expect(bal.sub(1).toString()).to.equal(currentBalances[i].toString())
-      })
+        expect(bal.sub(1).toString()).to.equal(currentBalances[i].toString());
+      });
     });
   });
 
@@ -428,10 +433,7 @@ describe("Packs ERC1155", function () {
       const ID = packsConfig.COMMON_ID;
       const accountContract = await (await ethers.getContractFactory("Account")).deploy();
 
-      const signature = pack.interface.encodeFunctionData("unpack", [
-        ID,
-        amount,
-      ]);
+      const signature = pack.interface.encodeFunctionData("unpack", [ID, amount]);
 
       await pack.safeTransferFrom(
         accounts[0].address,
@@ -443,6 +445,24 @@ describe("Packs ERC1155", function () {
       await expect(
         accountContract.execute([pack.address], [0], [signature])
       ).to.be.revertedWith("");
+    });
+
+    it("Should not allow contracts to unpack from constructor", async () => {
+      const amount = 10;
+      const ID = packsConfig.COMMON_ID;
+      const signature = pack.interface.encodeFunctionData("unpack", [ID, amount]);
+      const nonce = await accounts[0].getTransactionCount();
+
+      const futureAddress = getContractAddress({
+        from: accounts[0].address,
+        nonce,
+      });
+      await pack.safeTransferFrom(accounts[0].address, futureAddress, ID, amount, []);
+      await expect(
+        (
+          await ethers.getContractFactory("AccountConstructor")
+        ).deploy([pack.address], [0], [signature])
+        , 'Not unpack').to.be.revertedWith("");
     });
   });
 });
