@@ -86,17 +86,14 @@ contract EndersPack is ERC1155, ERC1155Burnable, ReentrancyGuard, Ownable, ERC11
   // MAIN FUNCTIONS
   //////
 
-  function unpack(
-    uint256 _optionId,
-    address _toAddress,
-    uint256 _amount
-  ) external nonReentrant returns (uint256) {
-    require(!_msgSender().isContract(), "Only EOA accounts");
-    require(!_toAddress.isContract(), "Only EOA accounts");
+  function unpack(uint256 _optionId, uint256 _amount) external nonReentrant returns (uint256) {
+    address sender = _msgSender();
+    require(!sender.isContract(), "Only EOA accounts");
+    require(tx.origin == sender, "Only EOA accounts");
     // This will underflow if _msgSender() does not own enough tokens.
-    _burn(_msgSender(), _optionId, _amount);
+    _burn(sender, _optionId, _amount);
     // Mint nfts contained by LootBox
-    return LootBoxRandomness._mint(state, _optionId, _toAddress, _amount, "", address(this));
+    return LootBoxRandomness._mint(state, _optionId, sender, _amount, "", address(this));
   }
 
   /**

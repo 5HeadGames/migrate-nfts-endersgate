@@ -5,7 +5,7 @@ import "solidity-coverage";
 import "@openzeppelin/hardhat-upgrades";
 import "@nomiclabs/hardhat-etherscan";
 import "hardhat-contract-sizer";
-import path from 'path'
+import path from "path";
 
 import "./tasks";
 
@@ -39,6 +39,9 @@ const config: HardhatUserConfig = {
   networks: {
     hardhat: {
       chainId: chainIds.hardhat,
+      accounts: {
+        count: 1000,
+      },
     },
     //goerli: getChainConfig("goerli"),
     //kovan: getChainConfig("kovan"),
@@ -48,11 +51,11 @@ const config: HardhatUserConfig = {
     },
     harmony: {
       url: `https://api.harmony.one`,
-      accounts: [process.env.PRIVATE_KEY || ''],
+      accounts: [process.env.PRIVATE_KEY || ""],
     },
     harmony_test: {
       url: `https://api.s0.b.hmny.io`,
-      accounts: [process.env.PRIVATE_KEY || ''],
+      accounts: [process.env.PRIVATE_KEY || ""],
       timeout: 120000000,
     },
 

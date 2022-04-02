@@ -7,8 +7,9 @@ import {getPacksConfig} from "../utils/packs";
 const hash = ethers.utils.id(Math.random().toString());
 const URI = "https://some/url/";
 const TEST_AMOUNT = 1;
+let accountCount = 3
 
-describe.only("Packs ERC1155", function () {
+describe("Packs ERC1155", function () {
   let endersGate: EndersGate, accounts: SignerWithAddress[], pack: EndersPack, library: any;
   const packsConfig = getPacksConfig();
 
@@ -107,8 +108,9 @@ describe.only("Packs ERC1155", function () {
         card = packsConfig.getCard(packsConfig.COMMON_ID);
 
       for (let i = 0; i < amount; i++) {
-        const account = ethers.Wallet.createRandom();
-        const receipt = await (await pack.unpack(option, account.address, 1)).wait();
+        const account = accounts[accountCount++];
+        await pack.mint(account.address, option, amount, []);
+        const receipt = await (await pack.connect(account).unpack(option, 1)).wait();
 
         const {types, sent, typesByID} = packsConfig.getCountsInReceipt(receipt, endersGate);
         const actualBalance = await endersGate.balanceOfBatch(
@@ -141,11 +143,12 @@ describe.only("Packs ERC1155", function () {
     });
 
     it("COMMON_PACK: overall quantities", async () => {
-      const account = ethers.Wallet.createRandom();
+      const account = accounts[accountCount++];
       const option = packsConfig.COMMON_ID,
         amount = TEST_AMOUNT,
-        card = packsConfig.getCard(packsConfig.COMMON_ID),
-        receipt = await (await pack.unpack(option, account.address, amount)).wait();
+        card = packsConfig.getCard(packsConfig.COMMON_ID);
+      await pack.mint(account.address, option, amount, []);
+      const receipt = await (await pack.connect(account).unpack(option, amount)).wait();
 
       const {types, sent, typesByID} = packsConfig.getCountsInReceipt(receipt, endersGate);
       const actualBalance = await endersGate.balanceOfBatch(
@@ -167,8 +170,9 @@ describe.only("Packs ERC1155", function () {
         card = packsConfig.getCard(packsConfig.RARE_ID);
 
       for (let i = 0; i < amount; i++) {
-        const account = ethers.Wallet.createRandom();
-        const receipt = await (await pack.unpack(option, account.address, 1)).wait();
+        const account = accounts[accountCount++];
+        await pack.mint(account.address, option, amount, []);
+        const receipt = await (await pack.connect(account).unpack(option, 1)).wait();
 
         const {types, sent, typesByID} = packsConfig.getCountsInReceipt(receipt, endersGate);
         const actualBalance = await endersGate.balanceOfBatch(
@@ -201,11 +205,12 @@ describe.only("Packs ERC1155", function () {
     });
 
     it("RARE_PACK: overall quantities", async () => {
-      const account = ethers.Wallet.createRandom();
+      const account = accounts[accountCount++];
       const option = packsConfig.RARE_ID,
         amount = TEST_AMOUNT,
-        card = packsConfig.getCard(packsConfig.RARE_ID),
-        receipt = await (await pack.unpack(option, account.address, amount)).wait();
+        card = packsConfig.getCard(packsConfig.RARE_ID);
+      await pack.mint(account.address, option, amount, []);
+      const receipt = await (await pack.connect(account).unpack(option, amount)).wait();
 
       const {types, sent} = packsConfig.getCountsInReceipt(receipt, endersGate);
       const actualBalance = await endersGate.balanceOfBatch(
@@ -227,8 +232,9 @@ describe.only("Packs ERC1155", function () {
         card = packsConfig.getCard(packsConfig.EPIC_ID);
 
       for (let i = 0; i < amount; i++) {
-        const account = ethers.Wallet.createRandom();
-        const receipt = await (await pack.unpack(option, account.address, 1)).wait();
+        const account = accounts[accountCount++];
+        await pack.mint(account.address, option, amount, []);
+        const receipt = await (await pack.connect(account).unpack(option, 1)).wait();
 
         const {types, sent, typesByID} = packsConfig.getCountsInReceipt(receipt, endersGate);
         const actualBalance = await endersGate.balanceOfBatch(
@@ -261,11 +267,12 @@ describe.only("Packs ERC1155", function () {
     });
 
     it("EPIC_PACK: overall quantities", async () => {
-      const account = ethers.Wallet.createRandom();
+      const account = accounts[accountCount++];
       const option = packsConfig.EPIC_ID,
         amount = TEST_AMOUNT,
-        card = packsConfig.getCard(packsConfig.EPIC_ID),
-        receipt = await (await pack.unpack(option, account.address, amount)).wait();
+        card = packsConfig.getCard(packsConfig.EPIC_ID);
+      await pack.mint(account.address, option, amount, []);
+      const receipt = await (await pack.connect(account).unpack(option, amount)).wait();
 
       const {types, sent} = packsConfig.getCountsInReceipt(receipt, endersGate);
       const actualBalance = await endersGate.balanceOfBatch(
@@ -287,8 +294,9 @@ describe.only("Packs ERC1155", function () {
         card = packsConfig.getCard(packsConfig.LEGENDARY_ID);
 
       for (let i = 0; i < amount; i++) {
-        const account = ethers.Wallet.createRandom();
-        const receipt = await (await pack.unpack(option, account.address, 1)).wait();
+        const account = accounts[accountCount++];
+        await pack.mint(account.address, option, amount, []);
+        const receipt = await (await pack.connect(account).unpack(option, 1)).wait();
 
         const {types, sent, typesByID} = packsConfig.getCountsInReceipt(receipt, endersGate);
         const actualBalance = await endersGate.balanceOfBatch(
@@ -321,11 +329,12 @@ describe.only("Packs ERC1155", function () {
     });
 
     it("LEGENDARY_PACK: overall quantities", async () => {
-      const account = ethers.Wallet.createRandom();
+      const account = accounts[accountCount++];
       const option = packsConfig.LEGENDARY_ID,
         amount = TEST_AMOUNT,
-        card = packsConfig.getCard(packsConfig.LEGENDARY_ID),
-        receipt = await (await pack.unpack(option, account.address, amount)).wait();
+        card = packsConfig.getCard(packsConfig.LEGENDARY_ID);
+      await pack.mint(account.address, option, amount, []);
+      const receipt = await (await pack.connect(account).unpack(option, amount)).wait();
 
       const {types, sent} = packsConfig.getCountsInReceipt(receipt, endersGate);
       const actualBalance = await endersGate.balanceOfBatch(
@@ -389,12 +398,13 @@ describe.only("Packs ERC1155", function () {
     it("Should have fired the unpack event on this block", async () => {
       await network.provider.send("evm_mine");
 
-      const account = ethers.Wallet.createRandom();
+      const account = accounts[accountCount++];
       const option = packsConfig.COMMON_ID,
         amount = 10;
+      await pack.mint(account.address, option, amount, []);
       const currentBlock = await ethers.provider.getBlockNumber();
 
-      await (await pack.unpack(option, account.address, amount)).wait();
+      await (await pack.connect(account).unpack(option, amount)).wait();
 
       const packLogs = (
         await ethers.provider.getLogs({address: pack.address, fromBlock: currentBlock})
@@ -420,7 +430,6 @@ describe.only("Packs ERC1155", function () {
 
       const signature = pack.interface.encodeFunctionData("unpack", [
         ID,
-        accountContract.address,
         amount,
       ]);
 
