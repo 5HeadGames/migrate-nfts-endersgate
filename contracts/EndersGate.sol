@@ -40,11 +40,11 @@ contract EndersGate is ERC1155, AccessControl, ERC1155Burnable {
     tokenURIPrefix = _tokenURIPrefix;
   }
 
-  function setURI(string memory newuri) public onlyRole(URI_SETTER_ROLE) {
+  function setURI(string memory newuri) external onlyRole(URI_SETTER_ROLE) {
     tokenURIPrefix = newuri;
   }
 
-  function setContractURI(string memory newuri) public onlyRole(URI_SETTER_ROLE) {
+  function setContractURI(string memory newuri) external onlyRole(URI_SETTER_ROLE) {
     contractURI = newuri;
   }
 
@@ -53,7 +53,7 @@ contract EndersGate is ERC1155, AccessControl, ERC1155Burnable {
     uint256 id,
     uint256 amount,
     string memory hash
-  ) public onlyRole(MINTER_ROLE) {
+  ) external onlyRole(MINTER_ROLE) {
     string[] memory hashes = new string[](1);
     uint256[] memory ids = new uint256[](1);
     hashes[0] = hash;
@@ -70,14 +70,14 @@ contract EndersGate is ERC1155, AccessControl, ERC1155Burnable {
     uint256[] memory ids,
     uint256[] memory amounts,
     string[] memory data
-  ) public onlyRole(MINTER_ROLE) {
+  ) external onlyRole(MINTER_ROLE) {
     for (uint256 i = 0; i < ids.length; i++) totalSupply[ids[i]] += amounts[i];
 
     _setIpfsHashBatch(ids, data);
     _mintBatch(to, ids, amounts, "");
   }
 
-  function totalSupplyBatch(uint256[] memory ids) public view returns (uint256[] memory) {
+  function totalSupplyBatch(uint256[] memory ids) external view returns (uint256[] memory) {
     uint256[] memory supply = new uint256[](ids.length);
     for (uint256 i = 0; i < ids.length; i++) supply[i] = totalSupply[ids[i]];
     return supply;
@@ -101,7 +101,7 @@ contract EndersGate is ERC1155, AccessControl, ERC1155Burnable {
   }
 
   function setIpfsHashBatch(uint256[] memory ids, string[] memory hashes)
-    public
+    external
     onlyRole(URI_SETTER_ROLE)
   {
     _setIpfsHashBatch(ids, hashes);
