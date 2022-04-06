@@ -50,7 +50,7 @@ const config: HardhatUserConfig = {
       accounts: [process.env.PRIVATE_KEY || ""],
     },
     harmony: {
-      url: `https://api.harmony.one`,
+      url: "https://harmony-0-rpc.gateway.pokt.network",
       accounts: [process.env.PRIVATE_KEY || ""],
       timeout: 120000000,
     },
