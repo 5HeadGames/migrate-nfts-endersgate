@@ -13,7 +13,8 @@ export const uploadIpfs = async ({path}: {path: string}) => {
             .replace("'", "")
             .replace(":", "")
             .replace("&", "")
-            .replace("_", "").replace('-', '');
+            .replace("_", "")
+            .replace("-", "");
 
         await Moralis.start({
             serverUrl: process.env.MORALIS_SERVER_URL,
@@ -26,22 +27,25 @@ export const uploadIpfs = async ({path}: {path: string}) => {
 
         console.log("UPLOADING...", `${appRoot}${path}`);
         await file.saveIPFS({useMasterKey: true});
+        const hash = (file as any).ipfs() as string;
+        console.log(`HASH: ${hash}`);
 
-        return (file as any).ipfs() as string;
+        return hash;
     } catch (err: any) {
         console.log(`ERROR upload ${path}`, err.message);
     }
     return "";
 };
 
-export const uploadIpfsObject = async ({element, name}: {element: Object, name: string}) => {
+export const uploadIpfsObject = async ({element, name}: {element: Object; name: string}) => {
     try {
         const finalName = name
             .replace(".", "")
             .replace("'", "")
             .replace(":", "")
             .replace("&", "")
-            .replace("_", "").replace('-', '');
+            .replace("_", "")
+            .replace("-", "");
 
         await Moralis.start({
             serverUrl: process.env.MORALIS_SERVER_URL,
@@ -49,14 +53,13 @@ export const uploadIpfsObject = async ({element, name}: {element: Object, name: 
             masterKey: process.env.MORALIS_MASTER_KEY,
         });
 
-        const buff = Buffer.from(JSON.stringify(element)).toString(('base64'));
+        const buff = Buffer.from(JSON.stringify(element)).toString("base64");
         const file = new Moralis.File(finalName, {base64: buff});
 
         console.log("UPLOADING...", name);
         await file.saveIPFS({useMasterKey: true});
 
         return (file as any).ipfs() as string;
-
     } catch (err: any) {
         console.log(`ERROR upload ${name}`, err.message);
     }
