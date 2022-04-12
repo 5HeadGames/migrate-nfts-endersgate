@@ -20,12 +20,6 @@ async function main(): Promise<void> {
     : await uploadIpfs({path: "/nfts/metadata/endersGate.json"});
   console.log("IPFS", ipfsHash.split("/").reverse()[0]);
 
-  //const dracul = await (await ethers.getContractFactory("ERC1155card")).deploy("Dracul");
-  //console.log("Dracul", dracul.address);
-
-  //const eross = await (await ethers.getContractFactory("ERC1155card")).deploy("Eross");
-  //console.log("Eross", eross.address);
-
   const endersGate = (await (
     await ethers.getContractFactory("EndersGate")
   ).deploy(

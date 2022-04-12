@@ -46,6 +46,7 @@ export const uploadIpfsObject = async ({element, name}: {element: Object; name: 
             .replace("&", "")
             .replace("_", "")
             .replace("-", "");
+        console.log({element, name, finalName});
 
         await Moralis.start({
             serverUrl: process.env.MORALIS_SERVER_URL,
@@ -67,22 +68,27 @@ export const uploadIpfsObject = async ({element, name}: {element: Object; name: 
 };
 
 export const loadJsonFile = (file: string) => {
+    const appRoot = require("app-root-path");
     try {
-        const data = fs.readFileSync(file);
+        const data = fs.readFileSync(`${appRoot}${file[0] === "/" ? file : "/" + file}`);
         return JSON.parse(data as any);
     } catch (err) {
         return {};
     }
 };
 
-export const writeJsonFile = (args: {path: string; data: any}) => {
+export const writeJsonFile = (args: {path: string; data: Object | ((arg: Object) => void)}) => {
     const appRoot = require("app-root-path");
-    const prevData = loadJsonFile(appRoot + args.path);
+    const prevData = loadJsonFile(args.path);
     const parsedData = JSON.stringify(
-        {
-            ...prevData,
-            ...args.data,
-        },
+        typeof args.data === "function"
+            ? {
+                ...args.data(prevData),
+            }
+            : {
+                ...prevData,
+                ...args.data,
+            },
         null,
         2
     );

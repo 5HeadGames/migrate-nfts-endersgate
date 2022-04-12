@@ -1,2 +1,2 @@
-require('./uploadFile')
-require('./mintNft')
+require("./uploadFile");
+require("./addNft");

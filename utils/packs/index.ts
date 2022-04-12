@@ -97,13 +97,13 @@ export class PacksConfig {
 
         if (!type) throw new Error(`Type ${typeId} doesnt belong to card ${cardId}`);
 
-        const assured = card.types.reduce((acc, cur) => cur.inferiorLimit + acc, 0)
-        const totalAssured = assured * cardsAmount
+        const assured = card.types.reduce((acc, cur) => cur.inferiorLimit + acc, 0);
+        const totalAssured = assured * cardsAmount;
         const noAssured = totalNfts - totalAssured;
         const amountAssured = type.inferiorLimit * cardsAmount;
-        const mintLeft = type.superiorLimit - type.inferiorLimit
+        const mintLeft = type.superiorLimit - type.inferiorLimit;
 
-        return noAssured / (card.types.length) + amountAssured
+        return noAssured / card.types.length + amountAssured;
     }
 
     getNftType(nftId: number) {
@@ -123,6 +123,7 @@ export class PacksConfig {
 
 let packsConfig: PacksConfig;
 
+//TODO!!!!! REMOVE EROSS FROM THE CONFIGURATION, MAKE IT UNABLE TO BE MINTED
 const parseType = (name: TypeName): Omit<Type, "id"> => ({
     name,
     nftsIds: AllNfts[name].map(
