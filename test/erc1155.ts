@@ -4,7 +4,7 @@ import {expect, assert} from "chai";
 import {SignerWithAddress} from "@nomiclabs/hardhat-ethers/dist/src/signer-with-address";
 import {EndersGate} from "../types";
 
-describe("ERC1155", function () {
+describe.only("ERC1155", function () {
   let endersGate: EndersGate, accounts: SignerWithAddress[];
   const hash = ethers.utils.id(Math.random().toString());
   const URI = "https://some/url/";
@@ -30,10 +30,9 @@ describe("ERC1155", function () {
 
     expect(await endersGate.hasRole(adminRole, randomDude), "Isnt Admin").to.not.equal(true);
     expect(await endersGate.hasRole(minterRole, randomDude), "Isnt Minter").to.not.equal(true);
-    expect(
-      await endersGate.hasRole(uriSetterRole, randomDude),
-      "Isnt Uri setter"
-    ).to.not.equal(true);
+    expect(await endersGate.hasRole(uriSetterRole, randomDude), "Isnt Uri setter").to.not.equal(
+      true
+    );
   });
 
   it("Should set uri for only setter role", async () => {
@@ -84,10 +83,26 @@ describe("ERC1155", function () {
     const ids = [1];
     const hashes = [ethers.utils.id(Math.random().toString())];
 
-    await expect(
-      endersGate.connect(accounts[1]).setIpfsHashBatch(ids, hashes)
-    ).to.revertedWith("");
+    await expect(endersGate.connect(accounts[1]).setIpfsHashBatch(ids, hashes)).to.revertedWith("");
     await expect(endersGate.setIpfsHashBatch(ids, hashes)).to.not.revertedWith("");
     expect(await endersGate.uri(ids[0])).to.be.equal(URI + hashes[0]);
+  });
+
+  it("Should save last transfer received", async () => {
+    const prevBlockTimestamp = (
+      await ethers.provider.getBlock(await ethers.provider.getBlockNumber())
+    ).timestamp;
+    await endersGate.safeTransferFrom(accounts[0].address, accounts[5].address, 5, 1, []);
+
+    await network.provider.send("evm_increaseTime", [223600]);
+    await network.provider.send("evm_mine");
+
+    const nextBlockTimestamp = (
+      await ethers.provider.getBlock(await ethers.provider.getBlockNumber())
+    ).timestamp;
+    const lastTransfer = await endersGate.lastTransfer(accounts[5].address);
+
+    expect(nextBlockTimestamp).to.be.gt(prevBlockTimestamp);
+    expect(lastTransfer.toNumber()).to.be.within(prevBlockTimestamp - 10, prevBlockTimestamp + 10);
   });
 });

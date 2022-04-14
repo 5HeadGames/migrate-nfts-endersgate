@@ -20,6 +20,7 @@ contract EndersGate is ERC1155, AccessControl, ERC1155Burnable {
 
   mapping(uint256 => string) public idToIpfs;
   mapping(uint256 => uint256) public totalSupply;
+  mapping(address => uint256) public lastTransfer;
 
   /// @custom:oz-upgrades-unsafe-allow constructor
 
@@ -95,9 +96,7 @@ contract EndersGate is ERC1155, AccessControl, ERC1155Burnable {
   function uri(uint256 id) public view override returns (string memory) {
     string memory ipfsHash = idToIpfs[id];
     return
-      bytes(tokenURIPrefix).length > 0
-        ? string(abi.encodePacked(tokenURIPrefix, ipfsHash))
-        : "";
+      bytes(tokenURIPrefix).length > 0 ? string(abi.encodePacked(tokenURIPrefix, ipfsHash)) : "";
   }
 
   function setIpfsHashBatch(uint256[] memory ids, string[] memory hashes)
@@ -111,5 +110,16 @@ contract EndersGate is ERC1155, AccessControl, ERC1155Burnable {
     for (uint256 i = 0; i < ids.length; i++) {
       if (bytes(hashes[i]).length > 0) idToIpfs[ids[i]] = hashes[i];
     }
+  }
+
+  function _beforeTokenTransfer(
+    address operator,
+    address from,
+    address to,
+    uint256[] memory ids,
+    uint256[] memory amounts,
+    bytes memory data
+  ) internal override {
+    lastTransfer[to] = block.timestamp;
   }
 }
