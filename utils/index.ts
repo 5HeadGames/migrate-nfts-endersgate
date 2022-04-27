@@ -105,3 +105,5 @@ export const getEventLogs = (
 ) => {
     return logs.filter(filter).map((logs) => iface.parseLog(logs));
 };
+
+export const getUrlHash = (ipfsUrl: string) => ipfsUrl.split("/").reverse()[0];

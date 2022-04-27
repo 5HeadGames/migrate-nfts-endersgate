@@ -1,9 +1,11 @@
+import {getUrlHash} from "../index";
+
 export const formatCardData = (data: Record<string, unknown>) => {
     return {
         name: data.name,
         type: "ERC1155",
         description: data.description,
-        image: data.image,
+        image: getUrlHash(data.image as string),
         symbol: "GATE",
         properties: Object.entries(data).reduce(
             (acc, cur) => ({
