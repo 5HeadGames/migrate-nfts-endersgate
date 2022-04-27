@@ -70,6 +70,7 @@
   "scripts": {
     "build": "hardhat compile",
     "cards": "ts-node scripts/cardsJson",
+    "cards_metadata": "ts-node scripts/uploadMetadata",
     "test": "hardhat test"
   },
   "dependencies": {

@@ -27,9 +27,11 @@ export const uploadIpfs = async ({path}: {path: string}) => {
         const buff = fs.readFileSync(`${appRoot}${path}`).toString("base64");
         const file = new Moralis.File(name, {base64: buff});
 
+        console.log("UPLOADING FILE", `${appRoot}${path}`);
         await file.saveIPFS({useMasterKey: true});
         const hash = (file as any).ipfs() as string;
 
+        console.log("uploaded", hash);
         return hash;
     } catch (err: any) {
         console.log(`ERROR upload ${path}`, err.message);
@@ -46,7 +48,6 @@ export const uploadIpfsObject = async ({element, name}: {element: Object; name: 
             .replace("&", "")
             .replace("_", "")
             .replace("-", "");
-        console.log({element, name, finalName});
 
         await Moralis.start({
             serverUrl: process.env.MORALIS_SERVER_URL,

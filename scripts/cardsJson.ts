@@ -1,6 +1,7 @@
 import hardhat from "hardhat";
-import {writeJsonFile, uploadIpfs} from "../utils/index";
+import {writeJsonFile, loadJsonFile, uploadIpfs} from "../utils/index";
 import {formatCardData} from "../utils/cards";
+import {load} from "dotenv";
 
 const ExcelJS = require("exceljs");
 const workbook = new ExcelJS.Workbook();
@@ -44,7 +45,6 @@ const init = async () => {
           isGuardian: true,
           gold: values[8],
           description: values[9],
-          duplicates: values[10] || 0,
           image: `${index}.${values[2].toUpperCase()}`,
         });
         if (Array.isArray(cards[index])) cards[index].push(insertValue);
@@ -61,7 +61,7 @@ const init = async () => {
         cardType.image.split(".").slice(1).join("."),
       ];
       const path = `/nfts/images/${cardType.image.replace(".", "/")}.png`;
-      const ipfs = (await uploadIpfs({path})) || "mock";
+      const ipfs = await uploadIpfs({path});
       const id = cardType.properties.id.value;
       const index = cards[type].findIndex((card: any) => Number(card.properties.id.value) === id);
       const traitImageIndex = cards[type][index].attributes.findIndex(

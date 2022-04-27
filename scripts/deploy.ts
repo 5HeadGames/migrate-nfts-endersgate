@@ -5,6 +5,18 @@ import {uploadIpfs, loadJsonFile, writeJsonFile} from "../utils";
 
 const metadataLinks = require("../nfts/metadata/metadata.json");
 
+const setUpMetadata = async (endersGate: EndersGate) => {
+  const hashesData = Object.entries(metadataLinks).map((entry: any) => ({
+    id: entry[0],
+    hash: entry[1].split("/").reverse()[0],
+  }));
+  console.log("metadata");
+  await endersGate.setIpfsHashBatch(
+    hashesData.map(({id}) => id),
+    hashesData.map(({hash}) => hash)
+  );
+};
+
 const oldAddresses = {
   dracul: "",
   eross: "",
@@ -30,14 +42,7 @@ async function main(): Promise<void> {
   )) as EndersGate;
   console.log("Enders Gate", endersGate.address);
 
-  const hashesData = Object.entries(metadataLinks).map((entry: any) => ({
-    id: entry[0],
-    hash: entry[1].split("/").reverse()[0],
-  }));
-  await endersGate.setIpfsHashBatch(
-    hashesData.map(({id}) => id),
-    hashesData.map(({hash}) => hash)
-  );
+  await setUpMetadata(endersGate);
 
   const exchange = await (
     await ethers.getContractFactory("ExchangeERC1155")
@@ -56,7 +61,7 @@ async function main(): Promise<void> {
   });
 }
 
-main()
+setUpMetadata()
   .then(() => process.exit(0))
   .catch((error: Error) => {
     console.error(error);
