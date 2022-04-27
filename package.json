@@ -69,6 +69,7 @@
   },
   "scripts": {
     "build": "hardhat compile",
+    "cards": "ts-node scripts/cardsJson",
     "test": "hardhat test"
   },
   "dependencies": {

@@ -41,6 +41,7 @@ const init = async () => {
           race: values[5],
           attack: values[6],
           hp: values[7],
+          isGuardian: true,
           gold: values[8],
           description: values[9],
           duplicates: values[10] || 0,
@@ -60,7 +61,7 @@ const init = async () => {
         cardType.image.split(".").slice(1).join("."),
       ];
       const path = `/nfts/images/${cardType.image.replace(".", "/")}.png`;
-      const ipfs = await uploadIpfs({path});
+      const ipfs = (await uploadIpfs({path})) || "mock";
       const id = cardType.properties.id.value;
       const index = cards[type].findIndex((card: any) => Number(card.properties.id.value) === id);
       const traitImageIndex = cards[type][index].attributes.findIndex(

@@ -1,7 +1,9 @@
 import Moralis from "moralis/node";
 import fs from "fs";
+import * as dotenv from "dotenv";
 import {TransactionReceipt} from "@ethersproject/providers";
 
+dotenv.config();
 const appRoot = require("app-root-path");
 
 export const uploadIpfs = async ({path}: {path: string}) => {
@@ -25,10 +27,8 @@ export const uploadIpfs = async ({path}: {path: string}) => {
         const buff = fs.readFileSync(`${appRoot}${path}`).toString("base64");
         const file = new Moralis.File(name, {base64: buff});
 
-        console.log("UPLOADING...", `${appRoot}${path}`);
         await file.saveIPFS({useMasterKey: true});
         const hash = (file as any).ipfs() as string;
-        console.log(`HASH: ${hash}`);
 
         return hash;
     } catch (err: any) {

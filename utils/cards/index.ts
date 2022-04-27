@@ -1,5 +1,4 @@
-export const formatCardData = (data: Record<string, string | number>) => {
-    console.log("data", data);
+export const formatCardData = (data: Record<string, unknown>) => {
     return {
         name: data.name,
         type: "ERC1155",
