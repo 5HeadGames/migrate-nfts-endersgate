@@ -67,6 +67,10 @@ contract ExchangeERC1155 is Ownable, ERC1155Receiver {
     nftToId[nft][id] = targetId;
   }
 
+  function updateAllowedNft(IERC1155 nft, bool isAllowed) public onlyOwner {
+    isAllowedNft[nft] = isAllowed;
+  }
+
   function _mintEquivalent(
     IERC1155 nft,
     uint256 id,
@@ -93,8 +97,7 @@ contract ExchangeERC1155 is Ownable, ERC1155Receiver {
     uint256[] calldata values,
     bytes calldata data
   ) external onlyExchange returns (bytes4) {
-    return
-      bytes4(keccak256("onERC1155BatchReceived(address,address,uint256[],uint256[],bytes)"));
+    return bytes4(keccak256("onERC1155BatchReceived(address,address,uint256[],uint256[],bytes)"));
   }
 
   fallback() external {

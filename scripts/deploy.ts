@@ -57,6 +57,12 @@ async function main(): Promise<void> {
       endersGate: endersGate.address,
       exchange: exchange.address,
       ipfs: ipfsHash,
+      ...(network.name === "harmony_test"
+        ? {
+          dracul: dracul.address,
+          eross: eross.address,
+        }
+        : {}),
     },
   });
 }
