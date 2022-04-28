@@ -119,12 +119,8 @@ describe("Packs ERC1155", function () {
           sent.map(({id}) => id)
         );
 
-        const mintCorrectly = sent.every(
-          ({amount}, i) => amount === actualBalance[i].toNumber()
-        );
-        const guaranteed = card.types.every(
-          (typ) => typ.inferiorLimit <= (typesByID[typ.id] || 0)
-        );
+        const mintCorrectly = sent.every(({amount}, i) => amount === actualBalance[i].toNumber());
+        const guaranteed = card.types.every((typ) => typ.inferiorLimit <= (typesByID[typ.id] || 0));
         const superiorLimit = card.types.every(
           (typ) => typ.superiorLimit >= (typesByID[typ.id] || 0)
         );
@@ -181,12 +177,8 @@ describe("Packs ERC1155", function () {
           sent.map(({id}) => id)
         );
 
-        const mintCorrectly = sent.every(
-          ({amount}, i) => amount === actualBalance[i].toNumber()
-        );
-        const guaranteed = card.types.every(
-          (typ) => typ.inferiorLimit <= (typesByID[typ.id] || 0)
-        );
+        const mintCorrectly = sent.every(({amount}, i) => amount === actualBalance[i].toNumber());
+        const guaranteed = card.types.every((typ) => typ.inferiorLimit <= (typesByID[typ.id] || 0));
         const superiorLimit = card.types.every(
           (typ) => typ.superiorLimit >= (typesByID[typ.id] || 0)
         );
@@ -243,12 +235,8 @@ describe("Packs ERC1155", function () {
           sent.map(({id}) => id)
         );
 
-        const mintCorrectly = sent.every(
-          ({amount}, i) => amount === actualBalance[i].toNumber()
-        );
-        const guaranteed = card.types.every(
-          (typ) => typ.inferiorLimit <= (typesByID[typ.id] || 0)
-        );
+        const mintCorrectly = sent.every(({amount}, i) => amount === actualBalance[i].toNumber());
+        const guaranteed = card.types.every((typ) => typ.inferiorLimit <= (typesByID[typ.id] || 0));
         const superiorLimit = card.types.every(
           (typ) => typ.superiorLimit >= (typesByID[typ.id] || 0)
         );
@@ -305,12 +293,8 @@ describe("Packs ERC1155", function () {
           sent.map(({id}) => id)
         );
 
-        const mintCorrectly = sent.every(
-          ({amount}, i) => amount === actualBalance[i].toNumber()
-        );
-        const guaranteed = card.types.every(
-          (typ) => typ.inferiorLimit <= (typesByID[typ.id] || 0)
-        );
+        const mintCorrectly = sent.every(({amount}, i) => amount === actualBalance[i].toNumber());
+        const guaranteed = card.types.every((typ) => typ.inferiorLimit <= (typesByID[typ.id] || 0));
         const superiorLimit = card.types.every(
           (typ) => typ.superiorLimit >= (typesByID[typ.id] || 0)
         );
@@ -350,6 +334,20 @@ describe("Packs ERC1155", function () {
         "Mint amount mismatch"
       ).to.be.equal(mintAmount);
     });
+
+    it("Should never mint eross and dracul", async () => {
+      const forbiddenIds = packsConfig
+        .getAllNfts()
+        .filter(({name}) => name === "Eross" || name === "Dracul");
+
+      for (let i = 0; i < forbiddenIds.length; i++) {
+        const balances = await endersGate.balanceOfBatch(
+          accounts.map(({address}) => address),
+          accounts.map(() => forbiddenIds[i].properties.id.value)
+        );
+        for (let j = 0; j < balances.length; j++) expect(balances[j]).to.be.equal(0);
+      }
+    });
   });
 
   describe("URI settings and minting/burning", async () => {
@@ -363,9 +361,7 @@ describe("Packs ERC1155", function () {
       const ids = [1];
       const hashes = [ethers.utils.id(Math.random().toString())];
 
-      await expect(pack.connect(accounts[1]).setIpfsHashBatch(ids, hashes)).to.revertedWith(
-        ""
-      );
+      await expect(pack.connect(accounts[1]).setIpfsHashBatch(ids, hashes)).to.revertedWith("");
       await expect(pack.setIpfsHashBatch(ids, hashes)).to.not.revertedWith("");
       expect(await pack.uri(ids[0])).to.be.equal(URI + hashes[0]);
     });
@@ -418,9 +414,7 @@ describe("Packs ERC1155", function () {
         await ethers.provider.getLogs({address: endersGate.address, fromBlock: currentBlock})
       ).map((ev) => endersGate.interface.parseLog(ev));
 
-      expect(packLogs.filter(({name}) => name === "LootBoxOpened").length).to.be.equal(
-        amount
-      );
+      expect(packLogs.filter(({name}) => name === "LootBoxOpened").length).to.be.equal(amount);
       expect(nftLogs.filter(({name}) => name === "TransferSingle").length).to.be.equal(
         amount * 5
       );
@@ -435,16 +429,10 @@ describe("Packs ERC1155", function () {
 
       const signature = pack.interface.encodeFunctionData("unpack", [ID, amount]);
 
-      await pack.safeTransferFrom(
-        accounts[0].address,
-        accountContract.address,
-        ID,
-        amount,
-        []
+      await pack.safeTransferFrom(accounts[0].address, accountContract.address, ID, amount, []);
+      await expect(accountContract.execute([pack.address], [0], [signature])).to.be.revertedWith(
+        ""
       );
-      await expect(
-        accountContract.execute([pack.address], [0], [signature])
-      ).to.be.revertedWith("");
     });
 
     it("Should not allow contracts to unpack from constructor", async () => {
@@ -461,8 +449,9 @@ describe("Packs ERC1155", function () {
       await expect(
         (
           await ethers.getContractFactory("AccountConstructor")
-        ).deploy([pack.address], [0], [signature])
-        , 'Not unpack').to.be.revertedWith("");
+        ).deploy([pack.address], [0], [signature]),
+        "Not unpack"
+      ).to.be.revertedWith("");
     });
   });
 });

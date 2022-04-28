@@ -60,14 +60,31 @@ describe("Exchange", function () {
         oldNft2.balanceOf(exchange.address, 1),
       ])
     ).map((bal) => bal.toString());
-    const expected = [
-      "0",
-      "0",
-      previousBalances[0].toString(),
-      previousBalances[1].toString(),
-    ];
+    const expected = ["0", "0", previousBalances[0].toString(), previousBalances[1].toString()];
 
     expect(newBalances).to.eql(expected);
+  });
+
+  it("Should update nfts to ids", async () => {
+    const amount = 10;
+    const targetId = 123;
+    const originId = 5;
+    await exchange.updateNftsToId(oldNft.address, originId, targetId);
+    await oldNft.mint(accounts[0].address, originId, amount);
+    await exchange.exchangeAllERC1155([oldNft.address], [originId]);
+
+    expect(await endersGate.balanceOf(accounts[0].address, targetId)).to.be.equal(amount);
+  });
+
+  it("Should only allow owner to update nfts to ids", async () => {
+    const amount = 10;
+    const targetId = 123;
+    const originId = 5;
+    await exchange.updateNftsToId(oldNft.address, originId, targetId);
+    await oldNft.mint(accounts[0].address, originId, amount);
+    await expect(
+      exchange.connect(accounts[1]).exchangeAllERC1155([oldNft.address], [originId])
+    ).to.be.revertedWith("");
   });
 
   it("Should not remove nfts uri when minting", async () => {
@@ -89,9 +106,7 @@ describe("Exchange", function () {
 
   it("Should not allow to transfer nfts out of exchange", async () => {
     await expect(
-      oldNft
-        .connect(accounts[1])
-        .safeTransferFrom(accounts[1].address, exchange.address, 1, 50, [])
+      oldNft.connect(accounts[1]).safeTransferFrom(accounts[1].address, exchange.address, 1, 50, [])
     ).to.be.revertedWith("");
   });
 });

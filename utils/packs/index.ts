@@ -106,6 +106,13 @@ export class PacksConfig {
         return noAssured / card.types.length + amountAssured;
     }
 
+    getAllNfts() {
+        return Object.values(AllNfts as Record<string, any[]>).reduce(
+            (acc, cur) => acc.concat(cur),
+            []
+        );
+    }
+
     getNftType(nftId: number) {
         const type = this.types.find(({nftsIds}) => nftsIds.some((id) => id === nftId));
         if (type === undefined) throw new Error(`NFT ${nftId} TYPE NOT FOUND`);
@@ -123,12 +130,14 @@ export class PacksConfig {
 
 let packsConfig: PacksConfig;
 
-//TODO!!!!! REMOVE EROSS FROM THE CONFIGURATION, MAKE IT UNABLE TO BE MINTED
 const parseType = (name: TypeName): Omit<Type, "id"> => ({
     name,
-    nftsIds: AllNfts[name].map(
-        ({properties: {id}}: {properties: {id: {value: number}}}) => id.value
-    ),
+    nftsIds: AllNfts[name]
+        .filter(
+            ({properties: {id}}: {properties: {id: {value: number}}}) =>
+                id.value !== 215 && id.value != 230 //remove eross and dracul from packs
+        )
+        .map(({properties: {id}}: {properties: {id: {value: number}}}) => id.value),
 });
 
 export const getPacksConfig = () => {

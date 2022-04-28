@@ -6,7 +6,9 @@
     "esModuleInterop": true,
     "experimentalDecorators": true,
     "forceConsistentCasingInFileNames": true,
-    "lib": ["es6"],
+    "lib": [
+      "es6"
+    ],
     "module": "commonjs",
     "moduleResolution": "node",
     "noImplicitAny": true,
@@ -16,7 +18,16 @@
     "strict": true,
     "target": "es6"
   },
-  "exclude": ["node_modules"],
-  "files": ["./hardhat.config.ts"],
-  "include": ["tasks/**/*", "test/**/*", "types/**/*"]
+  "exclude": [
+    "node_modules"
+  ],
+  "files": [
+    "./hardhat.config.ts"
+  ],
+  "include": [
+    "tasks/**/*",
+    "test/**/*",
+    "types/**/*",
+    "scripts/**/*"
+  ]
 }

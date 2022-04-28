@@ -4,7 +4,7 @@ import {expect, assert} from "chai";
 import {SignerWithAddress} from "@nomiclabs/hardhat-ethers/dist/src/signer-with-address";
 import {EndersGate} from "../types";
 
-describe.only("ERC1155", function () {
+describe("ERC1155", function () {
   let endersGate: EndersGate, accounts: SignerWithAddress[];
   const hash = ethers.utils.id(Math.random().toString());
   const URI = "https://some/url/";
@@ -33,6 +33,32 @@ describe.only("ERC1155", function () {
     expect(await endersGate.hasRole(uriSetterRole, randomDude), "Isnt Uri setter").to.not.equal(
       true
     );
+  });
+
+  it("Should assign roles dynamically", async () => {
+    const minterRole = await endersGate.MINTER_ROLE();
+
+    await endersGate.grantRole(minterRole, accounts[4].address);
+    await expect(
+      endersGate.connect(accounts[1]).grantRole(minterRole, accounts[4].address)
+    ).to.be.revertedWith("");
+    expect(
+      await endersGate.hasRole(minterRole, accounts[4].address),
+      "Role is not given"
+    ).to.be.equal(true);
+  });
+
+  it("Should remove roles dynamically", async () => {
+    const minterRole = await endersGate.MINTER_ROLE();
+
+    await endersGate.revokeRole(minterRole, accounts[4].address);
+    await expect(
+      endersGate.connect(accounts[1]).revokeRole(minterRole, accounts[4].address)
+    ).to.be.revertedWith("");
+    expect(
+      await endersGate.hasRole(minterRole, accounts[4].address),
+      "Role is not given"
+    ).to.be.equal(false);
   });
 
   it("Should set uri for only setter role", async () => {

@@ -1,4 +1,4 @@
-import {ethers, network, upgrades} from "hardhat";
+import {ethers, network} from "hardhat";
 
 import {EndersGate} from "../types";
 import {uploadIpfs, loadJsonFile, writeJsonFile} from "../utils";
@@ -18,8 +18,8 @@ const setUpMetadata = async (endersGate: EndersGate) => {
 };
 
 const oldAddresses = {
-  dracul: "",
-  eross: "",
+  dracul: "0xE1C04284652be3771D514e5f05F823b35075D70F", //mainnet
+  eross: "0x51BE175Fa7A56B98BCFFA124D6Bd31480b093214",
 };
 
 async function main(): Promise<void> {
@@ -59,15 +59,15 @@ async function main(): Promise<void> {
       ipfs: ipfsHash,
       ...(network.name === "harmony_test"
         ? {
-          dracul: dracul.address,
-          eross: eross.address,
+          dracul: oldAddresses.dracul,
+          eross: oldAddresses.eross,
         }
         : {}),
     },
   });
 }
 
-setUpMetadata()
+main()
   .then(() => process.exit(0))
   .catch((error: Error) => {
     console.error(error);
