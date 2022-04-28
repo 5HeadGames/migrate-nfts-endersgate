@@ -21,6 +21,8 @@ const oldAddresses = {
   dracul: "0xE1C04284652be3771D514e5f05F823b35075D70F", //mainnet
   eross: "0x51BE175Fa7A56B98BCFFA124D6Bd31480b093214",
 };
+const DRACUL_ID = 230;
+const EROSS_ID = 215;
 
 async function main(): Promise<void> {
   const fileName = `addresses.${network.name}.json`;
@@ -46,7 +48,12 @@ async function main(): Promise<void> {
 
   const exchange = await (
     await ethers.getContractFactory("ExchangeERC1155")
-  ).deploy([oldAddresses.dracul, oldAddresses.eross], [1, 1], [1, 2], endersGate.address);
+  ).deploy(
+    [oldAddresses.dracul, oldAddresses.eross],
+    [1, 1],
+    [DRACUL_ID, EROSS_ID],
+    endersGate.address
+  );
   console.log("Exchange", exchange.address);
 
   await endersGate.grantRole(await endersGate.MINTER_ROLE(), exchange.address);

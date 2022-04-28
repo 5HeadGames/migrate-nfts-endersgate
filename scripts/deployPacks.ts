@@ -16,10 +16,10 @@ const setPacksState = async ({
   endersGate: EndersGate;
 }) => {
   await endersGate.grantRole(await endersGate.MINTER_ROLE(), pack.address);
-  console.log('MINTER ROLE')
+  console.log("MINTER ROLE");
 
   await pack.setState(endersGate.address, packsConfig.NUM_CARDS, packsConfig.NUM_TYPES, 5);
-  console.log('CONFIG')
+  console.log("CONFIG");
 
   for await (let i of packsConfig.cards) {
     await pack.setOptionSettings(
@@ -30,10 +30,10 @@ const setPacksState = async ({
       i.types.map(({superiorLimit}) => superiorLimit)
     );
   }
-  console.log('CARDS')
+  console.log("CARDS");
 
   for await (let i of packsConfig.types) await pack.setTokensForTypes(i.id, i.nftsIds);
-  console.log('TYPES')
+  console.log("TYPES");
 
   const hashesData = Object.entries(metadataLinks).map((entry: any) => ({
     id: entry[0],
@@ -43,17 +43,18 @@ const setPacksState = async ({
     hashesData.map(({id}) => id),
     hashesData.map(({hash}) => hash)
   );
-  console.log('HASHES')
+  console.log("HASHES");
 };
 
 async function main(): Promise<void> {
   const fileName = `addresses.${network.name}.json`;
   const fileData = loadJsonFile(fileName);
   const packsConfig = getPacksConfig();
+  console.log({fileData});
 
   const ipfsHash = fileData?.packIpfs
     ? fileData.packIpfs
-    : await uploadIpfs({path: "/nfts/metadata/pack.json"});
+    : await uploadIpfs({path: "/nfts/metadata/packs.json"});
   console.log("IPFS", ipfsHash.split("/").reverse()[0]);
 
   const endersGate: EndersGate = (await ethers.getContractFactory("EndersGate")).attach(
