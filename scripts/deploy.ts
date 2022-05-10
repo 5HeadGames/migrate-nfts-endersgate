@@ -21,8 +21,8 @@ const oldAddresses = {
   dracul: "0xE1C04284652be3771D514e5f05F823b35075D70F", //mainnet
   eross: "0x51BE175Fa7A56B98BCFFA124D6Bd31480b093214",
 };
-const DRACUL_ID = 230;
-const EROSS_ID = 215;
+const DRACUL_ID = 215;
+const EROSS_ID = 230;
 
 async function main(): Promise<void> {
   const fileName = `addresses.${network.name}.json`;

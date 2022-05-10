@@ -48,6 +48,7 @@ const config: HardhatUserConfig = {
     rinkeby: {
       url: "https://speedy-nodes-nyc.moralis.io/bdd2a4b14a469f0e3a230d4d/eth/rinkeby",
       accounts: [process.env.PRIVATE_KEY || ""],
+      gas: 1446592,
     },
     harmony: {
       url: "https://harmony-0-rpc.gateway.pokt.network",

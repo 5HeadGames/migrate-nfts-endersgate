@@ -18520,7 +18520,7 @@
       "properties": {
         "id": {
           "name": "id",
-          "value": 215
+          "value": 230
         },
         "name": {
           "name": "name",
@@ -18566,7 +18566,7 @@
       "attributes": [
         {
           "trait_type": "id",
-          "value": 215
+          "value": 230
         },
         {
           "trait_type": "name",
@@ -20007,7 +20007,7 @@
       "properties": {
         "id": {
           "name": "id",
-          "value": 230
+          "value": 215
         },
         "name": {
           "name": "name",
@@ -20053,7 +20053,7 @@
         },
         {
           "trait_type": "id",
-          "value": 230
+          "value": 215
         }
       ]
     }

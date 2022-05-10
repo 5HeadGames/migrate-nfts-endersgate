@@ -71,7 +71,8 @@
     "build": "hardhat compile",
     "cards": "ts-node scripts/cardsJson",
     "cards_metadata": "ts-node scripts/uploadMetadata",
-    "test": "hardhat test"
+    "test": "hardhat test",
+    "deploy:rinkeby": "hardhat run scripts/deploy.ts --network rinkeby && hardhat run scripts/deployPacks.ts --network rinkeby"
   },
   "dependencies": {
     "@nomiclabs/hardhat-etherscan": "^3.0.1",

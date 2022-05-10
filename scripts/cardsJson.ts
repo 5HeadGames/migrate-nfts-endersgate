@@ -76,16 +76,17 @@ const init = async () => {
     }
   }
 
-  writeJsonFile({
-    path: "/cards.json",
-    data: cards,
-  });
+  //writeJsonFile({
+  //path: "/cards.json",
+  //data: cards,
+  //});
 };
 
-init()
-  .then(() => {
-    console.log("SUCCESS");
-  })
-  .catch((err) => {
-    console.log("ERROR", err);
-  });
+console.log("DONT DO THIS IN PRODUCTION");
+//init()
+//.then(() => {
+//console.log("SUCCESS");
+//})
+//.catch((err) => {
+//console.log("ERROR", err);
+//});
