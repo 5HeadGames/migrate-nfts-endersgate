@@ -4,5 +4,6 @@
   "ipfs": "https://ipfs.moralis.io:2053/ipfs/QmXWojzVzRo2NERK3LtrscCXwJ5CrZ8xbnchTgWnTyLDvw",
   "pack": "0xdCB1336bD3fd743661249c0c71DD6531CD1F9609",
   "packIpfs": "https://ipfs.moralis.io:2053/ipfs/QmSug6ooWW4iWQkCCeo9aQhTYfqWD9BMDLMh33thYFbp5h",
-  "library": "0x3F2EE2ED1E5EAF34568853b374ed6a1511B8A3D2"
+  "library": "0x3F2EE2ED1E5EAF34568853b374ed6a1511B8A3D2",
+  "airdrop": "0xe9c385d7885500E634832Fd5c0De95eDde79dC35"
 }

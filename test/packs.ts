@@ -7,7 +7,7 @@ import {getPacksConfig} from "../utils/packs";
 
 const hash = ethers.utils.id(Math.random().toString());
 const URI = "https://some/url/";
-const TEST_AMOUNT = 1;
+const TEST_AMOUNT = 30;
 let accountCount = 3;
 
 describe("Packs ERC1155", function () {
@@ -292,6 +292,7 @@ describe("Packs ERC1155", function () {
           sent.map(() => account.address),
           sent.map(({id}) => id)
         );
+        console.log(types);
 
         const mintCorrectly = sent.every(({amount}, i) => amount === actualBalance[i].toNumber());
         const guaranteed = card.types.every((typ) => typ.inferiorLimit <= (typesByID[typ.id] || 0));

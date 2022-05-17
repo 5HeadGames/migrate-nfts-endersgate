@@ -39,9 +39,9 @@ async function getWhitelist(contract: "dracul" | "eross"): Promise<void> {
   }
 
   final = final.filter((ev: any) => ev.args.from === oldAddresses.presale);
-  writeJsonFile({
-    path: `/${contract}Whitelist.json`,
-    data: final.reduce((acc: Record<string, number>, cur: any) => {
+  console.log(
+    contract.toUpperCase(),
+    final.reduce((acc: Record<string, number>, cur: any) => {
       const receiver = cur.args.to;
       const amount = cur.args.value.toNumber();
 
@@ -49,8 +49,20 @@ async function getWhitelist(contract: "dracul" | "eross"): Promise<void> {
         ...acc,
         [receiver]: acc[receiver] ? acc[receiver] + amount : amount,
       };
-    }, {}),
-  });
+    }, {})
+  );
+  //writeJsonFile({
+  //path: `/${contract}Whitelist.json`,
+  //data: final.reduce((acc: Record<string, number>, cur: any) => {
+  //const receiver = cur.args.to;
+  //const amount = cur.args.value.toNumber();
+
+  //return {
+  //...acc,
+  //[receiver]: acc[receiver] ? acc[receiver] + amount : amount,
+  //};
+  //}, {}),
+  //});
 }
 
 const main = async () => {

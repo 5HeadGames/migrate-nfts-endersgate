@@ -19,7 +19,6 @@ task("create-nft", "Upload image to ipfs")
     const {ethers, network} = hardhat;
     const fileName = `addresses.${network.name}.json`;
     const fileData = loadJsonFile(fileName);
-    console.log(fileName, fileData);
     const metadataIPFS = loadJsonFile("nfts/metadata/metadata.json");
     const lastId =
       Object.keys(metadataIPFS)
@@ -27,7 +26,7 @@ task("create-nft", "Upload image to ipfs")
         .sort((a, b) => b - a)[0] + 1;
     const imageIpfs = await uploadIpfs({path: image});
     const cardData = formatCardData(
-      removeUndefined({name, type, rarity, image: imageIpfs, description})
+      removeUndefined({name, type, rarity, image: imageIpfs, description, id: lastId})
     );
     const dataIpfs = await uploadIpfsObject({element: cardData, name});
 
