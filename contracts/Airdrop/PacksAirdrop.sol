@@ -2,8 +2,10 @@
 pragma solidity ^0.8.10;
 
 import { AccessControl } from "@openzeppelin/contracts/access/AccessControl.sol";
+import { Ownable } from "@openzeppelin/contracts/access/Ownable.sol";
 import { ReentrancyGuard } from "@openzeppelin/contracts/security/ReentrancyGuard.sol";
 import { MintableERC1155 } from "../interfaces/MintableERC1155.sol";
+import { EndersPack } from "../Packs/EndersPack.sol";
 
 struct Reward {
   MintableERC1155 token;
@@ -63,5 +65,25 @@ contract PacksAirdrop is AccessControl, ReentrancyGuard {
 
     currentReward.token.mint(msg.sender, currentReward.tokenId, currentReward.amount, "");
     emit RewardClaimed(rewardId, msg.sender);
+  }
+
+  //since packs nft is different
+  function claimPackReward(uint256 rewardId) external nonReentrant hasAllowance(rewardId) {
+    Reward memory currentReward = reward[rewardId];
+    require(address(currentReward.token) != address(0), "PacksAirdrop:DOESNT_EXISTS");
+    isAllowed[rewardId][msg.sender] = false;
+
+    EndersPack(address(currentReward.token)).mint(
+      msg.sender,
+      currentReward.tokenId,
+      currentReward.amount,
+      ""
+    );
+    emit RewardClaimed(rewardId, msg.sender);
+  }
+
+  //for nfts with mint done as owner
+  function transferTokenOwnership(Ownable token) external onlyRole(DEFAULT_ADMIN_ROLE) {
+    token.transferOwnership(msg.sender);
   }
 }

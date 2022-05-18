@@ -4,11 +4,11 @@ const {loadFixture} = waffle;
 
 import {deploy} from "../utils/contracts";
 import {configureAirdrop} from "../utils/airdrop";
-import {EndersGate, PacksAirdrop} from "../types";
+import {EndersGate, EndersPack, PacksAirdrop} from "../types";
 import {load} from "dotenv";
 import {SignerWithAddress} from "@nomiclabs/hardhat-ethers/signers";
 
-describe.only("PacksAirdrop", () => {
+describe("PacksAirdrop", () => {
   const noConfigFixture = async () => {
     const accounts = await ethers.getSigners();
     const endersGate = <EndersGate>(
@@ -18,6 +18,17 @@ describe.only("PacksAirdrop", () => {
         ethers.utils.id(Math.random().toString()),
         "https://ipfs.io/ipfs/",
       ])
+    );
+    const library = await (await ethers.getContractFactory("LootBoxRandomness")).deploy();
+    const packs = await (
+      await ethers.getContractFactory("EndersPack", {
+        libraries: {LootBoxRandomness: library.address},
+      })
+    ).deploy(
+      "Enders Gate",
+      "GATE",
+      ethers.utils.id(Math.random().toString()),
+      "https://ipfs.io/ipfs/"
     );
     const airdrop = <PacksAirdrop>await deploy(hre, "PacksAirdrop", accounts[0], []);
     const testConfig = {
@@ -37,7 +48,7 @@ describe.only("PacksAirdrop", () => {
         },
         {
           id: 3,
-          token: endersGate.address,
+          token: packs.address,
           amount: 3,
           tokenId: 3,
         },
@@ -48,13 +59,14 @@ describe.only("PacksAirdrop", () => {
       user: accounts[0],
       accounts,
       endersGate,
+      packs,
       airdrop,
       testConfig,
     };
   };
 
   const configFixture = async () => {
-    const {endersGate, airdrop, testConfig, ...rest} = await noConfigFixture();
+    const {endersGate, packs, airdrop, testConfig, ...rest} = await noConfigFixture();
 
     for (let i of testConfig.addresses) {
       await airdrop.setAddresses(i.rewardId, [i.address], [true]);
@@ -64,10 +76,13 @@ describe.only("PacksAirdrop", () => {
     }
 
     await endersGate.grantRole(await endersGate.MINTER_ROLE(), airdrop.address);
+    await packs.setState(endersGate.address, 5, 5, 5);
+    await packs.transferOwnership(airdrop.address);
 
     return {
       ...rest,
       endersGate,
+      packs,
       airdrop,
       testConfig,
     };
@@ -215,6 +230,32 @@ describe.only("PacksAirdrop", () => {
         "PacksAirdrop:NOT_ALLOWED"
       );
     });
+
+    it("Should allow users to claim their pack reward", async () => {
+      const {airdrop, testConfig, accounts, endersGate, packs} = await loadFixture(configFixture);
+      const reward = testConfig.rewards.find((rew) => rew.token === packs.address);
+      const account = testConfig.addresses.find((acc) => acc.rewardId === reward?.id) as {
+        address: string;
+        rewardId: number;
+      };
+      const wallet = accounts.find((acc) => acc.address === account.address) as SignerWithAddress;
+      const prevBalance = await packs.balanceOf(account.address, reward?.id || 0);
+
+      expect(prevBalance).to.be.equal(0);
+      await expect(airdrop.connect(wallet).claimPackReward(account.rewardId))
+        .to.emit(airdrop, "RewardClaimed")
+        .withArgs(account.rewardId, account.address)
+        .to.emit(packs, "TransferSingle")
+        .withArgs(
+          airdrop.address,
+          ethers.constants.AddressZero,
+          account.address,
+          reward?.id,
+          reward?.amount
+        );
+
+      expect(await packs.balanceOf(account.address, reward?.id || 0)).to.be.equal(reward?.amount);
+    });
   });
 
   describe("Production config", () => {
@@ -239,6 +280,25 @@ describe.only("PacksAirdrop", () => {
           );
         }
       }
+    });
+
+    it("Should return ownershipt once given", async () => {
+      const {airdrop, user, packs} = await loadFixture(configFixture);
+
+      expect(await packs.owner()).to.be.equal(airdrop.address);
+      await expect(airdrop.transferTokenOwnership(packs.address))
+        .to.emit(packs, "OwnershipTransferred")
+        .withArgs(airdrop.address, user.address);
+      expect(await packs.owner()).to.be.equal(user.address);
+    });
+
+    it("Should return ownershipt once given only to the default admin role", async () => {
+      const {airdrop, accounts, packs} = await loadFixture(configFixture);
+
+      expect(await packs.owner()).to.be.equal(airdrop.address);
+      await expect(
+        airdrop.connect(accounts[1]).transferTokenOwnership(packs.address)
+      ).to.be.revertedWith("");
     });
   });
 });
