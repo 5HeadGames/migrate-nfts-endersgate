@@ -18,7 +18,7 @@ const oldAddresses = {
 const blockLeap = 900;
 const wait = (time: number) => new Promise((resolve, reject) => setTimeout(resolve, time));
 
-async function getWhitelist(contract: "dracul" | "eross"): Promise<void> {
+async function getWhitelist(contract: "dracul" | "eross") {
   const accounts = await ethers.getSigners();
   const config = oldAddresses[contract];
   const nft = (await ethers.getContractFactory("ERC1155card")).attach(config.address);
@@ -39,37 +39,34 @@ async function getWhitelist(contract: "dracul" | "eross"): Promise<void> {
   }
 
   final = final.filter((ev: any) => ev.args.from === oldAddresses.presale);
-  console.log(
-    contract.toUpperCase(),
-    final.reduce((acc: Record<string, number>, cur: any) => {
-      const receiver = cur.args.to;
-      const amount = cur.args.value.toNumber();
 
-      return {
-        ...acc,
-        [receiver]: acc[receiver] ? acc[receiver] + amount : amount,
-      };
-    }, {})
-  );
-  //writeJsonFile({
-  //path: `/${contract}Whitelist.json`,
-  //data: final.reduce((acc: Record<string, number>, cur: any) => {
-  //const receiver = cur.args.to;
-  //const amount = cur.args.value.toNumber();
+  return final.reduce((acc: Record<string, number>, cur: any) => {
+    const receiver = cur.args.to;
+    const amount = cur.args.value.toNumber();
 
-  //return {
-  //...acc,
-  //[receiver]: acc[receiver] ? acc[receiver] + amount : amount,
-  //};
-  //}, {}),
-  //});
+    return {
+      ...acc,
+      [receiver]: acc[receiver] ? acc[receiver] + amount : amount,
+    };
+  }, {});
 }
 
 const main = async () => {
-  console.log("dracul");
-  await getWhitelist("dracul");
-  console.log("eross");
-  await getWhitelist("eross");
+  const draculMinters = await getWhitelist("dracul");
+  const erossMinters = await getWhitelist("eross");
+  writeJsonFile({
+    path: `/minters.json`,
+    data: {
+      dracul: Object.entries(draculMinters).map((entry) => ({
+        account: entry[0],
+        balance: entry[1],
+      })),
+      eross: Object.entries(erossMinters).map((entry) => ({
+        account: entry[0],
+        balance: entry[1],
+      })),
+    },
+  });
 };
 
 main()

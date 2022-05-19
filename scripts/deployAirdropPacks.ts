@@ -2,7 +2,7 @@ import hre, {ethers, network} from "hardhat";
 
 import {EndersGate, EndersPack, LootBoxRandomness__factory, PacksAirdrop} from "../types";
 import {attach, deploy} from "../utils/contracts";
-import {configureAirdrop} from "../utils/airdrop";
+import {configureAirdrop, getAirdropConfig} from "../utils/airdrop";
 import {loadJsonFile, writeJsonFile} from "../utils";
 
 async function main(): Promise<void> {
@@ -17,19 +17,9 @@ async function main(): Promise<void> {
     })
   ).attach(fileData.pack);
   const airdrop = <PacksAirdrop>await deploy(hre, "PacksAirdrop", user, []);
-  console.log("airdop", airdrop.address);
+  const configuration = getAirdropConfig(hre, endersGate, packs);
 
-  if (!(await airdrop.hasRole(await airdrop.DEFAULT_ADMIN_ROLE(), user.address)))
-    throw new Error("USER NOT OWNER: dont transfer ownership");
-
-  await configureAirdrop(hre, airdrop);
-  console.log("config");
-
-  await packs.transferOwnership(airdrop.address);
-  console.log("ownership");
-
-  await endersGate.grantRole(await endersGate.MINTER_ROLE(), airdrop.address);
-  console.log("role");
+  await configureAirdrop(hre, configuration, airdrop, endersGate, packs);
 
   writeJsonFile({
     path: `/${fileName}`,
