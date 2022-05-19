@@ -4,6 +4,8 @@ import {BigNumberish} from "ethers";
 import {loadJsonFile} from "..";
 import {PacksAirdrop, EndersGate, EndersPack} from "../../types";
 
+let findDuplicates = (arr: unknown[]) => arr.filter((item, index) => arr.indexOf(item) != index);
+
 const minters = loadJsonFile("minters.json") as Record<
     "dracul" | "eross",
     {balance: number; account: string}[]
@@ -42,9 +44,8 @@ export const getAirdropConfig = (
     ) => {
         elements.forEach(({account, balance}) => {
             const reward = {token, tokenId, amount: balance};
-            baseConfig[account]
-                ? baseConfig[account].push(reward)
-                : (baseConfig[account] = [reward]);
+            if (baseConfig[account]) baseConfig[account].push(reward);
+            else baseConfig[account] = [reward];
             addBalance(token, tokenId, balance);
         });
     };
@@ -58,6 +59,9 @@ export const getAirdropConfig = (
         account: entry[0],
         rewards: entry[1],
     }));
+
+    if (findDuplicates(config.map(({account}) => account)).length > 0)
+        throw new Error("config dupliacte");
 
     return {
         config,
@@ -85,30 +89,45 @@ export const configureAirdrop = async (
     const configEnders = contractBalance[endersGate.address];
     const configPacks = contractBalance[packs.address];
 
-    //console.log("Minting endersGate");
-    //await endersGate.mintBatch(
-    //airdrop.address,
-    //Object.keys(configEnders),
-    //Object.values(configEnders),
-    //Object.keys(configEnders).map(() => "")
-    //);
+    console.log("Minting endersGate");
+    await endersGate.mintBatch(
+        airdrop.address,
+        Object.keys(configEnders),
+        Object.values(configEnders),
+        Object.keys(configEnders).map(() => "")
+    );
 
-    //console.log("Minting packs");
-    //await packs.mintBatch(
-    //airdrop.address,
-    //Object.keys(configPacks),
-    //Object.values(configPacks),
-    //[]
-    //);
+    console.log("Minting packs");
+    await packs.mintBatch(
+        airdrop.address,
+        Object.keys(configPacks),
+        Object.values(configPacks),
+        []
+    );
 
-    const chunks = sliceInChunks(config, 100) as typeof config[];
-    console.log("Creating chunks", chunks.length);
-    for (let i of chunks) {
-        const wallets = i.map(({account}) => account);
-        const amounts = i.map(({rewards}) => rewards.map(({amount}) => amount));
-        const ids = i.map(({rewards}) => rewards.map(({tokenId}) => tokenId));
-        const tokens = i.map(({rewards}) => rewards.map(({token}) => token));
-
-        await airdrop.setReward(wallets, amounts, ids, tokens);
+    for (let i = 0; i < config.length; i++) {
+        for (let j = 0; j < i; j++) {
+            if (config[i].account === config[j].account) {
+                console.log("HERE");
+                throw new Error("Bug");
+            }
+        }
     }
+
+    const chunks = sliceInChunks(config, 200) as typeof config[];
+    console.log("Creating chunks", chunks.length);
+    const alreadyConfigured: Record<string, boolean> = {};
+    await Promise.all(
+        chunks.map((i) => {
+            const wallets = i.map(({account}) => {
+                alreadyConfigured[account] = true;
+                return account;
+            });
+            const amounts = i.map(({rewards}) => rewards.map(({amount}) => amount));
+            const ids = i.map(({rewards}) => rewards.map(({tokenId}) => tokenId));
+            const tokens = i.map(({rewards}) => rewards.map(({token}) => token));
+
+            return airdrop.setReward(wallets, amounts, ids, tokens);
+        })
+    );
 };

@@ -2,6 +2,7 @@ import {expect} from "chai";
 import hre, {waffle, ethers} from "hardhat";
 const {loadFixture} = waffle;
 
+import {loadJsonFile} from "../utils";
 import {deploy} from "../utils/contracts";
 import {configureAirdrop, getAirdropConfig, Reward} from "../utils/airdrop";
 import {EndersGate, EndersPack, PacksAirdrop} from "../types";
@@ -18,7 +19,7 @@ describe.only("PacksAirdrop", () => {
       ])
     );
     const library = await (await ethers.getContractFactory("LootBoxRandomness")).deploy();
-    const packs = await (
+    const packs = <EndersPack>await (
       await ethers.getContractFactory("EndersPack", {
         libraries: {LootBoxRandomness: library.address},
       })
@@ -71,6 +72,20 @@ describe.only("PacksAirdrop", () => {
       packs,
       airdrop,
       testConfig,
+    };
+  };
+
+  const productionFixture = async () => {
+    const {user, endersGate, packs, airdrop, ...rest} = await noConfigFixture();
+    const configuration = getAirdropConfig(hre, endersGate, packs);
+    await configureAirdrop(hre, configuration, airdrop, endersGate, packs);
+
+    return {
+      ...rest,
+      user,
+      endersGate,
+      packs,
+      airdrop,
     };
   };
 
@@ -177,19 +192,22 @@ describe.only("PacksAirdrop", () => {
     });
   });
 
-  describe("Production config", () => {
+  describe.only("Production config", () => {
     it("Should create correct rewards", async () => {
-      //const {airdrop, config} = await loadFixture(productionConfigFixture);
-      //for (let reward of config) {
-      //const actualReward = await airdrop.reward(reward.id);
-      //expect(actualReward.tokenId).to.be.equal(reward.tokenId);
-      //expect(actualReward.token).to.be.equal(reward.token);
-      //expect(actualReward.amount).to.be.equal(reward.amount);
-      //}
+      const {airdrop, config} = await loadFixture(productionFixture);
+      for (let cur of config) {
+        const rewards = await airdrop.getRewards(cur.account);
+        rewards.forEach(({token, tokenId, amount}, i) => {
+          const expected = cur.rewards[i];
+          expect(token).to.equal(expected.token);
+          expect(tokenId).to.equal(expected.tokenId);
+          expect(amount).to.equal(expected.amount);
+        });
+      }
     });
 
     it("Should whitelist correct wallets", async () => {
-      //const {airdrop, config} = await loadFixture(productionConfigFixture);
+      //const {airdrop, config} = await loadFixture();
       //for (let reward of config) {
       //for (let user of reward.addresses) {
       //expect(await airdrop.isAllowed(reward.id, user), "User not granted access").to.be.equal(
