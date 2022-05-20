@@ -2463,13 +2463,17 @@ async function main(): Promise<void> {
   const erossHolders = await getHoldersAmounts(eross, erc1155Tokens[3].balances, 1);
   console.log("erossHolders ");
 
-  writeJsonFile({
-    path: `/${fileName}`,
-    data: {
-      eross: endersErossHolders.concat(erossHolders),
-      dracul: endersDraculHolders.concat(draculHolders),
-    },
+  console.log({
+    eross: endersErossHolders.concat(erossHolders),
+    dracul: endersDraculHolders.concat(draculHolders),
   });
+  //writeJsonFile({
+  //path: `/${fileName}`,
+  //data: {
+  //eross: endersErossHolders.concat(erossHolders),
+  //dracul: endersDraculHolders.concat(draculHolders),
+  //},
+  //});
 }
 
 main()

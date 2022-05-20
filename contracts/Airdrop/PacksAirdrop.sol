@@ -51,6 +51,7 @@ contract PacksAirdrop is AccessControl, ReentrancyGuard, ERC1155Receiver {
         tokens[i].length == amounts[i].length && amounts[i].length == tokenIds[i].length,
         "PacksAirdrop:INVALID_INPUT"
       );
+
       for (uint256 j = 0; j < tokens[i].length; j++) {
         reward[users[i]].push(Reward(tokens[i][j], amounts[i][j], tokenIds[i][j]));
       }

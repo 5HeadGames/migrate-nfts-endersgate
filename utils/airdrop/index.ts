@@ -26,7 +26,7 @@ export const getAirdropConfig = (
     endersGate: EndersGate,
     packs: EndersPack
 ) => {
-    const baseConfig: Record<string, Reward[]> = {};
+    let baseConfig: Record<string, Reward[]> = {};
     const contractBalance: Record<string, Record<string, number>> = {};
 
     const addBalance = (token: string, tokenId: number, balance: number) => {
@@ -42,18 +42,20 @@ export const getAirdropConfig = (
         token: string,
         tokenId: number
     ) => {
+        let bal: any = {};
         elements.forEach(({account, balance}) => {
             const reward = {token, tokenId, amount: balance};
-            if (baseConfig[account]) baseConfig[account].push(reward);
-            else baseConfig[account] = [reward];
+            if (bal[account]) bal[account].push(reward);
+            else bal[account] = [reward];
             addBalance(token, tokenId, balance);
         });
+        return bal;
     };
 
-    parseConfig(minters.dracul, packs.address, 3);
-    parseConfig(minters.eross, packs.address, 2);
-    parseConfig(holders.dracul, endersGate.address, 231);
-    parseConfig(holders.eross, endersGate.address, 232);
+    baseConfig = parseConfig(minters.dracul, packs.address, 3);
+    baseConfig = {...baseConfig, ...parseConfig(minters.eross, packs.address, 2)};
+    baseConfig = {...baseConfig, ...parseConfig(holders.dracul, endersGate.address, 231)};
+    baseConfig = {...baseConfig, ...parseConfig(holders.eross, endersGate.address, 232)};
 
     const config = Object.entries(baseConfig).map((entry) => ({
         account: entry[0],
@@ -85,49 +87,64 @@ export const configureAirdrop = async (
     endersGate: EndersGate,
     packs: EndersPack
 ) => {
-    const {config, contractBalance} = configuration;
-    const configEnders = contractBalance[endersGate.address];
-    const configPacks = contractBalance[packs.address];
+    const holdersDracul = [...new Set(holders.dracul)];
+    const holdersEross = [...new Set(holders.eross)];
+    const mintersDracul = [...new Set(minters.dracul)];
+    const mintersEross = [...new Set(minters.eross)];
 
-    console.log("Minting endersGate");
-    await endersGate.mintBatch(
-        airdrop.address,
-        Object.keys(configEnders),
-        Object.values(configEnders),
-        Object.keys(configEnders).map(() => "")
+    const [dominicId, etnorId, rareId, epicId] = [231, 232, 1, 2];
+    const dominicAmount = holdersDracul.reduce((acc, cur) => acc + cur.balance, 0);
+    const etnorAmount = holdersEross.reduce((acc, cur) => acc + cur.balance, 0);
+    const epicAmount = mintersDracul.reduce((acc, cur) => acc + cur.balance, 0);
+    const rareAmount = mintersEross.reduce((acc, cur) => acc + cur.balance, 0);
+    console.log({dominicId, etnorId, rareId, epicId});
+
+    console.log("mint dominic");
+    await endersGate.mint(airdrop.address, dominicId, dominicAmount, "");
+    console.log("mint ertnor");
+    await endersGate.mint(airdrop.address, etnorId, etnorAmount, "");
+    console.log("mint rare");
+    await packs.mint(airdrop.address, rareId, rareAmount, []);
+    console.log("mint epic");
+    await packs.mint(airdrop.address, epicId, epicAmount, []);
+
+    console.log("holders dracul");
+    await airdrop.setReward(
+        holdersDracul.map(({account}) => account),
+        holdersDracul.map(({balance}) => [balance]),
+        holdersDracul.map(() => [dominicId]),
+        holdersDracul.map(() => [endersGate.address])
+    );
+    console.log("holders eross");
+    await airdrop.setReward(
+        holdersEross.map(({account}) => account),
+        holdersEross.map(({balance}) => [balance]),
+        holdersEross.map(() => [etnorId]),
+        holdersEross.map(() => [endersGate.address])
+    );
+    console.log("minters dracul");
+    await airdrop.setReward(
+        mintersDracul.map(({account}) => account),
+        mintersDracul.map(({balance}) => [balance]),
+        mintersDracul.map(() => [epicId]),
+        mintersDracul.map(() => [packs.address])
     );
 
-    console.log("Minting packs");
-    await packs.mintBatch(
-        airdrop.address,
-        Object.keys(configPacks),
-        Object.values(configPacks),
-        []
+    const eross1 = mintersEross.slice(0, 200);
+    console.log("minters eross 1", eross1.length);
+    await airdrop.setReward(
+        eross1.map(({account}) => account),
+        eross1.map(({balance}) => [balance]),
+        eross1.map(() => [rareId]),
+        eross1.map(() => [packs.address])
     );
 
-    for (let i = 0; i < config.length; i++) {
-        for (let j = 0; j < i; j++) {
-            if (config[i].account === config[j].account) {
-                console.log("HERE");
-                throw new Error("Bug");
-            }
-        }
-    }
-
-    const chunks = sliceInChunks(config, 200) as typeof config[];
-    console.log("Creating chunks", chunks.length);
-    const alreadyConfigured: Record<string, boolean> = {};
-    await Promise.all(
-        chunks.map((i) => {
-            const wallets = i.map(({account}) => {
-                alreadyConfigured[account] = true;
-                return account;
-            });
-            const amounts = i.map(({rewards}) => rewards.map(({amount}) => amount));
-            const ids = i.map(({rewards}) => rewards.map(({tokenId}) => tokenId));
-            const tokens = i.map(({rewards}) => rewards.map(({token}) => token));
-
-            return airdrop.setReward(wallets, amounts, ids, tokens);
-        })
+    const eross2 = mintersEross.slice(200);
+    console.log("minters eross 2", eross2.length);
+    await airdrop.setReward(
+        eross2.map(({account}) => account),
+        eross2.map(({balance}) => [balance]),
+        eross2.map(() => [rareId]),
+        eross2.map(() => [packs.address])
     );
 };

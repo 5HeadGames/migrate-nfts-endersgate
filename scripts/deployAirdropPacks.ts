@@ -17,6 +17,7 @@ async function main(): Promise<void> {
     })
   ).attach(fileData.pack);
   const airdrop = <PacksAirdrop>await deploy(hre, "PacksAirdrop", user, []);
+  console.log(airdrop.address);
   const configuration = getAirdropConfig(hre, endersGate, packs);
 
   await configureAirdrop(hre, configuration, airdrop, endersGate, packs);
