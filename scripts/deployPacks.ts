@@ -15,13 +15,14 @@ const setPacksState = async ({
   packsConfig: PacksConfig;
   endersGate: EndersGate;
 }) => {
-  await endersGate.grantRole(await endersGate.MINTER_ROLE(), pack.address);
-  console.log("MINTER ROLE");
+  //await endersGate.grantRole(await endersGate.MINTER_ROLE(), pack.address);
+  //console.log("MINTER ROLE");
 
   await pack.setState(endersGate.address, packsConfig.NUM_CARDS, packsConfig.NUM_TYPES, 5);
   console.log("CONFIG");
 
   for await (let i of packsConfig.cards) {
+    console.log({length: i.types.length});
     await pack.setOptionSettings(
       i.id,
       i.mintLimit,
@@ -52,9 +53,8 @@ async function main(): Promise<void> {
   const packsConfig = getPacksConfig();
   console.log({fileData});
 
-  const ipfsHash = fileData?.packIpfs
-    ? fileData.packIpfs
-    : await uploadIpfs({path: "/nfts/metadata/packs.json"});
+  const ipfsHash = fileData?.packIpfs ? fileData.packIpfs : "";
+  //: await uploadIpfs({path: "/nfts/metadata/packs.json"});
   console.log("IPFS", ipfsHash.split("/").reverse()[0]);
 
   const endersGate: EndersGate = (await ethers.getContractFactory("EndersGate")).attach(

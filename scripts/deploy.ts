@@ -46,23 +46,10 @@ async function main(): Promise<void> {
 
   await setUpMetadata(endersGate);
 
-  const exchange = await (
-    await ethers.getContractFactory("ExchangeERC1155")
-  ).deploy(
-    [oldAddresses.dracul, oldAddresses.eross],
-    [1, 1],
-    [DRACUL_ID, EROSS_ID],
-    endersGate.address
-  );
-  console.log("Exchange", exchange.address);
-
-  await endersGate.grantRole(await endersGate.MINTER_ROLE(), exchange.address);
-
   writeJsonFile({
     path: `/${fileName}`,
     data: {
       endersGate: endersGate.address,
-      exchange: exchange.address,
       ipfs: ipfsHash,
       ...(network.name === "harmony_test"
         ? {

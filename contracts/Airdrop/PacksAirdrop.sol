@@ -122,4 +122,6 @@ contract PacksAirdrop is AccessControl, ReentrancyGuard, ERC1155Receiver {
   ) external returns (bytes4) {
     return bytes4(keccak256("onERC1155BatchReceived(address,address,uint256[],uint256[],bytes)"));
   }
+
+  function transferTokenOwnership(Ownable token) external {}
 }

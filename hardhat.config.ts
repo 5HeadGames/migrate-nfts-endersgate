@@ -5,6 +5,7 @@ import "solidity-coverage";
 import "@openzeppelin/hardhat-upgrades";
 import "@nomiclabs/hardhat-waffle";
 import "@nomiclabs/hardhat-etherscan";
+import "@nomiclabs/hardhat-web3";
 import "hardhat-contract-sizer";
 import path from "path";
 
@@ -39,7 +40,6 @@ const config: HardhatUserConfig = {
   //},
   networks: {
     hardhat: {
-      chainId: chainIds.hardhat,
       accounts: {
         count: 10, //must be set higher when testing packs
       },
