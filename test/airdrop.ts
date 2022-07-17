@@ -7,7 +7,7 @@ import {deploy} from "../utils/contracts";
 import {configureAirdrop, getAirdropConfig, Reward} from "../utils/airdrop";
 import {EndersGate, EndersPack, PacksAirdrop} from "../types";
 
-describe.only("PacksAirdrop", () => {
+describe("PacksAirdrop", () => {
   const noConfigFixture = async () => {
     const accounts = await ethers.getSigners();
     const endersGate = <EndersGate>(
@@ -23,12 +23,7 @@ describe.only("PacksAirdrop", () => {
       await ethers.getContractFactory("EndersPack", {
         libraries: {LootBoxRandomness: library.address},
       })
-    ).deploy(
-      "Enders Gate",
-      "GATE",
-      ethers.utils.id(Math.random().toString()),
-      "https://ipfs.io/ipfs/"
-    );
+    ).deploy("https://ipfs.io/ipfs/");
     const airdrop = <PacksAirdrop>await deploy(hre, "PacksAirdrop", accounts[0], []);
     const {config, contractBalance} = getAirdropConfig(hre, endersGate, packs);
     await packs.setState(endersGate.address, 5, 5, 5);

@@ -31,12 +31,15 @@ contract EndersPack is BridgeNFTBatch, ERC1155Supply, ReentrancyGuard, AccessCon
   bytes32 public constant PACKS_ROLE = keccak256("PACKS_ROLE");
   string public baseURI;
 
-  LootBoxRandomness.LootBoxRandomnessState state;
+  LootBoxRandomness.LootBoxRandomnessState public state;
 
   mapping(uint256 => string) public idToIpfs;
 
   constructor(string memory _tokenURIPrefix) ERC1155("") {
     baseURI = _tokenURIPrefix;
+    _grantRole(PACKS_ROLE, msg.sender);
+    _grantRole(SUPPLY_ROLE, msg.sender);
+    _grantRole(URI_SETTER_ROLE, msg.sender);
   }
 
   function setState(
@@ -86,35 +89,15 @@ contract EndersPack is BridgeNFTBatch, ERC1155Supply, ReentrancyGuard, AccessCon
     return LootBoxRandomness._mint(state, _optionId, sender, _amount, "", address(this));
   }
 
-  /**
-   *  @dev Mint the token/option id.
-   */
-  function mint(
-    address _to,
-    uint256 _optionId,
-    uint256 _amount,
-    bytes memory _data
-  ) external onlyRole(SUPPLY_ROLE) {
-    require(_optionId < state.numOptions, "Lootbox: Invalid Option");
-    // Option ID is used as a token ID here
-    _mint(_to, _optionId, _amount, _data);
-  }
-
-  /**
-   *  @dev bridge interface function
-   */
   function mint(
     address _to,
     uint256 _optionId,
     bytes memory _data
   ) external onlyRole(SUPPLY_ROLE) {
-    require(_optionId < state.numOptions, "Lootbox: Invalid Option");
+    require(_optionId < state.numOptions, "EndersPack: Invalid Option");
     _mint(_to, _optionId, 1, _data);
   }
 
-  /**
-   *  @dev bridge interface function
-   */
   function mintBatch(
     address to,
     uint256[] memory ids,
@@ -124,9 +107,6 @@ contract EndersPack is BridgeNFTBatch, ERC1155Supply, ReentrancyGuard, AccessCon
     _mintBatch(to, ids, amounts, "");
   }
 
-  /**
-   *  @dev bridge interface function
-   */
   function burnBatchFor(
     address from,
     uint256[] calldata ids,
@@ -135,21 +115,8 @@ contract EndersPack is BridgeNFTBatch, ERC1155Supply, ReentrancyGuard, AccessCon
     _burnBatch(from, ids, amounts);
   }
 
-  /**
-   *  @dev bridge interface function
-   */
   function burnFor(address to, uint256 id) external onlyRole(SUPPLY_ROLE) {
     _burn(to, id, 1);
-  }
-
-  function supportsInterface(bytes4 interfaceId)
-    public
-    view
-    virtual
-    override(ERC1155, AccessControl)
-    returns (bool)
-  {
-    return super.supportsInterface(interfaceId);
   }
 
   function uri(uint256 id) public view override returns (string memory) {
@@ -170,7 +137,33 @@ contract EndersPack is BridgeNFTBatch, ERC1155Supply, ReentrancyGuard, AccessCon
     }
   }
 
-  fallback() external {
-    require(false, "DONT_SEND_MONEY");
+  function supportsInterface(bytes4 interfaceId)
+    public
+    view
+    virtual
+    override(ERC1155, AccessControl)
+    returns (bool)
+  {
+    return super.supportsInterface(interfaceId);
+  }
+
+  function onERC1155Received(
+    address operator,
+    address from,
+    uint256 id,
+    uint256 value,
+    bytes calldata data
+  ) external returns (bytes4) {
+    return bytes4(keccak256("onERC1155Received(address,address,uint256,uint256,bytes)"));
+  }
+
+  function onERC1155BatchReceived(
+    address operator,
+    address from,
+    uint256[] calldata ids,
+    uint256[] calldata values,
+    bytes calldata data
+  ) external returns (bytes4) {
+    return bytes4(keccak256("onERC1155BatchReceived(address,address,uint256[],uint256[],bytes)"));
   }
 }

@@ -41,7 +41,7 @@ const config: HardhatUserConfig = {
   networks: {
     hardhat: {
       accounts: {
-        count: 10, //must be set higher when testing packs
+        count: 200, //must be set higher when testing packs
       },
     },
     //goerli: getChainConfig("goerli"),

@@ -82,6 +82,7 @@
     "@openzeppelin/contracts": "^4.5.0",
     "@openzeppelin/contracts-upgradeable": "^4.5.1",
     "@openzeppelin/hardhat-upgrades": "^1.14.0",
+    "@openzeppelin/subgraphs": "^0.1.8-5",
     "app-root-path": "^3.0.0",
     "exceljs": "^4.3.0",
     "hardhat-contract-sizer": "^2.4.0",

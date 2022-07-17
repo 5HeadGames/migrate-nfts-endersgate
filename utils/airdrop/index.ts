@@ -104,9 +104,9 @@ export const configureAirdrop = async (
     console.log("mint ertnor");
     await endersGate.mint(airdrop.address, etnorId, etnorAmount, "");
     console.log("mint rare");
-    await packs.mint(airdrop.address, rareId, rareAmount, []);
+    await (packs as any).mint(airdrop.address, rareId, rareAmount, []);
     console.log("mint epic");
-    await packs.mint(airdrop.address, epicId, epicAmount, []);
+    await (packs as any).mint(airdrop.address, epicId, epicAmount, []);
 
     console.log("holders dracul");
     await airdrop.setReward(
