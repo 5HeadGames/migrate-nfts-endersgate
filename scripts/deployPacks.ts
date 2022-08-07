@@ -3,6 +3,7 @@ import {ethers, network, upgrades} from "hardhat";
 import {EndersGate, EndersPack} from "../types";
 import {uploadIpfs, loadJsonFile, writeJsonFile} from "../utils";
 import {getPacksConfig, PacksConfig} from "../utils/packs";
+import {attach} from "../utils/contracts";
 
 const metadataLinks = require("../nfts/metadata/packsMetadata.json");
 
@@ -61,29 +62,38 @@ async function main(): Promise<void> {
     fileData.endersGate
   );
 
-  const library = await (await ethers.getContractFactory("LootBoxRandomness")).deploy();
-  console.log("Library", library.address);
+  //const library = await (await ethers.getContractFactory("LootBoxRandomness")).deploy();
+  //console.log("Library", library.address);
 
-  const pack = await (
+  const pack = (
     await ethers.getContractFactory("EndersPack", {
       libraries: {
-        LootBoxRandomness: library.address,
+        //LootBoxRandomness: library.address,
+        LootBoxRandomness: endersGate.address,
       },
     })
-  ).deploy(
-    "Enders Gate Pack",
-    "PACK",
-    ipfsHash.split("/").reverse()[0],
-    "https://ipfs.moralis.io:2053/ipfs/"
-  );
-  console.log("Pack", pack.address);
+  ).attach(fileData.packs);
+  //const pack = await (
+  //await ethers.getContractFactory("EndersPack", {
+  //libraries: {
+  //LootBoxRandomness: library.address,
+  //},
+  //})
+  //).deploy(
+  //"Enders Gate Pack",
+  //"PACK",
+  //ipfsHash.split("/").reverse()[0],
+  //"https://ipfs.moralis.io:2053/ipfs/"
+  //);
+  //console.log("Pack", pack.address);
 
+  console.log("setPacksState");
   await setPacksState({pack, packsConfig, endersGate});
 
-  writeJsonFile({
-    path: `/${fileName}`,
-    data: {pack: pack.address, packIpfs: ipfsHash, library: library.address},
-  });
+  //writeJsonFile({
+  //path: `/${fileName}`,
+  //data: {pack: pack.address, packIpfs: ipfsHash, library: library.address},
+  //});
 }
 
 main()

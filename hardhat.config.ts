@@ -61,6 +61,10 @@ const config: HardhatUserConfig = {
       accounts: [process.env.PRIVATE_KEY || ""],
       timeout: 120000000,
     },
+    polygon: {
+      url: process.env.POLYGON_PROVIDER,
+      accounts: [process.env.PRIVATE_KEY || ""],
+    },
 
     //ropsten: getChainConfig("ropsten"),
   },
