@@ -8,7 +8,7 @@ const {loadFixture} = waffle;
 const TEST_AMOUNT = 30;
 let accountCount = 3;
 
-describe.only("Packs ERC1155", function () {
+describe("Packs ERC1155", function () {
   describe("Unpack nfts", () => {
     it("COMMON_PACK: individual quantities", async () => {
       const {packsConfig, accounts, endersGate, packs} = await loadFixture(packsConfigFixture);

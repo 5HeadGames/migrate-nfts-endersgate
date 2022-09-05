@@ -34,8 +34,8 @@ export const packsFixture = async (): Promise<PacksFixture> => {
     })
   ).deploy(URI)) as EndersPack;
 
-  await endersGate.grantRole(await endersGate.MINTER_ROLE(), packs.address);
-  await endersGate.mintBatch(packs.address, [0, 1, 2], [200, 200, 200], ["", "", ""]);
+  await endersGate.grantRole(await endersGate.SUPPLY_ROLE(), packs.address);
+  await endersGate.mintBatch(packs.address, [0, 1, 2], [200, 200, 200], "");
   await packs.setState(endersGate.address, packsConfig.NUM_CARDS, packsConfig.NUM_TYPES, 5);
 
   return {packsConfig, library, hash, URI, accounts, endersGate, packs};

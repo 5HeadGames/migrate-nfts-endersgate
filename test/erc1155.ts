@@ -1,10 +1,9 @@
 import {ethers, upgrades, network} from "hardhat";
-import {BigNumber, BigNumberish} from "@ethersproject/bignumber";
 import {expect, assert} from "chai";
 import {SignerWithAddress} from "@nomiclabs/hardhat-ethers/dist/src/signer-with-address";
 import {EndersGate} from "../types";
 
-describe("ERC1155", function () {
+describe.only("ERC1155", function () {
   let endersGate: EndersGate, accounts: SignerWithAddress[];
   const hash = ethers.utils.id(Math.random().toString());
   const URI = "https://some/url/";
@@ -16,7 +15,7 @@ describe("ERC1155", function () {
       await ethers.getContractFactory("EndersGate")
     ).deploy("Enders Gate", "GATE", hash, "https://ipfs.io/ipfs/")) as EndersGate;
     const adminRole = await endersGate.DEFAULT_ADMIN_ROLE();
-    const minterRole = await endersGate.MINTER_ROLE();
+    const minterRole = await endersGate.SUPPLY_ROLE();
     const uriSetterRole = await endersGate.URI_SETTER_ROLE();
 
     const hasRoleAdmin = await endersGate.hasRole(adminRole, owner.address);
@@ -36,7 +35,7 @@ describe("ERC1155", function () {
   });
 
   it("Should assign roles dynamically", async () => {
-    const minterRole = await endersGate.MINTER_ROLE();
+    const minterRole = await endersGate.SUPPLY_ROLE();
 
     await endersGate.grantRole(minterRole, accounts[4].address);
     await expect(
@@ -49,7 +48,7 @@ describe("ERC1155", function () {
   });
 
   it("Should remove roles dynamically", async () => {
-    const minterRole = await endersGate.MINTER_ROLE();
+    const minterRole = await endersGate.SUPPLY_ROLE();
 
     await endersGate.revokeRole(minterRole, accounts[4].address);
     await expect(
@@ -69,36 +68,30 @@ describe("ERC1155", function () {
   it("Should mint nft with ipfs hash", async () => {
     const hash = ethers.utils.id(Math.random().toString());
     const id = 1;
-    await endersGate.mint(accounts[0].address, id, 1, hash);
+    await endersGate.mint(accounts[0].address, id, []);
+    await endersGate.setIpfsHashBatch([id], [hash]);
     const uri = await endersGate.uri(id);
     expect(uri).to.be.equal(URI + hash);
   });
 
   it("Should increase total supply on normal mint", async () => {
-    const hash = ethers.utils.id(Math.random().toString());
     const id = 1;
     const amount = 110;
     const prevBalance = await endersGate.totalSupply(id);
 
-    await endersGate.mint(accounts[0].address, id, amount, hash);
+    await endersGate.mintBatch(accounts[0].address, [id], [amount], []);
     const balance = await endersGate.totalSupply(id);
 
     expect(balance.toString()).to.be.equal(prevBalance.add(amount).toString());
   });
 
   it("Should increase total supply on batch mint", async () => {
-    const hash = ethers.utils.id(Math.random().toString());
     const ids = [1, 2, 3, 4, 5, 10];
     const amounts = [2, 3, 1, 23, 12, 3];
-    const prevBalance = await endersGate.totalSupplyBatch(ids);
+    const prevBalance = await Promise.all(ids.map((id) => endersGate.totalSupply(id)));
 
-    await endersGate.mintBatch(
-      accounts[0].address,
-      ids,
-      amounts,
-      amounts.map(() => hash)
-    );
-    const balances = await endersGate.totalSupplyBatch(ids);
+    await endersGate.mintBatch(accounts[0].address, ids, amounts, []);
+    const balances = await Promise.all(ids.map((id) => endersGate.totalSupply(id)));
 
     expect(
       balances.every((bal, i) => bal.toString() === prevBalance[i].add(amounts[i]).toString())

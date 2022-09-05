@@ -25,14 +25,14 @@ describe("Exchange", function () {
     ).deploy("Enders Gate", "GATE", hash, "https://ipfs.io/ipfs/")) as EndersGate;
     oldNft = await (await ethers.getContractFactory("ERC1155card")).deploy("Dracul");
     oldNft2 = await (await ethers.getContractFactory("ERC1155card")).deploy("Eross");
-    exchange = await (
-      await ethers.getContractFactory("ExchangeERC1155")
-    ).deploy([oldNft.address, oldNft2.address], [1, 1], [1, 2], endersGate.address);
+    //exchange = await (
+    //await ethers.getContractFactory("ExchangeERC1155")
+    //).deploy([oldNft.address, oldNft2.address], [1, 1], [1, 2], endersGate.address);
 
     const nftToId1 = await exchange.nftToId(oldNft.address, 1);
     const nftToId2 = await exchange.nftToId(oldNft2.address, 1);
 
-    await endersGate.grantRole(await endersGate.MINTER_ROLE(), exchange.address);
+    await endersGate.grantRole(await endersGate.SUPPLY_ROLE(), exchange.address);
     await endersGate.setIpfsHashBatch([1, 2], nftHashes);
     await oldNft.safeTransferFrom(accounts[0].address, accounts[1].address, 1, 50, []);
 
