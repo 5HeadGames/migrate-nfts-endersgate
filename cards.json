@@ -605,7 +605,7 @@
       "name": "Ignited Bear Trap",
       "type": "ERC1155",
       "description": "Flip: Activate when your opponent declares an attack; deal 15 burn damage to the attacking Guardian for 3 turns. ",
-      "image": "QmSoGoPmYQN7X1ziteeeEqg98stNL8GaerB98NLTHay7Nj",
+      "image": "QmVY4Mx2NsbNmCYL5zHQz5jgeKF5ZC69rESWwY7DVRm5VV",
       "symbol": "GATE",
       "properties": {
         "id": {
@@ -634,7 +634,7 @@
         },
         "image": {
           "name": "image",
-          "value": "https://ipfs.moralis.io:2053/ipfs/QmSoGoPmYQN7X1ziteeeEqg98stNL8GaerB98NLTHay7Nj"
+          "value": "https://ipfs.moralis.io:2053/ipfs/QmVY4Mx2NsbNmCYL5zHQz5jgeKF5ZC69rESWwY7DVRm5VV"
         }
       },
       "attributes": [
@@ -664,7 +664,7 @@
         },
         {
           "trait_type": "image",
-          "value": "https://ipfs.moralis.io:2053/ipfs/QmSoGoPmYQN7X1ziteeeEqg98stNL8GaerB98NLTHay7Nj"
+          "value": "https://ipfs.moralis.io:2053/ipfs/QmVY4Mx2NsbNmCYL5zHQz5jgeKF5ZC69rESWwY7DVRm5VV"
         }
       ]
     },
@@ -5163,7 +5163,7 @@
       "name": "Dimensional Tesseract",
       "type": "ERC1155",
       "description": "Pay 600 Gold to Activate one of the two effects: \n\n● Both players send 10 cards from the top of their decks to the grave yard. \n● Both players send all Guardians on the field to the Grave yard",
-      "image": "QmRX8d15Db4d9qWoJeUBYDpqRAyzuNoZSwWxzvs7PbH22C",
+      "image": "Qmbz88hZ8CReuv3BHVEV8escUGgRz4hfBQLW2ngx2hRFBY",
       "symbol": "GATE",
       "properties": {
         "id": {
@@ -5192,7 +5192,7 @@
         },
         "image": {
           "name": "image",
-          "value": "https://ipfs.moralis.io:2053/ipfs/QmRX8d15Db4d9qWoJeUBYDpqRAyzuNoZSwWxzvs7PbH22C"
+          "value": "https://ipfs.moralis.io:2053/ipfs/Qmbz88hZ8CReuv3BHVEV8escUGgRz4hfBQLW2ngx2hRFBY"
         }
       },
       "attributes": [
@@ -5222,7 +5222,7 @@
         },
         {
           "trait_type": "image",
-          "value": "https://ipfs.moralis.io:2053/ipfs/QmRX8d15Db4d9qWoJeUBYDpqRAyzuNoZSwWxzvs7PbH22C"
+          "value": "https://ipfs.moralis.io:2053/ipfs/Qmbz88hZ8CReuv3BHVEV8escUGgRz4hfBQLW2ngx2hRFBY"
         }
       ]
     },
@@ -5230,7 +5230,7 @@
       "name": "Hatchling Potential",
       "type": "ERC1155",
       "description": "Pay 25 Gold for 3 turns during your standby phase to successfully Activate: \nA random Guardian from your deck appears on the field in MP1",
-      "image": "QmNYf7LWH4KUCpAhyBz3KppoCksb3yzS7ksjefaDDySMwW",
+      "image": "QmZ83ndoVZJn4fiTzHSYEmoddcjzygtWCJuHGwV1vGME1z",
       "symbol": "GATE",
       "properties": {
         "id": {
@@ -5259,7 +5259,7 @@
         },
         "image": {
           "name": "image",
-          "value": "https://ipfs.moralis.io:2053/ipfs/QmNYf7LWH4KUCpAhyBz3KppoCksb3yzS7ksjefaDDySMwW"
+          "value": "https://ipfs.moralis.io:2053/ipfs/QmZ83ndoVZJn4fiTzHSYEmoddcjzygtWCJuHGwV1vGME1z"
         }
       },
       "attributes": [
@@ -5289,7 +5289,7 @@
         },
         {
           "trait_type": "image",
-          "value": "https://ipfs.moralis.io:2053/ipfs/QmNYf7LWH4KUCpAhyBz3KppoCksb3yzS7ksjefaDDySMwW"
+          "value": "https://ipfs.moralis.io:2053/ipfs/QmZ83ndoVZJn4fiTzHSYEmoddcjzygtWCJuHGwV1vGME1z"
         }
       ]
     },
@@ -6033,7 +6033,7 @@
       "name": "Blaze Bane",
       "type": "ERC1155",
       "description": "[Beast | Assassin] \"Relentless Pursuit\" Passive: Upon death, blaze bane returns to the battle field at the start of your opponents battle phase with 50% HP & gold cost to 0. This effect occurs once. ",
-      "image": "QmNqv4T73KGvDCGUoUo5LXJbmt2cMWYg4TJAQ6W5MGEdHN",
+      "image": "QmeTvA981w1DwpKrjBsTC7fyZvxGtZ4NShSXA8K7hA41vZ",
       "symbol": "GATE",
       "properties": {
         "id": {
@@ -6078,7 +6078,7 @@
         },
         "image": {
           "name": "image",
-          "value": "https://ipfs.moralis.io:2053/ipfs/QmNqv4T73KGvDCGUoUo5LXJbmt2cMWYg4TJAQ6W5MGEdHN"
+          "value": "https://ipfs.moralis.io:2053/ipfs/QmeTvA981w1DwpKrjBsTC7fyZvxGtZ4NShSXA8K7hA41vZ"
         }
       },
       "attributes": [
@@ -6124,7 +6124,7 @@
         },
         {
           "trait_type": "image",
-          "value": "https://ipfs.moralis.io:2053/ipfs/QmNqv4T73KGvDCGUoUo5LXJbmt2cMWYg4TJAQ6W5MGEdHN"
+          "value": "https://ipfs.moralis.io:2053/ipfs/QmeTvA981w1DwpKrjBsTC7fyZvxGtZ4NShSXA8K7hA41vZ"
         }
       ]
     },
@@ -8409,7 +8409,7 @@
       "name": "Undead Hound",
       "type": "ERC1155",
       "description": "[Undead | Support] Passive: When Undead Hound is sent to the grave yard as a result of battle, add 1 undead type guardian worth 100 gold or less from your deck to your hand.",
-      "image": "QmZK5t9KVF4LZoYReyQGoeKLA3PnA9vixJbB6xVhFoVnA3",
+      "image": "QmQxKyoVg94dnfZoxTowGwTj5MbdBzqimGwJxhAY8F76E7",
       "symbol": "GATE",
       "properties": {
         "id": {
@@ -8454,7 +8454,7 @@
         },
         "image": {
           "name": "image",
-          "value": "https://ipfs.moralis.io:2053/ipfs/QmZK5t9KVF4LZoYReyQGoeKLA3PnA9vixJbB6xVhFoVnA3"
+          "value": "https://ipfs.moralis.io:2053/ipfs/QmQxKyoVg94dnfZoxTowGwTj5MbdBzqimGwJxhAY8F76E7"
         }
       },
       "attributes": [
@@ -8500,7 +8500,7 @@
         },
         {
           "trait_type": "image",
-          "value": "https://ipfs.moralis.io:2053/ipfs/QmZK5t9KVF4LZoYReyQGoeKLA3PnA9vixJbB6xVhFoVnA3"
+          "value": "https://ipfs.moralis.io:2053/ipfs/QmQxKyoVg94dnfZoxTowGwTj5MbdBzqimGwJxhAY8F76E7"
         }
       ]
     },
@@ -10094,7 +10094,7 @@
       "name": "Agodol",
       "type": "ERC1155",
       "description": "[Demon | Fighter] \"Fire Born\" Passive: Reduce incoming damage from all Earth-Type Guardians by 10. ",
-      "image": "QmVAVHeeVpxUWd4q6Zk319xyQadAN8d8jbFaNBEGkQ8KK6",
+      "image": "Qmf98wN2bqSRuY5CmHVLop3uneH4JkjcjjVXY5S5Pxcs5p",
       "symbol": "GATE",
       "properties": {
         "id": {
@@ -10139,7 +10139,7 @@
         },
         "image": {
           "name": "image",
-          "value": "https://ipfs.moralis.io:2053/ipfs/QmVAVHeeVpxUWd4q6Zk319xyQadAN8d8jbFaNBEGkQ8KK6"
+          "value": "https://ipfs.moralis.io:2053/ipfs/Qmf98wN2bqSRuY5CmHVLop3uneH4JkjcjjVXY5S5Pxcs5p"
         }
       },
       "attributes": [
@@ -10185,7 +10185,7 @@
         },
         {
           "trait_type": "image",
-          "value": "https://ipfs.moralis.io:2053/ipfs/QmVAVHeeVpxUWd4q6Zk319xyQadAN8d8jbFaNBEGkQ8KK6"
+          "value": "https://ipfs.moralis.io:2053/ipfs/Qmf98wN2bqSRuY5CmHVLop3uneH4JkjcjjVXY5S5Pxcs5p"
         }
       ]
     },
@@ -19604,7 +19604,7 @@
       "name": "Mackadon",
       "type": "ERC1155",
       "description": "[Shark | Fighter] \"Sea Hunter\" Passive: Mackadon gains +10 ATK for each water type Guardian in your graveyard. ",
-      "image": "QmTuErZtHjPr782dshBuVU69KPtSoHMhgy4WYW82THDi5z",
+      "image": "QmP3Bwx6AXgA2e3AUai6zL576r9roykgNF38NpyuRYyQGd",
       "symbol": "GATE",
       "properties": {
         "id": {
@@ -19649,7 +19649,7 @@
         },
         "image": {
           "name": "image",
-          "value": "https://ipfs.moralis.io:2053/ipfs/QmTuErZtHjPr782dshBuVU69KPtSoHMhgy4WYW82THDi5z"
+          "value": "https://ipfs.moralis.io:2053/ipfs/QmP3Bwx6AXgA2e3AUai6zL576r9roykgNF38NpyuRYyQGd"
         }
       },
       "attributes": [
@@ -19695,7 +19695,7 @@
         },
         {
           "trait_type": "image",
-          "value": "https://ipfs.moralis.io:2053/ipfs/QmTuErZtHjPr782dshBuVU69KPtSoHMhgy4WYW82THDi5z"
+          "value": "https://ipfs.moralis.io:2053/ipfs/QmP3Bwx6AXgA2e3AUai6zL576r9roykgNF38NpyuRYyQGd"
         }
       ]
     },
@@ -20000,7 +20000,7 @@
       "name": "Rulgannon",
       "type": "ERC1155",
       "description": "[Demon | Tank] \"Task Master\" Passive: When Rulgannon is hired to the field, swap all Guardians in play who cost 200 gold or less with Guardians in both Graveyards. ",
-      "image": "QmbbUaSfZRgMR9NKNTzm6TTaBTgJqn5UwBVrGbjzBWFHGi",
+      "image": "QmctU4b1m9AA77AuSDWcnDPc6GJ4rjkeccB2v81zu7QE2S",
       "symbol": "GATE",
       "properties": {
         "id": {
@@ -20045,7 +20045,7 @@
         },
         "image": {
           "name": "image",
-          "value": "https://ipfs.moralis.io:2053/ipfs/QmbbUaSfZRgMR9NKNTzm6TTaBTgJqn5UwBVrGbjzBWFHGi"
+          "value": "https://ipfs.moralis.io:2053/ipfs/QmctU4b1m9AA77AuSDWcnDPc6GJ4rjkeccB2v81zu7QE2S"
         }
       },
       "attributes": [
@@ -20091,7 +20091,7 @@
         },
         {
           "trait_type": "image",
-          "value": "https://ipfs.moralis.io:2053/ipfs/QmbbUaSfZRgMR9NKNTzm6TTaBTgJqn5UwBVrGbjzBWFHGi"
+          "value": "https://ipfs.moralis.io:2053/ipfs/QmctU4b1m9AA77AuSDWcnDPc6GJ4rjkeccB2v81zu7QE2S"
         }
       ]
     },

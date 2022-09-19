@@ -47,6 +47,7 @@ task("create-nft", "Upload image to ipfs")
     });
 
     const nfts = (await ethers.getContractFactory("EndersGate")).attach(fileData.endersGate);
-    await nfts.setIpfsHashBatch([lastId], [dataIpfs.split("/").reverse()[0]]);
+    console.log({lastId, dataIpfs});
+    //await nfts.setIpfsHashBatch([lastId], [dataIpfs.split("/").reverse()[0]]);
     console.log("SUCCESS", [lastId], [dataIpfs.split("/").reverse()[0]]);
   });
