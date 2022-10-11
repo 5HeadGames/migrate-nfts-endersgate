@@ -7,7 +7,7 @@ import {deploy} from "../utils/contracts";
 import {configureAirdrop, getAirdropConfig, Reward} from "../utils/airdrop";
 import {EndersGate, EndersPack, PacksAirdrop} from "../types";
 
-describe("PacksAirdrop", () => {
+describe.skip("PacksAirdrop", () => {
   const noConfigFixture = async () => {
     const accounts = await ethers.getSigners();
     const endersGate = <EndersGate>(

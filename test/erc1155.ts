@@ -3,7 +3,7 @@ import {expect, assert} from "chai";
 import {SignerWithAddress} from "@nomiclabs/hardhat-ethers/dist/src/signer-with-address";
 import {EndersGate} from "../types";
 
-describe.only("ERC1155", function () {
+describe("ERC1155", function () {
   let endersGate: EndersGate, accounts: SignerWithAddress[];
   const hash = ethers.utils.id(Math.random().toString());
   const URI = "https://some/url/";

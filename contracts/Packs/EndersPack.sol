@@ -92,7 +92,7 @@ contract EndersPack is BridgeNFTBatch, ERC1155Supply, ReentrancyGuard, AccessCon
   function mint(
     address _to,
     uint256 _optionId,
-    bytes memory _data
+    bytes calldata _data
   ) external onlyRole(SUPPLY_ROLE) {
     require(_optionId < state.numOptions, "EndersPack: Invalid Option");
     _mint(_to, _optionId, 1, _data);
@@ -100,9 +100,9 @@ contract EndersPack is BridgeNFTBatch, ERC1155Supply, ReentrancyGuard, AccessCon
 
   function mintBatch(
     address to,
-    uint256[] memory ids,
-    uint256[] memory amounts,
-    bytes memory
+    uint256[] calldata ids,
+    uint256[] calldata amounts,
+    bytes calldata
   ) external onlyRole(SUPPLY_ROLE) {
     _mintBatch(to, ids, amounts, "");
   }

@@ -47,16 +47,16 @@ contract EndersGate is ERC1155Supply, BridgeNFTBatch, AccessControl {
   function mint(
     address account,
     uint256 id,
-    bytes memory _data
+    bytes calldata _data
   ) external onlyRole(SUPPLY_ROLE) {
     _mint(account, id, 1, "");
   }
 
   function mintBatch(
     address to,
-    uint256[] memory ids,
-    uint256[] memory amounts,
-    bytes memory
+    uint256[] calldata ids,
+    uint256[] calldata amounts,
+    bytes calldata
   ) external onlyRole(SUPPLY_ROLE) {
     _mintBatch(to, ids, amounts, "");
   }

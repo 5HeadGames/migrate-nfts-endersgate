@@ -6,7 +6,7 @@ import {ExchangeERC1155} from "../types/ExchangeERC1155";
 import {EndersGate} from "../types";
 import {ERC1155card} from "../types";
 
-describe("Exchange", function () {
+describe.skip("Exchange", function () {
   let exchange: ExchangeERC1155,
     endersGate: EndersGate,
     oldNft: ERC1155card,
