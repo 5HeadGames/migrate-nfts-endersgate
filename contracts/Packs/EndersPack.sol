@@ -15,7 +15,12 @@ import { BridgeNFTBatch } from "../interfaces/BridgeNFTBatch.sol";
  * CreatureAccessoryLootBox - a randomized and openable lootbox of Creature
  * Accessories.
  */
-contract EndersPack is BridgeNFTBatch, ERC1155Supply, ReentrancyGuard, AccessControl {
+contract EndersPack is
+  BridgeNFTBatch,
+  ERC1155Supply,
+  ReentrancyGuard,
+  AccessControl
+{
   using Address for address;
   using LootBoxRandomness for LootBoxRandomness.LootBoxRandomnessState;
 
@@ -48,7 +53,13 @@ contract EndersPack is BridgeNFTBatch, ERC1155Supply, ReentrancyGuard, AccessCon
     uint256 _numTypes,
     uint256 _seed
   ) external onlyRole(PACKS_ROLE) {
-    LootBoxRandomness.initState(state, _factoryAddress, _numOptions, _numTypes, _seed);
+    LootBoxRandomness.initState(
+      state,
+      _factoryAddress,
+      _numOptions,
+      _numTypes,
+      _seed
+    );
   }
 
   function setOptionSettings(
@@ -79,14 +90,26 @@ contract EndersPack is BridgeNFTBatch, ERC1155Supply, ReentrancyGuard, AccessCon
   // MAIN FUNCTIONS
   //////
 
-  function unpack(uint256 _optionId, uint256 _amount) external nonReentrant returns (uint256) {
+  function unpack(uint256 _optionId, uint256 _amount)
+    external
+    nonReentrant
+    returns (uint256)
+  {
     address sender = _msgSender();
     require(!sender.isContract(), "Only EOA accounts");
     require(tx.origin == sender, "Only EOA accounts");
     // This will underflow if _msgSender() does not own enough tokens.
     _burn(sender, _optionId, _amount);
     // Mint nfts contained by LootBox
-    return LootBoxRandomness._mint(state, _optionId, sender, _amount, "", address(this));
+    return
+      LootBoxRandomness._mint(
+        state,
+        _optionId,
+        sender,
+        _amount,
+        "",
+        address(this)
+      );
   }
 
   function mint(
@@ -94,7 +117,7 @@ contract EndersPack is BridgeNFTBatch, ERC1155Supply, ReentrancyGuard, AccessCon
     uint256 _optionId,
     bytes calldata _data
   ) external onlyRole(SUPPLY_ROLE) {
-    require(_optionId < state.numOptions, "EndersPack: Invalid Option");
+    require(_optionId < state.numOptions);
     _mint(_to, _optionId, 1, _data);
   }
 
@@ -121,7 +144,10 @@ contract EndersPack is BridgeNFTBatch, ERC1155Supply, ReentrancyGuard, AccessCon
 
   function uri(uint256 id) public view override returns (string memory) {
     string memory ipfsHash = idToIpfs[id];
-    return bytes(baseURI).length > 0 ? string(abi.encodePacked(baseURI, ipfsHash)) : "";
+    return
+      bytes(baseURI).length > 0
+        ? string(abi.encodePacked(baseURI, ipfsHash))
+        : "";
   }
 
   function setURI(string memory newuri) external onlyRole(URI_SETTER_ROLE) {
@@ -154,7 +180,10 @@ contract EndersPack is BridgeNFTBatch, ERC1155Supply, ReentrancyGuard, AccessCon
     uint256 value,
     bytes calldata data
   ) external returns (bytes4) {
-    return bytes4(keccak256("onERC1155Received(address,address,uint256,uint256,bytes)"));
+    return
+      bytes4(
+        keccak256("onERC1155Received(address,address,uint256,uint256,bytes)")
+      );
   }
 
   function onERC1155BatchReceived(
@@ -164,6 +193,11 @@ contract EndersPack is BridgeNFTBatch, ERC1155Supply, ReentrancyGuard, AccessCon
     uint256[] calldata values,
     bytes calldata data
   ) external returns (bytes4) {
-    return bytes4(keccak256("onERC1155BatchReceived(address,address,uint256[],uint256[],bytes)"));
+    return
+      bytes4(
+        keccak256(
+          "onERC1155BatchReceived(address,address,uint256[],uint256[],bytes)"
+        )
+      );
   }
 }
