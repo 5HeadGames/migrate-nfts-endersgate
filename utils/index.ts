@@ -107,3 +107,5 @@ export const getEventLogs = (
 };
 
 export const getUrlHash = (ipfsUrl: string) => ipfsUrl.split("/").reverse()[0];
+
+export const wait = (seconds: number) => new Promise((res) => setTimeout(res, seconds));

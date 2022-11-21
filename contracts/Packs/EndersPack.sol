@@ -42,6 +42,7 @@ contract EndersPack is
 
   constructor(string memory _tokenURIPrefix) ERC1155("") {
     baseURI = _tokenURIPrefix;
+    _grantRole(DEFAULT_ADMIN_ROLE, msg.sender);
     _grantRole(PACKS_ROLE, msg.sender);
     _grantRole(SUPPLY_ROLE, msg.sender);
     _grantRole(URI_SETTER_ROLE, msg.sender);

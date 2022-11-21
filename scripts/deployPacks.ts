@@ -1,7 +1,7 @@
 import {ethers, network, upgrades} from "hardhat";
 
 import {EndersGate, EndersPack} from "../types";
-import {uploadIpfs, loadJsonFile, writeJsonFile} from "../utils";
+import {uploadIpfs, loadJsonFile, writeJsonFile, wait} from "../utils";
 import {getPacksConfig, PacksConfig} from "../utils/packs";
 import {attach} from "../utils/contracts";
 
@@ -16,25 +16,34 @@ const setPacksState = async ({
   packsConfig: PacksConfig;
   endersGate: EndersGate;
 }) => {
-  await endersGate.grantRole(await endersGate.SUPPLY_ROLE(), pack.address);
-  console.log("MINTER ROLE");
+  const tx = await endersGate.grantRole(await endersGate.SUPPLY_ROLE(), pack.address);
+  console.log("MINTER ROLE", tx.hash);
 
-  await pack.setState(endersGate.address, packsConfig.NUM_CARDS, packsConfig.NUM_TYPES, 5);
-  console.log("CONFIG");
+  const tx2 = await pack.setState(
+    endersGate.address,
+    packsConfig.NUM_CARDS,
+    packsConfig.NUM_TYPES,
+    5
+  );
+  console.log("CONFIG", tx2.hash);
 
+  console.log({configLength: packsConfig.cards.length});
   for await (let i of packsConfig.cards) {
     console.log({length: i.types.length});
+    await wait(1000);
     await pack.setOptionSettings(
       i.id,
       i.mintLimit,
       i.types.map(({id}) => id),
       i.types.map(({inferiorLimit}) => inferiorLimit),
-      i.types.map(({superiorLimit}) => superiorLimit)
+      i.types.map(({superiorLimit}) => superiorLimit),
+      {gasLimit: 654010}
     );
   }
   console.log("CARDS");
 
-  for await (let i of packsConfig.types) await pack.setTokensForTypes(i.id, i.nftsIds);
+  for await (let i of packsConfig.types)
+    await pack.setTokensForTypes(i.id, i.nftsIds, {gasLimit: 654010});
   console.log("TYPES");
 
   const hashesData = Object.entries(metadataLinks).map((entry: any) => ({
@@ -43,7 +52,8 @@ const setPacksState = async ({
   }));
   await pack.setIpfsHashBatch(
     hashesData.map(({id}) => id),
-    hashesData.map(({hash}) => hash)
+    hashesData.map(({hash}) => hash),
+    {gasLimit: 654010}
   );
   console.log("HASHES");
 };
