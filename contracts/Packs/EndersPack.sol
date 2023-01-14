@@ -9,6 +9,7 @@ import { Address } from "@openzeppelin/contracts/utils/Address.sol";
 
 import { LootBoxRandomness } from "./LootBoxRandomness.sol";
 import { BridgeNFTBatch } from "../interfaces/BridgeNFTBatch.sol";
+import "@openzeppelin/contracts/utils/Strings.sol";
 
 /**
  * @title CreatureAccessoryLootBox
@@ -21,6 +22,7 @@ contract EndersPack is
   ReentrancyGuard,
   AccessControl
 {
+  using Strings for uint256;
   using Address for address;
   using LootBoxRandomness for LootBoxRandomness.LootBoxRandomnessState;
 
@@ -38,7 +40,7 @@ contract EndersPack is
 
   LootBoxRandomness.LootBoxRandomnessState public state;
 
-  mapping(uint256 => string) public idToIpfs;
+  // mapping(uint256 => string) public idToIpfs;
 
   constructor(string memory _tokenURIPrefix) ERC1155("") {
     baseURI = _tokenURIPrefix;
@@ -144,10 +146,10 @@ contract EndersPack is
   }
 
   function uri(uint256 id) public view override returns (string memory) {
-    string memory ipfsHash = idToIpfs[id];
+    // string memory ipfsHash = idToIpfs[id];
     return
       bytes(baseURI).length > 0
-        ? string(abi.encodePacked(baseURI, ipfsHash))
+        ? string(abi.encodePacked(baseURI, id.toString()))
         : "";
   }
 
@@ -155,14 +157,14 @@ contract EndersPack is
     baseURI = newuri;
   }
 
-  function setIpfsHashBatch(uint256[] memory ids, string[] memory hashes)
-    external
-    onlyRole(URI_SETTER_ROLE)
-  {
-    for (uint256 i = 0; i < ids.length; i++) {
-      if (bytes(hashes[i]).length > 0) idToIpfs[ids[i]] = hashes[i];
-    }
-  }
+  // function setIpfsHashBatch(uint256[] memory ids, string[] memory hashes)
+  //   external
+  //   onlyRole(URI_SETTER_ROLE)
+  // {
+  //   for (uint256 i = 0; i < ids.length; i++) {
+  //     if (bytes(hashes[i]).length > 0) idToIpfs[ids[i]] = hashes[i];
+  //   }
+  // }
 
   function supportsInterface(bytes4 interfaceId)
     public

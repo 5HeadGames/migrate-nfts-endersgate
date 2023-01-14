@@ -1,7 +1,7 @@
 {
-  "endersGate": "0x96fd1716dC05d512cf69Bab3985C47E70D9F9416",
+  "endersGate": "0xaA52cb8fd4a9Aa000AaF3a660bb61BacEd085B2E",
   "ipfs": "https://ipfs.moralis.io:2053/ipfs/QmXWojzVzRo2NERK3LtrscCXwJ5CrZ8xbnchTgWnTyLDvw",
-  "pack": "0xa80dD729A0dEDc09871fc2308a71DAb42d57F94B",
+  "pack": "0x516F333056A89104d0029F13D84A5e28f3ea6C76",
   "packIpfs": "https://ipfs.moralis.io:2053/ipfs/QmQA1DNdx4dwjQEJueSUfHAcYzyuaUs8rQhrjLqgLgYnyj",
-  "library": "0xc2E127311BEB2f7010f7af00166Aa8004AbabC15"
+  "library": "0xb128A36c4BF5e2ddBe54BB368518f00C5cA76937"
 }

@@ -28,6 +28,8 @@ const chainIds = {
   ropsten: 3,
 };
 
+// console.log(process.env.PRIVATE_KEY);
+
 // Ensure that we have all the environment variables we need.
 
 const config: HardhatUserConfig = {
@@ -116,12 +118,15 @@ const config: HardhatUserConfig = {
     strict: false,
   },
   mocha: {
-    timeout: 60000,
+    timeout: 600000,
   },
   etherscan: {
     // Your API key for Etherscan
     // Obtain one at https://etherscan.io/
-    apiKey: { polygonMumbai: process.env.POLYGONSCAN_API_KEY },
+    apiKey: {
+      polygonMumbai: process.env.POLYGONSCAN_API_KEY,
+      polygon: process.env.POLYGONSCAN_API_KEY,
+    },
   },
 };
 

@@ -7,6 +7,7 @@ import "@openzeppelin/contracts/token/common/ERC2981.sol";
 import { DefaultOperatorFilterer } from "./lib/opensea-filter/src/DefaultOperatorFilterer.sol";
 import { BridgeNFTBatch } from "./interfaces/BridgeNFTBatch.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
+import "@openzeppelin/contracts/utils/Strings.sol";
 
 contract EndersGate is
   ERC1155Supply,
@@ -16,6 +17,7 @@ contract EndersGate is
   Ownable,
   DefaultOperatorFilterer
 {
+  using Strings for uint256;
   struct SetRoyalty {
     address receiver;
     uint96 feeNumerator; // 10000 == 100%
@@ -29,7 +31,7 @@ contract EndersGate is
   string public contractURI;
   string public baseURI;
 
-  mapping(uint256 => string) public idToIpfs;
+  // mapping(uint256 => string) public idToIpfs;
   mapping(address => uint256) public lastTransfer;
 
   /// @custom:oz-upgrades-unsafe-allow constructor
@@ -105,27 +107,27 @@ contract EndersGate is
   }
 
   function uri(uint256 id) public view override returns (string memory) {
-    string memory ipfsHash = idToIpfs[id];
+    // string memory ipfsHash = idToIpfs[id];
     return
       bytes(baseURI).length > 0
-        ? string(abi.encodePacked(baseURI, ipfsHash))
+        ? string(abi.encodePacked(baseURI, id.toString()))
         : "";
   }
 
-  function setIpfsHashBatch(uint256[] memory ids, string[] memory hashes)
-    external
-    onlyRole(URI_SETTER_ROLE)
-  {
-    _setIpfsHashBatch(ids, hashes);
-  }
+  // function setIpfsHashBatch(uint256[] memory ids, string[] memory hashes)
+  //   external
+  //   onlyRole(URI_SETTER_ROLE)
+  // {
+  //   _setIpfsHashBatch(ids, hashes);
+  // }
 
-  function _setIpfsHashBatch(uint256[] memory ids, string[] memory hashes)
-    internal
-  {
-    for (uint256 i = 0; i < ids.length; i++) {
-      if (bytes(hashes[i]).length > 0) idToIpfs[ids[i]] = hashes[i];
-    }
-  }
+  // function _setIpfsHashBatch(uint256[] memory ids, string[] memory hashes)
+  //   internal
+  // {
+  //   for (uint256 i = 0; i < ids.length; i++) {
+  //     if (bytes(hashes[i]).length > 0) idToIpfs[ids[i]] = hashes[i];
+  //   }
+  // }
 
   function _beforeTokenTransfer(
     address operator,

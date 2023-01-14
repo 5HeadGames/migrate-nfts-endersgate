@@ -86,6 +86,7 @@
     "app-root-path": "^3.0.0",
     "exceljs": "^4.3.0",
     "hardhat-contract-sizer": "^2.4.0",
+    "merkle-patricia-tree": "^4.2.4",
     "moralis": "^1.3.2",
     "openzeppelin-contracts": "^4.0.0"
   }

@@ -1,7 +1,9 @@
 {
-  "endersGate": "0x98573E7694BD8D5171C309d3A537087218f4eA2E",
+  "endersGate": "0x3963660Def83dF8882DacF18A018cC69F0655B7E",
   "ipfs": "https://ipfs.moralis.io:2053/ipfs/QmXWojzVzRo2NERK3LtrscCXwJ5CrZ8xbnchTgWnTyLDvw",
   "packIpfs": "https://ipfs.moralis.io:2053/ipfs/QmQA1DNdx4dwjQEJueSUfHAcYzyuaUs8rQhrjLqgLgYnyj",
-  "pack": "0x95679527C9aa69aCDB07a3BEBB8117582544Ea28",
-  "library": "0x7Ba1be47D4D0F47573Fa97cbbaC1e27E84Bc9eBB"
+  "pack": "0xE5Ae172FaeDd0D56353236573EC0fE97A608F03f",
+  "library": "0xbce871fA4C85a6b25A502363606C8EEA8aF89fFc",
+  "marketplace": "0xb2EE4462d042a8c714031c76d688e4F7978E352a",
+  "marketplaceOwnable": "0x424B8c6555728136f8530D7EBf33172cf83d5B71"
 }
