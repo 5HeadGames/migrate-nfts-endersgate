@@ -1,0 +1,99 @@
+{
+  "name": "Omega Wolf Pax",
+  "type": "ERC1155",
+  "description": "[Beast | Support] Passive: While Omega Wolf Pax is on the field, all \"Wolf Pack\" Guardians gain +20 ATK",
+  "image": "QmYwn629ZF5Rm9FJWhuKrgsm27ZWLPBfTH6g3HJjTNUiaC",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 142
+    },
+    "name": {
+      "name": "name",
+      "value": "Omega Wolf Pax"
+    },
+    "element": {
+      "name": "element",
+      "value": "Fire"
+    },
+    "role": {
+      "name": "role",
+      "value": "Support"
+    },
+    "race": {
+      "name": "race",
+      "value": "Beast"
+    },
+    "attack": {
+      "name": "attack",
+      "value": 100
+    },
+    "hp": {
+      "name": "hp",
+      "value": 120
+    },
+    "isGuardian": {
+      "name": "isGuardian",
+      "value": true
+    },
+    "gold": {
+      "name": "gold",
+      "value": 130
+    },
+    "description": {
+      "name": "description",
+      "value": "[Beast | Support] Passive: While Omega Wolf Pax is on the field, all \"Wolf Pack\" Guardians gain +20 ATK"
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmYwn629ZF5Rm9FJWhuKrgsm27ZWLPBfTH6g3HJjTNUiaC"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 142
+    },
+    {
+      "trait_type": "name",
+      "value": "Omega Wolf Pax"
+    },
+    {
+      "trait_type": "element",
+      "value": "Fire"
+    },
+    {
+      "trait_type": "role",
+      "value": "Support"
+    },
+    {
+      "trait_type": "race",
+      "value": "Beast"
+    },
+    {
+      "trait_type": "attack",
+      "value": 100
+    },
+    {
+      "trait_type": "hp",
+      "value": 120
+    },
+    {
+      "trait_type": "isGuardian",
+      "value": true
+    },
+    {
+      "trait_type": "gold",
+      "value": 130
+    },
+    {
+      "trait_type": "description",
+      "value": "[Beast | Support] Passive: While Omega Wolf Pax is on the field, all \"Wolf Pack\" Guardians gain +20 ATK"
+    },
+    {
+      "trait_type": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmYwn629ZF5Rm9FJWhuKrgsm27ZWLPBfTH6g3HJjTNUiaC"
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "name": "Cave Ogre",
+  "type": "ERC1155",
+  "description": "[Ogre | Support] Passive: While Cave Ogre is on the field, all Ogre type Guardians gain +10 to ATK & HP.",
+  "image": "QmYTFinzcVfoL872unMDKzh9LPxLjVvhmXtwP97rg5WCFW",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 105
+    },
+    "name": {
+      "name": "name",
+      "value": "Cave Ogre"
+    },
+    "element": {
+      "name": "element",
+      "value": "Earth"
+    },
+    "role": {
+      "name": "role",
+      "value": "Support"
+    },
+    "race": {
+      "name": "race",
+      "value": "Ogre"
+    },
+    "attack": {
+      "name": "attack",
+      "value": 60
+    },
+    "hp": {
+      "name": "hp",
+      "value": 70
+    },
+    "isGuardian": {
+      "name": "isGuardian",
+      "value": true
+    },
+    "gold": {
+      "name": "gold",
+      "value": 70
+    },
+    "description": {
+      "name": "description",
+      "value": "[Ogre | Support] Passive: While Cave Ogre is on the field, all Ogre type Guardians gain +10 to ATK & HP."
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmYTFinzcVfoL872unMDKzh9LPxLjVvhmXtwP97rg5WCFW"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 105
+    },
+    {
+      "trait_type": "name",
+      "value": "Cave Ogre"
+    },
+    {
+      "trait_type": "element",
+      "value": "Earth"
+    },
+    {
+      "trait_type": "role",
+      "value": "Support"
+    },
+    {
+      "trait_type": "race",
+      "value": "Ogre"
+    },
+    {
+      "trait_type": "attack",
+      "value": 60
+    },
+    {
+      "trait_type": "hp",
+      "value": 70
+    },
+    {
+      "trait_type": "isGuardian",
+      "value": true
+    },
+    {
+      "trait_type": "gold",
+      "value": 70
+    },
+    {
+      "trait_type": "description",
+      "value": "[Ogre | Support] Passive: While Cave Ogre is on the field, all Ogre type Guardians gain +10 to ATK & HP."
+    },
+    {
+      "trait_type": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmYTFinzcVfoL872unMDKzh9LPxLjVvhmXtwP97rg5WCFW"
+    }
+  ]
+}

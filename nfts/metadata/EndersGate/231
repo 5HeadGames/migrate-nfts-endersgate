@@ -1,0 +1,99 @@
+{
+  "name": "Dominic",
+  "type": "ERC1155",
+  "description": "[Human | Fighter] 'Dracul Bond' Passive: If Avatar Dracul is equipped, Dominic Gains +25 ATK. Additionally, Upon death Dominic returns to the field at the start of your next Standby Phase with 75% of his HP. This effect occurs once. ",
+  "image": "QmeUS2Apfcf46Ruw6R2BSeMKrQYoANMUXvZ5cbWXgqq7UU",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 231
+    },
+    "name": {
+      "name": "name",
+      "value": "Dominic"
+    },
+    "element": {
+      "name": "element",
+      "value": "Fire"
+    },
+    "role": {
+      "name": "role",
+      "value": "Fighter"
+    },
+    "race": {
+      "name": "race",
+      "value": "Human"
+    },
+    "attack": {
+      "name": "attack",
+      "value": 125
+    },
+    "hp": {
+      "name": "hp",
+      "value": 260
+    },
+    "isGuardian": {
+      "name": "isGuardian",
+      "value": true
+    },
+    "gold": {
+      "name": "gold",
+      "value": 300
+    },
+    "description": {
+      "name": "description",
+      "value": "[Human | Fighter] 'Dracul Bond' Passive: If Avatar Dracul is equipped, Dominic Gains +25 ATK. Additionally, Upon death Dominic returns to the field at the start of your next Standby Phase with 75% of his HP. This effect occurs once. "
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmeUS2Apfcf46Ruw6R2BSeMKrQYoANMUXvZ5cbWXgqq7UU"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 231
+    },
+    {
+      "trait_type": "name",
+      "value": "Dominic"
+    },
+    {
+      "trait_type": "element",
+      "value": "Fire"
+    },
+    {
+      "trait_type": "role",
+      "value": "Fighter"
+    },
+    {
+      "trait_type": "race",
+      "value": "Human"
+    },
+    {
+      "trait_type": "attack",
+      "value": 125
+    },
+    {
+      "trait_type": "hp",
+      "value": 260
+    },
+    {
+      "trait_type": "isGuardian",
+      "value": true
+    },
+    {
+      "trait_type": "gold",
+      "value": 300
+    },
+    {
+      "trait_type": "description",
+      "value": "[Human | Fighter] 'Dracul Bond' Passive: If Avatar Dracul is equipped, Dominic Gains +25 ATK. Additionally, Upon death Dominic returns to the field at the start of your next Standby Phase with 75% of his HP. This effect occurs once. "
+    },
+    {
+      "trait_type": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmeUS2Apfcf46Ruw6R2BSeMKrQYoANMUXvZ5cbWXgqq7UU"
+    }
+  ]
+}

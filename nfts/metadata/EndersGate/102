@@ -1,0 +1,99 @@
+{
+  "name": "Tessa",
+  "type": "ERC1155",
+  "description": "[Human | Assassin] Activate: Tessa increases her Crit chance & Damage by 30% against Void type Guardians for 2 turns. Cooldown 2 turns. ",
+  "image": "QmbufdFsRh1U6DsGGxGZ72mjXMKYDqgA9HTJs71VcNWrDX",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 102
+    },
+    "name": {
+      "name": "name",
+      "value": "Tessa"
+    },
+    "element": {
+      "name": "element",
+      "value": "Mystic"
+    },
+    "role": {
+      "name": "role",
+      "value": "Assassin"
+    },
+    "race": {
+      "name": "race",
+      "value": "Human"
+    },
+    "attack": {
+      "name": "attack",
+      "value": 100
+    },
+    "hp": {
+      "name": "hp",
+      "value": 60
+    },
+    "isGuardian": {
+      "name": "isGuardian",
+      "value": true
+    },
+    "gold": {
+      "name": "gold",
+      "value": 110
+    },
+    "description": {
+      "name": "description",
+      "value": "[Human | Assassin] Activate: Tessa increases her Crit chance & Damage by 30% against Void type Guardians for 2 turns. Cooldown 2 turns. "
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmbufdFsRh1U6DsGGxGZ72mjXMKYDqgA9HTJs71VcNWrDX"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 102
+    },
+    {
+      "trait_type": "name",
+      "value": "Tessa"
+    },
+    {
+      "trait_type": "element",
+      "value": "Mystic"
+    },
+    {
+      "trait_type": "role",
+      "value": "Assassin"
+    },
+    {
+      "trait_type": "race",
+      "value": "Human"
+    },
+    {
+      "trait_type": "attack",
+      "value": 100
+    },
+    {
+      "trait_type": "hp",
+      "value": 60
+    },
+    {
+      "trait_type": "isGuardian",
+      "value": true
+    },
+    {
+      "trait_type": "gold",
+      "value": 110
+    },
+    {
+      "trait_type": "description",
+      "value": "[Human | Assassin] Activate: Tessa increases her Crit chance & Damage by 30% against Void type Guardians for 2 turns. Cooldown 2 turns. "
+    },
+    {
+      "trait_type": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmbufdFsRh1U6DsGGxGZ72mjXMKYDqgA9HTJs71VcNWrDX"
+    }
+  ]
+}

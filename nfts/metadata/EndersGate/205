@@ -1,0 +1,99 @@
+{
+  "name": "Donna",
+  "type": "ERC1155",
+  "description": " [Human | Fighter] \"Fire Mark\" Activate: During your MP1, place a Fire Mark that lasts 2 turns on one enemy Guardian; Fire Marked Guardians explode when attacked causing 15 Fire damage to adjacent Guardians. Cooldown 2 Turns.",
+  "image": "QmcnPyUY538ABYmJTBHfxJFstbKQbmKbGoL77Da7AxJzDw",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 205
+    },
+    "name": {
+      "name": "name",
+      "value": "Donna"
+    },
+    "element": {
+      "name": "element",
+      "value": "Fire"
+    },
+    "role": {
+      "name": "role",
+      "value": "Fighter"
+    },
+    "race": {
+      "name": "race",
+      "value": "Human"
+    },
+    "attack": {
+      "name": "attack",
+      "value": 120
+    },
+    "hp": {
+      "name": "hp",
+      "value": 250
+    },
+    "isGuardian": {
+      "name": "isGuardian",
+      "value": true
+    },
+    "gold": {
+      "name": "gold",
+      "value": 300
+    },
+    "description": {
+      "name": "description",
+      "value": " [Human | Fighter] \"Fire Mark\" Activate: During your MP1, place a Fire Mark that lasts 2 turns on one enemy Guardian; Fire Marked Guardians explode when attacked causing 15 Fire damage to adjacent Guardians. Cooldown 2 Turns."
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmcnPyUY538ABYmJTBHfxJFstbKQbmKbGoL77Da7AxJzDw"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 205
+    },
+    {
+      "trait_type": "name",
+      "value": "Donna"
+    },
+    {
+      "trait_type": "element",
+      "value": "Fire"
+    },
+    {
+      "trait_type": "role",
+      "value": "Fighter"
+    },
+    {
+      "trait_type": "race",
+      "value": "Human"
+    },
+    {
+      "trait_type": "attack",
+      "value": 120
+    },
+    {
+      "trait_type": "hp",
+      "value": 250
+    },
+    {
+      "trait_type": "isGuardian",
+      "value": true
+    },
+    {
+      "trait_type": "gold",
+      "value": 300
+    },
+    {
+      "trait_type": "description",
+      "value": " [Human | Fighter] \"Fire Mark\" Activate: During your MP1, place a Fire Mark that lasts 2 turns on one enemy Guardian; Fire Marked Guardians explode when attacked causing 15 Fire damage to adjacent Guardians. Cooldown 2 Turns."
+    },
+    {
+      "trait_type": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmcnPyUY538ABYmJTBHfxJFstbKQbmKbGoL77Da7AxJzDw"
+    }
+  ]
+}

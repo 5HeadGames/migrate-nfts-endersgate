@@ -1,0 +1,67 @@
+{
+  "name": "Spike Trap",
+  "type": "ERC1155",
+  "description": "Flip: Deal 25 damage to one selected Guardian on the enemy's side of the field. ",
+  "image": "QmZNVMFzH79ch9KakJHajRTuo29qHLXm27gKq6xXRS9JWi",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 48
+    },
+    "name": {
+      "name": "name",
+      "value": "Spike Trap"
+    },
+    "type": {
+      "name": "type",
+      "value": "Normal Reaction"
+    },
+    "ADOTurn": {
+      "name": "ADOTurn",
+      "value": "NO"
+    },
+    "rarity": {
+      "name": "rarity",
+      "value": "Common"
+    },
+    "description": {
+      "name": "description",
+      "value": "Flip: Deal 25 damage to one selected Guardian on the enemy's side of the field. "
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmZNVMFzH79ch9KakJHajRTuo29qHLXm27gKq6xXRS9JWi"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 48
+    },
+    {
+      "trait_type": "name",
+      "value": "Spike Trap"
+    },
+    {
+      "trait_type": "type",
+      "value": "Normal Reaction"
+    },
+    {
+      "trait_type": "ADOTurn",
+      "value": "NO"
+    },
+    {
+      "trait_type": "rarity",
+      "value": "Common"
+    },
+    {
+      "trait_type": "description",
+      "value": "Flip: Deal 25 damage to one selected Guardian on the enemy's side of the field. "
+    },
+    {
+      "trait_type": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmZNVMFzH79ch9KakJHajRTuo29qHLXm27gKq6xXRS9JWi"
+    }
+  ]
+}

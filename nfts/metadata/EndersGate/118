@@ -1,0 +1,99 @@
+{
+  "name": "Sky Surfer Huugs",
+  "type": "ERC1155",
+  "description": "[Goblin | Support] \"Goblin Crew\" Passive: While Zeed is on the field, all \"Goblin Crew\" Guardians Gain 25 HP.\n",
+  "image": "QmZZM3RD3BCqcuEdAUPDkzDB8pvUXyFXpZQkTr5AGSXws6",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 118
+    },
+    "name": {
+      "name": "name",
+      "value": "Sky Surfer Huugs"
+    },
+    "element": {
+      "name": "element",
+      "value": "Void"
+    },
+    "role": {
+      "name": "role",
+      "value": "Support"
+    },
+    "race": {
+      "name": "race",
+      "value": "Goblin "
+    },
+    "attack": {
+      "name": "attack",
+      "value": 100
+    },
+    "hp": {
+      "name": "hp",
+      "value": 60
+    },
+    "isGuardian": {
+      "name": "isGuardian",
+      "value": true
+    },
+    "gold": {
+      "name": "gold",
+      "value": 90
+    },
+    "description": {
+      "name": "description",
+      "value": "[Goblin | Support] \"Goblin Crew\" Passive: While Zeed is on the field, all \"Goblin Crew\" Guardians Gain 25 HP.\n"
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmZZM3RD3BCqcuEdAUPDkzDB8pvUXyFXpZQkTr5AGSXws6"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 118
+    },
+    {
+      "trait_type": "name",
+      "value": "Sky Surfer Huugs"
+    },
+    {
+      "trait_type": "element",
+      "value": "Void"
+    },
+    {
+      "trait_type": "role",
+      "value": "Support"
+    },
+    {
+      "trait_type": "race",
+      "value": "Goblin "
+    },
+    {
+      "trait_type": "attack",
+      "value": 100
+    },
+    {
+      "trait_type": "hp",
+      "value": 60
+    },
+    {
+      "trait_type": "isGuardian",
+      "value": true
+    },
+    {
+      "trait_type": "gold",
+      "value": 90
+    },
+    {
+      "trait_type": "description",
+      "value": "[Goblin | Support] \"Goblin Crew\" Passive: While Zeed is on the field, all \"Goblin Crew\" Guardians Gain 25 HP.\n"
+    },
+    {
+      "trait_type": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmZZM3RD3BCqcuEdAUPDkzDB8pvUXyFXpZQkTr5AGSXws6"
+    }
+  ]
+}

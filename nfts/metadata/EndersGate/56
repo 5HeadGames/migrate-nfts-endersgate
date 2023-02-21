@@ -1,0 +1,67 @@
+{
+  "name": "Gea The Mystic",
+  "type": "ERC1155",
+  "description": "Flip: During your Main phase 1 select 1 damaged Guardian and heal them for 20 HP. This card remains on the field and it's effect can be reused 1 additional time.",
+  "image": "QmeZX6aAjza5KpZVukh7LfmAUKvPLTijyFJNi3tZZ6QvuM",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 56
+    },
+    "name": {
+      "name": "name",
+      "value": "Gea The Mystic"
+    },
+    "type": {
+      "name": "type",
+      "value": "Continuous (use count 2)"
+    },
+    "ADOTurn": {
+      "name": "ADOTurn",
+      "value": "NO"
+    },
+    "rarity": {
+      "name": "rarity",
+      "value": "Rare"
+    },
+    "description": {
+      "name": "description",
+      "value": "Flip: During your Main phase 1 select 1 damaged Guardian and heal them for 20 HP. This card remains on the field and it's effect can be reused 1 additional time."
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmeZX6aAjza5KpZVukh7LfmAUKvPLTijyFJNi3tZZ6QvuM"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 56
+    },
+    {
+      "trait_type": "name",
+      "value": "Gea The Mystic"
+    },
+    {
+      "trait_type": "type",
+      "value": "Continuous (use count 2)"
+    },
+    {
+      "trait_type": "ADOTurn",
+      "value": "NO"
+    },
+    {
+      "trait_type": "rarity",
+      "value": "Rare"
+    },
+    {
+      "trait_type": "description",
+      "value": "Flip: During your Main phase 1 select 1 damaged Guardian and heal them for 20 HP. This card remains on the field and it's effect can be reused 1 additional time."
+    },
+    {
+      "trait_type": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmeZX6aAjza5KpZVukh7LfmAUKvPLTijyFJNi3tZZ6QvuM"
+    }
+  ]
+}

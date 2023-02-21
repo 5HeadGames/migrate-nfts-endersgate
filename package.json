@@ -26,6 +26,7 @@
     "@types/node": "^16.11.10",
     "@typescript-eslint/eslint-plugin": "^5.4.0",
     "@typescript-eslint/parser": "^5.4.0",
+    "app-root-path": "^3.0.0",
     "axios": "^0.27.2",
     "chai": "^4.3.4",
     "commitizen": "^4.2.4",
@@ -78,16 +79,28 @@
     "deploy:rinkeby": "hardhat run scripts/deploy.ts --network rinkeby && hardhat run scripts/deployPacks.ts --network rinkeby"
   },
   "dependencies": {
+    "@chainlink/contracts": "^0.6.0",
+    "@harmony-js/utils": "^0.1.56",
     "@nomiclabs/hardhat-etherscan": "^3.0.1",
     "@openzeppelin/contracts": "^4.5.0",
     "@openzeppelin/contracts-upgradeable": "^4.5.1",
     "@openzeppelin/hardhat-upgrades": "^1.14.0",
     "@openzeppelin/subgraphs": "^0.1.8-5",
+    "@reduxjs/toolkit": "^1.7.1",
+    "@typechain/ethers-v5": "^10.1.0",
+    "@uniswap/v2-core": "^1.0.1",
+    "@uniswap/v2-periphery": "^1.1.0-beta.0",
     "app-root-path": "^3.0.0",
+    "ethereum-waffle": "^3.4.4",
     "exceljs": "^4.3.0",
+    "files-from-path": "^0.2.6",
+    "hardhat": "^2.9.9",
     "hardhat-contract-sizer": "^2.4.0",
+    "hardhat-gas-reporter": "^1.0.8",
     "merkle-patricia-tree": "^4.2.4",
     "moralis": "^1.3.2",
-    "openzeppelin-contracts": "^4.0.0"
+    "nft.storage": "^7.0.0",
+    "openzeppelin-contracts": "^4.0.0",
+    "typechain": "^8.1.0"
   }
 }

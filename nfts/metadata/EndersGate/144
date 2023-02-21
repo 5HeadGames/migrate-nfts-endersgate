@@ -1,0 +1,99 @@
+{
+  "name": "Moonbeam ",
+  "type": "ERC1155",
+  "description": "[Beast | Fighter] \"Insect Hunter\" Passive: Moonbeam gains +5 ATK & +5 HP for all Insect type Guardians on the field; Additionally, All damage dealt by Insect types is reduced by 10. ",
+  "image": "Qmcro3ABk1F5MpiXBEHoHjq9S1LHhkVPspvMFeSpbAB7b2",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 144
+    },
+    "name": {
+      "name": "name",
+      "value": "Moonbeam "
+    },
+    "element": {
+      "name": "element",
+      "value": "Mystic"
+    },
+    "role": {
+      "name": "role",
+      "value": "Fighter"
+    },
+    "race": {
+      "name": "race",
+      "value": "Beast"
+    },
+    "attack": {
+      "name": "attack",
+      "value": 100
+    },
+    "hp": {
+      "name": "hp",
+      "value": 120
+    },
+    "isGuardian": {
+      "name": "isGuardian",
+      "value": true
+    },
+    "gold": {
+      "name": "gold",
+      "value": 120
+    },
+    "description": {
+      "name": "description",
+      "value": "[Beast | Fighter] \"Insect Hunter\" Passive: Moonbeam gains +5 ATK & +5 HP for all Insect type Guardians on the field; Additionally, All damage dealt by Insect types is reduced by 10. "
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/Qmcro3ABk1F5MpiXBEHoHjq9S1LHhkVPspvMFeSpbAB7b2"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 144
+    },
+    {
+      "trait_type": "name",
+      "value": "Moonbeam "
+    },
+    {
+      "trait_type": "element",
+      "value": "Mystic"
+    },
+    {
+      "trait_type": "role",
+      "value": "Fighter"
+    },
+    {
+      "trait_type": "race",
+      "value": "Beast"
+    },
+    {
+      "trait_type": "attack",
+      "value": 100
+    },
+    {
+      "trait_type": "hp",
+      "value": 120
+    },
+    {
+      "trait_type": "isGuardian",
+      "value": true
+    },
+    {
+      "trait_type": "gold",
+      "value": 120
+    },
+    {
+      "trait_type": "description",
+      "value": "[Beast | Fighter] \"Insect Hunter\" Passive: Moonbeam gains +5 ATK & +5 HP for all Insect type Guardians on the field; Additionally, All damage dealt by Insect types is reduced by 10. "
+    },
+    {
+      "trait_type": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/Qmcro3ABk1F5MpiXBEHoHjq9S1LHhkVPspvMFeSpbAB7b2"
+    }
+  ]
+}

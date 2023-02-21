@@ -1,0 +1,99 @@
+{
+  "name": "Ventis",
+  "type": "ERC1155",
+  "description": "[Elemental | Support] \"Olfactory Memory\"  Activate: Pay 50 gold to return 1 Venom Guardian from your Grave yard to the field with 50% HP. Uses: 1\n",
+  "image": "QmV4x956oLzsA7SNZcwEdWAa9TURCndQZCQQYBTrjm8WEY",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 185
+    },
+    "name": {
+      "name": "name",
+      "value": "Ventis"
+    },
+    "element": {
+      "name": "element",
+      "value": "Venom"
+    },
+    "role": {
+      "name": "role",
+      "value": "Support"
+    },
+    "race": {
+      "name": "race",
+      "value": "Elemental"
+    },
+    "attack": {
+      "name": "attack",
+      "value": 100
+    },
+    "hp": {
+      "name": "hp",
+      "value": 150
+    },
+    "isGuardian": {
+      "name": "isGuardian",
+      "value": true
+    },
+    "gold": {
+      "name": "gold",
+      "value": 210
+    },
+    "description": {
+      "name": "description",
+      "value": "[Elemental | Support] \"Olfactory Memory\"  Activate: Pay 50 gold to return 1 Venom Guardian from your Grave yard to the field with 50% HP. Uses: 1\n"
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmV4x956oLzsA7SNZcwEdWAa9TURCndQZCQQYBTrjm8WEY"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 185
+    },
+    {
+      "trait_type": "name",
+      "value": "Ventis"
+    },
+    {
+      "trait_type": "element",
+      "value": "Venom"
+    },
+    {
+      "trait_type": "role",
+      "value": "Support"
+    },
+    {
+      "trait_type": "race",
+      "value": "Elemental"
+    },
+    {
+      "trait_type": "attack",
+      "value": 100
+    },
+    {
+      "trait_type": "hp",
+      "value": 150
+    },
+    {
+      "trait_type": "isGuardian",
+      "value": true
+    },
+    {
+      "trait_type": "gold",
+      "value": 210
+    },
+    {
+      "trait_type": "description",
+      "value": "[Elemental | Support] \"Olfactory Memory\"  Activate: Pay 50 gold to return 1 Venom Guardian from your Grave yard to the field with 50% HP. Uses: 1\n"
+    },
+    {
+      "trait_type": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmV4x956oLzsA7SNZcwEdWAa9TURCndQZCQQYBTrjm8WEY"
+    }
+  ]
+}

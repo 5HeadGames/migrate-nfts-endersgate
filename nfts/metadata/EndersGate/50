@@ -1,0 +1,67 @@
+{
+  "name": "Rain of arrows",
+  "type": "ERC1155",
+  "description": "Flip: Damage all Guardians on your opponent's side of the field for 10 HP.",
+  "image": "QmYTkGA54iLdRKb67tC1HtrHimWsARSvrkMFPZErLwH8hp",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 50
+    },
+    "name": {
+      "name": "name",
+      "value": "Rain of arrows"
+    },
+    "type": {
+      "name": "type",
+      "value": "Normal Reaction"
+    },
+    "ADOTurn": {
+      "name": "ADOTurn",
+      "value": "NO"
+    },
+    "rarity": {
+      "name": "rarity",
+      "value": "Common"
+    },
+    "description": {
+      "name": "description",
+      "value": "Flip: Damage all Guardians on your opponent's side of the field for 10 HP."
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmYTkGA54iLdRKb67tC1HtrHimWsARSvrkMFPZErLwH8hp"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 50
+    },
+    {
+      "trait_type": "name",
+      "value": "Rain of arrows"
+    },
+    {
+      "trait_type": "type",
+      "value": "Normal Reaction"
+    },
+    {
+      "trait_type": "ADOTurn",
+      "value": "NO"
+    },
+    {
+      "trait_type": "rarity",
+      "value": "Common"
+    },
+    {
+      "trait_type": "description",
+      "value": "Flip: Damage all Guardians on your opponent's side of the field for 10 HP."
+    },
+    {
+      "trait_type": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmYTkGA54iLdRKb67tC1HtrHimWsARSvrkMFPZErLwH8hp"
+    }
+  ]
+}

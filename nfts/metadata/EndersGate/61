@@ -1,0 +1,67 @@
+{
+  "name": "Spider's Den",
+  "type": "ERC1155",
+  "description": "Flip: Activate when your opponent declares an attack; deal 40 damage to the attacking Guardian; they cannot attack for 2 turns.",
+  "image": "QmVZ56EQuysaU98hMEWUoZeMvdqq8YZdFuLwnQeMi4x9or",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 61
+    },
+    "name": {
+      "name": "name",
+      "value": "Spider's Den"
+    },
+    "type": {
+      "name": "type",
+      "value": "Flip Counter"
+    },
+    "ADOTurn": {
+      "name": "ADOTurn",
+      "value": "YES"
+    },
+    "rarity": {
+      "name": "rarity",
+      "value": "Rare"
+    },
+    "description": {
+      "name": "description",
+      "value": "Flip: Activate when your opponent declares an attack; deal 40 damage to the attacking Guardian; they cannot attack for 2 turns."
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmVZ56EQuysaU98hMEWUoZeMvdqq8YZdFuLwnQeMi4x9or"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 61
+    },
+    {
+      "trait_type": "name",
+      "value": "Spider's Den"
+    },
+    {
+      "trait_type": "type",
+      "value": "Flip Counter"
+    },
+    {
+      "trait_type": "ADOTurn",
+      "value": "YES"
+    },
+    {
+      "trait_type": "rarity",
+      "value": "Rare"
+    },
+    {
+      "trait_type": "description",
+      "value": "Flip: Activate when your opponent declares an attack; deal 40 damage to the attacking Guardian; they cannot attack for 2 turns."
+    },
+    {
+      "trait_type": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmVZ56EQuysaU98hMEWUoZeMvdqq8YZdFuLwnQeMi4x9or"
+    }
+  ]
+}

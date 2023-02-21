@@ -1,0 +1,59 @@
+{
+  "name": "Dracul",
+  "type": "ERC1155",
+  "description": "+20 attack for all guardians in your deck",
+  "image": "QmQ8PAwZtKztvsFnAdp79KyvHkhUYzSkZQwgsHVdMy3Zbp",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 215
+    },
+    "name": {
+      "name": "name",
+      "value": "Dracul"
+    },
+    "type": {
+      "name": "type",
+      "value": "Fire"
+    },
+    "rarity": {
+      "name": "rarity",
+      "value": "Limited"
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmQ8PAwZtKztvsFnAdp79KyvHkhUYzSkZQwgsHVdMy3Zbp"
+    },
+    "description": {
+      "name": "description",
+      "value": "+20 attack for all guardians in your deck"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "name",
+      "value": "Dracul"
+    },
+    {
+      "trait_type": "type",
+      "value": "Fire"
+    },
+    {
+      "trait_type": "rarity",
+      "value": "Limited"
+    },
+    {
+      "trait_type": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmQ8PAwZtKztvsFnAdp79KyvHkhUYzSkZQwgsHVdMy3Zbp"
+    },
+    {
+      "trait_type": "description",
+      "value": "+20 attack for all guardians in your deck"
+    },
+    {
+      "trait_type": "id",
+      "value": 215
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "name": "Jumba",
+  "type": "ERC1155",
+  "description": "[Ogre | Fighter] \"Bone Smasher\" Activate: Launch a tree with a 40% chance of hitting all enemy Guardians on the field for 20 damage.",
+  "image": "QmQh6odzNHGAiDSRMm5oo9vp5z7VTnYSzS1paTmzWFaHy6",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 98
+    },
+    "name": {
+      "name": "name",
+      "value": "Jumba"
+    },
+    "element": {
+      "name": "element",
+      "value": "Fire"
+    },
+    "role": {
+      "name": "role",
+      "value": "Fighter"
+    },
+    "race": {
+      "name": "race",
+      "value": "Ogre"
+    },
+    "attack": {
+      "name": "attack",
+      "value": 60
+    },
+    "hp": {
+      "name": "hp",
+      "value": 70
+    },
+    "isGuardian": {
+      "name": "isGuardian",
+      "value": true
+    },
+    "gold": {
+      "name": "gold",
+      "value": 80
+    },
+    "description": {
+      "name": "description",
+      "value": "[Ogre | Fighter] \"Bone Smasher\" Activate: Launch a tree with a 40% chance of hitting all enemy Guardians on the field for 20 damage."
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmQh6odzNHGAiDSRMm5oo9vp5z7VTnYSzS1paTmzWFaHy6"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 98
+    },
+    {
+      "trait_type": "name",
+      "value": "Jumba"
+    },
+    {
+      "trait_type": "element",
+      "value": "Fire"
+    },
+    {
+      "trait_type": "role",
+      "value": "Fighter"
+    },
+    {
+      "trait_type": "race",
+      "value": "Ogre"
+    },
+    {
+      "trait_type": "attack",
+      "value": 60
+    },
+    {
+      "trait_type": "hp",
+      "value": 70
+    },
+    {
+      "trait_type": "isGuardian",
+      "value": true
+    },
+    {
+      "trait_type": "gold",
+      "value": 80
+    },
+    {
+      "trait_type": "description",
+      "value": "[Ogre | Fighter] \"Bone Smasher\" Activate: Launch a tree with a 40% chance of hitting all enemy Guardians on the field for 20 damage."
+    },
+    {
+      "trait_type": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmQh6odzNHGAiDSRMm5oo9vp5z7VTnYSzS1paTmzWFaHy6"
+    }
+  ]
+}

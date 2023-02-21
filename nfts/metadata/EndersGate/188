@@ -1,0 +1,99 @@
+{
+  "name": "Hanako ",
+  "type": "ERC1155",
+  "description": "[Human | Support] \"Bad Companion\" Activate: During your MP1, pay 60 gold to summon \"Aku Gaki\" from your hand or deck to the field; if successful, increase Hanako's ATK by +20% for as long as \"Aku Gaki\" remains on the field.",
+  "image": "QmSuPPqqCkzcPR92oj4tgdkoPKuH1pKS6bWkfey7kuFXdq",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 188
+    },
+    "name": {
+      "name": "name",
+      "value": "Hanako "
+    },
+    "element": {
+      "name": "element",
+      "value": "Void"
+    },
+    "role": {
+      "name": "role",
+      "value": "Support"
+    },
+    "race": {
+      "name": "race",
+      "value": "Human"
+    },
+    "attack": {
+      "name": "attack",
+      "value": 150
+    },
+    "hp": {
+      "name": "hp",
+      "value": 200
+    },
+    "isGuardian": {
+      "name": "isGuardian",
+      "value": true
+    },
+    "gold": {
+      "name": "gold",
+      "value": 210
+    },
+    "description": {
+      "name": "description",
+      "value": "[Human | Support] \"Bad Companion\" Activate: During your MP1, pay 60 gold to summon \"Aku Gaki\" from your hand or deck to the field; if successful, increase Hanako's ATK by +20% for as long as \"Aku Gaki\" remains on the field."
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmSuPPqqCkzcPR92oj4tgdkoPKuH1pKS6bWkfey7kuFXdq"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 188
+    },
+    {
+      "trait_type": "name",
+      "value": "Hanako "
+    },
+    {
+      "trait_type": "element",
+      "value": "Void"
+    },
+    {
+      "trait_type": "role",
+      "value": "Support"
+    },
+    {
+      "trait_type": "race",
+      "value": "Human"
+    },
+    {
+      "trait_type": "attack",
+      "value": 150
+    },
+    {
+      "trait_type": "hp",
+      "value": 200
+    },
+    {
+      "trait_type": "isGuardian",
+      "value": true
+    },
+    {
+      "trait_type": "gold",
+      "value": 210
+    },
+    {
+      "trait_type": "description",
+      "value": "[Human | Support] \"Bad Companion\" Activate: During your MP1, pay 60 gold to summon \"Aku Gaki\" from your hand or deck to the field; if successful, increase Hanako's ATK by +20% for as long as \"Aku Gaki\" remains on the field."
+    },
+    {
+      "trait_type": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmSuPPqqCkzcPR92oj4tgdkoPKuH1pKS6bWkfey7kuFXdq"
+    }
+  ]
+}

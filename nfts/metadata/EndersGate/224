@@ -1,0 +1,99 @@
+{
+  "name": "Mackadon",
+  "type": "ERC1155",
+  "description": "[Shark | Fighter] \"Sea Hunter\" Passive: Mackadon gains +10 ATK for each water type Guardian in your graveyard. ",
+  "image": "QmTuErZtHjPr782dshBuVU69KPtSoHMhgy4WYW82THDi5z",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 224
+    },
+    "name": {
+      "name": "name",
+      "value": "Mackadon"
+    },
+    "element": {
+      "name": "element",
+      "value": "Water"
+    },
+    "role": {
+      "name": "role",
+      "value": "Fighter"
+    },
+    "race": {
+      "name": "race",
+      "value": "Shark"
+    },
+    "attack": {
+      "name": "attack",
+      "value": 200
+    },
+    "hp": {
+      "name": "hp",
+      "value": 350
+    },
+    "isGuardian": {
+      "name": "isGuardian",
+      "value": true
+    },
+    "gold": {
+      "name": "gold",
+      "value": 400
+    },
+    "description": {
+      "name": "description",
+      "value": "[Shark | Fighter] \"Sea Hunter\" Passive: Mackadon gains +10 ATK for each water type Guardian in your graveyard. "
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmTuErZtHjPr782dshBuVU69KPtSoHMhgy4WYW82THDi5z"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 224
+    },
+    {
+      "trait_type": "name",
+      "value": "Mackadon"
+    },
+    {
+      "trait_type": "element",
+      "value": "Water"
+    },
+    {
+      "trait_type": "role",
+      "value": "Fighter"
+    },
+    {
+      "trait_type": "race",
+      "value": "Shark"
+    },
+    {
+      "trait_type": "attack",
+      "value": 200
+    },
+    {
+      "trait_type": "hp",
+      "value": 350
+    },
+    {
+      "trait_type": "isGuardian",
+      "value": true
+    },
+    {
+      "trait_type": "gold",
+      "value": 400
+    },
+    {
+      "trait_type": "description",
+      "value": "[Shark | Fighter] \"Sea Hunter\" Passive: Mackadon gains +10 ATK for each water type Guardian in your graveyard. "
+    },
+    {
+      "trait_type": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmTuErZtHjPr782dshBuVU69KPtSoHMhgy4WYW82THDi5z"
+    }
+  ]
+}

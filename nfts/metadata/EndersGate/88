@@ -1,0 +1,99 @@
+{
+  "name": "Bert & Kurt",
+  "type": "ERC1155",
+  "description": "[Dwarf | Mage] \"Ariel Evasion\" Passive: Has a 10% chance of dodging one enemy attack. This effect applies to all attacks targeted at Bert & Kurt. ",
+  "image": "QmeRDALhKtgu5FfEewNSdx9CMiA4XrdQ8EZoDjUBCRihhf",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 88
+    },
+    "name": {
+      "name": "name",
+      "value": "Bert & Kurt"
+    },
+    "element": {
+      "name": "element",
+      "value": "Fire"
+    },
+    "role": {
+      "name": "role",
+      "value": "Mage"
+    },
+    "race": {
+      "name": "race",
+      "value": "Dwarf"
+    },
+    "attack": {
+      "name": "attack",
+      "value": 80
+    },
+    "hp": {
+      "name": "hp",
+      "value": 40
+    },
+    "isGuardian": {
+      "name": "isGuardian",
+      "value": true
+    },
+    "gold": {
+      "name": "gold",
+      "value": 70
+    },
+    "description": {
+      "name": "description",
+      "value": "[Dwarf | Mage] \"Ariel Evasion\" Passive: Has a 10% chance of dodging one enemy attack. This effect applies to all attacks targeted at Bert & Kurt. "
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmeRDALhKtgu5FfEewNSdx9CMiA4XrdQ8EZoDjUBCRihhf"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 88
+    },
+    {
+      "trait_type": "name",
+      "value": "Bert & Kurt"
+    },
+    {
+      "trait_type": "element",
+      "value": "Fire"
+    },
+    {
+      "trait_type": "role",
+      "value": "Mage"
+    },
+    {
+      "trait_type": "race",
+      "value": "Dwarf"
+    },
+    {
+      "trait_type": "attack",
+      "value": 80
+    },
+    {
+      "trait_type": "hp",
+      "value": 40
+    },
+    {
+      "trait_type": "isGuardian",
+      "value": true
+    },
+    {
+      "trait_type": "gold",
+      "value": 70
+    },
+    {
+      "trait_type": "description",
+      "value": "[Dwarf | Mage] \"Ariel Evasion\" Passive: Has a 10% chance of dodging one enemy attack. This effect applies to all attacks targeted at Bert & Kurt. "
+    },
+    {
+      "trait_type": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmeRDALhKtgu5FfEewNSdx9CMiA4XrdQ8EZoDjUBCRihhf"
+    }
+  ]
+}

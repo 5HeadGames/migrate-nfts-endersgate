@@ -1,0 +1,67 @@
+{
+  "name": "Panacea's Touch",
+  "type": "ERC1155",
+  "description": "Heal one Guardian on your side of the field for 25 health. ",
+  "image": "QmQpcukjk244aphG5FAAHKgW1WL1z1rijWQNvL52qTkYAD",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 16
+    },
+    "name": {
+      "name": "name",
+      "value": "Panacea's Touch"
+    },
+    "type": {
+      "name": "type",
+      "value": "Normal Action"
+    },
+    "ADOTurn": {
+      "name": "ADOTurn",
+      "value": "NO"
+    },
+    "rarity": {
+      "name": "rarity",
+      "value": "Common"
+    },
+    "description": {
+      "name": "description",
+      "value": "Heal one Guardian on your side of the field for 25 health. "
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmQpcukjk244aphG5FAAHKgW1WL1z1rijWQNvL52qTkYAD"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 16
+    },
+    {
+      "trait_type": "name",
+      "value": "Panacea's Touch"
+    },
+    {
+      "trait_type": "type",
+      "value": "Normal Action"
+    },
+    {
+      "trait_type": "ADOTurn",
+      "value": "NO"
+    },
+    {
+      "trait_type": "rarity",
+      "value": "Common"
+    },
+    {
+      "trait_type": "description",
+      "value": "Heal one Guardian on your side of the field for 25 health. "
+    },
+    {
+      "trait_type": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmQpcukjk244aphG5FAAHKgW1WL1z1rijWQNvL52qTkYAD"
+    }
+  ]
+}

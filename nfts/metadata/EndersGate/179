@@ -1,0 +1,99 @@
+{
+  "name": "Leviathon ",
+  "type": "ERC1155",
+  "description": "[Cephalo | Support] \"Spear Fishing\" Activate: During your MP1, select one Guardian on your opponents side of the field. \n\n● The selected Guardian cannot declare an attack for 3 turns.\n\n● If Leviathon attacks before the 3 turns are up, the target is set free.",
+  "image": "QmauDGT97Rj8S5GJvtyySSLhzNayZbsAqdLVCwSXY37vgA",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 179
+    },
+    "name": {
+      "name": "name",
+      "value": "Leviathon "
+    },
+    "element": {
+      "name": "element",
+      "value": "Water"
+    },
+    "role": {
+      "name": "role",
+      "value": "Support"
+    },
+    "race": {
+      "name": "race",
+      "value": "Cephalo"
+    },
+    "attack": {
+      "name": "attack",
+      "value": 100
+    },
+    "hp": {
+      "name": "hp",
+      "value": 200
+    },
+    "isGuardian": {
+      "name": "isGuardian",
+      "value": true
+    },
+    "gold": {
+      "name": "gold",
+      "value": 200
+    },
+    "description": {
+      "name": "description",
+      "value": "[Cephalo | Support] \"Spear Fishing\" Activate: During your MP1, select one Guardian on your opponents side of the field. \n\n● The selected Guardian cannot declare an attack for 3 turns.\n\n● If Leviathon attacks before the 3 turns are up, the target is set free."
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmauDGT97Rj8S5GJvtyySSLhzNayZbsAqdLVCwSXY37vgA"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 179
+    },
+    {
+      "trait_type": "name",
+      "value": "Leviathon "
+    },
+    {
+      "trait_type": "element",
+      "value": "Water"
+    },
+    {
+      "trait_type": "role",
+      "value": "Support"
+    },
+    {
+      "trait_type": "race",
+      "value": "Cephalo"
+    },
+    {
+      "trait_type": "attack",
+      "value": 100
+    },
+    {
+      "trait_type": "hp",
+      "value": 200
+    },
+    {
+      "trait_type": "isGuardian",
+      "value": true
+    },
+    {
+      "trait_type": "gold",
+      "value": 200
+    },
+    {
+      "trait_type": "description",
+      "value": "[Cephalo | Support] \"Spear Fishing\" Activate: During your MP1, select one Guardian on your opponents side of the field. \n\n● The selected Guardian cannot declare an attack for 3 turns.\n\n● If Leviathon attacks before the 3 turns are up, the target is set free."
+    },
+    {
+      "trait_type": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmauDGT97Rj8S5GJvtyySSLhzNayZbsAqdLVCwSXY37vgA"
+    }
+  ]
+}

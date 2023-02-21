@@ -1,0 +1,99 @@
+{
+  "name": "Clyde",
+  "type": "ERC1155",
+  "description": "[Human| Mage] \"Void Novice\" Passive: Attacks from Clyde have a 15% chance of dealing 10% Critical damage. ",
+  "image": "QmXuqUAXrSg2Y76yfqcRbibXveo2iKigFduxSMtbu8SzVQ",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 96
+    },
+    "name": {
+      "name": "name",
+      "value": "Clyde"
+    },
+    "element": {
+      "name": "element",
+      "value": "Void"
+    },
+    "role": {
+      "name": "role",
+      "value": "Mage"
+    },
+    "race": {
+      "name": "race",
+      "value": "Human"
+    },
+    "attack": {
+      "name": "attack",
+      "value": 80
+    },
+    "hp": {
+      "name": "hp",
+      "value": 60
+    },
+    "isGuardian": {
+      "name": "isGuardian",
+      "value": true
+    },
+    "gold": {
+      "name": "gold",
+      "value": 80
+    },
+    "description": {
+      "name": "description",
+      "value": "[Human| Mage] \"Void Novice\" Passive: Attacks from Clyde have a 15% chance of dealing 10% Critical damage. "
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmXuqUAXrSg2Y76yfqcRbibXveo2iKigFduxSMtbu8SzVQ"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 96
+    },
+    {
+      "trait_type": "name",
+      "value": "Clyde"
+    },
+    {
+      "trait_type": "element",
+      "value": "Void"
+    },
+    {
+      "trait_type": "role",
+      "value": "Mage"
+    },
+    {
+      "trait_type": "race",
+      "value": "Human"
+    },
+    {
+      "trait_type": "attack",
+      "value": 80
+    },
+    {
+      "trait_type": "hp",
+      "value": 60
+    },
+    {
+      "trait_type": "isGuardian",
+      "value": true
+    },
+    {
+      "trait_type": "gold",
+      "value": 80
+    },
+    {
+      "trait_type": "description",
+      "value": "[Human| Mage] \"Void Novice\" Passive: Attacks from Clyde have a 15% chance of dealing 10% Critical damage. "
+    },
+    {
+      "trait_type": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmXuqUAXrSg2Y76yfqcRbibXveo2iKigFduxSMtbu8SzVQ"
+    }
+  ]
+}

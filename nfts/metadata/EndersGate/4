@@ -1,0 +1,67 @@
+{
+  "name": "E-Axe: Fire Mode",
+  "type": "ERC1155",
+  "description": "Deal 20 damage to one selected Guardian on the enemy's side of the field, then deal 10 burn damage over 2 turns.",
+  "image": "QmdqYjCiQwnHHfG3gDsm86pqB6kyoa5YhxEuEnYzyJz4Wi",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 4
+    },
+    "name": {
+      "name": "name",
+      "value": "E-Axe: Fire Mode"
+    },
+    "type": {
+      "name": "type",
+      "value": "Normal Action"
+    },
+    "ADOTurn": {
+      "name": "ADOTurn",
+      "value": "NO"
+    },
+    "rarity": {
+      "name": "rarity",
+      "value": "Common"
+    },
+    "description": {
+      "name": "description",
+      "value": "Deal 20 damage to one selected Guardian on the enemy's side of the field, then deal 10 burn damage over 2 turns."
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmdqYjCiQwnHHfG3gDsm86pqB6kyoa5YhxEuEnYzyJz4Wi"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 4
+    },
+    {
+      "trait_type": "name",
+      "value": "E-Axe: Fire Mode"
+    },
+    {
+      "trait_type": "type",
+      "value": "Normal Action"
+    },
+    {
+      "trait_type": "ADOTurn",
+      "value": "NO"
+    },
+    {
+      "trait_type": "rarity",
+      "value": "Common"
+    },
+    {
+      "trait_type": "description",
+      "value": "Deal 20 damage to one selected Guardian on the enemy's side of the field, then deal 10 burn damage over 2 turns."
+    },
+    {
+      "trait_type": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmdqYjCiQwnHHfG3gDsm86pqB6kyoa5YhxEuEnYzyJz4Wi"
+    }
+  ]
+}

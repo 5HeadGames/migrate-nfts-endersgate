@@ -1,0 +1,99 @@
+{
+  "name": "Henry",
+  "type": "ERC1155",
+  "description": "[Human | Tank] \"Earth Wall\" Passive: 25% Chance to block the next attack. On Successful Block; reset effect after 2 turns.",
+  "image": "QmYLtgoFe8TC8NkQBErunG7eBWTKN3Uy31GRdMdMeHHjDn",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 167
+    },
+    "name": {
+      "name": "name",
+      "value": "Henry"
+    },
+    "element": {
+      "name": "element",
+      "value": "Earth"
+    },
+    "role": {
+      "name": "role",
+      "value": "Tank"
+    },
+    "race": {
+      "name": "race",
+      "value": "Human"
+    },
+    "attack": {
+      "name": "attack",
+      "value": 50
+    },
+    "hp": {
+      "name": "hp",
+      "value": 250
+    },
+    "isGuardian": {
+      "name": "isGuardian",
+      "value": true
+    },
+    "gold": {
+      "name": "gold",
+      "value": 250
+    },
+    "description": {
+      "name": "description",
+      "value": "[Human | Tank] \"Earth Wall\" Passive: 25% Chance to block the next attack. On Successful Block; reset effect after 2 turns."
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmYLtgoFe8TC8NkQBErunG7eBWTKN3Uy31GRdMdMeHHjDn"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 167
+    },
+    {
+      "trait_type": "name",
+      "value": "Henry"
+    },
+    {
+      "trait_type": "element",
+      "value": "Earth"
+    },
+    {
+      "trait_type": "role",
+      "value": "Tank"
+    },
+    {
+      "trait_type": "race",
+      "value": "Human"
+    },
+    {
+      "trait_type": "attack",
+      "value": 50
+    },
+    {
+      "trait_type": "hp",
+      "value": 250
+    },
+    {
+      "trait_type": "isGuardian",
+      "value": true
+    },
+    {
+      "trait_type": "gold",
+      "value": 250
+    },
+    {
+      "trait_type": "description",
+      "value": "[Human | Tank] \"Earth Wall\" Passive: 25% Chance to block the next attack. On Successful Block; reset effect after 2 turns."
+    },
+    {
+      "trait_type": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmYLtgoFe8TC8NkQBErunG7eBWTKN3Uy31GRdMdMeHHjDn"
+    }
+  ]
+}

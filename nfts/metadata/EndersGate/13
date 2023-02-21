@@ -1,0 +1,67 @@
+{
+  "name": "Greater Healing Tincture",
+  "type": "ERC1155",
+  "description": "Select one Guardian on your side of the field; heal them for 100 HP.",
+  "image": "QmPZscDGK68gVcoTxV5yXzVssA92WnmQWY2abbnNbYAkVP",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 13
+    },
+    "name": {
+      "name": "name",
+      "value": "Greater Healing Tincture"
+    },
+    "type": {
+      "name": "type",
+      "value": "Normal Action"
+    },
+    "ADOTurn": {
+      "name": "ADOTurn",
+      "value": "NO"
+    },
+    "rarity": {
+      "name": "rarity",
+      "value": "Rare"
+    },
+    "description": {
+      "name": "description",
+      "value": "Select one Guardian on your side of the field; heal them for 100 HP."
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmPZscDGK68gVcoTxV5yXzVssA92WnmQWY2abbnNbYAkVP"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 13
+    },
+    {
+      "trait_type": "name",
+      "value": "Greater Healing Tincture"
+    },
+    {
+      "trait_type": "type",
+      "value": "Normal Action"
+    },
+    {
+      "trait_type": "ADOTurn",
+      "value": "NO"
+    },
+    {
+      "trait_type": "rarity",
+      "value": "Rare"
+    },
+    {
+      "trait_type": "description",
+      "value": "Select one Guardian on your side of the field; heal them for 100 HP."
+    },
+    {
+      "trait_type": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmPZscDGK68gVcoTxV5yXzVssA92WnmQWY2abbnNbYAkVP"
+    }
+  ]
+}

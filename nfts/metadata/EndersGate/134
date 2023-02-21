@@ -1,0 +1,99 @@
+{
+  "name": "Eclipso",
+  "type": "ERC1155",
+  "description": "[Human | Assassin] \"Shadow Trickster\" Passive: Attacks have a 10% chance of stealing 50 gold from your opponent.",
+  "image": "QmYqH4mZUgBsz9FiJY1zwcz22K2QSiPdvsiQzQh6p745qb",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 134
+    },
+    "name": {
+      "name": "name",
+      "value": "Eclipso"
+    },
+    "element": {
+      "name": "element",
+      "value": "Earth"
+    },
+    "role": {
+      "name": "role",
+      "value": "Assassin"
+    },
+    "race": {
+      "name": "race",
+      "value": "Human"
+    },
+    "attack": {
+      "name": "attack",
+      "value": 110
+    },
+    "hp": {
+      "name": "hp",
+      "value": 110
+    },
+    "isGuardian": {
+      "name": "isGuardian",
+      "value": true
+    },
+    "gold": {
+      "name": "gold",
+      "value": 120
+    },
+    "description": {
+      "name": "description",
+      "value": "[Human | Assassin] \"Shadow Trickster\" Passive: Attacks have a 10% chance of stealing 50 gold from your opponent."
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmYqH4mZUgBsz9FiJY1zwcz22K2QSiPdvsiQzQh6p745qb"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 134
+    },
+    {
+      "trait_type": "name",
+      "value": "Eclipso"
+    },
+    {
+      "trait_type": "element",
+      "value": "Earth"
+    },
+    {
+      "trait_type": "role",
+      "value": "Assassin"
+    },
+    {
+      "trait_type": "race",
+      "value": "Human"
+    },
+    {
+      "trait_type": "attack",
+      "value": 110
+    },
+    {
+      "trait_type": "hp",
+      "value": 110
+    },
+    {
+      "trait_type": "isGuardian",
+      "value": true
+    },
+    {
+      "trait_type": "gold",
+      "value": 120
+    },
+    {
+      "trait_type": "description",
+      "value": "[Human | Assassin] \"Shadow Trickster\" Passive: Attacks have a 10% chance of stealing 50 gold from your opponent."
+    },
+    {
+      "trait_type": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmYqH4mZUgBsz9FiJY1zwcz22K2QSiPdvsiQzQh6p745qb"
+    }
+  ]
+}

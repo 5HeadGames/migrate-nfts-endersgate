@@ -1,0 +1,67 @@
+{
+  "name": "Void Blast",
+  "type": "ERC1155",
+  "description": "Target One Guardian on your opponent's side of the field; damage them for 100 HP. If under 20% health, execute them.",
+  "image": "QmUvU5uHGpj5DNN1p1ofbZyjNbAJn1sazcQCtbzasS1bXJ",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 20
+    },
+    "name": {
+      "name": "name",
+      "value": "Void Blast"
+    },
+    "type": {
+      "name": "type",
+      "value": "Normal Action"
+    },
+    "ADOTurn": {
+      "name": "ADOTurn",
+      "value": "YES"
+    },
+    "rarity": {
+      "name": "rarity",
+      "value": "Ultra Rare"
+    },
+    "description": {
+      "name": "description",
+      "value": "Target One Guardian on your opponent's side of the field; damage them for 100 HP. If under 20% health, execute them."
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmUvU5uHGpj5DNN1p1ofbZyjNbAJn1sazcQCtbzasS1bXJ"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 20
+    },
+    {
+      "trait_type": "name",
+      "value": "Void Blast"
+    },
+    {
+      "trait_type": "type",
+      "value": "Normal Action"
+    },
+    {
+      "trait_type": "ADOTurn",
+      "value": "YES"
+    },
+    {
+      "trait_type": "rarity",
+      "value": "Ultra Rare"
+    },
+    {
+      "trait_type": "description",
+      "value": "Target One Guardian on your opponent's side of the field; damage them for 100 HP. If under 20% health, execute them."
+    },
+    {
+      "trait_type": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmUvU5uHGpj5DNN1p1ofbZyjNbAJn1sazcQCtbzasS1bXJ"
+    }
+  ]
+}

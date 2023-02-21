@@ -1,0 +1,67 @@
+{
+  "name": "Cold Blooded Prison",
+  "type": "ERC1155",
+  "description": "Flip: If your opponent declares an attack with one of the following Guardian Types:\n\n● Dragon / Squamata\n● Insect\n● Undead / Zombie\n \nNegate the attack and end your opponent's Battle phase.",
+  "image": "QmYCFFJXBWDpYuKn3XQssCmSC957QrrFUUkv3DTsPyRELs",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 80
+    },
+    "name": {
+      "name": "name",
+      "value": "Cold Blooded Prison"
+    },
+    "type": {
+      "name": "type",
+      "value": "Flip Counter"
+    },
+    "ADOTurn": {
+      "name": "ADOTurn",
+      "value": "YES"
+    },
+    "rarity": {
+      "name": "rarity",
+      "value": "Ultra Rare"
+    },
+    "description": {
+      "name": "description",
+      "value": "Flip: If your opponent declares an attack with one of the following Guardian Types:\n\n● Dragon / Squamata\n● Insect\n● Undead / Zombie\n \nNegate the attack and end your opponent's Battle phase."
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmYCFFJXBWDpYuKn3XQssCmSC957QrrFUUkv3DTsPyRELs"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 80
+    },
+    {
+      "trait_type": "name",
+      "value": "Cold Blooded Prison"
+    },
+    {
+      "trait_type": "type",
+      "value": "Flip Counter"
+    },
+    {
+      "trait_type": "ADOTurn",
+      "value": "YES"
+    },
+    {
+      "trait_type": "rarity",
+      "value": "Ultra Rare"
+    },
+    {
+      "trait_type": "description",
+      "value": "Flip: If your opponent declares an attack with one of the following Guardian Types:\n\n● Dragon / Squamata\n● Insect\n● Undead / Zombie\n \nNegate the attack and end your opponent's Battle phase."
+    },
+    {
+      "trait_type": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmYCFFJXBWDpYuKn3XQssCmSC957QrrFUUkv3DTsPyRELs"
+    }
+  ]
+}

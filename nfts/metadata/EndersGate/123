@@ -1,0 +1,99 @@
+{
+  "name": "Void Fragment X",
+  "type": "ERC1155",
+  "description": "[Golem | Support] \"Trouble Maker\" Passive: Cannot be targeted in the Battle Phase while another Guardian is on your side of the field; Deal 5 Void DMG during each of your Standby Phases to 1 random non-Void type Guardian on your opponents side of the field. ",
+  "image": "QmQ1mdcsJUuj6u5C3t4dhAzvKHMbNXfX4Qy1hfrsU1th5v",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 123
+    },
+    "name": {
+      "name": "name",
+      "value": "Void Fragment X"
+    },
+    "element": {
+      "name": "element",
+      "value": "Void"
+    },
+    "role": {
+      "name": "role",
+      "value": "Support"
+    },
+    "race": {
+      "name": "race",
+      "value": "Golem "
+    },
+    "attack": {
+      "name": "attack",
+      "value": 30
+    },
+    "hp": {
+      "name": "hp",
+      "value": 30
+    },
+    "isGuardian": {
+      "name": "isGuardian",
+      "value": true
+    },
+    "gold": {
+      "name": "gold",
+      "value": 60
+    },
+    "description": {
+      "name": "description",
+      "value": "[Golem | Support] \"Trouble Maker\" Passive: Cannot be targeted in the Battle Phase while another Guardian is on your side of the field; Deal 5 Void DMG during each of your Standby Phases to 1 random non-Void type Guardian on your opponents side of the field. "
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmQ1mdcsJUuj6u5C3t4dhAzvKHMbNXfX4Qy1hfrsU1th5v"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 123
+    },
+    {
+      "trait_type": "name",
+      "value": "Void Fragment X"
+    },
+    {
+      "trait_type": "element",
+      "value": "Void"
+    },
+    {
+      "trait_type": "role",
+      "value": "Support"
+    },
+    {
+      "trait_type": "race",
+      "value": "Golem "
+    },
+    {
+      "trait_type": "attack",
+      "value": 30
+    },
+    {
+      "trait_type": "hp",
+      "value": 30
+    },
+    {
+      "trait_type": "isGuardian",
+      "value": true
+    },
+    {
+      "trait_type": "gold",
+      "value": 60
+    },
+    {
+      "trait_type": "description",
+      "value": "[Golem | Support] \"Trouble Maker\" Passive: Cannot be targeted in the Battle Phase while another Guardian is on your side of the field; Deal 5 Void DMG during each of your Standby Phases to 1 random non-Void type Guardian on your opponents side of the field. "
+    },
+    {
+      "trait_type": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmQ1mdcsJUuj6u5C3t4dhAzvKHMbNXfX4Qy1hfrsU1th5v"
+    }
+  ]
+}

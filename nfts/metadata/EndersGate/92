@@ -1,0 +1,99 @@
+{
+  "name": "Grave Digger Duke",
+  "type": "ERC1155",
+  "description": "[Human | Fighter] \"Angry Villager\" Passive: Grave Digger Duke Gains 25 Attack for each \"Angry Villager\" Guardian on your side of the field.",
+  "image": "QmVvqQED4nm3TiuBqdJRafdV9aFKKMVsmAyLdsfJ9mKrXM",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 92
+    },
+    "name": {
+      "name": "name",
+      "value": "Grave Digger Duke"
+    },
+    "element": {
+      "name": "element",
+      "value": "Earth"
+    },
+    "role": {
+      "name": "role",
+      "value": "Fighter"
+    },
+    "race": {
+      "name": "race",
+      "value": "Human"
+    },
+    "attack": {
+      "name": "attack",
+      "value": 50
+    },
+    "hp": {
+      "name": "hp",
+      "value": 75
+    },
+    "isGuardian": {
+      "name": "isGuardian",
+      "value": true
+    },
+    "gold": {
+      "name": "gold",
+      "value": 70
+    },
+    "description": {
+      "name": "description",
+      "value": "[Human | Fighter] \"Angry Villager\" Passive: Grave Digger Duke Gains 25 Attack for each \"Angry Villager\" Guardian on your side of the field."
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmVvqQED4nm3TiuBqdJRafdV9aFKKMVsmAyLdsfJ9mKrXM"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 92
+    },
+    {
+      "trait_type": "name",
+      "value": "Grave Digger Duke"
+    },
+    {
+      "trait_type": "element",
+      "value": "Earth"
+    },
+    {
+      "trait_type": "role",
+      "value": "Fighter"
+    },
+    {
+      "trait_type": "race",
+      "value": "Human"
+    },
+    {
+      "trait_type": "attack",
+      "value": 50
+    },
+    {
+      "trait_type": "hp",
+      "value": 75
+    },
+    {
+      "trait_type": "isGuardian",
+      "value": true
+    },
+    {
+      "trait_type": "gold",
+      "value": 70
+    },
+    {
+      "trait_type": "description",
+      "value": "[Human | Fighter] \"Angry Villager\" Passive: Grave Digger Duke Gains 25 Attack for each \"Angry Villager\" Guardian on your side of the field."
+    },
+    {
+      "trait_type": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmVvqQED4nm3TiuBqdJRafdV9aFKKMVsmAyLdsfJ9mKrXM"
+    }
+  ]
+}

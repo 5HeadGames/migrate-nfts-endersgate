@@ -1,0 +1,99 @@
+{
+  "name": "Alpha Wold Dax",
+  "type": "ERC1155",
+  "description": "[Beast | Fighter] \"Wolf Pack\" Passive: Attacks from Alpha Wolf Dax deal 20% life steal which heal him on hit",
+  "image": "QmVQcvtiBGC1QBwjUUJHuDZ53QD6JSkipkUuB4inMULdE1",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 176
+    },
+    "name": {
+      "name": "name",
+      "value": "Alpha Wold Dax"
+    },
+    "element": {
+      "name": "element",
+      "value": "Fire"
+    },
+    "role": {
+      "name": "role",
+      "value": "Fighter"
+    },
+    "race": {
+      "name": "race",
+      "value": "Beast"
+    },
+    "attack": {
+      "name": "attack",
+      "value": 120
+    },
+    "hp": {
+      "name": "hp",
+      "value": 180
+    },
+    "isGuardian": {
+      "name": "isGuardian",
+      "value": true
+    },
+    "gold": {
+      "name": "gold",
+      "value": 220
+    },
+    "description": {
+      "name": "description",
+      "value": "[Beast | Fighter] \"Wolf Pack\" Passive: Attacks from Alpha Wolf Dax deal 20% life steal which heal him on hit"
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmVQcvtiBGC1QBwjUUJHuDZ53QD6JSkipkUuB4inMULdE1"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 176
+    },
+    {
+      "trait_type": "name",
+      "value": "Alpha Wold Dax"
+    },
+    {
+      "trait_type": "element",
+      "value": "Fire"
+    },
+    {
+      "trait_type": "role",
+      "value": "Fighter"
+    },
+    {
+      "trait_type": "race",
+      "value": "Beast"
+    },
+    {
+      "trait_type": "attack",
+      "value": 120
+    },
+    {
+      "trait_type": "hp",
+      "value": 180
+    },
+    {
+      "trait_type": "isGuardian",
+      "value": true
+    },
+    {
+      "trait_type": "gold",
+      "value": 220
+    },
+    {
+      "trait_type": "description",
+      "value": "[Beast | Fighter] \"Wolf Pack\" Passive: Attacks from Alpha Wolf Dax deal 20% life steal which heal him on hit"
+    },
+    {
+      "trait_type": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmVQcvtiBGC1QBwjUUJHuDZ53QD6JSkipkUuB4inMULdE1"
+    }
+  ]
+}

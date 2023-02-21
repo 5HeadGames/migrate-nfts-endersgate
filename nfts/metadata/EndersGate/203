@@ -1,0 +1,99 @@
+{
+  "name": "Urgos",
+  "type": "ERC1155",
+  "description": "[Sentinel | Support] \"Void Vision\" Activate: Select one Ally on your side of the field and increase their Crit Chance  & Crit DMG by 50%.",
+  "image": "QmSyJdKzbUTd6DAijMxuR2BY36iM14DBLHKFQPiGHztFvX",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 203
+    },
+    "name": {
+      "name": "name",
+      "value": "Urgos"
+    },
+    "element": {
+      "name": "element",
+      "value": "Void"
+    },
+    "role": {
+      "name": "role",
+      "value": "Support"
+    },
+    "race": {
+      "name": "race",
+      "value": "Sentinel"
+    },
+    "attack": {
+      "name": "attack",
+      "value": 150
+    },
+    "hp": {
+      "name": "hp",
+      "value": 250
+    },
+    "isGuardian": {
+      "name": "isGuardian",
+      "value": true
+    },
+    "gold": {
+      "name": "gold",
+      "value": 300
+    },
+    "description": {
+      "name": "description",
+      "value": "[Sentinel | Support] \"Void Vision\" Activate: Select one Ally on your side of the field and increase their Crit Chance  & Crit DMG by 50%."
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmSyJdKzbUTd6DAijMxuR2BY36iM14DBLHKFQPiGHztFvX"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 203
+    },
+    {
+      "trait_type": "name",
+      "value": "Urgos"
+    },
+    {
+      "trait_type": "element",
+      "value": "Void"
+    },
+    {
+      "trait_type": "role",
+      "value": "Support"
+    },
+    {
+      "trait_type": "race",
+      "value": "Sentinel"
+    },
+    {
+      "trait_type": "attack",
+      "value": 150
+    },
+    {
+      "trait_type": "hp",
+      "value": 250
+    },
+    {
+      "trait_type": "isGuardian",
+      "value": true
+    },
+    {
+      "trait_type": "gold",
+      "value": 300
+    },
+    {
+      "trait_type": "description",
+      "value": "[Sentinel | Support] \"Void Vision\" Activate: Select one Ally on your side of the field and increase their Crit Chance  & Crit DMG by 50%."
+    },
+    {
+      "trait_type": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmSyJdKzbUTd6DAijMxuR2BY36iM14DBLHKFQPiGHztFvX"
+    }
+  ]
+}

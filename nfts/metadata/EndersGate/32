@@ -1,0 +1,67 @@
+{
+  "name": "Void Ledger ",
+  "type": "ERC1155",
+  "description": "This card stays on the field for 3 turns, during this time, only Void Type Guardian's can declare attack.",
+  "image": "QmY9YGgzpxj2Dsr7WVGojdMjbvGCRQBQHZzQvESGrF9UF6",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 32
+    },
+    "name": {
+      "name": "name",
+      "value": "Void Ledger "
+    },
+    "type": {
+      "name": "type",
+      "value": "Normal Action"
+    },
+    "ADOTurn": {
+      "name": "ADOTurn",
+      "value": "NO"
+    },
+    "rarity": {
+      "name": "rarity",
+      "value": "Rare"
+    },
+    "description": {
+      "name": "description",
+      "value": "This card stays on the field for 3 turns, during this time, only Void Type Guardian's can declare attack."
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmY9YGgzpxj2Dsr7WVGojdMjbvGCRQBQHZzQvESGrF9UF6"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 32
+    },
+    {
+      "trait_type": "name",
+      "value": "Void Ledger "
+    },
+    {
+      "trait_type": "type",
+      "value": "Normal Action"
+    },
+    {
+      "trait_type": "ADOTurn",
+      "value": "NO"
+    },
+    {
+      "trait_type": "rarity",
+      "value": "Rare"
+    },
+    {
+      "trait_type": "description",
+      "value": "This card stays on the field for 3 turns, during this time, only Void Type Guardian's can declare attack."
+    },
+    {
+      "trait_type": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmY9YGgzpxj2Dsr7WVGojdMjbvGCRQBQHZzQvESGrF9UF6"
+    }
+  ]
+}

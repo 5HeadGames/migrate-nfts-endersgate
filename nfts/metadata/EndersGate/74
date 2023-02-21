@@ -1,0 +1,67 @@
+{
+  "name": "Gold Bear Trap",
+  "type": "ERC1155",
+  "description": "Flip: When an enemy Guardian Declares an attack, steal 100 gold from your opponent's inventory. ",
+  "image": "QmQCGv9rWp4MBmuooxqVHiVErbV9ZeFvsYShn5Cs8scfys",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 74
+    },
+    "name": {
+      "name": "name",
+      "value": "Gold Bear Trap"
+    },
+    "type": {
+      "name": "type",
+      "value": "Quick Play"
+    },
+    "ADOTurn": {
+      "name": "ADOTurn",
+      "value": "YES"
+    },
+    "rarity": {
+      "name": "rarity",
+      "value": "Rare"
+    },
+    "description": {
+      "name": "description",
+      "value": "Flip: When an enemy Guardian Declares an attack, steal 100 gold from your opponent's inventory. "
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmQCGv9rWp4MBmuooxqVHiVErbV9ZeFvsYShn5Cs8scfys"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 74
+    },
+    {
+      "trait_type": "name",
+      "value": "Gold Bear Trap"
+    },
+    {
+      "trait_type": "type",
+      "value": "Quick Play"
+    },
+    {
+      "trait_type": "ADOTurn",
+      "value": "YES"
+    },
+    {
+      "trait_type": "rarity",
+      "value": "Rare"
+    },
+    {
+      "trait_type": "description",
+      "value": "Flip: When an enemy Guardian Declares an attack, steal 100 gold from your opponent's inventory. "
+    },
+    {
+      "trait_type": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmQCGv9rWp4MBmuooxqVHiVErbV9ZeFvsYShn5Cs8scfys"
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "name": "Glowe",
+  "type": "ERC1155",
+  "description": "[Elemental | Support] \"Fire Works\" Passive: While you control another \"Elemental\" Type Guardian, Glowé cannot be attacked. During each of your End Phases: Inflict 50 damage to your opponents LP. ",
+  "image": "QmQFy1puxvdbPEBPnrMqxf8J3GpWQqRQteZkZabgfutKtD",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 148
+    },
+    "name": {
+      "name": "name",
+      "value": "Glowe"
+    },
+    "element": {
+      "name": "element",
+      "value": "Fire"
+    },
+    "role": {
+      "name": "role",
+      "value": "Support"
+    },
+    "race": {
+      "name": "race",
+      "value": "Elemental"
+    },
+    "attack": {
+      "name": "attack",
+      "value": 110
+    },
+    "hp": {
+      "name": "hp",
+      "value": 120
+    },
+    "isGuardian": {
+      "name": "isGuardian",
+      "value": true
+    },
+    "gold": {
+      "name": "gold",
+      "value": 120
+    },
+    "description": {
+      "name": "description",
+      "value": "[Elemental | Support] \"Fire Works\" Passive: While you control another \"Elemental\" Type Guardian, Glowé cannot be attacked. During each of your End Phases: Inflict 50 damage to your opponents LP. "
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmQFy1puxvdbPEBPnrMqxf8J3GpWQqRQteZkZabgfutKtD"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 148
+    },
+    {
+      "trait_type": "name",
+      "value": "Glowe"
+    },
+    {
+      "trait_type": "element",
+      "value": "Fire"
+    },
+    {
+      "trait_type": "role",
+      "value": "Support"
+    },
+    {
+      "trait_type": "race",
+      "value": "Elemental"
+    },
+    {
+      "trait_type": "attack",
+      "value": 110
+    },
+    {
+      "trait_type": "hp",
+      "value": 120
+    },
+    {
+      "trait_type": "isGuardian",
+      "value": true
+    },
+    {
+      "trait_type": "gold",
+      "value": 120
+    },
+    {
+      "trait_type": "description",
+      "value": "[Elemental | Support] \"Fire Works\" Passive: While you control another \"Elemental\" Type Guardian, Glowé cannot be attacked. During each of your End Phases: Inflict 50 damage to your opponents LP. "
+    },
+    {
+      "trait_type": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmQFy1puxvdbPEBPnrMqxf8J3GpWQqRQteZkZabgfutKtD"
+    }
+  ]
+}

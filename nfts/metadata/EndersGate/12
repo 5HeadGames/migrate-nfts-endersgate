@@ -1,0 +1,67 @@
+{
+  "name": "Nordic War Book",
+  "type": "ERC1155",
+  "description": "During your main phase 1, discard 1 card from your hand to the graveyard; select one \"Nordic\" guardian on your side of the field and increase their attack by 100. Destory this card if the Guardian is sent to the grave yard.",
+  "image": "QmS32Fr16vDKrXNBwz429tZ6brY29PjoyeJ7owZ1gLQmrm",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 12
+    },
+    "name": {
+      "name": "name",
+      "value": "Nordic War Book"
+    },
+    "type": {
+      "name": "type",
+      "value": "Equip"
+    },
+    "ADOTurn": {
+      "name": "ADOTurn",
+      "value": "NO"
+    },
+    "rarity": {
+      "name": "rarity",
+      "value": "Rare"
+    },
+    "description": {
+      "name": "description",
+      "value": "During your main phase 1, discard 1 card from your hand to the graveyard; select one \"Nordic\" guardian on your side of the field and increase their attack by 100. Destory this card if the Guardian is sent to the grave yard."
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmS32Fr16vDKrXNBwz429tZ6brY29PjoyeJ7owZ1gLQmrm"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 12
+    },
+    {
+      "trait_type": "name",
+      "value": "Nordic War Book"
+    },
+    {
+      "trait_type": "type",
+      "value": "Equip"
+    },
+    {
+      "trait_type": "ADOTurn",
+      "value": "NO"
+    },
+    {
+      "trait_type": "rarity",
+      "value": "Rare"
+    },
+    {
+      "trait_type": "description",
+      "value": "During your main phase 1, discard 1 card from your hand to the graveyard; select one \"Nordic\" guardian on your side of the field and increase their attack by 100. Destory this card if the Guardian is sent to the grave yard."
+    },
+    {
+      "trait_type": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmS32Fr16vDKrXNBwz429tZ6brY29PjoyeJ7owZ1gLQmrm"
+    }
+  ]
+}

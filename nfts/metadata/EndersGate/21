@@ -1,0 +1,67 @@
+{
+  "name": "Willful Shield",
+  "type": "ERC1155",
+  "description": "Activate: This card stays on the field until it negates one attack.",
+  "image": "QmdmDpsKhGR4xKBAnujhMLLLLLCiaCeTeQGdxgqy5ML6wf",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 21
+    },
+    "name": {
+      "name": "name",
+      "value": "Willful Shield"
+    },
+    "type": {
+      "name": "type",
+      "value": "Normal Action"
+    },
+    "ADOTurn": {
+      "name": "ADOTurn",
+      "value": "NO"
+    },
+    "rarity": {
+      "name": "rarity",
+      "value": "Rare"
+    },
+    "description": {
+      "name": "description",
+      "value": "Activate: This card stays on the field until it negates one attack."
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmdmDpsKhGR4xKBAnujhMLLLLLCiaCeTeQGdxgqy5ML6wf"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 21
+    },
+    {
+      "trait_type": "name",
+      "value": "Willful Shield"
+    },
+    {
+      "trait_type": "type",
+      "value": "Normal Action"
+    },
+    {
+      "trait_type": "ADOTurn",
+      "value": "NO"
+    },
+    {
+      "trait_type": "rarity",
+      "value": "Rare"
+    },
+    {
+      "trait_type": "description",
+      "value": "Activate: This card stays on the field until it negates one attack."
+    },
+    {
+      "trait_type": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmdmDpsKhGR4xKBAnujhMLLLLLCiaCeTeQGdxgqy5ML6wf"
+    }
+  ]
+}

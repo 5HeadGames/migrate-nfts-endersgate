@@ -1,0 +1,99 @@
+{
+  "name": "Grappler Shark",
+  "type": "ERC1155",
+  "description": "[Shark | Fighter] \"Shark Instinct\" Activate: Select one face down Card in your opponents Event zone; Pay 50 gold to destroy it. ",
+  "image": "QmasCp4NDtWaymp6wDkeeyr2qJjdY7Y2LRCupqgwwPKvnx",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 162
+    },
+    "name": {
+      "name": "name",
+      "value": "Grappler Shark"
+    },
+    "element": {
+      "name": "element",
+      "value": "Water"
+    },
+    "role": {
+      "name": "role",
+      "value": "Fighter"
+    },
+    "race": {
+      "name": "race",
+      "value": "Shark"
+    },
+    "attack": {
+      "name": "attack",
+      "value": 80
+    },
+    "hp": {
+      "name": "hp",
+      "value": 80
+    },
+    "isGuardian": {
+      "name": "isGuardian",
+      "value": true
+    },
+    "gold": {
+      "name": "gold",
+      "value": 95
+    },
+    "description": {
+      "name": "description",
+      "value": "[Shark | Fighter] \"Shark Instinct\" Activate: Select one face down Card in your opponents Event zone; Pay 50 gold to destroy it. "
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmasCp4NDtWaymp6wDkeeyr2qJjdY7Y2LRCupqgwwPKvnx"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 162
+    },
+    {
+      "trait_type": "name",
+      "value": "Grappler Shark"
+    },
+    {
+      "trait_type": "element",
+      "value": "Water"
+    },
+    {
+      "trait_type": "role",
+      "value": "Fighter"
+    },
+    {
+      "trait_type": "race",
+      "value": "Shark"
+    },
+    {
+      "trait_type": "attack",
+      "value": 80
+    },
+    {
+      "trait_type": "hp",
+      "value": 80
+    },
+    {
+      "trait_type": "isGuardian",
+      "value": true
+    },
+    {
+      "trait_type": "gold",
+      "value": 95
+    },
+    {
+      "trait_type": "description",
+      "value": "[Shark | Fighter] \"Shark Instinct\" Activate: Select one face down Card in your opponents Event zone; Pay 50 gold to destroy it. "
+    },
+    {
+      "trait_type": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmasCp4NDtWaymp6wDkeeyr2qJjdY7Y2LRCupqgwwPKvnx"
+    }
+  ]
+}

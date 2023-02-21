@@ -1,0 +1,99 @@
+{
+  "name": "Fiona",
+  "type": "ERC1155",
+  "description": "[Human | Support] \"Mystic burst\" Activate: During your MP1, Fill the board with light, preventing all Void type Guardian's from declaring an attack for 2 turns. Cool down 4 turns. \n",
+  "image": "QmYbE1btkBXugpuCVALRudgtUgChTPG8J3UgYUmFhKhGDg",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 180
+    },
+    "name": {
+      "name": "name",
+      "value": "Fiona"
+    },
+    "element": {
+      "name": "element",
+      "value": "Mystic"
+    },
+    "role": {
+      "name": "role",
+      "value": "Support"
+    },
+    "race": {
+      "name": "race",
+      "value": "Human"
+    },
+    "attack": {
+      "name": "attack",
+      "value": 100
+    },
+    "hp": {
+      "name": "hp",
+      "value": 200
+    },
+    "isGuardian": {
+      "name": "isGuardian",
+      "value": true
+    },
+    "gold": {
+      "name": "gold",
+      "value": 180
+    },
+    "description": {
+      "name": "description",
+      "value": "[Human | Support] \"Mystic burst\" Activate: During your MP1, Fill the board with light, preventing all Void type Guardian's from declaring an attack for 2 turns. Cool down 4 turns. \n"
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmYbE1btkBXugpuCVALRudgtUgChTPG8J3UgYUmFhKhGDg"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 180
+    },
+    {
+      "trait_type": "name",
+      "value": "Fiona"
+    },
+    {
+      "trait_type": "element",
+      "value": "Mystic"
+    },
+    {
+      "trait_type": "role",
+      "value": "Support"
+    },
+    {
+      "trait_type": "race",
+      "value": "Human"
+    },
+    {
+      "trait_type": "attack",
+      "value": 100
+    },
+    {
+      "trait_type": "hp",
+      "value": 200
+    },
+    {
+      "trait_type": "isGuardian",
+      "value": true
+    },
+    {
+      "trait_type": "gold",
+      "value": 180
+    },
+    {
+      "trait_type": "description",
+      "value": "[Human | Support] \"Mystic burst\" Activate: During your MP1, Fill the board with light, preventing all Void type Guardian's from declaring an attack for 2 turns. Cool down 4 turns. \n"
+    },
+    {
+      "trait_type": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmYbE1btkBXugpuCVALRudgtUgChTPG8J3UgYUmFhKhGDg"
+    }
+  ]
+}

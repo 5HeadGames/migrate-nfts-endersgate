@@ -1,0 +1,99 @@
+{
+  "name": "Judge Red",
+  "type": "ERC1155",
+  "description": "[Sentinel | Tank] \"Final Judgement\" Activate: Once per turn, execute 1 enemy Guardian under 20% health. ",
+  "image": "QmU4Spt1jzFXs6zQtpACh6DEUhiJmBHP1AiNcPnn7GgHRy",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 217
+    },
+    "name": {
+      "name": "name",
+      "value": "Judge Red"
+    },
+    "element": {
+      "name": "element",
+      "value": "Void"
+    },
+    "role": {
+      "name": "role",
+      "value": "Tank"
+    },
+    "race": {
+      "name": "race",
+      "value": "Sentinel"
+    },
+    "attack": {
+      "name": "attack",
+      "value": 150
+    },
+    "hp": {
+      "name": "hp",
+      "value": 650
+    },
+    "isGuardian": {
+      "name": "isGuardian",
+      "value": true
+    },
+    "gold": {
+      "name": "gold",
+      "value": 600
+    },
+    "description": {
+      "name": "description",
+      "value": "[Sentinel | Tank] \"Final Judgement\" Activate: Once per turn, execute 1 enemy Guardian under 20% health. "
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmU4Spt1jzFXs6zQtpACh6DEUhiJmBHP1AiNcPnn7GgHRy"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 217
+    },
+    {
+      "trait_type": "name",
+      "value": "Judge Red"
+    },
+    {
+      "trait_type": "element",
+      "value": "Void"
+    },
+    {
+      "trait_type": "role",
+      "value": "Tank"
+    },
+    {
+      "trait_type": "race",
+      "value": "Sentinel"
+    },
+    {
+      "trait_type": "attack",
+      "value": 150
+    },
+    {
+      "trait_type": "hp",
+      "value": 650
+    },
+    {
+      "trait_type": "isGuardian",
+      "value": true
+    },
+    {
+      "trait_type": "gold",
+      "value": 600
+    },
+    {
+      "trait_type": "description",
+      "value": "[Sentinel | Tank] \"Final Judgement\" Activate: Once per turn, execute 1 enemy Guardian under 20% health. "
+    },
+    {
+      "trait_type": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmU4Spt1jzFXs6zQtpACh6DEUhiJmBHP1AiNcPnn7GgHRy"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "name": "Sunken Palace",
+  "type": "ERC1155",
+  "description": "The field is submerged in water causing 5 damage per turn to all non-Water Type Guardians. If your opponent has no field card in play, this field card effects their side as well. (Upkeep: 5 gold per turn)",
+  "image": "QmYzwzhTmZLHqhhdB7qxdaGT8r93N7V6uqMfegYFo4NF8S",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 34
+    },
+    "name": {
+      "name": "name",
+      "value": "Sunken Palace"
+    },
+    "type": {
+      "name": "type",
+      "value": "Field Card"
+    },
+    "ADOTurn": {
+      "name": "ADOTurn",
+      "value": "NO"
+    },
+    "rarity": {
+      "name": "rarity",
+      "value": "Ultra Rare"
+    },
+    "description": {
+      "name": "description",
+      "value": "The field is submerged in water causing 5 damage per turn to all non-Water Type Guardians. If your opponent has no field card in play, this field card effects their side as well. (Upkeep: 5 gold per turn)"
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmYzwzhTmZLHqhhdB7qxdaGT8r93N7V6uqMfegYFo4NF8S"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 34
+    },
+    {
+      "trait_type": "name",
+      "value": "Sunken Palace"
+    },
+    {
+      "trait_type": "type",
+      "value": "Field Card"
+    },
+    {
+      "trait_type": "ADOTurn",
+      "value": "NO"
+    },
+    {
+      "trait_type": "rarity",
+      "value": "Ultra Rare"
+    },
+    {
+      "trait_type": "description",
+      "value": "The field is submerged in water causing 5 damage per turn to all non-Water Type Guardians. If your opponent has no field card in play, this field card effects their side as well. (Upkeep: 5 gold per turn)"
+    },
+    {
+      "trait_type": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmYzwzhTmZLHqhhdB7qxdaGT8r93N7V6uqMfegYFo4NF8S"
+    }
+  ]
+}

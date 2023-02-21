@@ -1,0 +1,67 @@
+{
+  "name": "Over Shield Tonic",
+  "type": "ERC1155",
+  "description": "Pay 50 Gold to Activate. Select one Guardian on your side of the field; they gain an overshield worth 60 HP.",
+  "image": "QmYDhGPswd497K3gMrjvBZKLfo36hqkRdLYfCkE48o18oF",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 23
+    },
+    "name": {
+      "name": "name",
+      "value": "Over Shield Tonic"
+    },
+    "type": {
+      "name": "type",
+      "value": "Normal Action"
+    },
+    "ADOTurn": {
+      "name": "ADOTurn",
+      "value": "NO"
+    },
+    "rarity": {
+      "name": "rarity",
+      "value": "Rare"
+    },
+    "description": {
+      "name": "description",
+      "value": "Pay 50 Gold to Activate. Select one Guardian on your side of the field; they gain an overshield worth 60 HP."
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmYDhGPswd497K3gMrjvBZKLfo36hqkRdLYfCkE48o18oF"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 23
+    },
+    {
+      "trait_type": "name",
+      "value": "Over Shield Tonic"
+    },
+    {
+      "trait_type": "type",
+      "value": "Normal Action"
+    },
+    {
+      "trait_type": "ADOTurn",
+      "value": "NO"
+    },
+    {
+      "trait_type": "rarity",
+      "value": "Rare"
+    },
+    {
+      "trait_type": "description",
+      "value": "Pay 50 Gold to Activate. Select one Guardian on your side of the field; they gain an overshield worth 60 HP."
+    },
+    {
+      "trait_type": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmYDhGPswd497K3gMrjvBZKLfo36hqkRdLYfCkE48o18oF"
+    }
+  ]
+}

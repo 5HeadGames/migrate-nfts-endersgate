@@ -1,0 +1,99 @@
+{
+  "name": "Hitman Braaz",
+  "type": "ERC1155",
+  "description": "[Goblin | Assassin] \"Goblin Crew\" Passive: Braaz gains 25 ATK for all \"Goblin Crew\" Guardians on your side of the field. ",
+  "image": "QmRfR5NggiGgL74gFUPFutew1PesPdKSxX5zYjPNNx6pVe",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 116
+    },
+    "name": {
+      "name": "name",
+      "value": "Hitman Braaz"
+    },
+    "element": {
+      "name": "element",
+      "value": "Venom"
+    },
+    "role": {
+      "name": "role",
+      "value": "Assassin"
+    },
+    "race": {
+      "name": "race",
+      "value": "Goblin "
+    },
+    "attack": {
+      "name": "attack",
+      "value": 100
+    },
+    "hp": {
+      "name": "hp",
+      "value": 40
+    },
+    "isGuardian": {
+      "name": "isGuardian",
+      "value": true
+    },
+    "gold": {
+      "name": "gold",
+      "value": 65
+    },
+    "description": {
+      "name": "description",
+      "value": "[Goblin | Assassin] \"Goblin Crew\" Passive: Braaz gains 25 ATK for all \"Goblin Crew\" Guardians on your side of the field. "
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmRfR5NggiGgL74gFUPFutew1PesPdKSxX5zYjPNNx6pVe"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 116
+    },
+    {
+      "trait_type": "name",
+      "value": "Hitman Braaz"
+    },
+    {
+      "trait_type": "element",
+      "value": "Venom"
+    },
+    {
+      "trait_type": "role",
+      "value": "Assassin"
+    },
+    {
+      "trait_type": "race",
+      "value": "Goblin "
+    },
+    {
+      "trait_type": "attack",
+      "value": 100
+    },
+    {
+      "trait_type": "hp",
+      "value": 40
+    },
+    {
+      "trait_type": "isGuardian",
+      "value": true
+    },
+    {
+      "trait_type": "gold",
+      "value": 65
+    },
+    {
+      "trait_type": "description",
+      "value": "[Goblin | Assassin] \"Goblin Crew\" Passive: Braaz gains 25 ATK for all \"Goblin Crew\" Guardians on your side of the field. "
+    },
+    {
+      "trait_type": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmRfR5NggiGgL74gFUPFutew1PesPdKSxX5zYjPNNx6pVe"
+    }
+  ]
+}

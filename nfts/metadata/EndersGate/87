@@ -1,0 +1,99 @@
+{
+  "name": "Alugaster",
+  "type": "ERC1155",
+  "description": "[Human | Fighter] \"Noble Paladin\" Activate:During your main phases, Alugastor can heal him self for 20 HP. Cooldown: 3 turns. ",
+  "image": "QmTGL3hPdD46p6KExLueRVCGbB19vGKzWJn4iRwfwg7txS",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 87
+    },
+    "name": {
+      "name": "name",
+      "value": "Alugaster"
+    },
+    "element": {
+      "name": "element",
+      "value": "Mystic"
+    },
+    "role": {
+      "name": "role",
+      "value": "Fighter"
+    },
+    "race": {
+      "name": "race",
+      "value": "Human"
+    },
+    "attack": {
+      "name": "attack",
+      "value": 110
+    },
+    "hp": {
+      "name": "hp",
+      "value": 80
+    },
+    "isGuardian": {
+      "name": "isGuardian",
+      "value": true
+    },
+    "gold": {
+      "name": "gold",
+      "value": 100
+    },
+    "description": {
+      "name": "description",
+      "value": "[Human | Fighter] \"Noble Paladin\" Activate:During your main phases, Alugastor can heal him self for 20 HP. Cooldown: 3 turns. "
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmTGL3hPdD46p6KExLueRVCGbB19vGKzWJn4iRwfwg7txS"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 87
+    },
+    {
+      "trait_type": "name",
+      "value": "Alugaster"
+    },
+    {
+      "trait_type": "element",
+      "value": "Mystic"
+    },
+    {
+      "trait_type": "role",
+      "value": "Fighter"
+    },
+    {
+      "trait_type": "race",
+      "value": "Human"
+    },
+    {
+      "trait_type": "attack",
+      "value": 110
+    },
+    {
+      "trait_type": "hp",
+      "value": 80
+    },
+    {
+      "trait_type": "isGuardian",
+      "value": true
+    },
+    {
+      "trait_type": "gold",
+      "value": 100
+    },
+    {
+      "trait_type": "description",
+      "value": "[Human | Fighter] \"Noble Paladin\" Activate:During your main phases, Alugastor can heal him self for 20 HP. Cooldown: 3 turns. "
+    },
+    {
+      "trait_type": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmTGL3hPdD46p6KExLueRVCGbB19vGKzWJn4iRwfwg7txS"
+    }
+  ]
+}

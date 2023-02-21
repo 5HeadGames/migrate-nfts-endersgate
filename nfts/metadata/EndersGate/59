@@ -1,0 +1,67 @@
+{
+  "name": "Knight's Revenge",
+  "type": "ERC1155",
+  "description": "Flip: When your opponent declares an attack, discard one Guardian from your hand to the graveyard; deal 50 damage to the attacking Guardian & end your opponent's attack phase.",
+  "image": "QmSnS1rXjG6f7jqt4iGCajRJoTT5ZXFBx7uJKUN7frf8BT",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 59
+    },
+    "name": {
+      "name": "name",
+      "value": "Knight's Revenge"
+    },
+    "type": {
+      "name": "type",
+      "value": "Flip counter"
+    },
+    "ADOTurn": {
+      "name": "ADOTurn",
+      "value": "YES"
+    },
+    "rarity": {
+      "name": "rarity",
+      "value": "Rare"
+    },
+    "description": {
+      "name": "description",
+      "value": "Flip: When your opponent declares an attack, discard one Guardian from your hand to the graveyard; deal 50 damage to the attacking Guardian & end your opponent's attack phase."
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmSnS1rXjG6f7jqt4iGCajRJoTT5ZXFBx7uJKUN7frf8BT"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 59
+    },
+    {
+      "trait_type": "name",
+      "value": "Knight's Revenge"
+    },
+    {
+      "trait_type": "type",
+      "value": "Flip counter"
+    },
+    {
+      "trait_type": "ADOTurn",
+      "value": "YES"
+    },
+    {
+      "trait_type": "rarity",
+      "value": "Rare"
+    },
+    {
+      "trait_type": "description",
+      "value": "Flip: When your opponent declares an attack, discard one Guardian from your hand to the graveyard; deal 50 damage to the attacking Guardian & end your opponent's attack phase."
+    },
+    {
+      "trait_type": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmSnS1rXjG6f7jqt4iGCajRJoTT5ZXFBx7uJKUN7frf8BT"
+    }
+  ]
+}

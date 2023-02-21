@@ -1,0 +1,99 @@
+{
+  "name": "Vrats",
+  "type": "ERC1155",
+  "description": "[Goblin | Support] \"War Scavenger\" Passive: Once per turn, steal 10 gold from your opponent's inventory. ",
+  "image": "QmaNQ87d25sT24i38JeF23QC8TUrbun2hZqb71qFhB9a2Y",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 97
+    },
+    "name": {
+      "name": "name",
+      "value": "Vrats"
+    },
+    "element": {
+      "name": "element",
+      "value": "Earth"
+    },
+    "role": {
+      "name": "role",
+      "value": "Support"
+    },
+    "race": {
+      "name": "race",
+      "value": "Goblin"
+    },
+    "attack": {
+      "name": "attack",
+      "value": 50
+    },
+    "hp": {
+      "name": "hp",
+      "value": 50
+    },
+    "isGuardian": {
+      "name": "isGuardian",
+      "value": true
+    },
+    "gold": {
+      "name": "gold",
+      "value": 50
+    },
+    "description": {
+      "name": "description",
+      "value": "[Goblin | Support] \"War Scavenger\" Passive: Once per turn, steal 10 gold from your opponent's inventory. "
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmaNQ87d25sT24i38JeF23QC8TUrbun2hZqb71qFhB9a2Y"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 97
+    },
+    {
+      "trait_type": "name",
+      "value": "Vrats"
+    },
+    {
+      "trait_type": "element",
+      "value": "Earth"
+    },
+    {
+      "trait_type": "role",
+      "value": "Support"
+    },
+    {
+      "trait_type": "race",
+      "value": "Goblin"
+    },
+    {
+      "trait_type": "attack",
+      "value": 50
+    },
+    {
+      "trait_type": "hp",
+      "value": 50
+    },
+    {
+      "trait_type": "isGuardian",
+      "value": true
+    },
+    {
+      "trait_type": "gold",
+      "value": 50
+    },
+    {
+      "trait_type": "description",
+      "value": "[Goblin | Support] \"War Scavenger\" Passive: Once per turn, steal 10 gold from your opponent's inventory. "
+    },
+    {
+      "trait_type": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmaNQ87d25sT24i38JeF23QC8TUrbun2hZqb71qFhB9a2Y"
+    }
+  ]
+}

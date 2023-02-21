@@ -1,0 +1,67 @@
+{
+  "name": "Return to the Void",
+  "type": "ERC1155",
+  "description": "Pay 150 gold to activate: Place a timer on 1 Void type Guardian on your opponent's side of the field. After 3 turns, the selected Guardian is sent to the grave yard.",
+  "image": "QmcGFd1Ed8vVr1T1o3JD4vrS2vbXhBK1rRWAQNcwv5Ycd1",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 66
+    },
+    "name": {
+      "name": "name",
+      "value": "Return to the Void"
+    },
+    "type": {
+      "name": "type",
+      "value": "Quick Play"
+    },
+    "ADOTurn": {
+      "name": "ADOTurn",
+      "value": "YES"
+    },
+    "rarity": {
+      "name": "rarity",
+      "value": "Ultra Rare"
+    },
+    "description": {
+      "name": "description",
+      "value": "Pay 150 gold to activate: Place a timer on 1 Void type Guardian on your opponent's side of the field. After 3 turns, the selected Guardian is sent to the grave yard."
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmcGFd1Ed8vVr1T1o3JD4vrS2vbXhBK1rRWAQNcwv5Ycd1"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 66
+    },
+    {
+      "trait_type": "name",
+      "value": "Return to the Void"
+    },
+    {
+      "trait_type": "type",
+      "value": "Quick Play"
+    },
+    {
+      "trait_type": "ADOTurn",
+      "value": "YES"
+    },
+    {
+      "trait_type": "rarity",
+      "value": "Ultra Rare"
+    },
+    {
+      "trait_type": "description",
+      "value": "Pay 150 gold to activate: Place a timer on 1 Void type Guardian on your opponent's side of the field. After 3 turns, the selected Guardian is sent to the grave yard."
+    },
+    {
+      "trait_type": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmcGFd1Ed8vVr1T1o3JD4vrS2vbXhBK1rRWAQNcwv5Ycd1"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "name": "Earth Cocktail",
+  "type": "ERC1155",
+  "description": "Select one earth Guardian on your side of the field; increase their attack and HP by 75 for 3 turns. ",
+  "image": "QmZBAmLoU23nHQF4uTMRWcrsqiwUmojbtNa3JDFuVaYTS6",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 2
+    },
+    "name": {
+      "name": "name",
+      "value": "Earth Cocktail"
+    },
+    "type": {
+      "name": "type",
+      "value": "Buff"
+    },
+    "ADOTurn": {
+      "name": "ADOTurn",
+      "value": "NO"
+    },
+    "rarity": {
+      "name": "rarity",
+      "value": "Common"
+    },
+    "description": {
+      "name": "description",
+      "value": "Select one earth Guardian on your side of the field; increase their attack and HP by 75 for 3 turns. "
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmZBAmLoU23nHQF4uTMRWcrsqiwUmojbtNa3JDFuVaYTS6"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 2
+    },
+    {
+      "trait_type": "name",
+      "value": "Earth Cocktail"
+    },
+    {
+      "trait_type": "type",
+      "value": "Buff"
+    },
+    {
+      "trait_type": "ADOTurn",
+      "value": "NO"
+    },
+    {
+      "trait_type": "rarity",
+      "value": "Common"
+    },
+    {
+      "trait_type": "description",
+      "value": "Select one earth Guardian on your side of the field; increase their attack and HP by 75 for 3 turns. "
+    },
+    {
+      "trait_type": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmZBAmLoU23nHQF4uTMRWcrsqiwUmojbtNa3JDFuVaYTS6"
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "name": "Hydros",
+  "type": "ERC1155",
+  "description": "[Elemental | Mage] \"Aqua Soul\" Active: Once per turn pay 10 gold to fire a Water blast which deals 10 water Damage.",
+  "image": "QmX3fxJGzwSESKXMVtMN29hwX4bdkTSctKzfYWA1Q8YLfd",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 154
+    },
+    "name": {
+      "name": "name",
+      "value": "Hydros"
+    },
+    "element": {
+      "name": "element",
+      "value": "Water"
+    },
+    "role": {
+      "name": "role",
+      "value": "Mage"
+    },
+    "race": {
+      "name": "race",
+      "value": "Elemental "
+    },
+    "attack": {
+      "name": "attack",
+      "value": 130
+    },
+    "hp": {
+      "name": "hp",
+      "value": 100
+    },
+    "isGuardian": {
+      "name": "isGuardian",
+      "value": true
+    },
+    "gold": {
+      "name": "gold",
+      "value": 130
+    },
+    "description": {
+      "name": "description",
+      "value": "[Elemental | Mage] \"Aqua Soul\" Active: Once per turn pay 10 gold to fire a Water blast which deals 10 water Damage."
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmX3fxJGzwSESKXMVtMN29hwX4bdkTSctKzfYWA1Q8YLfd"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 154
+    },
+    {
+      "trait_type": "name",
+      "value": "Hydros"
+    },
+    {
+      "trait_type": "element",
+      "value": "Water"
+    },
+    {
+      "trait_type": "role",
+      "value": "Mage"
+    },
+    {
+      "trait_type": "race",
+      "value": "Elemental "
+    },
+    {
+      "trait_type": "attack",
+      "value": 130
+    },
+    {
+      "trait_type": "hp",
+      "value": 100
+    },
+    {
+      "trait_type": "isGuardian",
+      "value": true
+    },
+    {
+      "trait_type": "gold",
+      "value": 130
+    },
+    {
+      "trait_type": "description",
+      "value": "[Elemental | Mage] \"Aqua Soul\" Active: Once per turn pay 10 gold to fire a Water blast which deals 10 water Damage."
+    },
+    {
+      "trait_type": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmX3fxJGzwSESKXMVtMN29hwX4bdkTSctKzfYWA1Q8YLfd"
+    }
+  ]
+}

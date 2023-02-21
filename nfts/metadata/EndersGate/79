@@ -1,0 +1,67 @@
+{
+  "name": "Grave Annoyance",
+  "type": "ERC1155",
+  "description": "Flip: Have at least 1 Guardian in your Grave yard to activate. This card remains face up for 5 turns; during each of your opponent's Standby phases, 1 Guardian on their side of the field is hit by a rock dealing 10 damage.",
+  "image": "QmbTArmRUEuQDaiz3KHUNGPrCboDicGDRYinvU8rbYvmTD",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 79
+    },
+    "name": {
+      "name": "name",
+      "value": "Grave Annoyance"
+    },
+    "type": {
+      "name": "type",
+      "value": "Quick Play"
+    },
+    "ADOTurn": {
+      "name": "ADOTurn",
+      "value": "YES"
+    },
+    "rarity": {
+      "name": "rarity",
+      "value": "Rare"
+    },
+    "description": {
+      "name": "description",
+      "value": "Flip: Have at least 1 Guardian in your Grave yard to activate. This card remains face up for 5 turns; during each of your opponent's Standby phases, 1 Guardian on their side of the field is hit by a rock dealing 10 damage."
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmbTArmRUEuQDaiz3KHUNGPrCboDicGDRYinvU8rbYvmTD"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 79
+    },
+    {
+      "trait_type": "name",
+      "value": "Grave Annoyance"
+    },
+    {
+      "trait_type": "type",
+      "value": "Quick Play"
+    },
+    {
+      "trait_type": "ADOTurn",
+      "value": "YES"
+    },
+    {
+      "trait_type": "rarity",
+      "value": "Rare"
+    },
+    {
+      "trait_type": "description",
+      "value": "Flip: Have at least 1 Guardian in your Grave yard to activate. This card remains face up for 5 turns; during each of your opponent's Standby phases, 1 Guardian on their side of the field is hit by a rock dealing 10 damage."
+    },
+    {
+      "trait_type": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmbTArmRUEuQDaiz3KHUNGPrCboDicGDRYinvU8rbYvmTD"
+    }
+  ]
+}

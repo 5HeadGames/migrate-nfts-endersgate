@@ -1,0 +1,99 @@
+{
+  "name": "Otake Yukito",
+  "type": "ERC1155",
+  "description": "[Human | Assassin] \"Speedster\" Activate: Otake Yukito can attack twice in one battle phase. Cooldown: 2 turns. ",
+  "image": "QmPPKnHMNVxgVYmf3Wmw6ZvjgSPzNUBzPk8TcYHcHAZcUs",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 133
+    },
+    "name": {
+      "name": "name",
+      "value": "Otake Yukito"
+    },
+    "element": {
+      "name": "element",
+      "value": "Mystic"
+    },
+    "role": {
+      "name": "role",
+      "value": "Assassin"
+    },
+    "race": {
+      "name": "race",
+      "value": "Human"
+    },
+    "attack": {
+      "name": "attack",
+      "value": 100
+    },
+    "hp": {
+      "name": "hp",
+      "value": 100
+    },
+    "isGuardian": {
+      "name": "isGuardian",
+      "value": true
+    },
+    "gold": {
+      "name": "gold",
+      "value": 150
+    },
+    "description": {
+      "name": "description",
+      "value": "[Human | Assassin] \"Speedster\" Activate: Otake Yukito can attack twice in one battle phase. Cooldown: 2 turns. "
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmPPKnHMNVxgVYmf3Wmw6ZvjgSPzNUBzPk8TcYHcHAZcUs"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 133
+    },
+    {
+      "trait_type": "name",
+      "value": "Otake Yukito"
+    },
+    {
+      "trait_type": "element",
+      "value": "Mystic"
+    },
+    {
+      "trait_type": "role",
+      "value": "Assassin"
+    },
+    {
+      "trait_type": "race",
+      "value": "Human"
+    },
+    {
+      "trait_type": "attack",
+      "value": 100
+    },
+    {
+      "trait_type": "hp",
+      "value": 100
+    },
+    {
+      "trait_type": "isGuardian",
+      "value": true
+    },
+    {
+      "trait_type": "gold",
+      "value": 150
+    },
+    {
+      "trait_type": "description",
+      "value": "[Human | Assassin] \"Speedster\" Activate: Otake Yukito can attack twice in one battle phase. Cooldown: 2 turns. "
+    },
+    {
+      "trait_type": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmPPKnHMNVxgVYmf3Wmw6ZvjgSPzNUBzPk8TcYHcHAZcUs"
+    }
+  ]
+}
