@@ -1,0 +1,67 @@
+{
+  "name": "Equal Exchange",
+  "type": "ERC1155",
+  "description": "Flip: Select one Guardian in your graveyard and pay gold equal to their summon cost; bring them back to the field. ",
+  "image": "QmfPcQhkbyEvkfQT1djaQdvzGH8KQW5Q5bVCNyX3FG755h",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 62
+    },
+    "name": {
+      "name": "name",
+      "value": "Equal Exchange"
+    },
+    "type": {
+      "name": "type",
+      "value": "Normal Reaction"
+    },
+    "ADOTurn": {
+      "name": "ADOTurn",
+      "value": "NO"
+    },
+    "rarity": {
+      "name": "rarity",
+      "value": "Rare"
+    },
+    "description": {
+      "name": "description",
+      "value": "Flip: Select one Guardian in your graveyard and pay gold equal to their summon cost; bring them back to the field. "
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmfPcQhkbyEvkfQT1djaQdvzGH8KQW5Q5bVCNyX3FG755h"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 62
+    },
+    {
+      "trait_type": "name",
+      "value": "Equal Exchange"
+    },
+    {
+      "trait_type": "type",
+      "value": "Normal Reaction"
+    },
+    {
+      "trait_type": "ADOTurn",
+      "value": "NO"
+    },
+    {
+      "trait_type": "rarity",
+      "value": "Rare"
+    },
+    {
+      "trait_type": "description",
+      "value": "Flip: Select one Guardian in your graveyard and pay gold equal to their summon cost; bring them back to the field. "
+    },
+    {
+      "trait_type": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmfPcQhkbyEvkfQT1djaQdvzGH8KQW5Q5bVCNyX3FG755h"
+    }
+  ]
+}

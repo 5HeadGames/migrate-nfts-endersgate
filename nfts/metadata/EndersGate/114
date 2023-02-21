@@ -1,0 +1,99 @@
+{
+  "name": "Nesia The Tormentor",
+  "type": "ERC1155",
+  "description": "[Undead | Support] Passive: When Nesia is sent to the graveyard she leaves an orb which heals all undead type Guardians on both sides of the field for 10 HP during your next 2 standby phases.",
+  "image": "QmWSTcG6QEdUsoGNWRjLhWnHCSocWbn5h4817AcW9J5kRT",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 114
+    },
+    "name": {
+      "name": "name",
+      "value": "Nesia The Tormentor"
+    },
+    "element": {
+      "name": "element",
+      "value": "Void"
+    },
+    "role": {
+      "name": "role",
+      "value": "Support"
+    },
+    "race": {
+      "name": "race",
+      "value": "Undead"
+    },
+    "attack": {
+      "name": "attack",
+      "value": 50
+    },
+    "hp": {
+      "name": "hp",
+      "value": 55
+    },
+    "isGuardian": {
+      "name": "isGuardian",
+      "value": true
+    },
+    "gold": {
+      "name": "gold",
+      "value": 85
+    },
+    "description": {
+      "name": "description",
+      "value": "[Undead | Support] Passive: When Nesia is sent to the graveyard she leaves an orb which heals all undead type Guardians on both sides of the field for 10 HP during your next 2 standby phases."
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmWSTcG6QEdUsoGNWRjLhWnHCSocWbn5h4817AcW9J5kRT"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 114
+    },
+    {
+      "trait_type": "name",
+      "value": "Nesia The Tormentor"
+    },
+    {
+      "trait_type": "element",
+      "value": "Void"
+    },
+    {
+      "trait_type": "role",
+      "value": "Support"
+    },
+    {
+      "trait_type": "race",
+      "value": "Undead"
+    },
+    {
+      "trait_type": "attack",
+      "value": 50
+    },
+    {
+      "trait_type": "hp",
+      "value": 55
+    },
+    {
+      "trait_type": "isGuardian",
+      "value": true
+    },
+    {
+      "trait_type": "gold",
+      "value": 85
+    },
+    {
+      "trait_type": "description",
+      "value": "[Undead | Support] Passive: When Nesia is sent to the graveyard she leaves an orb which heals all undead type Guardians on both sides of the field for 10 HP during your next 2 standby phases."
+    },
+    {
+      "trait_type": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmWSTcG6QEdUsoGNWRjLhWnHCSocWbn5h4817AcW9J5kRT"
+    }
+  ]
+}

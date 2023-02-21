@@ -1,0 +1,99 @@
+{
+  "name": "Angler Crawler",
+  "type": "ERC1155",
+  "description": "[Beast | Fighter] \"Europa Invasion\" Passive: Gain 5 ATK for each Water Type Guardian on the field and in your grave yard.",
+  "image": "QmTGfARkCKGgxjZBvtLuNqzsHBuRZUHZYGqzJzgH5gZCuD",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 206
+    },
+    "name": {
+      "name": "name",
+      "value": "Angler Crawler"
+    },
+    "element": {
+      "name": "element",
+      "value": "Water"
+    },
+    "role": {
+      "name": "role",
+      "value": "Fighter"
+    },
+    "race": {
+      "name": "race",
+      "value": "Beast"
+    },
+    "attack": {
+      "name": "attack",
+      "value": 125
+    },
+    "hp": {
+      "name": "hp",
+      "value": 200
+    },
+    "isGuardian": {
+      "name": "isGuardian",
+      "value": true
+    },
+    "gold": {
+      "name": "gold",
+      "value": 300
+    },
+    "description": {
+      "name": "description",
+      "value": "[Beast | Fighter] \"Europa Invasion\" Passive: Gain 5 ATK for each Water Type Guardian on the field and in your grave yard."
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmTGfARkCKGgxjZBvtLuNqzsHBuRZUHZYGqzJzgH5gZCuD"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 206
+    },
+    {
+      "trait_type": "name",
+      "value": "Angler Crawler"
+    },
+    {
+      "trait_type": "element",
+      "value": "Water"
+    },
+    {
+      "trait_type": "role",
+      "value": "Fighter"
+    },
+    {
+      "trait_type": "race",
+      "value": "Beast"
+    },
+    {
+      "trait_type": "attack",
+      "value": 125
+    },
+    {
+      "trait_type": "hp",
+      "value": 200
+    },
+    {
+      "trait_type": "isGuardian",
+      "value": true
+    },
+    {
+      "trait_type": "gold",
+      "value": 300
+    },
+    {
+      "trait_type": "description",
+      "value": "[Beast | Fighter] \"Europa Invasion\" Passive: Gain 5 ATK for each Water Type Guardian on the field and in your grave yard."
+    },
+    {
+      "trait_type": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmTGfARkCKGgxjZBvtLuNqzsHBuRZUHZYGqzJzgH5gZCuD"
+    }
+  ]
+}

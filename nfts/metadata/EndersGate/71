@@ -1,0 +1,67 @@
+{
+  "name": "Iaijustu counter",
+  "type": "ERC1155",
+  "description": "Flip: When your opponent successfully attacks a Guardian on your side of the field, flip activate this card and deal 50% of the damage received back to the attacker. ",
+  "image": "QmcRHhRcEFnvmD4hcoJerG6cGUTQKkqJmZsdfUZ2yQ3wBU",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 71
+    },
+    "name": {
+      "name": "name",
+      "value": "Iaijustu counter"
+    },
+    "type": {
+      "name": "type",
+      "value": "Flip Counter"
+    },
+    "ADOTurn": {
+      "name": "ADOTurn",
+      "value": "YES"
+    },
+    "rarity": {
+      "name": "rarity",
+      "value": "Ultra Rare"
+    },
+    "description": {
+      "name": "description",
+      "value": "Flip: When your opponent successfully attacks a Guardian on your side of the field, flip activate this card and deal 50% of the damage received back to the attacker. "
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmcRHhRcEFnvmD4hcoJerG6cGUTQKkqJmZsdfUZ2yQ3wBU"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 71
+    },
+    {
+      "trait_type": "name",
+      "value": "Iaijustu counter"
+    },
+    {
+      "trait_type": "type",
+      "value": "Flip Counter"
+    },
+    {
+      "trait_type": "ADOTurn",
+      "value": "YES"
+    },
+    {
+      "trait_type": "rarity",
+      "value": "Ultra Rare"
+    },
+    {
+      "trait_type": "description",
+      "value": "Flip: When your opponent successfully attacks a Guardian on your side of the field, flip activate this card and deal 50% of the damage received back to the attacker. "
+    },
+    {
+      "trait_type": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmcRHhRcEFnvmD4hcoJerG6cGUTQKkqJmZsdfUZ2yQ3wBU"
+    }
+  ]
+}

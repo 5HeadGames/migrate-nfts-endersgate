@@ -1,0 +1,99 @@
+{
+  "name": "Zellsha",
+  "type": "ERC1155",
+  "description": "[Demon | Support] \"Demonic Embrace\" Activate: Select one enemy Guardian; they cannot delcare an attack for 1 turn. Once freed, deal 20 damage. Cooldown: 2 turns.",
+  "image": "QmYeo9YxheGrputs3mEZVzofGXFhGKLQfjmBAox5GaNVRa",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 170
+    },
+    "name": {
+      "name": "name",
+      "value": "Zellsha"
+    },
+    "element": {
+      "name": "element",
+      "value": "Void"
+    },
+    "role": {
+      "name": "role",
+      "value": "Support"
+    },
+    "race": {
+      "name": "race",
+      "value": "Demon"
+    },
+    "attack": {
+      "name": "attack",
+      "value": 150
+    },
+    "hp": {
+      "name": "hp",
+      "value": 180
+    },
+    "isGuardian": {
+      "name": "isGuardian",
+      "value": true
+    },
+    "gold": {
+      "name": "gold",
+      "value": 210
+    },
+    "description": {
+      "name": "description",
+      "value": "[Demon | Support] \"Demonic Embrace\" Activate: Select one enemy Guardian; they cannot delcare an attack for 1 turn. Once freed, deal 20 damage. Cooldown: 2 turns."
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmYeo9YxheGrputs3mEZVzofGXFhGKLQfjmBAox5GaNVRa"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 170
+    },
+    {
+      "trait_type": "name",
+      "value": "Zellsha"
+    },
+    {
+      "trait_type": "element",
+      "value": "Void"
+    },
+    {
+      "trait_type": "role",
+      "value": "Support"
+    },
+    {
+      "trait_type": "race",
+      "value": "Demon"
+    },
+    {
+      "trait_type": "attack",
+      "value": 150
+    },
+    {
+      "trait_type": "hp",
+      "value": 180
+    },
+    {
+      "trait_type": "isGuardian",
+      "value": true
+    },
+    {
+      "trait_type": "gold",
+      "value": 210
+    },
+    {
+      "trait_type": "description",
+      "value": "[Demon | Support] \"Demonic Embrace\" Activate: Select one enemy Guardian; they cannot delcare an attack for 1 turn. Once freed, deal 20 damage. Cooldown: 2 turns."
+    },
+    {
+      "trait_type": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmYeo9YxheGrputs3mEZVzofGXFhGKLQfjmBAox5GaNVRa"
+    }
+  ]
+}

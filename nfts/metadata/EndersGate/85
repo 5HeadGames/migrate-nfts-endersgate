@@ -1,0 +1,67 @@
+{
+  "name": "Currency Hypnosis",
+  "type": "ERC1155",
+  "description": "Flip: For 3 turns, as long as this card remains face up on the field, your opponent pays you 25 gold during each of your standby phases.",
+  "image": "QmWpapJf72jKUeBzjD7BysBW9kAVTZZQLrDRriHA3uosoa",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 85
+    },
+    "name": {
+      "name": "name",
+      "value": "Currency Hypnosis"
+    },
+    "type": {
+      "name": "type",
+      "value": "Normal Reaction"
+    },
+    "ADOTurn": {
+      "name": "ADOTurn",
+      "value": "YES"
+    },
+    "rarity": {
+      "name": "rarity",
+      "value": "Rare"
+    },
+    "description": {
+      "name": "description",
+      "value": "Flip: For 3 turns, as long as this card remains face up on the field, your opponent pays you 25 gold during each of your standby phases."
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmWpapJf72jKUeBzjD7BysBW9kAVTZZQLrDRriHA3uosoa"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 85
+    },
+    {
+      "trait_type": "name",
+      "value": "Currency Hypnosis"
+    },
+    {
+      "trait_type": "type",
+      "value": "Normal Reaction"
+    },
+    {
+      "trait_type": "ADOTurn",
+      "value": "YES"
+    },
+    {
+      "trait_type": "rarity",
+      "value": "Rare"
+    },
+    {
+      "trait_type": "description",
+      "value": "Flip: For 3 turns, as long as this card remains face up on the field, your opponent pays you 25 gold during each of your standby phases."
+    },
+    {
+      "trait_type": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmWpapJf72jKUeBzjD7BysBW9kAVTZZQLrDRriHA3uosoa"
+    }
+  ]
+}

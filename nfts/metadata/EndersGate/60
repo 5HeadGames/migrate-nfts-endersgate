@@ -1,0 +1,67 @@
+{
+  "name": "Lustful Prey",
+  "type": "ERC1155",
+  "description": "Flip: Select one Guardian on the opponent's side of the field, deal 50 damage. They cannot attack for one turn.",
+  "image": "QmUzyFKpbPgNaHed6Qv4pR46x2bSLV3quGY8VSNummU4KF",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 60
+    },
+    "name": {
+      "name": "name",
+      "value": "Lustful Prey"
+    },
+    "type": {
+      "name": "type",
+      "value": "Normal Reaction"
+    },
+    "ADOTurn": {
+      "name": "ADOTurn",
+      "value": "YES"
+    },
+    "rarity": {
+      "name": "rarity",
+      "value": "Rare"
+    },
+    "description": {
+      "name": "description",
+      "value": "Flip: Select one Guardian on the opponent's side of the field, deal 50 damage. They cannot attack for one turn."
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmUzyFKpbPgNaHed6Qv4pR46x2bSLV3quGY8VSNummU4KF"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 60
+    },
+    {
+      "trait_type": "name",
+      "value": "Lustful Prey"
+    },
+    {
+      "trait_type": "type",
+      "value": "Normal Reaction"
+    },
+    {
+      "trait_type": "ADOTurn",
+      "value": "YES"
+    },
+    {
+      "trait_type": "rarity",
+      "value": "Rare"
+    },
+    {
+      "trait_type": "description",
+      "value": "Flip: Select one Guardian on the opponent's side of the field, deal 50 damage. They cannot attack for one turn."
+    },
+    {
+      "trait_type": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmUzyFKpbPgNaHed6Qv4pR46x2bSLV3quGY8VSNummU4KF"
+    }
+  ]
+}

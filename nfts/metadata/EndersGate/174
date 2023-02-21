@@ -1,0 +1,99 @@
+{
+  "name": "Kara",
+  "type": "ERC1155",
+  "description": "[Human | Fighter] Active: During your battle phase, Kara can select up to 2 Guardians to attack.",
+  "image": "QmPhaQy5YabhUwQzTrjCWMHVmsgVJpBg88PS5p88svv3iE",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 174
+    },
+    "name": {
+      "name": "name",
+      "value": "Kara"
+    },
+    "element": {
+      "name": "element",
+      "value": "Mystic"
+    },
+    "role": {
+      "name": "role",
+      "value": "Fighter"
+    },
+    "race": {
+      "name": "race",
+      "value": "Human"
+    },
+    "attack": {
+      "name": "attack",
+      "value": 110
+    },
+    "hp": {
+      "name": "hp",
+      "value": 200
+    },
+    "isGuardian": {
+      "name": "isGuardian",
+      "value": true
+    },
+    "gold": {
+      "name": "gold",
+      "value": 210
+    },
+    "description": {
+      "name": "description",
+      "value": "[Human | Fighter] Active: During your battle phase, Kara can select up to 2 Guardians to attack."
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmPhaQy5YabhUwQzTrjCWMHVmsgVJpBg88PS5p88svv3iE"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 174
+    },
+    {
+      "trait_type": "name",
+      "value": "Kara"
+    },
+    {
+      "trait_type": "element",
+      "value": "Mystic"
+    },
+    {
+      "trait_type": "role",
+      "value": "Fighter"
+    },
+    {
+      "trait_type": "race",
+      "value": "Human"
+    },
+    {
+      "trait_type": "attack",
+      "value": 110
+    },
+    {
+      "trait_type": "hp",
+      "value": 200
+    },
+    {
+      "trait_type": "isGuardian",
+      "value": true
+    },
+    {
+      "trait_type": "gold",
+      "value": 210
+    },
+    {
+      "trait_type": "description",
+      "value": "[Human | Fighter] Active: During your battle phase, Kara can select up to 2 Guardians to attack."
+    },
+    {
+      "trait_type": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmPhaQy5YabhUwQzTrjCWMHVmsgVJpBg88PS5p88svv3iE"
+    }
+  ]
+}

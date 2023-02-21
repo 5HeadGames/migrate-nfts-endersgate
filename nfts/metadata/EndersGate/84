@@ -1,0 +1,67 @@
+{
+  "name": "Fire Tempest",
+  "type": "ERC1155",
+  "description": "Flip: When a Guardian on your opponent's side of the field successfully preforms an attack, Fire Tempest surrounds the Guardian for 3 turns, dealing 25 Fire Dmg per turn.",
+  "image": "QmZTQ4VZvdhciTRUjbfM6uE3kFi85Bh6VPpzsF5jyspkfA",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 84
+    },
+    "name": {
+      "name": "name",
+      "value": "Fire Tempest"
+    },
+    "type": {
+      "name": "type",
+      "value": "Flip Counter"
+    },
+    "ADOTurn": {
+      "name": "ADOTurn",
+      "value": "YES"
+    },
+    "rarity": {
+      "name": "rarity",
+      "value": "Rare"
+    },
+    "description": {
+      "name": "description",
+      "value": "Flip: When a Guardian on your opponent's side of the field successfully preforms an attack, Fire Tempest surrounds the Guardian for 3 turns, dealing 25 Fire Dmg per turn."
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmZTQ4VZvdhciTRUjbfM6uE3kFi85Bh6VPpzsF5jyspkfA"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 84
+    },
+    {
+      "trait_type": "name",
+      "value": "Fire Tempest"
+    },
+    {
+      "trait_type": "type",
+      "value": "Flip Counter"
+    },
+    {
+      "trait_type": "ADOTurn",
+      "value": "YES"
+    },
+    {
+      "trait_type": "rarity",
+      "value": "Rare"
+    },
+    {
+      "trait_type": "description",
+      "value": "Flip: When a Guardian on your opponent's side of the field successfully preforms an attack, Fire Tempest surrounds the Guardian for 3 turns, dealing 25 Fire Dmg per turn."
+    },
+    {
+      "trait_type": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmZTQ4VZvdhciTRUjbfM6uE3kFi85Bh6VPpzsF5jyspkfA"
+    }
+  ]
+}

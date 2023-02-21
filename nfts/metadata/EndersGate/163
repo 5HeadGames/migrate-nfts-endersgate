@@ -1,0 +1,99 @@
+{
+  "name": "Spear Shark ",
+  "type": "ERC1155",
+  "description": "[Shark | Fighter] \"Impaling Throw\" Activate: During your MP1, select 1 Guardian on your opponents side of the field; they cannot attack for 1 turn. Cooldown: 3 turns.",
+  "image": "QmbmAwkmtohC36W7NqGavEkot9aJTnB3cnbe89bpa93hrU",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 163
+    },
+    "name": {
+      "name": "name",
+      "value": "Spear Shark "
+    },
+    "element": {
+      "name": "element",
+      "value": "Water"
+    },
+    "role": {
+      "name": "role",
+      "value": "Fighter"
+    },
+    "race": {
+      "name": "race",
+      "value": "Shark"
+    },
+    "attack": {
+      "name": "attack",
+      "value": 100
+    },
+    "hp": {
+      "name": "hp",
+      "value": 100
+    },
+    "isGuardian": {
+      "name": "isGuardian",
+      "value": true
+    },
+    "gold": {
+      "name": "gold",
+      "value": 110
+    },
+    "description": {
+      "name": "description",
+      "value": "[Shark | Fighter] \"Impaling Throw\" Activate: During your MP1, select 1 Guardian on your opponents side of the field; they cannot attack for 1 turn. Cooldown: 3 turns."
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmbmAwkmtohC36W7NqGavEkot9aJTnB3cnbe89bpa93hrU"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 163
+    },
+    {
+      "trait_type": "name",
+      "value": "Spear Shark "
+    },
+    {
+      "trait_type": "element",
+      "value": "Water"
+    },
+    {
+      "trait_type": "role",
+      "value": "Fighter"
+    },
+    {
+      "trait_type": "race",
+      "value": "Shark"
+    },
+    {
+      "trait_type": "attack",
+      "value": 100
+    },
+    {
+      "trait_type": "hp",
+      "value": 100
+    },
+    {
+      "trait_type": "isGuardian",
+      "value": true
+    },
+    {
+      "trait_type": "gold",
+      "value": 110
+    },
+    {
+      "trait_type": "description",
+      "value": "[Shark | Fighter] \"Impaling Throw\" Activate: During your MP1, select 1 Guardian on your opponents side of the field; they cannot attack for 1 turn. Cooldown: 3 turns."
+    },
+    {
+      "trait_type": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmbmAwkmtohC36W7NqGavEkot9aJTnB3cnbe89bpa93hrU"
+    }
+  ]
+}

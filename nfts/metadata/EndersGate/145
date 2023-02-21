@@ -1,0 +1,99 @@
+{
+  "name": "Dr. Doggett",
+  "type": "ERC1155",
+  "description": "[Beast | Mage] \"Path Finder\" Activate: Select 1 Action / Reaction card on your opponent's side of the field:\n\n● If its face down, pay 150 gold to flip it.\n\n● If its face up, pay 100 gold to destory it.",
+  "image": "QmdWEiFjFc81Dpk5KfUzUdAdsdnsNZmxyQoqa1VstX6BLn",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 145
+    },
+    "name": {
+      "name": "name",
+      "value": "Dr. Doggett"
+    },
+    "element": {
+      "name": "element",
+      "value": "Mystic"
+    },
+    "role": {
+      "name": "role",
+      "value": "Mage"
+    },
+    "race": {
+      "name": "race",
+      "value": "Beast"
+    },
+    "attack": {
+      "name": "attack",
+      "value": 100
+    },
+    "hp": {
+      "name": "hp",
+      "value": 140
+    },
+    "isGuardian": {
+      "name": "isGuardian",
+      "value": true
+    },
+    "gold": {
+      "name": "gold",
+      "value": 140
+    },
+    "description": {
+      "name": "description",
+      "value": "[Beast | Mage] \"Path Finder\" Activate: Select 1 Action / Reaction card on your opponent's side of the field:\n\n● If its face down, pay 150 gold to flip it.\n\n● If its face up, pay 100 gold to destory it."
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmdWEiFjFc81Dpk5KfUzUdAdsdnsNZmxyQoqa1VstX6BLn"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 145
+    },
+    {
+      "trait_type": "name",
+      "value": "Dr. Doggett"
+    },
+    {
+      "trait_type": "element",
+      "value": "Mystic"
+    },
+    {
+      "trait_type": "role",
+      "value": "Mage"
+    },
+    {
+      "trait_type": "race",
+      "value": "Beast"
+    },
+    {
+      "trait_type": "attack",
+      "value": 100
+    },
+    {
+      "trait_type": "hp",
+      "value": 140
+    },
+    {
+      "trait_type": "isGuardian",
+      "value": true
+    },
+    {
+      "trait_type": "gold",
+      "value": 140
+    },
+    {
+      "trait_type": "description",
+      "value": "[Beast | Mage] \"Path Finder\" Activate: Select 1 Action / Reaction card on your opponent's side of the field:\n\n● If its face down, pay 150 gold to flip it.\n\n● If its face up, pay 100 gold to destory it."
+    },
+    {
+      "trait_type": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmdWEiFjFc81Dpk5KfUzUdAdsdnsNZmxyQoqa1VstX6BLn"
+    }
+  ]
+}

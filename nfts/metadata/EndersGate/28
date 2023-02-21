@@ -1,0 +1,67 @@
+{
+  "name": "Xolzog's Manufesto",
+  "type": "ERC1155",
+  "description": "During your MP1, select one  Mage type Guardian on your side of the field; increase their ATK by 20 x (# Guardians your opponent controls).",
+  "image": "QmURbsjoRh9GFq41UYCBQqyuJcjKPnbZzCiDDUN7tcVrZz",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 28
+    },
+    "name": {
+      "name": "name",
+      "value": "Xolzog's Manufesto"
+    },
+    "type": {
+      "name": "type",
+      "value": "Equip / Buff"
+    },
+    "ADOTurn": {
+      "name": "ADOTurn",
+      "value": "NO"
+    },
+    "rarity": {
+      "name": "rarity",
+      "value": "Ultra Rare"
+    },
+    "description": {
+      "name": "description",
+      "value": "During your MP1, select one  Mage type Guardian on your side of the field; increase their ATK by 20 x (# Guardians your opponent controls)."
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmURbsjoRh9GFq41UYCBQqyuJcjKPnbZzCiDDUN7tcVrZz"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 28
+    },
+    {
+      "trait_type": "name",
+      "value": "Xolzog's Manufesto"
+    },
+    {
+      "trait_type": "type",
+      "value": "Equip / Buff"
+    },
+    {
+      "trait_type": "ADOTurn",
+      "value": "NO"
+    },
+    {
+      "trait_type": "rarity",
+      "value": "Ultra Rare"
+    },
+    {
+      "trait_type": "description",
+      "value": "During your MP1, select one  Mage type Guardian on your side of the field; increase their ATK by 20 x (# Guardians your opponent controls)."
+    },
+    {
+      "trait_type": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmURbsjoRh9GFq41UYCBQqyuJcjKPnbZzCiDDUN7tcVrZz"
+    }
+  ]
+}

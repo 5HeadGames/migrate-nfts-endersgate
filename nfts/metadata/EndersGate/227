@@ -1,0 +1,99 @@
+{
+  "name": "Tazah",
+  "type": "ERC1155",
+  "description": "[Sentinel | Assassin] \"Dimensional Blade\" Activate: During your Battle Phase, if Tazah successfully lands a hit on a Guardian; Inflict 100% of Tazah's current ATK to your opponents LP. ",
+  "image": "QmTQQohHNUBLiQmQJLYDrTThbKrUwTwvUM6SCEvVvjZ5bv",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 227
+    },
+    "name": {
+      "name": "name",
+      "value": "Tazah"
+    },
+    "element": {
+      "name": "element",
+      "value": "Void"
+    },
+    "role": {
+      "name": "role",
+      "value": "Assassin"
+    },
+    "race": {
+      "name": "race",
+      "value": "Sentinel"
+    },
+    "attack": {
+      "name": "attack",
+      "value": 300
+    },
+    "hp": {
+      "name": "hp",
+      "value": 250
+    },
+    "isGuardian": {
+      "name": "isGuardian",
+      "value": true
+    },
+    "gold": {
+      "name": "gold",
+      "value": 450
+    },
+    "description": {
+      "name": "description",
+      "value": "[Sentinel | Assassin] \"Dimensional Blade\" Activate: During your Battle Phase, if Tazah successfully lands a hit on a Guardian; Inflict 100% of Tazah's current ATK to your opponents LP. "
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmTQQohHNUBLiQmQJLYDrTThbKrUwTwvUM6SCEvVvjZ5bv"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 227
+    },
+    {
+      "trait_type": "name",
+      "value": "Tazah"
+    },
+    {
+      "trait_type": "element",
+      "value": "Void"
+    },
+    {
+      "trait_type": "role",
+      "value": "Assassin"
+    },
+    {
+      "trait_type": "race",
+      "value": "Sentinel"
+    },
+    {
+      "trait_type": "attack",
+      "value": 300
+    },
+    {
+      "trait_type": "hp",
+      "value": 250
+    },
+    {
+      "trait_type": "isGuardian",
+      "value": true
+    },
+    {
+      "trait_type": "gold",
+      "value": 450
+    },
+    {
+      "trait_type": "description",
+      "value": "[Sentinel | Assassin] \"Dimensional Blade\" Activate: During your Battle Phase, if Tazah successfully lands a hit on a Guardian; Inflict 100% of Tazah's current ATK to your opponents LP. "
+    },
+    {
+      "trait_type": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmTQQohHNUBLiQmQJLYDrTThbKrUwTwvUM6SCEvVvjZ5bv"
+    }
+  ]
+}

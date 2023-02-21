@@ -4,10 +4,9 @@ pragma solidity ^0.8.10;
 
 abstract contract Factory {
   function mint(
-    address _toAddress,
-    uint256 _optionId,
-    uint256 _amount,
-    string memory _data
+    address account,
+    uint256 id,
+    bytes calldata _data
   ) external virtual;
 
   function balanceOf(address _owner, uint256 _optionId) public view virtual returns (uint256);
@@ -178,7 +177,7 @@ library LootBoxRandomness {
     for (uint256 i = 0; i < amount; i++) {
       uint256 tokenIndex = uint256(_random(_state) % _state.typeToTokens[_typeId].length);
       uint256 tokenId = _state.typeToTokens[_typeId][tokenIndex];
-      factory.mint(_toAddress, tokenId, 1, "");
+      factory.mint(_toAddress, tokenId, "");
     }
   }
 

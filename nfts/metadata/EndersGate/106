@@ -1,0 +1,99 @@
+{
+  "name": "Heldor",
+  "type": "ERC1155",
+  "description": "[Zombie | Support] \"Zombie Replacement\" Passive: When Heldor is sent to the grave yard as a result of battle, summon 1 Zombie type Guardian worth 100 gold or less from your deck.",
+  "image": "QmQNQMyc9EogmnZRfz12ygXuC1UdTBopzcgsAytjqC5a4M",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 106
+    },
+    "name": {
+      "name": "name",
+      "value": "Heldor"
+    },
+    "element": {
+      "name": "element",
+      "value": "Void"
+    },
+    "role": {
+      "name": "role",
+      "value": "Support"
+    },
+    "race": {
+      "name": "race",
+      "value": "Zombie"
+    },
+    "attack": {
+      "name": "attack",
+      "value": 100
+    },
+    "hp": {
+      "name": "hp",
+      "value": 40
+    },
+    "isGuardian": {
+      "name": "isGuardian",
+      "value": true
+    },
+    "gold": {
+      "name": "gold",
+      "value": 80
+    },
+    "description": {
+      "name": "description",
+      "value": "[Zombie | Support] \"Zombie Replacement\" Passive: When Heldor is sent to the grave yard as a result of battle, summon 1 Zombie type Guardian worth 100 gold or less from your deck."
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmQNQMyc9EogmnZRfz12ygXuC1UdTBopzcgsAytjqC5a4M"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 106
+    },
+    {
+      "trait_type": "name",
+      "value": "Heldor"
+    },
+    {
+      "trait_type": "element",
+      "value": "Void"
+    },
+    {
+      "trait_type": "role",
+      "value": "Support"
+    },
+    {
+      "trait_type": "race",
+      "value": "Zombie"
+    },
+    {
+      "trait_type": "attack",
+      "value": 100
+    },
+    {
+      "trait_type": "hp",
+      "value": 40
+    },
+    {
+      "trait_type": "isGuardian",
+      "value": true
+    },
+    {
+      "trait_type": "gold",
+      "value": 80
+    },
+    {
+      "trait_type": "description",
+      "value": "[Zombie | Support] \"Zombie Replacement\" Passive: When Heldor is sent to the grave yard as a result of battle, summon 1 Zombie type Guardian worth 100 gold or less from your deck."
+    },
+    {
+      "trait_type": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmQNQMyc9EogmnZRfz12ygXuC1UdTBopzcgsAytjqC5a4M"
+    }
+  ]
+}

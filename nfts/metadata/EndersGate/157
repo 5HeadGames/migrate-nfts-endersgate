@@ -1,0 +1,99 @@
+{
+  "name": "Oxi The Void Golem",
+  "type": "ERC1155",
+  "description": "[Golem | Tank] \"Shield of Zhilridge\" Activate: During your MP1, Oxi gives him self an Overshield worth 25% HP of its current HP. Uses: 1 ",
+  "image": "QmUkZbHgNCSyh2wMQKCkmfPPbYCnGv5AodnRgN9qvTBfK2",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 157
+    },
+    "name": {
+      "name": "name",
+      "value": "Oxi The Void Golem"
+    },
+    "element": {
+      "name": "element",
+      "value": "Void"
+    },
+    "role": {
+      "name": "role",
+      "value": "Tank"
+    },
+    "race": {
+      "name": "race",
+      "value": "Golem "
+    },
+    "attack": {
+      "name": "attack",
+      "value": 50
+    },
+    "hp": {
+      "name": "hp",
+      "value": 150
+    },
+    "isGuardian": {
+      "name": "isGuardian",
+      "value": true
+    },
+    "gold": {
+      "name": "gold",
+      "value": 150
+    },
+    "description": {
+      "name": "description",
+      "value": "[Golem | Tank] \"Shield of Zhilridge\" Activate: During your MP1, Oxi gives him self an Overshield worth 25% HP of its current HP. Uses: 1 "
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmUkZbHgNCSyh2wMQKCkmfPPbYCnGv5AodnRgN9qvTBfK2"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 157
+    },
+    {
+      "trait_type": "name",
+      "value": "Oxi The Void Golem"
+    },
+    {
+      "trait_type": "element",
+      "value": "Void"
+    },
+    {
+      "trait_type": "role",
+      "value": "Tank"
+    },
+    {
+      "trait_type": "race",
+      "value": "Golem "
+    },
+    {
+      "trait_type": "attack",
+      "value": 50
+    },
+    {
+      "trait_type": "hp",
+      "value": 150
+    },
+    {
+      "trait_type": "isGuardian",
+      "value": true
+    },
+    {
+      "trait_type": "gold",
+      "value": 150
+    },
+    {
+      "trait_type": "description",
+      "value": "[Golem | Tank] \"Shield of Zhilridge\" Activate: During your MP1, Oxi gives him self an Overshield worth 25% HP of its current HP. Uses: 1 "
+    },
+    {
+      "trait_type": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmUkZbHgNCSyh2wMQKCkmfPPbYCnGv5AodnRgN9qvTBfK2"
+    }
+  ]
+}

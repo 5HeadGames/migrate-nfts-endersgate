@@ -1,0 +1,99 @@
+{
+  "name": "Fire Archer",
+  "type": "ERC1155",
+  "description": "[Insect | Support] \"Fire Ant Colony\" Active: During your battle phase, fire archer can select up to 3 enemies to attack.",
+  "image": "QmaruaMdzzzhj5WsEaaUmuUZd8G6BH8ghTfqEWUmisASMG",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 141
+    },
+    "name": {
+      "name": "name",
+      "value": "Fire Archer"
+    },
+    "element": {
+      "name": "element",
+      "value": "Fire"
+    },
+    "role": {
+      "name": "role",
+      "value": "Support"
+    },
+    "race": {
+      "name": "race",
+      "value": "Insect"
+    },
+    "attack": {
+      "name": "attack",
+      "value": 50
+    },
+    "hp": {
+      "name": "hp",
+      "value": 110
+    },
+    "isGuardian": {
+      "name": "isGuardian",
+      "value": true
+    },
+    "gold": {
+      "name": "gold",
+      "value": 130
+    },
+    "description": {
+      "name": "description",
+      "value": "[Insect | Support] \"Fire Ant Colony\" Active: During your battle phase, fire archer can select up to 3 enemies to attack."
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmaruaMdzzzhj5WsEaaUmuUZd8G6BH8ghTfqEWUmisASMG"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 141
+    },
+    {
+      "trait_type": "name",
+      "value": "Fire Archer"
+    },
+    {
+      "trait_type": "element",
+      "value": "Fire"
+    },
+    {
+      "trait_type": "role",
+      "value": "Support"
+    },
+    {
+      "trait_type": "race",
+      "value": "Insect"
+    },
+    {
+      "trait_type": "attack",
+      "value": 50
+    },
+    {
+      "trait_type": "hp",
+      "value": 110
+    },
+    {
+      "trait_type": "isGuardian",
+      "value": true
+    },
+    {
+      "trait_type": "gold",
+      "value": 130
+    },
+    {
+      "trait_type": "description",
+      "value": "[Insect | Support] \"Fire Ant Colony\" Active: During your battle phase, fire archer can select up to 3 enemies to attack."
+    },
+    {
+      "trait_type": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmaruaMdzzzhj5WsEaaUmuUZd8G6BH8ghTfqEWUmisASMG"
+    }
+  ]
+}

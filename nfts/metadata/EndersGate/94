@@ -1,0 +1,99 @@
+{
+  "name": "Lumberjack Nick",
+  "type": "ERC1155",
+  "description": "[Human | Tank] \"Angry Villager\" Passive: Lumberjack Nick gains 25 attack for all \"Angry Villager\" Guardians on your side of the field.",
+  "image": "QmX7CgEKGxqDimbS8TL1hxXCEVJo7NsFcNuMuoHJJE63w5",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 94
+    },
+    "name": {
+      "name": "name",
+      "value": "Lumberjack Nick"
+    },
+    "element": {
+      "name": "element",
+      "value": "Earth"
+    },
+    "role": {
+      "name": "role",
+      "value": "Tank"
+    },
+    "race": {
+      "name": "race",
+      "value": "Human"
+    },
+    "attack": {
+      "name": "attack",
+      "value": 40
+    },
+    "hp": {
+      "name": "hp",
+      "value": 140
+    },
+    "isGuardian": {
+      "name": "isGuardian",
+      "value": true
+    },
+    "gold": {
+      "name": "gold",
+      "value": 110
+    },
+    "description": {
+      "name": "description",
+      "value": "[Human | Tank] \"Angry Villager\" Passive: Lumberjack Nick gains 25 attack for all \"Angry Villager\" Guardians on your side of the field."
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmX7CgEKGxqDimbS8TL1hxXCEVJo7NsFcNuMuoHJJE63w5"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 94
+    },
+    {
+      "trait_type": "name",
+      "value": "Lumberjack Nick"
+    },
+    {
+      "trait_type": "element",
+      "value": "Earth"
+    },
+    {
+      "trait_type": "role",
+      "value": "Tank"
+    },
+    {
+      "trait_type": "race",
+      "value": "Human"
+    },
+    {
+      "trait_type": "attack",
+      "value": 40
+    },
+    {
+      "trait_type": "hp",
+      "value": 140
+    },
+    {
+      "trait_type": "isGuardian",
+      "value": true
+    },
+    {
+      "trait_type": "gold",
+      "value": 110
+    },
+    {
+      "trait_type": "description",
+      "value": "[Human | Tank] \"Angry Villager\" Passive: Lumberjack Nick gains 25 attack for all \"Angry Villager\" Guardians on your side of the field."
+    },
+    {
+      "trait_type": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmX7CgEKGxqDimbS8TL1hxXCEVJo7NsFcNuMuoHJJE63w5"
+    }
+  ]
+}

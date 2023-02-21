@@ -1,0 +1,99 @@
+{
+  "name": "Sir Albin",
+  "type": "ERC1155",
+  "description": "[Ascended | Support] \"Evacuation\" Active: Once per turn, return 1 Ally Guardian on the field to your hand. ",
+  "image": "QmdaQwPw4FBx8jMTTzzd5qQcF4rzW7tdBh6fYCC4yHk8pT",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 222
+    },
+    "name": {
+      "name": "name",
+      "value": "Sir Albin"
+    },
+    "element": {
+      "name": "element",
+      "value": "Void"
+    },
+    "role": {
+      "name": "role",
+      "value": "Fighter"
+    },
+    "race": {
+      "name": "race",
+      "value": "Ascended"
+    },
+    "attack": {
+      "name": "attack",
+      "value": 240
+    },
+    "hp": {
+      "name": "hp",
+      "value": 300
+    },
+    "isGuardian": {
+      "name": "isGuardian",
+      "value": true
+    },
+    "gold": {
+      "name": "gold",
+      "value": 425
+    },
+    "description": {
+      "name": "description",
+      "value": "[Ascended | Support] \"Evacuation\" Active: Once per turn, return 1 Ally Guardian on the field to your hand. "
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmdaQwPw4FBx8jMTTzzd5qQcF4rzW7tdBh6fYCC4yHk8pT"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 222
+    },
+    {
+      "trait_type": "name",
+      "value": "Sir Albin"
+    },
+    {
+      "trait_type": "element",
+      "value": "Void"
+    },
+    {
+      "trait_type": "role",
+      "value": "Fighter"
+    },
+    {
+      "trait_type": "race",
+      "value": "Ascended"
+    },
+    {
+      "trait_type": "attack",
+      "value": 240
+    },
+    {
+      "trait_type": "hp",
+      "value": 300
+    },
+    {
+      "trait_type": "isGuardian",
+      "value": true
+    },
+    {
+      "trait_type": "gold",
+      "value": 425
+    },
+    {
+      "trait_type": "description",
+      "value": "[Ascended | Support] \"Evacuation\" Active: Once per turn, return 1 Ally Guardian on the field to your hand. "
+    },
+    {
+      "trait_type": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmdaQwPw4FBx8jMTTzzd5qQcF4rzW7tdBh6fYCC4yHk8pT"
+    }
+  ]
+}

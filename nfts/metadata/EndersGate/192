@@ -1,0 +1,99 @@
+{
+  "name": "Yannah",
+  "type": "ERC1155",
+  "description": "[Human | Mage] \"Void Acolyte\" Activate: Once per turn, deal 10 void damage to one selected enemy Guardian.",
+  "image": "QmPkEiUKbMbW6mp3q5CwvQgqWUAN396X9b5nQXpfhKGuMx",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 192
+    },
+    "name": {
+      "name": "name",
+      "value": "Yannah"
+    },
+    "element": {
+      "name": "element",
+      "value": "Void"
+    },
+    "role": {
+      "name": "role",
+      "value": "Mage"
+    },
+    "race": {
+      "name": "race",
+      "value": "Human"
+    },
+    "attack": {
+      "name": "attack",
+      "value": 125
+    },
+    "hp": {
+      "name": "hp",
+      "value": 250
+    },
+    "isGuardian": {
+      "name": "isGuardian",
+      "value": true
+    },
+    "gold": {
+      "name": "gold",
+      "value": 300
+    },
+    "description": {
+      "name": "description",
+      "value": "[Human | Mage] \"Void Acolyte\" Activate: Once per turn, deal 10 void damage to one selected enemy Guardian."
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmPkEiUKbMbW6mp3q5CwvQgqWUAN396X9b5nQXpfhKGuMx"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 192
+    },
+    {
+      "trait_type": "name",
+      "value": "Yannah"
+    },
+    {
+      "trait_type": "element",
+      "value": "Void"
+    },
+    {
+      "trait_type": "role",
+      "value": "Mage"
+    },
+    {
+      "trait_type": "race",
+      "value": "Human"
+    },
+    {
+      "trait_type": "attack",
+      "value": 125
+    },
+    {
+      "trait_type": "hp",
+      "value": 250
+    },
+    {
+      "trait_type": "isGuardian",
+      "value": true
+    },
+    {
+      "trait_type": "gold",
+      "value": 300
+    },
+    {
+      "trait_type": "description",
+      "value": "[Human | Mage] \"Void Acolyte\" Activate: Once per turn, deal 10 void damage to one selected enemy Guardian."
+    },
+    {
+      "trait_type": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmPkEiUKbMbW6mp3q5CwvQgqWUAN396X9b5nQXpfhKGuMx"
+    }
+  ]
+}

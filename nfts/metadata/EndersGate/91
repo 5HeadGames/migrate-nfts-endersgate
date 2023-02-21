@@ -1,0 +1,99 @@
+{
+  "name": "Farmer Otis",
+  "type": "ERC1155",
+  "description": "[Human | Fighter] \"Angry Villager\" Passive: Farmer Otis Gains 25 Attack for each \"Angry Villager\" Guardian on your side of the field.",
+  "image": "QmdfbX7cotJFyUv92iSu7WeQHRaWzjqeTtnXWCU6PxUSGL",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 91
+    },
+    "name": {
+      "name": "name",
+      "value": "Farmer Otis"
+    },
+    "element": {
+      "name": "element",
+      "value": "Mystic"
+    },
+    "role": {
+      "name": "role",
+      "value": "Fighter"
+    },
+    "race": {
+      "name": "race",
+      "value": "Human"
+    },
+    "attack": {
+      "name": "attack",
+      "value": 60
+    },
+    "hp": {
+      "name": "hp",
+      "value": 60
+    },
+    "isGuardian": {
+      "name": "isGuardian",
+      "value": true
+    },
+    "gold": {
+      "name": "gold",
+      "value": 70
+    },
+    "description": {
+      "name": "description",
+      "value": "[Human | Fighter] \"Angry Villager\" Passive: Farmer Otis Gains 25 Attack for each \"Angry Villager\" Guardian on your side of the field."
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmdfbX7cotJFyUv92iSu7WeQHRaWzjqeTtnXWCU6PxUSGL"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 91
+    },
+    {
+      "trait_type": "name",
+      "value": "Farmer Otis"
+    },
+    {
+      "trait_type": "element",
+      "value": "Mystic"
+    },
+    {
+      "trait_type": "role",
+      "value": "Fighter"
+    },
+    {
+      "trait_type": "race",
+      "value": "Human"
+    },
+    {
+      "trait_type": "attack",
+      "value": 60
+    },
+    {
+      "trait_type": "hp",
+      "value": 60
+    },
+    {
+      "trait_type": "isGuardian",
+      "value": true
+    },
+    {
+      "trait_type": "gold",
+      "value": 70
+    },
+    {
+      "trait_type": "description",
+      "value": "[Human | Fighter] \"Angry Villager\" Passive: Farmer Otis Gains 25 Attack for each \"Angry Villager\" Guardian on your side of the field."
+    },
+    {
+      "trait_type": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmdfbX7cotJFyUv92iSu7WeQHRaWzjqeTtnXWCU6PxUSGL"
+    }
+  ]
+}

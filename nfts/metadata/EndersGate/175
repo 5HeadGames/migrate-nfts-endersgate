@@ -1,0 +1,99 @@
+{
+  "name": "Eydis",
+  "type": "ERC1155",
+  "description": "[Human | Healer] Active: Heal an ally for 10 HP. Cooldown 2 turns. Passive: While Eydis is on the field, increase all \"Nordic\" Guardian ATK by 20%.",
+  "image": "QmSANd48ESEXD1263c1bVXScmmh3rRrss9FtBS58fE86AE",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 175
+    },
+    "name": {
+      "name": "name",
+      "value": "Eydis"
+    },
+    "element": {
+      "name": "element",
+      "value": "Mystic"
+    },
+    "role": {
+      "name": "role",
+      "value": "Healer"
+    },
+    "race": {
+      "name": "race",
+      "value": "Human"
+    },
+    "attack": {
+      "name": "attack",
+      "value": 130
+    },
+    "hp": {
+      "name": "hp",
+      "value": 170
+    },
+    "isGuardian": {
+      "name": "isGuardian",
+      "value": true
+    },
+    "gold": {
+      "name": "gold",
+      "value": 210
+    },
+    "description": {
+      "name": "description",
+      "value": "[Human | Healer] Active: Heal an ally for 10 HP. Cooldown 2 turns. Passive: While Eydis is on the field, increase all \"Nordic\" Guardian ATK by 20%."
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmSANd48ESEXD1263c1bVXScmmh3rRrss9FtBS58fE86AE"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 175
+    },
+    {
+      "trait_type": "name",
+      "value": "Eydis"
+    },
+    {
+      "trait_type": "element",
+      "value": "Mystic"
+    },
+    {
+      "trait_type": "role",
+      "value": "Healer"
+    },
+    {
+      "trait_type": "race",
+      "value": "Human"
+    },
+    {
+      "trait_type": "attack",
+      "value": 130
+    },
+    {
+      "trait_type": "hp",
+      "value": 170
+    },
+    {
+      "trait_type": "isGuardian",
+      "value": true
+    },
+    {
+      "trait_type": "gold",
+      "value": 210
+    },
+    {
+      "trait_type": "description",
+      "value": "[Human | Healer] Active: Heal an ally for 10 HP. Cooldown 2 turns. Passive: While Eydis is on the field, increase all \"Nordic\" Guardian ATK by 20%."
+    },
+    {
+      "trait_type": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmSANd48ESEXD1263c1bVXScmmh3rRrss9FtBS58fE86AE"
+    }
+  ]
+}

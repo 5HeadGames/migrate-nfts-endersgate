@@ -1,0 +1,99 @@
+{
+  "name": "Reinold",
+  "type": "ERC1155",
+  "description": "[Human | Support] \"Black Smith\" Activate: During your MP1, select up to 2 Ally Guardians on the field; Increase their ATK and HP by 25 as long as Reinold remains on the field.",
+  "image": "QmZLZP9uBqCi4z6mnhAcaPhzByH7wn34hkGY6nhopzicWQ",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 160
+    },
+    "name": {
+      "name": "name",
+      "value": "Reinold"
+    },
+    "element": {
+      "name": "element",
+      "value": "Mystic"
+    },
+    "role": {
+      "name": "role",
+      "value": "Support"
+    },
+    "race": {
+      "name": "race",
+      "value": "Human"
+    },
+    "attack": {
+      "name": "attack",
+      "value": 110
+    },
+    "hp": {
+      "name": "hp",
+      "value": 100
+    },
+    "isGuardian": {
+      "name": "isGuardian",
+      "value": true
+    },
+    "gold": {
+      "name": "gold",
+      "value": 110
+    },
+    "description": {
+      "name": "description",
+      "value": "[Human | Support] \"Black Smith\" Activate: During your MP1, select up to 2 Ally Guardians on the field; Increase their ATK and HP by 25 as long as Reinold remains on the field."
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmZLZP9uBqCi4z6mnhAcaPhzByH7wn34hkGY6nhopzicWQ"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 160
+    },
+    {
+      "trait_type": "name",
+      "value": "Reinold"
+    },
+    {
+      "trait_type": "element",
+      "value": "Mystic"
+    },
+    {
+      "trait_type": "role",
+      "value": "Support"
+    },
+    {
+      "trait_type": "race",
+      "value": "Human"
+    },
+    {
+      "trait_type": "attack",
+      "value": 110
+    },
+    {
+      "trait_type": "hp",
+      "value": 100
+    },
+    {
+      "trait_type": "isGuardian",
+      "value": true
+    },
+    {
+      "trait_type": "gold",
+      "value": 110
+    },
+    {
+      "trait_type": "description",
+      "value": "[Human | Support] \"Black Smith\" Activate: During your MP1, select up to 2 Ally Guardians on the field; Increase their ATK and HP by 25 as long as Reinold remains on the field."
+    },
+    {
+      "trait_type": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmZLZP9uBqCi4z6mnhAcaPhzByH7wn34hkGY6nhopzicWQ"
+    }
+  ]
+}

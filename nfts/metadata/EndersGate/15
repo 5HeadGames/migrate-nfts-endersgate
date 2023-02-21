@@ -1,0 +1,67 @@
+{
+  "name": "Lightning Strike",
+  "type": "ERC1155",
+  "description": "Target one Guardian on your opponent's side of the field; deal 40 Mystic damage. ",
+  "image": "QmPqdpvFv9APvGorDfna3xqry2tj8YU2cGobCd8SjLjrxC",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 15
+    },
+    "name": {
+      "name": "name",
+      "value": "Lightning Strike"
+    },
+    "type": {
+      "name": "type",
+      "value": "Quick Play"
+    },
+    "ADOTurn": {
+      "name": "ADOTurn",
+      "value": "NO"
+    },
+    "rarity": {
+      "name": "rarity",
+      "value": "Common"
+    },
+    "description": {
+      "name": "description",
+      "value": "Target one Guardian on your opponent's side of the field; deal 40 Mystic damage. "
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmPqdpvFv9APvGorDfna3xqry2tj8YU2cGobCd8SjLjrxC"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 15
+    },
+    {
+      "trait_type": "name",
+      "value": "Lightning Strike"
+    },
+    {
+      "trait_type": "type",
+      "value": "Quick Play"
+    },
+    {
+      "trait_type": "ADOTurn",
+      "value": "NO"
+    },
+    {
+      "trait_type": "rarity",
+      "value": "Common"
+    },
+    {
+      "trait_type": "description",
+      "value": "Target one Guardian on your opponent's side of the field; deal 40 Mystic damage. "
+    },
+    {
+      "trait_type": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmPqdpvFv9APvGorDfna3xqry2tj8YU2cGobCd8SjLjrxC"
+    }
+  ]
+}

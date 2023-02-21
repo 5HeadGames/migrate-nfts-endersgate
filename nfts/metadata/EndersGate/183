@@ -1,0 +1,99 @@
+{
+  "name": "Aqualon",
+  "type": "ERC1155",
+  "description": "[Elemental | Tank] \"Aqua Soul\" All attacks are directed to Aqualon. Additionally, all \"Aqua Soul\" Guardians Gain +10 ATK & +10 HP.",
+  "image": "QmVkDgjsNwDHrKQRkEZWRfPWMHbL8kvr8BSaqwJmxraJDS",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 183
+    },
+    "name": {
+      "name": "name",
+      "value": "Aqualon"
+    },
+    "element": {
+      "name": "element",
+      "value": "Water"
+    },
+    "role": {
+      "name": "role",
+      "value": "Tank"
+    },
+    "race": {
+      "name": "race",
+      "value": "Elemental"
+    },
+    "attack": {
+      "name": "attack",
+      "value": 100
+    },
+    "hp": {
+      "name": "hp",
+      "value": 250
+    },
+    "isGuardian": {
+      "name": "isGuardian",
+      "value": true
+    },
+    "gold": {
+      "name": "gold",
+      "value": 250
+    },
+    "description": {
+      "name": "description",
+      "value": "[Elemental | Tank] \"Aqua Soul\" All attacks are directed to Aqualon. Additionally, all \"Aqua Soul\" Guardians Gain +10 ATK & +10 HP."
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmVkDgjsNwDHrKQRkEZWRfPWMHbL8kvr8BSaqwJmxraJDS"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 183
+    },
+    {
+      "trait_type": "name",
+      "value": "Aqualon"
+    },
+    {
+      "trait_type": "element",
+      "value": "Water"
+    },
+    {
+      "trait_type": "role",
+      "value": "Tank"
+    },
+    {
+      "trait_type": "race",
+      "value": "Elemental"
+    },
+    {
+      "trait_type": "attack",
+      "value": 100
+    },
+    {
+      "trait_type": "hp",
+      "value": 250
+    },
+    {
+      "trait_type": "isGuardian",
+      "value": true
+    },
+    {
+      "trait_type": "gold",
+      "value": 250
+    },
+    {
+      "trait_type": "description",
+      "value": "[Elemental | Tank] \"Aqua Soul\" All attacks are directed to Aqualon. Additionally, all \"Aqua Soul\" Guardians Gain +10 ATK & +10 HP."
+    },
+    {
+      "trait_type": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmVkDgjsNwDHrKQRkEZWRfPWMHbL8kvr8BSaqwJmxraJDS"
+    }
+  ]
+}

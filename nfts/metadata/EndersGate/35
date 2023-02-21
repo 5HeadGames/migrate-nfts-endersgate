@@ -1,0 +1,67 @@
+{
+  "name": "Angry Sea",
+  "type": "ERC1155",
+  "description": " Pay 300 Gold: Destroy all Action and Reaction Cards on the field.",
+  "image": "QmR3yTry1UZKdNMspbhtnZ55YnAeuRxRj7yj8oCfTxdqyJ",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 35
+    },
+    "name": {
+      "name": "name",
+      "value": "Angry Sea"
+    },
+    "type": {
+      "name": "type",
+      "value": "Normal Action"
+    },
+    "ADOTurn": {
+      "name": "ADOTurn",
+      "value": "NO"
+    },
+    "rarity": {
+      "name": "rarity",
+      "value": "Ultra Rare"
+    },
+    "description": {
+      "name": "description",
+      "value": " Pay 300 Gold: Destroy all Action and Reaction Cards on the field."
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmR3yTry1UZKdNMspbhtnZ55YnAeuRxRj7yj8oCfTxdqyJ"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 35
+    },
+    {
+      "trait_type": "name",
+      "value": "Angry Sea"
+    },
+    {
+      "trait_type": "type",
+      "value": "Normal Action"
+    },
+    {
+      "trait_type": "ADOTurn",
+      "value": "NO"
+    },
+    {
+      "trait_type": "rarity",
+      "value": "Ultra Rare"
+    },
+    {
+      "trait_type": "description",
+      "value": " Pay 300 Gold: Destroy all Action and Reaction Cards on the field."
+    },
+    {
+      "trait_type": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmR3yTry1UZKdNMspbhtnZ55YnAeuRxRj7yj8oCfTxdqyJ"
+    }
+  ]
+}

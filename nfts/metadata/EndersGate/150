@@ -1,0 +1,99 @@
+{
+  "name": "Maloss",
+  "type": "ERC1155",
+  "description": "[Beast | Tank] Passive: When Maliss is attacked, she gains an Earth shield worth 50% of her current HP.",
+  "image": "Qmaaewkotd1Jvm6ZscSuvsQ2WFWxJfjCPCMzxBPqLFJSfj",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 150
+    },
+    "name": {
+      "name": "name",
+      "value": "Maloss"
+    },
+    "element": {
+      "name": "element",
+      "value": "Earth"
+    },
+    "role": {
+      "name": "role",
+      "value": "Tank"
+    },
+    "race": {
+      "name": "race",
+      "value": "Beast"
+    },
+    "attack": {
+      "name": "attack",
+      "value": 50
+    },
+    "hp": {
+      "name": "hp",
+      "value": 150
+    },
+    "isGuardian": {
+      "name": "isGuardian",
+      "value": true
+    },
+    "gold": {
+      "name": "gold",
+      "value": 150
+    },
+    "description": {
+      "name": "description",
+      "value": "[Beast | Tank] Passive: When Maliss is attacked, she gains an Earth shield worth 50% of her current HP."
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/Qmaaewkotd1Jvm6ZscSuvsQ2WFWxJfjCPCMzxBPqLFJSfj"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 150
+    },
+    {
+      "trait_type": "name",
+      "value": "Maloss"
+    },
+    {
+      "trait_type": "element",
+      "value": "Earth"
+    },
+    {
+      "trait_type": "role",
+      "value": "Tank"
+    },
+    {
+      "trait_type": "race",
+      "value": "Beast"
+    },
+    {
+      "trait_type": "attack",
+      "value": 50
+    },
+    {
+      "trait_type": "hp",
+      "value": 150
+    },
+    {
+      "trait_type": "isGuardian",
+      "value": true
+    },
+    {
+      "trait_type": "gold",
+      "value": 150
+    },
+    {
+      "trait_type": "description",
+      "value": "[Beast | Tank] Passive: When Maliss is attacked, she gains an Earth shield worth 50% of her current HP."
+    },
+    {
+      "trait_type": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/Qmaaewkotd1Jvm6ZscSuvsQ2WFWxJfjCPCMzxBPqLFJSfj"
+    }
+  ]
+}

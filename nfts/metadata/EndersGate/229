@@ -1,0 +1,99 @@
+{
+  "name": "Princess Vissa",
+  "type": "ERC1155",
+  "description": "[Elf | Healer] \"Mothers Balance\" Activate: Once per turn, select 1 Guardian and heal them for 40 HP. Passive: During each of your Standby Phases, heal all Mystic Type Guardians on your side of the field for 10 HP. ",
+  "image": "QmaCwBRzqtQuCdVc6y5nsJrQqdDdHGD3uds83iNF6g3csF",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 229
+    },
+    "name": {
+      "name": "name",
+      "value": "Princess Vissa"
+    },
+    "element": {
+      "name": "element",
+      "value": "Mystic"
+    },
+    "role": {
+      "name": "role",
+      "value": "Healer"
+    },
+    "race": {
+      "name": "race",
+      "value": "Elf"
+    },
+    "attack": {
+      "name": "attack",
+      "value": 120
+    },
+    "hp": {
+      "name": "hp",
+      "value": 220
+    },
+    "isGuardian": {
+      "name": "isGuardian",
+      "value": true
+    },
+    "gold": {
+      "name": "gold",
+      "value": 450
+    },
+    "description": {
+      "name": "description",
+      "value": "[Elf | Healer] \"Mothers Balance\" Activate: Once per turn, select 1 Guardian and heal them for 40 HP. Passive: During each of your Standby Phases, heal all Mystic Type Guardians on your side of the field for 10 HP. "
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmaCwBRzqtQuCdVc6y5nsJrQqdDdHGD3uds83iNF6g3csF"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 229
+    },
+    {
+      "trait_type": "name",
+      "value": "Princess Vissa"
+    },
+    {
+      "trait_type": "element",
+      "value": "Mystic"
+    },
+    {
+      "trait_type": "role",
+      "value": "Healer"
+    },
+    {
+      "trait_type": "race",
+      "value": "Elf"
+    },
+    {
+      "trait_type": "attack",
+      "value": 120
+    },
+    {
+      "trait_type": "hp",
+      "value": 220
+    },
+    {
+      "trait_type": "isGuardian",
+      "value": true
+    },
+    {
+      "trait_type": "gold",
+      "value": 450
+    },
+    {
+      "trait_type": "description",
+      "value": "[Elf | Healer] \"Mothers Balance\" Activate: Once per turn, select 1 Guardian and heal them for 40 HP. Passive: During each of your Standby Phases, heal all Mystic Type Guardians on your side of the field for 10 HP. "
+    },
+    {
+      "trait_type": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmaCwBRzqtQuCdVc6y5nsJrQqdDdHGD3uds83iNF6g3csF"
+    }
+  ]
+}

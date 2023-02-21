@@ -1,0 +1,67 @@
+{
+  "name": "Jupiter's Critical Fist ",
+  "type": "ERC1155",
+  "description": "Select 1 Guardian on your side of the field. Increase their Critical Strike Chance & Critical Strike Damage by 10% for each Guardian on the field.",
+  "image": "QmYQc5b13CFtMBjW1J1pUWugNGDVQwo5p5ZHh1YFnvgH6E",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 30
+    },
+    "name": {
+      "name": "name",
+      "value": "Jupiter's Critical Fist "
+    },
+    "type": {
+      "name": "type",
+      "value": "Equip / Buff"
+    },
+    "ADOTurn": {
+      "name": "ADOTurn",
+      "value": "NO"
+    },
+    "rarity": {
+      "name": "rarity",
+      "value": "Rare"
+    },
+    "description": {
+      "name": "description",
+      "value": "Select 1 Guardian on your side of the field. Increase their Critical Strike Chance & Critical Strike Damage by 10% for each Guardian on the field."
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmYQc5b13CFtMBjW1J1pUWugNGDVQwo5p5ZHh1YFnvgH6E"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 30
+    },
+    {
+      "trait_type": "name",
+      "value": "Jupiter's Critical Fist "
+    },
+    {
+      "trait_type": "type",
+      "value": "Equip / Buff"
+    },
+    {
+      "trait_type": "ADOTurn",
+      "value": "NO"
+    },
+    {
+      "trait_type": "rarity",
+      "value": "Rare"
+    },
+    {
+      "trait_type": "description",
+      "value": "Select 1 Guardian on your side of the field. Increase their Critical Strike Chance & Critical Strike Damage by 10% for each Guardian on the field."
+    },
+    {
+      "trait_type": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmYQc5b13CFtMBjW1J1pUWugNGDVQwo5p5ZHh1YFnvgH6E"
+    }
+  ]
+}

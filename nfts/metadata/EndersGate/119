@@ -1,0 +1,99 @@
+{
+  "name": "Livion",
+  "type": "ERC1155",
+  "description": "[Human | Tank] \"Poison Dominance\" Passive: During each of your Standby Phases, deal 5 Venom DMG to all non-Venom type Guardians on your opponent's side of the field.",
+  "image": "QmeyLCnJmbJai4HFAFPTMwuRoFBNY7EB2Zz8PmVz2K1KY3",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 119
+    },
+    "name": {
+      "name": "name",
+      "value": "Livion"
+    },
+    "element": {
+      "name": "element",
+      "value": "Venom"
+    },
+    "role": {
+      "name": "role",
+      "value": "Tank"
+    },
+    "race": {
+      "name": "race",
+      "value": "Human"
+    },
+    "attack": {
+      "name": "attack",
+      "value": 30
+    },
+    "hp": {
+      "name": "hp",
+      "value": 150
+    },
+    "isGuardian": {
+      "name": "isGuardian",
+      "value": true
+    },
+    "gold": {
+      "name": "gold",
+      "value": 110
+    },
+    "description": {
+      "name": "description",
+      "value": "[Human | Tank] \"Poison Dominance\" Passive: During each of your Standby Phases, deal 5 Venom DMG to all non-Venom type Guardians on your opponent's side of the field."
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmeyLCnJmbJai4HFAFPTMwuRoFBNY7EB2Zz8PmVz2K1KY3"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 119
+    },
+    {
+      "trait_type": "name",
+      "value": "Livion"
+    },
+    {
+      "trait_type": "element",
+      "value": "Venom"
+    },
+    {
+      "trait_type": "role",
+      "value": "Tank"
+    },
+    {
+      "trait_type": "race",
+      "value": "Human"
+    },
+    {
+      "trait_type": "attack",
+      "value": 30
+    },
+    {
+      "trait_type": "hp",
+      "value": 150
+    },
+    {
+      "trait_type": "isGuardian",
+      "value": true
+    },
+    {
+      "trait_type": "gold",
+      "value": 110
+    },
+    {
+      "trait_type": "description",
+      "value": "[Human | Tank] \"Poison Dominance\" Passive: During each of your Standby Phases, deal 5 Venom DMG to all non-Venom type Guardians on your opponent's side of the field."
+    },
+    {
+      "trait_type": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmeyLCnJmbJai4HFAFPTMwuRoFBNY7EB2Zz8PmVz2K1KY3"
+    }
+  ]
+}

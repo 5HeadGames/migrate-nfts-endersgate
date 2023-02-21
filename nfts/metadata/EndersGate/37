@@ -1,0 +1,67 @@
+{
+  "name": "Hatchling Potential",
+  "type": "ERC1155",
+  "description": "Pay 25 Gold for 3 turns during your standby phase to successfully Activate: \nA random Guardian from your deck appears on the field in MP1",
+  "image": "QmNYf7LWH4KUCpAhyBz3KppoCksb3yzS7ksjefaDDySMwW",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 37
+    },
+    "name": {
+      "name": "name",
+      "value": "Hatchling Potential"
+    },
+    "type": {
+      "name": "type",
+      "value": "Normal Action"
+    },
+    "ADOTurn": {
+      "name": "ADOTurn",
+      "value": "NO"
+    },
+    "rarity": {
+      "name": "rarity",
+      "value": "Ultra Rare"
+    },
+    "description": {
+      "name": "description",
+      "value": "Pay 25 Gold for 3 turns during your standby phase to successfully Activate: \nA random Guardian from your deck appears on the field in MP1"
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmNYf7LWH4KUCpAhyBz3KppoCksb3yzS7ksjefaDDySMwW"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 37
+    },
+    {
+      "trait_type": "name",
+      "value": "Hatchling Potential"
+    },
+    {
+      "trait_type": "type",
+      "value": "Normal Action"
+    },
+    {
+      "trait_type": "ADOTurn",
+      "value": "NO"
+    },
+    {
+      "trait_type": "rarity",
+      "value": "Ultra Rare"
+    },
+    {
+      "trait_type": "description",
+      "value": "Pay 25 Gold for 3 turns during your standby phase to successfully Activate: \nA random Guardian from your deck appears on the field in MP1"
+    },
+    {
+      "trait_type": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmNYf7LWH4KUCpAhyBz3KppoCksb3yzS7ksjefaDDySMwW"
+    }
+  ]
+}

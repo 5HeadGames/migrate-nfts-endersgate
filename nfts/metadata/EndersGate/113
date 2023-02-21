@@ -1,0 +1,99 @@
+{
+  "name": "Undead Hound",
+  "type": "ERC1155",
+  "description": "[Undead | Support] Passive: When Undead Hound is sent to the grave yard as a result of battle, add 1 undead type guardian worth 100 gold or less from your deck to your hand.",
+  "image": "QmZK5t9KVF4LZoYReyQGoeKLA3PnA9vixJbB6xVhFoVnA3",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 113
+    },
+    "name": {
+      "name": "name",
+      "value": "Undead Hound"
+    },
+    "element": {
+      "name": "element",
+      "value": "Void"
+    },
+    "role": {
+      "name": "role",
+      "value": "Support"
+    },
+    "race": {
+      "name": "race",
+      "value": "Undead"
+    },
+    "attack": {
+      "name": "attack",
+      "value": 55
+    },
+    "hp": {
+      "name": "hp",
+      "value": 55
+    },
+    "isGuardian": {
+      "name": "isGuardian",
+      "value": true
+    },
+    "gold": {
+      "name": "gold",
+      "value": 65
+    },
+    "description": {
+      "name": "description",
+      "value": "[Undead | Support] Passive: When Undead Hound is sent to the grave yard as a result of battle, add 1 undead type guardian worth 100 gold or less from your deck to your hand."
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmZK5t9KVF4LZoYReyQGoeKLA3PnA9vixJbB6xVhFoVnA3"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 113
+    },
+    {
+      "trait_type": "name",
+      "value": "Undead Hound"
+    },
+    {
+      "trait_type": "element",
+      "value": "Void"
+    },
+    {
+      "trait_type": "role",
+      "value": "Support"
+    },
+    {
+      "trait_type": "race",
+      "value": "Undead"
+    },
+    {
+      "trait_type": "attack",
+      "value": 55
+    },
+    {
+      "trait_type": "hp",
+      "value": 55
+    },
+    {
+      "trait_type": "isGuardian",
+      "value": true
+    },
+    {
+      "trait_type": "gold",
+      "value": 65
+    },
+    {
+      "trait_type": "description",
+      "value": "[Undead | Support] Passive: When Undead Hound is sent to the grave yard as a result of battle, add 1 undead type guardian worth 100 gold or less from your deck to your hand."
+    },
+    {
+      "trait_type": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmZK5t9KVF4LZoYReyQGoeKLA3PnA9vixJbB6xVhFoVnA3"
+    }
+  ]
+}

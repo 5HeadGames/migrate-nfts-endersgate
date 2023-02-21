@@ -1,0 +1,67 @@
+{
+  "name": "Collectors Horizon",
+  "type": "ERC1155",
+  "description": "Pay 100 Gold: Destroy all Action and Reaction Cards on both sides of the field.",
+  "image": "QmTAZUBxKKPWZvmo43rs4LBdanNwihKWogH6HVcn5ZtMBo",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 67
+    },
+    "name": {
+      "name": "name",
+      "value": "Collectors Horizon"
+    },
+    "type": {
+      "name": "type",
+      "value": "Quick Play"
+    },
+    "ADOTurn": {
+      "name": "ADOTurn",
+      "value": "YES"
+    },
+    "rarity": {
+      "name": "rarity",
+      "value": "Ultra Rare"
+    },
+    "description": {
+      "name": "description",
+      "value": "Pay 100 Gold: Destroy all Action and Reaction Cards on both sides of the field."
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmTAZUBxKKPWZvmo43rs4LBdanNwihKWogH6HVcn5ZtMBo"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 67
+    },
+    {
+      "trait_type": "name",
+      "value": "Collectors Horizon"
+    },
+    {
+      "trait_type": "type",
+      "value": "Quick Play"
+    },
+    {
+      "trait_type": "ADOTurn",
+      "value": "YES"
+    },
+    {
+      "trait_type": "rarity",
+      "value": "Ultra Rare"
+    },
+    {
+      "trait_type": "description",
+      "value": "Pay 100 Gold: Destroy all Action and Reaction Cards on both sides of the field."
+    },
+    {
+      "trait_type": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmTAZUBxKKPWZvmo43rs4LBdanNwihKWogH6HVcn5ZtMBo"
+    }
+  ]
+}

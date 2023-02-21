@@ -1,0 +1,67 @@
+{
+  "name": "E-Axe: Water Mode",
+  "type": "ERC1155",
+  "description": "Deal 15 water damage to all enemy Guardians on the field.",
+  "image": "QmUJc1oGcVn4sx3FuUZovEkZvWCyDTsZJxaUB7s1iSUvAG",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 8
+    },
+    "name": {
+      "name": "name",
+      "value": "E-Axe: Water Mode"
+    },
+    "type": {
+      "name": "type",
+      "value": "Normal Action"
+    },
+    "ADOTurn": {
+      "name": "ADOTurn",
+      "value": "NO"
+    },
+    "rarity": {
+      "name": "rarity",
+      "value": "Common"
+    },
+    "description": {
+      "name": "description",
+      "value": "Deal 15 water damage to all enemy Guardians on the field."
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmUJc1oGcVn4sx3FuUZovEkZvWCyDTsZJxaUB7s1iSUvAG"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 8
+    },
+    {
+      "trait_type": "name",
+      "value": "E-Axe: Water Mode"
+    },
+    {
+      "trait_type": "type",
+      "value": "Normal Action"
+    },
+    {
+      "trait_type": "ADOTurn",
+      "value": "NO"
+    },
+    {
+      "trait_type": "rarity",
+      "value": "Common"
+    },
+    {
+      "trait_type": "description",
+      "value": "Deal 15 water damage to all enemy Guardians on the field."
+    },
+    {
+      "trait_type": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmUJc1oGcVn4sx3FuUZovEkZvWCyDTsZJxaUB7s1iSUvAG"
+    }
+  ]
+}

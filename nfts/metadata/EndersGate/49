@@ -1,0 +1,65 @@
+{
+  "name": "Void Trap",
+  "type": "ERC1155",
+  "description": "Flip: Deal 50 damage to one selected Guardian on the opponent's side of the field. ",
+  "image": "QmVEnk1ZiytkdDEGJSXv3Asm3eGK4Wh8Zajuapd9vMAXD1",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 49
+    },
+    "name": {
+      "name": "name",
+      "value": "Void Trap"
+    },
+    "type": {
+      "name": "type",
+      "value": "Normal Reaction"
+    },
+    "ADOTurn": {
+      "name": "ADOTurn",
+      "value": "NO"
+    },
+    "rarity": {
+      "name": "rarity"
+    },
+    "description": {
+      "name": "description",
+      "value": "Flip: Deal 50 damage to one selected Guardian on the opponent's side of the field. "
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmVEnk1ZiytkdDEGJSXv3Asm3eGK4Wh8Zajuapd9vMAXD1"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 49
+    },
+    {
+      "trait_type": "name",
+      "value": "Void Trap"
+    },
+    {
+      "trait_type": "type",
+      "value": "Normal Reaction"
+    },
+    {
+      "trait_type": "ADOTurn",
+      "value": "NO"
+    },
+    {
+      "trait_type": "rarity"
+    },
+    {
+      "trait_type": "description",
+      "value": "Flip: Deal 50 damage to one selected Guardian on the opponent's side of the field. "
+    },
+    {
+      "trait_type": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmVEnk1ZiytkdDEGJSXv3Asm3eGK4Wh8Zajuapd9vMAXD1"
+    }
+  ]
+}

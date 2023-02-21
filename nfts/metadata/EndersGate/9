@@ -1,0 +1,67 @@
+{
+  "name": "Fighter Essence",
+  "type": "ERC1155",
+  "description": "Equip this card to one Guardian on your side of the field; increase their attack by 100. Destory this card if the Guardian is sent to the grave yard.",
+  "image": "QmYsUn1ntdjv5MhFA47ftgASACCzWLemEqdyFddScjmunN",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 9
+    },
+    "name": {
+      "name": "name",
+      "value": "Fighter Essence"
+    },
+    "type": {
+      "name": "type",
+      "value": "Buff"
+    },
+    "ADOTurn": {
+      "name": "ADOTurn",
+      "value": "NO"
+    },
+    "rarity": {
+      "name": "rarity",
+      "value": "Uncommon"
+    },
+    "description": {
+      "name": "description",
+      "value": "Equip this card to one Guardian on your side of the field; increase their attack by 100. Destory this card if the Guardian is sent to the grave yard."
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmYsUn1ntdjv5MhFA47ftgASACCzWLemEqdyFddScjmunN"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 9
+    },
+    {
+      "trait_type": "name",
+      "value": "Fighter Essence"
+    },
+    {
+      "trait_type": "type",
+      "value": "Buff"
+    },
+    {
+      "trait_type": "ADOTurn",
+      "value": "NO"
+    },
+    {
+      "trait_type": "rarity",
+      "value": "Uncommon"
+    },
+    {
+      "trait_type": "description",
+      "value": "Equip this card to one Guardian on your side of the field; increase their attack by 100. Destory this card if the Guardian is sent to the grave yard."
+    },
+    {
+      "trait_type": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmYsUn1ntdjv5MhFA47ftgASACCzWLemEqdyFddScjmunN"
+    }
+  ]
+}

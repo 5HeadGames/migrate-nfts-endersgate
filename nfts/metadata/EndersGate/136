@@ -1,0 +1,99 @@
+{
+  "name": "Norfelo",
+  "type": "ERC1155",
+  "description": "[Dwarf | Mage] \"Gas Technician\" Passive: Norfelo's attacks have a 10% chance to cause poison dealing an addtional 10 damage next turn.",
+  "image": "QmczbBwnSFtn2haXxF2VLosb4fkPQhpZFQwK8eNjzHhYVL",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 136
+    },
+    "name": {
+      "name": "name",
+      "value": "Norfelo"
+    },
+    "element": {
+      "name": "element",
+      "value": "Venom"
+    },
+    "role": {
+      "name": "role",
+      "value": "Mage"
+    },
+    "race": {
+      "name": "race",
+      "value": "Dwarf"
+    },
+    "attack": {
+      "name": "attack",
+      "value": 110
+    },
+    "hp": {
+      "name": "hp",
+      "value": 130
+    },
+    "isGuardian": {
+      "name": "isGuardian",
+      "value": true
+    },
+    "gold": {
+      "name": "gold",
+      "value": 130
+    },
+    "description": {
+      "name": "description",
+      "value": "[Dwarf | Mage] \"Gas Technician\" Passive: Norfelo's attacks have a 10% chance to cause poison dealing an addtional 10 damage next turn."
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmczbBwnSFtn2haXxF2VLosb4fkPQhpZFQwK8eNjzHhYVL"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 136
+    },
+    {
+      "trait_type": "name",
+      "value": "Norfelo"
+    },
+    {
+      "trait_type": "element",
+      "value": "Venom"
+    },
+    {
+      "trait_type": "role",
+      "value": "Mage"
+    },
+    {
+      "trait_type": "race",
+      "value": "Dwarf"
+    },
+    {
+      "trait_type": "attack",
+      "value": 110
+    },
+    {
+      "trait_type": "hp",
+      "value": 130
+    },
+    {
+      "trait_type": "isGuardian",
+      "value": true
+    },
+    {
+      "trait_type": "gold",
+      "value": 130
+    },
+    {
+      "trait_type": "description",
+      "value": "[Dwarf | Mage] \"Gas Technician\" Passive: Norfelo's attacks have a 10% chance to cause poison dealing an addtional 10 damage next turn."
+    },
+    {
+      "trait_type": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmczbBwnSFtn2haXxF2VLosb4fkPQhpZFQwK8eNjzHhYVL"
+    }
+  ]
+}

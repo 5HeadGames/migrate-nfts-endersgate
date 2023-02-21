@@ -11,13 +11,13 @@ import path from "path";
 
 import "./tasks";
 
-import {resolve} from "path";
+import { resolve } from "path";
 
-import {config as dotenvConfig} from "dotenv";
-import {HardhatUserConfig} from "hardhat/config";
-import {NetworkUserConfig} from "hardhat/types";
+import { config as dotenvConfig } from "dotenv";
+import { HardhatUserConfig } from "hardhat/config";
+import { NetworkUserConfig } from "hardhat/types";
 
-dotenvConfig({path: resolve(__dirname, "./.env")});
+dotenvConfig({ path: resolve(__dirname, "./.env") });
 
 const chainIds = {
   goerli: 5,
@@ -27,6 +27,8 @@ const chainIds = {
   rinkeby: 4,
   ropsten: 3,
 };
+
+// console.log(process.env.PRIVATE_KEY);
 
 // Ensure that we have all the environment variables we need.
 
@@ -44,25 +46,30 @@ const config: HardhatUserConfig = {
         count: 200, //must be set higher when testing packs
       },
     },
-    //goerli: getChainConfig("goerli"),
-    //kovan: getChainConfig("kovan"),
-    rinkeby: {
-      url: "https://speedy-nodes-nyc.moralis.io/bdd2a4b14a469f0e3a230d4d/eth/rinkeby",
-      accounts: [process.env.PRIVATE_KEY || ""],
-      gas: 1446592,
-    },
-    harmony: {
-      url: "https://harmony-0-rpc.gateway.pokt.network",
-      accounts: [process.env.PRIVATE_KEY || ""],
-      timeout: 120000000,
-    },
-    harmony_test: {
-      url: `https://api.s0.b.hmny.io`,
-      accounts: [process.env.PRIVATE_KEY || ""],
-      timeout: 120000000,
-    },
-    polygon: {
+    // goerli: getChainConfig("goerli"),
+    // kovan: getChainConfig("kovan"),
+    // rinkeby: {
+    //   url: "https://speedy-nodes-nyc.moralis.io/bdd2a4b14a469f0e3a230d4d/eth/rinkeby",
+    //   accounts: [process.env.PRIVATE_KEY || ""],
+    //   gas: 1446592,
+    // },
+    // harmony: {
+    //   url: "https://harmony-0-rpc.gateway.pokt.network",
+    //   accounts: [process.env.PRIVATE_KEY || ""],
+    //   timeout: 120000000,
+    // },
+    // harmony_test: {
+    //   url: `https://api.s0.b.hmny.io`,
+    //   accounts: [process.env.PRIVATE_KEY || ""],
+    //   timeout: 120000000,
+    // },
+    matic: {
       url: process.env.POLYGON_PROVIDER,
+      accounts: [process.env.PRIVATE_KEY || ""],
+    },
+
+    mumbai: {
+      url: process.env.MUMBAI_PROVIDER,
       accounts: [process.env.PRIVATE_KEY || ""],
     },
 
@@ -77,10 +84,49 @@ const config: HardhatUserConfig = {
   solidity: {
     compilers: [
       {
+        version: "0.8.13",
+      },
+      {
         version: "0.8.10",
       },
       {
         version: "0.8.0",
+      },
+      {
+        version: "0.8.17",
+        settings: {
+          optimizer: {
+            enabled: true,
+            runs: 1000,
+          },
+        },
+      },
+      {
+        version: "0.8.11",
+        settings: {
+          optimizer: {
+            enabled: true,
+            runs: 1000,
+          },
+        },
+      },
+      {
+        version: "0.5.16",
+        settings: {
+          optimizer: {
+            enabled: true,
+            runs: 1000,
+          },
+        },
+      },
+      {
+        version: "0.6.6",
+        settings: {
+          optimizer: {
+            enabled: true,
+            runs: 1000,
+          },
+        },
       },
     ],
     settings: {
@@ -93,7 +139,7 @@ const config: HardhatUserConfig = {
       // https://hardhat.org/hardhat-network/#solidity-optimizer-support
       optimizer: {
         enabled: true,
-        runs: 800,
+        runs: 10,
       },
     },
   },
@@ -108,12 +154,15 @@ const config: HardhatUserConfig = {
     strict: false,
   },
   mocha: {
-    timeout: 60000,
+    timeout: 600000,
   },
   etherscan: {
     // Your API key for Etherscan
     // Obtain one at https://etherscan.io/
-    apiKey: process.env.ETHERSCAN_API_KEY,
+    apiKey: {
+      polygonMumbai: process.env.POLYGONSCAN_API_KEY,
+      polygon: process.env.POLYGONSCAN_API_KEY,
+    },
   },
 };
 

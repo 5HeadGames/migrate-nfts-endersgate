@@ -1,0 +1,99 @@
+{
+  "name": "Botniq",
+  "type": "ERC1155",
+  "description": "[Beast | Tank] \"Frontliner\" Passive: While on the field, all attacks are directed to Botniq.",
+  "image": "QmW3rEF8wx3kvb1dcHwSUo9CoCkCJ5dCA5mVmYUELgbCUf",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 90
+    },
+    "name": {
+      "name": "name",
+      "value": "Botniq"
+    },
+    "element": {
+      "name": "element",
+      "value": "Venom"
+    },
+    "role": {
+      "name": "role",
+      "value": "Tank"
+    },
+    "race": {
+      "name": "race",
+      "value": "Beast"
+    },
+    "attack": {
+      "name": "attack",
+      "value": 90
+    },
+    "hp": {
+      "name": "hp",
+      "value": 70
+    },
+    "isGuardian": {
+      "name": "isGuardian",
+      "value": true
+    },
+    "gold": {
+      "name": "gold",
+      "value": 90
+    },
+    "description": {
+      "name": "description",
+      "value": "[Beast | Tank] \"Frontliner\" Passive: While on the field, all attacks are directed to Botniq."
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmW3rEF8wx3kvb1dcHwSUo9CoCkCJ5dCA5mVmYUELgbCUf"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 90
+    },
+    {
+      "trait_type": "name",
+      "value": "Botniq"
+    },
+    {
+      "trait_type": "element",
+      "value": "Venom"
+    },
+    {
+      "trait_type": "role",
+      "value": "Tank"
+    },
+    {
+      "trait_type": "race",
+      "value": "Beast"
+    },
+    {
+      "trait_type": "attack",
+      "value": 90
+    },
+    {
+      "trait_type": "hp",
+      "value": 70
+    },
+    {
+      "trait_type": "isGuardian",
+      "value": true
+    },
+    {
+      "trait_type": "gold",
+      "value": 90
+    },
+    {
+      "trait_type": "description",
+      "value": "[Beast | Tank] \"Frontliner\" Passive: While on the field, all attacks are directed to Botniq."
+    },
+    {
+      "trait_type": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmW3rEF8wx3kvb1dcHwSUo9CoCkCJ5dCA5mVmYUELgbCUf"
+    }
+  ]
+}

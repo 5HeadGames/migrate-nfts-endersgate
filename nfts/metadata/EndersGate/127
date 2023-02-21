@@ -1,0 +1,99 @@
+{
+  "name": "Undead Fighter",
+  "type": "ERC1155",
+  "description": "[Undead | Fighter] \"Venom Retaliate\" Passive: When Undead Fighter is attacked in the Battle phase, counter attack inflicting 5 Venom DMG. ",
+  "image": "QmdmVeaq59oY49i9kDpqYR5L2Bd4JCd5VRt5rGwZvv9x1V",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 127
+    },
+    "name": {
+      "name": "name",
+      "value": "Undead Fighter"
+    },
+    "element": {
+      "name": "element",
+      "value": "Venom"
+    },
+    "role": {
+      "name": "role",
+      "value": "Fighter"
+    },
+    "race": {
+      "name": "race",
+      "value": "Undead"
+    },
+    "attack": {
+      "name": "attack",
+      "value": 95
+    },
+    "hp": {
+      "name": "hp",
+      "value": 80
+    },
+    "isGuardian": {
+      "name": "isGuardian",
+      "value": true
+    },
+    "gold": {
+      "name": "gold",
+      "value": 95
+    },
+    "description": {
+      "name": "description",
+      "value": "[Undead | Fighter] \"Venom Retaliate\" Passive: When Undead Fighter is attacked in the Battle phase, counter attack inflicting 5 Venom DMG. "
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmdmVeaq59oY49i9kDpqYR5L2Bd4JCd5VRt5rGwZvv9x1V"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 127
+    },
+    {
+      "trait_type": "name",
+      "value": "Undead Fighter"
+    },
+    {
+      "trait_type": "element",
+      "value": "Venom"
+    },
+    {
+      "trait_type": "role",
+      "value": "Fighter"
+    },
+    {
+      "trait_type": "race",
+      "value": "Undead"
+    },
+    {
+      "trait_type": "attack",
+      "value": 95
+    },
+    {
+      "trait_type": "hp",
+      "value": 80
+    },
+    {
+      "trait_type": "isGuardian",
+      "value": true
+    },
+    {
+      "trait_type": "gold",
+      "value": 95
+    },
+    {
+      "trait_type": "description",
+      "value": "[Undead | Fighter] \"Venom Retaliate\" Passive: When Undead Fighter is attacked in the Battle phase, counter attack inflicting 5 Venom DMG. "
+    },
+    {
+      "trait_type": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmdmVeaq59oY49i9kDpqYR5L2Bd4JCd5VRt5rGwZvv9x1V"
+    }
+  ]
+}

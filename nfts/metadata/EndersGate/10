@@ -1,0 +1,67 @@
+{
+  "name": "Mutual Destructive Rain",
+  "type": "ERC1155",
+  "description": "Deal 25 water damage to all fire type Guardians on both sides of the field.",
+  "image": "Qmf4WGztJDdZCujLFvhqNJqZpf14jwxzTVEExSnH4AvuGc",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 10
+    },
+    "name": {
+      "name": "name",
+      "value": "Mutual Destructive Rain"
+    },
+    "type": {
+      "name": "type",
+      "value": "Normal Action"
+    },
+    "ADOTurn": {
+      "name": "ADOTurn",
+      "value": "NO"
+    },
+    "rarity": {
+      "name": "rarity",
+      "value": "Uncommon"
+    },
+    "description": {
+      "name": "description",
+      "value": "Deal 25 water damage to all fire type Guardians on both sides of the field."
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/Qmf4WGztJDdZCujLFvhqNJqZpf14jwxzTVEExSnH4AvuGc"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 10
+    },
+    {
+      "trait_type": "name",
+      "value": "Mutual Destructive Rain"
+    },
+    {
+      "trait_type": "type",
+      "value": "Normal Action"
+    },
+    {
+      "trait_type": "ADOTurn",
+      "value": "NO"
+    },
+    {
+      "trait_type": "rarity",
+      "value": "Uncommon"
+    },
+    {
+      "trait_type": "description",
+      "value": "Deal 25 water damage to all fire type Guardians on both sides of the field."
+    },
+    {
+      "trait_type": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/Qmf4WGztJDdZCujLFvhqNJqZpf14jwxzTVEExSnH4AvuGc"
+    }
+  ]
+}

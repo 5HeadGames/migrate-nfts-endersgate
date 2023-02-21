@@ -1,0 +1,67 @@
+{
+  "name": "Gaia's Touch",
+  "type": "ERC1155",
+  "description": "Heal one earth Guardian on your side of the field for 50 health. On successful heal, increase their Attack by 25.",
+  "image": "QmTcgf5anWoJgpcrP8ssQkJj5pounvRt7894Zj5tFk56Qf",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 14
+    },
+    "name": {
+      "name": "name",
+      "value": "Gaia's Touch"
+    },
+    "type": {
+      "name": "type",
+      "value": "Buff"
+    },
+    "ADOTurn": {
+      "name": "ADOTurn",
+      "value": "NO"
+    },
+    "rarity": {
+      "name": "rarity",
+      "value": "Rare"
+    },
+    "description": {
+      "name": "description",
+      "value": "Heal one earth Guardian on your side of the field for 50 health. On successful heal, increase their Attack by 25."
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmTcgf5anWoJgpcrP8ssQkJj5pounvRt7894Zj5tFk56Qf"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 14
+    },
+    {
+      "trait_type": "name",
+      "value": "Gaia's Touch"
+    },
+    {
+      "trait_type": "type",
+      "value": "Buff"
+    },
+    {
+      "trait_type": "ADOTurn",
+      "value": "NO"
+    },
+    {
+      "trait_type": "rarity",
+      "value": "Rare"
+    },
+    {
+      "trait_type": "description",
+      "value": "Heal one earth Guardian on your side of the field for 50 health. On successful heal, increase their Attack by 25."
+    },
+    {
+      "trait_type": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmTcgf5anWoJgpcrP8ssQkJj5pounvRt7894Zj5tFk56Qf"
+    }
+  ]
+}

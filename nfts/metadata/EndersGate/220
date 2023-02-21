@@ -1,0 +1,99 @@
+{
+  "name": "Xozog",
+  "type": "ERC1155",
+  "description": "[Undead | Mage] \"Erase\" Once per turn, execute 1 Enemy Guardian  under 20% Health.",
+  "image": "QmdnbmFi6jqKTn5dZVLWibL3Rspz2F5gMVNHpUK195JRLQ",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 220
+    },
+    "name": {
+      "name": "name",
+      "value": "Xozog"
+    },
+    "element": {
+      "name": "element",
+      "value": "Mystic"
+    },
+    "role": {
+      "name": "role",
+      "value": "Mage"
+    },
+    "race": {
+      "name": "race",
+      "value": "Undead"
+    },
+    "attack": {
+      "name": "attack",
+      "value": 250
+    },
+    "hp": {
+      "name": "hp",
+      "value": 350
+    },
+    "isGuardian": {
+      "name": "isGuardian",
+      "value": true
+    },
+    "gold": {
+      "name": "gold",
+      "value": 400
+    },
+    "description": {
+      "name": "description",
+      "value": "[Undead | Mage] \"Erase\" Once per turn, execute 1 Enemy Guardian  under 20% Health."
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmdnbmFi6jqKTn5dZVLWibL3Rspz2F5gMVNHpUK195JRLQ"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 220
+    },
+    {
+      "trait_type": "name",
+      "value": "Xozog"
+    },
+    {
+      "trait_type": "element",
+      "value": "Mystic"
+    },
+    {
+      "trait_type": "role",
+      "value": "Mage"
+    },
+    {
+      "trait_type": "race",
+      "value": "Undead"
+    },
+    {
+      "trait_type": "attack",
+      "value": 250
+    },
+    {
+      "trait_type": "hp",
+      "value": 350
+    },
+    {
+      "trait_type": "isGuardian",
+      "value": true
+    },
+    {
+      "trait_type": "gold",
+      "value": 400
+    },
+    {
+      "trait_type": "description",
+      "value": "[Undead | Mage] \"Erase\" Once per turn, execute 1 Enemy Guardian  under 20% Health."
+    },
+    {
+      "trait_type": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmdnbmFi6jqKTn5dZVLWibL3Rspz2F5gMVNHpUK195JRLQ"
+    }
+  ]
+}

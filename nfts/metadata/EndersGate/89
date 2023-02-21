@@ -1,0 +1,99 @@
+{
+  "name": "Blaze Bane",
+  "type": "ERC1155",
+  "description": "[Beast | Assassin] \"Relentless Pursuit\" Passive: Upon death, blaze bane returns to the battle field at the start of your opponents battle phase with 50% HP & gold cost to 0. This effect occurs once. ",
+  "image": "QmNqv4T73KGvDCGUoUo5LXJbmt2cMWYg4TJAQ6W5MGEdHN",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 89
+    },
+    "name": {
+      "name": "name",
+      "value": "Blaze Bane"
+    },
+    "element": {
+      "name": "element",
+      "value": "Fire"
+    },
+    "role": {
+      "name": "role",
+      "value": "Assassin"
+    },
+    "race": {
+      "name": "race",
+      "value": "Beast"
+    },
+    "attack": {
+      "name": "attack",
+      "value": 80
+    },
+    "hp": {
+      "name": "hp",
+      "value": 40
+    },
+    "isGuardian": {
+      "name": "isGuardian",
+      "value": true
+    },
+    "gold": {
+      "name": "gold",
+      "value": 70
+    },
+    "description": {
+      "name": "description",
+      "value": "[Beast | Assassin] \"Relentless Pursuit\" Passive: Upon death, blaze bane returns to the battle field at the start of your opponents battle phase with 50% HP & gold cost to 0. This effect occurs once. "
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmNqv4T73KGvDCGUoUo5LXJbmt2cMWYg4TJAQ6W5MGEdHN"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 89
+    },
+    {
+      "trait_type": "name",
+      "value": "Blaze Bane"
+    },
+    {
+      "trait_type": "element",
+      "value": "Fire"
+    },
+    {
+      "trait_type": "role",
+      "value": "Assassin"
+    },
+    {
+      "trait_type": "race",
+      "value": "Beast"
+    },
+    {
+      "trait_type": "attack",
+      "value": 80
+    },
+    {
+      "trait_type": "hp",
+      "value": 40
+    },
+    {
+      "trait_type": "isGuardian",
+      "value": true
+    },
+    {
+      "trait_type": "gold",
+      "value": 70
+    },
+    {
+      "trait_type": "description",
+      "value": "[Beast | Assassin] \"Relentless Pursuit\" Passive: Upon death, blaze bane returns to the battle field at the start of your opponents battle phase with 50% HP & gold cost to 0. This effect occurs once. "
+    },
+    {
+      "trait_type": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmNqv4T73KGvDCGUoUo5LXJbmt2cMWYg4TJAQ6W5MGEdHN"
+    }
+  ]
+}

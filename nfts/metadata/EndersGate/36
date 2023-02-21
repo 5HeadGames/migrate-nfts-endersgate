@@ -1,0 +1,67 @@
+{
+  "name": "Dimensional Tesseract",
+  "type": "ERC1155",
+  "description": "Pay 600 Gold to Activate one of the two effects: \n\n● Both players send 10 cards from the top of their decks to the grave yard. \n● Both players send all Guardians on the field to the Grave yard",
+  "image": "QmRX8d15Db4d9qWoJeUBYDpqRAyzuNoZSwWxzvs7PbH22C",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 36
+    },
+    "name": {
+      "name": "name",
+      "value": "Dimensional Tesseract"
+    },
+    "type": {
+      "name": "type",
+      "value": "Quick Play"
+    },
+    "ADOTurn": {
+      "name": "ADOTurn",
+      "value": "YES"
+    },
+    "rarity": {
+      "name": "rarity",
+      "value": "Ultra Rare"
+    },
+    "description": {
+      "name": "description",
+      "value": "Pay 600 Gold to Activate one of the two effects: \n\n● Both players send 10 cards from the top of their decks to the grave yard. \n● Both players send all Guardians on the field to the Grave yard"
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmRX8d15Db4d9qWoJeUBYDpqRAyzuNoZSwWxzvs7PbH22C"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 36
+    },
+    {
+      "trait_type": "name",
+      "value": "Dimensional Tesseract"
+    },
+    {
+      "trait_type": "type",
+      "value": "Quick Play"
+    },
+    {
+      "trait_type": "ADOTurn",
+      "value": "YES"
+    },
+    {
+      "trait_type": "rarity",
+      "value": "Ultra Rare"
+    },
+    {
+      "trait_type": "description",
+      "value": "Pay 600 Gold to Activate one of the two effects: \n\n● Both players send 10 cards from the top of their decks to the grave yard. \n● Both players send all Guardians on the field to the Grave yard"
+    },
+    {
+      "trait_type": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmRX8d15Db4d9qWoJeUBYDpqRAyzuNoZSwWxzvs7PbH22C"
+    }
+  ]
+}

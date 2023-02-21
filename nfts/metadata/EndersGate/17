@@ -1,0 +1,67 @@
+{
+  "name": "Poison Flask",
+  "type": "ERC1155",
+  "description": "Target one Guardian on your opponent's side of the field; deal 10 poison damage for 3 turns.",
+  "image": "QmTq8HBJ4R1TBMQK53qpQBqcktXC7EfXRgjP4K5eNuWtL1",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 17
+    },
+    "name": {
+      "name": "name",
+      "value": "Poison Flask"
+    },
+    "type": {
+      "name": "type",
+      "value": "Normal Action"
+    },
+    "ADOTurn": {
+      "name": "ADOTurn",
+      "value": "NO"
+    },
+    "rarity": {
+      "name": "rarity",
+      "value": "Unommon"
+    },
+    "description": {
+      "name": "description",
+      "value": "Target one Guardian on your opponent's side of the field; deal 10 poison damage for 3 turns."
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmTq8HBJ4R1TBMQK53qpQBqcktXC7EfXRgjP4K5eNuWtL1"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 17
+    },
+    {
+      "trait_type": "name",
+      "value": "Poison Flask"
+    },
+    {
+      "trait_type": "type",
+      "value": "Normal Action"
+    },
+    {
+      "trait_type": "ADOTurn",
+      "value": "NO"
+    },
+    {
+      "trait_type": "rarity",
+      "value": "Unommon"
+    },
+    {
+      "trait_type": "description",
+      "value": "Target one Guardian on your opponent's side of the field; deal 10 poison damage for 3 turns."
+    },
+    {
+      "trait_type": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmTq8HBJ4R1TBMQK53qpQBqcktXC7EfXRgjP4K5eNuWtL1"
+    }
+  ]
+}

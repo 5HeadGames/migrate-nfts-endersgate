@@ -1,0 +1,99 @@
+{
+  "name": "Thalias",
+  "type": "ERC1155",
+  "description": "[Sentinel | Mage] \"Dimensional Bypass\" Activate: During your MP1, you can attack your opponents LP directly for 50% of Thalias current ATK. If used, she cannot attack during your Battle phase this turn. ",
+  "image": "Qmeyedtcjr6a4W1odHW9N6NHqXq6zk29yvDCKyPXTGFDbL",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 225
+    },
+    "name": {
+      "name": "name",
+      "value": "Thalias"
+    },
+    "element": {
+      "name": "element",
+      "value": "Void"
+    },
+    "role": {
+      "name": "role",
+      "value": "Mage"
+    },
+    "race": {
+      "name": "race",
+      "value": "Sentinel"
+    },
+    "attack": {
+      "name": "attack",
+      "value": 245
+    },
+    "hp": {
+      "name": "hp",
+      "value": 260
+    },
+    "isGuardian": {
+      "name": "isGuardian",
+      "value": true
+    },
+    "gold": {
+      "name": "gold",
+      "value": 450
+    },
+    "description": {
+      "name": "description",
+      "value": "[Sentinel | Mage] \"Dimensional Bypass\" Activate: During your MP1, you can attack your opponents LP directly for 50% of Thalias current ATK. If used, she cannot attack during your Battle phase this turn. "
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/Qmeyedtcjr6a4W1odHW9N6NHqXq6zk29yvDCKyPXTGFDbL"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 225
+    },
+    {
+      "trait_type": "name",
+      "value": "Thalias"
+    },
+    {
+      "trait_type": "element",
+      "value": "Void"
+    },
+    {
+      "trait_type": "role",
+      "value": "Mage"
+    },
+    {
+      "trait_type": "race",
+      "value": "Sentinel"
+    },
+    {
+      "trait_type": "attack",
+      "value": 245
+    },
+    {
+      "trait_type": "hp",
+      "value": 260
+    },
+    {
+      "trait_type": "isGuardian",
+      "value": true
+    },
+    {
+      "trait_type": "gold",
+      "value": 450
+    },
+    {
+      "trait_type": "description",
+      "value": "[Sentinel | Mage] \"Dimensional Bypass\" Activate: During your MP1, you can attack your opponents LP directly for 50% of Thalias current ATK. If used, she cannot attack during your Battle phase this turn. "
+    },
+    {
+      "trait_type": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/Qmeyedtcjr6a4W1odHW9N6NHqXq6zk29yvDCKyPXTGFDbL"
+    }
+  ]
+}

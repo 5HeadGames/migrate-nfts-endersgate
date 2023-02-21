@@ -1,0 +1,99 @@
+{
+  "name": "Eross",
+  "type": "ERC1155",
+  "description": "[Beast | Support] Passive: +10 HP to all Ally Guardians. Activate: Execute 1 Enemy champ under 10% health. ",
+  "image": "QmYGMNKPMFyKuHx6yM37g4c1EkNE3apfBLKs873pYrqdeN",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 230
+    },
+    "name": {
+      "name": "name",
+      "value": "Eross"
+    },
+    "element": {
+      "name": "element",
+      "value": "Earth"
+    },
+    "role": {
+      "name": "role",
+      "value": "Support"
+    },
+    "race": {
+      "name": "race",
+      "value": "Beast"
+    },
+    "attack": {
+      "name": "attack",
+      "value": 200
+    },
+    "hp": {
+      "name": "hp",
+      "value": 500
+    },
+    "isGuardian": {
+      "name": "isGuardian",
+      "value": true
+    },
+    "gold": {
+      "name": "gold",
+      "value": 600
+    },
+    "description": {
+      "name": "description",
+      "value": "[Beast | Support] Passive: +10 HP to all Ally Guardians. Activate: Execute 1 Enemy champ under 10% health. "
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmYGMNKPMFyKuHx6yM37g4c1EkNE3apfBLKs873pYrqdeN"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 230
+    },
+    {
+      "trait_type": "name",
+      "value": "Eross"
+    },
+    {
+      "trait_type": "element",
+      "value": "Earth"
+    },
+    {
+      "trait_type": "role",
+      "value": "Support"
+    },
+    {
+      "trait_type": "race",
+      "value": "Beast"
+    },
+    {
+      "trait_type": "attack",
+      "value": 200
+    },
+    {
+      "trait_type": "hp",
+      "value": 500
+    },
+    {
+      "trait_type": "isGuardian",
+      "value": true
+    },
+    {
+      "trait_type": "gold",
+      "value": 600
+    },
+    {
+      "trait_type": "description",
+      "value": "[Beast | Support] Passive: +10 HP to all Ally Guardians. Activate: Execute 1 Enemy champ under 10% health. "
+    },
+    {
+      "trait_type": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmYGMNKPMFyKuHx6yM37g4c1EkNE3apfBLKs873pYrqdeN"
+    }
+  ]
+}

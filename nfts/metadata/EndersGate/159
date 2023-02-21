@@ -1,0 +1,99 @@
+{
+  "name": "Vrogut",
+  "type": "ERC1155",
+  "description": "[Ogre | Tank] \"Ogre Frontline\" Passive: All attacks are directed to Vrogut. Additionally, all Ogre type Guardians gain +10 to ATK & HP.",
+  "image": "QmRj6yzRCd6RnKzQkXBWnYXbDvt9m6hXaG7upSw5bUheAr",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 159
+    },
+    "name": {
+      "name": "name",
+      "value": "Vrogut"
+    },
+    "element": {
+      "name": "element",
+      "value": "Earth"
+    },
+    "role": {
+      "name": "role",
+      "value": "Tank"
+    },
+    "race": {
+      "name": "race",
+      "value": "Ogre"
+    },
+    "attack": {
+      "name": "attack",
+      "value": 45
+    },
+    "hp": {
+      "name": "hp",
+      "value": 150
+    },
+    "isGuardian": {
+      "name": "isGuardian",
+      "value": true
+    },
+    "gold": {
+      "name": "gold",
+      "value": 150
+    },
+    "description": {
+      "name": "description",
+      "value": "[Ogre | Tank] \"Ogre Frontline\" Passive: All attacks are directed to Vrogut. Additionally, all Ogre type Guardians gain +10 to ATK & HP."
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmRj6yzRCd6RnKzQkXBWnYXbDvt9m6hXaG7upSw5bUheAr"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 159
+    },
+    {
+      "trait_type": "name",
+      "value": "Vrogut"
+    },
+    {
+      "trait_type": "element",
+      "value": "Earth"
+    },
+    {
+      "trait_type": "role",
+      "value": "Tank"
+    },
+    {
+      "trait_type": "race",
+      "value": "Ogre"
+    },
+    {
+      "trait_type": "attack",
+      "value": 45
+    },
+    {
+      "trait_type": "hp",
+      "value": 150
+    },
+    {
+      "trait_type": "isGuardian",
+      "value": true
+    },
+    {
+      "trait_type": "gold",
+      "value": 150
+    },
+    {
+      "trait_type": "description",
+      "value": "[Ogre | Tank] \"Ogre Frontline\" Passive: All attacks are directed to Vrogut. Additionally, all Ogre type Guardians gain +10 to ATK & HP."
+    },
+    {
+      "trait_type": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmRj6yzRCd6RnKzQkXBWnYXbDvt9m6hXaG7upSw5bUheAr"
+    }
+  ]
+}

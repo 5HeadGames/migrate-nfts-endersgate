@@ -1,0 +1,99 @@
+{
+  "name": "Sampson",
+  "type": "ERC1155",
+  "description": "[Human | Tank] \"Earth Bend\" Active: During your Main Phase 1, Sampson gives him self an Earth shield worth 30% of his current HP. Uses: 1",
+  "image": "QmQGGQoTPBFwZKbGHHipQMLA5mxQazpPzTQuZ6i93HyrFp",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 149
+    },
+    "name": {
+      "name": "name",
+      "value": "Sampson"
+    },
+    "element": {
+      "name": "element",
+      "value": "Earth"
+    },
+    "role": {
+      "name": "role",
+      "value": "Tank"
+    },
+    "race": {
+      "name": "race",
+      "value": "Human"
+    },
+    "attack": {
+      "name": "attack",
+      "value": 80
+    },
+    "hp": {
+      "name": "hp",
+      "value": 150
+    },
+    "isGuardian": {
+      "name": "isGuardian",
+      "value": true
+    },
+    "gold": {
+      "name": "gold",
+      "value": 150
+    },
+    "description": {
+      "name": "description",
+      "value": "[Human | Tank] \"Earth Bend\" Active: During your Main Phase 1, Sampson gives him self an Earth shield worth 30% of his current HP. Uses: 1"
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmQGGQoTPBFwZKbGHHipQMLA5mxQazpPzTQuZ6i93HyrFp"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 149
+    },
+    {
+      "trait_type": "name",
+      "value": "Sampson"
+    },
+    {
+      "trait_type": "element",
+      "value": "Earth"
+    },
+    {
+      "trait_type": "role",
+      "value": "Tank"
+    },
+    {
+      "trait_type": "race",
+      "value": "Human"
+    },
+    {
+      "trait_type": "attack",
+      "value": 80
+    },
+    {
+      "trait_type": "hp",
+      "value": 150
+    },
+    {
+      "trait_type": "isGuardian",
+      "value": true
+    },
+    {
+      "trait_type": "gold",
+      "value": 150
+    },
+    {
+      "trait_type": "description",
+      "value": "[Human | Tank] \"Earth Bend\" Active: During your Main Phase 1, Sampson gives him self an Earth shield worth 30% of his current HP. Uses: 1"
+    },
+    {
+      "trait_type": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmQGGQoTPBFwZKbGHHipQMLA5mxQazpPzTQuZ6i93HyrFp"
+    }
+  ]
+}

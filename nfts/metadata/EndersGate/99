@@ -1,0 +1,99 @@
+{
+  "name": "Orneth",
+  "type": "ERC1155",
+  "description": "[Zombie | Fighter] \"Undying Courage\" Passive: Upon death, Orneth has a 25% chance of returning to the field from the graveyard. Return count: 2",
+  "image": "QmZGGdzgetcZSK2TShXG9xGXYDA67s8NCQpQ3URJMHA8Jk",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 99
+    },
+    "name": {
+      "name": "name",
+      "value": "Orneth"
+    },
+    "element": {
+      "name": "element",
+      "value": "Void"
+    },
+    "role": {
+      "name": "role",
+      "value": "Fighter"
+    },
+    "race": {
+      "name": "race",
+      "value": "Zombie"
+    },
+    "attack": {
+      "name": "attack",
+      "value": 70
+    },
+    "hp": {
+      "name": "hp",
+      "value": 70
+    },
+    "isGuardian": {
+      "name": "isGuardian",
+      "value": true
+    },
+    "gold": {
+      "name": "gold",
+      "value": 70
+    },
+    "description": {
+      "name": "description",
+      "value": "[Zombie | Fighter] \"Undying Courage\" Passive: Upon death, Orneth has a 25% chance of returning to the field from the graveyard. Return count: 2"
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmZGGdzgetcZSK2TShXG9xGXYDA67s8NCQpQ3URJMHA8Jk"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 99
+    },
+    {
+      "trait_type": "name",
+      "value": "Orneth"
+    },
+    {
+      "trait_type": "element",
+      "value": "Void"
+    },
+    {
+      "trait_type": "role",
+      "value": "Fighter"
+    },
+    {
+      "trait_type": "race",
+      "value": "Zombie"
+    },
+    {
+      "trait_type": "attack",
+      "value": 70
+    },
+    {
+      "trait_type": "hp",
+      "value": 70
+    },
+    {
+      "trait_type": "isGuardian",
+      "value": true
+    },
+    {
+      "trait_type": "gold",
+      "value": 70
+    },
+    {
+      "trait_type": "description",
+      "value": "[Zombie | Fighter] \"Undying Courage\" Passive: Upon death, Orneth has a 25% chance of returning to the field from the graveyard. Return count: 2"
+    },
+    {
+      "trait_type": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmZGGdzgetcZSK2TShXG9xGXYDA67s8NCQpQ3URJMHA8Jk"
+    }
+  ]
+}

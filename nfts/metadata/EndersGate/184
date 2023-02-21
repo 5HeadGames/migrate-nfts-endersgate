@@ -1,0 +1,99 @@
+{
+  "name": "Liquana",
+  "type": "ERC1155",
+  "description": "[Elemental | Healer] \"Aqua Soul\"  Once every 2 turns, heal one ally Guardian for 20 HP; healed Guardian's gain +10 crit chance & damage for 1 turn.\n",
+  "image": "Qme63kwZW4MVCw5BCydXwKtaxCkFEWMSoQULaaSCmzk4Wp",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 184
+    },
+    "name": {
+      "name": "name",
+      "value": "Liquana"
+    },
+    "element": {
+      "name": "element",
+      "value": "Water"
+    },
+    "role": {
+      "name": "role",
+      "value": "Healer"
+    },
+    "race": {
+      "name": "race",
+      "value": "Elemental"
+    },
+    "attack": {
+      "name": "attack",
+      "value": 100
+    },
+    "hp": {
+      "name": "hp",
+      "value": 100
+    },
+    "isGuardian": {
+      "name": "isGuardian",
+      "value": true
+    },
+    "gold": {
+      "name": "gold",
+      "value": 120
+    },
+    "description": {
+      "name": "description",
+      "value": "[Elemental | Healer] \"Aqua Soul\"  Once every 2 turns, heal one ally Guardian for 20 HP; healed Guardian's gain +10 crit chance & damage for 1 turn.\n"
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/Qme63kwZW4MVCw5BCydXwKtaxCkFEWMSoQULaaSCmzk4Wp"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 184
+    },
+    {
+      "trait_type": "name",
+      "value": "Liquana"
+    },
+    {
+      "trait_type": "element",
+      "value": "Water"
+    },
+    {
+      "trait_type": "role",
+      "value": "Healer"
+    },
+    {
+      "trait_type": "race",
+      "value": "Elemental"
+    },
+    {
+      "trait_type": "attack",
+      "value": 100
+    },
+    {
+      "trait_type": "hp",
+      "value": 100
+    },
+    {
+      "trait_type": "isGuardian",
+      "value": true
+    },
+    {
+      "trait_type": "gold",
+      "value": 120
+    },
+    {
+      "trait_type": "description",
+      "value": "[Elemental | Healer] \"Aqua Soul\"  Once every 2 turns, heal one ally Guardian for 20 HP; healed Guardian's gain +10 crit chance & damage for 1 turn.\n"
+    },
+    {
+      "trait_type": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/Qme63kwZW4MVCw5BCydXwKtaxCkFEWMSoQULaaSCmzk4Wp"
+    }
+  ]
+}

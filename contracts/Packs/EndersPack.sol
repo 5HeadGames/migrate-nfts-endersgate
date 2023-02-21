@@ -9,13 +9,20 @@ import { Address } from "@openzeppelin/contracts/utils/Address.sol";
 
 import { LootBoxRandomness } from "./LootBoxRandomness.sol";
 import { BridgeNFTBatch } from "../interfaces/BridgeNFTBatch.sol";
+import "@openzeppelin/contracts/utils/Strings.sol";
 
 /**
  * @title CreatureAccessoryLootBox
  * CreatureAccessoryLootBox - a randomized and openable lootbox of Creature
  * Accessories.
  */
-contract EndersPack is BridgeNFTBatch, ERC1155Supply, ReentrancyGuard, AccessControl {
+contract EndersPack is
+  BridgeNFTBatch,
+  ERC1155Supply,
+  ReentrancyGuard,
+  AccessControl
+{
+  using Strings for uint256;
   using Address for address;
   using LootBoxRandomness for LootBoxRandomness.LootBoxRandomnessState;
 
@@ -33,10 +40,11 @@ contract EndersPack is BridgeNFTBatch, ERC1155Supply, ReentrancyGuard, AccessCon
 
   LootBoxRandomness.LootBoxRandomnessState public state;
 
-  mapping(uint256 => string) public idToIpfs;
+  // mapping(uint256 => string) public idToIpfs;
 
   constructor(string memory _tokenURIPrefix) ERC1155("") {
     baseURI = _tokenURIPrefix;
+    _grantRole(DEFAULT_ADMIN_ROLE, msg.sender);
     _grantRole(PACKS_ROLE, msg.sender);
     _grantRole(SUPPLY_ROLE, msg.sender);
     _grantRole(URI_SETTER_ROLE, msg.sender);
@@ -48,7 +56,13 @@ contract EndersPack is BridgeNFTBatch, ERC1155Supply, ReentrancyGuard, AccessCon
     uint256 _numTypes,
     uint256 _seed
   ) external onlyRole(PACKS_ROLE) {
-    LootBoxRandomness.initState(state, _factoryAddress, _numOptions, _numTypes, _seed);
+    LootBoxRandomness.initState(
+      state,
+      _factoryAddress,
+      _numOptions,
+      _numTypes,
+      _seed
+    );
   }
 
   function setOptionSettings(
@@ -79,30 +93,42 @@ contract EndersPack is BridgeNFTBatch, ERC1155Supply, ReentrancyGuard, AccessCon
   // MAIN FUNCTIONS
   //////
 
-  function unpack(uint256 _optionId, uint256 _amount) external nonReentrant returns (uint256) {
+  function unpack(uint256 _optionId, uint256 _amount)
+    external
+    nonReentrant
+    returns (uint256)
+  {
     address sender = _msgSender();
     require(!sender.isContract(), "Only EOA accounts");
     require(tx.origin == sender, "Only EOA accounts");
     // This will underflow if _msgSender() does not own enough tokens.
     _burn(sender, _optionId, _amount);
     // Mint nfts contained by LootBox
-    return LootBoxRandomness._mint(state, _optionId, sender, _amount, "", address(this));
+    return
+      LootBoxRandomness._mint(
+        state,
+        _optionId,
+        sender,
+        _amount,
+        "",
+        address(this)
+      );
   }
 
   function mint(
     address _to,
     uint256 _optionId,
-    bytes memory _data
+    bytes calldata _data
   ) external onlyRole(SUPPLY_ROLE) {
-    require(_optionId < state.numOptions, "EndersPack: Invalid Option");
+    require(_optionId < state.numOptions);
     _mint(_to, _optionId, 1, _data);
   }
 
   function mintBatch(
     address to,
-    uint256[] memory ids,
-    uint256[] memory amounts,
-    bytes memory
+    uint256[] calldata ids,
+    uint256[] calldata amounts,
+    bytes calldata
   ) external onlyRole(SUPPLY_ROLE) {
     _mintBatch(to, ids, amounts, "");
   }
@@ -120,22 +146,25 @@ contract EndersPack is BridgeNFTBatch, ERC1155Supply, ReentrancyGuard, AccessCon
   }
 
   function uri(uint256 id) public view override returns (string memory) {
-    string memory ipfsHash = idToIpfs[id];
-    return bytes(baseURI).length > 0 ? string(abi.encodePacked(baseURI, ipfsHash)) : "";
+    // string memory ipfsHash = idToIpfs[id];
+    return
+      bytes(baseURI).length > 0
+        ? string(abi.encodePacked(baseURI, id.toString()))
+        : "";
   }
 
   function setURI(string memory newuri) external onlyRole(URI_SETTER_ROLE) {
     baseURI = newuri;
   }
 
-  function setIpfsHashBatch(uint256[] memory ids, string[] memory hashes)
-    external
-    onlyRole(URI_SETTER_ROLE)
-  {
-    for (uint256 i = 0; i < ids.length; i++) {
-      if (bytes(hashes[i]).length > 0) idToIpfs[ids[i]] = hashes[i];
-    }
-  }
+  // function setIpfsHashBatch(uint256[] memory ids, string[] memory hashes)
+  //   external
+  //   onlyRole(URI_SETTER_ROLE)
+  // {
+  //   for (uint256 i = 0; i < ids.length; i++) {
+  //     if (bytes(hashes[i]).length > 0) idToIpfs[ids[i]] = hashes[i];
+  //   }
+  // }
 
   function supportsInterface(bytes4 interfaceId)
     public
@@ -154,7 +183,10 @@ contract EndersPack is BridgeNFTBatch, ERC1155Supply, ReentrancyGuard, AccessCon
     uint256 value,
     bytes calldata data
   ) external returns (bytes4) {
-    return bytes4(keccak256("onERC1155Received(address,address,uint256,uint256,bytes)"));
+    return
+      bytes4(
+        keccak256("onERC1155Received(address,address,uint256,uint256,bytes)")
+      );
   }
 
   function onERC1155BatchReceived(
@@ -164,6 +196,11 @@ contract EndersPack is BridgeNFTBatch, ERC1155Supply, ReentrancyGuard, AccessCon
     uint256[] calldata values,
     bytes calldata data
   ) external returns (bytes4) {
-    return bytes4(keccak256("onERC1155BatchReceived(address,address,uint256[],uint256[],bytes)"));
+    return
+      bytes4(
+        keccak256(
+          "onERC1155BatchReceived(address,address,uint256[],uint256[],bytes)"
+        )
+      );
   }
 }

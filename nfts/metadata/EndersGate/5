@@ -1,0 +1,67 @@
+{
+  "name": "E-Axe: Mystic Mode",
+  "type": "ERC1155",
+  "description": "Deal 25 damage to all Guardians on the enermy's side of the field.",
+  "image": "QmU9nVAdTaC4m2mV6aXZtcPEDSX3KfSdZYDMJRwGyqeJGG",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 5
+    },
+    "name": {
+      "name": "name",
+      "value": "E-Axe: Mystic Mode"
+    },
+    "type": {
+      "name": "type",
+      "value": "Normal Action"
+    },
+    "ADOTurn": {
+      "name": "ADOTurn",
+      "value": "NO"
+    },
+    "rarity": {
+      "name": "rarity",
+      "value": "Common"
+    },
+    "description": {
+      "name": "description",
+      "value": "Deal 25 damage to all Guardians on the enermy's side of the field."
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmU9nVAdTaC4m2mV6aXZtcPEDSX3KfSdZYDMJRwGyqeJGG"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 5
+    },
+    {
+      "trait_type": "name",
+      "value": "E-Axe: Mystic Mode"
+    },
+    {
+      "trait_type": "type",
+      "value": "Normal Action"
+    },
+    {
+      "trait_type": "ADOTurn",
+      "value": "NO"
+    },
+    {
+      "trait_type": "rarity",
+      "value": "Common"
+    },
+    {
+      "trait_type": "description",
+      "value": "Deal 25 damage to all Guardians on the enermy's side of the field."
+    },
+    {
+      "trait_type": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmU9nVAdTaC4m2mV6aXZtcPEDSX3KfSdZYDMJRwGyqeJGG"
+    }
+  ]
+}

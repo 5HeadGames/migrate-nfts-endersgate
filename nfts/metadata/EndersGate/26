@@ -1,0 +1,67 @@
+{
+  "name": "Void Walker's Attraction",
+  "type": "ERC1155",
+  "description": "If you control no \"Void\" or \"Monster\" type Guardians; pay 250 Gold and summon 1 Guardian with 200 or less ATK to the field. Only 1 Guardian can be summoned at a time using this card.",
+  "image": "QmPRrGf27UbDgYVb7HzqTFbXmuoDoRvEGaWzERWDCq5EGc",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 26
+    },
+    "name": {
+      "name": "name",
+      "value": "Void Walker's Attraction"
+    },
+    "type": {
+      "name": "type",
+      "value": "Continuous "
+    },
+    "ADOTurn": {
+      "name": "ADOTurn",
+      "value": "NO"
+    },
+    "rarity": {
+      "name": "rarity",
+      "value": "Ultra Rare"
+    },
+    "description": {
+      "name": "description",
+      "value": "If you control no \"Void\" or \"Monster\" type Guardians; pay 250 Gold and summon 1 Guardian with 200 or less ATK to the field. Only 1 Guardian can be summoned at a time using this card."
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmPRrGf27UbDgYVb7HzqTFbXmuoDoRvEGaWzERWDCq5EGc"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 26
+    },
+    {
+      "trait_type": "name",
+      "value": "Void Walker's Attraction"
+    },
+    {
+      "trait_type": "type",
+      "value": "Continuous "
+    },
+    {
+      "trait_type": "ADOTurn",
+      "value": "NO"
+    },
+    {
+      "trait_type": "rarity",
+      "value": "Ultra Rare"
+    },
+    {
+      "trait_type": "description",
+      "value": "If you control no \"Void\" or \"Monster\" type Guardians; pay 250 Gold and summon 1 Guardian with 200 or less ATK to the field. Only 1 Guardian can be summoned at a time using this card."
+    },
+    {
+      "trait_type": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmPRrGf27UbDgYVb7HzqTFbXmuoDoRvEGaWzERWDCq5EGc"
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "name": "Mulios",
+  "type": "ERC1155",
+  "description": "[Sentinel | Fighter] Once during each of your turns, when your opponent activates a Action/Reaction card, Mulios can negate the activation and destroy it.",
+  "image": "QmRzVeTdiPf8PZMEGGHLLh52yDv6AagBC8hLqz53BGHy4P",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 218
+    },
+    "name": {
+      "name": "name",
+      "value": "Mulios"
+    },
+    "element": {
+      "name": "element",
+      "value": "Void"
+    },
+    "role": {
+      "name": "role",
+      "value": "Fighter"
+    },
+    "race": {
+      "name": "race",
+      "value": "Sentinel"
+    },
+    "attack": {
+      "name": "attack",
+      "value": 250
+    },
+    "hp": {
+      "name": "hp",
+      "value": 300
+    },
+    "isGuardian": {
+      "name": "isGuardian",
+      "value": true
+    },
+    "gold": {
+      "name": "gold",
+      "value": 450
+    },
+    "description": {
+      "name": "description",
+      "value": "[Sentinel | Fighter] Once during each of your turns, when your opponent activates a Action/Reaction card, Mulios can negate the activation and destroy it."
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmRzVeTdiPf8PZMEGGHLLh52yDv6AagBC8hLqz53BGHy4P"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 218
+    },
+    {
+      "trait_type": "name",
+      "value": "Mulios"
+    },
+    {
+      "trait_type": "element",
+      "value": "Void"
+    },
+    {
+      "trait_type": "role",
+      "value": "Fighter"
+    },
+    {
+      "trait_type": "race",
+      "value": "Sentinel"
+    },
+    {
+      "trait_type": "attack",
+      "value": 250
+    },
+    {
+      "trait_type": "hp",
+      "value": 300
+    },
+    {
+      "trait_type": "isGuardian",
+      "value": true
+    },
+    {
+      "trait_type": "gold",
+      "value": 450
+    },
+    {
+      "trait_type": "description",
+      "value": "[Sentinel | Fighter] Once during each of your turns, when your opponent activates a Action/Reaction card, Mulios can negate the activation and destroy it."
+    },
+    {
+      "trait_type": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmRzVeTdiPf8PZMEGGHLLh52yDv6AagBC8hLqz53BGHy4P"
+    }
+  ]
+}

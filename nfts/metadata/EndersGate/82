@@ -1,0 +1,67 @@
+{
+  "name": "Tsunami",
+  "type": "ERC1155",
+  "description": "Flip: If your opponent destroys a Water type Guardian on your side of the field, Deal 75 Water damage to all Guardians on their side of the field.",
+  "image": "QmQtYxMh8MDktqHMrAHWHr8PYFxPaQfsEppQynMDwSkPfe",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 82
+    },
+    "name": {
+      "name": "name",
+      "value": "Tsunami"
+    },
+    "type": {
+      "name": "type",
+      "value": "Flip Counter"
+    },
+    "ADOTurn": {
+      "name": "ADOTurn",
+      "value": "YES"
+    },
+    "rarity": {
+      "name": "rarity",
+      "value": "Uncommon"
+    },
+    "description": {
+      "name": "description",
+      "value": "Flip: If your opponent destroys a Water type Guardian on your side of the field, Deal 75 Water damage to all Guardians on their side of the field."
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmQtYxMh8MDktqHMrAHWHr8PYFxPaQfsEppQynMDwSkPfe"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 82
+    },
+    {
+      "trait_type": "name",
+      "value": "Tsunami"
+    },
+    {
+      "trait_type": "type",
+      "value": "Flip Counter"
+    },
+    {
+      "trait_type": "ADOTurn",
+      "value": "YES"
+    },
+    {
+      "trait_type": "rarity",
+      "value": "Uncommon"
+    },
+    {
+      "trait_type": "description",
+      "value": "Flip: If your opponent destroys a Water type Guardian on your side of the field, Deal 75 Water damage to all Guardians on their side of the field."
+    },
+    {
+      "trait_type": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmQtYxMh8MDktqHMrAHWHr8PYFxPaQfsEppQynMDwSkPfe"
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "name": "Kronk",
+  "type": "ERC1155",
+  "description": "[Beast | Support] \"Eross Follower\" Activate: Pay 120 Gold during your MP1; On your 2nd Standby phase, Hire Eross to the field from your deck with 50% HP.\n",
+  "image": "QmNNSAssYkMarz1a2D8GkkEvXVQ2cGkS3brYWni319SdXw",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 158
+    },
+    "name": {
+      "name": "name",
+      "value": "Kronk"
+    },
+    "element": {
+      "name": "element",
+      "value": "Mystic"
+    },
+    "role": {
+      "name": "role",
+      "value": "Support"
+    },
+    "race": {
+      "name": "race",
+      "value": "Beast"
+    },
+    "attack": {
+      "name": "attack",
+      "value": 90
+    },
+    "hp": {
+      "name": "hp",
+      "value": 100
+    },
+    "isGuardian": {
+      "name": "isGuardian",
+      "value": true
+    },
+    "gold": {
+      "name": "gold",
+      "value": 120
+    },
+    "description": {
+      "name": "description",
+      "value": "[Beast | Support] \"Eross Follower\" Activate: Pay 120 Gold during your MP1; On your 2nd Standby phase, Hire Eross to the field from your deck with 50% HP.\n"
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmNNSAssYkMarz1a2D8GkkEvXVQ2cGkS3brYWni319SdXw"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 158
+    },
+    {
+      "trait_type": "name",
+      "value": "Kronk"
+    },
+    {
+      "trait_type": "element",
+      "value": "Mystic"
+    },
+    {
+      "trait_type": "role",
+      "value": "Support"
+    },
+    {
+      "trait_type": "race",
+      "value": "Beast"
+    },
+    {
+      "trait_type": "attack",
+      "value": 90
+    },
+    {
+      "trait_type": "hp",
+      "value": 100
+    },
+    {
+      "trait_type": "isGuardian",
+      "value": true
+    },
+    {
+      "trait_type": "gold",
+      "value": 120
+    },
+    {
+      "trait_type": "description",
+      "value": "[Beast | Support] \"Eross Follower\" Activate: Pay 120 Gold during your MP1; On your 2nd Standby phase, Hire Eross to the field from your deck with 50% HP.\n"
+    },
+    {
+      "trait_type": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmNNSAssYkMarz1a2D8GkkEvXVQ2cGkS3brYWni319SdXw"
+    }
+  ]
+}

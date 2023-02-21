@@ -1,0 +1,67 @@
+{
+  "name": "E-Axe: Venom Mode",
+  "type": "ERC1155",
+  "description": "Deal 10 poison damage once per turn for 3 turns to one selected Guardian on the enemy's side of the field.",
+  "image": "Qmc1rtEUPkNFptr8yKh9HF1V99trT4yqEsLbfB4jRgH6T4",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 6
+    },
+    "name": {
+      "name": "name",
+      "value": "E-Axe: Venom Mode"
+    },
+    "type": {
+      "name": "type",
+      "value": "Normal Action"
+    },
+    "ADOTurn": {
+      "name": "ADOTurn",
+      "value": "NO"
+    },
+    "rarity": {
+      "name": "rarity",
+      "value": "Common"
+    },
+    "description": {
+      "name": "description",
+      "value": "Deal 10 poison damage once per turn for 3 turns to one selected Guardian on the enemy's side of the field."
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/Qmc1rtEUPkNFptr8yKh9HF1V99trT4yqEsLbfB4jRgH6T4"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 6
+    },
+    {
+      "trait_type": "name",
+      "value": "E-Axe: Venom Mode"
+    },
+    {
+      "trait_type": "type",
+      "value": "Normal Action"
+    },
+    {
+      "trait_type": "ADOTurn",
+      "value": "NO"
+    },
+    {
+      "trait_type": "rarity",
+      "value": "Common"
+    },
+    {
+      "trait_type": "description",
+      "value": "Deal 10 poison damage once per turn for 3 turns to one selected Guardian on the enemy's side of the field."
+    },
+    {
+      "trait_type": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/Qmc1rtEUPkNFptr8yKh9HF1V99trT4yqEsLbfB4jRgH6T4"
+    }
+  ]
+}

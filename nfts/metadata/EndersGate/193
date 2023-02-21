@@ -1,0 +1,99 @@
+{
+  "name": "Battle Mallard",
+  "type": "ERC1155",
+  "description": "[Beast | Fighter] Once per turn: You can discard 1 water type Guardian to the GY; Battle Mallard gains 100 attack until the end of your turn.",
+  "image": "QmT7mDkmqgLHo7Y3kgMpZivPZJh2trpUJASqTPLrMAbxZ7",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 193
+    },
+    "name": {
+      "name": "name",
+      "value": "Battle Mallard"
+    },
+    "element": {
+      "name": "element",
+      "value": "Water"
+    },
+    "role": {
+      "name": "role",
+      "value": "Fighter"
+    },
+    "race": {
+      "name": "race",
+      "value": "Beast"
+    },
+    "attack": {
+      "name": "attack",
+      "value": 120
+    },
+    "hp": {
+      "name": "hp",
+      "value": 250
+    },
+    "isGuardian": {
+      "name": "isGuardian",
+      "value": true
+    },
+    "gold": {
+      "name": "gold",
+      "value": 300
+    },
+    "description": {
+      "name": "description",
+      "value": "[Beast | Fighter] Once per turn: You can discard 1 water type Guardian to the GY; Battle Mallard gains 100 attack until the end of your turn."
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmT7mDkmqgLHo7Y3kgMpZivPZJh2trpUJASqTPLrMAbxZ7"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 193
+    },
+    {
+      "trait_type": "name",
+      "value": "Battle Mallard"
+    },
+    {
+      "trait_type": "element",
+      "value": "Water"
+    },
+    {
+      "trait_type": "role",
+      "value": "Fighter"
+    },
+    {
+      "trait_type": "race",
+      "value": "Beast"
+    },
+    {
+      "trait_type": "attack",
+      "value": 120
+    },
+    {
+      "trait_type": "hp",
+      "value": 250
+    },
+    {
+      "trait_type": "isGuardian",
+      "value": true
+    },
+    {
+      "trait_type": "gold",
+      "value": 300
+    },
+    {
+      "trait_type": "description",
+      "value": "[Beast | Fighter] Once per turn: You can discard 1 water type Guardian to the GY; Battle Mallard gains 100 attack until the end of your turn."
+    },
+    {
+      "trait_type": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmT7mDkmqgLHo7Y3kgMpZivPZJh2trpUJASqTPLrMAbxZ7"
+    }
+  ]
+}

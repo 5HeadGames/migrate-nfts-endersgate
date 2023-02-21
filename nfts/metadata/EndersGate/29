@@ -1,0 +1,67 @@
+{
+  "name": "Void Time Dilation",
+  "type": "ERC1155",
+  "description": "Pay 150 gold to activate: Both players discard all cards in their hand to the grave yard then, draw the same amount of cards from their decks.",
+  "image": "QmZzk2S31GfS6SQNHZCTYJFAiyvURsj9JNpVC5wTvbZxxG",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 29
+    },
+    "name": {
+      "name": "name",
+      "value": "Void Time Dilation"
+    },
+    "type": {
+      "name": "type",
+      "value": "Normal Action"
+    },
+    "ADOTurn": {
+      "name": "ADOTurn",
+      "value": "NO"
+    },
+    "rarity": {
+      "name": "rarity",
+      "value": "Ultra Rare"
+    },
+    "description": {
+      "name": "description",
+      "value": "Pay 150 gold to activate: Both players discard all cards in their hand to the grave yard then, draw the same amount of cards from their decks."
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmZzk2S31GfS6SQNHZCTYJFAiyvURsj9JNpVC5wTvbZxxG"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 29
+    },
+    {
+      "trait_type": "name",
+      "value": "Void Time Dilation"
+    },
+    {
+      "trait_type": "type",
+      "value": "Normal Action"
+    },
+    {
+      "trait_type": "ADOTurn",
+      "value": "NO"
+    },
+    {
+      "trait_type": "rarity",
+      "value": "Ultra Rare"
+    },
+    {
+      "trait_type": "description",
+      "value": "Pay 150 gold to activate: Both players discard all cards in their hand to the grave yard then, draw the same amount of cards from their decks."
+    },
+    {
+      "trait_type": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmZzk2S31GfS6SQNHZCTYJFAiyvURsj9JNpVC5wTvbZxxG"
+    }
+  ]
+}

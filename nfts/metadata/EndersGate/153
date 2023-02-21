@@ -1,0 +1,99 @@
+{
+  "name": "Mata Spearman",
+  "type": "ERC1155",
+  "description": "[Squamata | Support] \"Cold Blooded\" Passive: If there are 2 or more \"Cold Blooded\" Guardians on the field, they all gain 25 ATK & HP.",
+  "image": "QmcehxsCNw5UR5VL5sNffi34pxNTbL3jmVzpCit1GGgZXr",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 153
+    },
+    "name": {
+      "name": "name",
+      "value": "Mata Spearman"
+    },
+    "element": {
+      "name": "element",
+      "value": "Earth"
+    },
+    "role": {
+      "name": "role",
+      "value": "Support"
+    },
+    "race": {
+      "name": "race",
+      "value": "Squamata "
+    },
+    "attack": {
+      "name": "attack",
+      "value": 95
+    },
+    "hp": {
+      "name": "hp",
+      "value": 125
+    },
+    "isGuardian": {
+      "name": "isGuardian",
+      "value": true
+    },
+    "gold": {
+      "name": "gold",
+      "value": 125
+    },
+    "description": {
+      "name": "description",
+      "value": "[Squamata | Support] \"Cold Blooded\" Passive: If there are 2 or more \"Cold Blooded\" Guardians on the field, they all gain 25 ATK & HP."
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmcehxsCNw5UR5VL5sNffi34pxNTbL3jmVzpCit1GGgZXr"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 153
+    },
+    {
+      "trait_type": "name",
+      "value": "Mata Spearman"
+    },
+    {
+      "trait_type": "element",
+      "value": "Earth"
+    },
+    {
+      "trait_type": "role",
+      "value": "Support"
+    },
+    {
+      "trait_type": "race",
+      "value": "Squamata "
+    },
+    {
+      "trait_type": "attack",
+      "value": 95
+    },
+    {
+      "trait_type": "hp",
+      "value": 125
+    },
+    {
+      "trait_type": "isGuardian",
+      "value": true
+    },
+    {
+      "trait_type": "gold",
+      "value": 125
+    },
+    {
+      "trait_type": "description",
+      "value": "[Squamata | Support] \"Cold Blooded\" Passive: If there are 2 or more \"Cold Blooded\" Guardians on the field, they all gain 25 ATK & HP."
+    },
+    {
+      "trait_type": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmcehxsCNw5UR5VL5sNffi34pxNTbL3jmVzpCit1GGgZXr"
+    }
+  ]
+}

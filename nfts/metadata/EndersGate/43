@@ -1,0 +1,67 @@
+{
+  "name": "Venom World",
+  "type": "ERC1155",
+  "description": "Acid rain begins to fall causing 5 damage per turn to all non-Venom Type Guardians. All Venom type Guardians gain 10 ATK & HP (Upkeep: 5 gold per turn)",
+  "image": "QmdXT384wdcGYPpF8JdG6vmVBduEtXMQE6LhaMBQpXUTUX",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 43
+    },
+    "name": {
+      "name": "name",
+      "value": "Venom World"
+    },
+    "type": {
+      "name": "type",
+      "value": "Field Card"
+    },
+    "ADOTurn": {
+      "name": "ADOTurn",
+      "value": "NO"
+    },
+    "rarity": {
+      "name": "rarity",
+      "value": "Ultra Rare"
+    },
+    "description": {
+      "name": "description",
+      "value": "Acid rain begins to fall causing 5 damage per turn to all non-Venom Type Guardians. All Venom type Guardians gain 10 ATK & HP (Upkeep: 5 gold per turn)"
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmdXT384wdcGYPpF8JdG6vmVBduEtXMQE6LhaMBQpXUTUX"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 43
+    },
+    {
+      "trait_type": "name",
+      "value": "Venom World"
+    },
+    {
+      "trait_type": "type",
+      "value": "Field Card"
+    },
+    {
+      "trait_type": "ADOTurn",
+      "value": "NO"
+    },
+    {
+      "trait_type": "rarity",
+      "value": "Ultra Rare"
+    },
+    {
+      "trait_type": "description",
+      "value": "Acid rain begins to fall causing 5 damage per turn to all non-Venom Type Guardians. All Venom type Guardians gain 10 ATK & HP (Upkeep: 5 gold per turn)"
+    },
+    {
+      "trait_type": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmdXT384wdcGYPpF8JdG6vmVBduEtXMQE6LhaMBQpXUTUX"
+    }
+  ]
+}
