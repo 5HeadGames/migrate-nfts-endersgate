@@ -53,16 +53,17 @@ const config: HardhatUserConfig = {
     //   accounts: [process.env.PRIVATE_KEY || ""],
     //   gas: 1446592,
     // },
-    // harmony: {
-    //   url: "https://harmony-0-rpc.gateway.pokt.network",
-    //   accounts: [process.env.PRIVATE_KEY || ""],
-    //   timeout: 120000000,
-    // },
-    // harmony_test: {
-    //   url: `https://api.s0.b.hmny.io`,
-    //   accounts: [process.env.PRIVATE_KEY || ""],
-    //   timeout: 120000000,
-    // },
+    harmony: {
+      // url: "https://harmony-0-rpc.gateway.pokt.network",
+      url: "https://harmony-mainnet.chainstacklabs.com/",
+      accounts: [process.env.PRIVATE_KEY || ""],
+      timeout: 120000000,
+    },
+    harmony_test: {
+      url: `https://api.s0.b.hmny.io`,
+      accounts: [process.env.PRIVATE_KEY || ""],
+      timeout: 120000000,
+    },
     matic: {
       url: process.env.POLYGON_PROVIDER,
       accounts: [process.env.PRIVATE_KEY || ""],
@@ -70,6 +71,16 @@ const config: HardhatUserConfig = {
 
     mumbai: {
       url: process.env.MUMBAI_PROVIDER,
+      accounts: [process.env.PRIVATE_KEY || ""],
+    },
+
+    sepolia: {
+      url: process.env.SEPOLIA_PROVIDER,
+      accounts: [process.env.PRIVATE_KEY || ""],
+    },
+
+    ethereum: {
+      url: process.env.ETHEREUM_PROVIDER,
       accounts: [process.env.PRIVATE_KEY || ""],
     },
 
@@ -163,7 +174,7 @@ const config: HardhatUserConfig = {
       polygonMumbai: process.env.POLYGONSCAN_API_KEY,
       polygon: process.env.POLYGONSCAN_API_KEY,
     },
-  },
+  } as any,
 };
 
 export default config;

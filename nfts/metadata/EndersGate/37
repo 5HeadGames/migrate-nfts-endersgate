@@ -2,7 +2,7 @@
   "name": "Hatchling Potential",
   "type": "ERC1155",
   "description": "Pay 25 Gold for 3 turns during your standby phase to successfully Activate: \nA random Guardian from your deck appears on the field in MP1",
-  "image": "QmNYf7LWH4KUCpAhyBz3KppoCksb3yzS7ksjefaDDySMwW",
+  "image": "QmZ83ndoVZJn4fiTzHSYEmoddcjzygtWCJuHGwV1vGME1z",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -31,7 +31,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmNYf7LWH4KUCpAhyBz3KppoCksb3yzS7ksjefaDDySMwW"
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmZ83ndoVZJn4fiTzHSYEmoddcjzygtWCJuHGwV1vGME1z"
     }
   },
   "attributes": [
@@ -61,7 +61,7 @@
     },
     {
       "trait_type": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmNYf7LWH4KUCpAhyBz3KppoCksb3yzS7ksjefaDDySMwW"
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmZ83ndoVZJn4fiTzHSYEmoddcjzygtWCJuHGwV1vGME1z"
     }
   ]
 }

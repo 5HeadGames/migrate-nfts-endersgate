@@ -1,4 +1,3 @@
-import Moralis from "moralis/node";
 import fs from "fs";
 import * as dotenv from "dotenv";
 import { TransactionReceipt } from "@ethersproject/providers";
@@ -117,9 +116,7 @@ export const writeJsonFile = (args: {
     null,
     2,
   );
-  console.log("Writting", appRoot + args.path);
   fs.writeFileSync(appRoot + args.path, parsedData);
-  console.log(`Generated ${appRoot}${args.path}`);
 };
 
 export const getEventLogs = (

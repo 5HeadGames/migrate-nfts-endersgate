@@ -2,7 +2,7 @@
   "name": "Mackadon",
   "type": "ERC1155",
   "description": "[Shark | Fighter] \"Sea Hunter\" Passive: Mackadon gains +10 ATK for each water type Guardian in your graveyard. ",
-  "image": "QmTuErZtHjPr782dshBuVU69KPtSoHMhgy4WYW82THDi5z",
+  "image": "QmP3Bwx6AXgA2e3AUai6zL576r9roykgNF38NpyuRYyQGd",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmTuErZtHjPr782dshBuVU69KPtSoHMhgy4WYW82THDi5z"
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmP3Bwx6AXgA2e3AUai6zL576r9roykgNF38NpyuRYyQGd"
     }
   },
   "attributes": [
@@ -93,7 +93,7 @@
     },
     {
       "trait_type": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmTuErZtHjPr782dshBuVU69KPtSoHMhgy4WYW82THDi5z"
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmP3Bwx6AXgA2e3AUai6zL576r9roykgNF38NpyuRYyQGd"
     }
   ]
 }

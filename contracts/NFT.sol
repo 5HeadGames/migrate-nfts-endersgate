@@ -14,7 +14,13 @@ import "@openzeppelin/contracts/utils/Address.sol";
  * CreatureAccessoryLootBox - a randomized and openable lootbox of Creature
  * Accessories.
  */
-contract EndersPack is ERC1155, ERC1155Burnable, ReentrancyGuard, Ownable, ERC1155Receiver {
+contract OldEndersPack is
+    ERC1155,
+    ERC1155Burnable,
+    ReentrancyGuard,
+    Ownable,
+    ERC1155Receiver
+{
     using Address for address;
 
     string public name;
@@ -79,7 +85,12 @@ contract EndersPack is ERC1155, ERC1155Burnable, ReentrancyGuard, Ownable, ERC11
         uint256 value,
         bytes calldata data
     ) external returns (bytes4) {
-        return bytes4(keccak256("onERC1155Received(address,address,uint256,uint256,bytes)"));
+        return
+            bytes4(
+                keccak256(
+                    "onERC1155Received(address,address,uint256,uint256,bytes)"
+                )
+            );
     }
 
     function onERC1155BatchReceived(
@@ -91,7 +102,9 @@ contract EndersPack is ERC1155, ERC1155Burnable, ReentrancyGuard, Ownable, ERC11
     ) external returns (bytes4) {
         return
             bytes4(
-                keccak256("onERC1155BatchReceived(address,address,uint256[],uint256[],bytes)")
+                keccak256(
+                    "onERC1155BatchReceived(address,address,uint256[],uint256[],bytes)"
+                )
             );
     }
 
@@ -130,7 +143,9 @@ contract EndersPack is ERC1155, ERC1155Burnable, ReentrancyGuard, Ownable, ERC11
         _setIpfsHashBatch(ids, hashes);
     }
 
-    function _setIpfsHashBatch(uint256[] memory ids, string[] memory hashes) internal {
+    function _setIpfsHashBatch(uint256[] memory ids, string[] memory hashes)
+        internal
+    {
         for (uint256 i = 0; i < ids.length; i++) {
             if (bytes(hashes[i]).length > 0) idToIpfs[ids[i]] = hashes[i];
         }

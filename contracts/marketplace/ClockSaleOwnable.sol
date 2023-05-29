@@ -13,15 +13,10 @@ import "hardhat/console.sol";
 
 import "@chainlink/contracts/src/v0.8/interfaces/AggregatorV3Interface.sol";
 
-import "./interfaces/IERC1155Custom.sol";
+import "../interfaces/IERC1155Custom.sol";
 
 /// @title Clock auction for non-fungible tokens.
-contract ClockSaleMultiTokens is
-    Ownable,
-    Pausable,
-    ERC1155Holder,
-    ReentrancyGuard
-{
+contract ClockSaleOwnable is Ownable, Pausable, ERC1155Holder, ReentrancyGuard {
     using Counters for Counters.Counter;
     using Address for address payable;
 
@@ -103,10 +98,6 @@ contract ClockSaleMultiTokens is
         decimalsByToken[_wcurrency] = _decimals;
     }
 
-    receive() external payable {
-        require(false, "ClockSale:DONT_SEND");
-    }
-
     function getSales(uint256[] memory _tokenIds)
         external
         view
@@ -162,7 +153,7 @@ contract ClockSaleMultiTokens is
         address[] memory _tokens,
         uint256 _amount,
         uint256 _duration
-    ) external whenNotPaused {
+    ) external whenNotPaused onlyOwner {
         address _seller = _msgSender();
 
         require(isAllowed[_nftAddress], "ClockSale:INVALID_SALE");
@@ -195,7 +186,7 @@ contract ClockSaleMultiTokens is
         uint256[] memory tokensId,
         uint256[] memory amounts,
         address tokenToPay
-    ) public payable{
+    ) public payable {
         require(
             tokensId.length == amounts.length,
             "Array Length must be the same of amount and Ids"
@@ -273,7 +264,7 @@ contract ClockSaleMultiTokens is
         emit BuySuccessful(_tokenId, buyer, cost, tokenToPay, amount);
     }
 
-    function cancelSale(uint256 _tokenId) external {
+    function cancelSale(uint256 _tokenId) external onlyOwner {
         Sale storage _auction = sales[_tokenId];
         require(_saleExists(_auction), "ClockSale:NOT_AVAILABLE");
         require(_auction.seller == _msgSender(), "ClockSale:NOT_OWNER");
