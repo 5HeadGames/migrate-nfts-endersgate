@@ -1,33 +1,21 @@
-import { ethers, upgrades, network } from "hardhat";
-import { expect, assert } from "chai";
+import { ethers } from "hardhat";
+import { expect } from "chai";
 import { SignerWithAddress } from "@nomiclabs/hardhat-ethers/dist/src/signer-with-address";
-import { EndersBattlePass, EndersComics, MockERC20 } from "../types";
-import { Console } from "console";
+import { EndersComicsFindora } from "../../types";
 
-describe("REWARDS", function () {
-  let endersComic: EndersComics,
+describe("COMICS", function () {
+  let endersComic: EndersComicsFindora,
     accounts: SignerWithAddress[],
-    token: MockERC20,
-    token2: MockERC20,
-    token3: MockERC20,
     owner: SignerWithAddress;
   const URI = "https://some/url/";
 
   it("Should deploy properly", async () => {
     accounts = await ethers.getSigners();
     owner = accounts[0];
-    token = await (await ethers.getContractFactory("MockERC20")).deploy();
-    token2 = await (await ethers.getContractFactory("MockERC20")).deploy();
-    token3 = await (await ethers.getContractFactory("MockERC20")).deploy();
 
     endersComic = await (
-      await ethers.getContractFactory("EndersComics")
-    ).deploy("EndersComics", "EGC", token.address, token.address, 6);
-
-    await token.mint(owner.address, 100000000000);
-    await token3.mint(owner.address, 100000000000);
-
-    endersComic.addToken(token2.address, token2.address, 6);
+      await ethers.getContractFactory("EndersComicsFindora")
+    ).deploy("EndersComics", "EGC");
 
     const adminRole = await endersComic.DEFAULT_ADMIN_ROLE();
     const minterRole = await endersComic.SUPPLY_ROLE();
@@ -108,6 +96,54 @@ describe("REWARDS", function () {
     ).to.revertedWith("");
   });
 
+  it("Should buy batch", async () => {
+    for (let i = 1; i <= 10; i++) {
+      await endersComic.addComic(100000000);
+
+      expect(
+        await (
+          await endersComic.comics(await endersComic.comicIdCounter())
+        ).exists,
+      ).to.be.equal(true);
+
+      await endersComic.buyBatch(
+        owner.address,
+        (new Array((await endersComic.comicIdCounter()).toNumber()) as any)
+          .fill(1)
+          .map((a: any, i: any) => i + 1),
+        (new Array((await endersComic.comicIdCounter()).toNumber()) as any)
+          .fill(1)
+          .map((a: any, i: any) => 10),
+        {
+          from: owner.address,
+          value: await endersComic.getPrice(
+            await endersComic.comicIdCounter(),
+            10,
+          ),
+        },
+      );
+
+      const balanceContract = await ethers.provider.getBalance(
+        endersComic.address,
+      );
+
+      expect(balanceContract).to.be.equal(
+        (
+          await endersComic.getPrice(await endersComic.comicIdCounter(), 10)
+        ).mul(i),
+      );
+
+      expect(
+        await endersComic.balanceOf(
+          owner.address,
+          (
+            await endersComic.comics(await endersComic.comicIdCounter())
+          ).id,
+        ),
+      ).to.be.equal(10);
+    }
+  });
+
   it("Should mint nft with ipfs hash", async () => {
     const hash = ethers.utils.id(Math.random().toString());
     const id = 0;
@@ -115,15 +151,6 @@ describe("REWARDS", function () {
     await endersComic.setIpfsHashBatch([id], [URI + hash]);
     const uri = await endersComic.uri(id);
     expect(uri).to.be.equal(URI + hash);
-  });
-
-  it("Should create season rewards", async () => {
-    await endersComic.addComic(100000000);
-    expect(
-      await (
-        await endersComic.comics(await endersComic.comicIdCounter())
-      ).exists,
-    ).to.be.equal(true);
   });
 
   it("Should mint only the supply role", async () => {
@@ -148,6 +175,15 @@ describe("REWARDS", function () {
     expect(balance.toString()).to.be.equal(prevBalance.add(amount).toString());
   });
 
+  it("Should create season rewards", async () => {
+    await endersComic.addComic(100000000);
+    expect(
+      await (
+        await endersComic.comics(await endersComic.comicIdCounter())
+      ).exists,
+    ).to.be.equal(true);
+  });
+
   it("Should increase total supply on batch mint", async () => {
     const ids = [1, 2, 3, 4, 5, 10];
     const amounts = [2, 3, 1, 23, 12, 3];
@@ -166,79 +202,6 @@ describe("REWARDS", function () {
           bal.toString() === prevBalance[i].add(amounts[i]).toString(),
       ),
     ).to.be.equal(true);
-  });
-
-  it("Should buy batch", async () => {
-    for (let i = 1; i <= 10; i++) {
-      console.log(i);
-
-      await endersComic.addComic(100000000);
-      expect(
-        await (
-          await endersComic.comics(await endersComic.comicIdCounter())
-        ).exists,
-      ).to.be.equal(true);
-
-      console.log(i);
-      console.log(
-        owner.address,
-        (new Array(await endersComic.comicIdCounter()) as any)
-          .fill(1)
-          .map((a: any, i: any) => i + 1),
-        (new Array(await endersComic.comicIdCounter()) as any)
-          .fill(1)
-          .map((a: any, i: any) => 10),
-        token.address,
-      );
-
-      await endersComic.buyBatch(
-        owner.address,
-        (new Array(await endersComic.comicIdCounter()) as any)
-          .fill(1)
-          .map((a: any, i: any) => i + 1),
-        (new Array(await endersComic.comicIdCounter()) as any)
-          .fill(1)
-          .map((a: any, i: any) => 10),
-        token.address,
-        {
-          from: owner.address,
-          value: (
-            await endersComic.getPrice(
-              token.address,
-              await endersComic.comicIdCounter(),
-              10,
-            )
-          ).mul(i),
-        },
-      );
-
-      console.log(i);
-
-      const balanceContract = await ethers.provider.getBalance(
-        endersComic.address,
-      );
-
-      console.log(i);
-
-      expect(balanceContract).to.be.equal(
-        (
-          await endersComic.getPrice(
-            token.address,
-            await endersComic.comicIdCounter(),
-            1,
-          )
-        ).mul(i),
-      );
-
-      expect(
-        await endersComic.balanceOf(
-          accounts[0].address,
-          (
-            await endersComic.comics(await endersComic.comicIdCounter())
-          ).rewardId,
-        ),
-      ).to.be.equal(1);
-    }
   });
 
   it("Should set ipfs only setter role", async () => {

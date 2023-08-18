@@ -18,28 +18,23 @@ import "@openzeppelin/contracts/utils/Strings.sol";
  * CreatureAccessoryLootBox - a randomized and openable lootbox of Creature
  * Accessories.
  */
-contract EndersBattlePass is ERC1155Supply, ReentrancyGuard, AccessControl {
+contract EndersBattlePassFindora is
+    ERC1155Supply,
+    ReentrancyGuard,
+    AccessControl
+{
     using Strings for uint256;
     using Address for address;
 
     struct Season {
         uint256 rewardId;
-        uint256 priceUSD;
+        uint256 price;
         bool ended;
         bool exists;
     }
 
     uint256 public currentSeason;
     mapping(uint256 => Season) public seasons;
-    //All the sales price have to have 6 decimals
-    uint256 public decimalsUSD = 6;
-
-    // token address to priceFeed address
-    mapping(address => address) public priceFeedsByToken;
-    mapping(address => uint256) public decimalsByToken;
-
-    // Tokens allowed in the marketplace
-    address public wcurrency;
 
     bytes32 public constant URI_SETTER_ROLE = keccak256("URI_SETTER_ROLE");
     bytes32 public constant SUPPLY_ROLE = keccak256("SUPPLY_ROLE");
@@ -51,18 +46,9 @@ contract EndersBattlePass is ERC1155Supply, ReentrancyGuard, AccessControl {
 
     mapping(uint256 => string) public idToIpfs;
 
-    constructor(
-        string memory _name,
-        string memory _symbol,
-        address _wcurrency,
-        address _priceFeedW,
-        uint256 _decimals
-    ) ERC1155("") {
+    constructor(string memory _name, string memory _symbol) ERC1155("") {
         name = _name;
         symbol = _symbol;
-        wcurrency = _wcurrency;
-        priceFeedsByToken[_wcurrency] = _priceFeedW;
-        decimalsByToken[_wcurrency] = _decimals;
         _grantRole(DEFAULT_ADMIN_ROLE, msg.sender);
         _grantRole(SEASON_ROLE, msg.sender);
         _grantRole(SUPPLY_ROLE, msg.sender);
@@ -90,54 +76,17 @@ contract EndersBattlePass is ERC1155Supply, ReentrancyGuard, AccessControl {
         _mintBatch(to, ids, amounts, "");
     }
 
-    function buyBattlePass(address tokenToPay, uint256 amount) public payable {
+    function buyBattlePass(uint256 amount) public payable {
         uint256 id = seasons[currentSeason].rewardId;
-        uint256 cost = getPrice(tokenToPay, amount);
-        if (tokenToPay == wcurrency) {
-            require(msg.value >= cost, "NOT_ENOUGH_VALUE");
-        } else {
-            require(isTokenAllowed(tokenToPay), "TOKEN TO PAY IS NOT ALLOWED");
-            require(
-                IERC20(tokenToPay).balanceOf(_msgSender()) > cost,
-                "INSUFICIENT BALANCE"
-            );
-            require(
-                IERC20(tokenToPay).allowance(_msgSender(), address(this)) >
-                    cost,
-                "INSUFICIENT ALLOWANCE"
-            );
-
-            IERC20(tokenToPay).transferFrom(_msgSender(), address(this), cost);
-        }
-
+        uint256 cost = getPrice(amount);
+        require(msg.value >= cost, "NOT_ENOUGH_VALUE");
         _mint(msg.sender, id, amount, "");
     }
 
-    function isTokenAllowed(address _token) public view returns (bool) {
-        return
-            abi.encodePacked(priceFeedsByToken[_token]).length > 0
-                ? true
-                : false;
-    }
-
-    function getPrice(
-        address tokenToGet,
-        uint256 quantity
-    ) public view returns (uint256) {
+    function getPrice(uint256 quantity) public view returns (uint256) {
         Season storage _season = seasons[currentSeason];
         require(!_season.ended, "ClockSale:INVALID_SALE");
-        AggregatorV3Interface priceFeed = AggregatorV3Interface(
-            priceFeedsByToken[tokenToGet]
-        );
-        // (, int256 price, , , ) = priceFeed.latestRoundData();
-        // uint256 decimals = priceFeed.decimals();
-        int256 price = 84679030;
-        uint256 decimals = 8;
-        return
-            (quantity *
-                (_season.priceUSD) *
-                10 ** (decimalsByToken[tokenToGet] + decimals - decimalsUSD)) /
-            uint256(price);
+        return (quantity * _season.price);
     }
 
     function burnBatchFor(
@@ -166,25 +115,16 @@ contract EndersBattlePass is ERC1155Supply, ReentrancyGuard, AccessControl {
         }
     }
 
-    function addToken(
-        address _token,
-        address priceFeed,
-        uint256 decimals
-    ) external onlyRole(SUPPLY_ROLE) {
-        priceFeedsByToken[_token] = priceFeed;
-        decimalsByToken[_token] = decimals;
-    }
-
     function addSeason(
         uint256 id,
-        uint256 priceUSD
+        uint256 price
     ) external onlyRole(SEASON_ROLE) {
         require(
             id != seasons[currentSeason].rewardId,
             "ids should be different"
         );
         currentSeason++;
-        seasons[currentSeason].priceUSD = priceUSD;
+        seasons[currentSeason].price = price;
         seasons[currentSeason].rewardId = id;
         if (!seasons[currentSeason].exists) {
             seasons[currentSeason].exists = true;
@@ -194,9 +134,9 @@ contract EndersBattlePass is ERC1155Supply, ReentrancyGuard, AccessControl {
 
     function editSeason(
         uint256 id,
-        uint256 priceUSD
+        uint256 price
     ) external onlyRole(SEASON_ROLE) {
-        seasons[currentSeason].priceUSD = priceUSD;
+        seasons[currentSeason].price = price;
         seasons[currentSeason].rewardId = id;
     }
 

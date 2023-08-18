@@ -1,6 +1,6 @@
 import { ethers, network } from "hardhat";
 import fs from "fs";
-import { EndersBattlePass } from "../types";
+import { EndersComics } from "../../types";
 // import { ClockSaleOwnable } from "../typechain";
 
 const loadJsonFile = (file: string) => {
@@ -18,36 +18,39 @@ async function main() {
   const data = loadJsonFile(`${appRoot}/` + configFileName);
   console.log(data);
 
-  const [BattlePassFactory, _accounts] = await Promise.all([
-    ethers.getContractFactory("EndersBattlePass"),
+  const [ComicsFactory, _accounts] = await Promise.all([
+    ethers.getContractFactory("EndersComics"),
     ethers.getSigners(),
   ]);
 
-  console.log("deploy:BattlePass");
-  const battlePass = (await BattlePassFactory.deploy(
-    "EndersBattlePass",
-    "EBP",
+  console.log("deploy:Comics");
+  const Comics = (await ComicsFactory.deploy(
+    "EndersComics",
+    "EGC",
     "0xf3cd27813b5ff6adea3805dcf181053ac62d6ec3",
-    "0xd0D5e3DB44DE05E9F294BB0a3bEEaF030DE24Ada",
+    "0x694AA1769357215DE4FAC081bf1f309aDC325306",
     18,
-  )) as EndersBattlePass;
+  )) as EndersComics;
 
-  await battlePass.addToken(
-    "0x36c9600994524E46068b0F64407ea509218EfFD8",
-    "0x572dDec9087154dC5dfBB1546Bb62713147e0Ab0",
+  await Comics.addToken(
+    "0x746c00e6305Ac5C01cb3e84e61b67fb2AD7DCeF3",
+    "0xA2F78ab2355fe2f984D808B5CeE7FD0A93D5270E",
     6,
   );
 
-  await battlePass.addToken(
-    "0xBD3045b233bd07a15c8c782ec8702fb5D7Eef163",
-    "0x572dDec9087154dC5dfBB1546Bb62713147e0Ab0",
+  await Comics.addToken(
+    "0x4C086B2E76e61418a9cBf2Af7Ae9d6d96fD6cD83",
+    "0xA2F78ab2355fe2f984D808B5CeE7FD0A93D5270E",
     6,
   );
+
+  await Comics.addComic(10000);
+  await Comics.addComic(10000);
 
   const configData = JSON.stringify(
     {
       ...data,
-      battlePass: battlePass.address,
+      comics: Comics.address,
     },
     null,
     2,

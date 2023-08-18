@@ -45,6 +45,10 @@ const config: HardhatUserConfig = {
       accounts: {
         count: 200, //must be set higher when testing packs
       },
+      // forking: {
+      //   enabled: true,
+      //   url: "https://gsc-testnet.prod.findora.org:8545",
+      // },
     },
     // goerli: getChainConfig("goerli"),
     // kovan: getChainConfig("kovan"),
@@ -54,8 +58,8 @@ const config: HardhatUserConfig = {
     //   gas: 1446592,
     // },
     harmony: {
-      // url: "https://harmony-0-rpc.gateway.pokt.network",
-      url: "https://harmony-mainnet.chainstacklabs.com/",
+      url: "https://api.harmony.one/",
+      // url: "https://harmony-mainnet.chainstacklabs.com/",
       accounts: [process.env.PRIVATE_KEY || ""],
       timeout: 120000000,
     },
@@ -64,14 +68,43 @@ const config: HardhatUserConfig = {
       accounts: [process.env.PRIVATE_KEY || ""],
       timeout: 120000000,
     },
+    anvil: {
+      url: "https://gsc-testnet.prod.findora.org:8545",
+      accounts: [process.env.PRIVATE_KEY || ""],
+      throwOnTransactionFailures: true,
+      throwOnCallFailures: true,
+      allowUnlimitedContractSize: true,
+      timeout: 1800000,
+      gas: 2100000,
+      gasPrice: 80000000000,
+    },
+    findora: {
+      url: `https://gsc-mainnet.prod.findora.org:8545`,
+      accounts: [process.env.PRIVATE_KEY || ""],
+      timeout: 120000000,
+    },
     matic: {
       url: process.env.POLYGON_PROVIDER,
+      accounts: [process.env.PRIVATE_KEY || ""],
+    },
+    geth: {
+      url: "http://127.0.0.1:8545",
+      accounts: [process.env.PRIVATE_KEY || ""],
+    },
+    geth2: {
+      url: "http://127.0.0.2:8546",
       accounts: [process.env.PRIVATE_KEY || ""],
     },
 
     mumbai: {
       url: process.env.MUMBAI_PROVIDER,
       accounts: [process.env.PRIVATE_KEY || ""],
+      throwOnTransactionFailures: true,
+      throwOnCallFailures: true,
+      allowUnlimitedContractSize: true,
+      timeout: 1800000,
+      gas: 2100000,
+      gasPrice: 80000000000,
     },
 
     sepolia: {

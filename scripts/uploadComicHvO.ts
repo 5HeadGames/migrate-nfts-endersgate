@@ -1,5 +1,5 @@
 import hardhat from "hardhat";
-import { writeJsonFile, uploadIpfsObject } from "../utils/index";
+import { writeJsonFile } from "../utils/index";
 import { NFTStorage, File, Blob } from "nft.storage";
 import { filesFromPath } from "files-from-path";
 import path from "path";

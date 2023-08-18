@@ -1,11 +1,8 @@
 import { ethers, network, upgrades } from "hardhat";
 
-import { EndersGate, EndersPack } from "../types";
-import { uploadIpfs, loadJsonFile, writeJsonFile, wait } from "../utils";
-import { getPacksConfig, PacksConfig } from "../utils/packs";
-import { attach } from "../utils/contracts";
-
-const metadataLinks = require("../nfts/metadata/packsMetadata.json");
+import { EndersGate, EndersPack } from "../../types";
+import { loadJsonFile, writeJsonFile, wait } from "../../utils";
+import { getPacksConfig, PacksConfig } from "../../utils/packs";
 
 const setPacksState = async ({
   pack,
@@ -49,45 +46,25 @@ const setPacksState = async ({
     console.log(i.id, i.nftsIds);
   }
   console.log("TYPES");
-
-  // const hashesData = Object.entries(metadataLinks).map((entry: any) => ({
-  //   id: entry[0],
-  //   hash: entry[1].split("/").reverse()[0],
-  // }));
-  // await pack.setIpfsHashBatch(
-  //   hashesData.map(({ id }) => id),
-  //   hashesData.map(({ hash }) => hash),
-  // );
-  console.log("HASHES");
 };
 
 async function main(): Promise<void> {
-  const fileName = `addresses.${network.name}.json`;
+  const fileName = `addresses/addresses.${network.name}.json`;
   const fileData = loadJsonFile(fileName);
   const packsConfig = getPacksConfig();
-
-  const ipfsHash = fileData?.packIpfs
-    ? fileData.packIpfs
-    : await uploadIpfs({ path: "/nfts/metadata/packs.json" });
-  console.log("IPFS", ipfsHash.split("/").reverse()[0]);
 
   const endersGate: EndersGate = (
     await ethers.getContractFactory("EndersGate")
   ).attach(fileData.endersGate);
 
+  console.log("Enders Gate", endersGate);
+
   const library = await (
     await ethers.getContractFactory("LootBoxRandomness")
   ).deploy();
-  console.log("Library", library.address);
 
-  //const pack = (
-  //await ethers.getContractFactory("EndersPack", {
-  //libraries: {
-  //LootBoxRandomness: library.address,
-  ////LootBoxRandomness: endersGate.address,
-  //},
-  //})
-  //).attach(fileData.packs);
+  console.log("LIBRARY", library);
+
   const pack = await (
     await ethers.getContractFactory("EndersPack", {
       libraries: {
@@ -97,15 +74,20 @@ async function main(): Promise<void> {
   ).deploy(
     "https://nft.xp.network/w/12/0xb90Dc9e354001e6260DE670EDD6aBaDb890C6aC9/",
   );
-  // ).deploy("https://ipfs.moralis.io:2053/ipfs/");
-  console.log("Pack", pack.address);
+
+  const pack3 = await ethers.getContractFactory("EndersPack", {
+    libraries: {
+      LootBoxRandomness: "0xAe4b2ECB442fc8bF774dE36F179CbFD549D6D857",
+    },
+  });
+  console.log("PACK", pack);
 
   console.log("setPacksState");
   await setPacksState({ pack, packsConfig, endersGate });
 
   writeJsonFile({
     path: `/${fileName}`,
-    data: { pack: pack.address, packIpfs: ipfsHash, library: library.address },
+    data: { pack: pack.address, library: library.address },
   });
 }
 

@@ -3,9 +3,9 @@ import { ethers, network } from "hardhat";
 import { SignerWithAddress } from "@nomiclabs/hardhat-ethers/dist/src/signer-with-address";
 import type { BigNumber } from "@ethersproject/bignumber";
 import type { Block } from "@ethersproject/abstract-provider";
-import type { ClockSale, EndersPack, MockERC20 } from "@sctypes/index";
 
-import { getLogs } from "../utils";
+import { getLogs } from "../../utils";
+import { ClockSaleOwnableFindora, EndersPack, MockERC20 } from "../../types";
 
 const SALE_STATUS = {
   created: 0,
@@ -20,7 +20,6 @@ const parseSale = (
     BigNumber,
     BigNumber,
     BigNumber,
-    BigNumber[],
     BigNumber,
     number,
     number,
@@ -32,16 +31,15 @@ const parseSale = (
     nftId: sale[2],
     amount: sale[3],
     price: sale[4],
-    tokens: sale[5],
-    duration: sale[6],
-    startedAt: sale[7],
-    status: sale[8],
+    duration: sale[5],
+    startedAt: sale[6],
+    status: sale[7],
   };
 };
 
-describe("[ClockSaleXD]", function () {
+describe("[ClockSaleOwnable]", function () {
   let accounts: SignerWithAddress[],
-    marketplace: ClockSale,
+    marketplace: ClockSaleOwnableFindora,
     nft: EndersPack,
     genesisBlock: number,
     token: MockERC20;
@@ -75,9 +73,17 @@ describe("[ClockSaleXD]", function () {
   const OWNER_CUT = "400";
 
   before(async () => {
+    const library = await (
+      await ethers.getContractFactory("LootBoxRandomness")
+    ).deploy();
+
     const [Sale, NftFactory, MockERC20, _accounts] = await Promise.all([
-      ethers.getContractFactory("ClockSaleMultiTokens"),
-      ethers.getContractFactory("EndersPack"),
+      ethers.getContractFactory("ClockSaleOwnableFindora"),
+      ethers.getContractFactory("EndersPack", {
+        libraries: {
+          LootBoxRandomness: library.address,
+        },
+      }),
       ethers.getContractFactory("MockERC20"),
       ethers.getSigners(),
     ]);
@@ -89,18 +95,15 @@ describe("[ClockSaleXD]", function () {
       MockERC20.deploy(),
     ])) as [EndersPack, MockERC20];
 
-    marketplace = await Sale.deploy(
+    marketplace = await Sale.connect(accounts[5]).deploy(
       feeReceiver.address,
-      feeReceiver.address,
-      token.address,
-      18,
       OWNER_CUT,
     );
 
     genesisBlock = await ethers.provider.getBlockNumber();
 
     await nft.mintBatch(
-      accounts[0].address,
+      accounts[5].address,
       ids,
       ids.map(() => 100),
       [],
@@ -110,7 +113,7 @@ describe("[ClockSaleXD]", function () {
   describe("Configuration initialization", () => {
     it("should initialize owner", async () => {
       const owner = await marketplace.owner();
-      expect(owner).to.equal(accounts[0].address);
+      expect(owner).to.equal(accounts[5].address);
       await marketplace.transferOwnership(accounts[5].address);
       expect(await marketplace.owner()).to.equal(accounts[5].address);
     });
@@ -213,17 +216,13 @@ describe("[ClockSaleXD]", function () {
     it("Should create an auction", async () => {
       for await (let currentSale of salesData) {
         const { id, price, amount, duration } = currentSale;
-
-        await nft.setApprovalForAll(marketplace.address, true);
+        await nft
+          .connect(accounts[5])
+          .setApprovalForAll(marketplace.address, true);
         const tx = await (
-          await marketplace.createSale(
-            nft.address,
-            id,
-            price,
-            [feeReceiver.address],
-            amount,
-            duration,
-          )
+          await marketplace
+            .connect(accounts[5])
+            .createSale(nft.address, id, price, amount, duration)
         ).wait();
 
         const logs = getLogs(marketplace.interface, tx);
@@ -233,16 +232,17 @@ describe("[ClockSaleXD]", function () {
         sales.push(saleId);
 
         const sale = parseSale(
-          (await marketplace.getSales([(saleId as BigNumber).toNumber()]))[0],
+          (
+            await marketplace.getSales([(saleId as BigNumber).toNumber()])
+          )[0] as any,
         );
         block = await ethers.provider.getBlock(tx.blockNumber);
-        expect(sale.seller).to.be.equal(accounts[0].address);
+        expect(sale.seller).to.be.equal(accounts[5].address);
         expect(sale.nft).to.be.equal(nft.address);
         expect(sale.nftId).to.be.equal(id);
         expect(sale.amount).to.be.equal(amount);
         expect(sale.price).to.be.equal(price);
         expect(sale.duration).to.be.equal(duration);
-        //expect(sale.startedAt).to.be.equal(block.timestamp.toString());
       }
     });
 
@@ -250,16 +250,13 @@ describe("[ClockSaleXD]", function () {
       for await (let currentSale of salesData) {
         const { id, price, amount, duration } = currentSale;
 
-        await nft.setApprovalForAll(marketplace.address, true);
+        await nft
+          .connect(accounts[5])
+          .setApprovalForAll(marketplace.address, true);
         const tx = await (
-          await marketplace.createSale(
-            nft.address,
-            id,
-            price,
-            [feeReceiver.address],
-            amount,
-            duration,
-          )
+          await marketplace
+            .connect(accounts[5])
+            .createSale(nft.address, id, price, amount, duration)
         ).wait();
 
         const logs = getLogs(marketplace.interface, tx);
@@ -268,20 +265,14 @@ describe("[ClockSaleXD]", function () {
         )?.args[0];
 
         const sale = parseSale(
-          (await marketplace.getSales([(saleId as BigNumber).toNumber()]))[0],
+          (
+            await marketplace.getSales([(saleId as BigNumber).toNumber()])
+          )[0] as any,
         );
 
-        console.log("price in USD");
-
-        expect(
-          Math.round(
-            ((await marketplace.getPrice(saleId, sale.tokens[0], 1))
-              .div(10 ** 8)
-              .toNumber() /
-              10 ** 12) *
-              84679030,
-          ),
-        ).to.be.equal(price);
+        expect(await marketplace.getPrice(saleId.toString(), 1)).to.be.equal(
+          price,
+        );
       }
     });
 
@@ -289,18 +280,15 @@ describe("[ClockSaleXD]", function () {
       const allSales = (await marketplace.getSales(sales)).map((sale: any) =>
         parseSale(sale),
       );
-      console.log(allSales);
       allSales.forEach((sale: any, i: any) => {
         const { id, amount, price, duration } = salesData[i];
-        expect(sale.seller).to.be.equal(accounts[0].address);
+        expect(sale.seller).to.be.equal(accounts[5].address);
         expect(sale.nft).to.be.equal(nft.address);
         expect(sale.nftId).to.be.equal(id);
         expect(sale.amount).to.be.equal(amount);
         expect(sale.price).to.be.equal(price);
-        expect(sale.tokens[0]).to.be.equal(feeReceiver.address);
         expect(sale.duration).to.be.equal(duration);
         expect(sale.status).to.be.equal(SALE_STATUS.created);
-        //expect(sale.startedAt).to.be.equal(block.timestamp.toString());
       });
     });
 
@@ -311,85 +299,93 @@ describe("[ClockSaleXD]", function () {
       ).to.be.revertedWith("");
 
       const prevBalance = await nft.balanceOf(
-        accounts[0].address,
+        accounts[5].address,
         salesData[0].id,
       );
       const logs = getLogs(
         marketplace.interface,
-        await (await marketplace.cancelSale(sales[0])).wait(),
+        await (
+          await marketplace.connect(accounts[5]).cancelSale(sales[0])
+        ).wait(),
       );
       const saleId = logs.find(
         ({ name }: { name: string }) => name === "SaleCancelled",
       )?.args[0];
       const postBalance = await nft.balanceOf(
-        accounts[0].address,
+        accounts[5].address,
         salesData[0].id,
       );
       const [singleSale] = await marketplace.getSales([sales[0]]);
 
       expect(singleSale.status).to.be.equal(SALE_STATUS.cancel);
-      expect(prevBalance.add(salesData[0].amount).toString()).to.be.equal(
+      expect(prevBalance.add(salesData[0].amount)?.toString()).to.be.equal(
         postBalance.toString(),
       );
       expect(saleId, "removed wrong sale id").to.be.equal("0");
     });
 
     it("Should not buy cancelled sales", async () => {
+      await marketplace.connect(accounts[5]).cancelSale(sales[0]);
       await expect(
-        marketplace.buy(sales[0], salesData[0].amount, feeReceiver.address),
-      ).to.be.revertedWith("");
+        marketplace.buy(sales[0], salesData[0].amount, {
+          value: await marketplace.getPrice(
+            sales[0].toString(),
+            salesData[0].amount,
+          ),
+        }),
+      ).to.be.reverted;
     });
 
     it("Should buy sales by given amounts", async () => {
       const amount = 2;
-      const cost = await marketplace.getPrice(
-        sales[1],
-        feeReceiver.address,
-        amount,
-      );
+
+      console.log(sales[1], feeReceiver.address, "price in USD");
+
+      const cost = await marketplace.getPrice(sales[1].toString(), amount);
       const buyer = accounts[1];
       const [buyerBalance, sellerBalance, feeReceiverBalance] =
         await Promise.all([
           await ethers.provider.getBalance(buyer.address),
-          await ethers.provider.getBalance(accounts[0].address),
+          await ethers.provider.getBalance(accounts[5].address),
           await ethers.provider.getBalance(feeReceiver.address),
         ]);
+
       const receipt = await (
         await marketplace
           .connect(buyer)
-          .buy(sales[1], amount, feeReceiver.address, { value: cost })
+          .buyBatch([sales[1]], [amount], { value: cost })
       ).wait();
+
       const log = getLogs(marketplace.interface, receipt).find(
-        ({ name }) => name === "BuySuccessful",
+        ({ name }: any) => name === "BuySuccessful",
       );
       const [postBuyerBalance, postSellerBalance, postFeeReceiverBalance] =
         await Promise.all([
           await ethers.provider.getBalance(buyer.address),
-          await ethers.provider.getBalance(accounts[0].address),
+          await ethers.provider.getBalance(accounts[5].address),
           await ethers.provider.getBalance(feeReceiver.address),
         ]);
 
       const feeAmount = cost.mul(OWNER_CUT).div(10000);
 
       expect(
-        postFeeReceiverBalance.sub(feeReceiverBalance).toString(),
+        postFeeReceiverBalance.sub(feeReceiverBalance)?.toString(),
       ).to.be.equal(feeAmount.toString());
 
-      expect(postSellerBalance.sub(sellerBalance).toString()).to.be.equal(
-        cost.sub(feeAmount).toString(),
+      expect(postSellerBalance.sub(sellerBalance)?.toString()).to.be.equal(
+        cost.sub(feeAmount)?.toString(),
       );
 
-      expect(buyerBalance.sub(postBuyerBalance)).to.be.gt(cost.toString());
-      expect(log?.args[0].toString(), "Wrong sales id").to.be.equal(sales[1]);
-      expect(log?.args[1].toString(), "Wrong buyer").to.be.equal(buyer.address); //buyer
-      expect(log?.args[2].toString(), "Wrong cost").to.be.equal(
+      expect(buyerBalance.sub(postBuyerBalance)).to.be.gt(cost?.toString());
+      expect(log?.args[0]?.toString(), "Wrong sales id").to.be.equal(sales[1]);
+      expect(log?.args[1]?.toString(), "Wrong buyer").to.be.equal(
+        buyer.address,
+      ); //buyer
+      expect(log?.args[2]?.toString(), "Wrong cost").to.be.equal(
         cost.toString(),
       );
-      console.log(log?.args[3].toString());
-      // expect(log?.args[3].toString(), "Wrong cost").to.be.equal(
-      //   cost.toString(),
-      // );
-      expect(log?.args[4].toString(), "Wrong nft amount").to.be.equal(
+
+      expect(log?.args[3]?.toString(), "Wrong nft amount").to.be.equal(
         String(amount),
       );
     });
@@ -404,14 +400,15 @@ describe("[ClockSaleXD]", function () {
       };
       await nft.setApprovalForAll(marketplace.address, true);
       const tx = await (
-        await marketplace.createSale(
-          nft.address,
-          timeSale.id,
-          timeSale.priceUSD,
-          timeSale.tokens,
-          timeSale.amount,
-          timeSale.duration,
-        )
+        await marketplace
+          .connect(accounts[5])
+          .createSale(
+            nft.address,
+            timeSale.id,
+            timeSale.priceUSD,
+            timeSale.amount,
+            timeSale.duration,
+          )
       ).wait();
       const logs = getLogs(marketplace.interface, tx);
       const saleId = logs.find(
@@ -422,8 +419,8 @@ describe("[ClockSaleXD]", function () {
       await network.provider.send("evm_increaseTime", [3600 * 24 * 7 + 100]);
       await network.provider.send("evm_mine");
       await expect(
-        marketplace.buy(sales[1], timeSale.amount, feeReceiver.address, {
-          value: timeSale.priceUSD.mul(timeSale.amount).toString(),
+        marketplace.buy(sales[1], timeSale.amount, {
+          value: timeSale.priceUSD.mul(timeSale.amount)?.toString(),
         }),
       ).to.be.revertedWith("");
     });
@@ -432,9 +429,11 @@ describe("[ClockSaleXD]", function () {
   describe("Audit results", () => {
     it("Should be able to emergency withdraw tokens/eth in any case", async () => {
       const lostAmount = ethers.utils.parseEther("2");
-      await token.mint(accounts[0].address, lostAmount);
-      await token.transfer(marketplace.address, lostAmount);
-
+      await token.connect(accounts[5]).mint(accounts[5].address, lostAmount);
+      await token
+        .connect(accounts[5])
+        .transfer(marketplace.address, lostAmount);
+      console.log("here");
       await expect(
         marketplace
           .connect(accounts[5])

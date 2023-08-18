@@ -18,27 +18,18 @@ import "hardhat/console.sol";
  * CreatureAccessoryLootBox - a randomized and openable lootbox of Creature
  * Accessories.
  */
-contract EndersComics is ERC1155Supply, ReentrancyGuard, AccessControl {
+contract EndersComicsFindora is ERC1155Supply, ReentrancyGuard, AccessControl {
     using Strings for uint256;
     using Address for address;
 
     struct Comic {
-        uint256 rewardId;
-        uint256 priceUSD;
+        uint256 id;
+        uint256 price;
         bool exists;
     }
 
     mapping(uint256 => Comic) public comics;
-    //All the sales price have to have 6 decimals
-    uint256 public decimalsUSD = 6;
     uint256 public comicIdCounter;
-
-    // token address to priceFeed address
-    mapping(address => address) public priceFeedsByToken;
-    mapping(address => uint256) public decimalsByToken;
-
-    // Tokens allowed in the marketplace
-    address public wcurrency;
 
     bytes32 public constant URI_SETTER_ROLE = keccak256("URI_SETTER_ROLE");
     bytes32 public constant SUPPLY_ROLE = keccak256("SUPPLY_ROLE");
@@ -50,18 +41,9 @@ contract EndersComics is ERC1155Supply, ReentrancyGuard, AccessControl {
 
     mapping(uint256 => string) public idToIpfs;
 
-    constructor(
-        string memory _name,
-        string memory _symbol,
-        address _wcurrency,
-        address _priceFeedW,
-        uint256 _decimals
-    ) ERC1155("") {
+    constructor(string memory _name, string memory _symbol) ERC1155("") {
         name = _name;
         symbol = _symbol;
-        wcurrency = _wcurrency;
-        priceFeedsByToken[_wcurrency] = _priceFeedW;
-        decimalsByToken[_wcurrency] = _decimals;
         comicIdCounter = 0;
         _grantRole(DEFAULT_ADMIN_ROLE, msg.sender);
         _grantRole(COMIC_ROLE, msg.sender);
@@ -93,73 +75,31 @@ contract EndersComics is ERC1155Supply, ReentrancyGuard, AccessControl {
     function buyBatch(
         address to,
         uint256[] memory tokensId,
-        uint256[] memory amounts,
-        address tokenToPay
+        uint256[] memory amounts
     ) public payable {
-        console.log(msg.value, "value");
         require(
             tokensId.length == amounts.length,
             "Array Length must be the same of amount and Ids"
         );
         for (uint256 i = 0; i < tokensId.length; i++) {
-            buy(to, tokenToPay, tokensId[i], amounts[i]);
+            buy(to, tokensId[i], amounts[i]);
         }
     }
 
-    function buy(
-        address receiver,
-        address tokenToPay,
-        uint256 id,
-        uint256 amount
-    ) public payable {
-        uint256 cost = getPrice(tokenToPay, id, amount);
+    function buy(address receiver, uint256 id, uint256 amount) public payable {
+        uint256 cost = getPrice(id, amount);
         require(comics[id].exists, "This token doesn't exist");
-        if (tokenToPay == wcurrency) {
-            require(msg.value >= cost, "NOT_ENOUGH_VALUE");
-        } else {
-            require(isTokenAllowed(tokenToPay), "TOKEN TO PAY IS NOT ALLOWED");
-            require(
-                IERC20(tokenToPay).balanceOf(_msgSender()) > cost,
-                "INSUFICIENT BALANCE"
-            );
-            require(
-                IERC20(tokenToPay).allowance(_msgSender(), address(this)) >
-                    cost,
-                "INSUFICIENT ALLOWANCE"
-            );
-
-            IERC20(tokenToPay).transferFrom(_msgSender(), address(this), cost);
-        }
-
+        require(msg.value >= cost, "NOT_ENOUGH_VALUE");
         _mint(receiver, id, amount, "");
     }
 
-    function isTokenAllowed(address _token) public view returns (bool) {
-        return
-            abi.encodePacked(priceFeedsByToken[_token]).length > 0
-                ? true
-                : false;
-    }
-
     function getPrice(
-        address tokenToGet,
         uint256 id,
         uint256 quantity
     ) public view returns (uint256) {
         Comic storage _comic = comics[id];
         require(_comic.exists, "ClockSale:TOKEN_DOES_NOT_EXIST");
-        AggregatorV3Interface priceFeed = AggregatorV3Interface(
-            priceFeedsByToken[tokenToGet]
-        );
-        (, int256 price, , , ) = priceFeed.latestRoundData();
-        uint256 decimals = priceFeed.decimals();
-        // int256 price = 189037846052;
-        // uint256 decimals = 8;
-        return
-            (quantity *
-                (_comic.priceUSD) *
-                10 ** (decimalsByToken[tokenToGet] + decimals - decimalsUSD)) /
-            uint256(price);
+        return (quantity * _comic.price);
     }
 
     function burnBatchFor(
@@ -188,19 +128,10 @@ contract EndersComics is ERC1155Supply, ReentrancyGuard, AccessControl {
         }
     }
 
-    function addToken(
-        address _token,
-        address priceFeed,
-        uint256 decimals
-    ) external onlyRole(SUPPLY_ROLE) {
-        priceFeedsByToken[_token] = priceFeed;
-        decimalsByToken[_token] = decimals;
-    }
-
-    function addComic(uint256 priceUSD) external onlyRole(COMIC_ROLE) {
+    function addComic(uint256 price) external onlyRole(COMIC_ROLE) {
         uint256 id = comicIdCounter + 1;
-        comics[id].priceUSD = priceUSD;
-        comics[id].rewardId = id;
+        comics[id].price = price;
+        comics[id].id = id;
         if (!comics[id].exists) {
             comics[id].exists = true;
             comicIdCounter++;
@@ -209,10 +140,10 @@ contract EndersComics is ERC1155Supply, ReentrancyGuard, AccessControl {
 
     function editComic(
         uint256 id,
-        uint256 priceUSD
+        uint256 price
     ) external onlyRole(COMIC_ROLE) {
-        comics[id].priceUSD = priceUSD;
-        comics[id].rewardId = id;
+        comics[id].price = price;
+        comics[id].id = id;
     }
 
     function getComic(uint256 id) external view returns (Comic memory) {

@@ -1,46 +1,19 @@
 import { ethers, upgrades, network } from "hardhat";
 import { expect, assert } from "chai";
 import { SignerWithAddress } from "@nomiclabs/hardhat-ethers/dist/src/signer-with-address";
-import { EndersBattlePass, MockERC20 } from "../types";
-import { Console } from "console";
+import { EndersBattlePassFindora } from "../../types";
 
 describe("REWARDS", function () {
-  let endersBattlePass: EndersBattlePass,
-    accounts: SignerWithAddress[],
-    token: MockERC20,
-    token2: MockERC20,
-    token3: MockERC20;
-  const hash = ethers.utils.id(Math.random().toString());
+  let endersBattlePass: EndersBattlePassFindora, accounts: SignerWithAddress[];
   const URI = "https://some/url/";
 
   it("Should deploy properly", async () => {
     accounts = await ethers.getSigners();
     const owner = accounts[0];
-    token = (await (
-      await ethers.getContractFactory("MockERC20")
-    ).deploy()) as MockERC20;
-    token2 = (await (
-      await ethers.getContractFactory("MockERC20")
-    ).deploy()) as MockERC20;
-    token3 = (await (
-      await ethers.getContractFactory("MockERC20")
-    ).deploy()) as MockERC20;
 
-    endersBattlePass = (await (
-      await ethers.getContractFactory("EndersBattlePass")
-    ).deploy(
-      "EndersBattlePass",
-      "EGR",
-      token.address,
-      token.address,
-      6,
-    )) as EndersBattlePass;
-
-    await token.mint(owner.address, 100000000000);
-    // await token2.mint(owner.address, 100000000000);
-    await token3.mint(owner.address, 100000000000);
-
-    endersBattlePass.addToken(token2.address, token2.address, 6);
+    endersBattlePass = await (
+      await ethers.getContractFactory("EndersBattlePassFindora")
+    ).deploy("EndersBattlePass", "EGR");
 
     const adminRole = await endersBattlePass.DEFAULT_ADMIN_ROLE();
     const minterRole = await endersBattlePass.SUPPLY_ROLE();
@@ -172,10 +145,7 @@ describe("REWARDS", function () {
   });
 
   it("Should buy only the nfts of the current season", async () => {
-    await token.increaseAllowance(endersBattlePass.address, 100000000000);
     for (let i = 1; i <= 10; i++) {
-      console.log(i);
-
       await endersBattlePass.addSeason(i, 100000000);
       expect(
         await (
@@ -183,25 +153,17 @@ describe("REWARDS", function () {
         ).exists,
       ).to.be.equal(true);
 
-      console.log(i);
-
-      await endersBattlePass.buyBattlePass(token.address, 1, {
-        value: await endersBattlePass.getPrice(token.address, 1),
+      await endersBattlePass.buyBattlePass(2, {
+        value: await endersBattlePass.getPrice(2),
       });
-
-      console.log(i);
 
       const balanceContract = await ethers.provider.getBalance(
         endersBattlePass.address,
       );
 
-      console.log(i);
-
       expect(balanceContract).to.be.equal(
-        (await endersBattlePass.getPrice(token.address, 1)).mul(i),
+        (await endersBattlePass.getPrice(2)).mul(i),
       );
-
-      console.log(i);
 
       expect(
         await endersBattlePass.balanceOf(
@@ -212,7 +174,7 @@ describe("REWARDS", function () {
             )
           ).rewardId,
         ),
-      ).to.be.equal(1);
+      ).to.be.equal(2);
     }
   });
 
