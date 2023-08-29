@@ -2,7 +2,6 @@ import { expect } from "chai";
 import { ethers, network } from "hardhat";
 import { SignerWithAddress } from "@nomiclabs/hardhat-ethers/dist/src/signer-with-address";
 import type { BigNumber } from "@ethersproject/bignumber";
-import type { Block } from "@ethersproject/abstract-provider";
 
 import { getLogs } from "../utils";
 import { EndersGate, MockERC20, RentMultiTokens } from "../types";
@@ -401,6 +400,106 @@ describe("Rent", function () {
       expect(balanceWrapped).to.be.equal(1);
     });
 
+    it("Should rent a batch by calculated amounts", async () => {
+      const daysOfRent = 2;
+
+      const timeRent = [
+        {
+          id: 3,
+          priceUSD: 1000000,
+          tokens: [token.address, feeReceiver.address],
+        },
+        {
+          id: 5,
+          priceUSD: 1500000,
+          tokens: [token.address, feeReceiver.address],
+        },
+        {
+          id: 6,
+          priceUSD: 1800000,
+          tokens: [token.address, feeReceiver.address],
+        },
+      ];
+
+      for (let i = 0; i < timeRent.length; i++) {
+        await rent.createRent(
+          nft.address,
+          timeRent[i].id,
+          timeRent[i].priceUSD,
+          timeRent[i].tokens,
+        );
+      }
+
+      const buyer = accounts[1];
+      const [buyerBalance, sellerBalance, feeReceiverBalance] =
+        await Promise.all([
+          await ethers.provider.getBalance(buyer.address),
+          await ethers.provider.getBalance(accounts[0].address),
+          await ethers.provider.getBalance(feeReceiver.address),
+        ]);
+
+      console.log(sellerBalance, feeReceiverBalance, "Seller/Fee balances");
+
+      const rentId = (await rent.tokenIdTracker()).sub(1);
+      const cost = await timeRent
+        .map(async ({}, i) => {
+          const price = await rent.getRatePrice(
+            rentId.sub(i),
+            feeReceiver.address,
+          );
+          return price.mul(daysOfRent);
+        })
+        .reduce(async (a, b) => {
+          return (await a).add(await b);
+        });
+
+      const receipt = await (
+        await rent
+          .connect(buyer)
+          .rentBatch(
+            [rentId, rentId.sub(1), rentId.sub(2)],
+            daysOfRent,
+            feeReceiver.address,
+            {
+              value: cost.toString(),
+            },
+          )
+      ).wait();
+
+      const log = getLogs(rent.interface, receipt).find(
+        ({ name }) => name === "RentedSuccessful",
+      );
+      const [postBuyerBalance, postSellerBalance, postFeeReceiverBalance] =
+        await Promise.all([
+          await ethers.provider.getBalance(buyer.address),
+          await ethers.provider.getBalance(accounts[0].address),
+          await ethers.provider.getBalance(feeReceiver.address),
+        ]);
+
+      const feeAmount = cost.mul(OWNER_CUT).div(10000);
+
+      expect(
+        postFeeReceiverBalance.sub(feeReceiverBalance.sub(2)).toString(),
+      ).to.be.equal(feeAmount.toString());
+
+      expect(
+        postSellerBalance.sub(sellerBalance.add(2)).toString(),
+      ).to.be.equal(cost.sub(feeAmount).toString());
+
+      expect(buyerBalance.sub(postBuyerBalance)).to.be.gt(cost.toString());
+
+      const rentData = parseRent(
+        await rent.getRents(timeRent.map(({ id }) => id)),
+      );
+
+      const balanceWrapped = await rent.balanceOfBatch(
+        new Array(timeRent.length).fill(buyer.address),
+        timeRent.map(({ id }) => id),
+      );
+
+      console.log(balanceWrapped, rentData);
+    });
+
     it("Should no rent while the nft is already rented", async () => {
       const timeRent = {
         id: 2,
@@ -435,6 +534,65 @@ describe("Rent", function () {
           value: price,
         }),
       ).to.be.revertedWith("Rental:NOT_AVAILABLE");
+      await network.provider.send("evm_increaseTime", [3600 * 24 * 2 + 100]);
+      await network.provider.send("evm_mine");
+    });
+
+    it("Should no transfer Rent Wrapped NFTs", async () => {
+      const timeRent = {
+        id: 2,
+        priceUSD: 10000000,
+        duration: 2,
+        tokens: [feeReceiver.address, token.address],
+      };
+      await nft.setApprovalForAll(rent.address, true);
+      const tx = await (
+        await rent.createRent(
+          nft.address,
+          timeRent.id,
+          timeRent.priceUSD,
+          timeRent.tokens,
+        )
+      ).wait();
+      const rentId = (await rent.tokenIdTracker()).sub(1);
+      const price = (await rent.getRatePrice(rentId, feeReceiver.address)).mul(
+        timeRent.duration,
+      );
+
+      await rent
+        .connect(accounts[2])
+        .rent(rentId, timeRent.duration, feeReceiver.address, {
+          value: price,
+        });
+
+      const logs = getLogs(rent.interface, tx);
+      const RentId = logs.find(
+        ({ name }: { name: string }) => name === "RentAuctionCreated",
+      )?.args[0];
+      Rents.push(RentId);
+      await expect(
+        rent
+          .connect(accounts[2])
+          .safeBatchTransferFrom(
+            accounts[2].address,
+            feeReceiver.address,
+            [timeRent.id],
+            [1],
+            "0x00",
+          ),
+      ).to.be.revertedWith("Rental: WRAPPED NFTS CAN'T BE TRANSFERED");
+
+      await expect(
+        rent
+          .connect(accounts[2])
+          .safeTransferFrom(
+            accounts[2].address,
+            feeReceiver.address,
+            timeRent.id,
+            1,
+            "0x00",
+          ),
+      ).to.be.revertedWith("Rental: WRAPPED NFTS CAN'T BE TRANSFERED");
       await network.provider.send("evm_increaseTime", [3600 * 24 * 2 + 100]);
       await network.provider.send("evm_mine");
     });

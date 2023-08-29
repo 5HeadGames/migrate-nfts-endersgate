@@ -1,6 +1,6 @@
 import { ethers, network } from "hardhat";
 import fs from "fs";
-import { ClockSaleOwnable } from "../typechain";
+import { ClockSaleOwnable } from "../../types";
 const OWNER_CUT = "400";
 
 const loadJsonFile = (file: string) => {

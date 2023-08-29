@@ -13,7 +13,7 @@ import "@chainlink/contracts/src/v0.8/interfaces/AggregatorV3Interface.sol";
 import "@openzeppelin/contracts/token/ERC1155/ERC1155.sol";
 
 /// @title Clock auction for non-fungible tokens.
-contract RentMultiTokens is
+contract EndersRentNative is
     ERC1155,
     Ownable,
     Pausable,
@@ -36,8 +36,7 @@ contract RentMultiTokens is
         address nft;
         uint256 nftId;
         uint256 amount;
-        uint256 priceUSD;
-        address[] tokens;
+        uint256 price;
         uint256 duration;
         uint256 startedAt;
         SaleStatus status;
@@ -50,29 +49,18 @@ contract RentMultiTokens is
     uint256 public ownerCut;
     uint256 public genesisBlock;
 
-    //All the sales price have to have 6 decimals
-    uint256 public decimalsUSD = 6;
-
     // Map from token ID to their corresponding auction.
     mapping(uint256 => Rent) public rents;
     // Nfts allowed in marketplace
     mapping(address => bool) public isAllowed;
 
-    // token address to priceFeed address
-    mapping(address => address) public priceFeedsByToken;
-    mapping(address => uint256) public decimalsByToken;
-
     mapping(uint256 => string) public ipfsURIs;
-
-    // Tokens allowed in the marketplace
-    address public wcurrency;
 
     event RentAuctionCreated(
         uint256 indexed _rentId,
         address _nft,
         uint256 _nftId,
         uint256 priceUSD,
-        address[] _tokens,
         uint256 _startedAt,
         address _seller
     );
@@ -80,7 +68,6 @@ contract RentMultiTokens is
         uint256 indexed _rentId,
         address _buyer,
         uint256 _cost,
-        address _tokenUsed,
         uint256 _daysToRent,
         uint256 _startedAt
     );
@@ -88,20 +75,11 @@ contract RentMultiTokens is
     event RentAuctionCancelled(uint256 indexed _rentId);
     event ChangedFeeReceiver(address newReceiver);
 
-    constructor(
-        address _feeReceiver,
-        address _wcurrency,
-        address _priceFeedW,
-        uint256 _decimals,
-        uint256 _ownerCut
-    ) ERC1155("Rent EG") {
+    constructor(address _feeReceiver, uint256 _ownerCut) ERC1155("Rent EG") {
         require(_ownerCut <= 10000, "Rental:BAD INPUT IN OWNER CUT"); //less than 100%
         ownerCut = _ownerCut;
         feeReceiver = _feeReceiver;
         genesisBlock = block.number;
-        wcurrency = _wcurrency;
-        priceFeedsByToken[_wcurrency] = _priceFeedW;
-        decimalsByToken[_wcurrency] = _decimals;
     }
 
     receive() external payable {
@@ -112,26 +90,14 @@ contract RentMultiTokens is
     function createRent(
         address _nftAddress,
         uint256 _tokenId,
-        uint256 _priceUSD, //consider this has to be with 6 decimals in price
-        address[] memory _tokens
+        uint256 _price //consider this has to be with 6 decimals in price
     ) external whenNotPaused {
         address _seller = _msgSender();
 
         require(isAllowed[_nftAddress], "Rental: INVALID NFT ADDRESS");
         require(_owns(_nftAddress, _seller, _tokenId), "Rental: NOT OWNER");
-        require(
-            _tokens.length > 0,
-            "Rental: You have to accept at least one token as a payment"
-        );
 
         _escrow(_nftAddress, _seller, _tokenId, 1);
-
-        for (uint256 i = 0; i < _tokens.length; i++) {
-            require(
-                isTokenAllowed(_tokens[i]),
-                "Rental: ONE OF THE TOKENS TO PAY IS NOT ALLOWED"
-            );
-        }
 
         Rent memory _rent = Rent(
             _seller,
@@ -139,8 +105,7 @@ contract RentMultiTokens is
             _nftAddress,
             _tokenId,
             1,
-            _priceUSD,
-            _tokens,
+            _price,
             0,
             block.timestamp,
             SaleStatus.AvailableToRent
@@ -150,30 +115,21 @@ contract RentMultiTokens is
 
     function rentBatch(
         uint256[] memory rentId,
-        uint256 daysToRent,
-        address tokenToPay
+        uint256 daysToRent
     ) public payable {
         uint256 length = rentId.length;
         for (uint256 i = 0; i < length; i++) {
-            rent(rentId[i], daysToRent, tokenToPay);
+            rent(rentId[i], daysToRent);
         }
     }
 
     function rent(
         uint256 rentId,
-        uint256 daysToRent,
-        address tokenToPay
+        uint256 daysToRent
     ) public payable nonReentrant whenNotPaused {
         Rent storage _rent = rents[rentId];
-        uint256 cost = 0;
+        uint256 cost = _rent.price * daysToRent;
         require(daysToRent > 0, "Rental:RENT TIME MUST BE GREATER THAN 0");
-        for (uint256 i = 0; i < _rent.tokens.length; i++) {
-            if (_rent.tokens[i] == tokenToPay) {
-                cost = getRatePrice(rentId, tokenToPay) * daysToRent;
-            }
-        }
-
-        require(cost != 0, "Rental:TOKEN NOT ALLOWED");
         require(
             _rent.status == SaleStatus.AvailableToRent,
             "Rental:NFT NOT AVAILABLE TO RENT"
@@ -181,52 +137,32 @@ contract RentMultiTokens is
 
         address buyer = _msgSender();
 
-        if (tokenToPay == wcurrency) {
-            require(_isAvailableToRent(_rent), "Rental:NOT AVAILABLE");
-            require(msg.value >= cost, "Rental:NOT ENOUGH VALUE");
+        require(_isAvailableToRent(_rent), "Rental:NOT AVAILABLE");
+        require(msg.value >= cost, "Rental:NOT ENOUGH VALUE");
 
-            uint256 ownerAmount = (cost * ownerCut) / 10000;
-            uint256 sellAmount = cost - ownerAmount;
+        uint256 ownerAmount = (cost * ownerCut) / 10000;
+        uint256 sellAmount = cost - ownerAmount;
 
-            address payable seller = payable(_rent.seller);
+        address payable seller = payable(_rent.seller);
 
-            (bool success, ) = seller.call{value: sellAmount}("");
-            require(success, "Transfer failed.");
-            (bool success2, ) = feeReceiver.call{value: ownerAmount}("");
-            require(success2, "Transfer failed.");
-        } else {
-            require(
-                isTokenAllowed(tokenToPay),
-                "Rental: TOKEN TO PAY IS NOT ALLOWED"
-            );
-            require(
-                IERC20(tokenToPay).balanceOf(buyer) > cost,
-                "Rental: INSUFICIENT BALANCE"
-            );
-            require(
-                IERC20(tokenToPay).allowance(buyer, address(this)) > cost,
-                "Rental: INSUFICIENT ALLOWANCE"
-            );
-            require(_isAvailableToRent(_rent), "Rental:NOT_AVAILABLE");
+        (bool success, ) = seller.call{value: sellAmount}("");
+        require(success, "Transfer failed.");
+        (bool success2, ) = feeReceiver.call{value: ownerAmount}("");
+        require(success2, "Transfer failed.");
 
-            uint256 ownerAmount = (cost * ownerCut) / 10000;
-            uint256 sellAmount = cost - ownerAmount;
-
-            IERC20(tokenToPay).transferFrom(buyer, _rent.seller, sellAmount);
-            IERC20(tokenToPay).transferFrom(buyer, feeReceiver, ownerAmount);
-        }
-
+        /* Mint and update rent status */
         _mint(buyer, _rent.nftId, 1, "0x00");
         _rent.status = SaleStatus.InRent;
         _rent.buyer = buyer;
         _rent.duration = daysToRent * 86400;
         _rent.startedAt = block.timestamp;
+
         setApprovalForAll(address(this), true);
+
         emit RentedSuccessful(
             rentId,
             buyer,
             cost,
-            tokenToPay,
             _rent.duration,
             _rent.startedAt
         );
@@ -304,7 +240,7 @@ contract RentMultiTokens is
     ) external onlyOwner {
         Rent storage _rent = rents[saleId];
         require(_saleExists(_rent), "Rental:NOT_AVAILABLE");
-        _rent.priceUSD = newPrice;
+        _rent.price = newPrice;
     }
 
     function updateSaleReceiver(
@@ -325,15 +261,6 @@ contract RentMultiTokens is
         }
     }
 
-    function addToken(
-        address _token,
-        address priceFeed,
-        uint256 decimals
-    ) external onlyOwner {
-        priceFeedsByToken[_token] = priceFeed;
-        decimalsByToken[_token] = decimals;
-    }
-
     /* VIEW FUNCTIONS */
 
     function getRents(
@@ -346,35 +273,9 @@ contract RentMultiTokens is
         return response;
     }
 
-    function getRatePrice(
-        uint256 rentId,
-        address tokenToGet
-    ) public view returns (uint256) {
-        Rent storage _rent = rents[rentId];
-        require(_isAvailableToRent(_rent), "Rental:NOT_AVAILABLE");
-        // AggregatorV3Interface priceFeed = AggregatorV3Interface(
-        //     priceFeedsByToken[tokenToGet]
-        // );
-        // (, int256 price, , , ) = priceFeed.latestRoundData();
-        // uint256 decimals = priceFeed.decimals();
-        int256 price = 84679030;
-        uint256 decimals = 8;
-
-        return (((_rent.priceUSD) *
-            10 ** (decimalsByToken[tokenToGet] + decimals - decimalsUSD)) /
-            uint256(price));
-    }
-
     function isOnSale(uint256 rentId) external view returns (bool) {
         Rent storage _rent = rents[rentId];
         return _isAvailableToRent(_rent);
-    }
-
-    function isTokenAllowed(address _token) public view returns (bool) {
-        return
-            abi.encodePacked(priceFeedsByToken[_token]).length > 0
-                ? true
-                : false;
     }
 
     function uri(uint256 id) public view override returns (string memory) {
@@ -429,8 +330,7 @@ contract RentMultiTokens is
             auctionID,
             _rent.nft,
             _rent.nftId,
-            _rent.priceUSD,
-            _rent.tokens,
+            _rent.price,
             _rent.startedAt,
             _rent.seller
         );

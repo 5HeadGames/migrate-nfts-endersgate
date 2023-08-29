@@ -20,7 +20,9 @@ async function main() {
   const endersPacks = EndersPacks.attach(fileData.pack);
 
   const tx = await endersPacks.mintBatch(
-    "0x40f75fb842e9001390bb11E89D02991E838095A7",
+    (
+      await ethers.getSigners()
+    )[0].address,
     [0, 1, 2, 3],
     [1000, 1000, 1000, 1000],
     "0x00",
