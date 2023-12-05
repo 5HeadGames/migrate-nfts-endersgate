@@ -2,7 +2,7 @@
   "name": "Jumba",
   "type": "ERC1155",
   "description": "[Ogre | Fighter] \"Bone Smasher\" Activate: Launch a tree with a 40% chance of hitting all enemy Guardians on the field for 20 damage.",
-  "image": "QmQh6odzNHGAiDSRMm5oo9vp5z7VTnYSzS1paTmzWFaHy6",
+  "image": "https://bafybeifohhlvsg2o55ubtlwokxeuwnbmhalamsehgemrnjlzhce3ohtnnm.ipfs.dweb.link/JUMBA%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmQh6odzNHGAiDSRMm5oo9vp5z7VTnYSzS1paTmzWFaHy6"
+      "value": "https://bafybeifohhlvsg2o55ubtlwokxeuwnbmhalamsehgemrnjlzhce3ohtnnm.ipfs.dweb.link/JUMBA%20FRONT.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmQh6odzNHGAiDSRMm5oo9vp5z7VTnYSzS1paTmzWFaHy6"
     }
-  ]
+  ],
+  "typeCard": "wood"
 }

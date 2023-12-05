@@ -2,7 +2,7 @@
   "name": "Urgos",
   "type": "ERC1155",
   "description": "[Sentinel | Support] \"Void Vision\" Activate: Select one Ally on your side of the field and increase their Crit Chance  & Crit DMG by 50%.",
-  "image": "QmSyJdKzbUTd6DAijMxuR2BY36iM14DBLHKFQPiGHztFvX",
+  "image": "https://bafybeigttpn5rbplylcqoo3fk6ewxmrmxjmricv7w2j5otalhejhr4bl4q.ipfs.dweb.link/URGOS%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmSyJdKzbUTd6DAijMxuR2BY36iM14DBLHKFQPiGHztFvX"
+      "value": "https://bafybeigttpn5rbplylcqoo3fk6ewxmrmxjmricv7w2j5otalhejhr4bl4q.ipfs.dweb.link/URGOS%20FRONT.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmSyJdKzbUTd6DAijMxuR2BY36iM14DBLHKFQPiGHztFvX"
     }
-  ]
+  ],
+  "typeCard": "gold"
 }

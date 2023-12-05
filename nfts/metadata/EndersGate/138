@@ -2,7 +2,7 @@
   "name": "Ophelia The Resurrector",
   "type": "ERC1155",
   "description": "[Undead | Healer] Activate: Heal all undead / zombie type Guardians on your side of the field for 25 HP.  Cooldown: 2 turns.",
-  "image": "QmeYG2y8NTZRtfyhyxwoCGizReQGdrbgXM8717d177kyZU",
+  "image": "https://bafybeiganpz2ei4vuqbnlka6c3nevz7vxhtiqyn2nx7ub7di6lj5djgepu.ipfs.dweb.link/OPHELIA%20THE%20RESURRECTOR%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmeYG2y8NTZRtfyhyxwoCGizReQGdrbgXM8717d177kyZU"
+      "value": "https://bafybeiganpz2ei4vuqbnlka6c3nevz7vxhtiqyn2nx7ub7di6lj5djgepu.ipfs.dweb.link/OPHELIA%20THE%20RESURRECTOR%20FRONT.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmeYG2y8NTZRtfyhyxwoCGizReQGdrbgXM8717d177kyZU"
     }
-  ]
+  ],
+  "typeCard": "stone"
 }

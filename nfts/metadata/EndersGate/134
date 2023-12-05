@@ -2,7 +2,7 @@
   "name": "Eclipso",
   "type": "ERC1155",
   "description": "[Human | Assassin] \"Shadow Trickster\" Passive: Attacks have a 10% chance of stealing 50 gold from your opponent.",
-  "image": "QmYqH4mZUgBsz9FiJY1zwcz22K2QSiPdvsiQzQh6p745qb",
+  "image": "https://bafybeiez5zm7egfewa2j73rll2dkgmfwqd5rdenpq7azf76cq5sodlbgyy.ipfs.dweb.link/ECLIPSO%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmYqH4mZUgBsz9FiJY1zwcz22K2QSiPdvsiQzQh6p745qb"
+      "value": "https://bafybeiez5zm7egfewa2j73rll2dkgmfwqd5rdenpq7azf76cq5sodlbgyy.ipfs.dweb.link/ECLIPSO%20FRONT.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmYqH4mZUgBsz9FiJY1zwcz22K2QSiPdvsiQzQh6p745qb"
     }
-  ]
+  ],
+  "typeCard": "stone"
 }

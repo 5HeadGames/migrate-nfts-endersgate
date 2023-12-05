@@ -2,7 +2,7 @@
   "name": "Golden Pig",
   "type": "ERC1155",
   "description": "Pay 25 Gold for 3 turns during your standby phase to successfully Activate: \nHire a random Guardian from your deck to the field. If Guardian is sent to the Grave yard, gain 75 gold.",
-  "image": "Qmb5wsGKUdBEhDCvfKcZMPa1CxsFgS1sqAnrvSWNo1SKsY",
+  "image": "https://bafybeibpndx3fffuyealh6h33hp2ck4b5quej5ghstn2ow2ka5gkq4mzw4.ipfs.dweb.link/GOLDEN%20PIG%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -31,7 +31,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/Qmb5wsGKUdBEhDCvfKcZMPa1CxsFgS1sqAnrvSWNo1SKsY"
+      "value": "https://bafybeibpndx3fffuyealh6h33hp2ck4b5quej5ghstn2ow2ka5gkq4mzw4.ipfs.dweb.link/GOLDEN%20PIG%20FRONT.webp"
     }
   },
   "attributes": [
@@ -63,5 +63,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/Qmb5wsGKUdBEhDCvfKcZMPa1CxsFgS1sqAnrvSWNo1SKsY"
     }
-  ]
+  ],
+  "typeCard": "action"
 }

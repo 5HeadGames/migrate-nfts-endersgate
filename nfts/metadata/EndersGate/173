@@ -2,7 +2,7 @@
   "name": "Cheif Nopsis",
   "type": "ERC1155",
   "description": "[Insect | Tank] Passive: All attacks are directed to chief Nopsis. Additionally, all \"Fire Ant Colony\" Guardians Gain +10 ATK & +10 HP.",
-  "image": "QmXotvcyU6XaAtncoDChmZ2eoTE91FVuRTNS4F2Tu2Q6Kb",
+  "image": "https://bafybeidngjbmmqvm53pweyohu7tu56qukaor3n2ncd2xwrb3feq3xwi3yu.ipfs.w3s.link/CHIEF%20NOPSIS.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -11,7 +11,7 @@
     },
     "name": {
       "name": "name",
-      "value": "Cheif Nopsis"
+      "value": "Chief Nopsis"
     },
     "element": {
       "name": "element",
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmXotvcyU6XaAtncoDChmZ2eoTE91FVuRTNS4F2Tu2Q6Kb"
+      "value": "https://bafybeidngjbmmqvm53pweyohu7tu56qukaor3n2ncd2xwrb3feq3xwi3yu.ipfs.w3s.link/CHIEF%20NOPSIS.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmXotvcyU6XaAtncoDChmZ2eoTE91FVuRTNS4F2Tu2Q6Kb"
     }
-  ]
+  ],
+  "typeCard": "iron"
 }

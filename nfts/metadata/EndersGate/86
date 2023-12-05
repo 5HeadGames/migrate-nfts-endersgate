@@ -2,7 +2,7 @@
   "name": "Void Overload",
   "type": "ERC1155",
   "description": "Flip: When your opponent has a Void type Guardian on their side of the field, deal 25 damage to them and all other Guardians on their side of the field.\n",
-  "image": "QmRXX1WcSB3fHgwJbBP6BAyuBCJzn27ardiecSu7vqHatm",
+  "image": "https://bafybeibzcegbmqkijvmehwgkezz4rltzgr3tfqjshzh7bvkgnzqbejiyw4.ipfs.dweb.link/VOID%20OVERLOAD%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -31,7 +31,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmRXX1WcSB3fHgwJbBP6BAyuBCJzn27ardiecSu7vqHatm"
+      "value": "https://bafybeibzcegbmqkijvmehwgkezz4rltzgr3tfqjshzh7bvkgnzqbejiyw4.ipfs.dweb.link/VOID%20OVERLOAD%20FRONT.webp"
     }
   },
   "attributes": [
@@ -63,5 +63,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmRXX1WcSB3fHgwJbBP6BAyuBCJzn27ardiecSu7vqHatm"
     }
-  ]
+  ],
+  "typeCard": "reaction"
 }

@@ -2,7 +2,7 @@
   "name": "Hydros",
   "type": "ERC1155",
   "description": "[Elemental | Mage] \"Aqua Soul\" Active: Once per turn pay 10 gold to fire a Water blast which deals 10 water Damage.",
-  "image": "QmX3fxJGzwSESKXMVtMN29hwX4bdkTSctKzfYWA1Q8YLfd",
+  "image": "https://bafybeialyai6hoquln55vfg35wcbrmyakma4xufi4iqtd66klvxojr72ne.ipfs.dweb.link/HYDROS%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmX3fxJGzwSESKXMVtMN29hwX4bdkTSctKzfYWA1Q8YLfd"
+      "value": "https://bafybeialyai6hoquln55vfg35wcbrmyakma4xufi4iqtd66klvxojr72ne.ipfs.dweb.link/HYDROS%20FRONT.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,11 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmX3fxJGzwSESKXMVtMN29hwX4bdkTSctKzfYWA1Q8YLfd"
     }
-  ]
+  ],
+  "synergies": [
+    "Liquana",
+    "Aqualon",
+    "Glacius"
+  ],
+  "typeCard": "stone"
 }

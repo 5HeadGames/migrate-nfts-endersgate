@@ -2,7 +2,7 @@
   "name": "Aqualon",
   "type": "ERC1155",
   "description": "[Elemental | Tank] \"Aqua Soul\" All attacks are directed to Aqualon. Additionally, all \"Aqua Soul\" Guardians Gain +10 ATK & +10 HP.",
-  "image": "QmVkDgjsNwDHrKQRkEZWRfPWMHbL8kvr8BSaqwJmxraJDS",
+  "image": "https://bafybeiak3jf3py232abkt5ppr4jb7vcvjzdyuxf6dbbexp67xblm2mjodq.ipfs.dweb.link/AQUALON%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmVkDgjsNwDHrKQRkEZWRfPWMHbL8kvr8BSaqwJmxraJDS"
+      "value": "https://bafybeiak3jf3py232abkt5ppr4jb7vcvjzdyuxf6dbbexp67xblm2mjodq.ipfs.dweb.link/AQUALON%20FRONT.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,11 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmVkDgjsNwDHrKQRkEZWRfPWMHbL8kvr8BSaqwJmxraJDS"
     }
-  ]
+  ],
+  "synergies": [
+    "Liquana",
+    "Glacius",
+    "Hydros"
+  ],
+  "typeCard": "iron"
 }

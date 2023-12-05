@@ -2,7 +2,7 @@
   "name": "Panacea's Touch",
   "type": "ERC1155",
   "description": "Heal one Guardian on your side of the field for 25 health. ",
-  "image": "QmQpcukjk244aphG5FAAHKgW1WL1z1rijWQNvL52qTkYAD",
+  "image": "https://bafybeieksz27mbvu34qjqts3pvn67skhxau2hhktiyvjm5fhzdhkklhjqm.ipfs.dweb.link/PANACEAS%20TOUCH%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -31,7 +31,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmQpcukjk244aphG5FAAHKgW1WL1z1rijWQNvL52qTkYAD"
+      "value": "https://bafybeieksz27mbvu34qjqts3pvn67skhxau2hhktiyvjm5fhzdhkklhjqm.ipfs.dweb.link/PANACEAS%20TOUCH%20FRONT.webp"
     }
   },
   "attributes": [
@@ -63,5 +63,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmQpcukjk244aphG5FAAHKgW1WL1z1rijWQNvL52qTkYAD"
     }
-  ]
+  ],
+  "typeCard": "action"
 }

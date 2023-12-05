@@ -2,7 +2,7 @@
   "name": "Xoi'fu",
   "type": "ERC1155",
   "description": "[Beast | Support] \"Aqua Soul\" Activate: During your MP, pay 50 gold to send Xoi'fu to the Grave yard and Hire a Water Type Guardian from your deck with 200 HP or less to the field. Uses: 1.",
-  "image": "Qmd1FSRuLu5W13sj5NVf62PUUEFpCb48HPGmUytdXimGRF",
+  "image": "https://bafybeifaemc6lkipqi3ddkgf4hokqkwq2eaudgqk26jamnlvu7lcep3z5u.ipfs.dweb.link/XOIFU%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/Qmd1FSRuLu5W13sj5NVf62PUUEFpCb48HPGmUytdXimGRF"
+      "value": "https://bafybeifaemc6lkipqi3ddkgf4hokqkwq2eaudgqk26jamnlvu7lcep3z5u.ipfs.dweb.link/XOIFU%20FRONT.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/Qmd1FSRuLu5W13sj5NVf62PUUEFpCb48HPGmUytdXimGRF"
     }
-  ]
+  ],
+  "typeCard": "wood"
 }

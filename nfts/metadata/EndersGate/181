@@ -2,7 +2,7 @@
   "name": "Tempris",
   "type": "ERC1155",
   "description": "[Elemental | Fighter] \"Fire Smash\" Activate: During your MP1, select a Guardian on your opponent's side of the field to make your Rival: If Tempris is sent to the grave yard as a result of battle, Her Rival follows after 3 turns. ",
-  "image": "QmPCbBkYJfWD43SEPfbJEof4dvrTdMkYEUmajq54krJH6e",
+  "image": "https://bafybeie722hvavnuqym3nftonxk3fzd7oylqne5wjepqkcedboxxvfvbge.ipfs.dweb.link/TEMPRIS%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmPCbBkYJfWD43SEPfbJEof4dvrTdMkYEUmajq54krJH6e"
+      "value": "https://bafybeie722hvavnuqym3nftonxk3fzd7oylqne5wjepqkcedboxxvfvbge.ipfs.dweb.link/TEMPRIS%20FRONT.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmPCbBkYJfWD43SEPfbJEof4dvrTdMkYEUmajq54krJH6e"
     }
-  ]
+  ],
+  "typeCard": "iron"
 }

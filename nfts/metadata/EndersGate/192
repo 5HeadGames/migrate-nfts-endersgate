@@ -2,7 +2,7 @@
   "name": "Yannah",
   "type": "ERC1155",
   "description": "[Human | Mage] \"Void Acolyte\" Activate: Once per turn, deal 10 void damage to one selected enemy Guardian.",
-  "image": "QmPkEiUKbMbW6mp3q5CwvQgqWUAN396X9b5nQXpfhKGuMx",
+  "image": "https://bafybeifsxj3kehn3g2godw4w5okasxt2jl37z5gak7msnwhz5yleb33u5m.ipfs.dweb.link/YANNAH%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmPkEiUKbMbW6mp3q5CwvQgqWUAN396X9b5nQXpfhKGuMx"
+      "value": "https://bafybeifsxj3kehn3g2godw4w5okasxt2jl37z5gak7msnwhz5yleb33u5m.ipfs.dweb.link/YANNAH%20FRONT.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmPkEiUKbMbW6mp3q5CwvQgqWUAN396X9b5nQXpfhKGuMx"
     }
-  ]
+  ],
+  "typeCard": "gold"
 }

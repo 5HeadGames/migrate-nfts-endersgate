@@ -2,7 +2,7 @@
   "name": "Lady Rene",
   "type": "ERC1155",
   "description": "[Ascended | Fighter] \"Void Expert\" Passive: Lady Rene gains 5 attack for each Guardian on the field.",
-  "image": "Qma84o7cxeyRxtP22TT1zRz3JLYSQFMmSnCCxx8XmWqDkL",
+  "image": "https://bafybeieededjantw2ztt3cesmacpxip7vgiu5hrva4uswuuozce6acbxoi.ipfs.dweb.link/LADY%20RENE%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/Qma84o7cxeyRxtP22TT1zRz3JLYSQFMmSnCCxx8XmWqDkL"
+      "value": "https://bafybeieededjantw2ztt3cesmacpxip7vgiu5hrva4uswuuozce6acbxoi.ipfs.dweb.link/LADY%20RENE%20FRONT.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,11 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/Qma84o7cxeyRxtP22TT1zRz3JLYSQFMmSnCCxx8XmWqDkL"
     }
-  ]
+  ],
+  "synergies": [
+    "Sir Nex",
+    "Sir Albin",
+    "Lady Selsi"
+  ],
+  "typeCard": "legendary"
 }

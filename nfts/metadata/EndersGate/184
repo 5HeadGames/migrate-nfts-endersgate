@@ -2,7 +2,7 @@
   "name": "Liquana",
   "type": "ERC1155",
   "description": "[Elemental | Healer] \"Aqua Soul\"  Once every 2 turns, heal one ally Guardian for 20 HP; healed Guardian's gain +10 crit chance & damage for 1 turn.\n",
-  "image": "Qme63kwZW4MVCw5BCydXwKtaxCkFEWMSoQULaaSCmzk4Wp",
+  "image": "https://bafybeicbqafcpzszo5hqkg5rrpachykks33m4rumxf33qmddg3kt3aftju.ipfs.dweb.link/LIQUANA%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/Qme63kwZW4MVCw5BCydXwKtaxCkFEWMSoQULaaSCmzk4Wp"
+      "value": "https://bafybeicbqafcpzszo5hqkg5rrpachykks33m4rumxf33qmddg3kt3aftju.ipfs.dweb.link/LIQUANA%20FRONT.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,11 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/Qme63kwZW4MVCw5BCydXwKtaxCkFEWMSoQULaaSCmzk4Wp"
     }
-  ]
+  ],
+  "synergies": [
+    "Aqualon",
+    "Glacius",
+    "Hydros"
+  ],
+  "typeCard": "iron"
 }

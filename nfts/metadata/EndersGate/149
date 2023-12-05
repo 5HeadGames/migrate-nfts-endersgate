@@ -2,7 +2,7 @@
   "name": "Sampson",
   "type": "ERC1155",
   "description": "[Human | Tank] \"Earth Bend\" Active: During your Main Phase 1, Sampson gives him self an Earth shield worth 30% of his current HP. Uses: 1",
-  "image": "QmQGGQoTPBFwZKbGHHipQMLA5mxQazpPzTQuZ6i93HyrFp",
+  "image": "https://bafybeifjt6mcch2wze2qi4vmluaqsjugmxlkt4c67dcg6n7uxnhnzz5kyy.ipfs.dweb.link/SAMPSON%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmQGGQoTPBFwZKbGHHipQMLA5mxQazpPzTQuZ6i93HyrFp"
+      "value": "https://bafybeifjt6mcch2wze2qi4vmluaqsjugmxlkt4c67dcg6n7uxnhnzz5kyy.ipfs.dweb.link/SAMPSON%20FRONT.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmQGGQoTPBFwZKbGHHipQMLA5mxQazpPzTQuZ6i93HyrFp"
     }
-  ]
+  ],
+  "typeCard": "stone"
 }

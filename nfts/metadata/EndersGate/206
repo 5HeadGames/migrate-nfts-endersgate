@@ -2,7 +2,7 @@
   "name": "Angler Crawler",
   "type": "ERC1155",
   "description": "[Beast | Fighter] \"Europa Invasion\" Passive: Gain 5 ATK for each Water Type Guardian on the field and in your grave yard.",
-  "image": "QmTGfARkCKGgxjZBvtLuNqzsHBuRZUHZYGqzJzgH5gZCuD",
+  "image": "https://bafybeigq4aoqpsiaimpxmpkwtluga7v5x5jqulcytmnyjjhm55m3svpyle.ipfs.dweb.link/ANGLER%20CRAWLER%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmTGfARkCKGgxjZBvtLuNqzsHBuRZUHZYGqzJzgH5gZCuD"
+      "value": "https://bafybeigq4aoqpsiaimpxmpkwtluga7v5x5jqulcytmnyjjhm55m3svpyle.ipfs.dweb.link/ANGLER%20CRAWLER%20FRONT.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmTGfARkCKGgxjZBvtLuNqzsHBuRZUHZYGqzJzgH5gZCuD"
     }
-  ]
+  ],
+  "typeCard": "gold"
 }

@@ -2,7 +2,7 @@
   "name": "Sinthia",
   "type": "ERC1155",
   "description": "[Demon | Healer] \"Demonic Defiance\" Activate: Once per turn, heal one ally Guardian for 30 HP.",
-  "image": "QmW7cR6JQzFQSwMrnTaNsRkXZ8Qa4KW4aTYCUQMYgxA6cy",
+  "image": "https://bafybeibecj7txdtd4ahnh2epmkjgb3eh2y4szebu6rr3yxzs7fyyv5xjru.ipfs.dweb.link/SINTHIA%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmW7cR6JQzFQSwMrnTaNsRkXZ8Qa4KW4aTYCUQMYgxA6cy"
+      "value": "https://bafybeibecj7txdtd4ahnh2epmkjgb3eh2y4szebu6rr3yxzs7fyyv5xjru.ipfs.dweb.link/SINTHIA%20FRONT.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmW7cR6JQzFQSwMrnTaNsRkXZ8Qa4KW4aTYCUQMYgxA6cy"
     }
-  ]
+  ],
+  "typeCard": "gold"
 }

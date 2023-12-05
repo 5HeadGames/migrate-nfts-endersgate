@@ -2,7 +2,7 @@
   "name": "Huntress",
   "type": "ERC1155",
   "description": "[Vampire | Tank] Passive: Huntress heals for 10 HP per turn if you control another \"Vampire\" Type Guardian on your side of the field. Additionally Huntress Gains +10 HP for each Vampire type Guardian in your Grave yard. ",
-  "image": "QmYC5VLLSksB44mrYuq23t7gDndwa2F1nFHRb2gZNSDH7R",
+  "image": "https://bafybeidzo2uztnnmhwtpw3nkednvafszwcf5xepp5wmovrmenldasa7vaq.ipfs.dweb.link/HUNTRESS%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmYC5VLLSksB44mrYuq23t7gDndwa2F1nFHRb2gZNSDH7R"
+      "value": "https://bafybeidzo2uztnnmhwtpw3nkednvafszwcf5xepp5wmovrmenldasa7vaq.ipfs.dweb.link/HUNTRESS%20FRONT.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmYC5VLLSksB44mrYuq23t7gDndwa2F1nFHRb2gZNSDH7R"
     }
-  ]
+  ],
+  "typeCard": "wood"
 }

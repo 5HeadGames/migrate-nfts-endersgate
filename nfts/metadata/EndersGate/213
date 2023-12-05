@@ -2,7 +2,7 @@
   "name": "Tiffany",
   "type": "ERC1155",
   "description": "[Demon | Assassin] \"Demonic Stealth\" Activate: In your MP1, For 2 turn, Tiffany cannot be targeted during the Battle Phase. If Tiffany attacks, her stealth breaks dealing giving her a 50% chance to deal +15% Crit DMG . Cooldown: 3 turns.",
-  "image": "QmU9XPZ11tu8WvoS2E6QP18TvrjLg4Y8Mg5g3suUMx4tL8",
+  "image": "https://bafybeiafc6gin7ymoy5w7yuvi3wcsdnnmitpxaojw7gzuj5f2ejxad526q.ipfs.dweb.link/TIFFANY%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmU9XPZ11tu8WvoS2E6QP18TvrjLg4Y8Mg5g3suUMx4tL8"
+      "value": "https://bafybeiafc6gin7ymoy5w7yuvi3wcsdnnmitpxaojw7gzuj5f2ejxad526q.ipfs.dweb.link/TIFFANY%20FRONT.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmU9XPZ11tu8WvoS2E6QP18TvrjLg4Y8Mg5g3suUMx4tL8"
     }
-  ]
+  ],
+  "typeCard": "gold"
 }

@@ -2,7 +2,7 @@
   "name": "Earth Blood",
   "type": "ERC1155",
   "description": "This card stays face up for 3 turns. Increase the ATK & HP of all Earth Type Guardians on both sides of the field by 50.",
-  "image": "QmRP1CrMrwgmH1qtXB1PN6rQij5TqTvWbcu47kjdfj2e4B",
+  "image": "https://bafybeihm2nqatjchrxibdwrh5jgblnycumsnsu42et2kpnqa46sfg5oil4.ipfs.dweb.link/EARTH%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -31,7 +31,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmRP1CrMrwgmH1qtXB1PN6rQij5TqTvWbcu47kjdfj2e4B"
+      "value": "https://bafybeihm2nqatjchrxibdwrh5jgblnycumsnsu42et2kpnqa46sfg5oil4.ipfs.dweb.link/EARTH%20FRONT.webp"
     }
   },
   "attributes": [
@@ -63,5 +63,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmRP1CrMrwgmH1qtXB1PN6rQij5TqTvWbcu47kjdfj2e4B"
     }
-  ]
+  ],
+  "typeCard": "action"
 }

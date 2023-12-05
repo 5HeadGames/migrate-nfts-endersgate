@@ -2,7 +2,7 @@
   "name": "Keoshi",
   "type": "ERC1155",
   "description": "[Human | Mage] \"Mad Wizard\" Activate: Fill the entire board with poison smoke which lasts for 2 turns and deals 15 Venom damage per turn. Cooldown 3 turns. ",
-  "image": "QmYSs7YHaqQ7ZEhBaitQTZm88BDTXK4G1GrNEqh5AZwYTH",
+  "image": "https://bafybeiggqatn3kj2u672fer3twrvnxl7maqyjplmoc2tsr25uh6m7fqfh4.ipfs.dweb.link/KEOSHI%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmYSs7YHaqQ7ZEhBaitQTZm88BDTXK4G1GrNEqh5AZwYTH"
+      "value": "https://bafybeiggqatn3kj2u672fer3twrvnxl7maqyjplmoc2tsr25uh6m7fqfh4.ipfs.dweb.link/KEOSHI%20FRONT.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmYSs7YHaqQ7ZEhBaitQTZm88BDTXK4G1GrNEqh5AZwYTH"
     }
-  ]
+  ],
+  "typeCard": "gold"
 }

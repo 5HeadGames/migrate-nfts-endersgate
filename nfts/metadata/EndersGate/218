@@ -2,7 +2,7 @@
   "name": "Mulios",
   "type": "ERC1155",
   "description": "[Sentinel | Fighter] Once during each of your turns, when your opponent activates a Action/Reaction card, Mulios can negate the activation and destroy it.",
-  "image": "QmRzVeTdiPf8PZMEGGHLLh52yDv6AagBC8hLqz53BGHy4P",
+  "image": "https://bafybeicjzh3vhcpymhkjvb254nbivoeh2w6ijgg6c2vuvvkwfup3647ugy.ipfs.dweb.link/MULIOS%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmRzVeTdiPf8PZMEGGHLLh52yDv6AagBC8hLqz53BGHy4P"
+      "value": "https://bafybeicjzh3vhcpymhkjvb254nbivoeh2w6ijgg6c2vuvvkwfup3647ugy.ipfs.dweb.link/MULIOS%20FRONT.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmRzVeTdiPf8PZMEGGHLLh52yDv6AagBC8hLqz53BGHy4P"
     }
-  ]
+  ],
+  "typeCard": "legendary"
 }

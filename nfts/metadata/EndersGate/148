@@ -2,7 +2,7 @@
   "name": "Glowe",
   "type": "ERC1155",
   "description": "[Elemental | Support] \"Fire Works\" Passive: While you control another \"Elemental\" Type Guardian, Glowé cannot be attacked. During each of your End Phases: Inflict 50 damage to your opponents LP. ",
-  "image": "QmQFy1puxvdbPEBPnrMqxf8J3GpWQqRQteZkZabgfutKtD",
+  "image": "https://bafybeihtrhgmlxtrjoxdouomg64depmj6jllqk2f65pu4urv5hw4icee3e.ipfs.w3s.link/GLOWER%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmQFy1puxvdbPEBPnrMqxf8J3GpWQqRQteZkZabgfutKtD"
+      "value": "https://bafybeihtrhgmlxtrjoxdouomg64depmj6jllqk2f65pu4urv5hw4icee3e.ipfs.w3s.link/GLOWER%20FRONT.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmQFy1puxvdbPEBPnrMqxf8J3GpWQqRQteZkZabgfutKtD"
     }
-  ]
+  ],
+  "typeCard": "stone"
 }

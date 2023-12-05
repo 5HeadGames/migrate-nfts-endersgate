@@ -2,7 +2,7 @@
   "name": "Otake Yukito",
   "type": "ERC1155",
   "description": "[Human | Assassin] \"Speedster\" Activate: Otake Yukito can attack twice in one battle phase. Cooldown: 2 turns. ",
-  "image": "QmPPKnHMNVxgVYmf3Wmw6ZvjgSPzNUBzPk8TcYHcHAZcUs",
+  "image": "https://bafybeibiyupl5vf5b3tswgxwmuzm7wdrssmpxnmonlwyc6p422onj2rw7q.ipfs.dweb.link/OTAKE%20YUKITO%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmPPKnHMNVxgVYmf3Wmw6ZvjgSPzNUBzPk8TcYHcHAZcUs"
+      "value": "https://bafybeibiyupl5vf5b3tswgxwmuzm7wdrssmpxnmonlwyc6p422onj2rw7q.ipfs.dweb.link/OTAKE%20YUKITO%20FRONT.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmPPKnHMNVxgVYmf3Wmw6ZvjgSPzNUBzPk8TcYHcHAZcUs"
     }
-  ]
+  ],
+  "typeCard": "stone"
 }

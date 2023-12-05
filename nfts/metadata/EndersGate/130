@@ -2,7 +2,7 @@
   "name": "Agodol",
   "type": "ERC1155",
   "description": "[Demon | Fighter] \"Fire Born\" Passive: Reduce incoming damage from all Earth-Type Guardians by 10. ",
-  "image": "Qmf98wN2bqSRuY5CmHVLop3uneH4JkjcjjVXY5S5Pxcs5p",
+  "image": "https://bafybeif3rooq4n2pqxzyoaksvd6szu3cxcualeknzuu7ilfgloubrrsk6i.ipfs.dweb.link/AGODOL%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/Qmf98wN2bqSRuY5CmHVLop3uneH4JkjcjjVXY5S5Pxcs5p"
+      "value": "https://bafybeif3rooq4n2pqxzyoaksvd6szu3cxcualeknzuu7ilfgloubrrsk6i.ipfs.dweb.link/AGODOL%20FRONT.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/Qmf98wN2bqSRuY5CmHVLop3uneH4JkjcjjVXY5S5Pxcs5p"
     }
-  ]
+  ],
+  "typeCard": "stone"
 }

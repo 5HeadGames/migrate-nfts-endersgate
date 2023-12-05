@@ -2,7 +2,7 @@
   "name": "Kronk",
   "type": "ERC1155",
   "description": "[Beast | Support] \"Eross Follower\" Activate: Pay 120 Gold during your MP1; On your 2nd Standby phase, Hire Eross to the field from your deck with 50% HP.\n",
-  "image": "QmNNSAssYkMarz1a2D8GkkEvXVQ2cGkS3brYWni319SdXw",
+  "image": "https://bafybeidkinprqhd6yga3br7xb6jmjvevnlky6hd5rv66jlrmngjuhwnkje.ipfs.dweb.link/KRONK%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmNNSAssYkMarz1a2D8GkkEvXVQ2cGkS3brYWni319SdXw"
+      "value": "https://bafybeidkinprqhd6yga3br7xb6jmjvevnlky6hd5rv66jlrmngjuhwnkje.ipfs.dweb.link/KRONK%20FRONT.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,9 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmNNSAssYkMarz1a2D8GkkEvXVQ2cGkS3brYWni319SdXw"
     }
-  ]
+  ],
+  "synergies": [
+    "Eross"
+  ],
+  "typeCard": "stone"
 }

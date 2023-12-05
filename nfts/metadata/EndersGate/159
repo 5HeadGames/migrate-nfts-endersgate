@@ -2,7 +2,7 @@
   "name": "Vrogut",
   "type": "ERC1155",
   "description": "[Ogre | Tank] \"Ogre Frontline\" Passive: All attacks are directed to Vrogut. Additionally, all Ogre type Guardians gain +10 to ATK & HP.",
-  "image": "QmRj6yzRCd6RnKzQkXBWnYXbDvt9m6hXaG7upSw5bUheAr",
+  "image": "https://bafybeigpzumh2pjz6efe6jsaryjkbbs6rytbsbuwpi2wqfylacldmjaysq.ipfs.dweb.link/VROGUT%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmRj6yzRCd6RnKzQkXBWnYXbDvt9m6hXaG7upSw5bUheAr"
+      "value": "https://bafybeigpzumh2pjz6efe6jsaryjkbbs6rytbsbuwpi2wqfylacldmjaysq.ipfs.dweb.link/VROGUT%20FRONT.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmRj6yzRCd6RnKzQkXBWnYXbDvt9m6hXaG7upSw5bUheAr"
     }
-  ]
+  ],
+  "typeCard": "stone"
 }

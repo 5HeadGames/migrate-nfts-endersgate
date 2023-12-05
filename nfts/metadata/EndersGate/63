@@ -2,7 +2,7 @@
   "name": "Practice Dummy",
   "type": "ERC1155",
   "description": "Flip: When your opponent declares an attack; Practice Dummy absorbs it instead of the intended Guardian.",
-  "image": "Qma4hzfVe1G2YVehH9wgp5AxswY5Yn11UgdiqXyZyEEGrn",
+  "image": "https://bafybeigin65gwsxnspoi7dwpun4ka76cttqezik5nb5omcydiabjz7obee.ipfs.dweb.link/PRACTICE%20DUMMY%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -31,7 +31,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/Qma4hzfVe1G2YVehH9wgp5AxswY5Yn11UgdiqXyZyEEGrn"
+      "value": "https://bafybeigin65gwsxnspoi7dwpun4ka76cttqezik5nb5omcydiabjz7obee.ipfs.dweb.link/PRACTICE%20DUMMY%20FRONT.webp"
     }
   },
   "attributes": [
@@ -63,5 +63,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/Qma4hzfVe1G2YVehH9wgp5AxswY5Yn11UgdiqXyZyEEGrn"
     }
-  ]
+  ],
+  "typeCard": "reaction"
 }

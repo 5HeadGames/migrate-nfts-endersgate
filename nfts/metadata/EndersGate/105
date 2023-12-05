@@ -2,7 +2,7 @@
   "name": "Cave Ogre",
   "type": "ERC1155",
   "description": "[Ogre | Support] Passive: While Cave Ogre is on the field, all Ogre type Guardians gain +10 to ATK & HP.",
-  "image": "QmYTFinzcVfoL872unMDKzh9LPxLjVvhmXtwP97rg5WCFW",
+  "image": "https://bafybeigmkukrw336fqzyndz2t6tritty7aze6ksg7yjfq2dx5ospyairgm.ipfs.dweb.link/CAVE%20OGRE%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmYTFinzcVfoL872unMDKzh9LPxLjVvhmXtwP97rg5WCFW"
+      "value": "https://bafybeigmkukrw336fqzyndz2t6tritty7aze6ksg7yjfq2dx5ospyairgm.ipfs.dweb.link/CAVE%20OGRE%20FRONT.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmYTFinzcVfoL872unMDKzh9LPxLjVvhmXtwP97rg5WCFW"
     }
-  ]
+  ],
+  "typeCard": "wood"
 }

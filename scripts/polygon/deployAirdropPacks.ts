@@ -11,7 +11,7 @@ import { configureAirdrop, getAirdropConfig } from "../../utils/airdrop";
 import { loadJsonFile, writeJsonFile } from "../../utils";
 
 async function main(): Promise<void> {
-  const fileName = `addresses.${network.name}.json`;
+  const fileName = `addresses/addresses.${network.name}.json`;
   const fileData = loadJsonFile(fileName);
 
   const user = (await ethers.getSigners())[0];

@@ -2,7 +2,7 @@
   "name": "Kara",
   "type": "ERC1155",
   "description": "[Human | Fighter] Active: During your battle phase, Kara can select up to 2 Guardians to attack.",
-  "image": "QmPhaQy5YabhUwQzTrjCWMHVmsgVJpBg88PS5p88svv3iE",
+  "image": "https://bafybeigkzndha7wqfvncacxt3jcrv6n2v6urtgqti7z632cbsdsfxciwli.ipfs.dweb.link/KARA%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmPhaQy5YabhUwQzTrjCWMHVmsgVJpBg88PS5p88svv3iE"
+      "value": "https://bafybeigkzndha7wqfvncacxt3jcrv6n2v6urtgqti7z632cbsdsfxciwli.ipfs.dweb.link/KARA%20FRONT.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,10 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmPhaQy5YabhUwQzTrjCWMHVmsgVJpBg88PS5p88svv3iE"
     }
-  ]
+  ],
+  "synergies": [
+    "Eydis",
+    "Sahan"
+  ],
+  "typeCard": "iron"
 }

@@ -2,7 +2,7 @@
   "name": "Void Crawler",
   "type": "ERC1155",
   "description": "[Beast | Fighter] \"Shadow Counter\" Activate: When Void Crawler takes damage as a result of battle, it leaves the board and returns during the MP1 of your next turn; upon entry, deal 50 damage to the Guardian that damaged Void Crawler. Cooldown: 2 turns. ",
-  "image": "QmSMg3DF1HznJz24i9wztNpNRAmxmUmPcCJLfNwY2ssCKp",
+  "image": "https://bafybeigk2es5xzrgd734srvvq7qvjnmsfezv5scqw24xmrz6sqt7z3yo3y.ipfs.dweb.link/VOID%20CRAWLER%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmSMg3DF1HznJz24i9wztNpNRAmxmUmPcCJLfNwY2ssCKp"
+      "value": "https://bafybeigk2es5xzrgd734srvvq7qvjnmsfezv5scqw24xmrz6sqt7z3yo3y.ipfs.dweb.link/VOID%20CRAWLER%20FRONT.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmSMg3DF1HznJz24i9wztNpNRAmxmUmPcCJLfNwY2ssCKp"
     }
-  ]
+  ],
+  "typeCard": "gold"
 }

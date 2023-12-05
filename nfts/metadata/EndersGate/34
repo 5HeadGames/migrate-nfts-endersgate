@@ -2,7 +2,7 @@
   "name": "Sunken Palace",
   "type": "ERC1155",
   "description": "The field is submerged in water causing 5 damage per turn to all non-Water Type Guardians. If your opponent has no field card in play, this field card effects their side as well. (Upkeep: 5 gold per turn)",
-  "image": "QmYzwzhTmZLHqhhdB7qxdaGT8r93N7V6uqMfegYFo4NF8S",
+  "image": "https://bafybeifh7l425zifls77p5hw64w7y3uoku76pxbwgday4i4axyu5gd63fi.ipfs.dweb.link/SUNKEN%20PALACE%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -31,7 +31,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmYzwzhTmZLHqhhdB7qxdaGT8r93N7V6uqMfegYFo4NF8S"
+      "value": "https://bafybeifh7l425zifls77p5hw64w7y3uoku76pxbwgday4i4axyu5gd63fi.ipfs.dweb.link/SUNKEN%20PALACE%20FRONT.webp"
     }
   },
   "attributes": [
@@ -63,5 +63,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmYzwzhTmZLHqhhdB7qxdaGT8r93N7V6uqMfegYFo4NF8S"
     }
-  ]
+  ],
+  "typeCard": "action"
 }

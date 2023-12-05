@@ -2,7 +2,7 @@
   "name": "Ven'Pion",
   "type": "ERC1155",
   "description": "[Insect | Fighter] \"Venom Stinger\" Activate: Your next attack inflicts Venom dealing 10 DMG per turn during each of your Standby Phases. If Ven'Pion is attacked, this ability resets.",
-  "image": "Qmf4p5LViThutytg5eV3qWEs3LuJL3mU6G4Zegosk4BVY5",
+  "image": "https://bafybeiaodtgnm4wz6eazzx5i3eesdjfngxm6q5ohipflfhvd5cru3ihhnm.ipfs.w3s.link/Ven'Pion.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/Qmf4p5LViThutytg5eV3qWEs3LuJL3mU6G4Zegosk4BVY5"
+      "value": "https://bafybeiaodtgnm4wz6eazzx5i3eesdjfngxm6q5ohipflfhvd5cru3ihhnm.ipfs.w3s.link/Ven'Pion.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/Qmf4p5LViThutytg5eV3qWEs3LuJL3mU6G4Zegosk4BVY5"
     }
-  ]
+  ],
+  "typeCard": "wood"
 }

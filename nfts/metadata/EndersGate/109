@@ -2,7 +2,7 @@
   "name": "Demona",
   "type": "ERC1155",
   "description": "[Vampire | Support] Passive: While Demona is on the field, all Vampire type Guardians gain +15 HP.",
-  "image": "QmdcCeAJifABL2ah2pnDHvX6ewNn9tLMzV522KJVGi3Bsu",
+  "image": "https://bafybeibybngr6dg3gcrwfryusxh2smvn3vwlqlbj5d6m77kh67i53gfsey.ipfs.w3s.link/FRONT%20DEMONA.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmdcCeAJifABL2ah2pnDHvX6ewNn9tLMzV522KJVGi3Bsu"
+      "value": "https://bafybeibybngr6dg3gcrwfryusxh2smvn3vwlqlbj5d6m77kh67i53gfsey.ipfs.w3s.link/FRONT%20DEMONA.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmdcCeAJifABL2ah2pnDHvX6ewNn9tLMzV522KJVGi3Bsu"
     }
-  ]
+  ],
+  "typeCard": "wood"
 }

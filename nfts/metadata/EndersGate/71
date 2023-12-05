@@ -2,7 +2,7 @@
   "name": "Iaijustu counter",
   "type": "ERC1155",
   "description": "Flip: When your opponent successfully attacks a Guardian on your side of the field, flip activate this card and deal 50% of the damage received back to the attacker. ",
-  "image": "QmcRHhRcEFnvmD4hcoJerG6cGUTQKkqJmZsdfUZ2yQ3wBU",
+  "image": "https://bafybeib5mpgof52wdex4miz2vrkdsiuvwscr5u7tu2ilan2ud7jya4yidm.ipfs.dweb.link/IAIJUSTU%20COUNTER%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -31,7 +31,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmcRHhRcEFnvmD4hcoJerG6cGUTQKkqJmZsdfUZ2yQ3wBU"
+      "value": "https://bafybeib5mpgof52wdex4miz2vrkdsiuvwscr5u7tu2ilan2ud7jya4yidm.ipfs.dweb.link/IAIJUSTU%20COUNTER%20FRONT.webp"
     }
   },
   "attributes": [
@@ -63,5 +63,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmcRHhRcEFnvmD4hcoJerG6cGUTQKkqJmZsdfUZ2yQ3wBU"
     }
-  ]
+  ],
+  "typeCard": "reaction"
 }

@@ -2,7 +2,7 @@
   "name": "Venom Ring",
   "type": "ERC1155",
   "description": "Activate this card by sending 1 card from your hand to the Grave yard:\nEquip this card to a Venom Guardian. They gain 50 ATK until they leave the field.",
-  "image": "QmQtmUHwzTRcfFouydroq6G23gDJkiqU6tD5LvCVVZLQVk",
+  "image": "https://bafybeib5t4e5b7h6nweefq2oqxazv5vpcxmehbcws45g2aok7h4ouwze3a.ipfs.dweb.link/VENOM%20RING%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -31,7 +31,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmQtmUHwzTRcfFouydroq6G23gDJkiqU6tD5LvCVVZLQVk"
+      "value": "https://bafybeib5t4e5b7h6nweefq2oqxazv5vpcxmehbcws45g2aok7h4ouwze3a.ipfs.dweb.link/VENOM%20RING%20FRONT.webp"
     }
   },
   "attributes": [
@@ -63,5 +63,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmQtmUHwzTRcfFouydroq6G23gDJkiqU6tD5LvCVVZLQVk"
     }
-  ]
+  ],
+  "typeCard": "action"
 }

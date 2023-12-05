@@ -2,7 +2,7 @@
   "name": "Alugaster",
   "type": "ERC1155",
   "description": "[Human | Fighter] \"Noble Paladin\" Activate:During your main phases, Alugastor can heal him self for 20 HP. Cooldown: 3 turns. ",
-  "image": "QmTGL3hPdD46p6KExLueRVCGbB19vGKzWJn4iRwfwg7txS",
+  "image": "https://bafybeigg7nyiqntqw3wmci4o7vl4tladlusw5k2kwuv7ydgqfdvqg6x4ey.ipfs.w3s.link/ALUGASTOR%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -11,7 +11,7 @@
     },
     "name": {
       "name": "name",
-      "value": "Alugaster"
+      "value": "Alugastor"
     },
     "element": {
       "name": "element",
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmTGL3hPdD46p6KExLueRVCGbB19vGKzWJn4iRwfwg7txS"
+      "value": "https://bafybeigg7nyiqntqw3wmci4o7vl4tladlusw5k2kwuv7ydgqfdvqg6x4ey.ipfs.w3s.link/ALUGASTOR%20FRONT.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmTGL3hPdD46p6KExLueRVCGbB19vGKzWJn4iRwfwg7txS"
     }
-  ]
+  ],
+  "typeCard": "wood"
 }

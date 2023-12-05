@@ -2,7 +2,7 @@
   "name": "Eydis",
   "type": "ERC1155",
   "description": "[Human | Healer] Active: Heal an ally for 10 HP. Cooldown 2 turns. Passive: While Eydis is on the field, increase all \"Nordic\" Guardian ATK by 20%.",
-  "image": "QmSANd48ESEXD1263c1bVXScmmh3rRrss9FtBS58fE86AE",
+  "image": "https://bafybeiej3wqxc6crishndoj6ku3ulntzfc54bzj652agpzrhvo3j4lw3li.ipfs.dweb.link/EYDIS%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmSANd48ESEXD1263c1bVXScmmh3rRrss9FtBS58fE86AE"
+      "value": "https://bafybeiej3wqxc6crishndoj6ku3ulntzfc54bzj652agpzrhvo3j4lw3li.ipfs.dweb.link/EYDIS%20FRONT.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,10 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmSANd48ESEXD1263c1bVXScmmh3rRrss9FtBS58fE86AE"
     }
-  ]
+  ],
+  "synergies": [
+    "Kara",
+    "Sahan"
+  ],
+  "typeCard": "iron"
 }

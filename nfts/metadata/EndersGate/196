@@ -2,7 +2,7 @@
   "name": "Gaktes The Giant",
   "type": "ERC1155",
   "description": "[Giant | Tank] \"Skull Collector\" Passive: Gaktes gains +10 ATK for all Human type Guardians on the field.",
-  "image": "QmaUXaH51yiYYaxkqtxcFpx4mqA8RJZQ1QEANJqgqDLuT8",
+  "image": "https://bafybeic7qykks5nbxyp43zfvgazz3qsebnk2wcz27y67pa5h37kpzqhukq.ipfs.dweb.link/GAKTES%20THE%20GIANT%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmaUXaH51yiYYaxkqtxcFpx4mqA8RJZQ1QEANJqgqDLuT8"
+      "value": "https://bafybeic7qykks5nbxyp43zfvgazz3qsebnk2wcz27y67pa5h37kpzqhukq.ipfs.dweb.link/GAKTES%20THE%20GIANT%20FRONT.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmaUXaH51yiYYaxkqtxcFpx4mqA8RJZQ1QEANJqgqDLuT8"
     }
-  ]
+  ],
+  "typeCard": "gold"
 }

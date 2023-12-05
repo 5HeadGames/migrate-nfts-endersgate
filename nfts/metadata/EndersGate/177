@@ -2,7 +2,7 @@
   "name": "Gromkhar",
   "type": "ERC1155",
   "description": " [Monster | Fighter] \"Second Wind\" Passive: If Gromkhar is sent to the grave as a result of battle, he returns to the battle field at the start of your MP1 with 50% HP. This effect occurs once. ",
-  "image": "QmZ2veYKPsk6WxoJnoDY2JuD6pLDtwShsGDMwBkzdfr9V9",
+  "image": "https://bafybeibdbv6ecvqjiccd7apuq2veir2smfvbmpwlq6d52eczhflxhsctxq.ipfs.dweb.link/GROMKHAR%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmZ2veYKPsk6WxoJnoDY2JuD6pLDtwShsGDMwBkzdfr9V9"
+      "value": "https://bafybeibdbv6ecvqjiccd7apuq2veir2smfvbmpwlq6d52eczhflxhsctxq.ipfs.dweb.link/GROMKHAR%20FRONT.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmZ2veYKPsk6WxoJnoDY2JuD6pLDtwShsGDMwBkzdfr9V9"
     }
-  ]
+  ],
+  "typeCard": "iron"
 }

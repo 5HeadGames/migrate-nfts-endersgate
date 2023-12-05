@@ -2,7 +2,7 @@
   "name": "Weeping Nightmare",
   "type": "ERC1155",
   "description": "[Spirit | Mage] \"Sacrafical Pain\" Activate: Retire one Guardian on your side of the field; Increase weeping's attack by 100 until your end phase. Cooldown: 2 turns. ",
-  "image": "Qme59mAEDERYbd6U24uagZnFgepTT4xurJ8TBgH2Rm9E1E",
+  "image": "https://bafybeiamb5g6sn4dxro2zkmw6o4qwsx7ruc7qecln52uyi7gttpymglpjq.ipfs.dweb.link/WEEPING%20NIGHTMARE%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/Qme59mAEDERYbd6U24uagZnFgepTT4xurJ8TBgH2Rm9E1E"
+      "value": "https://bafybeiamb5g6sn4dxro2zkmw6o4qwsx7ruc7qecln52uyi7gttpymglpjq.ipfs.dweb.link/WEEPING%20NIGHTMARE%20FRONT.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/Qme59mAEDERYbd6U24uagZnFgepTT4xurJ8TBgH2Rm9E1E"
     }
-  ]
+  ],
+  "typeCard": "iron"
 }

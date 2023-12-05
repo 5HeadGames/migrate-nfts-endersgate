@@ -2,7 +2,7 @@
   "name": "Erika",
   "type": "ERC1155",
   "description": "[Human | Healer] \"Thermotherapy\" Activate: Select one ally Guardian and heal them for 20 HP. Cooldown: 2 turns. ",
-  "image": "QmUbUpenwMGLMo7Fm2HGqbNQTjLiUp3ZnHPNrxqQ5iVLjt",
+  "image": "https://bafybeiabepffzmikb5hn6jwafcx56jljr2motpzzzpkwlbille25hqm6bq.ipfs.dweb.link/ERIKA%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmUbUpenwMGLMo7Fm2HGqbNQTjLiUp3ZnHPNrxqQ5iVLjt"
+      "value": "https://bafybeiabepffzmikb5hn6jwafcx56jljr2motpzzzpkwlbille25hqm6bq.ipfs.dweb.link/ERIKA%20FRONT.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmUbUpenwMGLMo7Fm2HGqbNQTjLiUp3ZnHPNrxqQ5iVLjt"
     }
-  ]
+  ],
+  "typeCard": "stone"
 }

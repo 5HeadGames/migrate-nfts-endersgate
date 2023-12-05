@@ -2,7 +2,7 @@
   "name": "Nyssa",
   "type": "ERC1155",
   "description": "[Human| Assassin] \"Earth Counter\" Passive: 25% Chance to counter the next attack with an Earth projectile. On Successful Block; reset effect after 2 turns.",
-  "image": "QmWiKnFu6AMYCWKPSrHAH2ARxj24pNxogoQZktTY39HZe8",
+  "image": "https://bafybeiguepbb7aztryzh7dimm7gllzho332bc4if2ykmodh3vovh6kalxi.ipfs.w3s.link/NYSAA%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmWiKnFu6AMYCWKPSrHAH2ARxj24pNxogoQZktTY39HZe8"
+      "value": "https://bafybeiguepbb7aztryzh7dimm7gllzho332bc4if2ykmodh3vovh6kalxi.ipfs.w3s.link/NYSAA%20FRONT.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmWiKnFu6AMYCWKPSrHAH2ARxj24pNxogoQZktTY39HZe8"
     }
-  ]
+  ],
+  "typeCard": "iron"
 }

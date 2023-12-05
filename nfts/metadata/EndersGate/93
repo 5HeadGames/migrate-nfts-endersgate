@@ -2,7 +2,7 @@
   "name": "Fire Starter Jane",
   "type": "ERC1155",
   "description": "[Human | Mage] \"Angry Villager\" Passive: Fire Starter Jane gains 25 attack for all \"Angry Villager\" Guardians on your side of the field.",
-  "image": "QmP5dM3ZPB3gX2T1DJKnXYmBw2ENV3uw5NaRfMxC6ZKfAV",
+  "image": "https://bafybeic7jsetfpouo3eeec4t2swnrxt6usrwpdse75w4eudjyydp3mdk6q.ipfs.dweb.link/FIRE%20STARTER%20JANE%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmP5dM3ZPB3gX2T1DJKnXYmBw2ENV3uw5NaRfMxC6ZKfAV"
+      "value": "https://bafybeic7jsetfpouo3eeec4t2swnrxt6usrwpdse75w4eudjyydp3mdk6q.ipfs.dweb.link/FIRE%20STARTER%20JANE%20FRONT.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmP5dM3ZPB3gX2T1DJKnXYmBw2ENV3uw5NaRfMxC6ZKfAV"
     }
-  ]
+  ],
+  "typeCard": "wood"
 }

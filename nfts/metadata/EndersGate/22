@@ -2,7 +2,7 @@
   "name": "Thors Hammer",
   "type": "ERC1155",
   "description": "Equip to one Fighter type Guardian on your side of the field; increase their attack by 100.",
-  "image": "QmbxVTkqtpSSxbwejSuu9fcFUXMTQPvsanmkVtWw9xxL8A",
+  "image": "https://bafybeiflcsd3nmb2svgr7r3uh644eepe7wxbwuitq4yxq6pe6ylz66qswy.ipfs.dweb.link/THORS%20HAMMER%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -31,7 +31,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmbxVTkqtpSSxbwejSuu9fcFUXMTQPvsanmkVtWw9xxL8A"
+      "value": "https://bafybeiflcsd3nmb2svgr7r3uh644eepe7wxbwuitq4yxq6pe6ylz66qswy.ipfs.dweb.link/THORS%20HAMMER%20FRONT.webp"
     }
   },
   "attributes": [
@@ -63,5 +63,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmbxVTkqtpSSxbwejSuu9fcFUXMTQPvsanmkVtWw9xxL8A"
     }
-  ]
+  ],
+  "typeCard": "action"
 }

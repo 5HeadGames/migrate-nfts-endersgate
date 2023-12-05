@@ -2,7 +2,7 @@
   "name": "Fire Slasher",
   "type": "ERC1155",
   "description": "[Insect | Assassin] \"Fire Ant Colony\" Passive: Attacks from Fire Slasher have a 15% Chance of Dealing +20% Critical Damage.",
-  "image": "QmPFdBoje2YNHUJs93k3h2w4PB4dB4rT5VhuQsPNm2mNtM",
+  "image": "https://bafybeih4kekag6cttqa3ev7mqtrpdjbwqvglihiz2ggkc4u4vh74ukf7m4.ipfs.dweb.link/FIRE%20SLASHER.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmPFdBoje2YNHUJs93k3h2w4PB4dB4rT5VhuQsPNm2mNtM"
+      "value": "https://bafybeih4kekag6cttqa3ev7mqtrpdjbwqvglihiz2ggkc4u4vh74ukf7m4.ipfs.dweb.link/FIRE%20SLASHER.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmPFdBoje2YNHUJs93k3h2w4PB4dB4rT5VhuQsPNm2mNtM"
     }
-  ]
+  ],
+  "typeCard": "stone"
 }

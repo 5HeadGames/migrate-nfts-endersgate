@@ -2,7 +2,7 @@
   "name": "Beta Wolf Tax",
   "type": "ERC1155",
   "description": "[Beast | Support] \"Wolf Pack\" Passive: When Beta Wolf Tax is sent to the grave yard, add one \"Wolf Pack\" Guardian to your hand from your deck.",
-  "image": "QmXC56EJq3Ged7akYoP16sooMQ58Q3X92bWPoNm3MUVpsa",
+  "image": "https://bafybeidshh2mwkw2sjkzxk7p3aqji43umduabdjhsyr5pqhvmhu43mopem.ipfs.dweb.link/BETA%20WOLF%20TAX%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmXC56EJq3Ged7akYoP16sooMQ58Q3X92bWPoNm3MUVpsa"
+      "value": "https://bafybeidshh2mwkw2sjkzxk7p3aqji43umduabdjhsyr5pqhvmhu43mopem.ipfs.dweb.link/BETA%20WOLF%20TAX%20FRONT.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmXC56EJq3Ged7akYoP16sooMQ58Q3X92bWPoNm3MUVpsa"
     }
-  ]
+  ],
+  "typeCard": "wood"
 }

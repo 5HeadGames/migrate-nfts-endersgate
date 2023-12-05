@@ -2,7 +2,7 @@
   "name": "Reckless Draw",
   "type": "ERC1155",
   "description": "Discard 2 cards from your hand; draw 2 cards.",
-  "image": "QmNhTtFZRHEtBGAgndEzbvTJnqaefhSY7M3zpFf7KLrwPi",
+  "image": "https://bafybeig7opsoalx4m65k2vo5p65fw6eke77ow2msesd5nlv4ftwiejausq.ipfs.dweb.link/RECKLESS%20DRAW%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -31,7 +31,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmNhTtFZRHEtBGAgndEzbvTJnqaefhSY7M3zpFf7KLrwPi"
+      "value": "https://bafybeig7opsoalx4m65k2vo5p65fw6eke77ow2msesd5nlv4ftwiejausq.ipfs.dweb.link/RECKLESS%20DRAW%20FRONT.webp"
     }
   },
   "attributes": [
@@ -63,5 +63,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmNhTtFZRHEtBGAgndEzbvTJnqaefhSY7M3zpFf7KLrwPi"
     }
-  ]
+  ],
+  "typeCard": "action"
 }

@@ -2,7 +2,7 @@
   "name": "Book of pain",
   "type": "ERC1155",
   "description": "Flip: When your opponent declares an attack, double the incoming damage and reflect it back to the attacking Guardian. Upon success pay 100 gold and discard one card from your hand to the graveyard. ",
-  "image": "QmW1XbefUQ6w8bZVWn8G6VPTadkhNHBHsXBPGg8qym6ZkV",
+  "image": "https://bafybeifikuvzbynpoh7do46dkxyhoowtgbeibwzgumpvgtgengyfjtiuza.ipfs.dweb.link/BOOK%20OF%20PAIN%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -31,7 +31,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmW1XbefUQ6w8bZVWn8G6VPTadkhNHBHsXBPGg8qym6ZkV"
+      "value": "https://bafybeifikuvzbynpoh7do46dkxyhoowtgbeibwzgumpvgtgengyfjtiuza.ipfs.dweb.link/BOOK%20OF%20PAIN%20FRONT.webp"
     }
   },
   "attributes": [
@@ -63,5 +63,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmW1XbefUQ6w8bZVWn8G6VPTadkhNHBHsXBPGg8qym6ZkV"
     }
-  ]
+  ],
+  "typeCard": "reaction"
 }

@@ -2,7 +2,7 @@
   "name": "Achlys Jewelry Box",
   "type": "ERC1155",
   "description": "Flip: This card remains on the field for 3 turns; inflict 20 Venom damage to all Guardians your opponent controls for each turn. \n",
-  "image": "Qmcf2pDEdjkSXn8JMLbXupfCxA4EMJPgoopjxuwmHjxj6t",
+  "image": "https://bafybeibq3ydxezlfmhbkv7qxad3dcv3mucnv5hbrnrx5fbdgvxwdt4jubu.ipfs.dweb.link/ACHLYS%20JEWELRY%20BOX%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -31,7 +31,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/Qmcf2pDEdjkSXn8JMLbXupfCxA4EMJPgoopjxuwmHjxj6t"
+      "value": "https://bafybeibq3ydxezlfmhbkv7qxad3dcv3mucnv5hbrnrx5fbdgvxwdt4jubu.ipfs.dweb.link/ACHLYS%20JEWELRY%20BOX%20FRONT.webp"
     }
   },
   "attributes": [
@@ -63,5 +63,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/Qmcf2pDEdjkSXn8JMLbXupfCxA4EMJPgoopjxuwmHjxj6t"
     }
-  ]
+  ],
+  "typeCard": "reaction"
 }

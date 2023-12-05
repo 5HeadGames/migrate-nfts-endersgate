@@ -2,7 +2,7 @@
   "name": "Currency Hypnosis",
   "type": "ERC1155",
   "description": "Flip: For 3 turns, as long as this card remains face up on the field, your opponent pays you 25 gold during each of your standby phases.",
-  "image": "QmWpapJf72jKUeBzjD7BysBW9kAVTZZQLrDRriHA3uosoa",
+  "image": "https://bafybeid3dpupmqg6mwpcl6iu2oioh5p2aepp2lzzhsp2e6jbejsujswume.ipfs.dweb.link/Currency%20Hypnosis.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -31,7 +31,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmWpapJf72jKUeBzjD7BysBW9kAVTZZQLrDRriHA3uosoa"
+      "value": "https://bafybeid3dpupmqg6mwpcl6iu2oioh5p2aepp2lzzhsp2e6jbejsujswume.ipfs.dweb.link/Currency%20Hypnosis.webp"
     }
   },
   "attributes": [
@@ -63,5 +63,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmWpapJf72jKUeBzjD7BysBW9kAVTZZQLrDRriHA3uosoa"
     }
-  ]
+  ],
+  "typeCard": "reaction"
 }

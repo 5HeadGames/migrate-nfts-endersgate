@@ -2,7 +2,7 @@
   "name": "Alpha Wold Dax",
   "type": "ERC1155",
   "description": "[Beast | Fighter] \"Wolf Pack\" Passive: Attacks from Alpha Wolf Dax deal 20% life steal which heal him on hit",
-  "image": "QmVQcvtiBGC1QBwjUUJHuDZ53QD6JSkipkUuB4inMULdE1",
+  "image": "https://bafybeibbnvuau3k5mlio5p3x632mng7yofd7udrta6b2ymfabcza7zbemm.ipfs.w3s.link/ALPHA%20WOLF%20DAX%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -11,7 +11,7 @@
     },
     "name": {
       "name": "name",
-      "value": "Alpha Wold Dax"
+      "value": "Alpha Wolf Dax"
     },
     "element": {
       "name": "element",
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmVQcvtiBGC1QBwjUUJHuDZ53QD6JSkipkUuB4inMULdE1"
+      "value": "https://bafybeibbnvuau3k5mlio5p3x632mng7yofd7udrta6b2ymfabcza7zbemm.ipfs.w3s.link/ALPHA%20WOLF%20DAX%20FRONT.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmVQcvtiBGC1QBwjUUJHuDZ53QD6JSkipkUuB4inMULdE1"
     }
-  ]
+  ],
+  "typeCard": "iron"
 }

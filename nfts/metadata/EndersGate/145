@@ -2,7 +2,7 @@
   "name": "Dr. Doggett",
   "type": "ERC1155",
   "description": "[Beast | Mage] \"Path Finder\" Activate: Select 1 Action / Reaction card on your opponent's side of the field:\n\n● If its face down, pay 150 gold to flip it.\n\n● If its face up, pay 100 gold to destory it.",
-  "image": "QmdWEiFjFc81Dpk5KfUzUdAdsdnsNZmxyQoqa1VstX6BLn",
+  "image": "https://bafybeicxr3rhbjaq6ienl5oubmbefulcej3k6637tosm2irrxepe464gei.ipfs.dweb.link/DR.%20DOGGET%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmdWEiFjFc81Dpk5KfUzUdAdsdnsNZmxyQoqa1VstX6BLn"
+      "value": "https://bafybeicxr3rhbjaq6ienl5oubmbefulcej3k6637tosm2irrxepe464gei.ipfs.dweb.link/DR.%20DOGGET%20FRONT.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmdWEiFjFc81Dpk5KfUzUdAdsdnsNZmxyQoqa1VstX6BLn"
     }
-  ]
+  ],
+  "typeCard": "stone"
 }

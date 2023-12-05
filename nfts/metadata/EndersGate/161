@@ -2,7 +2,7 @@
   "name": "Elias The Musician",
   "type": "ERC1155",
   "description": "[Dwarf | Support] \"Ally Forte\" Activate: During your MP, select 1 Ally Guardians on the field; Increase their ATK and HP by 40 as long as Elias remains on the field.\nPassive: Elias is ignored during the Battle phase if there are other Guardians on your side of the field. ",
-  "image": "QmQNG5G3LSnEmzAwfmxHQWRKaMEjYGDa2d5CNvT5buCEXY",
+  "image": "https://bafybeigle4c764nqddqtn4eda7346g6ktv5vrm3urlh3chauuyppfirlwq.ipfs.dweb.link/ELIAS%20THE%20MUSICIAN%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmQNG5G3LSnEmzAwfmxHQWRKaMEjYGDa2d5CNvT5buCEXY"
+      "value": "https://bafybeigle4c764nqddqtn4eda7346g6ktv5vrm3urlh3chauuyppfirlwq.ipfs.dweb.link/ELIAS%20THE%20MUSICIAN%20FRONT.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmQNG5G3LSnEmzAwfmxHQWRKaMEjYGDa2d5CNvT5buCEXY"
     }
-  ]
+  ],
+  "typeCard": "stone"
 }

@@ -2,7 +2,7 @@
   "name": "Clyde",
   "type": "ERC1155",
   "description": "[Human| Mage] \"Void Novice\" Passive: Attacks from Clyde have a 15% chance of dealing 10% Critical damage. ",
-  "image": "QmXuqUAXrSg2Y76yfqcRbibXveo2iKigFduxSMtbu8SzVQ",
+  "image": "https://bafybeienevvxaelthamteuvzf5enngkwvaibzgc772xkl7zhbmnephq7ta.ipfs.dweb.link/CLYDE%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmXuqUAXrSg2Y76yfqcRbibXveo2iKigFduxSMtbu8SzVQ"
+      "value": "https://bafybeienevvxaelthamteuvzf5enngkwvaibzgc772xkl7zhbmnephq7ta.ipfs.dweb.link/CLYDE%20FRONT.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmXuqUAXrSg2Y76yfqcRbibXveo2iKigFduxSMtbu8SzVQ"
     }
-  ]
+  ],
+  "typeCard": "wood"
 }

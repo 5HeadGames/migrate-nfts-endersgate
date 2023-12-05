@@ -25,8 +25,8 @@ async function main() {
   console.log("deploy:marketplace");
   const rent = await SalesFactory.deploy(
     _accounts[0].address,
-    "0xf3cd27813b5ff6adea3805dcf181053ac62d6ec3",
-    "0xd0D5e3DB44DE05E9F294BB0a3bEEaF030DE24Ada",
+    "0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270",
+    "0xAB594600376Ec9fD91F8e885dADF0CE036862dE0",
     18,
     OWNER_CUT,
   );
@@ -36,15 +36,15 @@ async function main() {
 
   console.log("setting tokens allowed: marketplace");
   await rent.addToken(
-    "0x36c9600994524E46068b0F64407ea509218EfFD8",
-    "0x572dDec9087154dC5dfBB1546Bb62713147e0Ab0",
+    "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+    "0xfE4A8cc5b5B2366C1B58Bea3858e81843581b2F7",
     6,
   );
 
   await rent.addToken(
-    "0xBD3045b233bd07a15c8c782ec8702fb5D7Eef163",
-    "0x572dDec9087154dC5dfBB1546Bb62713147e0Ab0",
-    6,
+    "0x9C9e5fD8bbc25984B178FdCE6117Defa39d2db39",
+    "0xE0dC07D5ED74741CeeDA61284eE56a2A0f7A4Cc9",
+    18,
   );
 
   const configData = JSON.stringify(

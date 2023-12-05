@@ -2,7 +2,7 @@
   "name": "Technician Zeed",
   "type": "ERC1155",
   "description": "[Goblin | Support] \"Goblin Crew\" Passive: While Zeed is on the field, all \"Goblin Crew\" Guardians Gain 25 HP.",
-  "image": "QmfEG8zRwjb8LNWRdvAWYgtqrWCmd5ZMb3DQSb1LMmeowM",
+  "image": "https://bafybeihav7tcgyzi7tpely42ouin7g5kb5h2remm7akg3ql2usfpvim7vu.ipfs.dweb.link/TECHNICIAN%20ZEED%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmfEG8zRwjb8LNWRdvAWYgtqrWCmd5ZMb3DQSb1LMmeowM"
+      "value": "https://bafybeihav7tcgyzi7tpely42ouin7g5kb5h2remm7akg3ql2usfpvim7vu.ipfs.dweb.link/TECHNICIAN%20ZEED%20FRONT.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmfEG8zRwjb8LNWRdvAWYgtqrWCmd5ZMb3DQSb1LMmeowM"
     }
-  ]
+  ],
+  "typeCard": "wood"
 }

@@ -2,7 +2,7 @@
   "name": "Grave Digger Duke",
   "type": "ERC1155",
   "description": "[Human | Fighter] \"Angry Villager\" Passive: Grave Digger Duke Gains 25 Attack for each \"Angry Villager\" Guardian on your side of the field.",
-  "image": "QmVvqQED4nm3TiuBqdJRafdV9aFKKMVsmAyLdsfJ9mKrXM",
+  "image": "https://bafybeidnjzmxelvjqwdavuwk2q5fmzrrvr4pxyt7a5f65qneop4vlwwyk4.ipfs.dweb.link/GRAVE%20DIGGER%20DUKE.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmVvqQED4nm3TiuBqdJRafdV9aFKKMVsmAyLdsfJ9mKrXM"
+      "value": "https://bafybeidnjzmxelvjqwdavuwk2q5fmzrrvr4pxyt7a5f65qneop4vlwwyk4.ipfs.dweb.link/GRAVE%20DIGGER%20DUKE.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmVvqQED4nm3TiuBqdJRafdV9aFKKMVsmAyLdsfJ9mKrXM"
     }
-  ]
+  ],
+  "typeCard": "wood"
 }

@@ -2,7 +2,7 @@
   "name": "Equal Exchange",
   "type": "ERC1155",
   "description": "Flip: Select one Guardian in your graveyard and pay gold equal to their summon cost; bring them back to the field. ",
-  "image": "QmfPcQhkbyEvkfQT1djaQdvzGH8KQW5Q5bVCNyX3FG755h",
+  "image": "https://bafybeidw4znsxl5tz2ftkmtysqw45omaxpxzdzal7hsxz4wp2fg63ayiji.ipfs.dweb.link/EQUAL%20EXCHANGE%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -31,7 +31,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmfPcQhkbyEvkfQT1djaQdvzGH8KQW5Q5bVCNyX3FG755h"
+      "value": "https://bafybeidw4znsxl5tz2ftkmtysqw45omaxpxzdzal7hsxz4wp2fg63ayiji.ipfs.dweb.link/EQUAL%20EXCHANGE%20FRONT.webp"
     }
   },
   "attributes": [
@@ -63,5 +63,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmfPcQhkbyEvkfQT1djaQdvzGH8KQW5Q5bVCNyX3FG755h"
     }
-  ]
+  ],
+  "typeCard": "reaction"
 }

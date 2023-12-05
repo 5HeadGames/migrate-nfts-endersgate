@@ -2,7 +2,7 @@
   "name": "Void Walker's Attraction",
   "type": "ERC1155",
   "description": "If you control no \"Void\" or \"Monster\" type Guardians; pay 250 Gold and summon 1 Guardian with 200 or less ATK to the field. Only 1 Guardian can be summoned at a time using this card.",
-  "image": "QmPRrGf27UbDgYVb7HzqTFbXmuoDoRvEGaWzERWDCq5EGc",
+  "image": "https://bafybeienmvrkk2sodehtby763tbmaz4bnbhptuze477dr72rbj6xhexcce.ipfs.dweb.link/VOID%20WALKERS%20ATTRACTION%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -31,7 +31,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmPRrGf27UbDgYVb7HzqTFbXmuoDoRvEGaWzERWDCq5EGc"
+      "value": "https://bafybeienmvrkk2sodehtby763tbmaz4bnbhptuze477dr72rbj6xhexcce.ipfs.dweb.link/VOID%20WALKERS%20ATTRACTION%20FRONT.webp"
     }
   },
   "attributes": [
@@ -63,5 +63,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmPRrGf27UbDgYVb7HzqTFbXmuoDoRvEGaWzERWDCq5EGc"
     }
-  ]
+  ],
+  "typeCard": "action"
 }

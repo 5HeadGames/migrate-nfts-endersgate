@@ -2,7 +2,7 @@
   "name": "Lone Wolf Lex",
   "type": "ERC1155",
   "description": "[Beast | Assassin] \"Wolf Pack\" Active: Lone Wolf Lex goes for the throat executing any Human type Guardians under 15% health. Cooldown 3 turns. ",
-  "image": "QmbqfKayhs6tWo2QzWZqLrSbhgJxe5bkjKZM9bPR7i2uSu",
+  "image": "https://bafybeigcibklqf524pcw5ffnwehakf43x3fp5wa3sx6oagoudnmnj3ail4.ipfs.dweb.link/LONE%20WOLF%20LEX%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmbqfKayhs6tWo2QzWZqLrSbhgJxe5bkjKZM9bPR7i2uSu"
+      "value": "https://bafybeigcibklqf524pcw5ffnwehakf43x3fp5wa3sx6oagoudnmnj3ail4.ipfs.dweb.link/LONE%20WOLF%20LEX%20FRONT.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmbqfKayhs6tWo2QzWZqLrSbhgJxe5bkjKZM9bPR7i2uSu"
     }
-  ]
+  ],
+  "typeCard": "stone"
 }

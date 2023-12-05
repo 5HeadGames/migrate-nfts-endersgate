@@ -2,7 +2,7 @@
   "name": "Sahan",
   "type": "ERC1155",
   "description": "[Human | Assassin] \"Nordic\" Passive: Attacks have a 50% chance to cause 5 bleed damage for 1 turn.",
-  "image": "QmUXyKJr5qytprysLc6L2GfFmGmqik5gjH8cg2349qAvFe",
+  "image": "https://bafybeidibuft2igaq6gbdjtwhdmnse3jkl3itqtsucmj6twyevczqhexne.ipfs.dweb.link/SAHAN%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmUXyKJr5qytprysLc6L2GfFmGmqik5gjH8cg2349qAvFe"
+      "value": "https://bafybeidibuft2igaq6gbdjtwhdmnse3jkl3itqtsucmj6twyevczqhexne.ipfs.dweb.link/SAHAN%20FRONT.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,10 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmUXyKJr5qytprysLc6L2GfFmGmqik5gjH8cg2349qAvFe"
     }
-  ]
+  ],
+  "synergies": [
+    "Eydis",
+    "Kara"
+  ],
+  "typeCard": "stone"
 }

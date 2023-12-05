@@ -2,7 +2,7 @@
   "name": "Chosen One",
   "type": "ERC1155",
   "description": "If you control no Guardians: Summon 1 Guardian from your grave yard to the field. If the summoned Guardian is a water type, they gain +10 ATK.",
-  "image": "QmVrAqt768ycn65JFvA1o5U3GNba3Wxcprm3iHC4Zbguhc",
+  "image": "https://bafybeic4k3lg2wy2p7thy2q6lrnyfft6gjh6qso2pfnzduls7pu2yxbb2a.ipfs.dweb.link/CHOSEN%20ONE%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -31,7 +31,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmVrAqt768ycn65JFvA1o5U3GNba3Wxcprm3iHC4Zbguhc"
+      "value": "https://bafybeic4k3lg2wy2p7thy2q6lrnyfft6gjh6qso2pfnzduls7pu2yxbb2a.ipfs.dweb.link/CHOSEN%20ONE%20FRONT.webp"
     }
   },
   "attributes": [
@@ -63,5 +63,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmVrAqt768ycn65JFvA1o5U3GNba3Wxcprm3iHC4Zbguhc"
     }
-  ]
+  ],
+  "typeCard": "action"
 }

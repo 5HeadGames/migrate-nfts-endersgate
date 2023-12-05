@@ -2,7 +2,7 @@
   "name": "Gargoyle",
   "type": "ERC1155",
   "description": "[Vampire | Support] Passive: While Gargoyle is on the field, all Vampire type Guardians gain +10 HP.",
-  "image": "QmaYLzDmo7RSFwvDdWigRs9BkBmqUECBhjTqbuJniJbVPK",
+  "image": "https://bafybeih35yh42myw7ppcuok7qehakznm4k32cqciykktxb4nrfzjrpinwq.ipfs.dweb.link/GARGOYLE%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmaYLzDmo7RSFwvDdWigRs9BkBmqUECBhjTqbuJniJbVPK"
+      "value": "https://bafybeih35yh42myw7ppcuok7qehakznm4k32cqciykktxb4nrfzjrpinwq.ipfs.dweb.link/GARGOYLE%20FRONT.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmaYLzDmo7RSFwvDdWigRs9BkBmqUECBhjTqbuJniJbVPK"
     }
-  ]
+  ],
+  "typeCard": "wood"
 }

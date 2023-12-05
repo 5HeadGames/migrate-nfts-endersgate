@@ -2,7 +2,7 @@
   "name": "Tessa",
   "type": "ERC1155",
   "description": "[Human | Assassin] Activate: Tessa increases her Crit chance & Damage by 30% against Void type Guardians for 2 turns. Cooldown 2 turns. ",
-  "image": "QmbufdFsRh1U6DsGGxGZ72mjXMKYDqgA9HTJs71VcNWrDX",
+  "image": "https://bafybeid2zwooouorlj4n7en2p7zvsg4kijyjhg7y77vdvt2dkcojkzpdcy.ipfs.dweb.link/TESSA%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmbufdFsRh1U6DsGGxGZ72mjXMKYDqgA9HTJs71VcNWrDX"
+      "value": "https://bafybeid2zwooouorlj4n7en2p7zvsg4kijyjhg7y77vdvt2dkcojkzpdcy.ipfs.dweb.link/TESSA%20FRONT.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmbufdFsRh1U6DsGGxGZ72mjXMKYDqgA9HTJs71VcNWrDX"
     }
-  ]
+  ],
+  "typeCard": "wood"
 }

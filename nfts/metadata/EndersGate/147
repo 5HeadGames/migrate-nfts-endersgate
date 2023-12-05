@@ -2,7 +2,7 @@
   "name": "Kong Fu Turtle",
   "type": "ERC1155",
   "description": "[Beast | Fighter] \"Double Kick\" Passive: During your battle phase, Kong Fu Turtle has a 25% chance of attacking twice when he attacks an enemy Guardian.",
-  "image": "QmSLfkwvnEVpNAHzR4ivVKLkFBN7Lfj8LBjb16rohi5aiM",
+  "image": "https://bafybeigshxdjfagfokhnxrl4dkzwfpa5p3ojxappupqw3gclhxsmjzscbu.ipfs.dweb.link/KONG%20FU%20TURTLE%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmSLfkwvnEVpNAHzR4ivVKLkFBN7Lfj8LBjb16rohi5aiM"
+      "value": "https://bafybeigshxdjfagfokhnxrl4dkzwfpa5p3ojxappupqw3gclhxsmjzscbu.ipfs.dweb.link/KONG%20FU%20TURTLE%20FRONT.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmSLfkwvnEVpNAHzR4ivVKLkFBN7Lfj8LBjb16rohi5aiM"
     }
-  ]
+  ],
+  "typeCard": "stone"
 }

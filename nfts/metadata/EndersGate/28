@@ -2,7 +2,7 @@
   "name": "Xolzog's Manufesto",
   "type": "ERC1155",
   "description": "During your MP1, select one  Mage type Guardian on your side of the field; increase their ATK by 20 x (# Guardians your opponent controls).",
-  "image": "QmURbsjoRh9GFq41UYCBQqyuJcjKPnbZzCiDDUN7tcVrZz",
+  "image": "https://bafybeibwghpcz7pmqdzpx4cdnv5z3pg7iqujjc5yx4iny2l56thdkusrlm.ipfs.dweb.link/XOLZOG%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -31,7 +31,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmURbsjoRh9GFq41UYCBQqyuJcjKPnbZzCiDDUN7tcVrZz"
+      "value": "https://bafybeibwghpcz7pmqdzpx4cdnv5z3pg7iqujjc5yx4iny2l56thdkusrlm.ipfs.dweb.link/XOLZOG%20FRONT.webp"
     }
   },
   "attributes": [
@@ -63,5 +63,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmURbsjoRh9GFq41UYCBQqyuJcjKPnbZzCiDDUN7tcVrZz"
     }
-  ]
+  ],
+  "typeCard": "action"
 }

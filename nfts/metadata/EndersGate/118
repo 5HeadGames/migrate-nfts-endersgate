@@ -2,7 +2,7 @@
   "name": "Sky Surfer Huugs",
   "type": "ERC1155",
   "description": "[Goblin | Support] \"Goblin Crew\" Passive: While Zeed is on the field, all \"Goblin Crew\" Guardians Gain 25 HP.\n",
-  "image": "QmZZM3RD3BCqcuEdAUPDkzDB8pvUXyFXpZQkTr5AGSXws6",
+  "image": "https://bafybeic2x72rvxix6wlsmj45lxzrfxms5pfhhvga4cb4eshhokym7juuki.ipfs.dweb.link/SKY%20SURFER%20HUUGS%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmZZM3RD3BCqcuEdAUPDkzDB8pvUXyFXpZQkTr5AGSXws6"
+      "value": "https://bafybeic2x72rvxix6wlsmj45lxzrfxms5pfhhvga4cb4eshhokym7juuki.ipfs.dweb.link/SKY%20SURFER%20HUUGS%20FRONT.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmZZM3RD3BCqcuEdAUPDkzDB8pvUXyFXpZQkTr5AGSXws6"
     }
-  ]
+  ],
+  "typeCard": "wood"
 }

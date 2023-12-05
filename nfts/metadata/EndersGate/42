@@ -2,7 +2,7 @@
   "name": "Lava World",
   "type": "ERC1155",
   "description": "The Field fills with fire causing 5 damage per turn to all non-Fire Type Guardians. All Fire type Guardians gain 10 ATK & HP (Upkeep: 5 gold per turn)",
-  "image": "QmYy9k4G7DGAFmixyb2CEzPEgvMQG64joGk6VzGM2ZoGXY",
+  "image": "https://bafybeicdvzxstuigc76bpgs2fxyfgm6kclkyideekaj7akn7uzcphjlrbe.ipfs.dweb.link/LAVA%20WORLD%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -31,7 +31,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmYy9k4G7DGAFmixyb2CEzPEgvMQG64joGk6VzGM2ZoGXY"
+      "value": "https://bafybeicdvzxstuigc76bpgs2fxyfgm6kclkyideekaj7akn7uzcphjlrbe.ipfs.dweb.link/LAVA%20WORLD%20FRONT.webp"
     }
   },
   "attributes": [
@@ -63,5 +63,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmYy9k4G7DGAFmixyb2CEzPEgvMQG64joGk6VzGM2ZoGXY"
     }
-  ]
+  ],
+  "typeCard": "action"
 }

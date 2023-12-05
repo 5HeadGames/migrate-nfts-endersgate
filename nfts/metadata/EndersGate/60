@@ -2,7 +2,7 @@
   "name": "Lustful Prey",
   "type": "ERC1155",
   "description": "Flip: Select one Guardian on the opponent's side of the field, deal 50 damage. They cannot attack for one turn.",
-  "image": "QmUzyFKpbPgNaHed6Qv4pR46x2bSLV3quGY8VSNummU4KF",
+  "image": "https://bafybeidrjzty5rjjbnpovhk6i5dkj2sbuiy2f3jzofuvfxagmbvkuhuz5y.ipfs.dweb.link/LUSTFUL%20PREY%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -31,7 +31,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmUzyFKpbPgNaHed6Qv4pR46x2bSLV3quGY8VSNummU4KF"
+      "value": "https://bafybeidrjzty5rjjbnpovhk6i5dkj2sbuiy2f3jzofuvfxagmbvkuhuz5y.ipfs.dweb.link/LUSTFUL%20PREY%20FRONT.webp"
     }
   },
   "attributes": [
@@ -63,5 +63,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmUzyFKpbPgNaHed6Qv4pR46x2bSLV3quGY8VSNummU4KF"
     }
-  ]
+  ],
+  "typeCard": "reaction"
 }

@@ -2,7 +2,7 @@
   "name": "Dracul",
   "type": "ERC1155",
   "description": "+20 attack for all guardians in your deck",
-  "image": "QmQ8PAwZtKztvsFnAdp79KyvHkhUYzSkZQwgsHVdMy3Zbp",
+  "image": "https://bafybeieogbzvgk66wbhzv44seyanz5g3skomt7nmr7vnz5qhkvupc3hzue.ipfs.w3s.link/Dracul_front.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -23,7 +23,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmQ8PAwZtKztvsFnAdp79KyvHkhUYzSkZQwgsHVdMy3Zbp"
+      "value": "https://bafybeieogbzvgk66wbhzv44seyanz5g3skomt7nmr7vnz5qhkvupc3hzue.ipfs.w3s.link/Dracul_front.webp"
     },
     "description": {
       "name": "description",
@@ -55,5 +55,9 @@
       "trait_type": "id",
       "value": 215
     }
-  ]
+  ],
+  "synergies": [
+    "Dominic"
+  ],
+  "typeCard": "avatar"
 }

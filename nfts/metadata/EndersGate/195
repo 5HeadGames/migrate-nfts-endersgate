@@ -2,7 +2,7 @@
   "name": "Akuma",
   "type": "ERC1155",
   "description": "[Beast | Assassin] \"Shapeshift\" Activate: During your MP1, pay 50 gold to increase Akuma's Crit chance & damage by 10% for 1 turn.",
-  "image": "QmbTLi8qPT7s6WC3FvqtnbU4tFvg5ZXV7SKQEUyiCm3jj5",
+  "image": "https://bafybeihi2jsr5l5qjnuvzwudv2v65mswnhabutswyjxkxnajxjdr2on5qa.ipfs.dweb.link/AKUMA%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmbTLi8qPT7s6WC3FvqtnbU4tFvg5ZXV7SKQEUyiCm3jj5"
+      "value": "https://bafybeihi2jsr5l5qjnuvzwudv2v65mswnhabutswyjxkxnajxjdr2on5qa.ipfs.dweb.link/AKUMA%20FRONT.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmbTLi8qPT7s6WC3FvqtnbU4tFvg5ZXV7SKQEUyiCm3jj5"
     }
-  ]
+  ],
+  "typeCard": "gold"
 }

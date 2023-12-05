@@ -2,7 +2,7 @@
   "name": "Mata Fighter",
   "type": "ERC1155",
   "description": "[Squamata | Fighter] \"Cold Blooded\" Passive: Mata Fighter gains 30 ATK for all \"Cold Blooded\" Guardians on your side of the field.",
-  "image": "Qmc7ZPry3tLefahz8C5uqjhNeAJ4CFqNWwpcwUoc6HbzWM",
+  "image": "https://bafybeicaj43pzglaxkbsqs3i4x545yooivethk4uzcigfxjvbfyjq2m2nu.ipfs.dweb.link/MATA%20FIGHTER%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/Qmc7ZPry3tLefahz8C5uqjhNeAJ4CFqNWwpcwUoc6HbzWM"
+      "value": "https://bafybeicaj43pzglaxkbsqs3i4x545yooivethk4uzcigfxjvbfyjq2m2nu.ipfs.dweb.link/MATA%20FIGHTER%20FRONT.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/Qmc7ZPry3tLefahz8C5uqjhNeAJ4CFqNWwpcwUoc6HbzWM"
     }
-  ]
+  ],
+  "typeCard": "stone"
 }

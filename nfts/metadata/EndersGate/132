@@ -2,7 +2,7 @@
   "name": "Yoshiko",
   "type": "ERC1155",
   "description": "[Beast | Fighter] \"Good boy\" Passive: Attacks targeted towards Yoshiko have a 30% chance of missing. ",
-  "image": "QmRDDELg9dWwtiFT4C8oZ1sTnKBSubDS5qdc76adEZNCy7",
+  "image": "https://bafybeieelr6werej46dofhhtzgnsuynded7bxfweqrq5dpmyj6pzeloti4.ipfs.dweb.link/YOSHIKO%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmRDDELg9dWwtiFT4C8oZ1sTnKBSubDS5qdc76adEZNCy7"
+      "value": "https://bafybeieelr6werej46dofhhtzgnsuynded7bxfweqrq5dpmyj6pzeloti4.ipfs.dweb.link/YOSHIKO%20FRONT.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,9 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmRDDELg9dWwtiFT4C8oZ1sTnKBSubDS5qdc76adEZNCy7"
     }
-  ]
+  ],
+  "synergies": [
+    "Hanako"
+  ],
+  "typeCard": "stone"
 }

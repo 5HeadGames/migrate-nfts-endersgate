@@ -2,7 +2,7 @@
   "name": "Eross",
   "type": "ERC1155",
   "description": "[Beast | Support] Passive: +10 HP to all Ally Guardians. Activate: Execute 1 Enemy champ under 10% health. ",
-  "image": "QmYGMNKPMFyKuHx6yM37g4c1EkNE3apfBLKs873pYrqdeN",
+  "image": "https://bafybeiceivc62pbbrmf4ytviakhuwe4gnqtaye3hhbf5pfyxvdvlisoq5q.ipfs.dweb.link/EROSS.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmYGMNKPMFyKuHx6yM37g4c1EkNE3apfBLKs873pYrqdeN"
+      "value": "https://bafybeiceivc62pbbrmf4ytviakhuwe4gnqtaye3hhbf5pfyxvdvlisoq5q.ipfs.dweb.link/EROSS.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,10 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmYGMNKPMFyKuHx6yM37g4c1EkNE3apfBLKs873pYrqdeN"
     }
-  ]
+  ],
+  "synergies": [
+    "Etnor",
+    "Kronk"
+  ],
+  "typeCard": "legendary"
 }

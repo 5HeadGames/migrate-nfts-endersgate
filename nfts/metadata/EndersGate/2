@@ -2,7 +2,7 @@
   "name": "Earth Cocktail",
   "type": "ERC1155",
   "description": "Select one earth Guardian on your side of the field; increase their attack and HP by 75 for 3 turns. ",
-  "image": "QmZBAmLoU23nHQF4uTMRWcrsqiwUmojbtNa3JDFuVaYTS6",
+  "image": "https://bafybeidxljqtuxuftqt2e7ncma3ubsokxxhzpa7ep664q6onriyi4owk2u.ipfs.w3s.link/EARTH%20COCTAIL%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -31,7 +31,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmZBAmLoU23nHQF4uTMRWcrsqiwUmojbtNa3JDFuVaYTS6"
+      "value": "https://bafybeidxljqtuxuftqt2e7ncma3ubsokxxhzpa7ep664q6onriyi4owk2u.ipfs.w3s.link/EARTH%20COCTAIL%20FRONT.webp"
     }
   },
   "attributes": [
@@ -63,5 +63,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmZBAmLoU23nHQF4uTMRWcrsqiwUmojbtNa3JDFuVaYTS6"
     }
-  ]
+  ],
+  "typeCard": "action"
 }

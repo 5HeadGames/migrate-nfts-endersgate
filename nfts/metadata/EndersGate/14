@@ -2,7 +2,7 @@
   "name": "Gaia's Touch",
   "type": "ERC1155",
   "description": "Heal one earth Guardian on your side of the field for 50 health. On successful heal, increase their Attack by 25.",
-  "image": "QmTcgf5anWoJgpcrP8ssQkJj5pounvRt7894Zj5tFk56Qf",
+  "image": "https://bafybeihuchnmu64aotbekcpwsuswr3j4ihecficlouzpy4yuab7gaxmin4.ipfs.dweb.link/GAIAS%20TOUCH%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -31,7 +31,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmTcgf5anWoJgpcrP8ssQkJj5pounvRt7894Zj5tFk56Qf"
+      "value": "https://bafybeihuchnmu64aotbekcpwsuswr3j4ihecficlouzpy4yuab7gaxmin4.ipfs.dweb.link/GAIAS%20TOUCH%20FRONT.webp"
     }
   },
   "attributes": [
@@ -63,5 +63,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmTcgf5anWoJgpcrP8ssQkJj5pounvRt7894Zj5tFk56Qf"
     }
-  ]
+  ],
+  "typeCard": "action"
 }

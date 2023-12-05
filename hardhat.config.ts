@@ -1,34 +1,17 @@
 import "@nomiclabs/hardhat-waffle";
 import "@typechain/hardhat";
-//import "hardhat-gas-reporter";
 import "solidity-coverage";
 import "@openzeppelin/hardhat-upgrades";
 import "@nomiclabs/hardhat-waffle";
 import "@nomiclabs/hardhat-etherscan";
 import "@nomiclabs/hardhat-web3";
 import "hardhat-contract-sizer";
-import path from "path";
-
 import "./tasks";
-
 import { resolve } from "path";
-
 import { config as dotenvConfig } from "dotenv";
 import { HardhatUserConfig } from "hardhat/config";
-import { NetworkUserConfig } from "hardhat/types";
 
 dotenvConfig({ path: resolve(__dirname, "./.env") });
-
-const chainIds = {
-  goerli: 5,
-  hardhat: 31337,
-  kovan: 42,
-  mainnet: 1,
-  rinkeby: 4,
-  ropsten: 3,
-};
-
-// console.log(process.env.PRIVATE_KEY);
 
 // Ensure that we have all the environment variables we need.
 
@@ -74,17 +57,32 @@ const config: HardhatUserConfig = {
       throwOnTransactionFailures: true,
       throwOnCallFailures: true,
       allowUnlimitedContractSize: true,
-      timeout: 1800000,
-      gas: 2100000,
-      gasPrice: 80000000000,
+      // timeout: 1800000,
+      // gas: 2100000,
+      // gasPrice: 80000000000,
     },
     findora: {
       url: `https://gsc-mainnet.prod.findora.org:8545`,
       accounts: [process.env.PRIVATE_KEY || ""],
       timeout: 120000000,
     },
+    imx_test: {
+      url: `https://rpc.testnet.immutable.com/`,
+      accounts: [process.env.PRIVATE_KEY || ""],
+      timeout: 120000000,
+    },
+    skale: {
+      url: `https://staging-v3.skalenodes.com/v1/staging-faint-slimy-achird`,
+      accounts: [process.env.PRIVATE_KEY || ""],
+      timeout: 120000000,
+    },
+    linea_test: {
+      url: `https://rpc.goerli.linea.build`,
+      accounts: [process.env.PRIVATE_KEY || ""],
+      timeout: 120000000,
+    },
     matic: {
-      url: process.env.POLYGON_PROVIDER,
+      url: "https://polygon-mainnet.g.alchemy.com/v2/kRM3PkCdafzPawH6DziNlah5olIrcNfl",
       accounts: [process.env.PRIVATE_KEY || ""],
     },
     geth: {
@@ -206,6 +204,7 @@ const config: HardhatUserConfig = {
     apiKey: {
       polygonMumbai: process.env.POLYGONSCAN_API_KEY,
       polygon: process.env.POLYGONSCAN_API_KEY,
+      sepolia: process.env.ETHEREUM_API_KEY,
     },
   } as any,
 };

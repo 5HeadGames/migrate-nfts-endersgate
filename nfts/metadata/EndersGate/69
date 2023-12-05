@@ -2,7 +2,7 @@
   "name": "Co-Bro",
   "type": "ERC1155",
   "description": "Flip: When a Guardian on your opponent's side of the field declares an attack, Co-bro interrupts the attack with a Venom Bite; 20% chance to infect the Guardian with Poison after activation.",
-  "image": "QmWoQqH3Dd5vcjAzU4e9CSRzPq1dQrt7qUMBTXfMmgKB1v",
+  "image": "https://bafybeicp332ifwpjqvm7r4wuzcz4cthflmnp334lfi752zvlrc4vxrdcti.ipfs.dweb.link/CO-BRO%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -31,7 +31,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmWoQqH3Dd5vcjAzU4e9CSRzPq1dQrt7qUMBTXfMmgKB1v"
+      "value": "https://bafybeicp332ifwpjqvm7r4wuzcz4cthflmnp334lfi752zvlrc4vxrdcti.ipfs.dweb.link/CO-BRO%20FRONT.webp"
     }
   },
   "attributes": [
@@ -63,5 +63,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmWoQqH3Dd5vcjAzU4e9CSRzPq1dQrt7qUMBTXfMmgKB1v"
     }
-  ]
+  ],
+  "typeCard": "reaction"
 }

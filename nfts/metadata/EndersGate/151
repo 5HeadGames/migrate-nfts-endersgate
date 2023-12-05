@@ -2,7 +2,7 @@
   "name": "Mata Gladiator",
   "type": "ERC1155",
   "description": "[Squamata | Fighter] \"Cold Blooded\" Passive: Mata Gladiator gains 30 ATK for all \"Cold Blooded\" Guardians on your side of the field.",
-  "image": "QmTx4WFaVKvo9RuGRap1C8PB3QCW4tHvktwxh2dbMZWnNe",
+  "image": "https://bafybeiglfpg6oqthfbcymzfi7vjryjbtj6p62gb5j6cgotsgbfsjznj5aa.ipfs.dweb.link/MATA%20GLADIATOR%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmTx4WFaVKvo9RuGRap1C8PB3QCW4tHvktwxh2dbMZWnNe"
+      "value": "https://bafybeiglfpg6oqthfbcymzfi7vjryjbtj6p62gb5j6cgotsgbfsjznj5aa.ipfs.dweb.link/MATA%20GLADIATOR%20FRONT.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmTx4WFaVKvo9RuGRap1C8PB3QCW4tHvktwxh2dbMZWnNe"
     }
-  ]
+  ],
+  "typeCard": "stone"
 }

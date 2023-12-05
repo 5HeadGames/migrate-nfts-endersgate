@@ -2,7 +2,7 @@
   "name": "Fiona",
   "type": "ERC1155",
   "description": "[Human | Support] \"Mystic burst\" Activate: During your MP1, Fill the board with light, preventing all Void type Guardian's from declaring an attack for 2 turns. Cool down 4 turns. \n",
-  "image": "QmYbE1btkBXugpuCVALRudgtUgChTPG8J3UgYUmFhKhGDg",
+  "image": "https://bafybeidxnhw2e3paqvc22kjx5zh45pghnhi7x6bwlg2w5y4zn2qnlxeyka.ipfs.dweb.link/FIONA%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmYbE1btkBXugpuCVALRudgtUgChTPG8J3UgYUmFhKhGDg"
+      "value": "https://bafybeidxnhw2e3paqvc22kjx5zh45pghnhi7x6bwlg2w5y4zn2qnlxeyka.ipfs.dweb.link/FIONA%20FRONT.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmYbE1btkBXugpuCVALRudgtUgChTPG8J3UgYUmFhKhGDg"
     }
-  ]
+  ],
+  "typeCard": "iron"
 }

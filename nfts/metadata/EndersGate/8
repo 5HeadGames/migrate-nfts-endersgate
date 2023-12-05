@@ -2,7 +2,7 @@
   "name": "E-Axe: Water Mode",
   "type": "ERC1155",
   "description": "Deal 15 water damage to all enemy Guardians on the field.",
-  "image": "QmUJc1oGcVn4sx3FuUZovEkZvWCyDTsZJxaUB7s1iSUvAG",
+  "image": "https://bafybeidru5zeo3elbndp2nnvek2hcvhntnzg4ts65tnsbepbqvgdjul4he.ipfs.dweb.link/E-AXE%20WATER%20MODE%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -31,7 +31,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmUJc1oGcVn4sx3FuUZovEkZvWCyDTsZJxaUB7s1iSUvAG"
+      "value": "https://bafybeidru5zeo3elbndp2nnvek2hcvhntnzg4ts65tnsbepbqvgdjul4he.ipfs.dweb.link/E-AXE%20WATER%20MODE%20FRONT.webp"
     }
   },
   "attributes": [
@@ -63,5 +63,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmUJc1oGcVn4sx3FuUZovEkZvWCyDTsZJxaUB7s1iSUvAG"
     }
-  ]
+  ],
+  "typeCard": "action"
 }

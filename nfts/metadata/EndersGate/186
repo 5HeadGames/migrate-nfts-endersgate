@@ -2,7 +2,7 @@
   "name": "Demon Stag Wasp",
   "type": "ERC1155",
   "description": "[Insect | Support] \"Parasitic Control\" Activate: Pay 50 gold. Infect one enemy Guardian for 2 turns. After 2 turns, send the infected Guardian to the graveyard. Summon 2 Demon wasp juveniles with 25 ATK & 50 HP to the field. ",
-  "image": "QmUs8XVUSnrDVrMg9zd1afXMxLJFX8BN4Ppv1fSq1za94F",
+  "image": "https://bafybeifqkpwicqwhsnzelaz44uvrfycxvthojkljepocbrkjjmyl7svhj4.ipfs.dweb.link/DEMON%20STAG%20WASP%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmUs8XVUSnrDVrMg9zd1afXMxLJFX8BN4Ppv1fSq1za94F"
+      "value": "https://bafybeifqkpwicqwhsnzelaz44uvrfycxvthojkljepocbrkjjmyl7svhj4.ipfs.dweb.link/DEMON%20STAG%20WASP%20FRONT.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmUs8XVUSnrDVrMg9zd1afXMxLJFX8BN4Ppv1fSq1za94F"
     }
-  ]
+  ],
+  "typeCard": "iron"
 }

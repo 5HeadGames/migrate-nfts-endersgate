@@ -2,7 +2,7 @@
   "name": "Undead Bomber",
   "type": "ERC1155",
   "description": "[Undead | Support] Passive: Attacks from Undead bomber have a 10% chance to deal +10% critical damage to Mystic Type Guardians.",
-  "image": "QmXwuZESY3MAagEEJiMap8feUDa1Rc5B998uQQY27r1qua",
+  "image": "https://bafybeidzigf2mam4t7a5oka76lxejn5dtjv66nl35ysbqic3wemp6j4luy.ipfs.dweb.link/UNDEAD%20BOMBER%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmXwuZESY3MAagEEJiMap8feUDa1Rc5B998uQQY27r1qua"
+      "value": "https://bafybeidzigf2mam4t7a5oka76lxejn5dtjv66nl35ysbqic3wemp6j4luy.ipfs.dweb.link/UNDEAD%20BOMBER%20FRONT.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmXwuZESY3MAagEEJiMap8feUDa1Rc5B998uQQY27r1qua"
     }
-  ]
+  ],
+  "typeCard": "iron"
 }

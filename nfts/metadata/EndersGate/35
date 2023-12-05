@@ -2,7 +2,7 @@
   "name": "Angry Sea",
   "type": "ERC1155",
   "description": " Pay 300 Gold: Destroy all Action and Reaction Cards on the field.",
-  "image": "QmR3yTry1UZKdNMspbhtnZ55YnAeuRxRj7yj8oCfTxdqyJ",
+  "image": "https://bafybeihfeezw2xx67f7ovcxvce4hku7krae33maxqxbpicu2khl3ef6xrm.ipfs.dweb.link/ANGRY%20SEA%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -31,7 +31,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmR3yTry1UZKdNMspbhtnZ55YnAeuRxRj7yj8oCfTxdqyJ"
+      "value": "https://bafybeihfeezw2xx67f7ovcxvce4hku7krae33maxqxbpicu2khl3ef6xrm.ipfs.dweb.link/ANGRY%20SEA%20FRONT.webp"
     }
   },
   "attributes": [
@@ -63,5 +63,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmR3yTry1UZKdNMspbhtnZ55YnAeuRxRj7yj8oCfTxdqyJ"
     }
-  ]
+  ],
+  "typeCard": "action"
 }

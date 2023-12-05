@@ -2,7 +2,7 @@
   "name": "Glacius",
   "type": "ERC1155",
   "description": "[Elemental | Assassin] \"Aqua Soul\" Passive: Attacks from Glacius have a 10% chance of causing splash damage dealing 25% of Glacius current ATK to the adjacent Guardians. ",
-  "image": "QmbytPzwxQLWVALqf9inorg1jxie8CWVABwbWnZkfjXcXW",
+  "image": "https://bafybeiezbxdlxomhui3ucpybhupydxxn5sxftkgpn3czqpnqj2ycha7teq.ipfs.dweb.link/GLACIUS%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmbytPzwxQLWVALqf9inorg1jxie8CWVABwbWnZkfjXcXW"
+      "value": "https://bafybeiezbxdlxomhui3ucpybhupydxxn5sxftkgpn3czqpnqj2ycha7teq.ipfs.dweb.link/GLACIUS%20FRONT.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,11 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmbytPzwxQLWVALqf9inorg1jxie8CWVABwbWnZkfjXcXW"
     }
-  ]
+  ],
+  "synergies": [
+    "Liquana",
+    "Aqualon",
+    "Hydros"
+  ],
+  "typeCard": "stone"
 }

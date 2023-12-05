@@ -2,7 +2,7 @@
   "name": "Calculated Draw",
   "type": "ERC1155",
   "description": "Retire 1 Guardian on your side of the field; Draw 2 cards.",
-  "image": "QmYY6pmgXjdW2iuQcrkWBqtTD7cNLCRffDGVnesAnvUQn8",
+  "image": "https://bafybeiflijf5pekjjll76uii5xhmh56nol5spsqgj7ngbwe3yc66zepjr4.ipfs.dweb.link/CALCULATED%20DRAW%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -31,7 +31,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmYY6pmgXjdW2iuQcrkWBqtTD7cNLCRffDGVnesAnvUQn8"
+      "value": "https://bafybeiflijf5pekjjll76uii5xhmh56nol5spsqgj7ngbwe3yc66zepjr4.ipfs.dweb.link/CALCULATED%20DRAW%20FRONT.webp"
     }
   },
   "attributes": [
@@ -63,5 +63,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmYY6pmgXjdW2iuQcrkWBqtTD7cNLCRffDGVnesAnvUQn8"
     }
-  ]
+  ],
+  "typeCard": "action"
 }

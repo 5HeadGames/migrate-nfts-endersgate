@@ -2,7 +2,7 @@
   "name": "Void World",
   "type": "ERC1155",
   "description": "The Gravity level of the field increases causing 5 damage per turn to all non-Void Type Guardians. All Void type Guardians gain 10 ATK & HP (Upkeep: 5 gold per turn)",
-  "image": "QmV7oeKVu27w3RtsrqruTYtzdqhgfQnfs11V21tfjsLevF",
+  "image": "https://bafybeih6xfbh42fgbg5izus3ysfagcbnloxf3fjxxug66t7oxeigr5soyi.ipfs.dweb.link/VOID%20WORLD%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -31,7 +31,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmV7oeKVu27w3RtsrqruTYtzdqhgfQnfs11V21tfjsLevF"
+      "value": "https://bafybeih6xfbh42fgbg5izus3ysfagcbnloxf3fjxxug66t7oxeigr5soyi.ipfs.dweb.link/VOID%20WORLD%20FRONT.webp"
     }
   },
   "attributes": [
@@ -63,5 +63,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmV7oeKVu27w3RtsrqruTYtzdqhgfQnfs11V21tfjsLevF"
     }
-  ]
+  ],
+  "typeCard": "action"
 }

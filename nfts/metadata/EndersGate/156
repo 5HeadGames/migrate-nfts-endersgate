@@ -2,7 +2,7 @@
   "name": "Aku Gaki",
   "type": "ERC1155",
   "description": "[Beast | Fighter] \"Bad boy\" Passive: Attacks from Aku Gaki have a 15% chance of dealing +20 Crit DMG. ",
-  "image": "QmX5GUgydATk3R9imWfBYbvwe51JqgTc3bq8yPcm5WEuC2",
+  "image": "https://bafybeie4f4vq42vhz2pi2nwrx5kxk6pa6ii2m7v4fanbugsid5qbbpak6m.ipfs.dweb.link/AKU%20GAKI%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmX5GUgydATk3R9imWfBYbvwe51JqgTc3bq8yPcm5WEuC2"
+      "value": "https://bafybeie4f4vq42vhz2pi2nwrx5kxk6pa6ii2m7v4fanbugsid5qbbpak6m.ipfs.dweb.link/AKU%20GAKI%20FRONT.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmX5GUgydATk3R9imWfBYbvwe51JqgTc3bq8yPcm5WEuC2"
     }
-  ]
+  ],
+  "typeCard": "stone"
 }

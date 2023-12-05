@@ -2,7 +2,7 @@
   "name": "Venom World",
   "type": "ERC1155",
   "description": "Acid rain begins to fall causing 5 damage per turn to all non-Venom Type Guardians. All Venom type Guardians gain 10 ATK & HP (Upkeep: 5 gold per turn)",
-  "image": "QmdXT384wdcGYPpF8JdG6vmVBduEtXMQE6LhaMBQpXUTUX",
+  "image": "https://bafybeiaqbuyogjitms2us6jll3a5tgolk2isd4452uyycvynudk3p4ukvu.ipfs.dweb.link/VENOM%20WORLD%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -31,7 +31,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmdXT384wdcGYPpF8JdG6vmVBduEtXMQE6LhaMBQpXUTUX"
+      "value": "https://bafybeiaqbuyogjitms2us6jll3a5tgolk2isd4452uyycvynudk3p4ukvu.ipfs.dweb.link/VENOM%20WORLD%20FRONT.webp"
     }
   },
   "attributes": [
@@ -63,5 +63,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmdXT384wdcGYPpF8JdG6vmVBduEtXMQE6LhaMBQpXUTUX"
     }
-  ]
+  ],
+  "typeCard": "action"
 }

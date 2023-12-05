@@ -2,7 +2,7 @@
   "name": "Call of the Undying",
   "type": "ERC1155",
   "description": "Description: Flip: Select 1 Gaurdian from your grave yard and summon them to the field. If this card is destoryed, destory the Guardian. If the Guardian is destoryed, destroy this card.",
-  "image": "QmTzdH4R7moxtyQW5RG6egrkbpdVG6SjuCoekwJYo34aXa",
+  "image": "https://bafybeibqpyzfcasvvwfrg3lth3baxrmolaavsoiayjqieayofnhisb7joa.ipfs.dweb.link/CALL%20OF%20THE%20UNDYING%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -31,7 +31,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmTzdH4R7moxtyQW5RG6egrkbpdVG6SjuCoekwJYo34aXa"
+      "value": "https://bafybeibqpyzfcasvvwfrg3lth3baxrmolaavsoiayjqieayofnhisb7joa.ipfs.dweb.link/CALL%20OF%20THE%20UNDYING%20FRONT.webp"
     }
   },
   "attributes": [
@@ -63,5 +63,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmTzdH4R7moxtyQW5RG6egrkbpdVG6SjuCoekwJYo34aXa"
     }
-  ]
+  ],
+  "typeCard": "reaction"
 }

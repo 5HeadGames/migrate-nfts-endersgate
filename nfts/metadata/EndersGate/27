@@ -2,7 +2,7 @@
   "name": "Swords of the Open sea",
   "type": "ERC1155",
   "description": "Once activated, this card remains on the field for 3 turns. While this card is face-up on the field, only water type Guardians can declare attack & all Fire type Guardians take 25 damage per turn.",
-  "image": "QmY7Sp2d18wwgDRWZUDU6y8idwFFuEF864gAc3rqKsfKQr",
+  "image": "https://bafybeieyo2hell435bxqcvqyuxqyvbmu4s22doytbv35psn7o4vlf7yaae.ipfs.dweb.link/SWORDS%20OF%20THE%20OPEN%20SEA%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -31,7 +31,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmY7Sp2d18wwgDRWZUDU6y8idwFFuEF864gAc3rqKsfKQr"
+      "value": "https://bafybeieyo2hell435bxqcvqyuxqyvbmu4s22doytbv35psn7o4vlf7yaae.ipfs.dweb.link/SWORDS%20OF%20THE%20OPEN%20SEA%20FRONT.webp"
     }
   },
   "attributes": [
@@ -63,5 +63,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmY7Sp2d18wwgDRWZUDU6y8idwFFuEF864gAc3rqKsfKQr"
     }
-  ]
+  ],
+  "typeCard": "action"
 }

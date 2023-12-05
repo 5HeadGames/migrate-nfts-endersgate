@@ -2,7 +2,7 @@
   "name": "Bomber Fauz",
   "type": "ERC1155",
   "description": "[Goblin | Support] \"Goblin Crew\" Passive: Fauz gains 25 ATK for all \"Goblin Crew\" Guardians on your side of the field. ",
-  "image": "Qmf7WHF7gw5nc8iTMMVZ6KvFBP3TDFnCPqWrkFaLPNXaLL",
+  "image": "https://bafybeibrtx5jqsgo5lfiylxtczssq2oa6pdmwwjfwf3pp7gwyg7lolq64a.ipfs.dweb.link/BOMBER%20FAUZ%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/Qmf7WHF7gw5nc8iTMMVZ6KvFBP3TDFnCPqWrkFaLPNXaLL"
+      "value": "https://bafybeibrtx5jqsgo5lfiylxtczssq2oa6pdmwwjfwf3pp7gwyg7lolq64a.ipfs.dweb.link/BOMBER%20FAUZ%20FRONT.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/Qmf7WHF7gw5nc8iTMMVZ6KvFBP3TDFnCPqWrkFaLPNXaLL"
     }
-  ]
+  ],
+  "typeCard": "wood"
 }

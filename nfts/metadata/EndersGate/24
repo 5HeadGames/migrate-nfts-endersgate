@@ -2,7 +2,7 @@
   "name": "Snake Charmer",
   "type": "ERC1155",
   "description": "While this card is face up on the field, All Venom Type Guardians gain +5% ATK. Upkeep cost -25 gold per turn. ",
-  "image": "QmRvVF5g8NnN2eAYNciEdLzPgyiwjZjdpjKRf6b8qDKdUz",
+  "image": "https://bafybeic2czd7kxngsbgbevuhbu5syi2oo3a6uwq7ryzc24cojq2xd7hw7i.ipfs.dweb.link/SNAKE%20CHARMER%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -31,7 +31,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmRvVF5g8NnN2eAYNciEdLzPgyiwjZjdpjKRf6b8qDKdUz"
+      "value": "https://bafybeic2czd7kxngsbgbevuhbu5syi2oo3a6uwq7ryzc24cojq2xd7hw7i.ipfs.dweb.link/SNAKE%20CHARMER%20FRONT.webp"
     }
   },
   "attributes": [
@@ -63,5 +63,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmRvVF5g8NnN2eAYNciEdLzPgyiwjZjdpjKRf6b8qDKdUz"
     }
-  ]
+  ],
+  "typeCard": "action"
 }

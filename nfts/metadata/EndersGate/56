@@ -2,7 +2,7 @@
   "name": "Gea The Mystic",
   "type": "ERC1155",
   "description": "Flip: During your Main phase 1 select 1 damaged Guardian and heal them for 20 HP. This card remains on the field and it's effect can be reused 1 additional time.",
-  "image": "QmeZX6aAjza5KpZVukh7LfmAUKvPLTijyFJNi3tZZ6QvuM",
+  "image": "https://bafybeidmib5c5q4xy5u7smrpu4d35mfz6lvsa7rfan4mtmwnge2oqpynsu.ipfs.dweb.link/GEA%20THE%20MYSTIC%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -31,7 +31,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmeZX6aAjza5KpZVukh7LfmAUKvPLTijyFJNi3tZZ6QvuM"
+      "value": "https://bafybeidmib5c5q4xy5u7smrpu4d35mfz6lvsa7rfan4mtmwnge2oqpynsu.ipfs.dweb.link/GEA%20THE%20MYSTIC%20FRONT.webp"
     }
   },
   "attributes": [
@@ -63,5 +63,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmeZX6aAjza5KpZVukh7LfmAUKvPLTijyFJNi3tZZ6QvuM"
     }
-  ]
+  ],
+  "typeCard": "reaction"
 }

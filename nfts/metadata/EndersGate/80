@@ -2,7 +2,7 @@
   "name": "Cold Blooded Prison",
   "type": "ERC1155",
   "description": "Flip: If your opponent declares an attack with one of the following Guardian Types:\n\n● Dragon / Squamata\n● Insect\n● Undead / Zombie\n \nNegate the attack and end your opponent's Battle phase.",
-  "image": "QmYCFFJXBWDpYuKn3XQssCmSC957QrrFUUkv3DTsPyRELs",
+  "image": "https://bafybeibkflnb4fdh4nnimuqcv7ias3febiorsor2fzb6hvxg2u5g3rxwau.ipfs.dweb.link/Cold%20Blooded%20Prison.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -31,7 +31,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmYCFFJXBWDpYuKn3XQssCmSC957QrrFUUkv3DTsPyRELs"
+      "value": "https://bafybeibkflnb4fdh4nnimuqcv7ias3febiorsor2fzb6hvxg2u5g3rxwau.ipfs.dweb.link/Cold%20Blooded%20Prison.webp"
     }
   },
   "attributes": [
@@ -63,5 +63,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmYCFFJXBWDpYuKn3XQssCmSC957QrrFUUkv3DTsPyRELs"
     }
-  ]
+  ],
+  "typeCard": "reaction"
 }

@@ -2,7 +2,7 @@
   "name": "Botniq",
   "type": "ERC1155",
   "description": "[Beast | Tank] \"Frontliner\" Passive: While on the field, all attacks are directed to Botniq.",
-  "image": "QmW3rEF8wx3kvb1dcHwSUo9CoCkCJ5dCA5mVmYUELgbCUf",
+  "image": "https://bafybeigudepf3tmxmd4fiu4fya3v26wodnujk5qed7hwhet2stjbflgjly.ipfs.dweb.link/BOTNIQ%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmW3rEF8wx3kvb1dcHwSUo9CoCkCJ5dCA5mVmYUELgbCUf"
+      "value": "https://bafybeigudepf3tmxmd4fiu4fya3v26wodnujk5qed7hwhet2stjbflgjly.ipfs.dweb.link/BOTNIQ%20FRONT.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmW3rEF8wx3kvb1dcHwSUo9CoCkCJ5dCA5mVmYUELgbCUf"
     }
-  ]
+  ],
+  "typeCard": "wood"
 }

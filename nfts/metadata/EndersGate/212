@@ -2,7 +2,7 @@
   "name": "Ymiro",
   "type": "ERC1155",
   "description": "[Human | Mage] \"Frozen Heart\" Activate: During your MP1, Incase Ymiro in Ice, increasing his ATK & HP by 15%. Cooldown: 3 turns. ",
-  "image": "QmUrJMCwK8czu8r8J9ZTebPoaGkBcX9tSZpwsoh9W7Bcue",
+  "image": "https://bafybeihr3ymfzvh45ug6hst7mll4qsyys3nzomgtwlsansbbv6wncyiz3y.ipfs.dweb.link/Ymiro.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmUrJMCwK8czu8r8J9ZTebPoaGkBcX9tSZpwsoh9W7Bcue"
+      "value": "https://bafybeihr3ymfzvh45ug6hst7mll4qsyys3nzomgtwlsansbbv6wncyiz3y.ipfs.dweb.link/Ymiro.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmUrJMCwK8czu8r8J9ZTebPoaGkBcX9tSZpwsoh9W7Bcue"
     }
-  ]
+  ],
+  "typeCard": "gold"
 }

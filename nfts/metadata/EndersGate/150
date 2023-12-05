@@ -2,7 +2,7 @@
   "name": "Maloss",
   "type": "ERC1155",
   "description": "[Beast | Tank] Passive: When Maliss is attacked, she gains an Earth shield worth 50% of her current HP.",
-  "image": "Qmaaewkotd1Jvm6ZscSuvsQ2WFWxJfjCPCMzxBPqLFJSfj",
+  "image": "https://bafybeieiovck7mjgsfh4nugctqcd6ao67oxuqpovowff3jo3gvkzvdss7a.ipfs.dweb.link/MALOSS%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/Qmaaewkotd1Jvm6ZscSuvsQ2WFWxJfjCPCMzxBPqLFJSfj"
+      "value": "https://bafybeieiovck7mjgsfh4nugctqcd6ao67oxuqpovowff3jo3gvkzvdss7a.ipfs.dweb.link/MALOSS%20FRONT.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/Qmaaewkotd1Jvm6ZscSuvsQ2WFWxJfjCPCMzxBPqLFJSfj"
     }
-  ]
+  ],
+  "typeCard": "stone"
 }

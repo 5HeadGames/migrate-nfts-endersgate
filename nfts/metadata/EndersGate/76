@@ -2,7 +2,7 @@
   "name": "Rarity Guillotine ",
   "type": "ERC1155",
   "description": "Flip: This card remains face up for 3 turns; your Guardians now cost 50% less gold to hire to the field.",
-  "image": "QmWnSJ8Lqi7VhhXDpP6oziWQ4auVfryDN27A7Ae2RPT6A7",
+  "image": "https://bafybeifssxtmjfctzadjugnwrxptp37iqukmrbfjezxxfuzz37q25tgxp4.ipfs.dweb.link/RARITY%20GUILLOTINE%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -31,7 +31,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmWnSJ8Lqi7VhhXDpP6oziWQ4auVfryDN27A7Ae2RPT6A7"
+      "value": "https://bafybeifssxtmjfctzadjugnwrxptp37iqukmrbfjezxxfuzz37q25tgxp4.ipfs.dweb.link/RARITY%20GUILLOTINE%20FRONT.webp"
     }
   },
   "attributes": [
@@ -63,5 +63,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmWnSJ8Lqi7VhhXDpP6oziWQ4auVfryDN27A7Ae2RPT6A7"
     }
-  ]
+  ],
+  "typeCard": "reaction"
 }

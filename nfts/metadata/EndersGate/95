@@ -2,7 +2,7 @@
   "name": "Thadmor ",
   "type": "ERC1155",
   "description": "[Human | Support] \"Seismic Activity\" Activate: During your main phase 1, Thadmor smashes the ground decreasing the hit chance of all opponent Guardians on the field by 15% for 1 turn. Cooldown: 3 turns.",
-  "image": "QmYFX2v5JAAktDZp49yhGAzg78dvjUdJB6eiLNtJH8fHzN",
+  "image": "https://bafybeigkcxsecohckllicrwlzrkc2nmp6ris6lluqo3l2gpknb4gv3ith4.ipfs.dweb.link/THADMOR%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmYFX2v5JAAktDZp49yhGAzg78dvjUdJB6eiLNtJH8fHzN"
+      "value": "https://bafybeigkcxsecohckllicrwlzrkc2nmp6ris6lluqo3l2gpknb4gv3ith4.ipfs.dweb.link/THADMOR%20FRONT.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmYFX2v5JAAktDZp49yhGAzg78dvjUdJB6eiLNtJH8fHzN"
     }
-  ]
+  ],
+  "typeCard": "wood"
 }

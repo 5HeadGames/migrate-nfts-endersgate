@@ -2,7 +2,7 @@
   "name": "Haley",
   "type": "ERC1155",
   "description": "[Human | Assassin] \"Bomber Woman\" Activate: Target up to 2 enemy Guardians; Deal 40 attack to both of them. Cooldown: 3 turns. ",
-  "image": "QmUAHJu45NotiYQZyorxVB1uAJdZ5oUVxsSE2hAR488n99",
+  "image": "https://bafybeiey4auixjwkmlmmxzzhf6ykkrkqoqj3r3a5yp7erjde5uzlyv7d7q.ipfs.dweb.link/HALEY%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmUAHJu45NotiYQZyorxVB1uAJdZ5oUVxsSE2hAR488n99"
+      "value": "https://bafybeiey4auixjwkmlmmxzzhf6ykkrkqoqj3r3a5yp7erjde5uzlyv7d7q.ipfs.dweb.link/HALEY%20FRONT.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmUAHJu45NotiYQZyorxVB1uAJdZ5oUVxsSE2hAR488n99"
     }
-  ]
+  ],
+  "typeCard": "stone"
 }

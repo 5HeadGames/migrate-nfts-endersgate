@@ -2,7 +2,7 @@
   "name": "Moonbeam ",
   "type": "ERC1155",
   "description": "[Beast | Fighter] \"Insect Hunter\" Passive: Moonbeam gains +5 ATK & +5 HP for all Insect type Guardians on the field; Additionally, All damage dealt by Insect types is reduced by 10. ",
-  "image": "Qmcro3ABk1F5MpiXBEHoHjq9S1LHhkVPspvMFeSpbAB7b2",
+  "image": "https://bafybeihguxfe3ra36s53xvgehmlilaciwatqxm4bpb263ddy6uwhavox3u.ipfs.dweb.link/MOONBEAM%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/Qmcro3ABk1F5MpiXBEHoHjq9S1LHhkVPspvMFeSpbAB7b2"
+      "value": "https://bafybeihguxfe3ra36s53xvgehmlilaciwatqxm4bpb263ddy6uwhavox3u.ipfs.dweb.link/MOONBEAM%20FRONT.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/Qmcro3ABk1F5MpiXBEHoHjq9S1LHhkVPspvMFeSpbAB7b2"
     }
-  ]
+  ],
+  "typeCard": "stone"
 }

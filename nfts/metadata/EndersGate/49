@@ -2,7 +2,7 @@
   "name": "Void Trap",
   "type": "ERC1155",
   "description": "Flip: Deal 50 damage to one selected Guardian on the opponent's side of the field. ",
-  "image": "QmVEnk1ZiytkdDEGJSXv3Asm3eGK4Wh8Zajuapd9vMAXD1",
+  "image": "https://bafybeic4odkz53stbmaan7mfqc5bqvvjr2vpmfcjfjx6kwrvrnx7zbxjby.ipfs.dweb.link/VOID%20TRAP%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -30,7 +30,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmVEnk1ZiytkdDEGJSXv3Asm3eGK4Wh8Zajuapd9vMAXD1"
+      "value": "https://bafybeic4odkz53stbmaan7mfqc5bqvvjr2vpmfcjfjx6kwrvrnx7zbxjby.ipfs.dweb.link/VOID%20TRAP%20FRONT.webp"
     }
   },
   "attributes": [
@@ -61,5 +61,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmVEnk1ZiytkdDEGJSXv3Asm3eGK4Wh8Zajuapd9vMAXD1"
     }
-  ]
+  ],
+  "typeCard": "reaction"
 }

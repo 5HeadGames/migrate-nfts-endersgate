@@ -2,7 +2,7 @@
   "name": "Novalynn",
   "type": "ERC1155",
   "description": "[Human | Mage] \"Foresight\" Activate: Once every 2 turns, target 1 enemy Guardian. Inflict 10 HP as mystic damage on their next main phase.",
-  "image": "QmQ17ZG1S53bmpfnKsCv4Pha39fmbEUxKST1tXo4PWVuZw",
+  "image": "https://bafybeicq3uzutrkn3rxxndowfhgj6yt2zbn2nctjohq7kkrwtwusnzultq.ipfs.dweb.link/NOVALYNN%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmQ17ZG1S53bmpfnKsCv4Pha39fmbEUxKST1tXo4PWVuZw"
+      "value": "https://bafybeicq3uzutrkn3rxxndowfhgj6yt2zbn2nctjohq7kkrwtwusnzultq.ipfs.dweb.link/NOVALYNN%20FRONT.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmQ17ZG1S53bmpfnKsCv4Pha39fmbEUxKST1tXo4PWVuZw"
     }
-  ]
+  ],
+  "typeCard": "gold"
 }

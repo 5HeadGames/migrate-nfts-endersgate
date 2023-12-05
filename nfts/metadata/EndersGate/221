@@ -2,7 +2,7 @@
   "name": "King Kilrog",
   "type": "ERC1155",
   "description": " [Undead | Tank] \"Loyal Subjects\" Passive: While King Kilrog is on the field, all attacks are redirected to him instead. Fire type Guardians gain +15 ATK.",
-  "image": "QmZB5qfBr3F1GSv6AQo43GvsYF9JpRDThai6YbdELELZ1F",
+  "image": "https://bafybeids5zuhihmvvzw7m3f5lrmdjy45vxvwossmjcgniowfkczkt42ciq.ipfs.dweb.link/KING%20KILROG%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmZB5qfBr3F1GSv6AQo43GvsYF9JpRDThai6YbdELELZ1F"
+      "value": "https://bafybeids5zuhihmvvzw7m3f5lrmdjy45vxvwossmjcgniowfkczkt42ciq.ipfs.dweb.link/KING%20KILROG%20FRONT.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmZB5qfBr3F1GSv6AQo43GvsYF9JpRDThai6YbdELELZ1F"
     }
-  ]
+  ],
+  "typeCard": "legendary"
 }

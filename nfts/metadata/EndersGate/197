@@ -2,7 +2,7 @@
   "name": "Gokuri",
   "type": "ERC1155",
   "description": "[Beast | Fighter] \"Poison Spear\" Active: Select one Guardian on your opponent's side of the field; Gokuri strikes them with a Poison Spear dealing 10 Venom Damage per turn. This effect continues  for a long as Gokuri remains on the field.",
-  "image": "QmbswvimjSNzDqR4rXtwmh5QbmasP5FtCgXJgCnEosDjLM",
+  "image": "https://bafybeidvsagfa4qlukcf6mzovkiqdu3isbd3qg5bqiuhdwtc5ixox4djne.ipfs.dweb.link/GOKURI%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmbswvimjSNzDqR4rXtwmh5QbmasP5FtCgXJgCnEosDjLM"
+      "value": "https://bafybeidvsagfa4qlukcf6mzovkiqdu3isbd3qg5bqiuhdwtc5ixox4djne.ipfs.dweb.link/GOKURI%20FRONT.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmbswvimjSNzDqR4rXtwmh5QbmasP5FtCgXJgCnEosDjLM"
     }
-  ]
+  ],
+  "typeCard": "gold"
 }

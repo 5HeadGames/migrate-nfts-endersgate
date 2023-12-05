@@ -2,7 +2,7 @@
   "name": "Unpleasant Entry",
   "type": "ERC1155",
   "description": "Flip: Activate when your opponent summons a Guardian; deal 25 damage to the Guardian upon their entry.",
-  "image": "QmXXGmwacruTaVrLNERPihUgYZvaGKXTTw3asgJeSK9cHt",
+  "image": "https://bafybeiewbjuzsl2wvrahwwxt3ovypqwl76hg7d3xvexe4jufut5aazw77i.ipfs.w3s.link/UNPLESANT%20ENTRY%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -31,7 +31,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmXXGmwacruTaVrLNERPihUgYZvaGKXTTw3asgJeSK9cHt"
+      "value": "https://bafybeiewbjuzsl2wvrahwwxt3ovypqwl76hg7d3xvexe4jufut5aazw77i.ipfs.w3s.link/UNPLESANT%20ENTRY%20FRONT.webp"
     }
   },
   "attributes": [
@@ -63,5 +63,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmXXGmwacruTaVrLNERPihUgYZvaGKXTTw3asgJeSK9cHt"
     }
-  ]
+  ],
+  "typeCard": "reaction"
 }

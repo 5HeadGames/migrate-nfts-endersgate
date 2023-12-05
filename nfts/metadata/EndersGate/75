@@ -2,7 +2,7 @@
   "name": "Shinobi Guardians",
   "type": "ERC1155",
   "description": "Flip: If you control no Guardians on your side of the field, Summon 3 Guardians with the following stats:\n\n● 1: (Atk: 50; HP:50)\n● 2: (Atk: 50; HP:50)\n● 3: (Atk: 50; HP:50)\n\nIn each of your standby phases, pay 100 gold, or destroy all 3 guards",
-  "image": "QmV4PXy5bJimhNNb4mK2TGsW965eJ3RudYamzfFmBi62QC",
+  "image": "https://bafybeigmmne7ihuaanrh2d7jijflltnvwx2mwnhzw4fvjbjrqaci4ukkvm.ipfs.dweb.link/SHINOBI%20GUARDIANS%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -31,7 +31,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmV4PXy5bJimhNNb4mK2TGsW965eJ3RudYamzfFmBi62QC"
+      "value": "https://bafybeigmmne7ihuaanrh2d7jijflltnvwx2mwnhzw4fvjbjrqaci4ukkvm.ipfs.dweb.link/SHINOBI%20GUARDIANS%20FRONT.webp"
     }
   },
   "attributes": [
@@ -63,5 +63,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmV4PXy5bJimhNNb4mK2TGsW965eJ3RudYamzfFmBi62QC"
     }
-  ]
+  ],
+  "typeCard": "reaction"
 }

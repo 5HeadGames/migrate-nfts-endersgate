@@ -2,7 +2,7 @@
   "name": "Collectors Horizon",
   "type": "ERC1155",
   "description": "Pay 100 Gold: Destroy all Action and Reaction Cards on both sides of the field.",
-  "image": "QmTAZUBxKKPWZvmo43rs4LBdanNwihKWogH6HVcn5ZtMBo",
+  "image": "https://bafybeieihgpfozktbgcirnvtle5dq7ad7ljhew3b3b7cjn5roxoiqz3cna.ipfs.dweb.link/COLLECTORS%20HORIZON%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -31,7 +31,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmTAZUBxKKPWZvmo43rs4LBdanNwihKWogH6HVcn5ZtMBo"
+      "value": "https://bafybeieihgpfozktbgcirnvtle5dq7ad7ljhew3b3b7cjn5roxoiqz3cna.ipfs.dweb.link/COLLECTORS%20HORIZON%20FRONT.webp"
     }
   },
   "attributes": [
@@ -63,5 +63,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmTAZUBxKKPWZvmo43rs4LBdanNwihKWogH6HVcn5ZtMBo"
     }
-  ]
+  ],
+  "typeCard": "reaction"
 }

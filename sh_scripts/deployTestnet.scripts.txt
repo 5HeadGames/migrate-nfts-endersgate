@@ -1,0 +1,6 @@
+npx hardhat run scripts/linea/deploy.ts --network linea_test
+npx hardhat run scripts/linea/deployPacks.ts --network linea_test
+npx hardhat run scripts/linea/deployERC20.ts --network linea_test
+npx hardhat run scripts/linea/deployMarketplaceTest.ts --network linea_test
+npx hardhat run scripts/linea/deployBattlePass.ts --network linea_test
+npx hardhat run scripts/linea/deployRentTest.ts --network linea_test

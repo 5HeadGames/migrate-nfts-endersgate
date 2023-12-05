@@ -2,7 +2,7 @@
   "name": "Uart the Goblin",
   "type": "ERC1155",
   "description": "[Goblin | Support] \"Gold Thief\" Passive: Every successful attack from Uart steals 10 gold from your opponent's inventory.",
-  "image": "QmexzFjACoLvL6GN9GicHq7ehBu5wtankCptw3yhZmYgZV",
+  "image": "https://bafybeia6wxfi3bgc5mcuhor6psngtkjignbabybqfvcr2bhvprwjef6rb4.ipfs.dweb.link/UART%20THE%20GOBLIN%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmexzFjACoLvL6GN9GicHq7ehBu5wtankCptw3yhZmYgZV"
+      "value": "https://bafybeia6wxfi3bgc5mcuhor6psngtkjignbabybqfvcr2bhvprwjef6rb4.ipfs.dweb.link/UART%20THE%20GOBLIN%20FRONT.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmexzFjACoLvL6GN9GicHq7ehBu5wtankCptw3yhZmYgZV"
     }
-  ]
+  ],
+  "typeCard": "wood"
 }

@@ -2,7 +2,7 @@
   "name": "Bert & Kurt",
   "type": "ERC1155",
   "description": "[Dwarf | Mage] \"Ariel Evasion\" Passive: Has a 10% chance of dodging one enemy attack. This effect applies to all attacks targeted at Bert & Kurt. ",
-  "image": "QmeRDALhKtgu5FfEewNSdx9CMiA4XrdQ8EZoDjUBCRihhf",
+  "image": "https://bafybeib6olccfz267eei7fchpdvmgxqhfidvd2nhjwldsmw374n7gypnpm.ipfs.dweb.link/BERT%20&%20KURT%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmeRDALhKtgu5FfEewNSdx9CMiA4XrdQ8EZoDjUBCRihhf"
+      "value": "https://bafybeib6olccfz267eei7fchpdvmgxqhfidvd2nhjwldsmw374n7gypnpm.ipfs.dweb.link/BERT%20&%20KURT%20FRONT.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmeRDALhKtgu5FfEewNSdx9CMiA4XrdQ8EZoDjUBCRihhf"
     }
-  ]
+  ],
+  "typeCard": "wood"
 }

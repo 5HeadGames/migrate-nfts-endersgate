@@ -2,7 +2,7 @@
   "name": "Backfire",
   "type": "ERC1155",
   "description": "Flip: Activate when your opponent declares an attack; negate the damage and reflect it back at the attacking Guardian. ",
-  "image": "QmaT2zxvcLA1bFwQ72b3nnbYRWzL8uQGhmu2V5qepNrReX",
+  "image": "https://bafybeie5yppj52hm6jxyvneurvrd4p635ke23gveotrzykhbyclhom7ace.ipfs.dweb.link/BACKFIRE%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -31,7 +31,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmaT2zxvcLA1bFwQ72b3nnbYRWzL8uQGhmu2V5qepNrReX"
+      "value": "https://bafybeie5yppj52hm6jxyvneurvrd4p635ke23gveotrzykhbyclhom7ace.ipfs.dweb.link/BACKFIRE%20FRONT.webp"
     }
   },
   "attributes": [
@@ -63,5 +63,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmaT2zxvcLA1bFwQ72b3nnbYRWzL8uQGhmu2V5qepNrReX"
     }
-  ]
+  ],
+  "typeCard": "reaction"
 }

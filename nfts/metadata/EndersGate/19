@@ -2,7 +2,7 @@
   "name": "Return from beyond",
   "type": "ERC1155",
   "description": "Discard 1 card from your hand; select 1 card from your graveyard and return it to the top of your deck.",
-  "image": "QmZfpktDHWRBzZpdewrCEzde1H2mQwe6nzdzGeEAeVkzLa",
+  "image": "https://bafybeif4cpse6oon45bpggnfbgculq3asqz6gzoctbi52t7ss4s6a72e4y.ipfs.dweb.link/RETURN%20FROM%20BEYOND%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -31,7 +31,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmZfpktDHWRBzZpdewrCEzde1H2mQwe6nzdzGeEAeVkzLa"
+      "value": "https://bafybeif4cpse6oon45bpggnfbgculq3asqz6gzoctbi52t7ss4s6a72e4y.ipfs.dweb.link/RETURN%20FROM%20BEYOND%20FRONT.webp"
     }
   },
   "attributes": [
@@ -63,5 +63,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmZfpktDHWRBzZpdewrCEzde1H2mQwe6nzdzGeEAeVkzLa"
     }
-  ]
+  ],
+  "typeCard": "action"
 }

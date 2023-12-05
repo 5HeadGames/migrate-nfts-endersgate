@@ -2,7 +2,7 @@
   "name": "Vrats",
   "type": "ERC1155",
   "description": "[Goblin | Support] \"War Scavenger\" Passive: Once per turn, steal 10 gold from your opponent's inventory. ",
-  "image": "QmaNQ87d25sT24i38JeF23QC8TUrbun2hZqb71qFhB9a2Y",
+  "image": "https://bafybeiaaud5g3c75qua6up3qtsgkhhkdcttq6kgaumwpxjklkgcqw64wha.ipfs.dweb.link/VRATS%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmaNQ87d25sT24i38JeF23QC8TUrbun2hZqb71qFhB9a2Y"
+      "value": "https://bafybeiaaud5g3c75qua6up3qtsgkhhkdcttq6kgaumwpxjklkgcqw64wha.ipfs.dweb.link/VRATS%20FRONT.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmaNQ87d25sT24i38JeF23QC8TUrbun2hZqb71qFhB9a2Y"
     }
-  ]
+  ],
+  "typeCard": "wood"
 }

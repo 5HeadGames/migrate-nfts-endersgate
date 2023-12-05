@@ -2,7 +2,7 @@
   "name": "Lightning Strike",
   "type": "ERC1155",
   "description": "Target one Guardian on your opponent's side of the field; deal 40 Mystic damage. ",
-  "image": "QmPqdpvFv9APvGorDfna3xqry2tj8YU2cGobCd8SjLjrxC",
+  "image": "https://bafybeigzq65aopzj5wkduz37lfc7rlr64ly4fd4hgxducdx5xxr54yeetm.ipfs.dweb.link/LIGHTNING%20STRIKE%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -31,7 +31,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmPqdpvFv9APvGorDfna3xqry2tj8YU2cGobCd8SjLjrxC"
+      "value": "https://bafybeigzq65aopzj5wkduz37lfc7rlr64ly4fd4hgxducdx5xxr54yeetm.ipfs.dweb.link/LIGHTNING%20STRIKE%20FRONT.webp"
     }
   },
   "attributes": [
@@ -63,5 +63,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmPqdpvFv9APvGorDfna3xqry2tj8YU2cGobCd8SjLjrxC"
     }
-  ]
+  ],
+  "typeCard": "action"
 }

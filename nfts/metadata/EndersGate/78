@@ -2,7 +2,7 @@
   "name": "Tanks Burden",
   "type": "ERC1155",
   "description": "Flip: Activate if your opponent controls a \"Tank\" Type Guardian. This card remains face up for 5 turns; during each of your opponent's Standby phases, Deal 50 Damage to the Tank Guardian on their side of the field.",
-  "image": "QmaHCqTBv1BixP8D9hxBFUbDCD6AHZ92tmcRQNYYDvDLJS",
+  "image": "https://bafybeighoz3e66ozgr2b7bqey36yjnfzddjw57fh24nxbiz6vqd4efmeqa.ipfs.dweb.link/TANKS%20BURDEN%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -31,7 +31,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmaHCqTBv1BixP8D9hxBFUbDCD6AHZ92tmcRQNYYDvDLJS"
+      "value": "https://bafybeighoz3e66ozgr2b7bqey36yjnfzddjw57fh24nxbiz6vqd4efmeqa.ipfs.dweb.link/TANKS%20BURDEN%20FRONT.webp"
     }
   },
   "attributes": [
@@ -63,5 +63,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmaHCqTBv1BixP8D9hxBFUbDCD6AHZ92tmcRQNYYDvDLJS"
     }
-  ]
+  ],
+  "typeCard": "reaction"
 }

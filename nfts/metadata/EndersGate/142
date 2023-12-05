@@ -2,7 +2,7 @@
   "name": "Omega Wolf Pax",
   "type": "ERC1155",
   "description": "[Beast | Support] Passive: While Omega Wolf Pax is on the field, all \"Wolf Pack\" Guardians gain +20 ATK",
-  "image": "QmYwn629ZF5Rm9FJWhuKrgsm27ZWLPBfTH6g3HJjTNUiaC",
+  "image": "https://bafybeiepoc7cvrnjzrflqc4wxr5bc7ayjydkijsjgzrkihojmfosi3hlwu.ipfs.dweb.link/OMEGA%20WOLF%20PAX%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmYwn629ZF5Rm9FJWhuKrgsm27ZWLPBfTH6g3HJjTNUiaC"
+      "value": "https://bafybeiepoc7cvrnjzrflqc4wxr5bc7ayjydkijsjgzrkihojmfosi3hlwu.ipfs.dweb.link/OMEGA%20WOLF%20PAX%20FRONT.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmYwn629ZF5Rm9FJWhuKrgsm27ZWLPBfTH6g3HJjTNUiaC"
     }
-  ]
+  ],
+  "typeCard": "stone"
 }

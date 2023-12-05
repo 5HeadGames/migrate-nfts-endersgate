@@ -2,7 +2,7 @@
   "name": "Lady Selsi",
   "type": "ERC1155",
   "description": "[Ascended | Assassin] \"Void Sniper\" Once per turn during your MP1, Lady Selsi can select one Guardian on your opponents side and mark them; Gain +25 crit chance & +30 crit dmg against marked target",
-  "image": "QmNU4fimKGXd2nj4vJSaQp6vxz8NBRwxDUWmaKPP8Q2z2Z",
+  "image": "https://bafybeihwod3z3bpor2nludkkds5236dtgifnug3ibtbnenz562pj34n7ry.ipfs.dweb.link/LADY%20SELSI%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmNU4fimKGXd2nj4vJSaQp6vxz8NBRwxDUWmaKPP8Q2z2Z"
+      "value": "https://bafybeihwod3z3bpor2nludkkds5236dtgifnug3ibtbnenz562pj34n7ry.ipfs.dweb.link/LADY%20SELSI%20FRONT.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,11 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmNU4fimKGXd2nj4vJSaQp6vxz8NBRwxDUWmaKPP8Q2z2Z"
     }
-  ]
+  ],
+  "synergies": [
+    "Sir Nex",
+    "Sir Albin",
+    "Lady Rene"
+  ],
+  "typeCard": "legendary"
 }

@@ -2,7 +2,7 @@
   "name": "Voidwalker Kek'zin",
   "type": "ERC1155",
   "description": "Active: Select one enemy Guardian as your rival; Kek'zin takes 25% less DMG from them.",
-  "image": "Qmb8h7nbPzRKMaazM1W61zLgPWmtvJT9ojNjWtQD29WoXF",
+  "image": "https://bafybeicfgc57dxnl3ekrdgloco2o2aerqcsef7goaolt5v5zm5g36yedo4.ipfs.w3s.link/Voidwalker_Kekzin_FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/Qmb8h7nbPzRKMaazM1W61zLgPWmtvJT9ojNjWtQD29WoXF"
+      "value": "https://bafybeicfgc57dxnl3ekrdgloco2o2aerqcsef7goaolt5v5zm5g36yedo4.ipfs.w3s.link/Voidwalker_Kekzin_FRONT.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/Qmb8h7nbPzRKMaazM1W61zLgPWmtvJT9ojNjWtQD29WoXF"
     }
-  ]
+  ],
+  "typeCard": "wood"
 }

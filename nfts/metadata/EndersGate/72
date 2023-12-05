@@ -2,7 +2,7 @@
   "name": "Show of hands",
   "type": "ERC1155",
   "description": "Flip: Your opponent chooses 1 of 2 options: \n\n● Reveal their hand to you.\n\n● Pay you 50 gold and discard 1 card to the grave yard.",
-  "image": "QmYLAUidib51mkdcVTND6cu7QAun9f7Feu9V7KAGGMMBfw",
+  "image": "https://bafybeianfrlqdneetg2jozzarce3kvw5udjfzvktagwcilw4qfo6tuupkq.ipfs.dweb.link/SHOW%20OF%20HANDS%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -31,7 +31,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmYLAUidib51mkdcVTND6cu7QAun9f7Feu9V7KAGGMMBfw"
+      "value": "https://bafybeianfrlqdneetg2jozzarce3kvw5udjfzvktagwcilw4qfo6tuupkq.ipfs.dweb.link/SHOW%20OF%20HANDS%20FRONT.webp"
     }
   },
   "attributes": [
@@ -63,5 +63,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmYLAUidib51mkdcVTND6cu7QAun9f7Feu9V7KAGGMMBfw"
     }
-  ]
+  ],
+  "typeCard": "reaction"
 }

@@ -2,7 +2,7 @@
   "name": "Void Blast",
   "type": "ERC1155",
   "description": "Target One Guardian on your opponent's side of the field; damage them for 100 HP. If under 20% health, execute them.",
-  "image": "QmUvU5uHGpj5DNN1p1ofbZyjNbAJn1sazcQCtbzasS1bXJ",
+  "image": "https://bafybeihftrxiyvvichvwrexgbrln3tvdvxd3rg65gw2wc55b3x4rngnq64.ipfs.dweb.link/VOID%20BLAST%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -31,7 +31,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmUvU5uHGpj5DNN1p1ofbZyjNbAJn1sazcQCtbzasS1bXJ"
+      "value": "https://bafybeihftrxiyvvichvwrexgbrln3tvdvxd3rg65gw2wc55b3x4rngnq64.ipfs.dweb.link/VOID%20BLAST%20FRONT.webp"
     }
   },
   "attributes": [
@@ -63,5 +63,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmUvU5uHGpj5DNN1p1ofbZyjNbAJn1sazcQCtbzasS1bXJ"
     }
-  ]
+  ],
+  "typeCard": "action"
 }

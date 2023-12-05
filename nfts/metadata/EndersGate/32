@@ -2,7 +2,7 @@
   "name": "Void Ledger ",
   "type": "ERC1155",
   "description": "This card stays on the field for 3 turns, during this time, only Void Type Guardian's can declare attack.",
-  "image": "QmY9YGgzpxj2Dsr7WVGojdMjbvGCRQBQHZzQvESGrF9UF6",
+  "image": "https://bafybeidc4kb7nain5iitsqs5tl5fbxbu4lyzcdffrzhdrglpslyr6bohmm.ipfs.dweb.link/VOID%20LEDGER%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -31,7 +31,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmY9YGgzpxj2Dsr7WVGojdMjbvGCRQBQHZzQvESGrF9UF6"
+      "value": "https://bafybeidc4kb7nain5iitsqs5tl5fbxbu4lyzcdffrzhdrglpslyr6bohmm.ipfs.dweb.link/VOID%20LEDGER%20FRONT.webp"
     }
   },
   "attributes": [
@@ -63,5 +63,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmY9YGgzpxj2Dsr7WVGojdMjbvGCRQBQHZzQvESGrF9UF6"
     }
-  ]
+  ],
+  "typeCard": "action"
 }

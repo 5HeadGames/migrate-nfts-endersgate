@@ -2,7 +2,7 @@
   "name": "Ragnar",
   "type": "ERC1155",
   "description": "[Undead | Tank] Passive: All incoming enemy attacks are automatically re-directed to Ragnar and reduced by 20%",
-  "image": "Qmer9F88oDKXjo4yGqZQnAwnvE9jC5QzroV6HuFYQ3CNPL",
+  "image": "https://bafybeiffhgcg3chfgkx24g2i77yunhim2b3qbukcyygyqqv2mkscqpwnrq.ipfs.dweb.link/RAGNAR%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/Qmer9F88oDKXjo4yGqZQnAwnvE9jC5QzroV6HuFYQ3CNPL"
+      "value": "https://bafybeiffhgcg3chfgkx24g2i77yunhim2b3qbukcyygyqqv2mkscqpwnrq.ipfs.dweb.link/RAGNAR%20FRONT.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/Qmer9F88oDKXjo4yGqZQnAwnvE9jC5QzroV6HuFYQ3CNPL"
     }
-  ]
+  ],
+  "typeCard": "iron"
 }

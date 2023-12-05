@@ -2,7 +2,7 @@
   "name": "Field of Venom",
   "type": "ERC1155",
   "description": "The field fills up with Venom Gas causing 5 damage per turn to all non-Venom Type Guardians. If your opponent has no field card in play, this field card effects their side as well. (Upkeep: 5 gold per turn)",
-  "image": "QmXbjWLDuEfrudtL86HP28SW3oex9DT6PdfboCajBNCTwG",
+  "image": "https://bafybeicoxxqh3hfya7sclfhger6qgcgkfmu54okrea4reyipzo2wifgd2a.ipfs.dweb.link/FIELD%20OF%20VENOM%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -31,7 +31,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmXbjWLDuEfrudtL86HP28SW3oex9DT6PdfboCajBNCTwG"
+      "value": "https://bafybeicoxxqh3hfya7sclfhger6qgcgkfmu54okrea4reyipzo2wifgd2a.ipfs.dweb.link/FIELD%20OF%20VENOM%20FRONT.webp"
     }
   },
   "attributes": [
@@ -63,5 +63,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmXbjWLDuEfrudtL86HP28SW3oex9DT6PdfboCajBNCTwG"
     }
-  ]
+  ],
+  "typeCard": "action"
 }

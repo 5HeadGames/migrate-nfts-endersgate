@@ -2,7 +2,7 @@
   "name": "Ignited Bear Trap",
   "type": "ERC1155",
   "description": "Flip: Activate when your opponent declares an attack; deal 15 burn damage to the attacking Guardian for 3 turns. ",
-  "image": "QmVY4Mx2NsbNmCYL5zHQz5jgeKF5ZC69rESWwY7DVRm5VV",
+  "image": "https://bafybeictu2yukuckb5mkjfejdegkbvqljlx7ym7w6up3yhjelw6z23e4v4.ipfs.dweb.link/IGNITED%20BEAR%20TRAP%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -31,7 +31,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmVY4Mx2NsbNmCYL5zHQz5jgeKF5ZC69rESWwY7DVRm5VV"
+      "value": "https://bafybeictu2yukuckb5mkjfejdegkbvqljlx7ym7w6up3yhjelw6z23e4v4.ipfs.dweb.link/IGNITED%20BEAR%20TRAP%20FRONT.webp"
     }
   },
   "attributes": [
@@ -63,5 +63,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmVY4Mx2NsbNmCYL5zHQz5jgeKF5ZC69rESWwY7DVRm5VV"
     }
-  ]
+  ],
+  "typeCard": "reaction"
 }

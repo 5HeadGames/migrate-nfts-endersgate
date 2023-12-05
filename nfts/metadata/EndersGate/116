@@ -2,7 +2,7 @@
   "name": "Hitman Braaz",
   "type": "ERC1155",
   "description": "[Goblin | Assassin] \"Goblin Crew\" Passive: Braaz gains 25 ATK for all \"Goblin Crew\" Guardians on your side of the field. ",
-  "image": "QmRfR5NggiGgL74gFUPFutew1PesPdKSxX5zYjPNNx6pVe",
+  "image": "https://bafybeibxks7yx7hwh6ytk6s4saxdiw5q5jocj4qeggxumnk2u7xzlql7uy.ipfs.dweb.link/HITMAN%20BRAAZ%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmRfR5NggiGgL74gFUPFutew1PesPdKSxX5zYjPNNx6pVe"
+      "value": "https://bafybeibxks7yx7hwh6ytk6s4saxdiw5q5jocj4qeggxumnk2u7xzlql7uy.ipfs.dweb.link/HITMAN%20BRAAZ%20FRONT.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmRfR5NggiGgL74gFUPFutew1PesPdKSxX5zYjPNNx6pVe"
     }
-  ]
+  ],
+  "typeCard": "wood"
 }

@@ -2,7 +2,7 @@
   "name": "Zesnas",
   "type": "ERC1155",
   "description": "[Sentinel | Mage] \"Mystical Curiosity\" Activate: During your MP1, discard 1 Mystic type Guardian from your hand or field to the grave yard; Inflict 100% of Zesnas' current ATK to your opponents LP. ",
-  "image": "Qme8pSzWaiCY7fGxwibSDTm2qpBwUwd3GogHYz7nG8juGi",
+  "image": "https://bafybeifm5nfuxibdz6exrxolkjadp6fqu2lyx7vejvrxhtz4f766cne7ua.ipfs.dweb.link/Zesnas.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/Qme8pSzWaiCY7fGxwibSDTm2qpBwUwd3GogHYz7nG8juGi"
+      "value": "https://bafybeifm5nfuxibdz6exrxolkjadp6fqu2lyx7vejvrxhtz4f766cne7ua.ipfs.dweb.link/Zesnas.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/Qme8pSzWaiCY7fGxwibSDTm2qpBwUwd3GogHYz7nG8juGi"
     }
-  ]
+  ],
+  "typeCard": "legendary"
 }

@@ -2,7 +2,7 @@
   "name": "Takala",
   "type": "ERC1155",
   "description": "[Human | Healer] Activate: Once per turn, heal one ally Guardian for 20 HP; healed Guardian's gain +10 crit chance & damage for 1 turn.",
-  "image": "QmaDpHy1hnTA7cmjjg6ngTPXz13PKAoJz1ZTbnKWxFckjJ",
+  "image": "https://bafybeihut5iox4rgfdj755no22zy44x4oclza455mgripq3ad67spw3fh4.ipfs.dweb.link/TAKALA%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmaDpHy1hnTA7cmjjg6ngTPXz13PKAoJz1ZTbnKWxFckjJ"
+      "value": "https://bafybeihut5iox4rgfdj755no22zy44x4oclza455mgripq3ad67spw3fh4.ipfs.dweb.link/TAKALA%20FRONT.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmaDpHy1hnTA7cmjjg6ngTPXz13PKAoJz1ZTbnKWxFckjJ"
     }
-  ]
+  ],
+  "typeCard": "gold"
 }

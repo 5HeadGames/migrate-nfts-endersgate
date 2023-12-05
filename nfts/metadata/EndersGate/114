@@ -2,7 +2,7 @@
   "name": "Nesia The Tormentor",
   "type": "ERC1155",
   "description": "[Undead | Support] Passive: When Nesia is sent to the graveyard she leaves an orb which heals all undead type Guardians on both sides of the field for 10 HP during your next 2 standby phases.",
-  "image": "QmWSTcG6QEdUsoGNWRjLhWnHCSocWbn5h4817AcW9J5kRT",
+  "image": "https://bafybeid7taxaxc2gqtd4kmavfst262v2kopw3hw7p5vea54a36cmq5i4xy.ipfs.dweb.link/NESIA%20THE%20TORMENTOR%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmWSTcG6QEdUsoGNWRjLhWnHCSocWbn5h4817AcW9J5kRT"
+      "value": "https://bafybeid7taxaxc2gqtd4kmavfst262v2kopw3hw7p5vea54a36cmq5i4xy.ipfs.dweb.link/NESIA%20THE%20TORMENTOR%20FRONT.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmWSTcG6QEdUsoGNWRjLhWnHCSocWbn5h4817AcW9J5kRT"
     }
-  ]
+  ],
+  "typeCard": "wood"
 }

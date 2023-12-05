@@ -2,7 +2,7 @@
   "name": "E-Axe: Earth Mode",
   "type": "ERC1155",
   "description": "Deal 10 Earth Damage to one selected Enemy Guardian, they cannot declare an attack for 1 turn. ",
-  "image": "QmeTVB4sgWVAD3fntJJJpB56GzhfofnnwSd8DSGmwtQLUs",
+  "image": "https://bafybeie3xg6k336vvzyo5o62gfv7ddazihgnzw2igte6lysgvchceujewm.ipfs.dweb.link/E-AXE%20EARTH%20MODE%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -31,7 +31,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmeTVB4sgWVAD3fntJJJpB56GzhfofnnwSd8DSGmwtQLUs"
+      "value": "https://bafybeie3xg6k336vvzyo5o62gfv7ddazihgnzw2igte6lysgvchceujewm.ipfs.dweb.link/E-AXE%20EARTH%20MODE%20FRONT.webp"
     }
   },
   "attributes": [
@@ -63,5 +63,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmeTVB4sgWVAD3fntJJJpB56GzhfofnnwSd8DSGmwtQLUs"
     }
-  ]
+  ],
+  "typeCard": "action"
 }

@@ -2,7 +2,7 @@
   "name": "E-Axe: Fire Mode",
   "type": "ERC1155",
   "description": "Deal 20 damage to one selected Guardian on the enemy's side of the field, then deal 10 burn damage over 2 turns.",
-  "image": "QmdqYjCiQwnHHfG3gDsm86pqB6kyoa5YhxEuEnYzyJz4Wi",
+  "image": "https://bafybeibxtmvlkf5wl3kyh6jxgawfuyr5v6x46n6cmae4bz7ljkjjb7m7bi.ipfs.dweb.link/E-AXE%20FIRE%20MODE%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -31,7 +31,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmdqYjCiQwnHHfG3gDsm86pqB6kyoa5YhxEuEnYzyJz4Wi"
+      "value": "https://bafybeibxtmvlkf5wl3kyh6jxgawfuyr5v6x46n6cmae4bz7ljkjjb7m7bi.ipfs.dweb.link/E-AXE%20FIRE%20MODE%20FRONT.webp"
     }
   },
   "attributes": [
@@ -63,5 +63,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmdqYjCiQwnHHfG3gDsm86pqB6kyoa5YhxEuEnYzyJz4Wi"
     }
-  ]
+  ],
+  "typeCard": "action"
 }

@@ -2,7 +2,7 @@
   "name": "Willful Shield",
   "type": "ERC1155",
   "description": "Activate: This card stays on the field until it negates one attack.",
-  "image": "QmdmDpsKhGR4xKBAnujhMLLLLLCiaCeTeQGdxgqy5ML6wf",
+  "image": "https://bafybeigjfxnn3euy3wvudyfobunq7blcezlgpr3seaceycuwdwz6nvjzni.ipfs.dweb.link/WILLFUL%20SHIELD%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -31,7 +31,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmdmDpsKhGR4xKBAnujhMLLLLLCiaCeTeQGdxgqy5ML6wf"
+      "value": "https://bafybeigjfxnn3euy3wvudyfobunq7blcezlgpr3seaceycuwdwz6nvjzni.ipfs.dweb.link/WILLFUL%20SHIELD%20FRONT.webp"
     }
   },
   "attributes": [
@@ -63,5 +63,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmdmDpsKhGR4xKBAnujhMLLLLLCiaCeTeQGdxgqy5ML6wf"
     }
-  ]
+  ],
+  "typeCard": "action"
 }

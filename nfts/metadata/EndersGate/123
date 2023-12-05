@@ -2,7 +2,7 @@
   "name": "Void Fragment X",
   "type": "ERC1155",
   "description": "[Golem | Support] \"Trouble Maker\" Passive: Cannot be targeted in the Battle Phase while another Guardian is on your side of the field; Deal 5 Void DMG during each of your Standby Phases to 1 random non-Void type Guardian on your opponents side of the field. ",
-  "image": "QmQ1mdcsJUuj6u5C3t4dhAzvKHMbNXfX4Qy1hfrsU1th5v",
+  "image": "https://bafybeifomorv2c3ewvrxjgyxruk3enyqc2awuz2rx7iasiyyovnm3oga6e.ipfs.dweb.link/VOID%20FRAGMENT%20X%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmQ1mdcsJUuj6u5C3t4dhAzvKHMbNXfX4Qy1hfrsU1th5v"
+      "value": "https://bafybeifomorv2c3ewvrxjgyxruk3enyqc2awuz2rx7iasiyyovnm3oga6e.ipfs.dweb.link/VOID%20FRAGMENT%20X%20FRONT.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmQ1mdcsJUuj6u5C3t4dhAzvKHMbNXfX4Qy1hfrsU1th5v"
     }
-  ]
+  ],
+  "typeCard": "wood"
 }

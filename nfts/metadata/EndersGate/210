@@ -2,7 +2,7 @@
   "name": "Elwin",
   "type": "ERC1155",
   "description": " [Vampire | Assassin] \"Vampire Bloodline\"  Activate: Elwin's next attack heals him for 10% damage dealt. Cooldown: 3 turns. ",
-  "image": "QmaDZN8jmGYE5gAvbHDcdPGJAZ8iWRGuypUbYkDZC5eJ9m",
+  "image": "https://bafybeibvgpnqtxrawjimguu4kvtcmsxcvrsp52y4x7xvlcla7vkpez6u4m.ipfs.dweb.link/ELWIN%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmaDZN8jmGYE5gAvbHDcdPGJAZ8iWRGuypUbYkDZC5eJ9m"
+      "value": "https://bafybeibvgpnqtxrawjimguu4kvtcmsxcvrsp52y4x7xvlcla7vkpez6u4m.ipfs.dweb.link/ELWIN%20FRONT.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,9 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmaDZN8jmGYE5gAvbHDcdPGJAZ8iWRGuypUbYkDZC5eJ9m"
     }
-  ]
+  ],
+  "synergies": [
+    "Elenor"
+  ],
+  "typeCard": "gold"
 }

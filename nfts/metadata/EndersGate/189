@@ -1,8 +1,8 @@
 {
-  "name": "Sadako ",
+  "name": "Sadako",
   "type": "ERC1155",
   "description": "[Human | Support] \"Good Companion\" Activate: During your MP1, pay 55 gold to summon \"Yoshiko\" from your hand or deck to the field; if successful, increase Sadako's HP by +18% for as long as \"Yoshiko\" remains on the field.",
-  "image": "QmccSYD3vovvZLCisCA9hYk3tUZJcgdAQMfet65gVQvF3o",
+  "image": "https://bafybeicyo4m4sjkn4lzlzkxickh4zhdgvida7rk4id33uuyzleonkpczp4.ipfs.dweb.link/Sadako.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmccSYD3vovvZLCisCA9hYk3tUZJcgdAQMfet65gVQvF3o"
+      "value": "https://bafybeicyo4m4sjkn4lzlzkxickh4zhdgvida7rk4id33uuyzleonkpczp4.ipfs.dweb.link/Sadako.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,9 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmccSYD3vovvZLCisCA9hYk3tUZJcgdAQMfet65gVQvF3o"
     }
-  ]
+  ],
+  "synergies": [
+    "Yoshiko"
+  ],
+  "typeCard": "iron"
 }

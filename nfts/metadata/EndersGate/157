@@ -2,7 +2,7 @@
   "name": "Oxi The Void Golem",
   "type": "ERC1155",
   "description": "[Golem | Tank] \"Shield of Zhilridge\" Activate: During your MP1, Oxi gives him self an Overshield worth 25% HP of its current HP. Uses: 1 ",
-  "image": "QmUkZbHgNCSyh2wMQKCkmfPPbYCnGv5AodnRgN9qvTBfK2",
+  "image": "https://bafybeiej6zh46obqyeq7ihi3hmngbs5q7cchpyj3y7qfrjgv35vl56meua.ipfs.dweb.link/OXI%20THE%20VOID%20GOLEM%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmUkZbHgNCSyh2wMQKCkmfPPbYCnGv5AodnRgN9qvTBfK2"
+      "value": "https://bafybeiej6zh46obqyeq7ihi3hmngbs5q7cchpyj3y7qfrjgv35vl56meua.ipfs.dweb.link/OXI%20THE%20VOID%20GOLEM%20FRONT.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmUkZbHgNCSyh2wMQKCkmfPPbYCnGv5AodnRgN9qvTBfK2"
     }
-  ]
+  ],
+  "typeCard": "stone"
 }

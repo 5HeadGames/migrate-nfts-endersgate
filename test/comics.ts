@@ -1,11 +1,10 @@
-import { ethers, upgrades, network } from "hardhat";
-import { expect, assert } from "chai";
+import { ethers } from "hardhat";
+import { expect } from "chai";
 import { SignerWithAddress } from "@nomiclabs/hardhat-ethers/dist/src/signer-with-address";
-import { EndersBattlePass, EndersComics, MockERC20 } from "../types";
-import { Console } from "console";
+import { EndersComicsMultiTokens, MockERC20 } from "../types";
 
-describe("REWARDS", function () {
-  let endersComic: EndersComics,
+describe("COMICS", function () {
+  let endersComic: EndersComicsMultiTokens,
     accounts: SignerWithAddress[],
     token: MockERC20,
     token2: MockERC20,
@@ -21,8 +20,10 @@ describe("REWARDS", function () {
     token3 = await (await ethers.getContractFactory("MockERC20")).deploy();
 
     endersComic = await (
-      await ethers.getContractFactory("EndersComics")
+      await ethers.getContractFactory("EndersComicsMultiTokens")
     ).deploy("EndersComics", "EGC", token.address, token.address, 6);
+
+ 
 
     await token.mint(owner.address, 100000000000);
     await token3.mint(owner.address, 100000000000);
@@ -32,7 +33,7 @@ describe("REWARDS", function () {
     const adminRole = await endersComic.DEFAULT_ADMIN_ROLE();
     const minterRole = await endersComic.SUPPLY_ROLE();
     const uriSetterRole = await endersComic.URI_SETTER_ROLE();
-    const seasonRole = await endersComic.COMIC_ROLE();
+    const comicRole = await endersComic.COMIC_ROLE();
 
     const hasRoleAdmin = await endersComic.hasRole(adminRole, owner.address);
     const hasRoleMinter = await endersComic.hasRole(minterRole, owner.address);
@@ -40,7 +41,7 @@ describe("REWARDS", function () {
       uriSetterRole,
       owner.address,
     );
-    const hasRoleSeason = await endersComic.hasRole(seasonRole, owner.address);
+    const hasRoleSeason = await endersComic.hasRole(comicRole, owner.address);
     const randomDude = ethers.Wallet.createRandom().address;
 
     expect(hasRoleAdmin, "Is Admin").to.equal(true);
@@ -62,7 +63,7 @@ describe("REWARDS", function () {
     ).to.not.equal(true);
 
     expect(
-      await endersComic.hasRole(seasonRole, randomDude),
+      await endersComic.hasRole(comicRole, randomDude),
       "Isnt Season Setter",
     ).to.not.equal(true);
   });
@@ -118,7 +119,7 @@ describe("REWARDS", function () {
   });
 
   it("Should create season rewards", async () => {
-    await endersComic.addComic(100000000);
+    await endersComic.addComic(100000000, 200);
     expect(
       await (
         await endersComic.comics(await endersComic.comicIdCounter())
@@ -169,65 +170,45 @@ describe("REWARDS", function () {
   });
 
   it("Should buy batch", async () => {
-    for (let i = 1; i <= 10; i++) {
-      console.log(i);
+    for (let i = 1; i <= 8; i++) {
+      const counter = await endersComic.comicIdCounter();
 
-      await endersComic.addComic(100000000);
+      await endersComic.addComic(100000000, 200);
+
       expect(
         await (
           await endersComic.comics(await endersComic.comicIdCounter())
         ).exists,
       ).to.be.equal(true);
 
-      console.log(i);
-      console.log(
-        owner.address,
-        (new Array(await endersComic.comicIdCounter()) as any)
-          .fill(1)
-          .map((a: any, i: any) => i + 1),
-        (new Array(await endersComic.comicIdCounter()) as any)
-          .fill(1)
-          .map((a: any, i: any) => 10),
-        token.address,
+      expect(
+        (await endersComic.comics(await endersComic.comicIdCounter())).comicId,
+      ).to.be.equal(counter.add(1));
+
+      const prevBalance = await endersComic.balanceOf(
+        accounts[0].address,
+        (
+          await endersComic.comics(await endersComic.comicIdCounter())
+        ).comicId,
       );
 
-      await endersComic.buyBatch(
+      await endersComic.connect(accounts[0]).buyBatch(
         owner.address,
-        (new Array(await endersComic.comicIdCounter()) as any)
+        (new Array((await endersComic.comicIdCounter()).toNumber()) as any)
           .fill(1)
           .map((a: any, i: any) => i + 1),
-        (new Array(await endersComic.comicIdCounter()) as any)
-          .fill(1)
-          .map((a: any, i: any) => 10),
+        (
+          new Array((await endersComic.comicIdCounter()).toNumber()) as any
+        ).fill(10),
         token.address,
         {
           from: owner.address,
-          value: (
-            await endersComic.getPrice(
-              token.address,
-              await endersComic.comicIdCounter(),
-              10,
-            )
-          ).mul(i),
-        },
-      );
-
-      console.log(i);
-
-      const balanceContract = await ethers.provider.getBalance(
-        endersComic.address,
-      );
-
-      console.log(i);
-
-      expect(balanceContract).to.be.equal(
-        (
-          await endersComic.getPrice(
+          value: await endersComic.getPrice(
             token.address,
             await endersComic.comicIdCounter(),
-            1,
-          )
-        ).mul(i),
+            10,
+          ),
+        },
       );
 
       expect(
@@ -235,10 +216,40 @@ describe("REWARDS", function () {
           accounts[0].address,
           (
             await endersComic.comics(await endersComic.comicIdCounter())
-          ).rewardId,
+          ).comicId,
         ),
-      ).to.be.equal(1);
+      ).to.be.equal(prevBalance.add(10));
     }
+  });
+
+  it("Should not exceed the limit", async () => {
+    await endersComic.addComic(100000000, 200);
+    expect(
+      await (
+        await endersComic.comics(await endersComic.comicIdCounter())
+      ).exists,
+    ).to.be.equal(true);
+
+    await expect(
+      endersComic.buyBatch(
+        owner.address,
+        (new Array(await endersComic.comicIdCounter()) as any)
+          .fill(1)
+          .map((a: any, i: any) => i + 1),
+        (new Array(await endersComic.comicIdCounter()) as any)
+          .fill(1)
+          .map((a: any, i: any) => 201),
+        token.address,
+        {
+          from: owner.address,
+          value: await endersComic.getPrice(
+            token.address,
+            await endersComic.comicIdCounter(),
+            201,
+          ),
+        },
+      ),
+    ).to.be.revertedWith("Limit amount of NFTs reached");
   });
 
   it("Should set ipfs only setter role", async () => {

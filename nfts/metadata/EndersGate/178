@@ -2,7 +2,7 @@
   "name": "Lord Kraken",
   "type": "ERC1155",
   "description": "[Cephalo | Mage] \"Soul Shift\" Activate: Lord Kraken copies the ability of the last Guardian that attacked him. During your next turn, Lord Kraken is able to use copied ability. ",
-  "image": "QmYMqemdWQhiBsQW9YeHcEctvCAzYubUnFDxVMobWVrGyB",
+  "image": "https://bafybeia3d4ltk2xhkmjy3wuj7fup4sg7isay7iejq37uhdftudstlfys3y.ipfs.dweb.link/KRAKEN%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmYMqemdWQhiBsQW9YeHcEctvCAzYubUnFDxVMobWVrGyB"
+      "value": "https://bafybeia3d4ltk2xhkmjy3wuj7fup4sg7isay7iejq37uhdftudstlfys3y.ipfs.dweb.link/KRAKEN%20FRONT.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmYMqemdWQhiBsQW9YeHcEctvCAzYubUnFDxVMobWVrGyB"
     }
-  ]
+  ],
+  "typeCard": "iron"
 }

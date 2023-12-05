@@ -2,7 +2,7 @@
   "name": "Knight's Revenge",
   "type": "ERC1155",
   "description": "Flip: When your opponent declares an attack, discard one Guardian from your hand to the graveyard; deal 50 damage to the attacking Guardian & end your opponent's attack phase.",
-  "image": "QmSnS1rXjG6f7jqt4iGCajRJoTT5ZXFBx7uJKUN7frf8BT",
+  "image": "https://bafybeidyifr4vrtlnliqrwpgqdyuodzbyzddlqehcrkho4fuwzl2tpuj4y.ipfs.w3s.link/KNIGHT'S%20REVENGE.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -31,7 +31,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmSnS1rXjG6f7jqt4iGCajRJoTT5ZXFBx7uJKUN7frf8BT"
+      "value": "https://bafybeidyifr4vrtlnliqrwpgqdyuodzbyzddlqehcrkho4fuwzl2tpuj4y.ipfs.w3s.link/KNIGHT'S%20REVENGE.webp"
     }
   },
   "attributes": [
@@ -63,5 +63,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmSnS1rXjG6f7jqt4iGCajRJoTT5ZXFBx7uJKUN7frf8BT"
     }
-  ]
+  ],
+  "typeCard": "reaction"
 }

@@ -2,7 +2,7 @@
   "name": "Orneth",
   "type": "ERC1155",
   "description": "[Zombie | Fighter] \"Undying Courage\" Passive: Upon death, Orneth has a 25% chance of returning to the field from the graveyard. Return count: 2",
-  "image": "QmZGGdzgetcZSK2TShXG9xGXYDA67s8NCQpQ3URJMHA8Jk",
+  "image": "https://bafybeicdukvlw24msrtdkzlhfgweqwxdgfw5hm3qs5finjqvlqgb3ecyay.ipfs.dweb.link/ORNETH%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmZGGdzgetcZSK2TShXG9xGXYDA67s8NCQpQ3URJMHA8Jk"
+      "value": "https://bafybeicdukvlw24msrtdkzlhfgweqwxdgfw5hm3qs5finjqvlqgb3ecyay.ipfs.dweb.link/ORNETH%20FRONT.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmZGGdzgetcZSK2TShXG9xGXYDA67s8NCQpQ3URJMHA8Jk"
     }
-  ]
+  ],
+  "typeCard": "wood"
 }

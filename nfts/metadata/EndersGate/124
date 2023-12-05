@@ -2,7 +2,7 @@
   "name": "Void Fragment Y",
   "type": "ERC1155",
   "description": "[Golem | Support] \"Emulate\" Passive: When Oxi The Void Golem is on the field and declares an attack, Void Fragment Y Mimics the attack doing 50% of it's current ATK.",
-  "image": "QmUZfv1MByWE7mWMgxdLt3BYkbHVBK27yW1kfEkrZXpqvg",
+  "image": "https://bafybeib7lu2xtcssnlrbvqj2c5phihiemt4yusqcmhppy34jryjv2dejwy.ipfs.dweb.link/VOID%20FRAGMENT%20Y%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmUZfv1MByWE7mWMgxdLt3BYkbHVBK27yW1kfEkrZXpqvg"
+      "value": "https://bafybeib7lu2xtcssnlrbvqj2c5phihiemt4yusqcmhppy34jryjv2dejwy.ipfs.dweb.link/VOID%20FRAGMENT%20Y%20FRONT.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmUZfv1MByWE7mWMgxdLt3BYkbHVBK27yW1kfEkrZXpqvg"
     }
-  ]
+  ],
+  "typeCard": "wood"
 }

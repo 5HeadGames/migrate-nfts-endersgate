@@ -2,7 +2,7 @@
   "name": "E-Axe: Venom Mode",
   "type": "ERC1155",
   "description": "Deal 10 poison damage once per turn for 3 turns to one selected Guardian on the enemy's side of the field.",
-  "image": "Qmc1rtEUPkNFptr8yKh9HF1V99trT4yqEsLbfB4jRgH6T4",
+  "image": "https://bafybeifgxthgkwktp6do3zikbnrep246wcaoux36vpcnieq3vrkfqyukva.ipfs.dweb.link/E-AXE%20VENOM%20MODE%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -31,7 +31,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/Qmc1rtEUPkNFptr8yKh9HF1V99trT4yqEsLbfB4jRgH6T4"
+      "value": "https://bafybeifgxthgkwktp6do3zikbnrep246wcaoux36vpcnieq3vrkfqyukva.ipfs.dweb.link/E-AXE%20VENOM%20MODE%20FRONT.webp"
     }
   },
   "attributes": [
@@ -63,5 +63,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/Qmc1rtEUPkNFptr8yKh9HF1V99trT4yqEsLbfB4jRgH6T4"
     }
-  ]
+  ],
+  "typeCard": "action"
 }

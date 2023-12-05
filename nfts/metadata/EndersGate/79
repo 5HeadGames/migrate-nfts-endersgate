@@ -2,7 +2,7 @@
   "name": "Grave Annoyance",
   "type": "ERC1155",
   "description": "Flip: Have at least 1 Guardian in your Grave yard to activate. This card remains face up for 5 turns; during each of your opponent's Standby phases, 1 Guardian on their side of the field is hit by a rock dealing 10 damage.",
-  "image": "QmbTArmRUEuQDaiz3KHUNGPrCboDicGDRYinvU8rbYvmTD",
+  "image": "https://bafybeifhk7malkpkjhz3kdrm4encfecrrdq2i2bwhglaowqhrjk6zbn3n4.ipfs.dweb.link/GRAVE%20ANNOYANCE%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -31,7 +31,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmbTArmRUEuQDaiz3KHUNGPrCboDicGDRYinvU8rbYvmTD"
+      "value": "https://bafybeifhk7malkpkjhz3kdrm4encfecrrdq2i2bwhglaowqhrjk6zbn3n4.ipfs.dweb.link/GRAVE%20ANNOYANCE%20FRONT.webp"
     }
   },
   "attributes": [
@@ -63,5 +63,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmbTArmRUEuQDaiz3KHUNGPrCboDicGDRYinvU8rbYvmTD"
     }
-  ]
+  ],
+  "typeCard": "reaction"
 }

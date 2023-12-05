@@ -2,7 +2,7 @@
   "name": "Fighter Essence",
   "type": "ERC1155",
   "description": "Equip this card to one Guardian on your side of the field; increase their attack by 100. Destory this card if the Guardian is sent to the grave yard.",
-  "image": "QmYsUn1ntdjv5MhFA47ftgASACCzWLemEqdyFddScjmunN",
+  "image": "https://bafybeicmk5dg24goeydhqihrt37q7nxuhjggg6ykkmpsnnf2l676ihsoqm.ipfs.dweb.link/FIGHTER%20ESSENCE%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -31,7 +31,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmYsUn1ntdjv5MhFA47ftgASACCzWLemEqdyFddScjmunN"
+      "value": "https://bafybeicmk5dg24goeydhqihrt37q7nxuhjggg6ykkmpsnnf2l676ihsoqm.ipfs.dweb.link/FIGHTER%20ESSENCE%20FRONT.webp"
     }
   },
   "attributes": [
@@ -63,5 +63,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmYsUn1ntdjv5MhFA47ftgASACCzWLemEqdyFddScjmunN"
     }
-  ]
+  ],
+  "typeCard": "action"
 }

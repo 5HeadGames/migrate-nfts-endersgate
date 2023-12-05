@@ -2,7 +2,7 @@
   "name": "Surprise Entry",
   "type": "ERC1155",
   "description": "Flip: If you control no Guardians on your side of the field, pay 100 gold to hire 1 random Guardian from your deck with a cost of 300 gold or less to the field.",
-  "image": "Qmb32TbkccJXoidd4UuXaScEkr4urGoDbTL5tQiLRket9f",
+  "image": "https://bafybeicvcs5jg2jop5ey4yf7plghqarn5rz2rdx2g77knerxhddnrhtf7y.ipfs.dweb.link/SURPRISE%20ENTRY%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -31,7 +31,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/Qmb32TbkccJXoidd4UuXaScEkr4urGoDbTL5tQiLRket9f"
+      "value": "https://bafybeicvcs5jg2jop5ey4yf7plghqarn5rz2rdx2g77knerxhddnrhtf7y.ipfs.dweb.link/SURPRISE%20ENTRY%20FRONT.webp"
     }
   },
   "attributes": [
@@ -63,5 +63,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/Qmb32TbkccJXoidd4UuXaScEkr4urGoDbTL5tQiLRket9f"
     }
-  ]
+  ],
+  "typeCard": "reaction"
 }

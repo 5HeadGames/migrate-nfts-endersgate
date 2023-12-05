@@ -2,7 +2,7 @@
   "name": "Zombie Archer",
   "type": "ERC1155",
   "description": "[Zombie | Assassin] \"Dimensional Pierce\" Activate: Once every 5 turns, Zombie Archer can attack your opponents LP directly for 100% of his current damage. ",
-  "image": "QmZuTt3sMa82vwvCfRTXCdJTfY7dfGJgD62MZifDqFFd3e",
+  "image": "https://bafybeigtc4ywi4d2jmlw6pyilvaj3jyw2zf65d5af4gt6o3ur6uhearbca.ipfs.dweb.link/ZOMBIE%20ARCHER%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmZuTt3sMa82vwvCfRTXCdJTfY7dfGJgD62MZifDqFFd3e"
+      "value": "https://bafybeigtc4ywi4d2jmlw6pyilvaj3jyw2zf65d5af4gt6o3ur6uhearbca.ipfs.dweb.link/ZOMBIE%20ARCHER%20FRONT.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmZuTt3sMa82vwvCfRTXCdJTfY7dfGJgD62MZifDqFFd3e"
     }
-  ]
+  ],
+  "typeCard": "wood"
 }

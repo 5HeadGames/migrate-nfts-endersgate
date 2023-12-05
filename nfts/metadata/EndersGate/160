@@ -2,7 +2,7 @@
   "name": "Reinold",
   "type": "ERC1155",
   "description": "[Human | Support] \"Black Smith\" Activate: During your MP1, select up to 2 Ally Guardians on the field; Increase their ATK and HP by 25 as long as Reinold remains on the field.",
-  "image": "QmZLZP9uBqCi4z6mnhAcaPhzByH7wn34hkGY6nhopzicWQ",
+  "image": "https://bafybeifnhvpn6iltbxtmguygc5b4euxddm7fzpammwevd5v7pakqzo3c34.ipfs.dweb.link/REINOLD%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmZLZP9uBqCi4z6mnhAcaPhzByH7wn34hkGY6nhopzicWQ"
+      "value": "https://bafybeifnhvpn6iltbxtmguygc5b4euxddm7fzpammwevd5v7pakqzo3c34.ipfs.dweb.link/REINOLD%20FRONT.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmZLZP9uBqCi4z6mnhAcaPhzByH7wn34hkGY6nhopzicWQ"
     }
-  ]
+  ],
+  "typeCard": "stone"
 }

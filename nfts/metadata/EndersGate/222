@@ -2,7 +2,7 @@
   "name": "Sir Albin",
   "type": "ERC1155",
   "description": "[Ascended | Support] \"Evacuation\" Active: Once per turn, return 1 Ally Guardian on the field to your hand. ",
-  "image": "QmdaQwPw4FBx8jMTTzzd5qQcF4rzW7tdBh6fYCC4yHk8pT",
+  "image": "https://bafybeihrxcbou7xkec4odpo54dy26waanyqce2vm7ynj3wghxqbkbatkeq.ipfs.dweb.link/SIR%20ALBIN%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmdaQwPw4FBx8jMTTzzd5qQcF4rzW7tdBh6fYCC4yHk8pT"
+      "value": "https://bafybeihrxcbou7xkec4odpo54dy26waanyqce2vm7ynj3wghxqbkbatkeq.ipfs.dweb.link/SIR%20ALBIN%20FRONT.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,11 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmdaQwPw4FBx8jMTTzzd5qQcF4rzW7tdBh6fYCC4yHk8pT"
     }
-  ]
+  ],
+  "synergies": [
+    "Sir Nex",
+    "Lady Selsi",
+    "Lady Rene"
+  ],
+  "typeCard": "legendary"
 }

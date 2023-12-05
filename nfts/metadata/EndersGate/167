@@ -2,7 +2,7 @@
   "name": "Henry",
   "type": "ERC1155",
   "description": "[Human | Tank] \"Earth Wall\" Passive: 25% Chance to block the next attack. On Successful Block; reset effect after 2 turns.",
-  "image": "QmYLtgoFe8TC8NkQBErunG7eBWTKN3Uy31GRdMdMeHHjDn",
+  "image": "https://bafybeie6n2wr3qahyamhomrhqyjl5lmvtr7fbbwxnzjxh3zz45b6wa7w2i.ipfs.dweb.link/HENRY%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmYLtgoFe8TC8NkQBErunG7eBWTKN3Uy31GRdMdMeHHjDn"
+      "value": "https://bafybeie6n2wr3qahyamhomrhqyjl5lmvtr7fbbwxnzjxh3zz45b6wa7w2i.ipfs.dweb.link/HENRY%20FRONT.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmYLtgoFe8TC8NkQBErunG7eBWTKN3Uy31GRdMdMeHHjDn"
     }
-  ]
+  ],
+  "typeCard": "iron"
 }

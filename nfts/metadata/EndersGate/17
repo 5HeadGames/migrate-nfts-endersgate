@@ -2,7 +2,7 @@
   "name": "Poison Flask",
   "type": "ERC1155",
   "description": "Target one Guardian on your opponent's side of the field; deal 10 poison damage for 3 turns.",
-  "image": "QmTq8HBJ4R1TBMQK53qpQBqcktXC7EfXRgjP4K5eNuWtL1",
+  "image": "https://bafybeifw5ewuiclefziu4rld23eecr7jrlqjngpbgxtxv3pli44t4ouvyy.ipfs.dweb.link/POISON%20FLASK%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -31,7 +31,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmTq8HBJ4R1TBMQK53qpQBqcktXC7EfXRgjP4K5eNuWtL1"
+      "value": "https://bafybeifw5ewuiclefziu4rld23eecr7jrlqjngpbgxtxv3pli44t4ouvyy.ipfs.dweb.link/POISON%20FLASK%20FRONT.webp"
     }
   },
   "attributes": [
@@ -63,5 +63,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmTq8HBJ4R1TBMQK53qpQBqcktXC7EfXRgjP4K5eNuWtL1"
     }
-  ]
+  ],
+  "typeCard": "action"
 }

@@ -2,7 +2,7 @@
   "name": "Annea ",
   "type": "ERC1155",
   "description": "[Human | Healer] \"Aqua Regeneration\" Activate: Once per turn, heal one ally Guardian for 15 HP.",
-  "image": "QmQCAjzhw12B5vDytiiLQP6T5SeeFv9AJR9TbQepcoh2aB",
+  "image": "https://bafybeih5tfdivtes2tvckn34stgotbeyczjndotz5sjgzbxtx72vtemce4.ipfs.dweb.link/ANNEA%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmQCAjzhw12B5vDytiiLQP6T5SeeFv9AJR9TbQepcoh2aB"
+      "value": "https://bafybeih5tfdivtes2tvckn34stgotbeyczjndotz5sjgzbxtx72vtemce4.ipfs.dweb.link/ANNEA%20FRONT.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmQCAjzhw12B5vDytiiLQP6T5SeeFv9AJR9TbQepcoh2aB"
     }
-  ]
+  ],
+  "typeCard": "iron"
 }

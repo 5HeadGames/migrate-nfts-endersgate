@@ -2,7 +2,7 @@
   "name": "Norfelo",
   "type": "ERC1155",
   "description": "[Dwarf | Mage] \"Gas Technician\" Passive: Norfelo's attacks have a 10% chance to cause poison dealing an addtional 10 damage next turn.",
-  "image": "QmczbBwnSFtn2haXxF2VLosb4fkPQhpZFQwK8eNjzHhYVL",
+  "image": "https://bafybeidclhkhameal4ap3xyp5tynnw7smv43z6g2psxbyrmelevoswjmve.ipfs.dweb.link/NORFELO%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmczbBwnSFtn2haXxF2VLosb4fkPQhpZFQwK8eNjzHhYVL"
+      "value": "https://bafybeidclhkhameal4ap3xyp5tynnw7smv43z6g2psxbyrmelevoswjmve.ipfs.dweb.link/NORFELO%20FRONT.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmczbBwnSFtn2haXxF2VLosb4fkPQhpZFQwK8eNjzHhYVL"
     }
-  ]
+  ],
+  "typeCard": "stone"
 }

@@ -2,7 +2,7 @@
   "name": "Livion",
   "type": "ERC1155",
   "description": "[Human | Tank] \"Poison Dominance\" Passive: During each of your Standby Phases, deal 5 Venom DMG to all non-Venom type Guardians on your opponent's side of the field.",
-  "image": "QmeyLCnJmbJai4HFAFPTMwuRoFBNY7EB2Zz8PmVz2K1KY3",
+  "image": "https://bafybeidrzs5zgg6vbobbvwzwf3tv4y63irg373xsrdgsltbv5gmd2kn7qy.ipfs.dweb.link/LIVION%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmeyLCnJmbJai4HFAFPTMwuRoFBNY7EB2Zz8PmVz2K1KY3"
+      "value": "https://bafybeidrzs5zgg6vbobbvwzwf3tv4y63irg373xsrdgsltbv5gmd2kn7qy.ipfs.dweb.link/LIVION%20FRONT.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmeyLCnJmbJai4HFAFPTMwuRoFBNY7EB2Zz8PmVz2K1KY3"
     }
-  ]
+  ],
+  "typeCard": "wood"
 }

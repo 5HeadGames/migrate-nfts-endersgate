@@ -2,7 +2,7 @@
   "name": "Mata Spearman",
   "type": "ERC1155",
   "description": "[Squamata | Support] \"Cold Blooded\" Passive: If there are 2 or more \"Cold Blooded\" Guardians on the field, they all gain 25 ATK & HP.",
-  "image": "QmcehxsCNw5UR5VL5sNffi34pxNTbL3jmVzpCit1GGgZXr",
+  "image": "https://bafybeib67f3nrw2cffjl6h5djxye6xar2dlajunw4px4ogmf7ozekmwyry.ipfs.dweb.link/MATA%20SPEARMAN%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmcehxsCNw5UR5VL5sNffi34pxNTbL3jmVzpCit1GGgZXr"
+      "value": "https://bafybeib67f3nrw2cffjl6h5djxye6xar2dlajunw4px4ogmf7ozekmwyry.ipfs.dweb.link/MATA%20SPEARMAN%20FRONT.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmcehxsCNw5UR5VL5sNffi34pxNTbL3jmVzpCit1GGgZXr"
     }
-  ]
+  ],
+  "typeCard": "stone"
 }

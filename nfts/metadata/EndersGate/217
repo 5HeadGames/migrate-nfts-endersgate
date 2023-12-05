@@ -2,7 +2,7 @@
   "name": "Judge Red",
   "type": "ERC1155",
   "description": "[Sentinel | Tank] \"Final Judgement\" Activate: Once per turn, execute 1 enemy Guardian under 20% health. ",
-  "image": "QmU4Spt1jzFXs6zQtpACh6DEUhiJmBHP1AiNcPnn7GgHRy",
+  "image": "https://bafybeicbr6jbh62a7v5zs5guomdg3uouipxfc2ld4opszzrkskk5bp6v2i.ipfs.dweb.link/JUDGE%20RED%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmU4Spt1jzFXs6zQtpACh6DEUhiJmBHP1AiNcPnn7GgHRy"
+      "value": "https://bafybeicbr6jbh62a7v5zs5guomdg3uouipxfc2ld4opszzrkskk5bp6v2i.ipfs.dweb.link/JUDGE%20RED%20FRONT.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmU4Spt1jzFXs6zQtpACh6DEUhiJmBHP1AiNcPnn7GgHRy"
     }
-  ]
+  ],
+  "typeCard": "legendary"
 }

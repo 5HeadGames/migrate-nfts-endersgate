@@ -2,7 +2,7 @@
   "name": "Fire Tempest",
   "type": "ERC1155",
   "description": "Flip: When a Guardian on your opponent's side of the field successfully preforms an attack, Fire Tempest surrounds the Guardian for 3 turns, dealing 25 Fire Dmg per turn.",
-  "image": "QmZTQ4VZvdhciTRUjbfM6uE3kFi85Bh6VPpzsF5jyspkfA",
+  "image": "https://bafybeid6fwgtdqhv6yybyblyxygcgvpogtfoip5dnkh2gk6qsmmazfuj6a.ipfs.dweb.link/FIRE%20TEMPEST%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -31,7 +31,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmZTQ4VZvdhciTRUjbfM6uE3kFi85Bh6VPpzsF5jyspkfA"
+      "value": "https://bafybeid6fwgtdqhv6yybyblyxygcgvpogtfoip5dnkh2gk6qsmmazfuj6a.ipfs.dweb.link/FIRE%20TEMPEST%20FRONT.webp"
     }
   },
   "attributes": [
@@ -63,5 +63,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmZTQ4VZvdhciTRUjbfM6uE3kFi85Bh6VPpzsF5jyspkfA"
     }
-  ]
+  ],
+  "typeCard": "reaction"
 }

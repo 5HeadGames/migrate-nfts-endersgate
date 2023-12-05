@@ -2,7 +2,7 @@
   "name": "Spike Trap",
   "type": "ERC1155",
   "description": "Flip: Deal 25 damage to one selected Guardian on the enemy's side of the field. ",
-  "image": "QmZNVMFzH79ch9KakJHajRTuo29qHLXm27gKq6xXRS9JWi",
+  "image": "https://bafybeiho3u4kldh5xsykhejaqlmcofdvymrnzdab66lypcbgxxzn4ocbxe.ipfs.dweb.link/SPIKE%20TRAP%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -31,7 +31,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmZNVMFzH79ch9KakJHajRTuo29qHLXm27gKq6xXRS9JWi"
+      "value": "https://bafybeiho3u4kldh5xsykhejaqlmcofdvymrnzdab66lypcbgxxzn4ocbxe.ipfs.dweb.link/SPIKE%20TRAP%20FRONT.webp"
     }
   },
   "attributes": [
@@ -63,5 +63,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmZNVMFzH79ch9KakJHajRTuo29qHLXm27gKq6xXRS9JWi"
     }
-  ]
+  ],
+  "typeCard": "reaction"
 }

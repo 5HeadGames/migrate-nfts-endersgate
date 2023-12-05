@@ -251,7 +251,6 @@ describe("Rent", function () {
         expect(Rent.price).to.be.equal(price);
         expect(Rent.duration).to.be.equal(duration);
         expect(Rent.status).to.be.equal(Rent_STATUS.created);
-        //expect(Rent.startedAt).to.be.equal(block.timestamp.toString());
       });
     });
 

@@ -14,7 +14,7 @@ const loadJsonFile = (file: string) => {
 
 async function main() {
   const appRoot = require("app-root-path");
-  const configFileName = `addresses.${network.name}.json`;
+  const configFileName = `addresses/addresses.${network.name}.json`;
   const data = loadJsonFile(`${appRoot}/` + configFileName);
   console.log(data);
 

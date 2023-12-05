@@ -2,7 +2,7 @@
   "name": "Zellsha",
   "type": "ERC1155",
   "description": "[Demon | Support] \"Demonic Embrace\" Activate: Select one enemy Guardian; they cannot delcare an attack for 1 turn. Once freed, deal 20 damage. Cooldown: 2 turns.",
-  "image": "QmYeo9YxheGrputs3mEZVzofGXFhGKLQfjmBAox5GaNVRa",
+  "image": "https://bafybeiha4ljlkuw65q7uxcz6nkip2stkamk77bwlyefwa4qtazcn44wg5u.ipfs.dweb.link/ZELLSHA%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmYeo9YxheGrputs3mEZVzofGXFhGKLQfjmBAox5GaNVRa"
+      "value": "https://bafybeiha4ljlkuw65q7uxcz6nkip2stkamk77bwlyefwa4qtazcn44wg5u.ipfs.dweb.link/ZELLSHA%20FRONT.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmYeo9YxheGrputs3mEZVzofGXFhGKLQfjmBAox5GaNVRa"
     }
-  ]
+  ],
+  "typeCard": "iron"
 }

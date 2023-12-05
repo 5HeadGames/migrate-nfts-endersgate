@@ -2,7 +2,7 @@
   "name": "Grappler Shark",
   "type": "ERC1155",
   "description": "[Shark | Fighter] \"Shark Instinct\" Activate: Select one face down Card in your opponents Event zone; Pay 50 gold to destroy it. ",
-  "image": "QmasCp4NDtWaymp6wDkeeyr2qJjdY7Y2LRCupqgwwPKvnx",
+  "image": "https://bafybeidwe6yggcayenxiewdrrhrqogc7byprwwfyy5h7qjnrgs4ktvhnz4.ipfs.dweb.link/Grappler%20Shark.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmasCp4NDtWaymp6wDkeeyr2qJjdY7Y2LRCupqgwwPKvnx"
+      "value": "https://bafybeidwe6yggcayenxiewdrrhrqogc7byprwwfyy5h7qjnrgs4ktvhnz4.ipfs.dweb.link/Grappler%20Shark.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmasCp4NDtWaymp6wDkeeyr2qJjdY7Y2LRCupqgwwPKvnx"
     }
-  ]
+  ],
+  "typeCard": "stone"
 }

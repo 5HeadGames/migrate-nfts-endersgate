@@ -2,7 +2,7 @@
   "name": "Cursed Jian",
   "type": "ERC1155",
   "description": "Select One Guardian on your opponent's side of the field; decrease their attack by 50% for 2 turns. ",
-  "image": "QmPDpg7Cw9hsNPskX2iDQxvVjCgkoCFuwZggqvq6uxvb6U",
+  "image": "https://bafybeignswv4ir4nzqgh3qhjdk4g2pvzt4g73ywtn73ifgkt7f6tf7b6um.ipfs.dweb.link/CURSED%20JIAN%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -31,7 +31,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmPDpg7Cw9hsNPskX2iDQxvVjCgkoCFuwZggqvq6uxvb6U"
+      "value": "https://bafybeignswv4ir4nzqgh3qhjdk4g2pvzt4g73ywtn73ifgkt7f6tf7b6um.ipfs.dweb.link/CURSED%20JIAN%20FRONT.webp"
     }
   },
   "attributes": [
@@ -63,5 +63,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmPDpg7Cw9hsNPskX2iDQxvVjCgkoCFuwZggqvq6uxvb6U"
     }
-  ]
+  ],
+  "typeCard": "action"
 }

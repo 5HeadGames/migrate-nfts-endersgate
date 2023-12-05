@@ -2,7 +2,7 @@
   "name": "Kanga Sage",
   "type": "ERC1155",
   "description": "[Beast | Healer] \"Gold Heal\" Activate: Once per turn, pay 10 gold to heal an ally for 25 HP. Healed Guardians gain +10 ATK.",
-  "image": "QmYpnEqyRVebjeWQMFQGQhAfsFszewy4SoMcEntM2zMh1s",
+  "image": "https://bafybeibmy3qiqlu5det6rgjinrqud4u4k35pky3ooklsmdyp7sblxwx6ry.ipfs.dweb.link/KANGA%20SAGE%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmYpnEqyRVebjeWQMFQGQhAfsFszewy4SoMcEntM2zMh1s"
+      "value": "https://bafybeibmy3qiqlu5det6rgjinrqud4u4k35pky3ooklsmdyp7sblxwx6ry.ipfs.dweb.link/KANGA%20SAGE%20FRONT.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmYpnEqyRVebjeWQMFQGQhAfsFszewy4SoMcEntM2zMh1s"
     }
-  ]
+  ],
+  "typeCard": "gold"
 }

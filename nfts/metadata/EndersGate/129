@@ -2,7 +2,7 @@
   "name": "Rossi",
   "type": "ERC1155",
   "description": "[ Beast | Assassin ] \"Poison Plague\" Passive: Upon death, infect the Guardian who defeated Rossi with poison dealing 10 damage per turn for 2 turns.",
-  "image": "QmTDDWzSjtLnrscLLzpWwWZgGaSSo6qr5RfoYQzBngm6Qv",
+  "image": "https://bafybeibmhxac6dptl3u6irgsy5633fzobuz2ohe3r4mjndkrgguzazb5ay.ipfs.dweb.link/ROSSI%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmTDDWzSjtLnrscLLzpWwWZgGaSSo6qr5RfoYQzBngm6Qv"
+      "value": "https://bafybeibmhxac6dptl3u6irgsy5633fzobuz2ohe3r4mjndkrgguzazb5ay.ipfs.dweb.link/ROSSI%20FRONT.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmTDDWzSjtLnrscLLzpWwWZgGaSSo6qr5RfoYQzBngm6Qv"
     }
-  ]
+  ],
+  "typeCard": "stone"
 }

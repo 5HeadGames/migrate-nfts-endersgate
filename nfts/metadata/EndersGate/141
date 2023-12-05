@@ -2,7 +2,7 @@
   "name": "Fire Archer",
   "type": "ERC1155",
   "description": "[Insect | Support] \"Fire Ant Colony\" Active: During your battle phase, fire archer can select up to 3 enemies to attack.",
-  "image": "QmaruaMdzzzhj5WsEaaUmuUZd8G6BH8ghTfqEWUmisASMG",
+  "image": "https://bafybeifvqginljmdrji3wyrjqiu6idvp5tj2acwum4cswkyj2uf664rjq4.ipfs.dweb.link/FIRE%20ARCHER.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmaruaMdzzzhj5WsEaaUmuUZd8G6BH8ghTfqEWUmisASMG"
+      "value": "https://bafybeifvqginljmdrji3wyrjqiu6idvp5tj2acwum4cswkyj2uf664rjq4.ipfs.dweb.link/FIRE%20ARCHER.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmaruaMdzzzhj5WsEaaUmuUZd8G6BH8ghTfqEWUmisASMG"
     }
-  ]
+  ],
+  "typeCard": "stone"
 }

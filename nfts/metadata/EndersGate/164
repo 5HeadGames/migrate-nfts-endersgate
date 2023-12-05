@@ -2,7 +2,7 @@
   "name": "Lhavi The Fire Golem",
   "type": "ERC1155",
   "description": "[Golem | Tank] \"Volcanic Activity\" Passive: Once per turn Deal 10 Fire damage to all Earth Type Cards. Deal 5 damage back to enemies who attack Lhavi.",
-  "image": "QmTjZkd8FBAWhy12acXjiSu7qfW8z7J1XRNDU2Yb1Em7uz",
+  "image": "https://bafybeid75uoobn45zxublrn2rladn5vtext6luckxx2bawucmuj4s5lnb4.ipfs.dweb.link/LHAVI%20THE%20FIRE%20GOLEM%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmTjZkd8FBAWhy12acXjiSu7qfW8z7J1XRNDU2Yb1Em7uz"
+      "value": "https://bafybeid75uoobn45zxublrn2rladn5vtext6luckxx2bawucmuj4s5lnb4.ipfs.dweb.link/LHAVI%20THE%20FIRE%20GOLEM%20FRONT.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmTjZkd8FBAWhy12acXjiSu7qfW8z7J1XRNDU2Yb1Em7uz"
     }
-  ]
+  ],
+  "typeCard": "iron"
 }

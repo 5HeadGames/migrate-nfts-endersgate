@@ -2,7 +2,7 @@
   "name": "Xozog",
   "type": "ERC1155",
   "description": "[Undead | Mage] \"Erase\" Once per turn, execute 1 Enemy Guardian  under 20% Health.",
-  "image": "QmdnbmFi6jqKTn5dZVLWibL3Rspz2F5gMVNHpUK195JRLQ",
+  "image": "https://bafybeibwghpcz7pmqdzpx4cdnv5z3pg7iqujjc5yx4iny2l56thdkusrlm.ipfs.w3s.link/XOLZOG%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -11,7 +11,7 @@
     },
     "name": {
       "name": "name",
-      "value": "Xozog"
+      "value": "Xolzog"
     },
     "element": {
       "name": "element",
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmdnbmFi6jqKTn5dZVLWibL3Rspz2F5gMVNHpUK195JRLQ"
+      "value": "https://bafybeibwghpcz7pmqdzpx4cdnv5z3pg7iqujjc5yx4iny2l56thdkusrlm.ipfs.w3s.link/XOLZOG%20FRONT.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmdnbmFi6jqKTn5dZVLWibL3Rspz2F5gMVNHpUK195JRLQ"
     }
-  ]
+  ],
+  "typeCard": "legendary"
 }

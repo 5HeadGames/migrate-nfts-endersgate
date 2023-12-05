@@ -2,7 +2,7 @@
   "name": "Donna",
   "type": "ERC1155",
   "description": " [Human | Fighter] \"Fire Mark\" Activate: During your MP1, place a Fire Mark that lasts 2 turns on one enemy Guardian; Fire Marked Guardians explode when attacked causing 15 Fire damage to adjacent Guardians. Cooldown 2 Turns.",
-  "image": "QmcnPyUY538ABYmJTBHfxJFstbKQbmKbGoL77Da7AxJzDw",
+  "image": "https://bafybeiaorout7yaxtdz6ffokmbljc2w3kn3ysgrmeuy3xtwujhc55ac7ue.ipfs.dweb.link/DONNA%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmcnPyUY538ABYmJTBHfxJFstbKQbmKbGoL77Da7AxJzDw"
+      "value": "https://bafybeiaorout7yaxtdz6ffokmbljc2w3kn3ysgrmeuy3xtwujhc55ac7ue.ipfs.dweb.link/DONNA%20FRONT.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmcnPyUY538ABYmJTBHfxJFstbKQbmKbGoL77Da7AxJzDw"
     }
-  ]
+  ],
+  "typeCard": "gold"
 }

@@ -2,7 +2,7 @@
   "name": "Fatal Loan",
   "type": "ERC1155",
   "description": "Flip: When an enemy Guardian Declares an attack, your opponent must pay 100 gold to negate the activation of this card; If not, send the attacking Guardian to the grave yard.",
-  "image": "QmaH5bEx5FTemvJbKwtkDNS2CYXDvfUmfwEfHq3ZKWWHYT",
+  "image": "https://bafybeigftdgydkvdhw3bofkhj6fberji565nn22cz72ixzx3m3vs6k3vwi.ipfs.dweb.link/fatal%20loan.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -31,7 +31,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmaH5bEx5FTemvJbKwtkDNS2CYXDvfUmfwEfHq3ZKWWHYT"
+      "value": "https://bafybeigftdgydkvdhw3bofkhj6fberji565nn22cz72ixzx3m3vs6k3vwi.ipfs.dweb.link/fatal%20loan.webp"
     }
   },
   "attributes": [
@@ -63,5 +63,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmaH5bEx5FTemvJbKwtkDNS2CYXDvfUmfwEfHq3ZKWWHYT"
     }
-  ]
+  ],
+  "typeCard": "reaction"
 }

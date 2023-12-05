@@ -2,7 +2,7 @@
   "name": "Fire Trap",
   "type": "ERC1155",
   "description": "Flip: Deal 30 damage to one selected Guardian on the field. ",
-  "image": "QmdKMGAeP2Uv76DRQHPgFUyHcwC9YdpVmxoesrigADFFJe",
+  "image": "https://bafybeia74qx22tywfyqlpprcdhvxum3d373wnbc6r2uu5xyubwnhran4e4.ipfs.w3s.link/FIRE-TRAP-FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -31,7 +31,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmdKMGAeP2Uv76DRQHPgFUyHcwC9YdpVmxoesrigADFFJe"
+      "value": "https://bafybeia74qx22tywfyqlpprcdhvxum3d373wnbc6r2uu5xyubwnhran4e4.ipfs.w3s.link/FIRE-TRAP-FRONT.webp"
     }
   },
   "attributes": [
@@ -63,5 +63,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmdKMGAeP2Uv76DRQHPgFUyHcwC9YdpVmxoesrigADFFJe"
     }
-  ]
+  ],
+  "typeCard": "reaction"
 }

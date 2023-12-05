@@ -1,7 +1,5 @@
 import { ethers, network } from "hardhat";
 import fs from "fs";
-import { EndersComics } from "../../types";
-// import { ClockSaleOwnable } from "../typechain";
 
 const loadJsonFile = (file: string) => {
   try {
@@ -14,23 +12,27 @@ const loadJsonFile = (file: string) => {
 
 async function main() {
   const appRoot = require("app-root-path");
-  const configFileName = `addresses.${network.name}.json`;
+  const configFileName = `addresses/addresses.${network.name}.json`;
   const data = loadJsonFile(`${appRoot}/` + configFileName);
   console.log(data);
 
   const [ComicsFactory, _accounts] = await Promise.all([
-    ethers.getContractFactory("EndersComics"),
+    ethers.getContractFactory("EndersComicsMultiTokens"),
     ethers.getSigners(),
   ]);
 
   console.log("deploy:Comics");
-  const Comics = (await ComicsFactory.deploy(
+  const Comics = await ComicsFactory.deploy(
     "EndersComics",
     "EGC",
     "0xf3cd27813b5ff6adea3805dcf181053ac62d6ec3",
     "0x694AA1769357215DE4FAC081bf1f309aDC325306",
     18,
-  )) as EndersComics;
+  );
+
+  await Comics.grantRole(await Comics.COMIC_ROLE(), _accounts[0].address);
+  await Comics.grantRole(await Comics.SUPPLY_ROLE(), _accounts[0].address);
+  await Comics.grantRole(await Comics.URI_SETTER_ROLE(), _accounts[0].address);
 
   await Comics.addToken(
     "0x746c00e6305Ac5C01cb3e84e61b67fb2AD7DCeF3",
@@ -44,8 +46,8 @@ async function main() {
     6,
   );
 
-  await Comics.addComic(10000);
-  await Comics.addComic(10000);
+  await Comics.addComic(10000, 200);
+  await Comics.addComic(10000, 200);
 
   const configData = JSON.stringify(
     {

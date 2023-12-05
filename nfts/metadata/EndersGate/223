@@ -2,7 +2,7 @@
   "name": "Sir Nex",
   "type": "ERC1155",
   "description": "[Ascended | Support] \"Ganymite\" Passive: While Sir Nex is on the field, all \"Ascended\" Guardians Gain +20 crit chance & +30 crit dmg.",
-  "image": "QmVdBXZ7XSx8VHroTT2fJqWemgKNG7i1C2PiPr7vgAAJJb",
+  "image": "https://bafybeihl7mjso5lisqmqyyv5iwvoltd4ofuoojrrcten3psz7xsh3mijkq.ipfs.dweb.link/SIR%20NEX%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmVdBXZ7XSx8VHroTT2fJqWemgKNG7i1C2PiPr7vgAAJJb"
+      "value": "https://bafybeihl7mjso5lisqmqyyv5iwvoltd4ofuoojrrcten3psz7xsh3mijkq.ipfs.dweb.link/SIR%20NEX%20FRONT.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,11 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmVdBXZ7XSx8VHroTT2fJqWemgKNG7i1C2PiPr7vgAAJJb"
     }
-  ]
+  ],
+  "synergies": [
+    "Sir Albin",
+    "Lady Selsi",
+    "Lady Rene"
+  ],
+  "typeCard": "legendary"
 }

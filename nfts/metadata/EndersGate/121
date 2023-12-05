@@ -2,7 +2,7 @@
   "name": "Mozen",
   "type": "ERC1155",
   "description": "[Human | Mage] \"Poison Curse\" Activate: In your MP1, select up to 2 enemy Guardians and surround them in Poison dealing 5 Venom DMG per turn during each of your Standby Phases. If Mozen is attacked, this ability resets. ",
-  "image": "QmRJ7RPi1z8xSNWsstQ98yes7TTTM2VuKuiyYzUwPeRupo",
+  "image": "https://bafybeidanebst4wcfve4vw66vg4yaxrlmd4tuq4mawbmonglsiqk6uopz4.ipfs.dweb.link/MOZEN%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmRJ7RPi1z8xSNWsstQ98yes7TTTM2VuKuiyYzUwPeRupo"
+      "value": "https://bafybeidanebst4wcfve4vw66vg4yaxrlmd4tuq4mawbmonglsiqk6uopz4.ipfs.dweb.link/MOZEN%20FRONT.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmRJ7RPi1z8xSNWsstQ98yes7TTTM2VuKuiyYzUwPeRupo"
     }
-  ]
+  ],
+  "typeCard": "wood"
 }

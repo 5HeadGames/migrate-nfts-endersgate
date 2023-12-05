@@ -2,7 +2,7 @@
   "name": "Xen-Zoh",
   "type": "ERC1155",
   "description": "[Ascended | Assassin] \"Future Sight\" Activate: Once Every two turns, negate 1 attack & counter it with back stab causing 5 bleed damage for 2 turns. ",
-  "image": "Qme5Hia56RMULdb3wA2bxxp7MMiZq2K1ZssJRy5iABqd3A",
+  "image": "https://bafybeicjjdsfessbcoa7qxqmvbofr6sqfvauvt4h6bot4ltngusc72tpjq.ipfs.w3s.link/XEN%20ZOH%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/Qme5Hia56RMULdb3wA2bxxp7MMiZq2K1ZssJRy5iABqd3A"
+      "value": "https://bafybeicjjdsfessbcoa7qxqmvbofr6sqfvauvt4h6bot4ltngusc72tpjq.ipfs.w3s.link/XEN%20ZOH%20FRONT.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/Qme5Hia56RMULdb3wA2bxxp7MMiZq2K1ZssJRy5iABqd3A"
     }
-  ]
+  ],
+  "typeCard": "gold"
 }

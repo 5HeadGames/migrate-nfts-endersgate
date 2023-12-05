@@ -2,7 +2,7 @@
   "name": "Trap Disarm",
   "type": "ERC1155",
   "description": "Flip: Destory one face down action/reaction card on your opponent's side of the field. ",
-  "image": "QmVj2F2FbYaZ2akmNEj2t4zw5qQWyLvvaGmCDnWaYs3T9h",
+  "image": "https://bafybeigkbfmg2a4ckohdbm3tvkwcfs5z6pkmfkcqdamviz2cdguv5x6are.ipfs.dweb.link/TRAP%20DISARM%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -31,7 +31,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmVj2F2FbYaZ2akmNEj2t4zw5qQWyLvvaGmCDnWaYs3T9h"
+      "value": "https://bafybeigkbfmg2a4ckohdbm3tvkwcfs5z6pkmfkcqdamviz2cdguv5x6are.ipfs.dweb.link/TRAP%20DISARM%20FRONT.webp"
     }
   },
   "attributes": [
@@ -63,5 +63,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmVj2F2FbYaZ2akmNEj2t4zw5qQWyLvvaGmCDnWaYs3T9h"
     }
-  ]
+  ],
+  "typeCard": "reaction"
 }

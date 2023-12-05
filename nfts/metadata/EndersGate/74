@@ -2,7 +2,7 @@
   "name": "Gold Bear Trap",
   "type": "ERC1155",
   "description": "Flip: When an enemy Guardian Declares an attack, steal 100 gold from your opponent's inventory. ",
-  "image": "QmQCGv9rWp4MBmuooxqVHiVErbV9ZeFvsYShn5Cs8scfys",
+  "image": "https://bafybeid2tnbmq62mbwdfwyx5xatthdoj7rxwxwaqjeztglhi33jtek7ihe.ipfs.dweb.link/GOLD%20BEAR%20TRAP.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -31,7 +31,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmQCGv9rWp4MBmuooxqVHiVErbV9ZeFvsYShn5Cs8scfys"
+      "value": "https://bafybeid2tnbmq62mbwdfwyx5xatthdoj7rxwxwaqjeztglhi33jtek7ihe.ipfs.dweb.link/GOLD%20BEAR%20TRAP.webp"
     }
   },
   "attributes": [
@@ -63,5 +63,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmQCGv9rWp4MBmuooxqVHiVErbV9ZeFvsYShn5Cs8scfys"
     }
-  ]
+  ],
+  "typeCard": "reaction"
 }

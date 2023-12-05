@@ -2,7 +2,7 @@
   "name": "Rain of arrows",
   "type": "ERC1155",
   "description": "Flip: Damage all Guardians on your opponent's side of the field for 10 HP.",
-  "image": "QmYTkGA54iLdRKb67tC1HtrHimWsARSvrkMFPZErLwH8hp",
+  "image": "https://bafybeic4tzpy26mrall44kl6m4k5mosph7u2s2xxjc73lv4nw3ny5z4oyy.ipfs.dweb.link/RAIN%20OF%20ARROWS%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -31,7 +31,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmYTkGA54iLdRKb67tC1HtrHimWsARSvrkMFPZErLwH8hp"
+      "value": "https://bafybeic4tzpy26mrall44kl6m4k5mosph7u2s2xxjc73lv4nw3ny5z4oyy.ipfs.dweb.link/RAIN%20OF%20ARROWS%20FRONT.webp"
     }
   },
   "attributes": [
@@ -63,5 +63,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmYTkGA54iLdRKb67tC1HtrHimWsARSvrkMFPZErLwH8hp"
     }
-  ]
+  ],
+  "typeCard": "reaction"
 }

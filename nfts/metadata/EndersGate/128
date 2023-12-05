@@ -2,7 +2,7 @@
   "name": "Nobrew ",
   "type": "ERC1155",
   "description": "[Human | Mage] \"Alchemist Code\" Activate: Once every 2 turns, during Main Phase 1, pay 10 gold to throw a poison flak which deals 5 venom damage for 2 turns.  ",
-  "image": "QmcWADjo5tED1o9QMkCAuE7AuvgVfN7CBq5hsTTjyg5TFP",
+  "image": "https://bafybeieqw5bnm2i6c7q6ild7zj2k3xvtx75tet3izdcrbio5ncxsjluiky.ipfs.dweb.link/NOBREW%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmcWADjo5tED1o9QMkCAuE7AuvgVfN7CBq5hsTTjyg5TFP"
+      "value": "https://bafybeieqw5bnm2i6c7q6ild7zj2k3xvtx75tet3izdcrbio5ncxsjluiky.ipfs.dweb.link/NOBREW%20FRONT.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmcWADjo5tED1o9QMkCAuE7AuvgVfN7CBq5hsTTjyg5TFP"
     }
-  ]
+  ],
+  "typeCard": "stone"
 }

@@ -2,7 +2,7 @@
   "name": "Mutual Destructive Rain",
   "type": "ERC1155",
   "description": "Deal 25 water damage to all fire type Guardians on both sides of the field.",
-  "image": "Qmf4WGztJDdZCujLFvhqNJqZpf14jwxzTVEExSnH4AvuGc",
+  "image": "https://bafybeide7m6k7j6hpjcss7ssi4nos2hvmpyqjg6dlnljqleladsjrc2mpm.ipfs.dweb.link/MUTUAL%20DESTRUCTIVE%20RAIN%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -31,7 +31,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/Qmf4WGztJDdZCujLFvhqNJqZpf14jwxzTVEExSnH4AvuGc"
+      "value": "https://bafybeide7m6k7j6hpjcss7ssi4nos2hvmpyqjg6dlnljqleladsjrc2mpm.ipfs.dweb.link/MUTUAL%20DESTRUCTIVE%20RAIN%20FRONT.webp"
     }
   },
   "attributes": [
@@ -63,5 +63,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/Qmf4WGztJDdZCujLFvhqNJqZpf14jwxzTVEExSnH4AvuGc"
     }
-  ]
+  ],
+  "typeCard": "action"
 }

@@ -2,7 +2,7 @@
   "name": "Master Kwayke",
   "type": "ERC1155",
   "description": "[Human | Mage] Passive: \"Earth Prison\" Activate: During your MP1, select up to 2 guardians and incase them in Stone. They cannot attack or take damage for 2 turns. Cooldown: 4 turns. ",
-  "image": "QmPp26zniDhDysoiWGSerGXr769ptbNYd4PhWJuYtbr4fv",
+  "image": "https://bafybeie4ms57l4s2wt3nqfyxwsgp5irrgezwv5q3vymkfgybj4wxgugstq.ipfs.dweb.link/MASTER%20KWAYKE%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmPp26zniDhDysoiWGSerGXr769ptbNYd4PhWJuYtbr4fv"
+      "value": "https://bafybeie4ms57l4s2wt3nqfyxwsgp5irrgezwv5q3vymkfgybj4wxgugstq.ipfs.dweb.link/MASTER%20KWAYKE%20FRONT.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmPp26zniDhDysoiWGSerGXr769ptbNYd4PhWJuYtbr4fv"
     }
-  ]
+  ],
+  "typeCard": "wood"
 }

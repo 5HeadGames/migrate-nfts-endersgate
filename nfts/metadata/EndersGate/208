@@ -2,7 +2,7 @@
   "name": "Xoran",
   "type": "ERC1155",
   "description": "[Elemental | Mage] \"Fire Control\" Active: Fill your opponents side of the field with Fire which lasts for 2 turns and deals 20 Fire damage per turn. Cooldown 3 turns. ",
-  "image": "Qmb1Ye7gyhFvkVEVqwNSZc6BWXu9KqrQ6Lsc3t2MBy9h19",
+  "image": "https://bafybeif7s56hzve3vizege2wrwtydgiam4nmefcv5aj6xt3lji3zvpq62u.ipfs.dweb.link/XORAN%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/Qmb1Ye7gyhFvkVEVqwNSZc6BWXu9KqrQ6Lsc3t2MBy9h19"
+      "value": "https://bafybeif7s56hzve3vizege2wrwtydgiam4nmefcv5aj6xt3lji3zvpq62u.ipfs.dweb.link/XORAN%20FRONT.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/Qmb1Ye7gyhFvkVEVqwNSZc6BWXu9KqrQ6Lsc3t2MBy9h19"
     }
-  ]
+  ],
+  "typeCard": "gold"
 }

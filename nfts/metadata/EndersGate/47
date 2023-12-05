@@ -2,7 +2,7 @@
   "name": "Poison Trap",
   "type": "ERC1155",
   "description": "Flip: Deal 20 Poison damage to one selected Guardian on the enemy's side of the field. ",
-  "image": "QmQjvJ2s3mVLPeyCokEuKpMHHquX3ZthTRCcwGrGfD3S88",
+  "image": "https://bafybeieklo6puj3mzof6v3quflirkulnmfdlrioiibgj3byifj7yuaolru.ipfs.dweb.link/POISON%20TRAP%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -31,7 +31,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmQjvJ2s3mVLPeyCokEuKpMHHquX3ZthTRCcwGrGfD3S88"
+      "value": "https://bafybeieklo6puj3mzof6v3quflirkulnmfdlrioiibgj3byifj7yuaolru.ipfs.dweb.link/POISON%20TRAP%20FRONT.webp"
     }
   },
   "attributes": [
@@ -63,5 +63,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmQjvJ2s3mVLPeyCokEuKpMHHquX3ZthTRCcwGrGfD3S88"
     }
-  ]
+  ],
+  "typeCard": "reaction"
 }

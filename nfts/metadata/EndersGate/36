@@ -2,7 +2,7 @@
   "name": "Dimensional Tesseract",
   "type": "ERC1155",
   "description": "Pay 600 Gold to Activate one of the two effects: \n\n● Both players send 10 cards from the top of their decks to the grave yard. \n● Both players send all Guardians on the field to the Grave yard",
-  "image": "Qmbz88hZ8CReuv3BHVEV8escUGgRz4hfBQLW2ngx2hRFBY",
+  "image": "https://bafybeibj43gin4eqrswljyppg64mz7kb4khkbmotbo2hfhjgrlzmdli6my.ipfs.dweb.link/DIMENSIONAL%20TESS%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -31,7 +31,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/Qmbz88hZ8CReuv3BHVEV8escUGgRz4hfBQLW2ngx2hRFBY"
+      "value": "https://bafybeibj43gin4eqrswljyppg64mz7kb4khkbmotbo2hfhjgrlzmdli6my.ipfs.dweb.link/DIMENSIONAL%20TESS%20FRONT.webp"
     }
   },
   "attributes": [
@@ -63,5 +63,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/Qmbz88hZ8CReuv3BHVEV8escUGgRz4hfBQLW2ngx2hRFBY"
     }
-  ]
+  ],
+  "typeCard": "action"
 }

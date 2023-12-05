@@ -2,7 +2,7 @@
   "name": "Puppet Master",
   "type": "ERC1155",
   "description": "Activate in your main phase 1. Take control of one Guardian on the enemy's side of the field until the end of your turn.",
-  "image": "QmP3MAS6eBXtzvzgLnMrJRufYnHytyQfK3ewVBL1bJozdg",
+  "image": "https://bafybeife3m4ujhos2rrxxjlqwfm3evvgg7pajnr7txungvijtqd5f3vjii.ipfs.dweb.link/PUPPET%20MASTER%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -31,7 +31,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmP3MAS6eBXtzvzgLnMrJRufYnHytyQfK3ewVBL1bJozdg"
+      "value": "https://bafybeife3m4ujhos2rrxxjlqwfm3evvgg7pajnr7txungvijtqd5f3vjii.ipfs.dweb.link/PUPPET%20MASTER%20FRONT.webp"
     }
   },
   "attributes": [
@@ -63,5 +63,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmP3MAS6eBXtzvzgLnMrJRufYnHytyQfK3ewVBL1bJozdg"
     }
-  ]
+  ],
+  "typeCard": "action"
 }

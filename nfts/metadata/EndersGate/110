@@ -2,7 +2,7 @@
   "name": "Solanna",
   "type": "ERC1155",
   "description": "[Human | Healer] \"Healthy Aura\" Activate: Select one ally Guardian and heal them for 10 HP. Cooldown: 2 turns. ",
-  "image": "QmR2WEK5nxXinVzWF7KgEkHUpCbggd2B1CEh9WLoNriSGf",
+  "image": "https://bafybeichhrhet6kpcobggsktxa2ysql2pwcdt7kgt6qoghphhsyn34dhte.ipfs.dweb.link/SOLANNA%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmR2WEK5nxXinVzWF7KgEkHUpCbggd2B1CEh9WLoNriSGf"
+      "value": "https://bafybeichhrhet6kpcobggsktxa2ysql2pwcdt7kgt6qoghphhsyn34dhte.ipfs.dweb.link/SOLANNA%20FRONT.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmR2WEK5nxXinVzWF7KgEkHUpCbggd2B1CEh9WLoNriSGf"
     }
-  ]
+  ],
+  "typeCard": "wood"
 }

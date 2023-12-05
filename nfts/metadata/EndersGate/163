@@ -2,7 +2,7 @@
   "name": "Spear Shark ",
   "type": "ERC1155",
   "description": "[Shark | Fighter] \"Impaling Throw\" Activate: During your MP1, select 1 Guardian on your opponents side of the field; they cannot attack for 1 turn. Cooldown: 3 turns.",
-  "image": "QmbmAwkmtohC36W7NqGavEkot9aJTnB3cnbe89bpa93hrU",
+  "image": "https://bafybeie7qz2ypwsczhr2b5hzizbhdxjecamuhxsbfatbqjrcyluhsjsf7i.ipfs.dweb.link/SPEAR%20SHARK%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmbmAwkmtohC36W7NqGavEkot9aJTnB3cnbe89bpa93hrU"
+      "value": "https://bafybeie7qz2ypwsczhr2b5hzizbhdxjecamuhxsbfatbqjrcyluhsjsf7i.ipfs.dweb.link/SPEAR%20SHARK%20FRONT.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmbmAwkmtohC36W7NqGavEkot9aJTnB3cnbe89bpa93hrU"
     }
-  ]
+  ],
+  "typeCard": "stone"
 }

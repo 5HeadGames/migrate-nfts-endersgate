@@ -2,7 +2,7 @@
   "name": "Void Tempest",
   "type": "ERC1155",
   "description": "Flip: When a Guardian on your opponent's side of the field successfully preforms an attack, Void Tempest surrounds the Guardian for 3 turns, dealing 25 Void Dmg per turn.",
-  "image": "QmfCrUMxn2TkbuD2nj5oACnSmDFaQmLAuFFdjeP2kzdX7r",
+  "image": "https://bafybeiglqipymxitau46kilibetpdn42pdbflwnyby7nvjsccrrih732ma.ipfs.dweb.link/VOID%20TEMPEST%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -31,7 +31,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmfCrUMxn2TkbuD2nj5oACnSmDFaQmLAuFFdjeP2kzdX7r"
+      "value": "https://bafybeiglqipymxitau46kilibetpdn42pdbflwnyby7nvjsccrrih732ma.ipfs.dweb.link/VOID%20TEMPEST%20FRONT.webp"
     }
   },
   "attributes": [
@@ -63,5 +63,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmfCrUMxn2TkbuD2nj5oACnSmDFaQmLAuFFdjeP2kzdX7r"
     }
-  ]
+  ],
+  "typeCard": "reaction"
 }

@@ -2,7 +2,7 @@
   "name": "Mariah ",
   "type": "ERC1155",
   "description": "[Demon | Assassin] \"Demonic Love\" Activate: Charm one enemy Guardian on the field with Demonic Love: During your End Phase, the charmed Guardian attacks an ally for 100% of their regular ATK. Charm lasts 2 turns. Cooldown 2 turns. ",
-  "image": "QmNXummEdeKYkdkdcwXVqT9kmYL8CQSzjib5VFBpCmVnvu",
+  "image": "https://bafybeicej6oplb3wvphki2ue6mvzwtipgenxryututg3ntkivevk7i6vx4.ipfs.dweb.link/MARIAH%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmNXummEdeKYkdkdcwXVqT9kmYL8CQSzjib5VFBpCmVnvu"
+      "value": "https://bafybeicej6oplb3wvphki2ue6mvzwtipgenxryututg3ntkivevk7i6vx4.ipfs.dweb.link/MARIAH%20FRONT.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmNXummEdeKYkdkdcwXVqT9kmYL8CQSzjib5VFBpCmVnvu"
     }
-  ]
+  ],
+  "typeCard": "gold"
 }

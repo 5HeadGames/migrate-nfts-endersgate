@@ -2,7 +2,7 @@
   "name": "Etnor",
   "type": "ERC1155",
   "description": "[Beast | Fighter] 'Son of Eross' Active: Pay 100 Gold during your MP1 and Discard One Card from your Hand to the Graveyard; Add Eross from your deck to your hand. Passive: If Etnor is sent to the grave, Hire Eross to the field from your hand. ",
-  "image": "QmQqZa99dSXKTcpxjPJ5ZKXvWM39GgMEG1HrVSvTv8bK1m",
+  "image": "https://bafybeiaeudf3lyefctux5odd2dlflnm7gwgxfxosgl6poe5suu343vrxvm.ipfs.dweb.link/ETNOR%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmQqZa99dSXKTcpxjPJ5ZKXvWM39GgMEG1HrVSvTv8bK1m"
+      "value": "https://bafybeiaeudf3lyefctux5odd2dlflnm7gwgxfxosgl6poe5suu343vrxvm.ipfs.dweb.link/ETNOR%20FRONT.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,13 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmQqZa99dSXKTcpxjPJ5ZKXvWM39GgMEG1HrVSvTv8bK1m"
     }
-  ]
+  ],
+  "synergies": [
+    "Eross"
+  ],
+  "artist": {
+    "name": "Arya Mahardika",
+    "link": "https://yayamatsumi.artstation.com/"
+  },
+  "typeCard": "iron"
 }

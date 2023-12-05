@@ -2,7 +2,7 @@
   "name": "Kraken",
   "type": "ERC1155",
   "description": "[Cephalo | Fighter] \"Water Prison\" Activate: Select one enemy Guardian; they cannot declare an attack for one turn. Once freed they cannot be selected again.",
-  "image": "QmfNNF3XhFRKxEhTC5W99Htn8bLBzkFcprwEdSSWZFFjmn",
+  "image": "https://bafybeia3d4ltk2xhkmjy3wuj7fup4sg7isay7iejq37uhdftudstlfys3y.ipfs.dweb.link/KRAKEN%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmfNNF3XhFRKxEhTC5W99Htn8bLBzkFcprwEdSSWZFFjmn"
+      "value": "https://bafybeia3d4ltk2xhkmjy3wuj7fup4sg7isay7iejq37uhdftudstlfys3y.ipfs.dweb.link/KRAKEN%20FRONT.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmfNNF3XhFRKxEhTC5W99Htn8bLBzkFcprwEdSSWZFFjmn"
     }
-  ]
+  ],
+  "typeCard": "iron"
 }

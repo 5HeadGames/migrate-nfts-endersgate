@@ -2,7 +2,7 @@
   "name": "Princess Vissa",
   "type": "ERC1155",
   "description": "[Elf | Healer] \"Mothers Balance\" Activate: Once per turn, select 1 Guardian and heal them for 40 HP. Passive: During each of your Standby Phases, heal all Mystic Type Guardians on your side of the field for 10 HP. ",
-  "image": "QmaCwBRzqtQuCdVc6y5nsJrQqdDdHGD3uds83iNF6g3csF",
+  "image": "https://bafybeifi6zl3gd74hqyhgs33vgxzuctvbaqrnzhillfdhqxbtyde5l5ewq.ipfs.dweb.link/PRINCESS%20VISSA%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -47,7 +47,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmaCwBRzqtQuCdVc6y5nsJrQqdDdHGD3uds83iNF6g3csF"
+      "value": "https://bafybeifi6zl3gd74hqyhgs33vgxzuctvbaqrnzhillfdhqxbtyde5l5ewq.ipfs.dweb.link/PRINCESS%20VISSA%20FRONT.webp"
     }
   },
   "attributes": [
@@ -95,5 +95,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmaCwBRzqtQuCdVc6y5nsJrQqdDdHGD3uds83iNF6g3csF"
     }
-  ]
+  ],
+  "typeCard": "legendary"
 }

@@ -2,7 +2,7 @@
   "name": "Pacifist Incenstive",
   "type": "ERC1155",
   "description": "Flip: Pay 100 gold to your opponent then end their attack phase. ",
-  "image": "QmXiqYVoz59V6MhSgHNLCjZJAwGk9dKBF5j7uBiciMzKiv",
+  "image": "https://bafybeic5wz24kekfbtotk767hd2a2zdrj5y2t5md32fcorqrzwlr63mts4.ipfs.w3s.link/PACIFIST%20INCENTIVE%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -11,7 +11,7 @@
     },
     "name": {
       "name": "name",
-      "value": "Pacifist Incenstive"
+      "value": "Pacifist Incentive"
     },
     "type": {
       "name": "type",
@@ -31,7 +31,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmXiqYVoz59V6MhSgHNLCjZJAwGk9dKBF5j7uBiciMzKiv"
+      "value": "https://bafybeic5wz24kekfbtotk767hd2a2zdrj5y2t5md32fcorqrzwlr63mts4.ipfs.w3s.link/PACIFIST%20INCENTIVE%20FRONT.webp"
     }
   },
   "attributes": [
@@ -63,5 +63,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmXiqYVoz59V6MhSgHNLCjZJAwGk9dKBF5j7uBiciMzKiv"
     }
-  ]
+  ],
+  "typeCard": "reaction"
 }

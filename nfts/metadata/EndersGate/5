@@ -2,7 +2,7 @@
   "name": "E-Axe: Mystic Mode",
   "type": "ERC1155",
   "description": "Deal 25 damage to all Guardians on the enermy's side of the field.",
-  "image": "QmU9nVAdTaC4m2mV6aXZtcPEDSX3KfSdZYDMJRwGyqeJGG",
+  "image": "https://bafybeidolrtik7o7mtygqwfq34svih4bcowoowyesgszn27fumku7vwylm.ipfs.dweb.link/E-AXE%20MYSTIC%20MODE%20FRONT.webp",
   "symbol": "GATE",
   "properties": {
     "id": {
@@ -31,7 +31,7 @@
     },
     "image": {
       "name": "image",
-      "value": "https://ipfs.moralis.io:2053/ipfs/QmU9nVAdTaC4m2mV6aXZtcPEDSX3KfSdZYDMJRwGyqeJGG"
+      "value": "https://bafybeidolrtik7o7mtygqwfq34svih4bcowoowyesgszn27fumku7vwylm.ipfs.dweb.link/E-AXE%20MYSTIC%20MODE%20FRONT.webp"
     }
   },
   "attributes": [
@@ -63,5 +63,6 @@
       "trait_type": "image",
       "value": "https://ipfs.moralis.io:2053/ipfs/QmU9nVAdTaC4m2mV6aXZtcPEDSX3KfSdZYDMJRwGyqeJGG"
     }
-  ]
+  ],
+  "typeCard": "action"
 }
