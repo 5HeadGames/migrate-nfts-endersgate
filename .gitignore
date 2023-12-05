@@ -29,6 +29,9 @@ yarn-debug.log*
 yarn-error.log*
 cards.xlsx
 
+#folders
+EG-Cards/*
+
 # types
 types/*
 !src/types/common.ts
