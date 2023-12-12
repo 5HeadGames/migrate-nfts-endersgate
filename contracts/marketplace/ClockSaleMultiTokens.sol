@@ -2,7 +2,7 @@
 pragma solidity ^0.8.11;
 
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
-import "@openzeppelin/contracts/utils/Counters.sol";
+
 import "@openzeppelin/contracts/security/Pausable.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/utils/Address.sol";
@@ -22,7 +22,6 @@ contract ClockSaleMultiTokens is
     ERC1155Holder,
     ReentrancyGuard
 {
-    using Counters for Counters.Counter;
     using Address for address payable;
 
     enum SaleStatus {
@@ -45,7 +44,7 @@ contract ClockSaleMultiTokens is
 
     // Cut owner takes on each auction, measured in basis points (1/100 of a percent).
     // Values 0-10,000 map to 0%-100%
-    Counters.Counter public tokenIdTracker;
+    uint256 public tokenIdTracker;
     address public feeReceiver;
     uint256 public ownerCut;
     uint256 public genesisBlock;
@@ -107,11 +106,9 @@ contract ClockSaleMultiTokens is
         require(false, "ClockSale:DONT_SEND");
     }
 
-    function getSales(uint256[] memory _tokenIds)
-        external
-        view
-        returns (Sale[] memory)
-    {
+    function getSales(
+        uint256[] memory _tokenIds
+    ) external view returns (Sale[] memory) {
         Sale[] memory response = new Sale[](_tokenIds.length);
 
         for (uint256 i = 0; i < _tokenIds.length; i++)
@@ -137,7 +134,7 @@ contract ClockSaleMultiTokens is
         return
             (quantity *
                 (_auction.priceUSD) *
-                10**(decimalsByToken[tokenToGet] + decimals - decimalsUSD)) /
+                10 ** (decimalsByToken[tokenToGet] + decimals - decimalsUSD)) /
             uint256(price);
     }
 
@@ -292,19 +289,19 @@ contract ClockSaleMultiTokens is
         _unpause();
     }
 
-    function updateSalePrice(uint256 saleId, uint256 newPrice)
-        external
-        onlyOwner
-    {
+    function updateSalePrice(
+        uint256 saleId,
+        uint256 newPrice
+    ) external onlyOwner {
         Sale storage _auction = sales[saleId];
         require(_saleExists(_auction), "ClockSale:NOT_AVAILABLE");
         _auction.priceUSD = newPrice;
     }
 
-    function updateSaleReceiver(uint256 saleId, address receiver)
-        external
-        onlyOwner
-    {
+    function updateSaleReceiver(
+        uint256 saleId,
+        address receiver
+    ) external onlyOwner {
         Sale storage _auction = sales[saleId];
         require(_saleExists(_auction), "ClockSale:NOT_AVAILABLE");
         _auction.seller = receiver;
@@ -341,11 +338,9 @@ contract ClockSaleMultiTokens is
         return (_auction.startedAt > 0);
     }
 
-    function _getNftContract(address _nftAddress)
-        internal
-        pure
-        returns (IERC1155Custom)
-    {
+    function _getNftContract(
+        address _nftAddress
+    ) internal pure returns (IERC1155Custom) {
         IERC1155Custom candidateContract = IERC1155Custom(_nftAddress);
         return candidateContract;
     }
@@ -362,9 +357,9 @@ contract ClockSaleMultiTokens is
     function _addSale(Sale memory _auction) internal {
         require(_auction.duration >= 1 minutes, "ClockSale:INVALID_DURATION");
 
-        uint256 auctionID = tokenIdTracker.current();
+        uint256 auctionID = tokenIdTracker;
         sales[auctionID] = _auction;
-        tokenIdTracker.increment();
+        tokenIdTracker++;
 
         emit SaleCreated(
             auctionID,
@@ -427,12 +422,9 @@ contract ClockSaleMultiTokens is
         );
     }
 
-    function supportsInterface(bytes4 interfaceId)
-        public
-        view
-        override(ERC1155Receiver)
-        returns (bool)
-    {
+    function supportsInterface(
+        bytes4 interfaceId
+    ) public view override(ERC1155Receiver) returns (bool) {
         return super.supportsInterface(interfaceId);
     }
 

@@ -14,6 +14,8 @@ async function main() {
 
   const endersGate = EndersGate.attach(fileData.endersGate);
 
+  
+
   const NFTsToMint = [
     { balance: 1, id: 7 },
     { balance: 1, id: 67 },

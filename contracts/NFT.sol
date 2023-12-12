@@ -6,7 +6,7 @@ import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
 import "@openzeppelin/contracts/token/ERC1155/ERC1155.sol";
 import "@openzeppelin/contracts/token/ERC1155/extensions/ERC1155Burnable.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
-import "@openzeppelin/contracts/token/ERC1155/utils/ERC1155Receiver.sol";
+// import "@openzeppelin/contracts/token/ERC1155/ERC1155Receiver.sol";
 import "@openzeppelin/contracts/utils/Address.sol";
 
 /**
@@ -14,13 +14,7 @@ import "@openzeppelin/contracts/utils/Address.sol";
  * CreatureAccessoryLootBox - a randomized and openable lootbox of Creature
  * Accessories.
  */
-contract OldEndersPack is
-    ERC1155,
-    ERC1155Burnable,
-    ReentrancyGuard,
-    Ownable,
-    ERC1155Receiver
-{
+contract OldEndersPack is ERC1155, ERC1155Burnable, ReentrancyGuard, Ownable {
     using Address for address;
 
     string public name;
@@ -108,17 +102,13 @@ contract OldEndersPack is
             );
     }
 
-    function supportsInterface(bytes4 interfaceId)
-        public
-        view
-        virtual
-        override(ERC1155, ERC1155Receiver)
-        returns (bool)
-    {
-        return
-            interfaceId == type(IERC1155Receiver).interfaceId ||
-            super.supportsInterface(interfaceId);
-    }
+    // function supportsInterface(
+    //     bytes4 interfaceId
+    // ) public view virtual override(ERC1155) returns (bool) {
+    //     return
+    //         interfaceId == type(IERC1155Receiver).interfaceId ||
+    //         super.supportsInterface(interfaceId);
+    // }
 
     function uri(uint256 id) public view override returns (string memory) {
         string memory ipfsHash = idToIpfs[id];
@@ -136,16 +126,17 @@ contract OldEndersPack is
         contractURI = newuri;
     }
 
-    function setIpfsHashBatch(uint256[] memory ids, string[] memory hashes)
-        external
-        onlyOwner
-    {
+    function setIpfsHashBatch(
+        uint256[] memory ids,
+        string[] memory hashes
+    ) external onlyOwner {
         _setIpfsHashBatch(ids, hashes);
     }
 
-    function _setIpfsHashBatch(uint256[] memory ids, string[] memory hashes)
-        internal
-    {
+    function _setIpfsHashBatch(
+        uint256[] memory ids,
+        string[] memory hashes
+    ) internal {
         for (uint256 i = 0; i < ids.length; i++) {
             if (bytes(hashes[i]).length > 0) idToIpfs[ids[i]] = hashes[i];
         }

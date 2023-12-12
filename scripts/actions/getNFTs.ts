@@ -5,7 +5,7 @@ async function main(): Promise<void> {
   const fileName = `addresses/addresses.${network.name}.json`;
   const fileData = loadJsonFile(fileName);
 
-  const addressToCheck = "0xC445da50851D84522a95a6574544698bC0951754";
+  const addressToCheck = "0x2aF1f8c41f9693c728720D774436D398b03f8288";
 
   if (network.name === "harmony") {
     const dracul = (await ethers.getContractFactory("ERC1155card")).attach(

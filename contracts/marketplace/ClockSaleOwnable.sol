@@ -2,7 +2,7 @@
 pragma solidity ^0.8.11;
 
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
-import "@openzeppelin/contracts/utils/Counters.sol";
+
 import "@openzeppelin/contracts/security/Pausable.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/utils/Address.sol";
@@ -17,7 +17,6 @@ import "../interfaces/IERC1155Custom.sol";
 
 /// @title Clock auction for non-fungible tokens.
 contract ClockSaleOwnable is Ownable, Pausable, ERC1155Holder, ReentrancyGuard {
-    using Counters for Counters.Counter;
     using Address for address payable;
 
     enum SaleStatus {
@@ -40,7 +39,7 @@ contract ClockSaleOwnable is Ownable, Pausable, ERC1155Holder, ReentrancyGuard {
 
     // Cut owner takes on each auction, measured in basis points (1/100 of a percent).
     // Values 0-10,000 map to 0%-100%
-    Counters.Counter public tokenIdTracker;
+    uint256 public tokenIdTracker;
     address public feeReceiver;
     uint256 public ownerCut;
     uint256 public genesisBlock;
@@ -98,11 +97,9 @@ contract ClockSaleOwnable is Ownable, Pausable, ERC1155Holder, ReentrancyGuard {
         decimalsByToken[_wcurrency] = _decimals;
     }
 
-    function getSales(uint256[] memory _tokenIds)
-        external
-        view
-        returns (Sale[] memory)
-    {
+    function getSales(
+        uint256[] memory _tokenIds
+    ) external view returns (Sale[] memory) {
         Sale[] memory response = new Sale[](_tokenIds.length);
 
         for (uint256 i = 0; i < _tokenIds.length; i++)
@@ -128,7 +125,7 @@ contract ClockSaleOwnable is Ownable, Pausable, ERC1155Holder, ReentrancyGuard {
         return
             (quantity *
                 (_auction.priceUSD) *
-                10**(decimalsByToken[tokenToGet] + decimals - decimalsUSD)) /
+                10 ** (decimalsByToken[tokenToGet] + decimals - decimalsUSD)) /
             uint256(price);
     }
 
@@ -283,19 +280,19 @@ contract ClockSaleOwnable is Ownable, Pausable, ERC1155Holder, ReentrancyGuard {
         _unpause();
     }
 
-    function updateSalePrice(uint256 saleId, uint256 newPrice)
-        external
-        onlyOwner
-    {
+    function updateSalePrice(
+        uint256 saleId,
+        uint256 newPrice
+    ) external onlyOwner {
         Sale storage _auction = sales[saleId];
         require(_saleExists(_auction), "ClockSale:NOT_AVAILABLE");
         _auction.priceUSD = newPrice;
     }
 
-    function updateSaleReceiver(uint256 saleId, address receiver)
-        external
-        onlyOwner
-    {
+    function updateSaleReceiver(
+        uint256 saleId,
+        address receiver
+    ) external onlyOwner {
         Sale storage _auction = sales[saleId];
         require(_saleExists(_auction), "ClockSale:NOT_AVAILABLE");
         _auction.seller = receiver;
@@ -332,11 +329,9 @@ contract ClockSaleOwnable is Ownable, Pausable, ERC1155Holder, ReentrancyGuard {
         return (_auction.startedAt > 0);
     }
 
-    function _getNftContract(address _nftAddress)
-        internal
-        pure
-        returns (IERC1155Custom)
-    {
+    function _getNftContract(
+        address _nftAddress
+    ) internal pure returns (IERC1155Custom) {
         IERC1155Custom candidateContract = IERC1155Custom(_nftAddress);
         return candidateContract;
     }
@@ -353,9 +348,9 @@ contract ClockSaleOwnable is Ownable, Pausable, ERC1155Holder, ReentrancyGuard {
     function _addSale(Sale memory _auction) internal {
         require(_auction.duration >= 1 minutes, "ClockSale:INVALID_DURATION");
 
-        uint256 auctionID = tokenIdTracker.current();
+        uint256 auctionID = tokenIdTracker;
         sales[auctionID] = _auction;
-        tokenIdTracker.increment();
+        tokenIdTracker++;
 
         emit SaleCreated(
             auctionID,
@@ -418,12 +413,9 @@ contract ClockSaleOwnable is Ownable, Pausable, ERC1155Holder, ReentrancyGuard {
         );
     }
 
-    function supportsInterface(bytes4 interfaceId)
-        public
-        view
-        override(ERC1155Receiver)
-        returns (bool)
-    {
+    function supportsInterface(
+        bytes4 interfaceId
+    ) public view override(ERC1155Receiver) returns (bool) {
         return super.supportsInterface(interfaceId);
     }
 

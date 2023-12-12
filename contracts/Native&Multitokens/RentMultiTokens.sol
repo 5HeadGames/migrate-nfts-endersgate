@@ -2,12 +2,12 @@
 pragma solidity ^0.8.11;
 
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
-import "@openzeppelin/contracts/utils/Counters.sol";
-import "@openzeppelin/contracts/security/Pausable.sol";
+
+import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/utils/Address.sol";
 import "@openzeppelin/contracts/token/ERC1155/utils/ERC1155Holder.sol";
-import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
+import "@openzeppelin/contracts/security/Pausable.sol";
 import "hardhat/console.sol";
 import "@chainlink/contracts/src/v0.8/interfaces/AggregatorV3Interface.sol";
 import "@openzeppelin/contracts/token/ERC1155/ERC1155.sol";
@@ -20,7 +20,6 @@ contract RentMultiTokens is
     ERC1155Holder,
     ReentrancyGuard
 {
-    using Counters for Counters.Counter;
     using Address for address payable;
 
     enum SaleStatus {
@@ -45,7 +44,7 @@ contract RentMultiTokens is
 
     // Cut owner takes on each auction, measured in basis points (1/100 of a percent).
     // Values 0-10,000 map to 0%-100%
-    Counters.Counter public tokenIdTracker;
+    uint256 public tokenIdTracker;
     address public feeReceiver;
     uint256 public ownerCut;
     uint256 public genesisBlock;
@@ -421,9 +420,9 @@ contract RentMultiTokens is
     }
 
     function _addRent(Rent memory _rent) internal {
-        uint256 auctionID = tokenIdTracker.current();
+        uint256 auctionID = tokenIdTracker;
         rents[auctionID] = _rent;
-        tokenIdTracker.increment();
+        tokenIdTracker++;
 
         emit RentAuctionCreated(
             auctionID,

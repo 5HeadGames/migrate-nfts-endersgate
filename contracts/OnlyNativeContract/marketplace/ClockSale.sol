@@ -2,17 +2,18 @@
 pragma solidity ^0.8.11;
 
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
-import "@openzeppelin/contracts/utils/Counters.sol";
-import "@openzeppelin/contracts/security/Pausable.sol";
+
+import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/utils/Address.sol";
 import "@openzeppelin/contracts/token/ERC1155/utils/ERC1155Holder.sol";
 import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
 import "../../interfaces/IERC1155Custom.sol";
+import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
+import "@openzeppelin/contracts/security/Pausable.sol";
 
 /// @title Clock auction for non-fungible tokens.
 contract ClockSaleFindora is Ownable, Pausable, ERC1155Holder, ReentrancyGuard {
-    using Counters for Counters.Counter;
     using Address for address payable;
 
     enum SaleStatus {
@@ -34,7 +35,7 @@ contract ClockSaleFindora is Ownable, Pausable, ERC1155Holder, ReentrancyGuard {
 
     // Cut owner takes on each auction, measured in basis points (1/100 of a percent).
     // Values 0-10,000 map to 0%-100%
-    Counters.Counter public tokenIdTracker;
+    uint256 public tokenIdTracker;
     address public feeReceiver;
     uint256 public ownerCut;
     uint256 public genesisBlock;
@@ -249,9 +250,9 @@ contract ClockSaleFindora is Ownable, Pausable, ERC1155Holder, ReentrancyGuard {
     function _addSale(Sale memory _auction) internal {
         require(_auction.duration >= 1 minutes, "ClockSale:INVALID_DURATION");
 
-        uint256 auctionID = tokenIdTracker.current();
+        uint256 auctionID = tokenIdTracker;
         sales[auctionID] = _auction;
-        tokenIdTracker.increment();
+        tokenIdTracker++;
 
         emit SaleCreated(
             auctionID,

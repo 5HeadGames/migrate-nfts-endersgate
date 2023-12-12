@@ -3,14 +3,14 @@ pragma solidity ^0.8.11;
 
 import "hardhat/console.sol";
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
-import "@openzeppelin/contracts/utils/Counters.sol";
+
 import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
-import "@openzeppelin/contracts/security/Pausable.sol";
+import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/utils/Address.sol";
 import "@openzeppelin/contracts/token/ERC1155/utils/ERC1155Holder.sol";
 import "@openzeppelin/contracts/token/ERC1155/IERC1155.sol";
-import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
+import "@openzeppelin/contracts/security/Pausable.sol";
 
 /// @title Clock auction for non-fungible tokens.
 contract ClockSale is
@@ -20,7 +20,6 @@ contract ClockSale is
     ERC1155Holder,
     ReentrancyGuard
 {
-    using Counters for Counters.Counter;
     using Address for address payable;
 
     enum SaleStatus {
@@ -42,7 +41,7 @@ contract ClockSale is
 
     // Cut owner takes on each auction, measured in basis points (1/100 of a percent).
     // Values 0-10,000 map to 0%-100%
-    Counters.Counter public tokenIdTracker;
+    uint256 public tokenIdTracker;
     address public feeReceiver;
     uint256 public ownerCut;
     uint256 public genesisBlock;
@@ -91,11 +90,9 @@ contract ClockSale is
         require(false, "ClockSale:DONT_SEND");
     }
 
-    function getSales(uint256[] memory _tokenIds)
-        external
-        view
-        returns (Sale[] memory)
-    {
+    function getSales(
+        uint256[] memory _tokenIds
+    ) external view returns (Sale[] memory) {
         Sale[] memory response = new Sale[](_tokenIds.length);
 
         for (uint256 i = 0; i < _tokenIds.length; i++)
@@ -151,12 +148,10 @@ contract ClockSale is
         _addSale(_auction);
     }
 
-    function buy(uint256 _tokenId, uint256 amount)
-        external
-        payable
-        nonReentrant
-        whenNotPaused
-    {
+    function buy(
+        uint256 _tokenId,
+        uint256 amount
+    ) external payable nonReentrant whenNotPaused {
         Sale storage _auction = sales[_tokenId];
         uint256 cost = _auction.price * amount;
         address buyer = _msgSender();
@@ -184,11 +179,10 @@ contract ClockSale is
         _cancelSale(_tokenId);
     }
 
-    function setNftAllowed(address nftAddress, bool allow)
-        external
-        debug
-        onlyOwner
-    {
+    function setNftAllowed(
+        address nftAddress,
+        bool allow
+    ) external debug onlyOwner {
         isAllowed[nftAddress] = allow;
     }
 
@@ -216,11 +210,9 @@ contract ClockSale is
         return (_auction.startedAt > 0);
     }
 
-    function _getNftContract(address _nftAddress)
-        internal
-        pure
-        returns (IERC1155)
-    {
+    function _getNftContract(
+        address _nftAddress
+    ) internal pure returns (IERC1155) {
         IERC1155 candidateContract = IERC1155(_nftAddress);
         return candidateContract;
     }
@@ -237,10 +229,10 @@ contract ClockSale is
     function _addSale(Sale memory _auction) internal {
         require(_auction.duration >= 1 minutes, "ClockSale:INVALID_DURATION");
 
-        uint256 auctionID = tokenIdTracker.current();
+        uint256 auctionID = tokenIdTracker;
         sales[auctionID] = _auction;
         _mint(_auction.seller, auctionID);
-        tokenIdTracker.increment();
+        tokenIdTracker++;
 
         emit SaleCreated(
             auctionID,
@@ -308,12 +300,9 @@ contract ClockSale is
         );
     }
 
-    function supportsInterface(bytes4 interfaceId)
-        public
-        view
-        override(ERC1155Receiver, ERC721)
-        returns (bool)
-    {
+    function supportsInterface(
+        bytes4 interfaceId
+    ) public view override(ERC1155Receiver, ERC721) returns (bool) {
         return super.supportsInterface(interfaceId);
     }
 

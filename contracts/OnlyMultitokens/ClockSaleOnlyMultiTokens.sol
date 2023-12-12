@@ -2,12 +2,12 @@
 pragma solidity ^0.8.11;
 
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
-import "@openzeppelin/contracts/utils/Counters.sol";
-import "@openzeppelin/contracts/security/Pausable.sol";
+
+import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/utils/Address.sol";
 import "@openzeppelin/contracts/token/ERC1155/utils/ERC1155Holder.sol";
-import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
+import "@openzeppelin/contracts/security/Pausable.sol";
 
 import "hardhat/console.sol";
 
@@ -22,7 +22,6 @@ contract ClockSaleOnlyMultiTokens is
     ERC1155Holder,
     ReentrancyGuard
 {
-    using Counters for Counters.Counter;
     using Address for address payable;
 
     enum SaleStatus {
@@ -45,7 +44,7 @@ contract ClockSaleOnlyMultiTokens is
 
     // Cut owner takes on each auction, measured in basis points (1/100 of a percent).
     // Values 0-10,000 map to 0%-100%
-    Counters.Counter public tokenIdTracker;
+    uint256 public tokenIdTracker;
     address public feeReceiver;
     uint256 public ownerCut;
     uint256 public genesisBlock;
@@ -309,9 +308,9 @@ contract ClockSaleOnlyMultiTokens is
     function _addSale(Sale memory _auction) internal {
         require(_auction.duration >= 1 minutes, "ClockSale:INVALID_DURATION");
 
-        uint256 auctionID = tokenIdTracker.current();
+        uint256 auctionID = tokenIdTracker;
         sales[auctionID] = _auction;
-        tokenIdTracker.increment();
+        tokenIdTracker++;
 
         emit SaleCreated(
             auctionID,
@@ -372,12 +371,6 @@ contract ClockSaleOnlyMultiTokens is
             address(0) == from || address(0) == to,
             "ClockSale:CANNOT_TRANSFER"
         );
-    }
-
-    function supportsInterface(
-        bytes4 interfaceId
-    ) public view override(ERC1155Receiver) returns (bool) {
-        return super.supportsInterface(interfaceId);
     }
 
     function emergencyWithdraw(
