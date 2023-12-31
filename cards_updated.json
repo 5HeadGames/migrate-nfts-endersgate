@@ -3,7 +3,7 @@
     "name": "Calculated Draw",
     "type": "ERC1155",
     "description": "Retire 1 Guardian on your side of the field; Draw 2 cards.",
-    "image": "https://bafybeiflijf5pekjjll76uii5xhmh56nol5spsqgj7ngbwe3yc66zepjr4.ipfs.dweb.link/CALCULATED%20DRAW%20FRONT.webp",
+    "image": "QmYY6pmgXjdW2iuQcrkWBqtTD7cNLCRffDGVnesAnvUQn8",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -71,7 +71,7 @@
     "name": "Cursed Jian",
     "type": "ERC1155",
     "description": "Select One Guardian on your opponent's side of the field; decrease their attack by 50% for 2 turns. ",
-    "image": "https://bafybeignswv4ir4nzqgh3qhjdk4g2pvzt4g73ywtn73ifgkt7f6tf7b6um.ipfs.dweb.link/CURSED%20JIAN%20FRONT.webp",
+    "image": "QmPDpg7Cw9hsNPskX2iDQxvVjCgkoCFuwZggqvq6uxvb6U",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -139,7 +139,7 @@
     "name": "Earth Cocktail",
     "type": "ERC1155",
     "description": "Select one earth Guardian on your side of the field; increase their attack and HP by 75 for 3 turns. ",
-    "image": "https://bafybeidxljqtuxuftqt2e7ncma3ubsokxxhzpa7ep664q6onriyi4owk2u.ipfs.w3s.link/EARTH%20COCTAIL%20FRONT.webp",
+    "image": "https://bafybeihm2nqatjchrxibdwrh5jgblnycumsnsu42et2kpnqa46sfg5oil4.ipfs.dweb.link/EARTH%20FRONT.webp",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -207,7 +207,7 @@
     "name": "E-Axe: Earth Mode",
     "type": "ERC1155",
     "description": "Deal 10 Earth Damage to one selected Enemy Guardian, they cannot declare an attack for 1 turn. ",
-    "image": "https://bafybeie3xg6k336vvzyo5o62gfv7ddazihgnzw2igte6lysgvchceujewm.ipfs.dweb.link/E-AXE%20EARTH%20MODE%20FRONT.webp",
+    "image": "https://bafybeihm2nqatjchrxibdwrh5jgblnycumsnsu42et2kpnqa46sfg5oil4.ipfs.dweb.link/EARTH%20FRONT.webp",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -275,7 +275,7 @@
     "name": "E-Axe: Fire Mode",
     "type": "ERC1155",
     "description": "Deal 20 damage to one selected Guardian on the enemy's side of the field, then deal 10 burn damage over 2 turns.",
-    "image": "https://bafybeibxtmvlkf5wl3kyh6jxgawfuyr5v6x46n6cmae4bz7ljkjjb7m7bi.ipfs.dweb.link/E-AXE%20FIRE%20MODE%20FRONT.webp",
+    "image": "QmdqYjCiQwnHHfG3gDsm86pqB6kyoa5YhxEuEnYzyJz4Wi",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -343,7 +343,7 @@
     "name": "E-Axe: Mystic Mode",
     "type": "ERC1155",
     "description": "Deal 25 damage to all Guardians on the enermy's side of the field.",
-    "image": "https://bafybeidolrtik7o7mtygqwfq34svih4bcowoowyesgszn27fumku7vwylm.ipfs.dweb.link/E-AXE%20MYSTIC%20MODE%20FRONT.webp",
+    "image": "QmU9nVAdTaC4m2mV6aXZtcPEDSX3KfSdZYDMJRwGyqeJGG",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -411,7 +411,7 @@
     "name": "E-Axe: Venom Mode",
     "type": "ERC1155",
     "description": "Deal 10 poison damage once per turn for 3 turns to one selected Guardian on the enemy's side of the field.",
-    "image": "https://bafybeifgxthgkwktp6do3zikbnrep246wcaoux36vpcnieq3vrkfqyukva.ipfs.dweb.link/E-AXE%20VENOM%20MODE%20FRONT.webp",
+    "image": "Qmc1rtEUPkNFptr8yKh9HF1V99trT4yqEsLbfB4jRgH6T4",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -479,7 +479,7 @@
     "name": "E-Axe: Void Mode",
     "type": "ERC1155",
     "description": "Deal 50 damage to one selected Guardian on the enemy's side of the field. ",
-    "image": "https://bafybeibypwmgtvioiucrjxtazfobqgr6z56zk3btxja7pnm3sq7ezkkrry.ipfs.dweb.link/E-AXE%20VOID%20MODE%20FRONT.webp",
+    "image": "Qmey4ruaMdtJGdvMEiqaaYJajcrgjBp6iqRWGDMVTQbXuU",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -547,7 +547,7 @@
     "name": "E-Axe: Water Mode",
     "type": "ERC1155",
     "description": "Deal 15 water damage to all enemy Guardians on the field.",
-    "image": "https://bafybeidru5zeo3elbndp2nnvek2hcvhntnzg4ts65tnsbepbqvgdjul4he.ipfs.dweb.link/E-AXE%20WATER%20MODE%20FRONT.webp",
+    "image": "QmUJc1oGcVn4sx3FuUZovEkZvWCyDTsZJxaUB7s1iSUvAG",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -615,7 +615,7 @@
     "name": "Fighter Essence",
     "type": "ERC1155",
     "description": "Equip this card to one Guardian on your side of the field; increase their attack by 100. Destory this card if the Guardian is sent to the grave yard.",
-    "image": "https://bafybeicmk5dg24goeydhqihrt37q7nxuhjggg6ykkmpsnnf2l676ihsoqm.ipfs.dweb.link/FIGHTER%20ESSENCE%20FRONT.webp",
+    "image": "QmYsUn1ntdjv5MhFA47ftgASACCzWLemEqdyFddScjmunN",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -683,7 +683,7 @@
     "name": "Mutual Destructive Rain",
     "type": "ERC1155",
     "description": "Deal 25 water damage to all fire type Guardians on both sides of the field.",
-    "image": "https://bafybeide7m6k7j6hpjcss7ssi4nos2hvmpyqjg6dlnljqleladsjrc2mpm.ipfs.dweb.link/MUTUAL%20DESTRUCTIVE%20RAIN%20FRONT.webp",
+    "image": "Qmf4WGztJDdZCujLFvhqNJqZpf14jwxzTVEExSnH4AvuGc",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -751,7 +751,7 @@
     "name": "Reckless Draw",
     "type": "ERC1155",
     "description": "Discard 2 cards from your hand; draw 2 cards.",
-    "image": "https://bafybeig7opsoalx4m65k2vo5p65fw6eke77ow2msesd5nlv4ftwiejausq.ipfs.dweb.link/RECKLESS%20DRAW%20FRONT.webp",
+    "image": "QmNhTtFZRHEtBGAgndEzbvTJnqaefhSY7M3zpFf7KLrwPi",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -819,7 +819,7 @@
     "name": "Nordic War Book",
     "type": "ERC1155",
     "description": "During your main phase 1, discard 1 card from your hand to the graveyard; select one \"Nordic\" guardian on your side of the field and increase their attack by 100. Destory this card if the Guardian is sent to the grave yard.",
-    "image": "https://bafybeibqlgu733kjudqzvmevputexpihkvm7wvbkcbkja7f2gsguo7jtk4.ipfs.dweb.link/NORDIC%20WAR%20BOOK%20FRONT.webp",
+    "image": "QmS32Fr16vDKrXNBwz429tZ6brY29PjoyeJ7owZ1gLQmrm",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -887,7 +887,7 @@
     "name": "Greater Healing Tincture",
     "type": "ERC1155",
     "description": "Select one Guardian on your side of the field; heal them for 100 HP.",
-    "image": "https://bafybeicsbwopillidp2v46el65jpybhxp4yoqmrhk6y2vpt5kqs3pw4vdu.ipfs.dweb.link/GREATER%20HEALING%20TINCTURE%20FRONT.webp",
+    "image": "QmPZscDGK68gVcoTxV5yXzVssA92WnmQWY2abbnNbYAkVP",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -955,7 +955,7 @@
     "name": "Gaia's Touch",
     "type": "ERC1155",
     "description": "Heal one earth Guardian on your side of the field for 50 health. On successful heal, increase their Attack by 25.",
-    "image": "https://bafybeihuchnmu64aotbekcpwsuswr3j4ihecficlouzpy4yuab7gaxmin4.ipfs.dweb.link/GAIAS%20TOUCH%20FRONT.webp",
+    "image": "QmTcgf5anWoJgpcrP8ssQkJj5pounvRt7894Zj5tFk56Qf",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -1023,7 +1023,7 @@
     "name": "Lightning Strike",
     "type": "ERC1155",
     "description": "Target one Guardian on your opponent's side of the field; deal 40 Mystic damage. ",
-    "image": "https://bafybeigzq65aopzj5wkduz37lfc7rlr64ly4fd4hgxducdx5xxr54yeetm.ipfs.dweb.link/LIGHTNING%20STRIKE%20FRONT.webp",
+    "image": "QmPqdpvFv9APvGorDfna3xqry2tj8YU2cGobCd8SjLjrxC",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -1091,7 +1091,7 @@
     "name": "Panacea's Touch",
     "type": "ERC1155",
     "description": "Heal one Guardian on your side of the field for 25 health. ",
-    "image": "https://bafybeieksz27mbvu34qjqts3pvn67skhxau2hhktiyvjm5fhzdhkklhjqm.ipfs.dweb.link/PANACEAS%20TOUCH%20FRONT.webp",
+    "image": "QmQpcukjk244aphG5FAAHKgW1WL1z1rijWQNvL52qTkYAD",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -1159,7 +1159,7 @@
     "name": "Poison Flask",
     "type": "ERC1155",
     "description": "Target one Guardian on your opponent's side of the field; deal 10 poison damage for 3 turns.",
-    "image": "https://bafybeifw5ewuiclefziu4rld23eecr7jrlqjngpbgxtxv3pli44t4ouvyy.ipfs.dweb.link/POISON%20FLASK%20FRONT.webp",
+    "image": "QmTq8HBJ4R1TBMQK53qpQBqcktXC7EfXRgjP4K5eNuWtL1",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -1227,7 +1227,7 @@
     "name": "Puppet Master",
     "type": "ERC1155",
     "description": "Activate in your main phase 1. Take control of one Guardian on the enemy's side of the field until the end of your turn.",
-    "image": "https://bafybeife3m4ujhos2rrxxjlqwfm3evvgg7pajnr7txungvijtqd5f3vjii.ipfs.dweb.link/PUPPET%20MASTER%20FRONT.webp",
+    "image": "QmP3MAS6eBXtzvzgLnMrJRufYnHytyQfK3ewVBL1bJozdg",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -1295,7 +1295,7 @@
     "name": "Return from beyond",
     "type": "ERC1155",
     "description": "Discard 1 card from your hand; select 1 card from your graveyard and return it to the top of your deck.",
-    "image": "https://bafybeif4cpse6oon45bpggnfbgculq3asqz6gzoctbi52t7ss4s6a72e4y.ipfs.dweb.link/RETURN%20FROM%20BEYOND%20FRONT.webp",
+    "image": "QmZfpktDHWRBzZpdewrCEzde1H2mQwe6nzdzGeEAeVkzLa",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -1363,7 +1363,7 @@
     "name": "Void Blast",
     "type": "ERC1155",
     "description": "Target One Guardian on your opponent's side of the field; damage them for 100 HP. If under 20% health, execute them.",
-    "image": "https://bafybeihftrxiyvvichvwrexgbrln3tvdvxd3rg65gw2wc55b3x4rngnq64.ipfs.dweb.link/VOID%20BLAST%20FRONT.webp",
+    "image": "QmUvU5uHGpj5DNN1p1ofbZyjNbAJn1sazcQCtbzasS1bXJ",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -1431,7 +1431,7 @@
     "name": "Willful Shield",
     "type": "ERC1155",
     "description": "Activate: This card stays on the field until it negates one attack.",
-    "image": "https://bafybeigjfxnn3euy3wvudyfobunq7blcezlgpr3seaceycuwdwz6nvjzni.ipfs.dweb.link/WILLFUL%20SHIELD%20FRONT.webp",
+    "image": "QmdmDpsKhGR4xKBAnujhMLLLLLCiaCeTeQGdxgqy5ML6wf",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -1499,7 +1499,7 @@
     "name": "Thors Hammer",
     "type": "ERC1155",
     "description": "Equip to one Fighter type Guardian on your side of the field; increase their attack by 100.",
-    "image": "https://bafybeiflcsd3nmb2svgr7r3uh644eepe7wxbwuitq4yxq6pe6ylz66qswy.ipfs.dweb.link/THORS%20HAMMER%20FRONT.webp",
+    "image": "QmbxVTkqtpSSxbwejSuu9fcFUXMTQPvsanmkVtWw9xxL8A",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -1567,7 +1567,7 @@
     "name": "Over Shield Tonic",
     "type": "ERC1155",
     "description": "Pay 50 Gold to Activate. Select one Guardian on your side of the field; they gain an overshield worth 60 HP.",
-    "image": "https://bafybeihpjfd5vh5f5rklllpitjy5x3d3g5dhnbdar2tl3hs7cvkniwun2e.ipfs.dweb.link/OVER%20SHIELD%20TONIC%20FRONT.webp",
+    "image": "QmYDhGPswd497K3gMrjvBZKLfo36hqkRdLYfCkE48o18oF",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -1635,7 +1635,7 @@
     "name": "Snake Charmer",
     "type": "ERC1155",
     "description": "While this card is face up on the field, All Venom Type Guardians gain +5% ATK. Upkeep cost -25 gold per turn. ",
-    "image": "https://bafybeic2czd7kxngsbgbevuhbu5syi2oo3a6uwq7ryzc24cojq2xd7hw7i.ipfs.dweb.link/SNAKE%20CHARMER%20FRONT.webp",
+    "image": "QmRvVF5g8NnN2eAYNciEdLzPgyiwjZjdpjKRf6b8qDKdUz",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -1703,7 +1703,7 @@
     "name": "Chosen One",
     "type": "ERC1155",
     "description": "If you control no Guardians: Summon 1 Guardian from your grave yard to the field. If the summoned Guardian is a water type, they gain +10 ATK.",
-    "image": "https://bafybeic4k3lg2wy2p7thy2q6lrnyfft6gjh6qso2pfnzduls7pu2yxbb2a.ipfs.dweb.link/CHOSEN%20ONE%20FRONT.webp",
+    "image": "QmVrAqt768ycn65JFvA1o5U3GNba3Wxcprm3iHC4Zbguhc",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -1771,7 +1771,7 @@
     "name": "Void Walker's Attraction",
     "type": "ERC1155",
     "description": "If you control no \"Void\" or \"Monster\" type Guardians; pay 250 Gold and summon 1 Guardian with 200 or less ATK to the field. Only 1 Guardian can be summoned at a time using this card.",
-    "image": "https://bafybeienmvrkk2sodehtby763tbmaz4bnbhptuze477dr72rbj6xhexcce.ipfs.dweb.link/VOID%20WALKERS%20ATTRACTION%20FRONT.webp",
+    "image": "QmPRrGf27UbDgYVb7HzqTFbXmuoDoRvEGaWzERWDCq5EGc",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -1839,7 +1839,7 @@
     "name": "Swords of the Open sea",
     "type": "ERC1155",
     "description": "Once activated, this card remains on the field for 3 turns. While this card is face-up on the field, only water type Guardians can declare attack & all Fire type Guardians take 25 damage per turn.",
-    "image": "https://bafybeieyo2hell435bxqcvqyuxqyvbmu4s22doytbv35psn7o4vlf7yaae.ipfs.dweb.link/SWORDS%20OF%20THE%20OPEN%20SEA%20FRONT.webp",
+    "image": "QmY7Sp2d18wwgDRWZUDU6y8idwFFuEF864gAc3rqKsfKQr",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -1907,7 +1907,7 @@
     "name": "Xolzog's Manufesto",
     "type": "ERC1155",
     "description": "During your MP1, select one  Mage type Guardian on your side of the field; increase their ATK by 20 x (# Guardians your opponent controls).",
-    "image": "https://bafybeibwghpcz7pmqdzpx4cdnv5z3pg7iqujjc5yx4iny2l56thdkusrlm.ipfs.dweb.link/XOLZOG%20FRONT.webp",
+    "image": "QmURbsjoRh9GFq41UYCBQqyuJcjKPnbZzCiDDUN7tcVrZz",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -1975,7 +1975,7 @@
     "name": "Void Time Dilation",
     "type": "ERC1155",
     "description": "Pay 150 gold to activate: Both players discard all cards in their hand to the grave yard then, draw the same amount of cards from their decks.",
-    "image": "https://bafybeiaol5wq5nmhru2gix5k4yp4ijywudlitv3hp3wf37vohrq6ubkqgy.ipfs.dweb.link/VOID%20TIME%20DILATION%20FRONT.webp",
+    "image": "QmZzk2S31GfS6SQNHZCTYJFAiyvURsj9JNpVC5wTvbZxxG",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -2111,7 +2111,7 @@
     "name": "Field of Venom",
     "type": "ERC1155",
     "description": "The field fills up with Venom Gas causing 5 damage per turn to all non-Venom Type Guardians. If your opponent has no field card in play, this field card effects their side as well. (Upkeep: 5 gold per turn)",
-    "image": "https://bafybeicoxxqh3hfya7sclfhger6qgcgkfmu54okrea4reyipzo2wifgd2a.ipfs.dweb.link/FIELD%20OF%20VENOM%20FRONT.webp",
+    "image": "QmXbjWLDuEfrudtL86HP28SW3oex9DT6PdfboCajBNCTwG",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -2247,7 +2247,7 @@
     "name": "Warrior's Stand",
     "type": "ERC1155",
     "description": "When you control only one Guardian on your side of the field with less ATK than your opponent's Guardian: Increase the ATK of the Guardian you control to match the ATK of the Strongest Guardian your opponent controls.",
-    "image": "https://bafybeibpl6csjneelod6kp6amnayyvaodnyy67rq6ox3rtla2qntjyzt6m.ipfs.dweb.link/WARRIORS%20STAND%20FRONT.webp",
+    "image": "QmakZncUG5GA7zkfiSdr8E75N76FVqBZeYFmvtcnTzgwJM",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -2315,7 +2315,7 @@
     "name": "Sunken Palace",
     "type": "ERC1155",
     "description": "The field is submerged in water causing 5 damage per turn to all non-Water Type Guardians. If your opponent has no field card in play, this field card effects their side as well. (Upkeep: 5 gold per turn)",
-    "image": "https://bafybeifh7l425zifls77p5hw64w7y3uoku76pxbwgday4i4axyu5gd63fi.ipfs.dweb.link/SUNKEN%20PALACE%20FRONT.webp",
+    "image": "QmYzwzhTmZLHqhhdB7qxdaGT8r93N7V6uqMfegYFo4NF8S",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -2383,7 +2383,7 @@
     "name": "Angry Sea",
     "type": "ERC1155",
     "description": " Pay 300 Gold: Destroy all Action and Reaction Cards on the field.",
-    "image": "https://bafybeihfeezw2xx67f7ovcxvce4hku7krae33maxqxbpicu2khl3ef6xrm.ipfs.dweb.link/ANGRY%20SEA%20FRONT.webp",
+    "image": "QmR3yTry1UZKdNMspbhtnZ55YnAeuRxRj7yj8oCfTxdqyJ",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -2451,7 +2451,7 @@
     "name": "Dimensional Tesseract",
     "type": "ERC1155",
     "description": "Pay 600 Gold to Activate one of the two effects: \n\n● Both players send 10 cards from the top of their decks to the grave yard. \n● Both players send all Guardians on the field to the Grave yard",
-    "image": "https://bafybeibj43gin4eqrswljyppg64mz7kb4khkbmotbo2hfhjgrlzmdli6my.ipfs.dweb.link/DIMENSIONAL%20TESS%20FRONT.webp",
+    "image": "Qmbz88hZ8CReuv3BHVEV8escUGgRz4hfBQLW2ngx2hRFBY",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -2519,7 +2519,7 @@
     "name": "Hatchling Potential",
     "type": "ERC1155",
     "description": "Pay 25 Gold for 3 turns during your standby phase to successfully Activate: \nA random Guardian from your deck appears on the field in MP1",
-    "image": "https://bafybeihb2iuebutsqafquhnkrjnkcppsg44cwjlswtiuhj2jwgpigdc34a.ipfs.w3s.link/HATCHLING%20POTENITAL.webp",
+    "image": "QmZ83ndoVZJn4fiTzHSYEmoddcjzygtWCJuHGwV1vGME1z",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -2655,7 +2655,7 @@
     "name": "Earth Gauntlet",
     "type": "ERC1155",
     "description": "Activate this card by sending 1 card from your hand to the Grave yard:\nEquip this card to an Earth Guardian. They gain 50 ATK until they leave the field.",
-    "image": "https://bafybeiek4rtypht6xaruyvy5nb4emukowibscfkr462wr3tqoqisvcgxti.ipfs.dweb.link/EARTH%20GAUNTLET%20FRONT.webp",
+    "image": "https://bafybeihm2nqatjchrxibdwrh5jgblnycumsnsu42et2kpnqa46sfg5oil4.ipfs.dweb.link/EARTH%20FRONT.webp",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -2723,7 +2723,7 @@
     "name": "Earth World",
     "type": "ERC1155",
     "description": "The field rumbles causing 5 damage per turn to all non-Earth Type Guardians. All Earth type Guardians gain 10 ATK & HP (Upkeep: 5 gold per turn)",
-    "image": "https://bafybeiajkz6emk2cae72oaqaj57prurz3s7dvrvfuzotr5mlxouwha5msm.ipfs.dweb.link/EARTH%20WORLD%20FRONT.webp",
+    "image": "https://bafybeihm2nqatjchrxibdwrh5jgblnycumsnsu42et2kpnqa46sfg5oil4.ipfs.dweb.link/EARTH%20FRONT.webp",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -2791,7 +2791,7 @@
     "name": "Void World",
     "type": "ERC1155",
     "description": "The Gravity level of the field increases causing 5 damage per turn to all non-Void Type Guardians. All Void type Guardians gain 10 ATK & HP (Upkeep: 5 gold per turn)",
-    "image": "https://bafybeih6xfbh42fgbg5izus3ysfagcbnloxf3fjxxug66t7oxeigr5soyi.ipfs.dweb.link/VOID%20WORLD%20FRONT.webp",
+    "image": "QmV7oeKVu27w3RtsrqruTYtzdqhgfQnfs11V21tfjsLevF",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -2859,7 +2859,7 @@
     "name": "Lava World",
     "type": "ERC1155",
     "description": "The Field fills with fire causing 5 damage per turn to all non-Fire Type Guardians. All Fire type Guardians gain 10 ATK & HP (Upkeep: 5 gold per turn)",
-    "image": "https://bafybeicdvzxstuigc76bpgs2fxyfgm6kclkyideekaj7akn7uzcphjlrbe.ipfs.dweb.link/LAVA%20WORLD%20FRONT.webp",
+    "image": "QmYy9k4G7DGAFmixyb2CEzPEgvMQG64joGk6VzGM2ZoGXY",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -2927,7 +2927,7 @@
     "name": "Venom World",
     "type": "ERC1155",
     "description": "Acid rain begins to fall causing 5 damage per turn to all non-Venom Type Guardians. All Venom type Guardians gain 10 ATK & HP (Upkeep: 5 gold per turn)",
-    "image": "https://bafybeiaqbuyogjitms2us6jll3a5tgolk2isd4452uyycvynudk3p4ukvu.ipfs.dweb.link/VENOM%20WORLD%20FRONT.webp",
+    "image": "QmdXT384wdcGYPpF8JdG6vmVBduEtXMQE6LhaMBQpXUTUX",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -2995,7 +2995,7 @@
     "name": "Golden Pig",
     "type": "ERC1155",
     "description": "Pay 25 Gold for 3 turns during your standby phase to successfully Activate: \nHire a random Guardian from your deck to the field. If Guardian is sent to the Grave yard, gain 75 gold.",
-    "image": "https://bafybeibpndx3fffuyealh6h33hp2ck4b5quej5ghstn2ow2ka5gkq4mzw4.ipfs.dweb.link/GOLDEN%20PIG%20FRONT.webp",
+    "image": "Qmb5wsGKUdBEhDCvfKcZMPa1CxsFgS1sqAnrvSWNo1SKsY",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -3063,7 +3063,7 @@
     "name": "Venom Ring",
     "type": "ERC1155",
     "description": "Activate this card by sending 1 card from your hand to the Grave yard:\nEquip this card to a Venom Guardian. They gain 50 ATK until they leave the field.",
-    "image": "https://bafybeib5t4e5b7h6nweefq2oqxazv5vpcxmehbcws45g2aok7h4ouwze3a.ipfs.dweb.link/VENOM%20RING%20FRONT.webp",
+    "image": "QmQtmUHwzTRcfFouydroq6G23gDJkiqU6tD5LvCVVZLQVk",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -3131,7 +3131,7 @@
     "name": "Fire Trap",
     "type": "ERC1155",
     "description": "Flip: Deal 30 damage to one selected Guardian on the field. ",
-    "image": "https://bafybeia74qx22tywfyqlpprcdhvxum3d373wnbc6r2uu5xyubwnhran4e4.ipfs.w3s.link/FIRE-TRAP-FRONT.webp",
+    "image": "QmdKMGAeP2Uv76DRQHPgFUyHcwC9YdpVmxoesrigADFFJe",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -3199,7 +3199,7 @@
     "name": "Poison Trap",
     "type": "ERC1155",
     "description": "Flip: Deal 20 Poison damage to one selected Guardian on the enemy's side of the field. ",
-    "image": "https://bafybeieklo6puj3mzof6v3quflirkulnmfdlrioiibgj3byifj7yuaolru.ipfs.dweb.link/POISON%20TRAP%20FRONT.webp",
+    "image": "QmQjvJ2s3mVLPeyCokEuKpMHHquX3ZthTRCcwGrGfD3S88",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -3267,7 +3267,7 @@
     "name": "Spike Trap",
     "type": "ERC1155",
     "description": "Flip: Deal 25 damage to one selected Guardian on the enemy's side of the field. ",
-    "image": "https://bafybeiho3u4kldh5xsykhejaqlmcofdvymrnzdab66lypcbgxxzn4ocbxe.ipfs.dweb.link/SPIKE%20TRAP%20FRONT.webp",
+    "image": "QmZNVMFzH79ch9KakJHajRTuo29qHLXm27gKq6xXRS9JWi",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -3335,7 +3335,7 @@
     "name": "Void Trap",
     "type": "ERC1155",
     "description": "Flip: Deal 50 damage to one selected Guardian on the opponent's side of the field. ",
-    "image": "https://bafybeic4odkz53stbmaan7mfqc5bqvvjr2vpmfcjfjx6kwrvrnx7zbxjby.ipfs.dweb.link/VOID%20TRAP%20FRONT.webp",
+    "image": "QmVEnk1ZiytkdDEGJSXv3Asm3eGK4Wh8Zajuapd9vMAXD1",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -3401,7 +3401,7 @@
     "name": "Rain of arrows",
     "type": "ERC1155",
     "description": "Flip: Damage all Guardians on your opponent's side of the field for 10 HP.",
-    "image": "https://bafybeic4tzpy26mrall44kl6m4k5mosph7u2s2xxjc73lv4nw3ny5z4oyy.ipfs.dweb.link/RAIN%20OF%20ARROWS%20FRONT.webp",
+    "image": "QmYTkGA54iLdRKb67tC1HtrHimWsARSvrkMFPZErLwH8hp",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -3469,7 +3469,7 @@
     "name": "Restful Camp",
     "type": "ERC1155",
     "description": "Flip: Select one Guardian on your side of the field; they cannot be attacked for 2 turns & heal 25 HP per turn.",
-    "image": "https://bafybeiaqhhy7fcjmz5bpobuibxjt43jb3hxrgn4d72x6ap5eq4gtlljgoq.ipfs.dweb.link/RESTFUL%20CAMP%20FRONT.webp",
+    "image": "QmcS8UWmYpLFzW1eUAH6Q1hhxXumJ6dveGEULFEXuCKZQT",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -3537,7 +3537,7 @@
     "name": "Trap Disarm",
     "type": "ERC1155",
     "description": "Flip: Destory one face down action/reaction card on your opponent's side of the field. ",
-    "image": "https://bafybeigkbfmg2a4ckohdbm3tvkwcfs5z6pkmfkcqdamviz2cdguv5x6are.ipfs.dweb.link/TRAP%20DISARM%20FRONT.webp",
+    "image": "QmVj2F2FbYaZ2akmNEj2t4zw5qQWyLvvaGmCDnWaYs3T9h",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -3605,7 +3605,7 @@
     "name": "Unpleasant Entry",
     "type": "ERC1155",
     "description": "Flip: Activate when your opponent summons a Guardian; deal 25 damage to the Guardian upon their entry.",
-    "image": "https://bafybeiewbjuzsl2wvrahwwxt3ovypqwl76hg7d3xvexe4jufut5aazw77i.ipfs.w3s.link/UNPLESANT%20ENTRY%20FRONT.webp",
+    "image": "QmXXGmwacruTaVrLNERPihUgYZvaGKXTTw3asgJeSK9cHt",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -3670,10 +3670,10 @@
     "typeCard": "reaction"
   },
   {
-    "name": "Pacifist Incentive",
+    "name": "Pacifist Incenstive",
     "type": "ERC1155",
     "description": "Flip: Pay 100 gold to your opponent then end their attack phase. ",
-    "image": "https://bafybeic5wz24kekfbtotk767hd2a2zdrj5y2t5md32fcorqrzwlr63mts4.ipfs.w3s.link/PACIFIST%20INCENTIVE%20FRONT.webp",
+    "image": "QmXiqYVoz59V6MhSgHNLCjZJAwGk9dKBF5j7uBiciMzKiv",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -3682,7 +3682,7 @@
       },
       "name": {
         "name": "name",
-        "value": "Pacifist Incentive"
+        "value": "Pacifist Incenstive"
       },
       "type": {
         "name": "type",
@@ -3712,7 +3712,7 @@
       },
       {
         "trait_type": "name",
-        "value": "Pacifist Incentive"
+        "value": "Pacifist Incenstive"
       },
       {
         "trait_type": "type",
@@ -3741,7 +3741,7 @@
     "name": "Ignited Bear Trap",
     "type": "ERC1155",
     "description": "Flip: Activate when your opponent declares an attack; deal 15 burn damage to the attacking Guardian for 3 turns. ",
-    "image": "https://bafybeictu2yukuckb5mkjfejdegkbvqljlx7ym7w6up3yhjelw6z23e4v4.ipfs.dweb.link/IGNITED%20BEAR%20TRAP%20FRONT.webp",
+    "image": "QmVY4Mx2NsbNmCYL5zHQz5jgeKF5ZC69rESWwY7DVRm5VV",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -3809,7 +3809,7 @@
     "name": "Gea The Mystic",
     "type": "ERC1155",
     "description": "Flip: During your Main phase 1 select 1 damaged Guardian and heal them for 20 HP. This card remains on the field and it's effect can be reused 1 additional time.",
-    "image": "https://bafybeidmib5c5q4xy5u7smrpu4d35mfz6lvsa7rfan4mtmwnge2oqpynsu.ipfs.dweb.link/GEA%20THE%20MYSTIC%20FRONT.webp",
+    "image": "QmeZX6aAjza5KpZVukh7LfmAUKvPLTijyFJNi3tZZ6QvuM",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -3877,7 +3877,7 @@
     "name": "Backfire",
     "type": "ERC1155",
     "description": "Flip: Activate when your opponent declares an attack; negate the damage and reflect it back at the attacking Guardian. ",
-    "image": "https://bafybeie5yppj52hm6jxyvneurvrd4p635ke23gveotrzykhbyclhom7ace.ipfs.dweb.link/BACKFIRE%20FRONT.webp",
+    "image": "QmaT2zxvcLA1bFwQ72b3nnbYRWzL8uQGhmu2V5qepNrReX",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -3945,7 +3945,7 @@
     "name": "Book of pain",
     "type": "ERC1155",
     "description": "Flip: When your opponent declares an attack, double the incoming damage and reflect it back to the attacking Guardian. Upon success pay 100 gold and discard one card from your hand to the graveyard. ",
-    "image": "https://bafybeifikuvzbynpoh7do46dkxyhoowtgbeibwzgumpvgtgengyfjtiuza.ipfs.dweb.link/BOOK%20OF%20PAIN%20FRONT.webp",
+    "image": "QmW1XbefUQ6w8bZVWn8G6VPTadkhNHBHsXBPGg8qym6ZkV",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -4013,7 +4013,7 @@
     "name": "Knight's Revenge",
     "type": "ERC1155",
     "description": "Flip: When your opponent declares an attack, discard one Guardian from your hand to the graveyard; deal 50 damage to the attacking Guardian & end your opponent's attack phase.",
-    "image": "https://bafybeidyifr4vrtlnliqrwpgqdyuodzbyzddlqehcrkho4fuwzl2tpuj4y.ipfs.w3s.link/KNIGHT'S%20REVENGE.webp",
+    "image": "https://bafybeidyifr4vrtlnliqrwpgqdyuodzbyzddlqehcrkho4fuwzl2tpuj4y.ipfs.dweb.link/KNIGHT'S%20REVENGE.webp",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -4081,7 +4081,7 @@
     "name": "Lustful Prey",
     "type": "ERC1155",
     "description": "Flip: Select one Guardian on the opponent's side of the field, deal 50 damage. They cannot attack for one turn.",
-    "image": "https://bafybeidrjzty5rjjbnpovhk6i5dkj2sbuiy2f3jzofuvfxagmbvkuhuz5y.ipfs.dweb.link/LUSTFUL%20PREY%20FRONT.webp",
+    "image": "QmUzyFKpbPgNaHed6Qv4pR46x2bSLV3quGY8VSNummU4KF",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -4149,7 +4149,7 @@
     "name": "Spider's Den",
     "type": "ERC1155",
     "description": "Flip: Activate when your opponent declares an attack; deal 40 damage to the attacking Guardian; they cannot attack for 2 turns.",
-    "image": "https://bafybeigg7om6mfwdyaeqjkf222l5avevkti64wmb5k6yeoy3kpnv5tvqpa.ipfs.dweb.link/SPIDERS%20DEN%20FRONT.webp",
+    "image": "QmVZ56EQuysaU98hMEWUoZeMvdqq8YZdFuLwnQeMi4x9or",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -4217,7 +4217,7 @@
     "name": "Equal Exchange",
     "type": "ERC1155",
     "description": "Flip: Select one Guardian in your graveyard and pay gold equal to their summon cost; bring them back to the field. ",
-    "image": "https://bafybeidw4znsxl5tz2ftkmtysqw45omaxpxzdzal7hsxz4wp2fg63ayiji.ipfs.dweb.link/EQUAL%20EXCHANGE%20FRONT.webp",
+    "image": "QmfPcQhkbyEvkfQT1djaQdvzGH8KQW5Q5bVCNyX3FG755h",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -4285,7 +4285,7 @@
     "name": "Practice Dummy",
     "type": "ERC1155",
     "description": "Flip: When your opponent declares an attack; Practice Dummy absorbs it instead of the intended Guardian.",
-    "image": "https://bafybeigin65gwsxnspoi7dwpun4ka76cttqezik5nb5omcydiabjz7obee.ipfs.dweb.link/PRACTICE%20DUMMY%20FRONT.webp",
+    "image": "Qma4hzfVe1G2YVehH9wgp5AxswY5Yn11UgdiqXyZyEEGrn",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -4353,7 +4353,7 @@
     "name": "Achlys Jewelry Box",
     "type": "ERC1155",
     "description": "Flip: This card remains on the field for 3 turns; inflict 20 Venom damage to all Guardians your opponent controls for each turn. \n",
-    "image": "https://bafybeibq3ydxezlfmhbkv7qxad3dcv3mucnv5hbrnrx5fbdgvxwdt4jubu.ipfs.dweb.link/ACHLYS%20JEWELRY%20BOX%20FRONT.webp",
+    "image": "Qmcf2pDEdjkSXn8JMLbXupfCxA4EMJPgoopjxuwmHjxj6t",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -4421,7 +4421,7 @@
     "name": "Call of the Undying",
     "type": "ERC1155",
     "description": "Description: Flip: Select 1 Gaurdian from your grave yard and summon them to the field. If this card is destoryed, destory the Guardian. If the Guardian is destoryed, destroy this card.",
-    "image": "https://bafybeibqpyzfcasvvwfrg3lth3baxrmolaavsoiayjqieayofnhisb7joa.ipfs.dweb.link/CALL%20OF%20THE%20UNDYING%20FRONT.webp",
+    "image": "QmTzdH4R7moxtyQW5RG6egrkbpdVG6SjuCoekwJYo34aXa",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -4489,7 +4489,7 @@
     "name": "Return to the Void",
     "type": "ERC1155",
     "description": "Pay 150 gold to activate: Place a timer on 1 Void type Guardian on your opponent's side of the field. After 3 turns, the selected Guardian is sent to the grave yard.",
-    "image": "https://bafybeidveezo7q56wb7nmhgqxfotwuww2oy6r5c545hooob6oxpvtzuenq.ipfs.dweb.link/RETURN%20TO%20THE%20VOID%20FRONT.webp",
+    "image": "QmcGFd1Ed8vVr1T1o3JD4vrS2vbXhBK1rRWAQNcwv5Ycd1",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -4557,7 +4557,7 @@
     "name": "Collectors Horizon",
     "type": "ERC1155",
     "description": "Pay 100 Gold: Destroy all Action and Reaction Cards on both sides of the field.",
-    "image": "https://bafybeieihgpfozktbgcirnvtle5dq7ad7ljhew3b3b7cjn5roxoiqz3cna.ipfs.dweb.link/COLLECTORS%20HORIZON%20FRONT.webp",
+    "image": "QmTAZUBxKKPWZvmo43rs4LBdanNwihKWogH6HVcn5ZtMBo",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -4625,7 +4625,7 @@
     "name": "Void Tempest",
     "type": "ERC1155",
     "description": "Flip: When a Guardian on your opponent's side of the field successfully preforms an attack, Void Tempest surrounds the Guardian for 3 turns, dealing 25 Void Dmg per turn.",
-    "image": "https://bafybeiglqipymxitau46kilibetpdn42pdbflwnyby7nvjsccrrih732ma.ipfs.dweb.link/VOID%20TEMPEST%20FRONT.webp",
+    "image": "QmfCrUMxn2TkbuD2nj5oACnSmDFaQmLAuFFdjeP2kzdX7r",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -4693,7 +4693,7 @@
     "name": "Co-Bro",
     "type": "ERC1155",
     "description": "Flip: When a Guardian on your opponent's side of the field declares an attack, Co-bro interrupts the attack with a Venom Bite; 20% chance to infect the Guardian with Poison after activation.",
-    "image": "https://bafybeicp332ifwpjqvm7r4wuzcz4cthflmnp334lfi752zvlrc4vxrdcti.ipfs.dweb.link/CO-BRO%20FRONT.webp",
+    "image": "QmWoQqH3Dd5vcjAzU4e9CSRzPq1dQrt7qUMBTXfMmgKB1v",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -4761,7 +4761,7 @@
     "name": "Hook Jaw Snake",
     "type": "ERC1155",
     "description": "Flip: When a Guardian on your opponent's side of the field declares an attack, Hook Jaw Snake interrupts the attack with a Venom Bite; 20% chance to return the Guardian back to your opponent's hand.",
-    "image": "https://bafybeiccjlznaykeso3fiuyeaxgti2pxxohgydwsica4v2asezj6q6ph2q.ipfs.dweb.link/HOOK%20JAW%20SNAKE%20FRONT.webp",
+    "image": "QmbLwibYcVcD8juMFC7WZDNAT9g1TFGZ1QQzAtMNK1gZNx",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -4829,7 +4829,7 @@
     "name": "Iaijustu counter",
     "type": "ERC1155",
     "description": "Flip: When your opponent successfully attacks a Guardian on your side of the field, flip activate this card and deal 50% of the damage received back to the attacker. ",
-    "image": "https://bafybeib5mpgof52wdex4miz2vrkdsiuvwscr5u7tu2ilan2ud7jya4yidm.ipfs.dweb.link/IAIJUSTU%20COUNTER%20FRONT.webp",
+    "image": "QmcRHhRcEFnvmD4hcoJerG6cGUTQKkqJmZsdfUZ2yQ3wBU",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -4897,7 +4897,7 @@
     "name": "Show of hands",
     "type": "ERC1155",
     "description": "Flip: Your opponent chooses 1 of 2 options: \n\n● Reveal their hand to you.\n\n● Pay you 50 gold and discard 1 card to the grave yard.",
-    "image": "https://bafybeianfrlqdneetg2jozzarce3kvw5udjfzvktagwcilw4qfo6tuupkq.ipfs.dweb.link/SHOW%20OF%20HANDS%20FRONT.webp",
+    "image": "QmYLAUidib51mkdcVTND6cu7QAun9f7Feu9V7KAGGMMBfw",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -5101,7 +5101,7 @@
     "name": "Shinobi Guardians",
     "type": "ERC1155",
     "description": "Flip: If you control no Guardians on your side of the field, Summon 3 Guardians with the following stats:\n\n● 1: (Atk: 50; HP:50)\n● 2: (Atk: 50; HP:50)\n● 3: (Atk: 50; HP:50)\n\nIn each of your standby phases, pay 100 gold, or destroy all 3 guards",
-    "image": "https://bafybeigmmne7ihuaanrh2d7jijflltnvwx2mwnhzw4fvjbjrqaci4ukkvm.ipfs.dweb.link/SHINOBI%20GUARDIANS%20FRONT.webp",
+    "image": "QmV4PXy5bJimhNNb4mK2TGsW965eJ3RudYamzfFmBi62QC",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -5305,7 +5305,7 @@
     "name": "Tanks Burden",
     "type": "ERC1155",
     "description": "Flip: Activate if your opponent controls a \"Tank\" Type Guardian. This card remains face up for 5 turns; during each of your opponent's Standby phases, Deal 50 Damage to the Tank Guardian on their side of the field.",
-    "image": "https://bafybeighoz3e66ozgr2b7bqey36yjnfzddjw57fh24nxbiz6vqd4efmeqa.ipfs.dweb.link/TANKS%20BURDEN%20FRONT.webp",
+    "image": "QmaHCqTBv1BixP8D9hxBFUbDCD6AHZ92tmcRQNYYDvDLJS",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -5373,7 +5373,7 @@
     "name": "Grave Annoyance",
     "type": "ERC1155",
     "description": "Flip: Have at least 1 Guardian in your Grave yard to activate. This card remains face up for 5 turns; during each of your opponent's Standby phases, 1 Guardian on their side of the field is hit by a rock dealing 10 damage.",
-    "image": "https://bafybeifhk7malkpkjhz3kdrm4encfecrrdq2i2bwhglaowqhrjk6zbn3n4.ipfs.dweb.link/GRAVE%20ANNOYANCE%20FRONT.webp",
+    "image": "QmbTArmRUEuQDaiz3KHUNGPrCboDicGDRYinvU8rbYvmTD",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -5509,7 +5509,7 @@
     "name": "Surprise Entry",
     "type": "ERC1155",
     "description": "Flip: If you control no Guardians on your side of the field, pay 100 gold to hire 1 random Guardian from your deck with a cost of 300 gold or less to the field.",
-    "image": "https://bafybeicvcs5jg2jop5ey4yf7plghqarn5rz2rdx2g77knerxhddnrhtf7y.ipfs.dweb.link/SURPRISE%20ENTRY%20FRONT.webp",
+    "image": "Qmb32TbkccJXoidd4UuXaScEkr4urGoDbTL5tQiLRket9f",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -5577,7 +5577,7 @@
     "name": "Tsunami",
     "type": "ERC1155",
     "description": "Flip: If your opponent destroys a Water type Guardian on your side of the field, Deal 75 Water damage to all Guardians on their side of the field.",
-    "image": "https://bafybeigr6tebi62earopo5bpnlwxlydy7vntas6bblecjw25jgfumfr56e.ipfs.dweb.link/TSUNAMI%20FRONT.webp",
+    "image": "QmQtYxMh8MDktqHMrAHWHr8PYFxPaQfsEppQynMDwSkPfe",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -5713,7 +5713,7 @@
     "name": "Fire Tempest",
     "type": "ERC1155",
     "description": "Flip: When a Guardian on your opponent's side of the field successfully preforms an attack, Fire Tempest surrounds the Guardian for 3 turns, dealing 25 Fire Dmg per turn.",
-    "image": "https://bafybeid6fwgtdqhv6yybyblyxygcgvpogtfoip5dnkh2gk6qsmmazfuj6a.ipfs.dweb.link/FIRE%20TEMPEST%20FRONT.webp",
+    "image": "QmZTQ4VZvdhciTRUjbfM6uE3kFi85Bh6VPpzsF5jyspkfA",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -5849,7 +5849,7 @@
     "name": "Void Overload",
     "type": "ERC1155",
     "description": "Flip: When your opponent has a Void type Guardian on their side of the field, deal 25 damage to them and all other Guardians on their side of the field.\n",
-    "image": "https://bafybeibzcegbmqkijvmehwgkezz4rltzgr3tfqjshzh7bvkgnzqbejiyw4.ipfs.dweb.link/VOID%20OVERLOAD%20FRONT.webp",
+    "image": "QmRXX1WcSB3fHgwJbBP6BAyuBCJzn27ardiecSu7vqHatm",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -5914,10 +5914,10 @@
     "typeCard": "reaction"
   },
   {
-    "name": "Alugastor",
+    "name": "Alugaster",
     "type": "ERC1155",
     "description": "[Human | Fighter] \"Noble Paladin\" Activate:During your main phases, Alugastor can heal him self for 20 HP. Cooldown: 3 turns. ",
-    "image": "https://bafybeigg7nyiqntqw3wmci4o7vl4tladlusw5k2kwuv7ydgqfdvqg6x4ey.ipfs.w3s.link/ALUGASTOR%20FRONT.webp",
+    "image": "QmTGL3hPdD46p6KExLueRVCGbB19vGKzWJn4iRwfwg7txS",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -5926,7 +5926,7 @@
       },
       "name": {
         "name": "name",
-        "value": "Alugastor"
+        "value": "Alugaster"
       },
       "element": {
         "name": "element",
@@ -5972,7 +5972,7 @@
       },
       {
         "trait_type": "name",
-        "value": "Alugastor"
+        "value": "Alugaster"
       },
       {
         "trait_type": "element",
@@ -6017,7 +6017,7 @@
     "name": "Bert & Kurt",
     "type": "ERC1155",
     "description": "[Dwarf | Mage] \"Ariel Evasion\" Passive: Has a 10% chance of dodging one enemy attack. This effect applies to all attacks targeted at Bert & Kurt. ",
-    "image": "https://bafybeib6olccfz267eei7fchpdvmgxqhfidvd2nhjwldsmw374n7gypnpm.ipfs.dweb.link/BERT%20&%20KURT%20FRONT.webp",
+    "image": "QmeRDALhKtgu5FfEewNSdx9CMiA4XrdQ8EZoDjUBCRihhf",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -6117,7 +6117,7 @@
     "name": "Blaze Bane",
     "type": "ERC1155",
     "description": "[Beast | Assassin] \"Relentless Pursuit\" Passive: Upon death, blaze bane returns to the battle field at the start of your opponents battle phase with 50% HP & gold cost to 0. This effect occurs once. ",
-    "image": "https://bafybeiftq22phi6xox55p6nlzessjki7roju6xb2657uxsjv53hxoyw2ua.ipfs.dweb.link/BLAZE%20BANE%20FRONT.webp",
+    "image": "https://bafybeidap55m6f7zgdjmsjalo75htsqifvb3g5sirg62ykuzixul7e4dei.ipfs.nftstorage.link",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -6162,7 +6162,7 @@
       },
       "image": {
         "name": "image",
-        "value": "https://ipfs.moralis.io:2053/ipfs/QmeTvA981w1DwpKrjBsTC7fyZvxGtZ4NShSXA8K7hA41vZ"
+        "value": "https://bafybeidap55m6f7zgdjmsjalo75htsqifvb3g5sirg62ykuzixul7e4dei.ipfs.nftstorage.link"
       }
     },
     "attributes": [
@@ -6208,7 +6208,7 @@
       },
       {
         "trait_type": "image",
-        "value": "https://ipfs.moralis.io:2053/ipfs/QmeTvA981w1DwpKrjBsTC7fyZvxGtZ4NShSXA8K7hA41vZ"
+        "value": "https://bafybeidap55m6f7zgdjmsjalo75htsqifvb3g5sirg62ykuzixul7e4dei.ipfs.nftstorage.link"
       }
     ],
     "typeCard": "wood"
@@ -6217,7 +6217,7 @@
     "name": "Botniq",
     "type": "ERC1155",
     "description": "[Beast | Tank] \"Frontliner\" Passive: While on the field, all attacks are directed to Botniq.",
-    "image": "https://bafybeigudepf3tmxmd4fiu4fya3v26wodnujk5qed7hwhet2stjbflgjly.ipfs.dweb.link/BOTNIQ%20FRONT.webp",
+    "image": "QmW3rEF8wx3kvb1dcHwSUo9CoCkCJ5dCA5mVmYUELgbCUf",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -6317,7 +6317,7 @@
     "name": "Farmer Otis",
     "type": "ERC1155",
     "description": "[Human | Fighter] \"Angry Villager\" Passive: Farmer Otis Gains 25 Attack for each \"Angry Villager\" Guardian on your side of the field.",
-    "image": "https://bafybeihijhl3oiqbckp3kaojbar5apposrlqnvojt6y6k4duowuwt3tsia.ipfs.dweb.link/FARMER%20OTIS%20FRONT.webp",
+    "image": "QmdfbX7cotJFyUv92iSu7WeQHRaWzjqeTtnXWCU6PxUSGL",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -6517,7 +6517,7 @@
     "name": "Fire Starter Jane",
     "type": "ERC1155",
     "description": "[Human | Mage] \"Angry Villager\" Passive: Fire Starter Jane gains 25 attack for all \"Angry Villager\" Guardians on your side of the field.",
-    "image": "https://bafybeic7jsetfpouo3eeec4t2swnrxt6usrwpdse75w4eudjyydp3mdk6q.ipfs.dweb.link/FIRE%20STARTER%20JANE%20FRONT.webp",
+    "image": "QmP5dM3ZPB3gX2T1DJKnXYmBw2ENV3uw5NaRfMxC6ZKfAV",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -6617,7 +6617,7 @@
     "name": "Lumberjack Nick",
     "type": "ERC1155",
     "description": "[Human | Tank] \"Angry Villager\" Passive: Lumberjack Nick gains 25 attack for all \"Angry Villager\" Guardians on your side of the field.",
-    "image": "https://bafybeicuuwejzpfq6mwvycplq4oaufywrtgp3t5ih4554k2dsvbk4m6nge.ipfs.dweb.link/LUMBERJACK%20NICK%20FRONT.webp",
+    "image": "QmX7CgEKGxqDimbS8TL1hxXCEVJo7NsFcNuMuoHJJE63w5",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -6817,7 +6817,7 @@
     "name": "Clyde",
     "type": "ERC1155",
     "description": "[Human| Mage] \"Void Novice\" Passive: Attacks from Clyde have a 15% chance of dealing 10% Critical damage. ",
-    "image": "https://bafybeienevvxaelthamteuvzf5enngkwvaibzgc772xkl7zhbmnephq7ta.ipfs.dweb.link/CLYDE%20FRONT.webp",
+    "image": "QmXuqUAXrSg2Y76yfqcRbibXveo2iKigFduxSMtbu8SzVQ",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -6917,7 +6917,7 @@
     "name": "Vrats",
     "type": "ERC1155",
     "description": "[Goblin | Support] \"War Scavenger\" Passive: Once per turn, steal 10 gold from your opponent's inventory. ",
-    "image": "https://bafybeiaaud5g3c75qua6up3qtsgkhhkdcttq6kgaumwpxjklkgcqw64wha.ipfs.dweb.link/VRATS%20FRONT.webp",
+    "image": "QmaNQ87d25sT24i38JeF23QC8TUrbun2hZqb71qFhB9a2Y",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -7017,7 +7017,7 @@
     "name": "Jumba",
     "type": "ERC1155",
     "description": "[Ogre | Fighter] \"Bone Smasher\" Activate: Launch a tree with a 40% chance of hitting all enemy Guardians on the field for 20 damage.",
-    "image": "https://bafybeifohhlvsg2o55ubtlwokxeuwnbmhalamsehgemrnjlzhce3ohtnnm.ipfs.dweb.link/JUMBA%20FRONT.webp",
+    "image": "QmQh6odzNHGAiDSRMm5oo9vp5z7VTnYSzS1paTmzWFaHy6",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -7117,7 +7117,7 @@
     "name": "Orneth",
     "type": "ERC1155",
     "description": "[Zombie | Fighter] \"Undying Courage\" Passive: Upon death, Orneth has a 25% chance of returning to the field from the graveyard. Return count: 2",
-    "image": "https://bafybeicdukvlw24msrtdkzlhfgweqwxdgfw5hm3qs5finjqvlqgb3ecyay.ipfs.dweb.link/ORNETH%20FRONT.webp",
+    "image": "QmZGGdzgetcZSK2TShXG9xGXYDA67s8NCQpQ3URJMHA8Jk",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -7217,7 +7217,7 @@
     "name": "Beta Wolf Tax",
     "type": "ERC1155",
     "description": "[Beast | Support] \"Wolf Pack\" Passive: When Beta Wolf Tax is sent to the grave yard, add one \"Wolf Pack\" Guardian to your hand from your deck.",
-    "image": "https://bafybeidshh2mwkw2sjkzxk7p3aqji43umduabdjhsyr5pqhvmhu43mopem.ipfs.dweb.link/BETA%20WOLF%20TAX%20FRONT.webp",
+    "image": "QmXC56EJq3Ged7akYoP16sooMQ58Q3X92bWPoNm3MUVpsa",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -7317,7 +7317,7 @@
     "name": "Fire Croc",
     "type": "ERC1155",
     "description": "[Dragon | Mage] When Fire Croc is destroyed and sent to the graveyard: Target 1 Guardian your opponent controls; deal 50 Fire Damage.",
-    "image": "https://bafybeiecwfrrw2qn4o3lezqrxbsieqtqllpcsdvvgwhlf5txo74p3asgce.ipfs.dweb.link/FIRE%20CROC%20FRONT.webp",
+    "image": "QmTRQEdzE3CuDDfwUnU4o2rNSSXgqYRVvY3wz1djrDfDpH",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -7417,7 +7417,7 @@
     "name": "Tessa",
     "type": "ERC1155",
     "description": "[Human | Assassin] Activate: Tessa increases her Crit chance & Damage by 30% against Void type Guardians for 2 turns. Cooldown 2 turns. ",
-    "image": "https://bafybeid2zwooouorlj4n7en2p7zvsg4kijyjhg7y77vdvt2dkcojkzpdcy.ipfs.dweb.link/TESSA%20FRONT.webp",
+    "image": "QmbufdFsRh1U6DsGGxGZ72mjXMKYDqgA9HTJs71VcNWrDX",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -7517,7 +7517,7 @@
     "name": "Voidwalker Kek'zin",
     "type": "ERC1155",
     "description": "Active: Select one enemy Guardian as your rival; Kek'zin takes 25% less DMG from them.",
-    "image": "https://bafybeicfgc57dxnl3ekrdgloco2o2aerqcsef7goaolt5v5zm5g36yedo4.ipfs.w3s.link/Voidwalker_Kekzin_FRONT.webp",
+    "image": "Qmb8h7nbPzRKMaazM1W61zLgPWmtvJT9ojNjWtQD29WoXF",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -7617,7 +7617,7 @@
     "name": "Uart the Goblin",
     "type": "ERC1155",
     "description": "[Goblin | Support] \"Gold Thief\" Passive: Every successful attack from Uart steals 10 gold from your opponent's inventory.",
-    "image": "https://bafybeia6wxfi3bgc5mcuhor6psngtkjignbabybqfvcr2bhvprwjef6rb4.ipfs.dweb.link/UART%20THE%20GOBLIN%20FRONT.webp",
+    "image": "QmexzFjACoLvL6GN9GicHq7ehBu5wtankCptw3yhZmYgZV",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -7717,7 +7717,7 @@
     "name": "Cave Ogre",
     "type": "ERC1155",
     "description": "[Ogre | Support] Passive: While Cave Ogre is on the field, all Ogre type Guardians gain +10 to ATK & HP.",
-    "image": "https://bafybeigmkukrw336fqzyndz2t6tritty7aze6ksg7yjfq2dx5ospyairgm.ipfs.dweb.link/CAVE%20OGRE%20FRONT.webp",
+    "image": "QmYTFinzcVfoL872unMDKzh9LPxLjVvhmXtwP97rg5WCFW",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -7817,7 +7817,7 @@
     "name": "Heldor",
     "type": "ERC1155",
     "description": "[Zombie | Support] \"Zombie Replacement\" Passive: When Heldor is sent to the grave yard as a result of battle, summon 1 Zombie type Guardian worth 100 gold or less from your deck.",
-    "image": "https://bafybeiaq5qjfdxh5qade3u65oejhl4sraztrfwlt7k7jwizqjqsjcj7wri.ipfs.dweb.link/HELDOR%20FRONT.webp",
+    "image": "QmQNQMyc9EogmnZRfz12ygXuC1UdTBopzcgsAytjqC5a4M",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -7917,7 +7917,7 @@
     "name": "Huntress",
     "type": "ERC1155",
     "description": "[Vampire | Tank] Passive: Huntress heals for 10 HP per turn if you control another \"Vampire\" Type Guardian on your side of the field. Additionally Huntress Gains +10 HP for each Vampire type Guardian in your Grave yard. ",
-    "image": "https://bafybeidzo2uztnnmhwtpw3nkednvafszwcf5xepp5wmovrmenldasa7vaq.ipfs.dweb.link/HUNTRESS%20FRONT.webp",
+    "image": "QmYC5VLLSksB44mrYuq23t7gDndwa2F1nFHRb2gZNSDH7R",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -8017,7 +8017,7 @@
     "name": "Gargoyle",
     "type": "ERC1155",
     "description": "[Vampire | Support] Passive: While Gargoyle is on the field, all Vampire type Guardians gain +10 HP.",
-    "image": "https://bafybeih35yh42myw7ppcuok7qehakznm4k32cqciykktxb4nrfzjrpinwq.ipfs.dweb.link/GARGOYLE%20FRONT.webp",
+    "image": "QmaYLzDmo7RSFwvDdWigRs9BkBmqUECBhjTqbuJniJbVPK",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -8117,7 +8117,7 @@
     "name": "Demona",
     "type": "ERC1155",
     "description": "[Vampire | Support] Passive: While Demona is on the field, all Vampire type Guardians gain +15 HP.",
-    "image": "https://bafybeibybngr6dg3gcrwfryusxh2smvn3vwlqlbj5d6m77kh67i53gfsey.ipfs.w3s.link/FRONT%20DEMONA.webp",
+    "image": "QmdcCeAJifABL2ah2pnDHvX6ewNn9tLMzV522KJVGi3Bsu",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -8217,7 +8217,7 @@
     "name": "Solanna",
     "type": "ERC1155",
     "description": "[Human | Healer] \"Healthy Aura\" Activate: Select one ally Guardian and heal them for 10 HP. Cooldown: 2 turns. ",
-    "image": "https://bafybeichhrhet6kpcobggsktxa2ysql2pwcdt7kgt6qoghphhsyn34dhte.ipfs.dweb.link/SOLANNA%20FRONT.webp",
+    "image": "QmR2WEK5nxXinVzWF7KgEkHUpCbggd2B1CEh9WLoNriSGf",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -8317,7 +8317,7 @@
     "name": "Master Kwayke",
     "type": "ERC1155",
     "description": "[Human | Mage] Passive: \"Earth Prison\" Activate: During your MP1, select up to 2 guardians and incase them in Stone. They cannot attack or take damage for 2 turns. Cooldown: 4 turns. ",
-    "image": "https://bafybeie4ms57l4s2wt3nqfyxwsgp5irrgezwv5q3vymkfgybj4wxgugstq.ipfs.dweb.link/MASTER%20KWAYKE%20FRONT.webp",
+    "image": "QmPp26zniDhDysoiWGSerGXr769ptbNYd4PhWJuYtbr4fv",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -8417,7 +8417,7 @@
     "name": "Undead Summoner",
     "type": "ERC1155",
     "description": "[Undead | Mage] Active: Pay 25 gold to summon 1 undead / zombie type guardian worth 100 gold or less from your deck to the field.",
-    "image": "https://bafybeibkfu4brr3fet2n4ozlb73f5ezry5qhtgboojqie5s4hemmimitey.ipfs.dweb.link/UNDEAD%20SUMMONER%20FRONT.webp",
+    "image": "QmaRJN6L31QmeJTwGy5gCyMz3hzXPGoaYgyZ4wG2oEJzKB",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -8617,7 +8617,7 @@
     "name": "Nesia The Tormentor",
     "type": "ERC1155",
     "description": "[Undead | Support] Passive: When Nesia is sent to the graveyard she leaves an orb which heals all undead type Guardians on both sides of the field for 10 HP during your next 2 standby phases.",
-    "image": "https://bafybeid7taxaxc2gqtd4kmavfst262v2kopw3hw7p5vea54a36cmq5i4xy.ipfs.dweb.link/NESIA%20THE%20TORMENTOR%20FRONT.webp",
+    "image": "QmWSTcG6QEdUsoGNWRjLhWnHCSocWbn5h4817AcW9J5kRT",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -8717,7 +8717,7 @@
     "name": "Bomber Fauz",
     "type": "ERC1155",
     "description": "[Goblin | Support] \"Goblin Crew\" Passive: Fauz gains 25 ATK for all \"Goblin Crew\" Guardians on your side of the field. ",
-    "image": "https://bafybeibrtx5jqsgo5lfiylxtczssq2oa6pdmwwjfwf3pp7gwyg7lolq64a.ipfs.dweb.link/BOMBER%20FAUZ%20FRONT.webp",
+    "image": "Qmf7WHF7gw5nc8iTMMVZ6KvFBP3TDFnCPqWrkFaLPNXaLL",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -8817,7 +8817,7 @@
     "name": "Hitman Braaz",
     "type": "ERC1155",
     "description": "[Goblin | Assassin] \"Goblin Crew\" Passive: Braaz gains 25 ATK for all \"Goblin Crew\" Guardians on your side of the field. ",
-    "image": "https://bafybeibxks7yx7hwh6ytk6s4saxdiw5q5jocj4qeggxumnk2u7xzlql7uy.ipfs.dweb.link/HITMAN%20BRAAZ%20FRONT.webp",
+    "image": "QmRfR5NggiGgL74gFUPFutew1PesPdKSxX5zYjPNNx6pVe",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -8917,7 +8917,7 @@
     "name": "Technician Zeed",
     "type": "ERC1155",
     "description": "[Goblin | Support] \"Goblin Crew\" Passive: While Zeed is on the field, all \"Goblin Crew\" Guardians Gain 25 HP.",
-    "image": "https://bafybeihav7tcgyzi7tpely42ouin7g5kb5h2remm7akg3ql2usfpvim7vu.ipfs.dweb.link/TECHNICIAN%20ZEED%20FRONT.webp",
+    "image": "QmfEG8zRwjb8LNWRdvAWYgtqrWCmd5ZMb3DQSb1LMmeowM",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -9017,7 +9017,7 @@
     "name": "Sky Surfer Huugs",
     "type": "ERC1155",
     "description": "[Goblin | Support] \"Goblin Crew\" Passive: While Zeed is on the field, all \"Goblin Crew\" Guardians Gain 25 HP.\n",
-    "image": "https://bafybeic2x72rvxix6wlsmj45lxzrfxms5pfhhvga4cb4eshhokym7juuki.ipfs.dweb.link/SKY%20SURFER%20HUUGS%20FRONT.webp",
+    "image": "QmZZM3RD3BCqcuEdAUPDkzDB8pvUXyFXpZQkTr5AGSXws6",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -9117,7 +9117,7 @@
     "name": "Livion",
     "type": "ERC1155",
     "description": "[Human | Tank] \"Poison Dominance\" Passive: During each of your Standby Phases, deal 5 Venom DMG to all non-Venom type Guardians on your opponent's side of the field.",
-    "image": "https://bafybeidrzs5zgg6vbobbvwzwf3tv4y63irg373xsrdgsltbv5gmd2kn7qy.ipfs.dweb.link/LIVION%20FRONT.webp",
+    "image": "QmeyLCnJmbJai4HFAFPTMwuRoFBNY7EB2Zz8PmVz2K1KY3",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -9217,7 +9217,7 @@
     "name": "Zalla",
     "type": "ERC1155",
     "description": "[Human | Support] \"Poison Revenge\" Passive: Zalla cannot be targeted in the Battle Phase while another Guardian is on your side of the field; Deal 5 Venom DMG during each of your Standby Phases to all non-Venom type Guardians on your opponents side of the field. ",
-    "image": "https://bafybeig6c4ozkbbbolquu7iyhc7hqgwxtpmpmuzfhds7ng2tk4njghscp4.ipfs.dweb.link/ZALLA%20FRONT.webp",
+    "image": "QmPBVUvoBaYAxLXt6k2dw32oLjxV29Af1Qtjg2V4gQicDA",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -9317,7 +9317,7 @@
     "name": "Mozen",
     "type": "ERC1155",
     "description": "[Human | Mage] \"Poison Curse\" Activate: In your MP1, select up to 2 enemy Guardians and surround them in Poison dealing 5 Venom DMG per turn during each of your Standby Phases. If Mozen is attacked, this ability resets. ",
-    "image": "https://bafybeidanebst4wcfve4vw66vg4yaxrlmd4tuq4mawbmonglsiqk6uopz4.ipfs.dweb.link/MOZEN%20FRONT.webp",
+    "image": "QmRJ7RPi1z8xSNWsstQ98yes7TTTM2VuKuiyYzUwPeRupo",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -9417,7 +9417,7 @@
     "name": "Ven'Pion",
     "type": "ERC1155",
     "description": "[Insect | Fighter] \"Venom Stinger\" Activate: Your next attack inflicts Venom dealing 10 DMG per turn during each of your Standby Phases. If Ven'Pion is attacked, this ability resets.",
-    "image": "https://bafybeiaodtgnm4wz6eazzx5i3eesdjfngxm6q5ohipflfhvd5cru3ihhnm.ipfs.w3s.link/Ven'Pion.webp",
+    "image": "https://bafybeiaodtgnm4wz6eazzx5i3eesdjfngxm6q5ohipflfhvd5cru3ihhnm.ipfs.dweb.link/Ven'Pion.webp",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -9517,7 +9517,7 @@
     "name": "Void Fragment X",
     "type": "ERC1155",
     "description": "[Golem | Support] \"Trouble Maker\" Passive: Cannot be targeted in the Battle Phase while another Guardian is on your side of the field; Deal 5 Void DMG during each of your Standby Phases to 1 random non-Void type Guardian on your opponents side of the field. ",
-    "image": "https://bafybeifomorv2c3ewvrxjgyxruk3enyqc2awuz2rx7iasiyyovnm3oga6e.ipfs.dweb.link/VOID%20FRAGMENT%20X%20FRONT.webp",
+    "image": "QmQ1mdcsJUuj6u5C3t4dhAzvKHMbNXfX4Qy1hfrsU1th5v",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -9617,7 +9617,7 @@
     "name": "Void Fragment Y",
     "type": "ERC1155",
     "description": "[Golem | Support] \"Emulate\" Passive: When Oxi The Void Golem is on the field and declares an attack, Void Fragment Y Mimics the attack doing 50% of it's current ATK.",
-    "image": "https://bafybeib7lu2xtcssnlrbvqj2c5phihiemt4yusqcmhppy34jryjv2dejwy.ipfs.dweb.link/VOID%20FRAGMENT%20Y%20FRONT.webp",
+    "image": "QmUZfv1MByWE7mWMgxdLt3BYkbHVBK27yW1kfEkrZXpqvg",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -9717,7 +9717,7 @@
     "name": "Xoi'fu",
     "type": "ERC1155",
     "description": "[Beast | Support] \"Aqua Soul\" Activate: During your MP, pay 50 gold to send Xoi'fu to the Grave yard and Hire a Water Type Guardian from your deck with 200 HP or less to the field. Uses: 1.",
-    "image": "https://bafybeifaemc6lkipqi3ddkgf4hokqkwq2eaudgqk26jamnlvu7lcep3z5u.ipfs.dweb.link/XOIFU%20FRONT.webp",
+    "image": "Qmd1FSRuLu5W13sj5NVf62PUUEFpCb48HPGmUytdXimGRF",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -9817,7 +9817,7 @@
     "name": "Zombie Archer",
     "type": "ERC1155",
     "description": "[Zombie | Assassin] \"Dimensional Pierce\" Activate: Once every 5 turns, Zombie Archer can attack your opponents LP directly for 100% of his current damage. ",
-    "image": "https://bafybeigtc4ywi4d2jmlw6pyilvaj3jyw2zf65d5af4gt6o3ur6uhearbca.ipfs.dweb.link/ZOMBIE%20ARCHER%20FRONT.webp",
+    "image": "QmZuTt3sMa82vwvCfRTXCdJTfY7dfGJgD62MZifDqFFd3e",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -9917,7 +9917,7 @@
     "name": "Undead Fighter",
     "type": "ERC1155",
     "description": "[Undead | Fighter] \"Venom Retaliate\" Passive: When Undead Fighter is attacked in the Battle phase, counter attack inflicting 5 Venom DMG. ",
-    "image": "https://bafybeicbjhii3u2prlo4xmue3musvd6lda3u7r7yyfpwuqmcwipejzuiqq.ipfs.dweb.link/UNDEAD%20FIGHTER%20FRONT.webp",
+    "image": "QmdmVeaq59oY49i9kDpqYR5L2Bd4JCd5VRt5rGwZvv9x1V",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -10117,7 +10117,7 @@
     "name": "Rossi",
     "type": "ERC1155",
     "description": "[ Beast | Assassin ] \"Poison Plague\" Passive: Upon death, infect the Guardian who defeated Rossi with poison dealing 10 damage per turn for 2 turns.",
-    "image": "https://bafybeibmhxac6dptl3u6irgsy5633fzobuz2ohe3r4mjndkrgguzazb5ay.ipfs.dweb.link/ROSSI%20FRONT.webp",
+    "image": "QmTDDWzSjtLnrscLLzpWwWZgGaSSo6qr5RfoYQzBngm6Qv",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -10217,7 +10217,7 @@
     "name": "Agodol",
     "type": "ERC1155",
     "description": "[Demon | Fighter] \"Fire Born\" Passive: Reduce incoming damage from all Earth-Type Guardians by 10. ",
-    "image": "https://bafybeif3rooq4n2pqxzyoaksvd6szu3cxcualeknzuu7ilfgloubrrsk6i.ipfs.dweb.link/AGODOL%20FRONT.webp",
+    "image": "Qmf98wN2bqSRuY5CmHVLop3uneH4JkjcjjVXY5S5Pxcs5p",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -10317,7 +10317,7 @@
     "name": "Haley",
     "type": "ERC1155",
     "description": "[Human | Assassin] \"Bomber Woman\" Activate: Target up to 2 enemy Guardians; Deal 40 attack to both of them. Cooldown: 3 turns. ",
-    "image": "https://bafybeiey4auixjwkmlmmxzzhf6ykkrkqoqj3r3a5yp7erjde5uzlyv7d7q.ipfs.dweb.link/HALEY%20FRONT.webp",
+    "image": "QmUAHJu45NotiYQZyorxVB1uAJdZ5oUVxsSE2hAR488n99",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -10417,7 +10417,10 @@
     "name": "Yoshiko",
     "type": "ERC1155",
     "description": "[Beast | Fighter] \"Good boy\" Passive: Attacks targeted towards Yoshiko have a 30% chance of missing. ",
-    "image": "https://bafybeieelr6werej46dofhhtzgnsuynded7bxfweqrq5dpmyj6pzeloti4.ipfs.dweb.link/YOSHIKO%20FRONT.webp",
+    "image": "QmRDDELg9dWwtiFT4C8oZ1sTnKBSubDS5qdc76adEZNCy7",
+    "synergies": [
+      "Hanako"
+    ],
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -10517,7 +10520,7 @@
     "name": "Otake Yukito",
     "type": "ERC1155",
     "description": "[Human | Assassin] \"Speedster\" Activate: Otake Yukito can attack twice in one battle phase. Cooldown: 2 turns. ",
-    "image": "https://bafybeibiyupl5vf5b3tswgxwmuzm7wdrssmpxnmonlwyc6p422onj2rw7q.ipfs.dweb.link/OTAKE%20YUKITO%20FRONT.webp",
+    "image": "QmPPKnHMNVxgVYmf3Wmw6ZvjgSPzNUBzPk8TcYHcHAZcUs",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -10617,7 +10620,7 @@
     "name": "Eclipso",
     "type": "ERC1155",
     "description": "[Human | Assassin] \"Shadow Trickster\" Passive: Attacks have a 10% chance of stealing 50 gold from your opponent.",
-    "image": "https://bafybeiez5zm7egfewa2j73rll2dkgmfwqd5rdenpq7azf76cq5sodlbgyy.ipfs.dweb.link/ECLIPSO%20FRONT.webp",
+    "image": "QmYqH4mZUgBsz9FiJY1zwcz22K2QSiPdvsiQzQh6p745qb",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -10717,8 +10720,12 @@
     "name": "Sahan",
     "type": "ERC1155",
     "description": "[Human | Assassin] \"Nordic\" Passive: Attacks have a 50% chance to cause 5 bleed damage for 1 turn.",
-    "image": "https://bafybeidibuft2igaq6gbdjtwhdmnse3jkl3itqtsucmj6twyevczqhexne.ipfs.dweb.link/SAHAN%20FRONT.webp",
+    "image": "QmUXyKJr5qytprysLc6L2GfFmGmqik5gjH8cg2349qAvFe",
     "symbol": "GATE",
+    "synergies": [
+      "Eydis",
+      "Kara"
+    ],
     "properties": {
       "id": {
         "name": "id",
@@ -10817,7 +10824,7 @@
     "name": "Norfelo",
     "type": "ERC1155",
     "description": "[Dwarf | Mage] \"Gas Technician\" Passive: Norfelo's attacks have a 10% chance to cause poison dealing an addtional 10 damage next turn.",
-    "image": "https://bafybeidclhkhameal4ap3xyp5tynnw7smv43z6g2psxbyrmelevoswjmve.ipfs.dweb.link/NORFELO%20FRONT.webp",
+    "image": "QmczbBwnSFtn2haXxF2VLosb4fkPQhpZFQwK8eNjzHhYVL",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -10917,7 +10924,7 @@
     "name": "Erika",
     "type": "ERC1155",
     "description": "[Human | Healer] \"Thermotherapy\" Activate: Select one ally Guardian and heal them for 20 HP. Cooldown: 2 turns. ",
-    "image": "https://bafybeiabepffzmikb5hn6jwafcx56jljr2motpzzzpkwlbille25hqm6bq.ipfs.dweb.link/ERIKA%20FRONT.webp",
+    "image": "QmUbUpenwMGLMo7Fm2HGqbNQTjLiUp3ZnHPNrxqQ5iVLjt",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -11017,7 +11024,7 @@
     "name": "Ophelia The Resurrector",
     "type": "ERC1155",
     "description": "[Undead | Healer] Activate: Heal all undead / zombie type Guardians on your side of the field for 25 HP.  Cooldown: 2 turns.",
-    "image": "https://bafybeiganpz2ei4vuqbnlka6c3nevz7vxhtiqyn2nx7ub7di6lj5djgepu.ipfs.dweb.link/OPHELIA%20THE%20RESURRECTOR%20FRONT.webp",
+    "image": "QmeYG2y8NTZRtfyhyxwoCGizReQGdrbgXM8717d177kyZU",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -11117,7 +11124,7 @@
     "name": "Undead Turtle",
     "type": "ERC1155",
     "description": "[Undead | Support] Passive: When undead turtle is sent to the grave yard as a result of battle, summon 1 undead type guardian worth 100 gold or less from your deck.",
-    "image": "https://bafybeidlaxtwuehbfl6apq7ptkidfyqrzzb2ldjsofjk6qiare5lnitn34.ipfs.dweb.link/UNDEAD%20TURTLE%20FRONT.webp",
+    "image": "QmVV2GoG6y4okHM8tLKmNrcbXPm5XhR2m9DbsDmY9HPYB1",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -11417,7 +11424,7 @@
     "name": "Omega Wolf Pax",
     "type": "ERC1155",
     "description": "[Beast | Support] Passive: While Omega Wolf Pax is on the field, all \"Wolf Pack\" Guardians gain +20 ATK",
-    "image": "https://bafybeiepoc7cvrnjzrflqc4wxr5bc7ayjydkijsjgzrkihojmfosi3hlwu.ipfs.dweb.link/OMEGA%20WOLF%20PAX%20FRONT.webp",
+    "image": "QmYwn629ZF5Rm9FJWhuKrgsm27ZWLPBfTH6g3HJjTNUiaC",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -11517,7 +11524,7 @@
     "name": "Lone Wolf Lex",
     "type": "ERC1155",
     "description": "[Beast | Assassin] \"Wolf Pack\" Active: Lone Wolf Lex goes for the throat executing any Human type Guardians under 15% health. Cooldown 3 turns. ",
-    "image": "https://bafybeigcibklqf524pcw5ffnwehakf43x3fp5wa3sx6oagoudnmnj3ail4.ipfs.dweb.link/LONE%20WOLF%20LEX%20FRONT.webp",
+    "image": "QmbqfKayhs6tWo2QzWZqLrSbhgJxe5bkjKZM9bPR7i2uSu",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -11717,7 +11724,7 @@
     "name": "Dr. Doggett",
     "type": "ERC1155",
     "description": "[Beast | Mage] \"Path Finder\" Activate: Select 1 Action / Reaction card on your opponent's side of the field:\n\n● If its face down, pay 150 gold to flip it.\n\n● If its face up, pay 100 gold to destory it.",
-    "image": "https://bafybeicxr3rhbjaq6ienl5oubmbefulcej3k6637tosm2irrxepe464gei.ipfs.dweb.link/DR.%20DOGGET%20FRONT.webp",
+    "image": "QmdWEiFjFc81Dpk5KfUzUdAdsdnsNZmxyQoqa1VstX6BLn",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -11817,7 +11824,7 @@
     "name": "Undead Archer",
     "type": "ERC1155",
     "description": "[Undead | Assassin] \"Dimensional Pierce\" Activate: Once every 5 turns, Undead Archer can attack your opponents LP directly for 100% of his current damage. ",
-    "image": "https://bafybeifvdhu6q73jm6cou3uqxocczmab6zaus7a2274xrbvovfjtqnswiq.ipfs.dweb.link/UNDEAD%20ARCHER%20FRONT.webp",
+    "image": "QmTqgy6bPnBR61wDnUQXzdPapQP1aAornda1imi5yxUYpA",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -11917,7 +11924,7 @@
     "name": "Kong Fu Turtle",
     "type": "ERC1155",
     "description": "[Beast | Fighter] \"Double Kick\" Passive: During your battle phase, Kong Fu Turtle has a 25% chance of attacking twice when he attacks an enemy Guardian.",
-    "image": "https://bafybeigshxdjfagfokhnxrl4dkzwfpa5p3ojxappupqw3gclhxsmjzscbu.ipfs.dweb.link/KONG%20FU%20TURTLE%20FRONT.webp",
+    "image": "QmSLfkwvnEVpNAHzR4ivVKLkFBN7Lfj8LBjb16rohi5aiM",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -12017,7 +12024,7 @@
     "name": "Glowe",
     "type": "ERC1155",
     "description": "[Elemental | Support] \"Fire Works\" Passive: While you control another \"Elemental\" Type Guardian, Glowé cannot be attacked. During each of your End Phases: Inflict 50 damage to your opponents LP. ",
-    "image": "https://bafybeihtrhgmlxtrjoxdouomg64depmj6jllqk2f65pu4urv5hw4icee3e.ipfs.w3s.link/GLOWER%20FRONT.webp",
+    "image": "QmQFy1puxvdbPEBPnrMqxf8J3GpWQqRQteZkZabgfutKtD",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -12117,7 +12124,7 @@
     "name": "Sampson",
     "type": "ERC1155",
     "description": "[Human | Tank] \"Earth Bend\" Active: During your Main Phase 1, Sampson gives him self an Earth shield worth 30% of his current HP. Uses: 1",
-    "image": "https://bafybeifjt6mcch2wze2qi4vmluaqsjugmxlkt4c67dcg6n7uxnhnzz5kyy.ipfs.dweb.link/SAMPSON%20FRONT.webp",
+    "image": "QmQGGQoTPBFwZKbGHHipQMLA5mxQazpPzTQuZ6i93HyrFp",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -12217,7 +12224,7 @@
     "name": "Maloss",
     "type": "ERC1155",
     "description": "[Beast | Tank] Passive: When Maliss is attacked, she gains an Earth shield worth 50% of her current HP.",
-    "image": "https://bafybeieiovck7mjgsfh4nugctqcd6ao67oxuqpovowff3jo3gvkzvdss7a.ipfs.dweb.link/MALOSS%20FRONT.webp",
+    "image": "Qmaaewkotd1Jvm6ZscSuvsQ2WFWxJfjCPCMzxBPqLFJSfj",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -12317,7 +12324,7 @@
     "name": "Mata Gladiator",
     "type": "ERC1155",
     "description": "[Squamata | Fighter] \"Cold Blooded\" Passive: Mata Gladiator gains 30 ATK for all \"Cold Blooded\" Guardians on your side of the field.",
-    "image": "https://bafybeiglfpg6oqthfbcymzfi7vjryjbtj6p62gb5j6cgotsgbfsjznj5aa.ipfs.dweb.link/MATA%20GLADIATOR%20FRONT.webp",
+    "image": "QmTx4WFaVKvo9RuGRap1C8PB3QCW4tHvktwxh2dbMZWnNe",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -12417,7 +12424,7 @@
     "name": "Mata Fighter",
     "type": "ERC1155",
     "description": "[Squamata | Fighter] \"Cold Blooded\" Passive: Mata Fighter gains 30 ATK for all \"Cold Blooded\" Guardians on your side of the field.",
-    "image": "https://bafybeicaj43pzglaxkbsqs3i4x545yooivethk4uzcigfxjvbfyjq2m2nu.ipfs.dweb.link/MATA%20FIGHTER%20FRONT.webp",
+    "image": "Qmc7ZPry3tLefahz8C5uqjhNeAJ4CFqNWwpcwUoc6HbzWM",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -12517,7 +12524,7 @@
     "name": "Mata Spearman",
     "type": "ERC1155",
     "description": "[Squamata | Support] \"Cold Blooded\" Passive: If there are 2 or more \"Cold Blooded\" Guardians on the field, they all gain 25 ATK & HP.",
-    "image": "https://bafybeib67f3nrw2cffjl6h5djxye6xar2dlajunw4px4ogmf7ozekmwyry.ipfs.dweb.link/MATA%20SPEARMAN%20FRONT.webp",
+    "image": "QmcehxsCNw5UR5VL5sNffi34pxNTbL3jmVzpCit1GGgZXr",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -12617,8 +12624,13 @@
     "name": "Hydros",
     "type": "ERC1155",
     "description": "[Elemental | Mage] \"Aqua Soul\" Active: Once per turn pay 10 gold to fire a Water blast which deals 10 water Damage.",
-    "image": "https://bafybeialyai6hoquln55vfg35wcbrmyakma4xufi4iqtd66klvxojr72ne.ipfs.dweb.link/HYDROS%20FRONT.webp",
+    "image": "QmX3fxJGzwSESKXMVtMN29hwX4bdkTSctKzfYWA1Q8YLfd",
     "symbol": "GATE",
+    "synergies": [
+      "Liquana",
+      "Aqualon",
+      "Glacius"
+    ],
     "properties": {
       "id": {
         "name": "id",
@@ -12717,7 +12729,12 @@
     "name": "Glacius",
     "type": "ERC1155",
     "description": "[Elemental | Assassin] \"Aqua Soul\" Passive: Attacks from Glacius have a 10% chance of causing splash damage dealing 25% of Glacius current ATK to the adjacent Guardians. ",
-    "image": "https://bafybeiezbxdlxomhui3ucpybhupydxxn5sxftkgpn3czqpnqj2ycha7teq.ipfs.dweb.link/GLACIUS%20FRONT.webp",
+    "image": "QmbytPzwxQLWVALqf9inorg1jxie8CWVABwbWnZkfjXcXW",
+    "synergies": [
+      "Liquana",
+      "Aqualon",
+      "Hydros"
+    ],
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -12817,7 +12834,7 @@
     "name": "Aku Gaki",
     "type": "ERC1155",
     "description": "[Beast | Fighter] \"Bad boy\" Passive: Attacks from Aku Gaki have a 15% chance of dealing +20 Crit DMG. ",
-    "image": "https://bafybeie4f4vq42vhz2pi2nwrx5kxk6pa6ii2m7v4fanbugsid5qbbpak6m.ipfs.dweb.link/AKU%20GAKI%20FRONT.webp",
+    "image": "QmX5GUgydATk3R9imWfBYbvwe51JqgTc3bq8yPcm5WEuC2",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -12917,7 +12934,7 @@
     "name": "Oxi The Void Golem",
     "type": "ERC1155",
     "description": "[Golem | Tank] \"Shield of Zhilridge\" Activate: During your MP1, Oxi gives him self an Overshield worth 25% HP of its current HP. Uses: 1 ",
-    "image": "https://bafybeiej6zh46obqyeq7ihi3hmngbs5q7cchpyj3y7qfrjgv35vl56meua.ipfs.dweb.link/OXI%20THE%20VOID%20GOLEM%20FRONT.webp",
+    "image": "QmUkZbHgNCSyh2wMQKCkmfPPbYCnGv5AodnRgN9qvTBfK2",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -13017,7 +13034,10 @@
     "name": "Kronk",
     "type": "ERC1155",
     "description": "[Beast | Support] \"Eross Follower\" Activate: Pay 120 Gold during your MP1; On your 2nd Standby phase, Hire Eross to the field from your deck with 50% HP.\n",
-    "image": "https://bafybeidkinprqhd6yga3br7xb6jmjvevnlky6hd5rv66jlrmngjuhwnkje.ipfs.dweb.link/KRONK%20FRONT.webp",
+    "image": "QmNNSAssYkMarz1a2D8GkkEvXVQ2cGkS3brYWni319SdXw",
+    "synergies": [
+      "Eross"
+    ],
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -13117,7 +13137,7 @@
     "name": "Vrogut",
     "type": "ERC1155",
     "description": "[Ogre | Tank] \"Ogre Frontline\" Passive: All attacks are directed to Vrogut. Additionally, all Ogre type Guardians gain +10 to ATK & HP.",
-    "image": "https://bafybeigpzumh2pjz6efe6jsaryjkbbs6rytbsbuwpi2wqfylacldmjaysq.ipfs.dweb.link/VROGUT%20FRONT.webp",
+    "image": "QmRj6yzRCd6RnKzQkXBWnYXbDvt9m6hXaG7upSw5bUheAr",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -13217,7 +13237,7 @@
     "name": "Reinold",
     "type": "ERC1155",
     "description": "[Human | Support] \"Black Smith\" Activate: During your MP1, select up to 2 Ally Guardians on the field; Increase their ATK and HP by 25 as long as Reinold remains on the field.",
-    "image": "https://bafybeifnhvpn6iltbxtmguygc5b4euxddm7fzpammwevd5v7pakqzo3c34.ipfs.dweb.link/REINOLD%20FRONT.webp",
+    "image": "QmZLZP9uBqCi4z6mnhAcaPhzByH7wn34hkGY6nhopzicWQ",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -13317,7 +13337,7 @@
     "name": "Elias The Musician",
     "type": "ERC1155",
     "description": "[Dwarf | Support] \"Ally Forte\" Activate: During your MP, select 1 Ally Guardians on the field; Increase their ATK and HP by 40 as long as Elias remains on the field.\nPassive: Elias is ignored during the Battle phase if there are other Guardians on your side of the field. ",
-    "image": "https://bafybeigle4c764nqddqtn4eda7346g6ktv5vrm3urlh3chauuyppfirlwq.ipfs.dweb.link/ELIAS%20THE%20MUSICIAN%20FRONT.webp",
+    "image": "QmQNG5G3LSnEmzAwfmxHQWRKaMEjYGDa2d5CNvT5buCEXY",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -13617,7 +13637,7 @@
     "name": "Lhavi The Fire Golem",
     "type": "ERC1155",
     "description": "[Golem | Tank] \"Volcanic Activity\" Passive: Once per turn Deal 10 Fire damage to all Earth Type Cards. Deal 5 damage back to enemies who attack Lhavi.",
-    "image": "https://bafybeid75uoobn45zxublrn2rladn5vtext6luckxx2bawucmuj4s5lnb4.ipfs.dweb.link/LHAVI%20THE%20FIRE%20GOLEM%20FRONT.webp",
+    "image": "QmTjZkd8FBAWhy12acXjiSu7qfW8z7J1XRNDU2Yb1Em7uz",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -13717,7 +13737,7 @@
     "name": "Kraken",
     "type": "ERC1155",
     "description": "[Cephalo | Fighter] \"Water Prison\" Activate: Select one enemy Guardian; they cannot declare an attack for one turn. Once freed they cannot be selected again.",
-    "image": "https://bafybeia3d4ltk2xhkmjy3wuj7fup4sg7isay7iejq37uhdftudstlfys3y.ipfs.dweb.link/KRAKEN%20FRONT.webp",
+    "image": "QmfNNF3XhFRKxEhTC5W99Htn8bLBzkFcprwEdSSWZFFjmn",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -13817,7 +13837,7 @@
     "name": "Luna",
     "type": "ERC1155",
     "description": "[Human | Mage] \"Chain Lightning\" Passive: Deal 5 Mystic Damage to all Void Type Cards. Deal 10 Extra attack damage to ogre race cards. ",
-    "image": "https://bafybeibakejnoeshbnbwxzbpqerb75463tf27frcf3oqgd7jjph6vssfpi.ipfs.dweb.link/LUNA%20FRONT.webp",
+    "image": "QmPQfou5umS37Cgp9FPU9tPuQUMmaakHybhN51XM2TCRHM",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -13917,7 +13937,7 @@
     "name": "Henry",
     "type": "ERC1155",
     "description": "[Human | Tank] \"Earth Wall\" Passive: 25% Chance to block the next attack. On Successful Block; reset effect after 2 turns.",
-    "image": "https://bafybeie6n2wr3qahyamhomrhqyjl5lmvtr7fbbwxnzjxh3zz45b6wa7w2i.ipfs.dweb.link/HENRY%20FRONT.webp",
+    "image": "QmYLtgoFe8TC8NkQBErunG7eBWTKN3Uy31GRdMdMeHHjDn",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -14117,7 +14137,7 @@
     "name": "Weeping Nightmare",
     "type": "ERC1155",
     "description": "[Spirit | Mage] \"Sacrafical Pain\" Activate: Retire one Guardian on your side of the field; Increase weeping's attack by 100 until your end phase. Cooldown: 2 turns. ",
-    "image": "https://bafybeiamb5g6sn4dxro2zkmw6o4qwsx7ruc7qecln52uyi7gttpymglpjq.ipfs.dweb.link/WEEPING%20NIGHTMARE%20FRONT.webp",
+    "image": "Qme59mAEDERYbd6U24uagZnFgepTT4xurJ8TBgH2Rm9E1E",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -14217,7 +14237,7 @@
     "name": "Zellsha",
     "type": "ERC1155",
     "description": "[Demon | Support] \"Demonic Embrace\" Activate: Select one enemy Guardian; they cannot delcare an attack for 1 turn. Once freed, deal 20 damage. Cooldown: 2 turns.",
-    "image": "https://bafybeiha4ljlkuw65q7uxcz6nkip2stkamk77bwlyefwa4qtazcn44wg5u.ipfs.dweb.link/ZELLSHA%20FRONT.webp",
+    "image": "QmYeo9YxheGrputs3mEZVzofGXFhGKLQfjmBAox5GaNVRa",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -14317,7 +14337,7 @@
     "name": "Undead Bomber",
     "type": "ERC1155",
     "description": "[Undead | Support] Passive: Attacks from Undead bomber have a 10% chance to deal +10% critical damage to Mystic Type Guardians.",
-    "image": "https://bafybeidzigf2mam4t7a5oka76lxejn5dtjv66nl35ysbqic3wemp6j4luy.ipfs.dweb.link/UNDEAD%20BOMBER%20FRONT.webp",
+    "image": "QmXwuZESY3MAagEEJiMap8feUDa1Rc5B998uQQY27r1qua",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -14417,7 +14437,7 @@
     "name": "Ragnar",
     "type": "ERC1155",
     "description": "[Undead | Tank] Passive: All incoming enemy attacks are automatically re-directed to Ragnar and reduced by 20%",
-    "image": "https://bafybeiffhgcg3chfgkx24g2i77yunhim2b3qbukcyygyqqv2mkscqpwnrq.ipfs.dweb.link/RAGNAR%20FRONT.webp",
+    "image": "Qmer9F88oDKXjo4yGqZQnAwnvE9jC5QzroV6HuFYQ3CNPL",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -14514,10 +14534,10 @@
     "typeCard": "iron"
   },
   {
-    "name": "Chief Nopsis",
+    "name": "Cheif Nopsis",
     "type": "ERC1155",
     "description": "[Insect | Tank] Passive: All attacks are directed to chief Nopsis. Additionally, all \"Fire Ant Colony\" Guardians Gain +10 ATK & +10 HP.",
-    "image": "https://bafybeidngjbmmqvm53pweyohu7tu56qukaor3n2ncd2xwrb3feq3xwi3yu.ipfs.w3s.link/CHIEF%20NOPSIS.webp",
+    "image": "QmXotvcyU6XaAtncoDChmZ2eoTE91FVuRTNS4F2Tu2Q6Kb",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -14526,7 +14546,7 @@
       },
       "name": {
         "name": "name",
-        "value": "Chief Nopsis"
+        "value": "Cheif Nopsis"
       },
       "element": {
         "name": "element",
@@ -14572,7 +14592,7 @@
       },
       {
         "trait_type": "name",
-        "value": "Chief Nopsis"
+        "value": "Cheif Nopsis"
       },
       {
         "trait_type": "element",
@@ -14617,8 +14637,12 @@
     "name": "Kara",
     "type": "ERC1155",
     "description": "[Human | Fighter] Active: During your battle phase, Kara can select up to 2 Guardians to attack.",
-    "image": "https://bafybeigkzndha7wqfvncacxt3jcrv6n2v6urtgqti7z632cbsdsfxciwli.ipfs.dweb.link/KARA%20FRONT.webp",
+    "image": "QmPhaQy5YabhUwQzTrjCWMHVmsgVJpBg88PS5p88svv3iE",
     "symbol": "GATE",
+    "synergies": [
+      "Eydis",
+      "Sahan"
+    ],
     "properties": {
       "id": {
         "name": "id",
@@ -14717,7 +14741,11 @@
     "name": "Eydis",
     "type": "ERC1155",
     "description": "[Human | Healer] Active: Heal an ally for 10 HP. Cooldown 2 turns. Passive: While Eydis is on the field, increase all \"Nordic\" Guardian ATK by 20%.",
-    "image": "https://bafybeiej3wqxc6crishndoj6ku3ulntzfc54bzj652agpzrhvo3j4lw3li.ipfs.dweb.link/EYDIS%20FRONT.webp",
+    "image": "QmSANd48ESEXD1263c1bVXScmmh3rRrss9FtBS58fE86AE",
+    "synergies": [
+      "Kara",
+      "Sahan"
+    ],
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -14814,10 +14842,10 @@
     "typeCard": "iron"
   },
   {
-    "name": "Alpha Wolf Dax",
+    "name": "Alpha Wold Dax",
     "type": "ERC1155",
     "description": "[Beast | Fighter] \"Wolf Pack\" Passive: Attacks from Alpha Wolf Dax deal 20% life steal which heal him on hit",
-    "image": "https://bafybeibbnvuau3k5mlio5p3x632mng7yofd7udrta6b2ymfabcza7zbemm.ipfs.w3s.link/ALPHA%20WOLF%20DAX%20FRONT.webp",
+    "image": "QmVQcvtiBGC1QBwjUUJHuDZ53QD6JSkipkUuB4inMULdE1",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -14826,7 +14854,7 @@
       },
       "name": {
         "name": "name",
-        "value": "Alpha Wolf Dax"
+        "value": "Alpha Wold Dax"
       },
       "element": {
         "name": "element",
@@ -14872,7 +14900,7 @@
       },
       {
         "trait_type": "name",
-        "value": "Alpha Wolf Dax"
+        "value": "Alpha Wold Dax"
       },
       {
         "trait_type": "element",
@@ -14917,7 +14945,7 @@
     "name": "Gromkhar",
     "type": "ERC1155",
     "description": " [Monster | Fighter] \"Second Wind\" Passive: If Gromkhar is sent to the grave as a result of battle, he returns to the battle field at the start of your MP1 with 50% HP. This effect occurs once. ",
-    "image": "https://bafybeibdbv6ecvqjiccd7apuq2veir2smfvbmpwlq6d52eczhflxhsctxq.ipfs.dweb.link/GROMKHAR%20FRONT.webp",
+    "image": "QmZ2veYKPsk6WxoJnoDY2JuD6pLDtwShsGDMwBkzdfr9V9",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -15017,7 +15045,7 @@
     "name": "Lord Kraken",
     "type": "ERC1155",
     "description": "[Cephalo | Mage] \"Soul Shift\" Activate: Lord Kraken copies the ability of the last Guardian that attacked him. During your next turn, Lord Kraken is able to use copied ability. ",
-    "image": "https://bafybeia3d4ltk2xhkmjy3wuj7fup4sg7isay7iejq37uhdftudstlfys3y.ipfs.dweb.link/KRAKEN%20FRONT.webp",
+    "image": "QmYMqemdWQhiBsQW9YeHcEctvCAzYubUnFDxVMobWVrGyB",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -15217,7 +15245,7 @@
     "name": "Fiona",
     "type": "ERC1155",
     "description": "[Human | Support] \"Mystic burst\" Activate: During your MP1, Fill the board with light, preventing all Void type Guardian's from declaring an attack for 2 turns. Cool down 4 turns. \n",
-    "image": "https://bafybeidxnhw2e3paqvc22kjx5zh45pghnhi7x6bwlg2w5y4zn2qnlxeyka.ipfs.dweb.link/FIONA%20FRONT.webp",
+    "image": "QmYbE1btkBXugpuCVALRudgtUgChTPG8J3UgYUmFhKhGDg",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -15317,7 +15345,7 @@
     "name": "Tempris",
     "type": "ERC1155",
     "description": "[Elemental | Fighter] \"Fire Smash\" Activate: During your MP1, select a Guardian on your opponent's side of the field to make your Rival: If Tempris is sent to the grave yard as a result of battle, Her Rival follows after 3 turns. ",
-    "image": "https://bafybeie722hvavnuqym3nftonxk3fzd7oylqne5wjepqkcedboxxvfvbge.ipfs.dweb.link/TEMPRIS%20FRONT.webp",
+    "image": "QmPCbBkYJfWD43SEPfbJEof4dvrTdMkYEUmajq54krJH6e",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -15417,7 +15445,7 @@
     "name": "Nyssa",
     "type": "ERC1155",
     "description": "[Human| Assassin] \"Earth Counter\" Passive: 25% Chance to counter the next attack with an Earth projectile. On Successful Block; reset effect after 2 turns.",
-    "image": "https://bafybeiguepbb7aztryzh7dimm7gllzho332bc4if2ykmodh3vovh6kalxi.ipfs.w3s.link/NYSAA%20FRONT.webp",
+    "image": "QmWiKnFu6AMYCWKPSrHAH2ARxj24pNxogoQZktTY39HZe8",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -15517,7 +15545,12 @@
     "name": "Aqualon",
     "type": "ERC1155",
     "description": "[Elemental | Tank] \"Aqua Soul\" All attacks are directed to Aqualon. Additionally, all \"Aqua Soul\" Guardians Gain +10 ATK & +10 HP.",
-    "image": "https://bafybeiak3jf3py232abkt5ppr4jb7vcvjzdyuxf6dbbexp67xblm2mjodq.ipfs.dweb.link/AQUALON%20FRONT.webp",
+    "image": "QmVkDgjsNwDHrKQRkEZWRfPWMHbL8kvr8BSaqwJmxraJDS",
+    "synergies": [
+      "Liquana",
+      "Glacius",
+      "Hydros"
+    ],
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -15617,7 +15650,12 @@
     "name": "Liquana",
     "type": "ERC1155",
     "description": "[Elemental | Healer] \"Aqua Soul\"  Once every 2 turns, heal one ally Guardian for 20 HP; healed Guardian's gain +10 crit chance & damage for 1 turn.\n",
-    "image": "https://bafybeicbqafcpzszo5hqkg5rrpachykks33m4rumxf33qmddg3kt3aftju.ipfs.dweb.link/LIQUANA%20FRONT.webp",
+    "image": "Qme63kwZW4MVCw5BCydXwKtaxCkFEWMSoQULaaSCmzk4Wp",
+    "synergies": [
+      "Aqualon",
+      "Glacius",
+      "Hydros"
+    ],
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -15717,7 +15755,7 @@
     "name": "Ventis",
     "type": "ERC1155",
     "description": "[Elemental | Support] \"Olfactory Memory\"  Activate: Pay 50 gold to return 1 Venom Guardian from your Grave yard to the field with 50% HP. Uses: 1\n",
-    "image": "https://bafybeicmqenxqdbysfjbbwoct2tydyu5j4ncalykebtwfs4qpgtbh5jdo4.ipfs.dweb.link/VENTIS%20FRONT.webp",
+    "image": "QmV4x956oLzsA7SNZcwEdWAa9TURCndQZCQQYBTrjm8WEY",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -15817,7 +15855,7 @@
     "name": "Demon Stag Wasp",
     "type": "ERC1155",
     "description": "[Insect | Support] \"Parasitic Control\" Activate: Pay 50 gold. Infect one enemy Guardian for 2 turns. After 2 turns, send the infected Guardian to the graveyard. Summon 2 Demon wasp juveniles with 25 ATK & 50 HP to the field. ",
-    "image": "https://bafybeifqkpwicqwhsnzelaz44uvrfycxvthojkljepocbrkjjmyl7svhj4.ipfs.dweb.link/DEMON%20STAG%20WASP%20FRONT.webp",
+    "image": "QmUs8XVUSnrDVrMg9zd1afXMxLJFX8BN4Ppv1fSq1za94F",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -15917,8 +15955,11 @@
     "name": "Elenor",
     "type": "ERC1155",
     "description": "[Vampire | Assassin] \"Vampire Bloodline\" Activate: Pay 25 Gold. Stun 1 enemy on your opponents side of the field. Cooldown: 3 turns. \nPassive: Elanor next attack heals her for 10% damage dealt. Cooldown: 3 turns.",
-    "image": "https://bafybeihfvciat6siqm4tffl7rdqssmcjrkzafs4yioa636dxbdl26vef2a.ipfs.dweb.link/ELENOR%20FRONT.webp",
+    "image": "QmToYEk45oHBvstBVncFjx5GTGjhyJDEj5YEmEZmkjqBBr",
     "symbol": "GATE",
+    "synergies": [
+      "Elwin"
+    ],
     "properties": {
       "id": {
         "name": "id",
@@ -16014,10 +16055,13 @@
     "typeCard": "iron"
   },
   {
-    "name": "Hanako ",
+    "name": "Hanako",
     "type": "ERC1155",
     "description": "[Human | Support] \"Bad Companion\" Activate: During your MP1, pay 60 gold to summon \"Aku Gaki\" from your hand or deck to the field; if successful, increase Hanako's ATK by +20% for as long as \"Aku Gaki\" remains on the field.",
     "image": "https://bafybeigsvhzokqibxtc2k2jcx2jl2v5szhypgqrycgwtrwdwkd5nxs3fzm.ipfs.dweb.link/Hanako.webp",
+    "synergies": [
+      "Abu Gaki"
+    ],
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -16114,10 +16158,13 @@
     "typeCard": "iron"
   },
   {
-    "name": "Sadako ",
+    "name": "Sadako",
     "type": "ERC1155",
     "description": "[Human | Support] \"Good Companion\" Activate: During your MP1, pay 55 gold to summon \"Yoshiko\" from your hand or deck to the field; if successful, increase Sadako's HP by +18% for as long as \"Yoshiko\" remains on the field.",
     "image": "https://bafybeicyo4m4sjkn4lzlzkxickh4zhdgvida7rk4id33uuyzleonkpczp4.ipfs.dweb.link/Sadako.webp",
+    "synergies": [
+      "Yoshiko"
+    ],
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -16217,7 +16264,7 @@
     "name": "Xen-Zoh",
     "type": "ERC1155",
     "description": "[Ascended | Assassin] \"Future Sight\" Activate: Once Every two turns, negate 1 attack & counter it with back stab causing 5 bleed damage for 2 turns. ",
-    "image": "https://bafybeicjjdsfessbcoa7qxqmvbofr6sqfvauvt4h6bot4ltngusc72tpjq.ipfs.w3s.link/XEN%20ZOH%20FRONT.webp",
+    "image": "Qme5Hia56RMULdb3wA2bxxp7MMiZq2K1ZssJRy5iABqd3A",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -16317,7 +16364,7 @@
     "name": "Novalynn",
     "type": "ERC1155",
     "description": "[Human | Mage] \"Foresight\" Activate: Once every 2 turns, target 1 enemy Guardian. Inflict 10 HP as mystic damage on their next main phase.",
-    "image": "https://bafybeicq3uzutrkn3rxxndowfhgj6yt2zbn2nctjohq7kkrwtwusnzultq.ipfs.dweb.link/NOVALYNN%20FRONT.webp",
+    "image": "QmQ17ZG1S53bmpfnKsCv4Pha39fmbEUxKST1tXo4PWVuZw",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -16417,7 +16464,7 @@
     "name": "Yannah",
     "type": "ERC1155",
     "description": "[Human | Mage] \"Void Acolyte\" Activate: Once per turn, deal 10 void damage to one selected enemy Guardian.",
-    "image": "https://bafybeifsxj3kehn3g2godw4w5okasxt2jl37z5gak7msnwhz5yleb33u5m.ipfs.dweb.link/YANNAH%20FRONT.webp",
+    "image": "QmPkEiUKbMbW6mp3q5CwvQgqWUAN396X9b5nQXpfhKGuMx",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -16617,7 +16664,7 @@
     "name": "Takala",
     "type": "ERC1155",
     "description": "[Human | Healer] Activate: Once per turn, heal one ally Guardian for 20 HP; healed Guardian's gain +10 crit chance & damage for 1 turn.",
-    "image": "https://bafybeihut5iox4rgfdj755no22zy44x4oclza455mgripq3ad67spw3fh4.ipfs.dweb.link/TAKALA%20FRONT.webp",
+    "image": "QmaDpHy1hnTA7cmjjg6ngTPXz13PKAoJz1ZTbnKWxFckjJ",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -16717,7 +16764,7 @@
     "name": "Akuma",
     "type": "ERC1155",
     "description": "[Beast | Assassin] \"Shapeshift\" Activate: During your MP1, pay 50 gold to increase Akuma's Crit chance & damage by 10% for 1 turn.",
-    "image": "https://bafybeihi2jsr5l5qjnuvzwudv2v65mswnhabutswyjxkxnajxjdr2on5qa.ipfs.dweb.link/AKUMA%20FRONT.webp",
+    "image": "QmbTLi8qPT7s6WC3FvqtnbU4tFvg5ZXV7SKQEUyiCm3jj5",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -16817,7 +16864,7 @@
     "name": "Gaktes The Giant",
     "type": "ERC1155",
     "description": "[Giant | Tank] \"Skull Collector\" Passive: Gaktes gains +10 ATK for all Human type Guardians on the field.",
-    "image": "https://bafybeic7qykks5nbxyp43zfvgazz3qsebnk2wcz27y67pa5h37kpzqhukq.ipfs.dweb.link/GAKTES%20THE%20GIANT%20FRONT.webp",
+    "image": "QmaUXaH51yiYYaxkqtxcFpx4mqA8RJZQ1QEANJqgqDLuT8",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -16917,7 +16964,7 @@
     "name": "Gokuri",
     "type": "ERC1155",
     "description": "[Beast | Fighter] \"Poison Spear\" Active: Select one Guardian on your opponent's side of the field; Gokuri strikes them with a Poison Spear dealing 10 Venom Damage per turn. This effect continues  for a long as Gokuri remains on the field.",
-    "image": "https://bafybeidvsagfa4qlukcf6mzovkiqdu3isbd3qg5bqiuhdwtc5ixox4djne.ipfs.dweb.link/GOKURI%20FRONT.webp",
+    "image": "QmbswvimjSNzDqR4rXtwmh5QbmasP5FtCgXJgCnEosDjLM",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -17017,7 +17064,7 @@
     "name": "Void Crawler",
     "type": "ERC1155",
     "description": "[Beast | Fighter] \"Shadow Counter\" Activate: When Void Crawler takes damage as a result of battle, it leaves the board and returns during the MP1 of your next turn; upon entry, deal 50 damage to the Guardian that damaged Void Crawler. Cooldown: 2 turns. ",
-    "image": "https://bafybeigk2es5xzrgd734srvvq7qvjnmsfezv5scqw24xmrz6sqt7z3yo3y.ipfs.dweb.link/VOID%20CRAWLER%20FRONT.webp",
+    "image": "QmSMg3DF1HznJz24i9wztNpNRAmxmUmPcCJLfNwY2ssCKp",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -17117,7 +17164,7 @@
     "name": "Keoshi",
     "type": "ERC1155",
     "description": "[Human | Mage] \"Mad Wizard\" Activate: Fill the entire board with poison smoke which lasts for 2 turns and deals 15 Venom damage per turn. Cooldown 3 turns. ",
-    "image": "https://bafybeiggqatn3kj2u672fer3twrvnxl7maqyjplmoc2tsr25uh6m7fqfh4.ipfs.dweb.link/KEOSHI%20FRONT.webp",
+    "image": "QmYSs7YHaqQ7ZEhBaitQTZm88BDTXK4G1GrNEqh5AZwYTH",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -17317,7 +17364,7 @@
     "name": "Sinthia",
     "type": "ERC1155",
     "description": "[Demon | Healer] \"Demonic Defiance\" Activate: Once per turn, heal one ally Guardian for 30 HP.",
-    "image": "https://bafybeibecj7txdtd4ahnh2epmkjgb3eh2y4szebu6rr3yxzs7fyyv5xjru.ipfs.dweb.link/SINTHIA%20FRONT.webp",
+    "image": "QmW7cR6JQzFQSwMrnTaNsRkXZ8Qa4KW4aTYCUQMYgxA6cy",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -17517,7 +17564,7 @@
     "name": "Urgos",
     "type": "ERC1155",
     "description": "[Sentinel | Support] \"Void Vision\" Activate: Select one Ally on your side of the field and increase their Crit Chance  & Crit DMG by 50%.",
-    "image": "https://bafybeigttpn5rbplylcqoo3fk6ewxmrmxjmricv7w2j5otalhejhr4bl4q.ipfs.dweb.link/URGOS%20FRONT.webp",
+    "image": "QmSyJdKzbUTd6DAijMxuR2BY36iM14DBLHKFQPiGHztFvX",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -17617,7 +17664,7 @@
     "name": "Kanga Sage",
     "type": "ERC1155",
     "description": "[Beast | Healer] \"Gold Heal\" Activate: Once per turn, pay 10 gold to heal an ally for 25 HP. Healed Guardians gain +10 ATK.",
-    "image": "https://bafybeibmy3qiqlu5det6rgjinrqud4u4k35pky3ooklsmdyp7sblxwx6ry.ipfs.dweb.link/KANGA%20SAGE%20FRONT.webp",
+    "image": "QmYpnEqyRVebjeWQMFQGQhAfsFszewy4SoMcEntM2zMh1s",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -17717,7 +17764,7 @@
     "name": "Donna",
     "type": "ERC1155",
     "description": " [Human | Fighter] \"Fire Mark\" Activate: During your MP1, place a Fire Mark that lasts 2 turns on one enemy Guardian; Fire Marked Guardians explode when attacked causing 15 Fire damage to adjacent Guardians. Cooldown 2 Turns.",
-    "image": "https://bafybeiaorout7yaxtdz6ffokmbljc2w3kn3ysgrmeuy3xtwujhc55ac7ue.ipfs.dweb.link/DONNA%20FRONT.webp",
+    "image": "QmcnPyUY538ABYmJTBHfxJFstbKQbmKbGoL77Da7AxJzDw",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -17817,7 +17864,7 @@
     "name": "Angler Crawler",
     "type": "ERC1155",
     "description": "[Beast | Fighter] \"Europa Invasion\" Passive: Gain 5 ATK for each Water Type Guardian on the field and in your grave yard.",
-    "image": "https://bafybeigq4aoqpsiaimpxmpkwtluga7v5x5jqulcytmnyjjhm55m3svpyle.ipfs.dweb.link/ANGLER%20CRAWLER%20FRONT.webp",
+    "image": "QmTGfARkCKGgxjZBvtLuNqzsHBuRZUHZYGqzJzgH5gZCuD",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -17917,7 +17964,7 @@
     "name": "Stephania",
     "type": "ERC1155",
     "description": "[Human | Mage] \"Earth Acolyte\" Active: Once per turn during your MP1, deal 10 Earth damage to one selected enemy Guardian.",
-    "image": "https://bafybeig3547axzebboindgziuld3wk2hg6lnzdxj7rtb2wyw53arwtgtxy.ipfs.dweb.link/STEPHANIA%20FRONT.webp",
+    "image": "QmVKknMnCc1w493hreNnKG8R1o1PRByD8kpBhBJufem2mF",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -18017,7 +18064,7 @@
     "name": "Xoran",
     "type": "ERC1155",
     "description": "[Elemental | Mage] \"Fire Control\" Active: Fill your opponents side of the field with Fire which lasts for 2 turns and deals 20 Fire damage per turn. Cooldown 3 turns. ",
-    "image": "https://bafybeif7s56hzve3vizege2wrwtydgiam4nmefcv5aj6xt3lji3zvpq62u.ipfs.dweb.link/XORAN%20FRONT.webp",
+    "image": "Qmb1Ye7gyhFvkVEVqwNSZc6BWXu9KqrQ6Lsc3t2MBy9h19",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -18117,7 +18164,7 @@
     "name": "Aogaeru",
     "type": "ERC1155",
     "description": "[Beast | Assassin] \"Poisonous presence\" Passive: While Aogaeru is on the field, your opponent's side of the field fills with poison smoke which deals 5 Venom damage per turn.",
-    "image": "https://bafybeiekapgzpcuekjwy2ehgubmzvnk3a7plk5yrcv764xkradask7ad2e.ipfs.dweb.link/AOGAERU%20FRONT.webp",
+    "image": "QmbKczAhNXzUStfx4mo325cYnyNdqpDvvSc5qu6VDHkrnV",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -18217,7 +18264,10 @@
     "name": "Elwin",
     "type": "ERC1155",
     "description": " [Vampire | Assassin] \"Vampire Bloodline\"  Activate: Elwin's next attack heals him for 10% damage dealt. Cooldown: 3 turns. ",
-    "image": "https://bafybeibvgpnqtxrawjimguu4kvtcmsxcvrsp52y4x7xvlcla7vkpez6u4m.ipfs.dweb.link/ELWIN%20FRONT.webp",
+    "image": "QmaDZN8jmGYE5gAvbHDcdPGJAZ8iWRGuypUbYkDZC5eJ9m",
+    "synergies": [
+      "Elenor"
+    ],
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -18317,7 +18367,7 @@
     "name": "Gaiana",
     "type": "ERC1155",
     "description": "[Elemental | Mage] \"Land Slide\" Active: Passive: While Gaiana is on the field, all enemy Guardians accuracy drops by 30% ",
-    "image": "https://bafybeic2ksw4uzplijf3atb2ba5wrdqf2u6cdkl7akamj6s6qaos66mso4.ipfs.dweb.link/GAIANA%20FRONT.webp",
+    "image": "QmbxhWNJJGdTpqxgBKVyFXwBYDeFGQcCQSgMrrvjA5H1Kg",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -18517,7 +18567,7 @@
     "name": "Tiffany",
     "type": "ERC1155",
     "description": "[Demon | Assassin] \"Demonic Stealth\" Activate: In your MP1, For 2 turn, Tiffany cannot be targeted during the Battle Phase. If Tiffany attacks, her stealth breaks dealing giving her a 50% chance to deal +15% Crit DMG . Cooldown: 3 turns.",
-    "image": "https://bafybeiafc6gin7ymoy5w7yuvi3wcsdnnmitpxaojw7gzuj5f2ejxad526q.ipfs.dweb.link/TIFFANY%20FRONT.webp",
+    "image": "QmU9XPZ11tu8WvoS2E6QP18TvrjLg4Y8Mg5g3suUMx4tL8",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -18617,7 +18667,7 @@
     "name": "Zohrela",
     "type": "ERC1155",
     "description": "[Human | Mage] \"Fire Dolls\" Activate: During your MP1, select up to 3 enemy Guardians and deal 25 Fire DMG to each of them. Cooldown: 3 turns. ",
-    "image": "https://bafybeicjiino5kb6e3lvioe7ghhjgbz5c3muscooaxdauagaf6z27oeaei.ipfs.dweb.link/ZOHRELA%20FRONT.webp",
+    "image": "QmaADPjosLjpFhQFrddqoQQXSp8RNEt3LzstZmymZrzfDZ",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -18717,8 +18767,11 @@
     "name": "Dracul",
     "type": "ERC1155",
     "description": "+20 attack for all guardians in your deck",
-    "image": "https://bafybeieogbzvgk66wbhzv44seyanz5g3skomt7nmr7vnz5qhkvupc3hzue.ipfs.w3s.link/Dracul_front.webp",
+    "image": "QmQ8PAwZtKztvsFnAdp79KyvHkhUYzSkZQwgsHVdMy3Zbp",
     "symbol": "GATE",
+    "synergies": [
+      "Dominic"
+    ],
     "properties": {
       "id": {
         "name": "id",
@@ -18777,8 +18830,13 @@
     "name": "Lady Rene",
     "type": "ERC1155",
     "description": "[Ascended | Fighter] \"Void Expert\" Passive: Lady Rene gains 5 attack for each Guardian on the field.",
-    "image": "https://bafybeieededjantw2ztt3cesmacpxip7vgiu5hrva4uswuuozce6acbxoi.ipfs.dweb.link/LADY%20RENE%20FRONT.webp",
+    "image": "Qma84o7cxeyRxtP22TT1zRz3JLYSQFMmSnCCxx8XmWqDkL",
     "symbol": "GATE",
+    "synergies": [
+      "Sir Nex",
+      "Sir Albin",
+      "Lady Selsi"
+    ],
     "properties": {
       "id": {
         "name": "id",
@@ -18877,7 +18935,7 @@
     "name": "Judge Red",
     "type": "ERC1155",
     "description": "[Sentinel | Tank] \"Final Judgement\" Activate: Once per turn, execute 1 enemy Guardian under 20% health. ",
-    "image": "https://bafybeicbr6jbh62a7v5zs5guomdg3uouipxfc2ld4opszzrkskk5bp6v2i.ipfs.dweb.link/JUDGE%20RED%20FRONT.webp",
+    "image": "QmU4Spt1jzFXs6zQtpACh6DEUhiJmBHP1AiNcPnn7GgHRy",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -18977,7 +19035,7 @@
     "name": "Mulios",
     "type": "ERC1155",
     "description": "[Sentinel | Fighter] Once during each of your turns, when your opponent activates a Action/Reaction card, Mulios can negate the activation and destroy it.",
-    "image": "https://bafybeicjzh3vhcpymhkjvb254nbivoeh2w6ijgg6c2vuvvkwfup3647ugy.ipfs.dweb.link/MULIOS%20FRONT.webp",
+    "image": "QmRzVeTdiPf8PZMEGGHLLh52yDv6AagBC8hLqz53BGHy4P",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -19077,8 +19135,13 @@
     "name": "Lady Selsi",
     "type": "ERC1155",
     "description": "[Ascended | Assassin] \"Void Sniper\" Once per turn during your MP1, Lady Selsi can select one Guardian on your opponents side and mark them; Gain +25 crit chance & +30 crit dmg against marked target",
-    "image": "https://bafybeihwod3z3bpor2nludkkds5236dtgifnug3ibtbnenz562pj34n7ry.ipfs.dweb.link/LADY%20SELSI%20FRONT.webp",
+    "image": "QmNU4fimKGXd2nj4vJSaQp6vxz8NBRwxDUWmaKPP8Q2z2Z",
     "symbol": "GATE",
+    "synergies": [
+      "Sir Nex",
+      "Sir Albin",
+      "Lady Rene"
+    ],
     "properties": {
       "id": {
         "name": "id",
@@ -19174,10 +19237,10 @@
     "typeCard": "legendary"
   },
   {
-    "name": "Xolzog",
+    "name": "Xozog",
     "type": "ERC1155",
     "description": "[Undead | Mage] \"Erase\" Once per turn, execute 1 Enemy Guardian  under 20% Health.",
-    "image": "https://bafybeibwghpcz7pmqdzpx4cdnv5z3pg7iqujjc5yx4iny2l56thdkusrlm.ipfs.w3s.link/XOLZOG%20FRONT.webp",
+    "image": "QmdnbmFi6jqKTn5dZVLWibL3Rspz2F5gMVNHpUK195JRLQ",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -19186,7 +19249,7 @@
       },
       "name": {
         "name": "name",
-        "value": "Xolzog"
+        "value": "Xozog"
       },
       "element": {
         "name": "element",
@@ -19232,7 +19295,7 @@
       },
       {
         "trait_type": "name",
-        "value": "Xolzog"
+        "value": "Xozog"
       },
       {
         "trait_type": "element",
@@ -19277,7 +19340,7 @@
     "name": "King Kilrog",
     "type": "ERC1155",
     "description": " [Undead | Tank] \"Loyal Subjects\" Passive: While King Kilrog is on the field, all attacks are redirected to him instead. Fire type Guardians gain +15 ATK.",
-    "image": "https://bafybeids5zuhihmvvzw7m3f5lrmdjy45vxvwossmjcgniowfkczkt42ciq.ipfs.dweb.link/KING%20KILROG%20FRONT.webp",
+    "image": "QmZB5qfBr3F1GSv6AQo43GvsYF9JpRDThai6YbdELELZ1F",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -19377,8 +19440,13 @@
     "name": "Sir Albin",
     "type": "ERC1155",
     "description": "[Ascended | Support] \"Evacuation\" Active: Once per turn, return 1 Ally Guardian on the field to your hand. ",
-    "image": "https://bafybeihrxcbou7xkec4odpo54dy26waanyqce2vm7ynj3wghxqbkbatkeq.ipfs.dweb.link/SIR%20ALBIN%20FRONT.webp",
+    "image": "QmdaQwPw4FBx8jMTTzzd5qQcF4rzW7tdBh6fYCC4yHk8pT",
     "symbol": "GATE",
+    "synergies": [
+      "Sir Nex",
+      "Lady Selsi",
+      "Lady Rene"
+    ],
     "properties": {
       "id": {
         "name": "id",
@@ -19477,8 +19545,13 @@
     "name": "Sir Nex",
     "type": "ERC1155",
     "description": "[Ascended | Support] \"Ganymite\" Passive: While Sir Nex is on the field, all \"Ascended\" Guardians Gain +20 crit chance & +30 crit dmg.",
-    "image": "https://bafybeihl7mjso5lisqmqyyv5iwvoltd4ofuoojrrcten3psz7xsh3mijkq.ipfs.dweb.link/SIR%20NEX%20FRONT.webp",
+    "image": "QmVdBXZ7XSx8VHroTT2fJqWemgKNG7i1C2PiPr7vgAAJJb",
     "symbol": "GATE",
+    "synergies": [
+      "Sir Albin",
+      "Lady Selsi",
+      "Lady Rene"
+    ],
     "properties": {
       "id": {
         "name": "id",
@@ -19577,7 +19650,7 @@
     "name": "Mackadon",
     "type": "ERC1155",
     "description": "[Shark | Fighter] \"Sea Hunter\" Passive: Mackadon gains +10 ATK for each water type Guardian in your graveyard. ",
-    "image": "https://bafybeiabqxzrer75gemgu4eqflq7zbkpzzg3s6mqrplgyx6vg4lfk6yiji.ipfs.dweb.link/MACKADON%20FRONT.webp",
+    "image": "QmP3Bwx6AXgA2e3AUai6zL576r9roykgNF38NpyuRYyQGd",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -19677,7 +19750,7 @@
     "name": "Thalias",
     "type": "ERC1155",
     "description": "[Sentinel | Mage] \"Dimensional Bypass\" Activate: During your MP1, you can attack your opponents LP directly for 50% of Thalias current ATK. If used, she cannot attack during your Battle phase this turn. ",
-    "image": "https://bafybeichvaxleknmdcpfq6wvwwdjqkwpiwescs4amddopchgi2grtgcxku.ipfs.dweb.link/THALIAS%20FRONT.webp",
+    "image": "Qmeyedtcjr6a4W1odHW9N6NHqXq6zk29yvDCKyPXTGFDbL",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -20077,7 +20150,7 @@
     "name": "Princess Vissa",
     "type": "ERC1155",
     "description": "[Elf | Healer] \"Mothers Balance\" Activate: Once per turn, select 1 Guardian and heal them for 40 HP. Passive: During each of your Standby Phases, heal all Mystic Type Guardians on your side of the field for 10 HP. ",
-    "image": "https://bafybeifi6zl3gd74hqyhgs33vgxzuctvbaqrnzhillfdhqxbtyde5l5ewq.ipfs.dweb.link/PRINCESS%20VISSA%20FRONT.webp",
+    "image": "QmaCwBRzqtQuCdVc6y5nsJrQqdDdHGD3uds83iNF6g3csF",
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -20179,6 +20252,10 @@
     "description": "[Beast | Support] Passive: +10 HP to all Ally Guardians. Activate: Execute 1 Enemy champ under 10% health. ",
     "image": "https://bafybeiceivc62pbbrmf4ytviakhuwe4gnqtaye3hhbf5pfyxvdvlisoq5q.ipfs.dweb.link/EROSS.webp",
     "symbol": "GATE",
+    "synergies": [
+      "Etnor",
+      "Kronk"
+    ],
     "properties": {
       "id": {
         "name": "id",
@@ -20277,8 +20354,11 @@
     "name": "Dominic",
     "type": "ERC1155",
     "description": "[Human | Fighter] 'Dracul Bond' Passive: If Avatar Dracul is equipped, Dominic Gains +25 ATK. Additionally, Upon death Dominic returns to the field at the start of your next Standby Phase with 75% of his HP. This effect occurs once. ",
-    "image": "https://bafybeiffyqjpn5hhjep665bcvcq5ivsnvk2emkq5rhlg5eshamdtybvcjq.ipfs.dweb.link/DOMINIC%20FRONT.webp",
+    "image": "QmeUS2Apfcf46Ruw6R2BSeMKrQYoANMUXvZ5cbWXgqq7UU",
     "symbol": "GATE",
+    "synergies": [
+      "Dracul"
+    ],
     "properties": {
       "id": {
         "name": "id",
@@ -20377,7 +20457,14 @@
     "name": "Etnor",
     "type": "ERC1155",
     "description": "[Beast | Fighter] 'Son of Eross' Active: Pay 100 Gold during your MP1 and Discard One Card from your Hand to the Graveyard; Add Eross from your deck to your hand. Passive: If Etnor is sent to the grave, Hire Eross to the field from your hand. ",
-    "image": "https://bafybeiaeudf3lyefctux5odd2dlflnm7gwgxfxosgl6poe5suu343vrxvm.ipfs.dweb.link/ETNOR%20FRONT.webp",
+    "image": "QmQqZa99dSXKTcpxjPJ5ZKXvWM39GgMEG1HrVSvTv8bK1m",
+    "synergies": [
+      "Eross"
+    ],
+    "artist": {
+      "name": "Arya Mahardika",
+      "link": "https://yayamatsumi.artstation.com/"
+    },
     "symbol": "GATE",
     "properties": {
       "id": {
@@ -20472,5 +20559,209 @@
       }
     ],
     "typeCard": "iron"
+  },
+  {
+    "name": "Ultraman",
+    "type": "ERC1155",
+    "description": "● Specium Beam ● Specium Blade ● Ultra Slash",
+    "image": "https://bafkreieqqultmhvbou4hicsnk6zc7t5ui44y5fqzw6tygqdv2shjalocxy.ipfs.nftstorage.link/",
+    "symbol": "GATE",
+    "synergies": [
+      "Pending"
+    ],
+    "properties": {
+      "id": {
+        "name": "id",
+        "value": 233
+      },
+      "name": {
+        "name": "name",
+        "value": "Ultraman"
+      },
+      "type": {
+        "name": "type",
+        "value": "Mystic"
+      },
+      "rarity": {
+        "name": "rarity",
+        "value": "Collectors Edition"
+      },
+      "image": {
+        "name": "image",
+        "value": "https://bafkreieqqultmhvbou4hicsnk6zc7t5ui44y5fqzw6tygqdv2shjalocxy.ipfs.nftstorage.link/"
+      },
+      "description": {
+        "name": "description",
+        "value": "● Specium Beam ● Specium Blade ● Ultra Slash"
+      }
+    },
+    "attributes": [
+      {
+        "trait_type": "name",
+        "value": "Ultraman"
+      },
+      {
+        "trait_type": "type",
+        "value": "Mystic"
+      },
+      {
+        "trait_type": "rarity",
+        "value": "Collectors Edition"
+      },
+      {
+        "trait_type": "image",
+        "value": "https://bafkreieqqultmhvbou4hicsnk6zc7t5ui44y5fqzw6tygqdv2shjalocxy.ipfs.nftstorage.link/"
+      },
+      {
+        "trait_type": "description",
+        "value": "● Specium Beam ● Specium Blade ● Ultra Slash"
+      },
+      {
+        "trait_type": "id",
+        "value": 233
+      }
+    ],
+    "typeCard": "avatar"
+  },
+  {
+    "name": "Bemular",
+    "type": "ERC1155",
+    "description": "● Giant Light Orb ● Specium Beam. ● Red Orb Beam.",
+    "image": "https://bafkreifvo4adoub5b6qzy7a4fcsypygvllzfef7ypde2x426m7xcy3y5ji.ipfs.nftstorage.link/",
+    "symbol": "GATE",
+    "synergies": [
+      "Pending"
+    ],
+    "properties": {
+      "id": {
+        "name": "id",
+        "value": 234
+      },
+      "name": {
+        "name": "name",
+        "value": "Bemular"
+      },
+      "type": {
+        "name": "type",
+        "value": "Void"
+      },
+      "rarity": {
+        "name": "rarity",
+        "value": "Collectors Edition"
+      },
+      "image": {
+        "name": "image",
+        "value": "https://bafkreifvo4adoub5b6qzy7a4fcsypygvllzfef7ypde2x426m7xcy3y5ji.ipfs.nftstorage.link/"
+      },
+      "description": {
+        "name": "description",
+        "value": "● Giant Light Orb ● Specium Beam. ● Red Orb Beam."
+      }
+    },
+    "attributes": [
+      {
+        "trait_type": "name",
+        "value": "Bemular"
+      },
+      {
+        "trait_type": "type",
+        "value": "Void"
+      },
+      {
+        "trait_type": "rarity",
+        "value": "Collectors Edition"
+      },
+      {
+        "trait_type": "image",
+        "value": "https://bafkreifvo4adoub5b6qzy7a4fcsypygvllzfef7ypde2x426m7xcy3y5ji.ipfs.nftstorage.link/"
+      },
+      {
+        "trait_type": "description",
+        "value": "● Giant Light Orb ● Specium Beam. ● Red Orb Beam."
+      },
+      {
+        "trait_type": "id",
+        "value": 234
+      }
+    ],
+    "typeCard": "avatar"
+  },
+  {
+    "name": "Shinobi Guardian",
+    "image": "https://cdn.discordapp.com/attachments/974017438171672616/981746361290592377/SHINOBI_GUARDIAN_1_FRONT.png",
+    "properties": {
+      "image": {
+        "name": "image",
+        "value": "https://cdn.discordapp.com/attachments/974017438171672616/981746361290592377/SHINOBI_GUARDIAN_1_FRONT.png"
+      },
+      "name": {
+        "value": "Shinobi Guardian"
+      },
+      "attack": {
+        "name": "attack",
+        "value": 50
+      },
+      "hp": {
+        "name": "hp",
+        "value": 50
+      },
+      "gold": {
+        "name": "gold",
+        "value": 25
+      }
+    },
+    "typeCard": "ghost"
+  },
+  {
+    "name": "Shinobi Guardian",
+    "image": "https://cdn.discordapp.com/attachments/974017438171672616/981746361567412244/SHINOBI_GUARDIAN_2_FRONT.png",
+    "properties": {
+      "image": {
+        "name": "image",
+        "value": "https://cdn.discordapp.com/attachments/974017438171672616/981746361567412244/SHINOBI_GUARDIAN_2_FRONT.png"
+      },
+      "name": {
+        "value": "Shinobi Guardian"
+      },
+      "attack": {
+        "name": "attack",
+        "value": 50
+      },
+      "hp": {
+        "name": "hp",
+        "value": 50
+      },
+      "gold": {
+        "name": "gold",
+        "value": 25
+      }
+    },
+    "typeCard": "ghost"
+  },
+  {
+    "name": "Shinobi Guardian",
+    "image": "https://cdn.discordapp.com/attachments/974017438171672616/981746361831677982/SHINOBI_GUARDIAN_3_FRONT.png",
+    "properties": {
+      "image": {
+        "name": "image",
+        "value": "https://cdn.discordapp.com/attachments/974017438171672616/981746361831677982/SHINOBI_GUARDIAN_3_FRONT.png"
+      },
+      "name": {
+        "value": "Shinobi Guardian"
+      },
+      "attack": {
+        "name": "attack",
+        "value": 50
+      },
+      "hp": {
+        "name": "hp",
+        "value": 50
+      },
+      "gold": {
+        "name": "gold",
+        "value": 25
+      }
+    },
+    "typeCard": "ghost"
   }
 ]

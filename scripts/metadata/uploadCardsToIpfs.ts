@@ -1,26 +1,37 @@
 import { writeJsonFile } from "../../utils/index";
-import { filesFromPath } from "files-from-path";
+import { filesFromPath, getFilesFromPath } from "files-from-path";
 import path from "path";
-import { Web3Storage, getFilesFromPath } from "web3.storage";
+import { NFTStorage } from "nft.storage";
 
 const init = async () => {
-  const client = new Web3Storage({
+  const client = new NFTStorage({
     token:
-      "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkaWQ6ZXRocjoweDRiNjMwZEI5OTMwNWU4Q2M3ZjQxQzFiOTEzNTlCNUEyMDI4OTYxMTYiLCJpc3MiOiJ3ZWIzLXN0b3JhZ2UiLCJpYXQiOjE2OTQwOTg0MDE4NzIsIm5hbWUiOiJlbmRlcnNnIn0.vpHXhTvikwns1_GUwD4pQwpk0-JCNYLcH2DEGk9CXpo",
+      "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkaWQ6ZXRocjoweDI0MTlhMTNFNTlmMTc0NzYxNGY0NDY0M2E4N0I4ODAyZTI5ODIxNDkiLCJpc3MiOiJuZnQtc3RvcmFnZSIsImlhdCI6MTcwMTc5NjA0MzA5MywibmFtZSI6Ik1FIn0.umae5LUnN440iSkF7fkf_ZUePnH2vgHFLlhjThlwikc",
   });
 
   const arrayTypes = [
-    "Action",
-    "Reaction",
-    "Avatar-Cards",
-    "Gold-Guardian-Cards",
-    "Iron-Guardian-Cards",
+    "Action/1",
+    "Action/2",
+    "Action/3",
+    "Reaction/1",
+    "Reaction/2",
+    "Reaction/3",
+    "Gold-Guardian-Cards/1",
+    "Gold-Guardian-Cards/2",
+    "Gold-Guardian-Cards/3",
+    "Iron-Guardian-Cards/1",
+    "Iron-Guardian-Cards/2",
+    "Iron-Guardian-Cards/3",
     "Legendary-Guardian-Cards",
-    "Stone-Guardian-Cards",
-    "Wood-Guardian-Cards",
+    "Stone-Guardian-Cards/3",
+    "Stone-Guardian-Cards/2",
+    "Stone-Guardian-Cards/1",
+    "Wood-Guardian-Cards/1",
+    "Wood-Guardian-Cards/2",
+    "Wood-Guardian-Cards/3",
   ];
 
-  for (let i = 0; i <= arrayTypes.length; i++) {
+  for (let i = 0; i < arrayTypes.length; i++) {
     const directoryFiles = `EG-Cards/${arrayTypes[i]}`;
     console.log("Uploading files from " + directoryFiles);
 
@@ -29,12 +40,14 @@ const init = async () => {
       hidden: true, // use the default of false if you want to ignore files that start with '.'
     });
 
-    const cid = await client.put(files);
+    console.log("pre-upload");
+    const cid = await client.storeDirectory(files);
+    console.log("post-upload");
 
     writeJsonFile({
       path: `/nfts/URIs.json`,
       data: {
-        [arrayTypes[i]]: `https://${cid}.ipfs.dweb.link/`,
+        [arrayTypes[i]]: `https://${cid}.ipfs.nftstorage.link/`,
       },
     });
   }

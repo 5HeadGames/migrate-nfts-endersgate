@@ -1,0 +1,970 @@
+{
+  "Avatar-Cards": [
+    {
+      "name": "/BemularBack-FinalDraftLightOn.webp",
+      "link": "ipfs://bafyreidxp2vd23v2w5znqwiygzvmw3bgdbjupe5bu2wo2euxco2ejm4dbm/metadata.json"
+    },
+    {
+      "name": "/BemularFront-FinalDraftLightOn.webp",
+      "link": "ipfs://bafyreif2fvea4p2lzadopgqc7xi7pmykwckx6pf7xtsyj6fmuwyiybinm4/metadata.json"
+    },
+    {
+      "name": "/Dracul_front.webp",
+      "link": "ipfs://bafyreidrluwcm5e5shnjh3bhvyapn75nm2xbxxcn2j7pxnqa4afu7shl4m/metadata.json"
+    },
+    {
+      "name": "/UltramanBack-FinalDraftLightOn.webp",
+      "link": "ipfs://bafyreib34erc6plb7jt3fmfcqaagsjgp73aklsun3ugg3juw53q6dwb5f4/metadata.json"
+    },
+    {
+      "name": "/UltramanFront-FinalDraftLightOn.webp",
+      "link": "ipfs://bafyreibn3ju2ktde4qch55a3dfcdk77j5kr7vj3k6v5zltnlepet2q3xbi/metadata.json"
+    }
+  ],
+  "Action": [
+    {
+      "name": "/ANGRY SEA FRONT.webp",
+      "link": "ipfs://bafyreidmxdax2rhud5yg22cnhqztuh3iw4bn3zvtmqiqwtz4axqbapfsp4/metadata.json"
+    },
+    {
+      "name": "/CALCULATED DRAW FRONT.webp",
+      "link": "ipfs://bafyreics3jppd6v3xkpgcvp2k5znevtumc5gts6fjwazdc5tplubpm65tu/metadata.json"
+    },
+    {
+      "name": "/CHOSEN ONE FRONT.webp",
+      "link": "ipfs://bafyreibw72kgrrewoi4qxxgseds26nn5d5pa56ysnc3irk63c5cotm44fm/metadata.json"
+    },
+    {
+      "name": "/CURSED JIAN FRONT.webp",
+      "link": "ipfs://bafyreich4t2vvay57jgyviool3cmvpmkdaoklictmsvwcght6vl7cqz5he/metadata.json"
+    },
+    {
+      "name": "/DIMENSIONAL TESS FRONT.webp",
+      "link": "ipfs://bafyreibykwlisjr4ey4lms7rdg3aejobmvchiwjroo6htjmwakk54az764/metadata.json"
+    },
+    {
+      "name": "/E-AXE EARTH MODE FRONT.webp",
+      "link": "ipfs://bafyreid34tly3hdolbp25lig4zx2pgsfhqta5elqgi327nyilo5oau2p5i/metadata.json"
+    },
+    {
+      "name": "/E-AXE FIRE MODE FRONT.webp",
+      "link": "ipfs://bafyreidwc4msx34zojhfk7wl4jielb4ujrxu2444b75hfstmb6sybbdihi/metadata.json"
+    },
+    {
+      "name": "/E-AXE MYSTIC MODE FRONT.webp",
+      "link": "ipfs://bafyreigfpycrhtsbck45yvtuqrvicjdasv4iyzwezvjudpqpxsjmojwn74/metadata.json"
+    },
+    {
+      "name": "/E-AXE VENOM MODE FRONT.webp",
+      "link": "ipfs://bafyreid2zweaxj7bxtyjzrjl5l3ecogzvynlkt4d6l7hr2p43cliqe4jqu/metadata.json"
+    },
+    {
+      "name": "/E-AXE VOID MODE FRONT.webp",
+      "link": "ipfs://bafyreiact4didud74mmruwyjqz64o2mfpbfmdl45v7hxjfkwevddzqrya4/metadata.json"
+    },
+    {
+      "name": "/E-AXE WATER MODE FRONT.webp",
+      "link": "ipfs://bafyreiclt45tklawglssc7wpemr5asdn4pujx673irxaiw3bh4t37xc6me/metadata.json"
+    },
+    {
+      "name": "/EARTH COCTAIL FRONT.webp",
+      "link": "ipfs://bafyreigq53emhwxz2vcr7pchyt5cgtkpaizib7hleso4qtrmoqgl6cxtou/metadata.json"
+    },
+    {
+      "name": "/EARTH FRONT.webp",
+      "link": "ipfs://bafyreicx6jqczwiq6ipqkcd3uyvuxoo2mhlhseuxpg2aoq2swlfega2l34/metadata.json"
+    },
+    {
+      "name": "/EARTH GAUNTLET FRONT.webp",
+      "link": "ipfs://bafyreibbhpuuzm34i6arrpubqko2gsblm6qu6wukklcwpu2wuyixud2n24/metadata.json"
+    },
+    {
+      "name": "/EARTH WORLD FRONT.webp",
+      "link": "ipfs://bafyreicyonweqsizeiphdiotxkjlqpdiikv66krxjtbn732ttrgzxmd5hy/metadata.json"
+    },
+    {
+      "name": "/FIELD OF VENOM FRONT.webp",
+      "link": "ipfs://bafyreifrdqz5kicn6dm53fwuk6h2ucof4ahzfuopnmsad3ttrpidek3vam/metadata.json"
+    },
+    {
+      "name": "/FIGHTER ESSENCE FRONT.webp",
+      "link": "ipfs://bafyreiagy4plbuuxobt56f4aitnfua7quo7crhfjwe3myos7wv6is7ds6y/metadata.json"
+    },
+    {
+      "name": "/GAIAS TOUCH FRONT.webp",
+      "link": "ipfs://bafyreiblnignu2dtsq3z73fhvisnh3usk62a5c7tlmqg6ahp7obvswy6vy/metadata.json"
+    },
+    {
+      "name": "/GOLDEN PIG FRONT.webp",
+      "link": "ipfs://bafyreifztumri4vm3a4fjo6qstmekbxcrmcthnzsxfmjwpxm3wqqxdwxo4/metadata.json"
+    },
+    {
+      "name": "/GREATER HEALING TINCTURE FRONT.webp",
+      "link": "ipfs://bafyreihayrycsech7d6dstfvapuh7l6zwhyqcfmjkbxcggo4gl6x5rmuh4/metadata.json"
+    },
+    {
+      "name": "/HATCHLING POTENITAL.webp",
+      "link": "ipfs://bafyreiarep7fpeovdnv7fnnzz6kqqzlbfy5kcc3xnfjtdk66tdxufak3my/metadata.json"
+    },
+    {
+      "name": "/JUPITERS CRITICAL FIST FRONT.webp",
+      "link": "ipfs://bafyreibkdaojwmlihuszuxlymkal7f46vzi4p242jazexqt62xvfkxbypm/metadata.json"
+    },
+    {
+      "name": "/LAVA WORLD FRONT.webp",
+      "link": "ipfs://bafyreich7e3jwzpaaj5pbq6cy4xqg7f6uyd6yynfjozfiu45fza54kje4q/metadata.json"
+    },
+    {
+      "name": "/LIGHTNING STRIKE FRONT.webp",
+      "link": "ipfs://bafyreiei5643grc4zxsenoscnmwrsweirnylq43eitgqiblwtafrlszp7a/metadata.json"
+    },
+    {
+      "name": "/MUTUAL DESTRUCTIVE RAIN FRONT.webp",
+      "link": "ipfs://bafyreigoroybsmmtlccsnrppw73hhpqh7qmsqonro77flz3buihlujkkka/metadata.json"
+    },
+    {
+      "name": "/NORDIC WAR BOOK FRONT.webp",
+      "link": "ipfs://bafyreidexiim5gd7lu53hocbvsxqeouto436ct2jihimevcun3zcinftcu/metadata.json"
+    },
+    {
+      "name": "/OVER SHIELD TONIC FRONT.webp",
+      "link": "ipfs://bafyreieewpn4kq5sfx3auyduqvfij3hpoootpqsrds44tncgzgspyt2qpe/metadata.json"
+    },
+    {
+      "name": "/PANACEAS TOUCH FRONT.webp",
+      "link": "ipfs://bafyreiefwwcke6x6map7crcrt5hxyjepn2nwnyqutxk4epm6egyynmwqea/metadata.json"
+    },
+    {
+      "name": "/POISON FLASK FRONT.webp",
+      "link": "ipfs://bafyreiemcdfagupoebklhmoq5vmmakayl7rgbmch45l3tfeg7q6zlwrhwy/metadata.json"
+    },
+    {
+      "name": "/PUPPET MASTER FRONT.webp",
+      "link": "ipfs://bafyreie777axcuxtbec2wnsqgp43wtdgjpmxu2jkn2cwxtlw76v665ag2q/metadata.json"
+    },
+    {
+      "name": "/RECKLESS DRAW FRONT.webp",
+      "link": "ipfs://bafyreih5irmuvgvepq2hijy2c35amqi43iq7aqmusszfqq7qbfr3ih3dzi/metadata.json"
+    },
+    {
+      "name": "/RETURN FROM BEYOND FRONT.webp",
+      "link": "ipfs://bafyreibtumww6yeo6rhqtyd4cadbtfitidbbdt5pyss3snwza2g27faecy/metadata.json"
+    },
+    {
+      "name": "/SNAKE CHARMER FRONT.webp",
+      "link": "ipfs://bafyreiajxel343rf6sjnzk7y56kmlrz2bohe43yaiwgi4leyx27o3u2naq/metadata.json"
+    },
+    {
+      "name": "/SUNKEN PALACE FRONT.webp",
+      "link": "ipfs://bafyreie5whgnwemvkhi6fuvzywyzjev45ilvmym26tbdafndsu34pr2l4a/metadata.json"
+    },
+    {
+      "name": "/SWORDS OF THE OPEN SEA FRONT.webp",
+      "link": "ipfs://bafyreieaqpbeyur7bbk7a4w3jjbv4nw5qmi2csimfdjfj44re7y72jbwbe/metadata.json"
+    },
+    {
+      "name": "/THORS HAMMER FRONT.webp",
+      "link": "ipfs://bafyreidbwg2mlmxnpbjhrttsauq6igmkiqmu76ejjwbp6ebtglpmmb3kpa/metadata.json"
+    },
+    {
+      "name": "/VENOM RING FRONT.webp",
+      "link": "ipfs://bafyreig7oq3lp6zzgvjrsg3b7gdczyn4rxqji3p4z4jj34d6rbzvgv3bna/metadata.json"
+    },
+    {
+      "name": "/VENOM WORLD FRONT.webp",
+      "link": "ipfs://bafyreif5uozd4ybon2ua64cxs6haejnrakkeafbsmvmbguhjfyt4oe74le/metadata.json"
+    },
+    {
+      "name": "/VOID BLAST FRONT.webp",
+      "link": "ipfs://bafyreidepa6gflw7bvuj7earcif62mtvmxrzcl27atac6tyjbkzhnuwzhe/metadata.json"
+    },
+    {
+      "name": "/VOID LEDGER FRONT.webp",
+      "link": "ipfs://bafyreieyrgfjtxgz5nhg43zxmrrckf43oulqjbiv5ozes6ijbwohpjsg2m/metadata.json"
+    },
+    {
+      "name": "/VOID TIME DILATION FRONT.webp",
+      "link": "ipfs://bafyreicypeixbuvvjlhfr3ahjpakua7udyt6y7y66ko3fb3gdjbvqdbt6q/metadata.json"
+    },
+    {
+      "name": "/VOID WALKERS ATTRACTION FRONT.webp",
+      "link": "ipfs://bafyreigjokds33hks7jce3qxr2dsqdv5i53dmix5wnjmyxjtohdyzngyym/metadata.json"
+    },
+    {
+      "name": "/VOID WORLD FRONT.webp",
+      "link": "ipfs://bafyreifrfqqp4ppxwuw2bnxua6xnfomd6n5jd2afvt2mrfchtnkact7epa/metadata.json"
+    },
+    {
+      "name": "/WARRIORS STAND FRONT.webp",
+      "link": "ipfs://bafyreie6agstp724xbgpftnmbf7u27wqyi75u2vjcq2pmnda54zgaetobe/metadata.json"
+    },
+    {
+      "name": "/WILLFUL SHIELD FRONT.webp",
+      "link": "ipfs://bafyreibxvl5k2k3xywxfzk36e6yngmdi5icrliymn5me2kgibjuyur3j2i/metadata.json"
+    },
+    {
+      "name": "/XOLZOGS MANUFESTO FRONT.webp",
+      "link": "ipfs://bafyreiaoadoqzbj7yy4tpnoifrr7r5bumldnd7sbnu3hcdiei4ulgnhnby/metadata.json"
+    }
+  ],
+  "Reaction": [
+    {
+      "name": "/ACHLYS JEWELRY BOX FRONT.webp",
+      "link": "ipfs://bafyreigmwehurrqhpvole7hcuhyr5iy4zaxvbailj72rlkz2jowbbapt64/metadata.json"
+    },
+    {
+      "name": "/BACKFIRE FRONT.webp",
+      "link": "ipfs://bafyreiblbipsxuja237x3d522otpt74jn3onyiakiawd4o7gyiy3adegfa/metadata.json"
+    },
+    {
+      "name": "/BLIND BALANCE FRONT.webp",
+      "link": "ipfs://bafyreidhgtgwhntq37bkndn5rd7m3avguzwtxnrghdirg5prezm56vv5qi/metadata.json"
+    },
+    {
+      "name": "/BOOK OF PAIN FRONT.webp",
+      "link": "ipfs://bafyreibbuolegzhu6xnfuocmzjipsz5vbid7vqqycguzezid2is3bph2h4/metadata.json"
+    },
+    {
+      "name": "/CALL OF THE UNDYING FRONT.webp",
+      "link": "ipfs://bafyreia44grcdzwenfeabpihunefcxzfoqx2riisx2tlzim5ok3tqyd5j4/metadata.json"
+    },
+    {
+      "name": "/CO-BRO FRONT.webp",
+      "link": "ipfs://bafyreidjqvhrd6i7aep2npmjlccacbg65pp4vuhrpaudpr5dfdjiw7l5ba/metadata.json"
+    },
+    {
+      "name": "/COLLECTORS HORIZON FRONT.webp",
+      "link": "ipfs://bafyreiglxt7wymqlimvkqh5gx5jt5pfdl3hd257bfmfzz3y76oocovo4h4/metadata.json"
+    },
+    {
+      "name": "/Cold Blooded Prison.webp",
+      "link": "ipfs://bafyreiafuxxpzz227sxkxebskbi3ggw5posqef6sngvfstw2i3b2cahbyi/metadata.json"
+    },
+    {
+      "name": "/Currency Hypnosis.webp",
+      "link": "ipfs://bafyreif7d2vc4ualnwbek2bwaldj4llw2vjw5q5cqt5d46iuzpckyphzi4/metadata.json"
+    },
+    {
+      "name": "/EQUAL EXCHANGE FRONT.webp",
+      "link": "ipfs://bafyreicyam5nrx72jlt7tn7fmzrwwqv2cm7zhmtlgh4gxlhrse4iyqpgzy/metadata.json"
+    },
+    {
+      "name": "/Explosive Sabotage.webp",
+      "link": "ipfs://bafyreidwuw5lqnzcphccgxt2adnn4bvy5vsvs35b3qftucvfnlgh6r237q/metadata.json"
+    },
+    {
+      "name": "/FIRE TEMPEST FRONT.webp",
+      "link": "ipfs://bafyreihguy2rmjlzixaawslemf4sot7lwslmj6t3liiufc2qmg7vam3jke/metadata.json"
+    },
+    {
+      "name": "/FIRE-TRAP-FRONT.webp",
+      "link": "ipfs://bafyreigxk6kn3lwdx2f5xbqatbrfitchs6vm6mdqzei3mfgivpccuw6ikm/metadata.json"
+    },
+    {
+      "name": "/GEA THE MYSTIC FRONT.webp",
+      "link": "ipfs://bafyreielbhrl4e5bh3dvontxmx4ixzygubqwx66tkbvgt42iiy4olo6zzu/metadata.json"
+    },
+    {
+      "name": "/GOLD BEAR TRAP.webp",
+      "link": "ipfs://bafyreiam7vrx63f6ntttrqhpm7n55c526ncyqfa4ezmzghkhwyjc3zskni/metadata.json"
+    },
+    {
+      "name": "/GRAVE ANNOYANCE FRONT.webp",
+      "link": "ipfs://bafyreigpq567ota6bnazzljag5kiqnr5e4vafxdv7waopj5k7dh7p7ppvm/metadata.json"
+    },
+    {
+      "name": "/HOOK JAW SNAKE FRONT.webp",
+      "link": "ipfs://bafyreicoeusf6zvksp6sosbn4xlcje5vceajqvo3tomceiy2vq7xtgregq/metadata.json"
+    },
+    {
+      "name": "/IAIJUSTU COUNTER FRONT.webp",
+      "link": "ipfs://bafyreieaby27amtuhhcjqqhhkpblgxnr2r2ftpvyulgx3ej3ud2x52y7uq/metadata.json"
+    },
+    {
+      "name": "/IGNITED BEAR TRAP FRONT.webp",
+      "link": "ipfs://bafyreictj6npnkxvoth4f5eex7sx3xsll3guynii7fipiuctyil3gmbfs4/metadata.json"
+    },
+    {
+      "name": "/KNIGHT'S REVENGE.webp",
+      "link": "ipfs://bafyreiey7zy2erkfezir4c5x5jt3hc767dqswdvelzcpxtsjwnfioby23e/metadata.json"
+    },
+    {
+      "name": "/LUSTFUL PREY FRONT.webp",
+      "link": "ipfs://bafyreigobhydg5uviolhxpll6zc737onxb5g4bleugfs5agpwinm6javuq/metadata.json"
+    },
+    {
+      "name": "/PACIFIST INCENTIVE FRONT.webp",
+      "link": "ipfs://bafyreidqlwyr2lqrzdc5zw6bvhxtrhpl3qdrxz6jxvtk435oqcyv26eycq/metadata.json"
+    },
+    {
+      "name": "/POISON TRAP FRONT.webp",
+      "link": "ipfs://bafyreicdz57j3ema5iqs2yhiciom5prwcwas34i7uo2oflwroiwbs6gbb4/metadata.json"
+    },
+    {
+      "name": "/PRACTICE DUMMY FRONT.webp",
+      "link": "ipfs://bafyreigotr7jlgcq7ubcrvznup3zgamf6f5pan4f6pfjibjgh6vip4p34i/metadata.json"
+    },
+    {
+      "name": "/RAIN OF ARROWS FRONT.webp",
+      "link": "ipfs://bafyreido76aed5gi74mhmufnlzkrek2oh2mkbdo4cvusju62ss56dlnx2u/metadata.json"
+    },
+    {
+      "name": "/RARITY GUILLOTINE FRONT.webp",
+      "link": "ipfs://bafyreibrlnqr2o6aoiy6phe3txsp24leaxeged7gqdevvs574qkx55osyy/metadata.json"
+    },
+    {
+      "name": "/RESTFUL CAMP FRONT.webp",
+      "link": "ipfs://bafyreihgoul2fmkahpvubfurcwybp7j76i5ynaybbjn4ynow6gcnjjpzcq/metadata.json"
+    },
+    {
+      "name": "/RETURN TO THE VOID FRONT.webp",
+      "link": "ipfs://bafyreicji4zjngv27pp6ib2urux7d5ocn5myubaskbtvvtwe2tw3woukvm/metadata.json"
+    },
+    {
+      "name": "/SHINOBI GUARDIANS FRONT.webp",
+      "link": "ipfs://bafyreigydyf4uudek5urjw2tkdkwzxyc76uoyy5nqnt6rqnvcjo4i4hv5e/metadata.json"
+    },
+    {
+      "name": "/SHOW OF HANDS FRONT.webp",
+      "link": "ipfs://bafyreihiday5mwoyrc5526a44pwfifxewjo3zfrmeurvaidevs6j6i2dle/metadata.json"
+    },
+    {
+      "name": "/SPIDERS DEN FRONT.webp",
+      "link": "ipfs://bafyreihucwoweifo42clijzqld7wsqgmocfuasobnprcwdqyqm4zqmztxa/metadata.json"
+    },
+    {
+      "name": "/SPIKE TRAP FRONT.webp",
+      "link": "ipfs://bafyreihp45jfrfjr2al7o7zytwba5tuw7xmqxf6obkhcybnbdq6ivbke7i/metadata.json"
+    },
+    {
+      "name": "/SURPRISE ENTRY FRONT.webp",
+      "link": "ipfs://bafyreid2irexjwla5ttgteohoqhhfjuan3bbesucu2k3lfa5vxfo6k4ala/metadata.json"
+    },
+    {
+      "name": "/TANKS BURDEN FRONT.webp",
+      "link": "ipfs://bafyreidynezmwep2to2fimanmxskf2evfvprestqugpg5ouail33g745na/metadata.json"
+    },
+    {
+      "name": "/TRAP DISARM FRONT.webp",
+      "link": "ipfs://bafyreib3kn43uuhwdojborufmmloficlpj7a7izivx2tbzuimpjwaegfxq/metadata.json"
+    },
+    {
+      "name": "/TSUNAMI FRONT.webp",
+      "link": "ipfs://bafyreigs3qhxpvl2nsu6zwaybvoqvoe5aetyg3dvdqmo6lmhuvhc6iz2jm/metadata.json"
+    },
+    {
+      "name": "/UNPLESANT ENTRY FRONT.webp",
+      "link": "ipfs://bafyreidzededpjgztdapurffdl2f3gijbymc7dxce7josaikhah4cobes4/metadata.json"
+    },
+    {
+      "name": "/VOID OVERLOAD FRONT.webp",
+      "link": "ipfs://bafyreid27kqzulcdyhlgckerofyvt237dtdsixgrkndceqaotx3rd4gamy/metadata.json"
+    },
+    {
+      "name": "/VOID TEMPEST FRONT.webp",
+      "link": "ipfs://bafyreiedcwkkxq33otd3pp5z477d7ywibtwgwe7p5q62ddqqwtdxcacxny/metadata.json"
+    },
+    {
+      "name": "/VOID TRAP FRONT.webp",
+      "link": "ipfs://bafyreifyekduay6powrcyzkccznpycxi352d7kqgg4qk43abbsjc2fcskq/metadata.json"
+    },
+    {
+      "name": "/fatal loan.webp",
+      "link": "ipfs://bafyreiggionl6xvkuibdf7rlytjokvj2ymir7w5v2i5h77ufwniqxhjpmm/metadata.json"
+    }
+  ],
+  "Gold-Guardian-Cards": [
+    {
+      "name": "/AKUMA FRONT.webp",
+      "link": "ipfs://bafyreihjryg4vmbgcisvqcsxyydrw6sfbk3zbm3oysy2ji45kwlgzaqhlu/metadata.json"
+    },
+    {
+      "name": "/ANGLER CRAWLER FRONT.webp",
+      "link": "ipfs://bafyreigv53qybx3u5jygygw225unzjzxmuieshbv6ldxf75jqb2rq5wesm/metadata.json"
+    },
+    {
+      "name": "/AOGAERU FRONT.webp",
+      "link": "ipfs://bafyreibdp5ixhirfoh7fu2tcsihf33ziq3bfrkl2bthlqcwmowbwjq3dme/metadata.json"
+    },
+    {
+      "name": "/BATTLE MALLARD.webp",
+      "link": "ipfs://bafyreiebt7hqbhbapfhay5z5y55gcjdfn3jpg5ancfudxn4kowbqwd4igi/metadata.json"
+    },
+    {
+      "name": "/DOMINIC FRONT.webp",
+      "link": "ipfs://bafyreibwgaua3sm4fbbm47giyahahs3epaa3vquwu5gjflibyrcudg232u/metadata.json"
+    },
+    {
+      "name": "/DONNA FRONT.webp",
+      "link": "ipfs://bafyreicb544lfvqincj3jm55csddgiznk6ryofqbokox23w4dhl4jnjrye/metadata.json"
+    },
+    {
+      "name": "/ELWIN FRONT.webp",
+      "link": "ipfs://bafyreibhputzteknuihu6jih5kppd5lz3xy2wv3pp7xfxcagaqn6bvhm4u/metadata.json"
+    },
+    {
+      "name": "/GAIANA FRONT.webp",
+      "link": "ipfs://bafyreiajnzb7h5io2eok626ktymklzjo4mlqmyp7shmki6zdcnbfdvm7qm/metadata.json"
+    },
+    {
+      "name": "/GAKTES THE GIANT FRONT.webp",
+      "link": "ipfs://bafyreifd37se76v4znk3nnsb6zz3glbrfc4t3zcgfxriv3jfrq5gdzi3um/metadata.json"
+    },
+    {
+      "name": "/GOKURI FRONT.webp",
+      "link": "ipfs://bafyreieshiv2nkpmv53z4mocutrhhxrtyaiwnqhfcaolhes2fh475ej34y/metadata.json"
+    },
+    {
+      "name": "/KANGA SAGE FRONT.webp",
+      "link": "ipfs://bafyreid2usudcdmubcq2hg5bgbbe7kctjm4jz3nsujdxfav2qpuspaqxtq/metadata.json"
+    },
+    {
+      "name": "/KEOSHI FRONT.webp",
+      "link": "ipfs://bafyreicieqzcja3azahkqptj7zms4y2ef5sc2hjbvju4kcyi57irwnt6za/metadata.json"
+    },
+    {
+      "name": "/MARIAH FRONT.webp",
+      "link": "ipfs://bafyreidz4jg4iuvkj4luum6pu6ostppcvntmk76buji6jb7pwd4qzmvfqq/metadata.json"
+    },
+    {
+      "name": "/NOVALYNN FRONT.webp",
+      "link": "ipfs://bafyreiaecuz7asiylqa6egyetpga56spv6kig3h5fefrlnwjzpubxjusme/metadata.json"
+    },
+    {
+      "name": "/PUPPET MASTER ARI.webp",
+      "link": "ipfs://bafyreiemrjtnd5xaqtsbbbfovyuhvsq5xeqycztfd3i7bqrantkjhvhysu/metadata.json"
+    },
+    {
+      "name": "/SINTHIA FRONT.webp",
+      "link": "ipfs://bafyreibxp5h7xqlujs7g6y7xtarwt72qpjbwdgqter6mord6itgsyomdgu/metadata.json"
+    },
+    {
+      "name": "/STEPHANIA FRONT.webp",
+      "link": "ipfs://bafyreihpdxshjpgaytbfkabuiicf22rrhn6bp4yshdbm3sxagfajwkvnuu/metadata.json"
+    },
+    {
+      "name": "/TAKALA FRONT.webp",
+      "link": "ipfs://bafyreic5kd3vf4cnq33cxfm3me5ygl7gyjpcc3felht5zgvjopeey25ile/metadata.json"
+    },
+    {
+      "name": "/TIFFANY FRONT.webp",
+      "link": "ipfs://bafyreiapxkwowg7jrmloknugxuonsrkyo2nnt3e3kjryv6wtayy4w6xhdu/metadata.json"
+    },
+    {
+      "name": "/URGOS FRONT.webp",
+      "link": "ipfs://bafyreihv7qrp6w3loidsqrxnuirym3nzhewl6p65zfkaeaem7sm5spqprq/metadata.json"
+    },
+    {
+      "name": "/VOID CRAWLER FRONT.webp",
+      "link": "ipfs://bafyreibbj4y7nzt4o4v6qvfagxwlsegomau73i2xjiivbkrvazuami7fwy/metadata.json"
+    },
+    {
+      "name": "/XEN ZOH FRONT.webp",
+      "link": "ipfs://bafyreiemnpuogqou7di3lymtrbd2txvwxcepfqpy224jz6uzflemsnbydq/metadata.json"
+    },
+    {
+      "name": "/XORAN FRONT.webp",
+      "link": "ipfs://bafyreifgahlcaid3oxzq44opqekiqqi3xlzw6yd36cwfouuglplsoaf5ma/metadata.json"
+    },
+    {
+      "name": "/YANNAH FRONT.webp",
+      "link": "ipfs://bafyreia7eptkk6pfgo7tydkqp7mztlwuattpnaedzfxffsbnxf7dquptpa/metadata.json"
+    },
+    {
+      "name": "/Ymiro.webp",
+      "link": "ipfs://bafyreiafspshxetleuzujdnpzqmysrwypwlpgllgwtjz4fncwnedvkspoy/metadata.json"
+    },
+    {
+      "name": "/ZOHRELA FRONT.webp",
+      "link": "ipfs://bafyreids2ej664ufiezuwtqpznz5izwprjop5c7xcbt7dyzl5asnssqmuy/metadata.json"
+    }
+  ],
+  "Iron-Guardian-Cards": [
+    {
+      "name": "/ALPHA WOLF DAX FRONT.webp",
+      "link": "ipfs://bafyreibsd34kijjtteztjaajqwq5tykxpjeb4cinwqilh2b2hkaqcttgc4/metadata.json"
+    },
+    {
+      "name": "/ANNEA FRONT.webp",
+      "link": "ipfs://bafyreib3t2yuk2lhzz6wqv3z5zz4yv736ncmrtepfskqwekmpcqwyssgea/metadata.json"
+    },
+    {
+      "name": "/AQUALON FRONT.webp",
+      "link": "ipfs://bafyreidlp5op2qkls2qdbii3prnzf7r3ytrhiu2pdxsjylaxxtxbtn26fu/metadata.json"
+    },
+    {
+      "name": "/CHIEF NOPSIS.webp",
+      "link": "ipfs://bafyreihhznpg2kfm3hm3hsaiqapokb7xaric6oc4jtiwwadvmnr3a53pym/metadata.json"
+    },
+    {
+      "name": "/DEMON STAG WASP FRONT.webp",
+      "link": "ipfs://bafyreid4b5jwcs3wdnpy3rrlay66ihze7ztx5burqjxisssafjy2o5yx6q/metadata.json"
+    },
+    {
+      "name": "/ELENOR FRONT.webp",
+      "link": "ipfs://bafyreicudnf3ebn2vjltnsukkietn4tqj2q63mo7ybn3vmdyebd7utjdie/metadata.json"
+    },
+    {
+      "name": "/ETNOR FRONT.webp",
+      "link": "ipfs://bafyreih4besg2vbkgoqmnpmfjr4gh2rd7i7sdr3nvsav26ap6p7xhi3mja/metadata.json"
+    },
+    {
+      "name": "/EYDIS FRONT.webp",
+      "link": "ipfs://bafyreibiwf4bkqrs4krauth5cgxi6taodrf4qq27bvpdz5b2g3s36ipjmy/metadata.json"
+    },
+    {
+      "name": "/FIONA FRONT.webp",
+      "link": "ipfs://bafyreialwaa5n42kuihvaynxnpdxfh2cb34fiwallcipwc4ypfamejk4tm/metadata.json"
+    },
+    {
+      "name": "/GROMKHAR FRONT.webp",
+      "link": "ipfs://bafyreibftfz2s55bpjxf4upxngb2fqpanql2pkacvg6bcny7m77evrvelm/metadata.json"
+    },
+    {
+      "name": "/HENRY FRONT.webp",
+      "link": "ipfs://bafyreibvldpxrrdiuu6vnmtw6y2ujiyjyjagrztz3ae7vrfnxfwys4kroi/metadata.json"
+    },
+    {
+      "name": "/Hanako.webp",
+      "link": "ipfs://bafyreianlbf47sy3z5vvigtz5fdxkts6cljp4354mu52coim7gppaom5fu/metadata.json"
+    },
+    {
+      "name": "/KARA FRONT.webp",
+      "link": "ipfs://bafyreihoeqz3vbss2u2ioncstxzc6fl5hncrutswteomsoo5thdltc6riq/metadata.json"
+    },
+    {
+      "name": "/KRAKEN FRONT.webp",
+      "link": "ipfs://bafyreig5vnym76hir5vqc6lpvbrt4gs2z6rji4rodyqe4pl5cimujca6oy/metadata.json"
+    },
+    {
+      "name": "/LEVIATHON FRONT.webp",
+      "link": "ipfs://bafyreigaum33wafjcjvbu7mqlpw7lc6rgm5exhwbi4h3pujcx53qbrlm4a/metadata.json"
+    },
+    {
+      "name": "/LHAVI THE FIRE GOLEM FRONT.webp",
+      "link": "ipfs://bafyreidj5wikx5bw3r4cjtls6zhrong6auqzehid2fopsw25pvq2uuwv6q/metadata.json"
+    },
+    {
+      "name": "/LIQUANA FRONT.webp",
+      "link": "ipfs://bafyreierdmjybhc67d6glj4x5hvgwthktrav65tplk3gj4wjjtfztbyapy/metadata.json"
+    },
+    {
+      "name": "/LORD KRAKKEN FRONT.webp",
+      "link": "ipfs://bafyreigz7fi3kolnfowwpp2yasw3hacs7a3fwxicnusbwztokvfkq57k54/metadata.json"
+    },
+    {
+      "name": "/LUNA FRONT.webp",
+      "link": "ipfs://bafyreifj24teretop3vkrdsg3amwoayuqybopvtrpoberujyelgiflpuce/metadata.json"
+    },
+    {
+      "name": "/NYSAA FRONT.webp",
+      "link": "ipfs://bafyreie2qpzueqontkytqakjwlwk7ntefxd2sg2ltqu7puadyjjylj6jum/metadata.json"
+    },
+    {
+      "name": "/RAGNAR FRONT.webp",
+      "link": "ipfs://bafyreihzpbvjsdyjypyuic7qvx6hkhf4m5c4jq7s5lbb4uqcwhtrpe5zzm/metadata.json"
+    },
+    {
+      "name": "/Sadako.webp",
+      "link": "ipfs://bafyreidvkhi56dojnqrm3zfgc42ebo3i6cmza2zo3nf4wkjnr4wj4hbe5m/metadata.json"
+    },
+    {
+      "name": "/TEMPRIS FRONT.webp",
+      "link": "ipfs://bafyreibjrwmmfg33patnohmrh7ogzzcd3ysdbcpc5ndiqjybou4gkg5nfq/metadata.json"
+    },
+    {
+      "name": "/UNDEAD BOMBER FRONT.webp",
+      "link": "ipfs://bafyreifzhsejjz6nezkysxkvko2m4dfzcloffw2ib4j5cex3ngxb3ixa4e/metadata.json"
+    },
+    {
+      "name": "/VENTIS FRONT.webp",
+      "link": "ipfs://bafyreib6fscgvvzdyp3hqsinczvuydigk7xjswwwzx7ar3qgbzr46lx7zi/metadata.json"
+    },
+    {
+      "name": "/WEEPING NIGHTMARE FRONT.webp",
+      "link": "ipfs://bafyreigesaj7xev2h42bw7dnvtyaczyxpkuviqqhj4dj66gn3jlezemmwm/metadata.json"
+    },
+    {
+      "name": "/ZELLSHA FRONT.webp",
+      "link": "ipfs://bafyreiarp3jrm5ogssajiai5yj6zep472yfgm4j45pvm4md6flzzegf7jm/metadata.json"
+    }
+  ],
+  "Legendary-Guardian-Cards": [
+    {
+      "name": "/EROSS.webp",
+      "link": "ipfs://bafyreidrqiuyzfnouxnaqqa5hpuzqlukmcmzdrwdu7q44ntielg7dg35gu/metadata.json"
+    },
+    {
+      "name": "/JUDGE RED FRONT.webp",
+      "link": "ipfs://bafyreiglxe7lqp5gpoauaabbx3qjq3b4a6d7rqlqwags3cx6qxwkxn5liy/metadata.json"
+    },
+    {
+      "name": "/KING KILROG FRONT.webp",
+      "link": "ipfs://bafyreidy33ybjgt7ivdche4uotaixiodp5yw5hn5ntrqyq3bzccqlaua3i/metadata.json"
+    },
+    {
+      "name": "/LADY RENE FRONT.webp",
+      "link": "ipfs://bafyreihyjbp66gqdmkwlwxw6znfxpl3haofehzvlrseswtd3fdten7vtei/metadata.json"
+    },
+    {
+      "name": "/LADY SELSI FRONT.webp",
+      "link": "ipfs://bafyreicqljl6xziytprbpnrtsa34zn7mumfykt7ix7v46xl5fslyhwulxi/metadata.json"
+    },
+    {
+      "name": "/MACKADON FRONT.webp",
+      "link": "ipfs://bafyreid6enma54tokwzaraz7a7jkgy7driyg3hsl74zu2lj3lnvbbwbgzu/metadata.json"
+    },
+    {
+      "name": "/MULIOS FRONT.webp",
+      "link": "ipfs://bafyreifb7k34rd7n7ufzy7lmmg2zbl7qv6ppoy26rkeixbvdwjkbavrsbq/metadata.json"
+    },
+    {
+      "name": "/PRINCESS VISSA FRONT.webp",
+      "link": "ipfs://bafyreic2n3jcuxwemwwf7c3ooaqwasfbseliqxe6nt62smjxcvftdviiku/metadata.json"
+    },
+    {
+      "name": "/Rulgannon.webp",
+      "link": "ipfs://bafyreia5hh3qybmnurol6lqyb7mr4ysbaqvrzohakifeqnig7dmkesz4m4/metadata.json"
+    },
+    {
+      "name": "/SIR ALBIN FRONT.webp",
+      "link": "ipfs://bafyreiafscjhyhcl3tlcry4yokgxpbosikphs2hxxfh2qf3cztgwus3yiy/metadata.json"
+    },
+    {
+      "name": "/SIR NEX FRONT.webp",
+      "link": "ipfs://bafyreigqyihqcjkizz5prhmrudm2fgasllo7bec7lvohnji3kipyykwwj4/metadata.json"
+    },
+    {
+      "name": "/THALIAS FRONT.webp",
+      "link": "ipfs://bafyreidtagvg4ieobikts6jrwmmzqccjft7g4pu35x7nkoqcfu7bdi7zdy/metadata.json"
+    },
+    {
+      "name": "/Tazah.webp",
+      "link": "ipfs://bafyreigzez6wxjij2bqh5koiputjvgxkh2eg6oypmydgqhxmlj5dgi7nf4/metadata.json"
+    },
+    {
+      "name": "/XOLZOG FRONT.webp",
+      "link": "ipfs://bafyreibnlbt2bnl5l6rwlob3xn7fc7wselpl54yypmvinx3dvhdov5pevi/metadata.json"
+    },
+    {
+      "name": "/Zesnas.webp",
+      "link": "ipfs://bafyreihuulxwj2fm2k6zbokzotghfdiunvumhy4ix73zyvxf67tppf57uy/metadata.json"
+    }
+  ],
+  "Stone-Guardian-Cards": [
+    {
+      "name": "/AGODOL FRONT.webp",
+      "link": "ipfs://bafyreia5r5oxszi7g2qp77lee6ufopnqmh7qvrmtck5oitfu4gr43voxla/metadata.json"
+    },
+    {
+      "name": "/AKU GAKI FRONT.webp",
+      "link": "ipfs://bafyreicfq6bibhvuxnikcp46pocaicnnm7gjf5277tqfnh7ylcnkm4sfp4/metadata.json"
+    },
+    {
+      "name": "/DR. DOGGET FRONT.webp",
+      "link": "ipfs://bafyreihvk4o26eu6ur772u3x6iibgmtzgqsgnctejfl5knxpmcagby6oaq/metadata.json"
+    },
+    {
+      "name": "/ECLIPSO FRONT.webp",
+      "link": "ipfs://bafyreifpysmcp2t5zm2bvcrfh5dma3ptv2p6vfcevfgbkvtvy75u5rk7eq/metadata.json"
+    },
+    {
+      "name": "/ELIAS THE MUSICIAN FRONT.webp",
+      "link": "ipfs://bafyreibz4jubyctunbtznx4vd443vbwfe5mmxiprh7tdb3ydk7zmcmwrie/metadata.json"
+    },
+    {
+      "name": "/ERIKA FRONT.webp",
+      "link": "ipfs://bafyreiagye6a77kizgkdddmut2htzd42tzxuii4w43slsf75mj265g4nim/metadata.json"
+    },
+    {
+      "name": "/FIRE ARCHER.webp",
+      "link": "ipfs://bafyreie6p5ft6x2wte4o7hjim3qan2huky7mzju7qrlvaad4bvg7qton2u/metadata.json"
+    },
+    {
+      "name": "/FIRE SLASHER.webp",
+      "link": "ipfs://bafyreibsxqwbmep5wfrmqlg4qqtpldmrxzfdvfjnvy24xsmctznyetskwe/metadata.json"
+    },
+    {
+      "name": "/GLACIUS FRONT.webp",
+      "link": "ipfs://bafyreiga7s4xenndbwen6dqhtsj7mgktiusv66igsnspb42lg4tmwr4qju/metadata.json"
+    },
+    {
+      "name": "/GLOWER FRONT.webp",
+      "link": "ipfs://bafyreif64wrmk25rnuaoo6gre24mqxaevzk2sgfy4pseql3vbmwzctx7ju/metadata.json"
+    },
+    {
+      "name": "/Grappler Shark.webp",
+      "link": "ipfs://bafyreica4vqia7u33evg2ejj6h4lyjl4vrrn5ofoc2ure7zhc2mqssbzlq/metadata.json"
+    },
+    {
+      "name": "/HALEY FRONT.webp",
+      "link": "ipfs://bafyreidcymuixl2xhv43mojhzizess4fgzqxoeeqrp2gyhg2pn57eokfeq/metadata.json"
+    },
+    {
+      "name": "/HYDROS FRONT.webp",
+      "link": "ipfs://bafyreic4tyfgwlogvyoxc4w7mhp6cnrdp45datbmuxjoidscnvpmy2e2yu/metadata.json"
+    },
+    {
+      "name": "/KONG FU TURTLE FRONT.webp",
+      "link": "ipfs://bafyreia6rbmscmlfnnup56niirz3cgh4nfk2alqe3k4n3qv3goiroem5cq/metadata.json"
+    },
+    {
+      "name": "/KRONK FRONT.webp",
+      "link": "ipfs://bafyreif3tlvbedd2aunr3uoau327xkcr7dhxycqzzxrevo4yabtqnvvbdq/metadata.json"
+    },
+    {
+      "name": "/LONE WOLF LEX FRONT.webp",
+      "link": "ipfs://bafyreiaxi5bab2p65ds2yoscyqawy3alsxbcd2uklwrqq6e2ujzlewwymy/metadata.json"
+    },
+    {
+      "name": "/MALOSS FRONT.webp",
+      "link": "ipfs://bafyreigxj3zduey4au46oztfwpiyrkv7nzikye535d4mgfgadu4orymgme/metadata.json"
+    },
+    {
+      "name": "/MATA FIGHTER FRONT.webp",
+      "link": "ipfs://bafyreidyusubtu7zey7pfkrpxwdd6uei67nfxwx7gqpxnafhplj3khdsi4/metadata.json"
+    },
+    {
+      "name": "/MATA GLADIATOR FRONT.webp",
+      "link": "ipfs://bafyreifmgthx6bgh2rdvtm47emv7goblzqj5z43r2mvxcydj5canw7x23y/metadata.json"
+    },
+    {
+      "name": "/MATA SPEARMAN FRONT.webp",
+      "link": "ipfs://bafyreigcfszfn46nmvlult5nmuwxvnazjbxfq7mdop54dlcew2t2nvuxim/metadata.json"
+    },
+    {
+      "name": "/MOONBEAM FRONT.webp",
+      "link": "ipfs://bafyreigrelkox7ffsrj2wc6ytctfonfqwqxo44cpiklmeis6axaetfnfky/metadata.json"
+    },
+    {
+      "name": "/NOBREW FRONT.webp",
+      "link": "ipfs://bafyreido75dkgefv6wtzv5vo6sdvf2u3h4qncpvisle6f4hp24snkucy7e/metadata.json"
+    },
+    {
+      "name": "/NORFELO FRONT.webp",
+      "link": "ipfs://bafyreihnjp5sny5edvohdmcwtprpgkorvk7ghil4ajxmqwy3yjcdn52gte/metadata.json"
+    },
+    {
+      "name": "/OMEGA WOLF PAX FRONT.webp",
+      "link": "ipfs://bafyreihgzkffedyrufekwhqwy634zdbnqsitsbthnxfdkngpgaijp3lz5m/metadata.json"
+    },
+    {
+      "name": "/OPHELIA THE RESURRECTOR FRONT.webp",
+      "link": "ipfs://bafyreifd2laqswlfyn57g46g5nelxlktw5f6gxmg7y6gcvzhuv5aw5h5te/metadata.json"
+    },
+    {
+      "name": "/OTAKE YUKITO FRONT.webp",
+      "link": "ipfs://bafyreicy7lun3dsrkr5p6jymtv4sxlmpdiujsdhclqirfqgde4mbgkp4qm/metadata.json"
+    },
+    {
+      "name": "/OXI THE VOID GOLEM FRONT.webp",
+      "link": "ipfs://bafyreiah3fgwujqaoaioluxtcxhdyuyk7mcakhh6s4zla33b6vndc2pwiq/metadata.json"
+    },
+    {
+      "name": "/REINOLD FRONT.webp",
+      "link": "ipfs://bafyreifslk3xcypgarnalclz7n5hgzwpz72zb5hzyu6g6yuizmejd4fvrm/metadata.json"
+    },
+    {
+      "name": "/ROSSI FRONT.webp",
+      "link": "ipfs://bafyreihyfz74l7qad6pf25uaaal6z22top3pw53vysjsu7hdvfgmof23j4/metadata.json"
+    },
+    {
+      "name": "/SAHAN FRONT.webp",
+      "link": "ipfs://bafyreihuzkmu6udjz3sb5s6ye2zsezlctn6p43xhu6u56hjjw3k272tw5u/metadata.json"
+    },
+    {
+      "name": "/SAMPSON FRONT.webp",
+      "link": "ipfs://bafyreia6tozfbsdfb75xyybofuohzmt5ur3pfmfw62aukepsx7yr6omqq4/metadata.json"
+    },
+    {
+      "name": "/SPEAR SHARK FRONT.webp",
+      "link": "ipfs://bafyreiazfiofmqxwaioejkimlwe3jyviqlorfbbmjlf4myqv72cxyzdap4/metadata.json"
+    },
+    {
+      "name": "/UNDEAD ARCHER FRONT.webp",
+      "link": "ipfs://bafyreieg3hvmge4sg3r3ev622rcl7z3w64yys2i6txbvjyshkynxz364mi/metadata.json"
+    },
+    {
+      "name": "/UNDEAD TURTLE FRONT.webp",
+      "link": "ipfs://bafyreiad3w2lq2yfn5bu4no3wht737kkvfcz7hyp6xng6phfbbkmc6oaf4/metadata.json"
+    },
+    {
+      "name": "/VROGUT FRONT.webp",
+      "link": "ipfs://bafyreih4wx4a7usqfkuzqwbabm2j3ssfihjy6gpcvpdo3rfiwgsluonmuq/metadata.json"
+    },
+    {
+      "name": "/YOSHIKO FRONT.webp",
+      "link": "ipfs://bafyreifkndtm7lbkisamgsiz4gw5zkbeft24qahrgqfljvewsdjwcz7xdq/metadata.json"
+    }
+  ],
+  "Wood-Guardian-Cards": [
+    {
+      "name": "/ALUGASTOR FRONT.webp",
+      "link": "ipfs://bafyreiclig2ubkxezn2tauwjqyhx43qduycvrrh7b7iq6ftxv2m2it3hjq/metadata.json"
+    },
+    {
+      "name": "/BERT & KURT FRONT.webp",
+      "link": "ipfs://bafyreibgvdbi4ayt7hq7ns3pirvumzvbluikinekcvdtwychtiw55zymeu/metadata.json"
+    },
+    {
+      "name": "/BETA WOLF TAX FRONT.webp",
+      "link": "ipfs://bafyreignusbre4lxkz7vhby357l7palwaxcin3g6r6fqjmnv6nm2sl4kdu/metadata.json"
+    },
+    {
+      "name": "/BLAZE BANE FRONT.webp",
+      "link": "ipfs://bafyreicuj3ztrwe6f6a3guvbozyhct2ma6zjkdzdzlr55dqq6d4elzjnmm/metadata.json"
+    },
+    {
+      "name": "/BOMBER FAUZ FRONT.webp",
+      "link": "ipfs://bafyreic3xnve3nn7uim7wozdkah2m4266xkduyu4fwmozcu4vs3v3mvxmy/metadata.json"
+    },
+    {
+      "name": "/BOTNIQ FRONT.webp",
+      "link": "ipfs://bafyreidjedvanhjdto5x4fcvfjxrhsifebd2ge6it7a6ooyls6ni5eegwq/metadata.json"
+    },
+    {
+      "name": "/CAVE OGRE FRONT.webp",
+      "link": "ipfs://bafyreidn2nqiub2ryo4qvchtewzqattq26gnseop52bllx6xtiigyxqpu4/metadata.json"
+    },
+    {
+      "name": "/CLYDE FRONT.webp",
+      "link": "ipfs://bafyreicgdz3inu5hncswwju4qif2obidmhg3tgo4pfirdujmlgvgfl2nve/metadata.json"
+    },
+    {
+      "name": "/FARMER OTIS FRONT.webp",
+      "link": "ipfs://bafyreids6shz6avfniyfpph7lcfmtus2atji5kzbihdx5qv4nl5n3exome/metadata.json"
+    },
+    {
+      "name": "/FIRE CROC FRONT.webp",
+      "link": "ipfs://bafyreievrbr2v6o3ql2l7ebxc3caynocoqufxngk44kem5zovoyczf3lby/metadata.json"
+    },
+    {
+      "name": "/FIRE STARTER JANE FRONT.webp",
+      "link": "ipfs://bafyreicgoo4mv7i4d2smgawmwwz6bmwqrvjcw46f6gjfpfacr7sncbhmra/metadata.json"
+    },
+    {
+      "name": "/FRONT DEMONA.webp",
+      "link": "ipfs://bafyreiclcs5vq37bugva5dm4fpvrexr7yptqfeaq7ph2hartuuvri22pbi/metadata.json"
+    },
+    {
+      "name": "/GARGOYLE FRONT.webp",
+      "link": "ipfs://bafyreiddrtgzjwlz2lrm37gj24nfyrltva3varxdrpjjbxfwv4c3xxqj2i/metadata.json"
+    },
+    {
+      "name": "/GRAVE DIGGER DUKE.webp",
+      "link": "ipfs://bafyreiaelupq2tz4fdeuvhkbao5vxqztzeidfqosjhpb3o4mxewuzwqacm/metadata.json"
+    },
+    {
+      "name": "/HELDOR FRONT.webp",
+      "link": "ipfs://bafyreigzdqatguwr7ep4xpnhlr43afri54m2roqjazbfpc2pb6sanss35q/metadata.json"
+    },
+    {
+      "name": "/HITMAN BRAAZ FRONT.webp",
+      "link": "ipfs://bafyreifjcs53je5o6jxwp5p77y74n7tydrw62dsmdlunub5hxahqohydxm/metadata.json"
+    },
+    {
+      "name": "/HUNTRESS FRONT.webp",
+      "link": "ipfs://bafyreiajxtqjb5bobupehdp5mk3otgltyoaccqipltqyeb6kih7yuro7ae/metadata.json"
+    },
+    {
+      "name": "/JUMBA FRONT.webp",
+      "link": "ipfs://bafyreidzoiqd2v25auicgzppcle67rchxx3tnusjk5giat5ghxunksjaia/metadata.json"
+    },
+    {
+      "name": "/LIVION FRONT.webp",
+      "link": "ipfs://bafyreieil2cbqq2dzlmsusgntncfy2ta4zncuf4h3gueskwlyzovujx4ze/metadata.json"
+    },
+    {
+      "name": "/LUMBERJACK NICK FRONT.webp",
+      "link": "ipfs://bafyreibsztl3b2kz2gbpd5lqzswdbwxemzvtme4srkuoyrzv4roxgvpgie/metadata.json"
+    },
+    {
+      "name": "/MASTER KWAYKE FRONT.webp",
+      "link": "ipfs://bafyreie7f5ob2ozjdt2givc3wes53t5rb3gf6zfoweddg4hbp7go433jqi/metadata.json"
+    },
+    {
+      "name": "/MOZEN FRONT.webp",
+      "link": "ipfs://bafyreidmsbqo447pnpiw67jmj6stdrxy3qkqf4jap4tqp3ivtqyo3wpb2i/metadata.json"
+    },
+    {
+      "name": "/NESIA THE TORMENTOR FRONT.webp",
+      "link": "ipfs://bafyreifedg7decf5i6srte76ryb6bc3qipuu37f33tydphpdfm3ckzplye/metadata.json"
+    },
+    {
+      "name": "/ORNETH FRONT.webp",
+      "link": "ipfs://bafyreihvtavsaevbl3kwbx3nuwxibzzcpsufxhsguhrjccgbhgsris6zla/metadata.json"
+    },
+    {
+      "name": "/SKY SURFER HUUGS FRONT.webp",
+      "link": "ipfs://bafyreihj46ey4frjcygsjxzrbfzxzlq3dpf2rbvvxuwhhhvgcj6p672sie/metadata.json"
+    },
+    {
+      "name": "/SOLANNA FRONT.webp",
+      "link": "ipfs://bafyreicndoor2yai3jdyiunmvya3delvbrli7pci52pnqeth5o6df4rzwe/metadata.json"
+    },
+    {
+      "name": "/TECHNICIAN ZEED FRONT.webp",
+      "link": "ipfs://bafyreibwyk7h7ga3yvaredkvubbr7bgtucp6zdkf4owghpnr54zjycaxwe/metadata.json"
+    },
+    {
+      "name": "/TESSA FRONT.webp",
+      "link": "ipfs://bafyreigob2z7ikzn4fopykgmsuzlwp7etkkd2sihilrl5uexbsz5iailaa/metadata.json"
+    },
+    {
+      "name": "/THADMOR FRONT.webp",
+      "link": "ipfs://bafyreidnj5qkjiznczvwmqmrx2slvcqkzsgvx3uyg3dax3zn3ajlrdqknu/metadata.json"
+    },
+    {
+      "name": "/UART THE GOBLIN FRONT (1).webp",
+      "link": "ipfs://bafyreie2zivsedwqrwl2fu2gscf6rxs6ffil7afvsijtcnbodfgjkvwmuq/metadata.json"
+    },
+    {
+      "name": "/UART THE GOBLIN FRONT.webp",
+      "link": "ipfs://bafyreibisxwjxrugggva5lex56pcju7rxfiad6qup4dkne5hzjynftrh5q/metadata.json"
+    },
+    {
+      "name": "/UNDEAD FIGHTER FRONT.webp",
+      "link": "ipfs://bafyreiflhml6ourxwz3sbz2nmdvl56ud3wn6tof35h6sqdui4ndnsuq5ny/metadata.json"
+    },
+    {
+      "name": "/UNDEAD SUMMONER FRONT.webp",
+      "link": "ipfs://bafyreibtjtcnzx7t5dilq7tytqlswpktsp7uyv7ngptw6yqdoqk7fak6li/metadata.json"
+    },
+    {
+      "name": "/Undead Hound.webp",
+      "link": "ipfs://bafyreief2y52nbvex57nojrhmcyvydb7sasffuy6e57xrfpdbuljwys7r4/metadata.json"
+    },
+    {
+      "name": "/VOID FRAGMENT X FRONT.webp",
+      "link": "ipfs://bafyreih3pyk7dufniothnyr5imsq7gt3siyjspfli2kgkh22vfnoybmfs4/metadata.json"
+    },
+    {
+      "name": "/VOID FRAGMENT Y FRONT.webp",
+      "link": "ipfs://bafyreidv4yrxomvaqx2flq5kszs6djdd762g2grs5pf5nc7u72tuqtoemy/metadata.json"
+    },
+    {
+      "name": "/VRATS FRONT.webp",
+      "link": "ipfs://bafyreidrczwlialdn3otgvylha6bwkd7nxuordzcrxz52kjo6phuhza6oq/metadata.json"
+    },
+    {
+      "name": "/Ven'Pion.webp",
+      "link": "ipfs://bafyreie4jurp3nrz2bwfvm4mlxlabxhv6lex4tpcua74hx2ladajnbpliq/metadata.json"
+    },
+    {
+      "name": "/Voidwalker_Kekzin_FRONT.webp",
+      "link": "ipfs://bafyreihekbgl2iqywng5qad3m5dwgxsvgnxoimohk2udsdlgz357ungney/metadata.json"
+    },
+    {
+      "name": "/XOIFU FRONT.webp",
+      "link": "ipfs://bafyreiaiicyx6qf7gsvkocj5byfu2xsrwhj227sswcvv7kh5kzlchub5ba/metadata.json"
+    },
+    {
+      "name": "/ZALLA FRONT.webp",
+      "link": "ipfs://bafyreiegjpiqr2kh76i2hdwi5vl5rzu5ikds47jepjzaogeuxqoawytfei/metadata.json"
+    },
+    {
+      "name": "/ZOMBIE ARCHER FRONT.webp",
+      "link": "ipfs://bafyreibq6a4fkrwjyjj4jucwrdnhz4zd4rmbxk7kde6ka36jwwntmou45e/metadata.json"
+    }
+  ]
+}

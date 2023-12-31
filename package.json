@@ -98,6 +98,7 @@
     "hardhat-contract-sizer": "^2.4.0",
     "hardhat-gas-reporter": "^1.0.8",
     "merkle-patricia-tree": "^4.2.4",
+    "mime": "^4.0.1",
     "moralis": "^1.3.2",
     "nft.storage": "^7.1.1",
     "node-fetch": "^3.3.2",

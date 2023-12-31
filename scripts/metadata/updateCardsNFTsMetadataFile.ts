@@ -46,6 +46,34 @@ const unconvertArrayCards = (cards: any) => {
   return cardsObject;
 };
 
+const getBack = (type: any, name: any) => {
+  switch (type) {
+    case "reaction":
+      return "https://bafybeif62tm47b5cwjulkojq2s6bsbk4agvnn6zeq4arbjqsjqbrw3xgsa.ipfs.nftstorage.link/action.png";
+    case "wood":
+      return "https://bafybeif62tm47b5cwjulkojq2s6bsbk4agvnn6zeq4arbjqsjqbrw3xgsa.ipfs.nftstorage.link/wood.png";
+    case "action":
+      return "https://bafybeif62tm47b5cwjulkojq2s6bsbk4agvnn6zeq4arbjqsjqbrw3xgsa.ipfs.nftstorage.link/action.png";
+    case "gold":
+      return "https://bafybeif62tm47b5cwjulkojq2s6bsbk4agvnn6zeq4arbjqsjqbrw3xgsa.ipfs.nftstorage.link/gold.png";
+    case "iron":
+      return "https://bafybeif62tm47b5cwjulkojq2s6bsbk4agvnn6zeq4arbjqsjqbrw3xgsa.ipfs.nftstorage.link/silver.png";
+    case "stone":
+      return "https://bafybeif62tm47b5cwjulkojq2s6bsbk4agvnn6zeq4arbjqsjqbrw3xgsa.ipfs.nftstorage.link/stone.png";
+    case "legendary":
+      return "https://bafybeif62tm47b5cwjulkojq2s6bsbk4agvnn6zeq4arbjqsjqbrw3xgsa.ipfs.nftstorage.link/legendary.png";
+    case "avatar":
+      switch (name) {
+        case "dracul":
+          return "https://bafybeif62tm47b5cwjulkojq2s6bsbk4agvnn6zeq4arbjqsjqbrw3xgsa.ipfs.nftstorage.link/avatar.png";
+        case "bemular":
+          return "https://bafybeif62tm47b5cwjulkojq2s6bsbk4agvnn6zeq4arbjqsjqbrw3xgsa.ipfs.nftstorage.link/BemularBack-FinalDraftLightOn.webp";
+        case "ultraman":
+          return "https://bafybeif62tm47b5cwjulkojq2s6bsbk4agvnn6zeq4arbjqsjqbrw3xgsa.ipfs.nftstorage.link/UltramanBack-FinalDraftLightOn.webp";
+      }
+  }
+};
+
 const init = async () => {
   const cards = convertArrayCards(AllNfts)
     .filter((a) => a?.typeCard !== "ghost")
@@ -54,15 +82,16 @@ const init = async () => {
       const attributes = item.attributes.filter(
         (a: any) => a.trait_type !== "image",
       );
+
       attributes.push({ trait_type: "image", value: item.image });
       return {
         ...a,
         image: item.image,
         properties: {
           ...item.properties,
-          image: {
-            name: "image",
-            value: item.image,
+          back: {
+            name: "back",
+            value: getBack(item.typeCard, item.name.toLowerCase()),
           },
         },
         attributes: attributes,

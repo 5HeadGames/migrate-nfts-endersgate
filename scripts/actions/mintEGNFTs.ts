@@ -14,19 +14,10 @@ async function main() {
 
   const endersGate = EndersGate.attach(fileData.endersGate);
 
-  
-
-  const NFTsToMint = [
-    { balance: 1, id: 7 },
-    { balance: 1, id: 67 },
-    { balance: 1, id: 95 },
-    { balance: 1, id: 160 },
-    { balance: 1, id: 165 },
-    { balance: 1, id: 230 },
-  ];
+  const NFTsToMint = [{ balance: 1, id: 2 }];
 
   const tx = await endersGate.mintBatch(
-    "0xF5eD9f2E49E7aa8FdFA4Ea18bd1477D7131ee674",
+    "0x6a5Adc59e769044B16314097e76EBE3F27794A5a",
     NFTsToMint.map(({ id }) => id),
     NFTsToMint.map(({ balance }) => balance),
     "0x00",
