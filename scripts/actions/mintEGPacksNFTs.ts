@@ -17,12 +17,15 @@ async function main() {
 
   const endersPacks = EndersPacks.attach(fileData.pack);
 
+  const NFTsToMint = [
+    { balance: 2, id: 2 },
+    { balance: 8, id: 1 },
+  ];
+
   const tx = await endersPacks.mintBatch(
-    (
-      await ethers.getSigners()
-    )[0].address,
-    [0, 1, 2, 3],
-    [100, 100, 100, 100],
+    "0xb96d70cbd473a605857D6ac7DF8A6a0a8Aeac475",
+    NFTsToMint.map(({ id }) => id),
+    NFTsToMint.map(({ balance }) => balance),
     "0x00",
   );
 }
