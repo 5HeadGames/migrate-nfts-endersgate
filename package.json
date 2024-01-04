@@ -7,6 +7,9 @@
     "url": "https://paulrberg.com"
   },
   "devDependencies": {
+    "@chainlink/contracts": "^0.8.0",
+    "@chainlink/contracts-ccip": "^0.7.3",
+    "@chainlink/env-enc": "^1.0.5",
     "@codechecks/client": "^0.1.12",
     "@commitlint/cli": "^14.1.0",
     "@commitlint/config-conventional": "^14.1.0",
@@ -76,8 +79,6 @@
     "deploy:rinkeby": "hardhat run scripts/deploy.ts --network rinkeby && hardhat run scripts/deployPacks.ts --network rinkeby"
   },
   "dependencies": {
-    "@chainlink/contracts": "^0.6.0",
-    "@chainlink/contracts-ccip": "^1.2.1",
     "@harmony-js/utils": "^0.1.56",
     "@nomicfoundation/hardhat-verify": "^1.0.0",
     "@nomiclabs/hardhat-etherscan": "^3.0.1",
