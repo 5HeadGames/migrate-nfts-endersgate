@@ -12,7 +12,7 @@ import "@openzeppelin/contracts/utils/Strings.sol";
 
 import "hardhat/console.sol";
 
-contract EndersComicsOnlyMultiTokens is
+contract EndersComicsMultiTokensTest is
     ERC1155Supply,
     ReentrancyGuard,
     AccessControl
@@ -32,7 +32,14 @@ contract EndersComicsOnlyMultiTokens is
     uint256 public decimalsUSD = 6;
     uint256 public comicIdCounter;
 
+    // token address to priceFeed address
+    mapping(address => address) public priceFeedsByToken;
     mapping(address => uint256) public decimalsByToken;
+
+    // Tokens allowed in the marketplace
+    address public wcurrency;
+
+    address public lastMinter;
 
     bytes32 public constant URI_SETTER_ROLE = keccak256("URI_SETTER_ROLE");
     bytes32 public constant SUPPLY_ROLE = keccak256("SUPPLY_ROLE");
@@ -44,9 +51,18 @@ contract EndersComicsOnlyMultiTokens is
 
     mapping(uint256 => string) public idToIpfs;
 
-    constructor(string memory _name, string memory _symbol) ERC1155("") {
+    constructor(
+        string memory _name,
+        string memory _symbol,
+        address _wcurrency,
+        address _priceFeedW,
+        uint256 _decimals
+    ) ERC1155("") {
         name = _name;
         symbol = _symbol;
+        wcurrency = _wcurrency;
+        priceFeedsByToken[_wcurrency] = _priceFeedW;
+        decimalsByToken[_wcurrency] = _decimals;
         comicIdCounter = 0;
         _grantRole(DEFAULT_ADMIN_ROLE, msg.sender);
         _grantRole(COMIC_ROLE, msg.sender);
@@ -67,12 +83,11 @@ contract EndersComicsOnlyMultiTokens is
     }
 
     function mintBatch(
-        address to,
+        address _receiver,
         uint256[] calldata ids,
-        uint256[] calldata amounts,
-        bytes calldata
-    ) external onlyRole(SUPPLY_ROLE) {
-        _mintBatch(to, ids, amounts, "");
+        uint256[] calldata amounts
+    ) external {
+        _mintBatch(_receiver, ids, amounts, "");
     }
 
     function buyBatch(
@@ -80,7 +95,7 @@ contract EndersComicsOnlyMultiTokens is
         uint256[] memory tokensId,
         uint256[] memory amounts,
         address tokenToPay
-    ) public {
+    ) public payable {
         require(
             tokensId.length == amounts.length,
             "Array Length must be the same of amount and Ids"
@@ -95,31 +110,38 @@ contract EndersComicsOnlyMultiTokens is
         address tokenToPay,
         uint256 id,
         uint256 amount
-    ) public {
+    ) public payable {
         require(
             comics[id].limit >= totalSupply(comics[id].comicId) + amount,
             "Limit amount of NFTs reached"
         );
         uint256 cost = getPrice(tokenToPay, id, amount);
         require(comics[id].exists, "This token doesn't exist");
+        if (tokenToPay == wcurrency) {
+            require(msg.value >= cost, "NOT_ENOUGH_VALUE");
+        } else {
+            require(isTokenAllowed(tokenToPay), "TOKEN TO PAY IS NOT ALLOWED");
+            require(
+                IERC20(tokenToPay).balanceOf(_msgSender()) > cost,
+                "INSUFICIENT BALANCE"
+            );
+            require(
+                IERC20(tokenToPay).allowance(_msgSender(), address(this)) >
+                    cost,
+                "INSUFICIENT ALLOWANCE"
+            );
 
-        require(isTokenAllowed(tokenToPay), "TOKEN TO PAY IS NOT ALLOWED");
-        require(
-            IERC20(tokenToPay).balanceOf(_msgSender()) > cost,
-            "INSUFICIENT BALANCE"
-        );
-        require(
-            IERC20(tokenToPay).allowance(_msgSender(), address(this)) > cost,
-            "INSUFICIENT ALLOWANCE"
-        );
-
-        IERC20(tokenToPay).transferFrom(_msgSender(), address(this), cost);
+            IERC20(tokenToPay).transferFrom(_msgSender(), address(this), cost);
+        }
 
         _mint(receiver, id, amount, "");
     }
 
     function isTokenAllowed(address _token) public view returns (bool) {
-        return decimalsByToken[_token] > 0 ? true : false;
+        return
+            abi.encodePacked(priceFeedsByToken[_token]).length > 0
+                ? true
+                : false;
     }
 
     function getPrice(
@@ -129,10 +151,18 @@ contract EndersComicsOnlyMultiTokens is
     ) public view returns (uint256) {
         Comic storage _comic = comics[id];
         require(_comic.exists, "ClockSale:TOKEN_DOES_NOT_EXIST");
-
-        return (quantity *
-            (_comic.priceUSD) *
-            10 ** (decimalsByToken[tokenToGet] - decimalsUSD));
+        AggregatorV3Interface priceFeed = AggregatorV3Interface(
+            priceFeedsByToken[tokenToGet]
+        );
+        // (, int256 price, , , ) = priceFeed.latestRoundData();
+        // uint256 decimals = priceFeed.decimals();
+        int256 price = 189037846052;
+        uint256 decimals = 8;
+        return
+            (quantity *
+                (_comic.priceUSD) *
+                10 ** (decimalsByToken[tokenToGet] + decimals - decimalsUSD)) /
+            uint256(price);
     }
 
     function burnBatchFor(
@@ -163,8 +193,10 @@ contract EndersComicsOnlyMultiTokens is
 
     function addToken(
         address _token,
+        address priceFeed,
         uint256 decimals
     ) external onlyRole(SUPPLY_ROLE) {
+        priceFeedsByToken[_token] = priceFeed;
         decimalsByToken[_token] = decimals;
     }
 

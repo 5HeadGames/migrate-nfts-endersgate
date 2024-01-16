@@ -80,7 +80,7 @@ contract EndersBattlePassOnlyMultiTokens is
         _mintBatch(to, ids, amounts, "");
     }
 
-    function buyBattlePass(address tokenToPay, uint256 amount) public payable {
+    function buyBattlePass(address tokenToPay, uint256 amount) public {
         uint256 id = seasons[currentSeason].rewardId;
         uint256 cost = getPrice(tokenToPay, amount);
 

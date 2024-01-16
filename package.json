@@ -98,7 +98,7 @@
     "files-from-path": "^0.2.6",
     "hardhat": "^2.9.9",
     "hardhat-contract-sizer": "^2.4.0",
-    "hardhat-gas-reporter": "^1.0.8",
+    "hardhat-gas-reporter": "^1.0.9",
     "merkle-patricia-tree": "^4.2.4",
     "mime": "^4.0.1",
     "moralis": "^1.3.2",

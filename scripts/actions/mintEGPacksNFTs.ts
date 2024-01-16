@@ -20,7 +20,7 @@ async function main() {
   const NFTsToMint = [{ balance: 1, id: 2 }];
 
   const tx = await endersPacks.mintBatch(
-    "0xB041249830Cfaa30F177290091Ff564BDb59FcdB",
+    "0xB352dD67CccC101a8B8bbDf5916f766296718efd",
     NFTsToMint.map(({ id }) => id),
     NFTsToMint.map(({ balance }) => balance),
     "0x00",

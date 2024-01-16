@@ -16,17 +16,19 @@ async function main() {
   const configFileName = `addresses/addresses.${network.name}.json`;
   const data = loadJsonFile(`${appRoot}/` + configFileName);
 
-  // const [owner] = await ethers.getSigners();
-
   const ERC20Factory = await ethers.getContractFactory("MockERC20");
-  const USDC = await ERC20Factory.attach(data.usdc);
-  // const BUSD = await ERC20Factory.attach(data.busd);
-
-  await USDC.mint(
-    "0x5951B59BE60295D90fdC6FEA1c2d4B33F0Ec1Ba1",
-    "1000000000000",
+  const USDC = await ERC20Factory.deploy();
+  const BUSD = await ERC20Factory.deploy();
+  const configData = JSON.stringify(
+    {
+      ...data,
+      usdc: USDC.address,
+      busd: BUSD.address,
+    },
+    null,
+    2,
   );
-  // await BUSD.mint(owner.address, "1000000000000");
+  fs.writeFileSync(configFileName, configData);
 }
 
 main()
