@@ -1,0 +1,72 @@
+{
+  "name": "Tanks Burden",
+  "type": "ERC1155",
+  "description": "Flip: Activate if your opponent controls a \"Tank\" Type Guardian. This card remains face up for 5 turns; during each of your opponent's Standby phases, Deal 50 Damage to the Tank Guardian on their side of the field.",
+  "image": "https://bafybeighoz3e66ozgr2b7bqey36yjnfzddjw57fh24nxbiz6vqd4efmeqa.ipfs.nftstorage.link/TANKS%20BURDEN%20FRONT.webp",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 78
+    },
+    "name": {
+      "name": "name",
+      "value": "Tanks Burden"
+    },
+    "type": {
+      "name": "type",
+      "value": "Quick Play"
+    },
+    "ADOTurn": {
+      "name": "ADOTurn",
+      "value": "YES"
+    },
+    "rarity": {
+      "name": "rarity",
+      "value": "Ultra Rare"
+    },
+    "description": {
+      "name": "description",
+      "value": "Flip: Activate if your opponent controls a \"Tank\" Type Guardian. This card remains face up for 5 turns; during each of your opponent's Standby phases, Deal 50 Damage to the Tank Guardian on their side of the field."
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmaHCqTBv1BixP8D9hxBFUbDCD6AHZ92tmcRQNYYDvDLJS"
+    },
+    "back": {
+      "name": "back",
+      "value": "https://bafybeif62tm47b5cwjulkojq2s6bsbk4agvnn6zeq4arbjqsjqbrw3xgsa.ipfs.nftstorage.link/action.png"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 78
+    },
+    {
+      "trait_type": "name",
+      "value": "Tanks Burden"
+    },
+    {
+      "trait_type": "type",
+      "value": "Quick Play"
+    },
+    {
+      "trait_type": "ADOTurn",
+      "value": "YES"
+    },
+    {
+      "trait_type": "rarity",
+      "value": "Ultra Rare"
+    },
+    {
+      "trait_type": "description",
+      "value": "Flip: Activate if your opponent controls a \"Tank\" Type Guardian. This card remains face up for 5 turns; during each of your opponent's Standby phases, Deal 50 Damage to the Tank Guardian on their side of the field."
+    },
+    {
+      "trait_type": "image",
+      "value": "https://bafybeighoz3e66ozgr2b7bqey36yjnfzddjw57fh24nxbiz6vqd4efmeqa.ipfs.nftstorage.link/TANKS%20BURDEN%20FRONT.webp"
+    }
+  ],
+  "typeCard": "reaction"
+}

@@ -1,0 +1,104 @@
+{
+  "name": "Demona",
+  "type": "ERC1155",
+  "description": "[Vampire | Support] Passive: While Demona is on the field, all Vampire type Guardians gain +15 HP.",
+  "image": "https://bafybeibybngr6dg3gcrwfryusxh2smvn3vwlqlbj5d6m77kh67i53gfsey.ipfs.nftstorage.link/FRONT%20DEMONA.webp",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 109
+    },
+    "name": {
+      "name": "name",
+      "value": "Demona"
+    },
+    "element": {
+      "name": "element",
+      "value": "Venom"
+    },
+    "role": {
+      "name": "role",
+      "value": "Support"
+    },
+    "race": {
+      "name": "race",
+      "value": "Vampire "
+    },
+    "attack": {
+      "name": "attack",
+      "value": 60
+    },
+    "hp": {
+      "name": "hp",
+      "value": 50
+    },
+    "isGuardian": {
+      "name": "isGuardian",
+      "value": true
+    },
+    "gold": {
+      "name": "gold",
+      "value": 60
+    },
+    "description": {
+      "name": "description",
+      "value": "[Vampire | Support] Passive: While Demona is on the field, all Vampire type Guardians gain +15 HP."
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmdcCeAJifABL2ah2pnDHvX6ewNn9tLMzV522KJVGi3Bsu"
+    },
+    "back": {
+      "name": "back",
+      "value": "https://bafybeif62tm47b5cwjulkojq2s6bsbk4agvnn6zeq4arbjqsjqbrw3xgsa.ipfs.nftstorage.link/wood.png"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 109
+    },
+    {
+      "trait_type": "name",
+      "value": "Demona"
+    },
+    {
+      "trait_type": "element",
+      "value": "Venom"
+    },
+    {
+      "trait_type": "role",
+      "value": "Support"
+    },
+    {
+      "trait_type": "race",
+      "value": "Vampire "
+    },
+    {
+      "trait_type": "attack",
+      "value": 60
+    },
+    {
+      "trait_type": "hp",
+      "value": 50
+    },
+    {
+      "trait_type": "isGuardian",
+      "value": true
+    },
+    {
+      "trait_type": "gold",
+      "value": 60
+    },
+    {
+      "trait_type": "description",
+      "value": "[Vampire | Support] Passive: While Demona is on the field, all Vampire type Guardians gain +15 HP."
+    },
+    {
+      "trait_type": "image",
+      "value": "https://bafybeibybngr6dg3gcrwfryusxh2smvn3vwlqlbj5d6m77kh67i53gfsey.ipfs.nftstorage.link/FRONT%20DEMONA.webp"
+    }
+  ],
+  "typeCard": "wood"
+}

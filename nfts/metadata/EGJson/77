@@ -1,0 +1,72 @@
+{
+  "name": "Blind Balance ",
+  "type": "ERC1155",
+  "description": "Flip: Declare a Card Type and select a face down card on your opponents side of the field; if correct, destroy that card. \n\n●Action \n●Reaction",
+  "image": "https://bafybeia4eyqwzt2rl2ifxj2n2s27opqao3rnseplwrv7uyrpxyktdw2bne.ipfs.nftstorage.link/BLIND%20BALANCE%20FRONT.webp",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 77
+    },
+    "name": {
+      "name": "name",
+      "value": "Blind Balance "
+    },
+    "type": {
+      "name": "type",
+      "value": "Quick Play"
+    },
+    "ADOTurn": {
+      "name": "ADOTurn",
+      "value": "YES"
+    },
+    "rarity": {
+      "name": "rarity",
+      "value": "Uncommon"
+    },
+    "description": {
+      "name": "description",
+      "value": "Flip: Declare a Card Type and select a face down card on your opponents side of the field; if correct, destroy that card. \n\n●Action \n●Reaction"
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmZ6Qv4a28ffPwEpi8uigiWFpYRmMq1wQEQXpsn2ELButw"
+    },
+    "back": {
+      "name": "back",
+      "value": "https://bafybeif62tm47b5cwjulkojq2s6bsbk4agvnn6zeq4arbjqsjqbrw3xgsa.ipfs.nftstorage.link/action.png"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 77
+    },
+    {
+      "trait_type": "name",
+      "value": "Blind Balance "
+    },
+    {
+      "trait_type": "type",
+      "value": "Quick Play"
+    },
+    {
+      "trait_type": "ADOTurn",
+      "value": "YES"
+    },
+    {
+      "trait_type": "rarity",
+      "value": "Uncommon"
+    },
+    {
+      "trait_type": "description",
+      "value": "Flip: Declare a Card Type and select a face down card on your opponents side of the field; if correct, destroy that card. \n\n●Action \n●Reaction"
+    },
+    {
+      "trait_type": "image",
+      "value": "https://bafybeia4eyqwzt2rl2ifxj2n2s27opqao3rnseplwrv7uyrpxyktdw2bne.ipfs.nftstorage.link/BLIND%20BALANCE%20FRONT.webp"
+    }
+  ],
+  "typeCard": "reaction"
+}

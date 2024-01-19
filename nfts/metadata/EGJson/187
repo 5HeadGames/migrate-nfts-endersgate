@@ -1,0 +1,107 @@
+{
+  "name": "Elenor",
+  "type": "ERC1155",
+  "description": "[Vampire | Assassin] \"Vampire Bloodline\" Activate: Pay 25 Gold. Stun 1 enemy on your opponents side of the field. Cooldown: 3 turns. \nPassive: Elanor next attack heals her for 10% damage dealt. Cooldown: 3 turns.",
+  "image": "https://bafybeihfvciat6siqm4tffl7rdqssmcjrkzafs4yioa636dxbdl26vef2a.ipfs.nftstorage.link/ELENOR%20FRONT.webp",
+  "symbol": "GATE",
+  "synergies": [
+    "Elwin"
+  ],
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 187
+    },
+    "name": {
+      "name": "name",
+      "value": "Elenor"
+    },
+    "element": {
+      "name": "element",
+      "value": "Venom"
+    },
+    "role": {
+      "name": "role",
+      "value": "Assassin"
+    },
+    "race": {
+      "name": "race",
+      "value": "Vampire"
+    },
+    "attack": {
+      "name": "attack",
+      "value": 150
+    },
+    "hp": {
+      "name": "hp",
+      "value": 140
+    },
+    "isGuardian": {
+      "name": "isGuardian",
+      "value": true
+    },
+    "gold": {
+      "name": "gold",
+      "value": 220
+    },
+    "description": {
+      "name": "description",
+      "value": "[Vampire | Assassin] \"Vampire Bloodline\" Activate: Pay 25 Gold. Stun 1 enemy on your opponents side of the field. Cooldown: 3 turns. \nPassive: Elanor next attack heals her for 10% damage dealt. Cooldown: 3 turns."
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmToYEk45oHBvstBVncFjx5GTGjhyJDEj5YEmEZmkjqBBr"
+    },
+    "back": {
+      "name": "back",
+      "value": "https://bafybeif62tm47b5cwjulkojq2s6bsbk4agvnn6zeq4arbjqsjqbrw3xgsa.ipfs.nftstorage.link/silver.png"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 187
+    },
+    {
+      "trait_type": "name",
+      "value": "Elenor"
+    },
+    {
+      "trait_type": "element",
+      "value": "Venom"
+    },
+    {
+      "trait_type": "role",
+      "value": "Assassin"
+    },
+    {
+      "trait_type": "race",
+      "value": "Vampire"
+    },
+    {
+      "trait_type": "attack",
+      "value": 150
+    },
+    {
+      "trait_type": "hp",
+      "value": 140
+    },
+    {
+      "trait_type": "isGuardian",
+      "value": true
+    },
+    {
+      "trait_type": "gold",
+      "value": 220
+    },
+    {
+      "trait_type": "description",
+      "value": "[Vampire | Assassin] \"Vampire Bloodline\" Activate: Pay 25 Gold. Stun 1 enemy on your opponents side of the field. Cooldown: 3 turns. \nPassive: Elanor next attack heals her for 10% damage dealt. Cooldown: 3 turns."
+    },
+    {
+      "trait_type": "image",
+      "value": "https://bafybeihfvciat6siqm4tffl7rdqssmcjrkzafs4yioa636dxbdl26vef2a.ipfs.nftstorage.link/ELENOR%20FRONT.webp"
+    }
+  ],
+  "typeCard": "iron"
+}

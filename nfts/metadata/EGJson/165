@@ -1,0 +1,104 @@
+{
+  "name": "Kraken",
+  "type": "ERC1155",
+  "description": "[Cephalo | Fighter] \"Water Prison\" Activate: Select one enemy Guardian; they cannot declare an attack for one turn. Once freed they cannot be selected again.",
+  "image": "https://bafybeia3d4ltk2xhkmjy3wuj7fup4sg7isay7iejq37uhdftudstlfys3y.ipfs.nftstorage.link/KRAKEN%20FRONT.webp",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 165
+    },
+    "name": {
+      "name": "name",
+      "value": "Kraken"
+    },
+    "element": {
+      "name": "element",
+      "value": "Water"
+    },
+    "role": {
+      "name": "role",
+      "value": "Fighter"
+    },
+    "race": {
+      "name": "race",
+      "value": "Cephalo"
+    },
+    "attack": {
+      "name": "attack",
+      "value": 100
+    },
+    "hp": {
+      "name": "hp",
+      "value": 210
+    },
+    "isGuardian": {
+      "name": "isGuardian",
+      "value": true
+    },
+    "gold": {
+      "name": "gold",
+      "value": 210
+    },
+    "description": {
+      "name": "description",
+      "value": "[Cephalo | Fighter] \"Water Prison\" Activate: Select one enemy Guardian; they cannot declare an attack for one turn. Once freed they cannot be selected again."
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmfNNF3XhFRKxEhTC5W99Htn8bLBzkFcprwEdSSWZFFjmn"
+    },
+    "back": {
+      "name": "back",
+      "value": "https://bafybeif62tm47b5cwjulkojq2s6bsbk4agvnn6zeq4arbjqsjqbrw3xgsa.ipfs.nftstorage.link/silver.png"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 165
+    },
+    {
+      "trait_type": "name",
+      "value": "Kraken"
+    },
+    {
+      "trait_type": "element",
+      "value": "Water"
+    },
+    {
+      "trait_type": "role",
+      "value": "Fighter"
+    },
+    {
+      "trait_type": "race",
+      "value": "Cephalo"
+    },
+    {
+      "trait_type": "attack",
+      "value": 100
+    },
+    {
+      "trait_type": "hp",
+      "value": 210
+    },
+    {
+      "trait_type": "isGuardian",
+      "value": true
+    },
+    {
+      "trait_type": "gold",
+      "value": 210
+    },
+    {
+      "trait_type": "description",
+      "value": "[Cephalo | Fighter] \"Water Prison\" Activate: Select one enemy Guardian; they cannot declare an attack for one turn. Once freed they cannot be selected again."
+    },
+    {
+      "trait_type": "image",
+      "value": "https://bafybeia3d4ltk2xhkmjy3wuj7fup4sg7isay7iejq37uhdftudstlfys3y.ipfs.nftstorage.link/KRAKEN%20FRONT.webp"
+    }
+  ],
+  "typeCard": "iron"
+}

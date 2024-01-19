@@ -1,0 +1,104 @@
+{
+  "name": "Luna",
+  "type": "ERC1155",
+  "description": "[Human | Mage] \"Chain Lightning\" Passive: Deal 5 Mystic Damage to all Void Type Cards. Deal 10 Extra attack damage to ogre race cards. ",
+  "image": "https://bafybeibakejnoeshbnbwxzbpqerb75463tf27frcf3oqgd7jjph6vssfpi.ipfs.nftstorage.link/LUNA%20FRONT.webp",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 166
+    },
+    "name": {
+      "name": "name",
+      "value": "Luna"
+    },
+    "element": {
+      "name": "element",
+      "value": "Mystic"
+    },
+    "role": {
+      "name": "role",
+      "value": "Mage"
+    },
+    "race": {
+      "name": "race",
+      "value": "Human"
+    },
+    "attack": {
+      "name": "attack",
+      "value": 100
+    },
+    "hp": {
+      "name": "hp",
+      "value": 200
+    },
+    "isGuardian": {
+      "name": "isGuardian",
+      "value": true
+    },
+    "gold": {
+      "name": "gold",
+      "value": 200
+    },
+    "description": {
+      "name": "description",
+      "value": "[Human | Mage] \"Chain Lightning\" Passive: Deal 5 Mystic Damage to all Void Type Cards. Deal 10 Extra attack damage to ogre race cards. "
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmPQfou5umS37Cgp9FPU9tPuQUMmaakHybhN51XM2TCRHM"
+    },
+    "back": {
+      "name": "back",
+      "value": "https://bafybeif62tm47b5cwjulkojq2s6bsbk4agvnn6zeq4arbjqsjqbrw3xgsa.ipfs.nftstorage.link/silver.png"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 166
+    },
+    {
+      "trait_type": "name",
+      "value": "Luna"
+    },
+    {
+      "trait_type": "element",
+      "value": "Mystic"
+    },
+    {
+      "trait_type": "role",
+      "value": "Mage"
+    },
+    {
+      "trait_type": "race",
+      "value": "Human"
+    },
+    {
+      "trait_type": "attack",
+      "value": 100
+    },
+    {
+      "trait_type": "hp",
+      "value": 200
+    },
+    {
+      "trait_type": "isGuardian",
+      "value": true
+    },
+    {
+      "trait_type": "gold",
+      "value": 200
+    },
+    {
+      "trait_type": "description",
+      "value": "[Human | Mage] \"Chain Lightning\" Passive: Deal 5 Mystic Damage to all Void Type Cards. Deal 10 Extra attack damage to ogre race cards. "
+    },
+    {
+      "trait_type": "image",
+      "value": "https://bafybeibakejnoeshbnbwxzbpqerb75463tf27frcf3oqgd7jjph6vssfpi.ipfs.nftstorage.link/LUNA%20FRONT.webp"
+    }
+  ],
+  "typeCard": "iron"
+}

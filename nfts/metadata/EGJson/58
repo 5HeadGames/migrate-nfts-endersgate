@@ -1,0 +1,72 @@
+{
+  "name": "Book of pain",
+  "type": "ERC1155",
+  "description": "Flip: When your opponent declares an attack, double the incoming damage and reflect it back to the attacking Guardian. Upon success pay 100 gold and discard one card from your hand to the graveyard. ",
+  "image": "https://bafybeifikuvzbynpoh7do46dkxyhoowtgbeibwzgumpvgtgengyfjtiuza.ipfs.nftstorage.link/BOOK%20OF%20PAIN%20FRONT.webp",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 58
+    },
+    "name": {
+      "name": "name",
+      "value": "Book of pain"
+    },
+    "type": {
+      "name": "type",
+      "value": "Flip counter"
+    },
+    "ADOTurn": {
+      "name": "ADOTurn",
+      "value": "YES"
+    },
+    "rarity": {
+      "name": "rarity",
+      "value": "Rare"
+    },
+    "description": {
+      "name": "description",
+      "value": "Flip: When your opponent declares an attack, double the incoming damage and reflect it back to the attacking Guardian. Upon success pay 100 gold and discard one card from your hand to the graveyard. "
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmW1XbefUQ6w8bZVWn8G6VPTadkhNHBHsXBPGg8qym6ZkV"
+    },
+    "back": {
+      "name": "back",
+      "value": "https://bafybeif62tm47b5cwjulkojq2s6bsbk4agvnn6zeq4arbjqsjqbrw3xgsa.ipfs.nftstorage.link/action.png"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 58
+    },
+    {
+      "trait_type": "name",
+      "value": "Book of pain"
+    },
+    {
+      "trait_type": "type",
+      "value": "Flip counter"
+    },
+    {
+      "trait_type": "ADOTurn",
+      "value": "YES"
+    },
+    {
+      "trait_type": "rarity",
+      "value": "Rare"
+    },
+    {
+      "trait_type": "description",
+      "value": "Flip: When your opponent declares an attack, double the incoming damage and reflect it back to the attacking Guardian. Upon success pay 100 gold and discard one card from your hand to the graveyard. "
+    },
+    {
+      "trait_type": "image",
+      "value": "https://bafybeifikuvzbynpoh7do46dkxyhoowtgbeibwzgumpvgtgengyfjtiuza.ipfs.nftstorage.link/BOOK%20OF%20PAIN%20FRONT.webp"
+    }
+  ],
+  "typeCard": "reaction"
+}

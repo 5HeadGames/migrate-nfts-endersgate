@@ -1,0 +1,104 @@
+{
+  "name": "Undead Summoner",
+  "type": "ERC1155",
+  "description": "[Undead | Mage] Active: Pay 25 gold to summon 1 undead / zombie type guardian worth 100 gold or less from your deck to the field.",
+  "image": "https://bafybeibkfu4brr3fet2n4ozlb73f5ezry5qhtgboojqie5s4hemmimitey.ipfs.nftstorage.link/UNDEAD%20SUMMONER%20FRONT.webp",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 112
+    },
+    "name": {
+      "name": "name",
+      "value": "Undead Summoner"
+    },
+    "element": {
+      "name": "element",
+      "value": "Void"
+    },
+    "role": {
+      "name": "role",
+      "value": "Mage"
+    },
+    "race": {
+      "name": "race",
+      "value": "Undead"
+    },
+    "attack": {
+      "name": "attack",
+      "value": 75
+    },
+    "hp": {
+      "name": "hp",
+      "value": 55
+    },
+    "isGuardian": {
+      "name": "isGuardian",
+      "value": true
+    },
+    "gold": {
+      "name": "gold",
+      "value": 75
+    },
+    "description": {
+      "name": "description",
+      "value": "[Undead | Mage] Active: Pay 25 gold to summon 1 undead / zombie type guardian worth 100 gold or less from your deck to the field."
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmaRJN6L31QmeJTwGy5gCyMz3hzXPGoaYgyZ4wG2oEJzKB"
+    },
+    "back": {
+      "name": "back",
+      "value": "https://bafybeif62tm47b5cwjulkojq2s6bsbk4agvnn6zeq4arbjqsjqbrw3xgsa.ipfs.nftstorage.link/wood.png"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 112
+    },
+    {
+      "trait_type": "name",
+      "value": "Undead Summoner"
+    },
+    {
+      "trait_type": "element",
+      "value": "Void"
+    },
+    {
+      "trait_type": "role",
+      "value": "Mage"
+    },
+    {
+      "trait_type": "race",
+      "value": "Undead"
+    },
+    {
+      "trait_type": "attack",
+      "value": 75
+    },
+    {
+      "trait_type": "hp",
+      "value": 55
+    },
+    {
+      "trait_type": "isGuardian",
+      "value": true
+    },
+    {
+      "trait_type": "gold",
+      "value": 75
+    },
+    {
+      "trait_type": "description",
+      "value": "[Undead | Mage] Active: Pay 25 gold to summon 1 undead / zombie type guardian worth 100 gold or less from your deck to the field."
+    },
+    {
+      "trait_type": "image",
+      "value": "https://bafybeibkfu4brr3fet2n4ozlb73f5ezry5qhtgboojqie5s4hemmimitey.ipfs.nftstorage.link/UNDEAD%20SUMMONER%20FRONT.webp"
+    }
+  ],
+  "typeCard": "wood"
+}

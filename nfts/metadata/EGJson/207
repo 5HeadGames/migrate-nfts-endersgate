@@ -1,0 +1,104 @@
+{
+  "name": "Stephania",
+  "type": "ERC1155",
+  "description": "[Human | Mage] \"Earth Acolyte\" Active: Once per turn during your MP1, deal 10 Earth damage to one selected enemy Guardian.",
+  "image": "https://bafybeig3547axzebboindgziuld3wk2hg6lnzdxj7rtb2wyw53arwtgtxy.ipfs.nftstorage.link/STEPHANIA%20FRONT.webp",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 207
+    },
+    "name": {
+      "name": "name",
+      "value": "Stephania"
+    },
+    "element": {
+      "name": "element",
+      "value": "Earth"
+    },
+    "role": {
+      "name": "role",
+      "value": "Mage"
+    },
+    "race": {
+      "name": "race",
+      "value": "Human"
+    },
+    "attack": {
+      "name": "attack",
+      "value": 170
+    },
+    "hp": {
+      "name": "hp",
+      "value": 240
+    },
+    "isGuardian": {
+      "name": "isGuardian",
+      "value": true
+    },
+    "gold": {
+      "name": "gold",
+      "value": 300
+    },
+    "description": {
+      "name": "description",
+      "value": "[Human | Mage] \"Earth Acolyte\" Active: Once per turn during your MP1, deal 10 Earth damage to one selected enemy Guardian."
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmVKknMnCc1w493hreNnKG8R1o1PRByD8kpBhBJufem2mF"
+    },
+    "back": {
+      "name": "back",
+      "value": "https://bafybeif62tm47b5cwjulkojq2s6bsbk4agvnn6zeq4arbjqsjqbrw3xgsa.ipfs.nftstorage.link/gold.png"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 207
+    },
+    {
+      "trait_type": "name",
+      "value": "Stephania"
+    },
+    {
+      "trait_type": "element",
+      "value": "Earth"
+    },
+    {
+      "trait_type": "role",
+      "value": "Mage"
+    },
+    {
+      "trait_type": "race",
+      "value": "Human"
+    },
+    {
+      "trait_type": "attack",
+      "value": 170
+    },
+    {
+      "trait_type": "hp",
+      "value": 240
+    },
+    {
+      "trait_type": "isGuardian",
+      "value": true
+    },
+    {
+      "trait_type": "gold",
+      "value": 300
+    },
+    {
+      "trait_type": "description",
+      "value": "[Human | Mage] \"Earth Acolyte\" Active: Once per turn during your MP1, deal 10 Earth damage to one selected enemy Guardian."
+    },
+    {
+      "trait_type": "image",
+      "value": "https://bafybeig3547axzebboindgziuld3wk2hg6lnzdxj7rtb2wyw53arwtgtxy.ipfs.nftstorage.link/STEPHANIA%20FRONT.webp"
+    }
+  ],
+  "typeCard": "gold"
+}

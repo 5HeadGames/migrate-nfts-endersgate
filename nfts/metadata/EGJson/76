@@ -1,0 +1,72 @@
+{
+  "name": "Rarity Guillotine ",
+  "type": "ERC1155",
+  "description": "Flip: This card remains face up for 3 turns; your Guardians now cost 50% less gold to hire to the field.",
+  "image": "https://bafybeifssxtmjfctzadjugnwrxptp37iqukmrbfjezxxfuzz37q25tgxp4.ipfs.nftstorage.link/RARITY%20GUILLOTINE%20FRONT.webp",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 76
+    },
+    "name": {
+      "name": "name",
+      "value": "Rarity Guillotine "
+    },
+    "type": {
+      "name": "type",
+      "value": "Quick Play"
+    },
+    "ADOTurn": {
+      "name": "ADOTurn",
+      "value": "YES"
+    },
+    "rarity": {
+      "name": "rarity",
+      "value": "Ultra Rare"
+    },
+    "description": {
+      "name": "description",
+      "value": "Flip: This card remains face up for 3 turns; your Guardians now cost 50% less gold to hire to the field."
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmWnSJ8Lqi7VhhXDpP6oziWQ4auVfryDN27A7Ae2RPT6A7"
+    },
+    "back": {
+      "name": "back",
+      "value": "https://bafybeif62tm47b5cwjulkojq2s6bsbk4agvnn6zeq4arbjqsjqbrw3xgsa.ipfs.nftstorage.link/action.png"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 76
+    },
+    {
+      "trait_type": "name",
+      "value": "Rarity Guillotine "
+    },
+    {
+      "trait_type": "type",
+      "value": "Quick Play"
+    },
+    {
+      "trait_type": "ADOTurn",
+      "value": "YES"
+    },
+    {
+      "trait_type": "rarity",
+      "value": "Ultra Rare"
+    },
+    {
+      "trait_type": "description",
+      "value": "Flip: This card remains face up for 3 turns; your Guardians now cost 50% less gold to hire to the field."
+    },
+    {
+      "trait_type": "image",
+      "value": "https://bafybeifssxtmjfctzadjugnwrxptp37iqukmrbfjezxxfuzz37q25tgxp4.ipfs.nftstorage.link/RARITY%20GUILLOTINE%20FRONT.webp"
+    }
+  ],
+  "typeCard": "reaction"
+}

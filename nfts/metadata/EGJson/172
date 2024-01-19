@@ -1,0 +1,104 @@
+{
+  "name": "Ragnar",
+  "type": "ERC1155",
+  "description": "[Undead | Tank] Passive: All incoming enemy attacks are automatically re-directed to Ragnar and reduced by 20%",
+  "image": "https://bafybeiffhgcg3chfgkx24g2i77yunhim2b3qbukcyygyqqv2mkscqpwnrq.ipfs.nftstorage.link/RAGNAR%20FRONT.webp",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 172
+    },
+    "name": {
+      "name": "name",
+      "value": "Ragnar"
+    },
+    "element": {
+      "name": "element",
+      "value": "Void"
+    },
+    "role": {
+      "name": "role",
+      "value": "Tank"
+    },
+    "race": {
+      "name": "race",
+      "value": "Undead"
+    },
+    "attack": {
+      "name": "attack",
+      "value": 90
+    },
+    "hp": {
+      "name": "hp",
+      "value": 300
+    },
+    "isGuardian": {
+      "name": "isGuardian",
+      "value": true
+    },
+    "gold": {
+      "name": "gold",
+      "value": 230
+    },
+    "description": {
+      "name": "description",
+      "value": "[Undead | Tank] Passive: All incoming enemy attacks are automatically re-directed to Ragnar and reduced by 20%"
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/Qmer9F88oDKXjo4yGqZQnAwnvE9jC5QzroV6HuFYQ3CNPL"
+    },
+    "back": {
+      "name": "back",
+      "value": "https://bafybeif62tm47b5cwjulkojq2s6bsbk4agvnn6zeq4arbjqsjqbrw3xgsa.ipfs.nftstorage.link/silver.png"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 172
+    },
+    {
+      "trait_type": "name",
+      "value": "Ragnar"
+    },
+    {
+      "trait_type": "element",
+      "value": "Void"
+    },
+    {
+      "trait_type": "role",
+      "value": "Tank"
+    },
+    {
+      "trait_type": "race",
+      "value": "Undead"
+    },
+    {
+      "trait_type": "attack",
+      "value": 90
+    },
+    {
+      "trait_type": "hp",
+      "value": 300
+    },
+    {
+      "trait_type": "isGuardian",
+      "value": true
+    },
+    {
+      "trait_type": "gold",
+      "value": 230
+    },
+    {
+      "trait_type": "description",
+      "value": "[Undead | Tank] Passive: All incoming enemy attacks are automatically re-directed to Ragnar and reduced by 20%"
+    },
+    {
+      "trait_type": "image",
+      "value": "https://bafybeiffhgcg3chfgkx24g2i77yunhim2b3qbukcyygyqqv2mkscqpwnrq.ipfs.nftstorage.link/RAGNAR%20FRONT.webp"
+    }
+  ],
+  "typeCard": "iron"
+}

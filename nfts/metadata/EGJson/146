@@ -1,0 +1,104 @@
+{
+  "name": "Undead Archer",
+  "type": "ERC1155",
+  "description": "[Undead | Assassin] \"Dimensional Pierce\" Activate: Once every 5 turns, Undead Archer can attack your opponents LP directly for 100% of his current damage. ",
+  "image": "https://bafybeifvdhu6q73jm6cou3uqxocczmab6zaus7a2274xrbvovfjtqnswiq.ipfs.nftstorage.link/UNDEAD%20ARCHER%20FRONT.webp",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 146
+    },
+    "name": {
+      "name": "name",
+      "value": "Undead Archer"
+    },
+    "element": {
+      "name": "element",
+      "value": "Void"
+    },
+    "role": {
+      "name": "role",
+      "value": "Assassin"
+    },
+    "race": {
+      "name": "race",
+      "value": "Undead"
+    },
+    "attack": {
+      "name": "attack",
+      "value": 140
+    },
+    "hp": {
+      "name": "hp",
+      "value": 80
+    },
+    "isGuardian": {
+      "name": "isGuardian",
+      "value": true
+    },
+    "gold": {
+      "name": "gold",
+      "value": 140
+    },
+    "description": {
+      "name": "description",
+      "value": "[Undead | Assassin] \"Dimensional Pierce\" Activate: Once every 5 turns, Undead Archer can attack your opponents LP directly for 100% of his current damage. "
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmTqgy6bPnBR61wDnUQXzdPapQP1aAornda1imi5yxUYpA"
+    },
+    "back": {
+      "name": "back",
+      "value": "https://bafybeif62tm47b5cwjulkojq2s6bsbk4agvnn6zeq4arbjqsjqbrw3xgsa.ipfs.nftstorage.link/stone.png"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 146
+    },
+    {
+      "trait_type": "name",
+      "value": "Undead Archer"
+    },
+    {
+      "trait_type": "element",
+      "value": "Void"
+    },
+    {
+      "trait_type": "role",
+      "value": "Assassin"
+    },
+    {
+      "trait_type": "race",
+      "value": "Undead"
+    },
+    {
+      "trait_type": "attack",
+      "value": 140
+    },
+    {
+      "trait_type": "hp",
+      "value": 80
+    },
+    {
+      "trait_type": "isGuardian",
+      "value": true
+    },
+    {
+      "trait_type": "gold",
+      "value": 140
+    },
+    {
+      "trait_type": "description",
+      "value": "[Undead | Assassin] \"Dimensional Pierce\" Activate: Once every 5 turns, Undead Archer can attack your opponents LP directly for 100% of his current damage. "
+    },
+    {
+      "trait_type": "image",
+      "value": "https://bafybeifvdhu6q73jm6cou3uqxocczmab6zaus7a2274xrbvovfjtqnswiq.ipfs.nftstorage.link/UNDEAD%20ARCHER%20FRONT.webp"
+    }
+  ],
+  "typeCard": "stone"
+}

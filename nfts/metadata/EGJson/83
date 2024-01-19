@@ -1,0 +1,72 @@
+{
+  "name": "Explosive Sabotage",
+  "type": "ERC1155",
+  "description": "Flip: This card stays faceup for 3 turns. During the standby phase of your 3rd turn, deal 75 Fire Damage to all Guardians on your opponent's side of the field.",
+  "image": "https://bafybeigcjo7k33se6zugsspnvpdtbyuzkdyqm2pbmgn2jqr2ocp5gr5kta.ipfs.nftstorage.link/Explosive%20Sabotage.webp",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 83
+    },
+    "name": {
+      "name": "name",
+      "value": "Explosive Sabotage"
+    },
+    "type": {
+      "name": "type",
+      "value": "Flip Counter"
+    },
+    "ADOTurn": {
+      "name": "ADOTurn",
+      "value": "YES"
+    },
+    "rarity": {
+      "name": "rarity",
+      "value": "Ultra Rare"
+    },
+    "description": {
+      "name": "description",
+      "value": "Flip: This card stays faceup for 3 turns. During the standby phase of your 3rd turn, deal 75 Fire Damage to all Guardians on your opponent's side of the field."
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmUJfxdrgZ5826QDzPFNQKUw2KofdZUfBut8CnhF4KKuhq"
+    },
+    "back": {
+      "name": "back",
+      "value": "https://bafybeif62tm47b5cwjulkojq2s6bsbk4agvnn6zeq4arbjqsjqbrw3xgsa.ipfs.nftstorage.link/action.png"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 83
+    },
+    {
+      "trait_type": "name",
+      "value": "Explosive Sabotage"
+    },
+    {
+      "trait_type": "type",
+      "value": "Flip Counter"
+    },
+    {
+      "trait_type": "ADOTurn",
+      "value": "YES"
+    },
+    {
+      "trait_type": "rarity",
+      "value": "Ultra Rare"
+    },
+    {
+      "trait_type": "description",
+      "value": "Flip: This card stays faceup for 3 turns. During the standby phase of your 3rd turn, deal 75 Fire Damage to all Guardians on your opponent's side of the field."
+    },
+    {
+      "trait_type": "image",
+      "value": "https://bafybeigcjo7k33se6zugsspnvpdtbyuzkdyqm2pbmgn2jqr2ocp5gr5kta.ipfs.nftstorage.link/Explosive%20Sabotage.webp"
+    }
+  ],
+  "typeCard": "reaction"
+}

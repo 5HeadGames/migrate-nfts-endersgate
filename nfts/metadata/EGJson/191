@@ -1,0 +1,104 @@
+{
+  "name": "Novalynn",
+  "type": "ERC1155",
+  "description": "[Human | Mage] \"Foresight\" Activate: Once every 2 turns, target 1 enemy Guardian. Inflict 10 HP as mystic damage on their next main phase.",
+  "image": "https://bafybeicq3uzutrkn3rxxndowfhgj6yt2zbn2nctjohq7kkrwtwusnzultq.ipfs.nftstorage.link/NOVALYNN%20FRONT.webp",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 191
+    },
+    "name": {
+      "name": "name",
+      "value": "Novalynn"
+    },
+    "element": {
+      "name": "element",
+      "value": "Mystic"
+    },
+    "role": {
+      "name": "role",
+      "value": "Mage"
+    },
+    "race": {
+      "name": "race",
+      "value": "Human"
+    },
+    "attack": {
+      "name": "attack",
+      "value": 170
+    },
+    "hp": {
+      "name": "hp",
+      "value": 240
+    },
+    "isGuardian": {
+      "name": "isGuardian",
+      "value": true
+    },
+    "gold": {
+      "name": "gold",
+      "value": 300
+    },
+    "description": {
+      "name": "description",
+      "value": "[Human | Mage] \"Foresight\" Activate: Once every 2 turns, target 1 enemy Guardian. Inflict 10 HP as mystic damage on their next main phase."
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmQ17ZG1S53bmpfnKsCv4Pha39fmbEUxKST1tXo4PWVuZw"
+    },
+    "back": {
+      "name": "back",
+      "value": "https://bafybeif62tm47b5cwjulkojq2s6bsbk4agvnn6zeq4arbjqsjqbrw3xgsa.ipfs.nftstorage.link/gold.png"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 191
+    },
+    {
+      "trait_type": "name",
+      "value": "Novalynn"
+    },
+    {
+      "trait_type": "element",
+      "value": "Mystic"
+    },
+    {
+      "trait_type": "role",
+      "value": "Mage"
+    },
+    {
+      "trait_type": "race",
+      "value": "Human"
+    },
+    {
+      "trait_type": "attack",
+      "value": 170
+    },
+    {
+      "trait_type": "hp",
+      "value": 240
+    },
+    {
+      "trait_type": "isGuardian",
+      "value": true
+    },
+    {
+      "trait_type": "gold",
+      "value": 300
+    },
+    {
+      "trait_type": "description",
+      "value": "[Human | Mage] \"Foresight\" Activate: Once every 2 turns, target 1 enemy Guardian. Inflict 10 HP as mystic damage on their next main phase."
+    },
+    {
+      "trait_type": "image",
+      "value": "https://bafybeicq3uzutrkn3rxxndowfhgj6yt2zbn2nctjohq7kkrwtwusnzultq.ipfs.nftstorage.link/NOVALYNN%20FRONT.webp"
+    }
+  ],
+  "typeCard": "gold"
+}

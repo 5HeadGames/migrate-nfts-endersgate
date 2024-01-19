@@ -1,0 +1,104 @@
+{
+  "name": "Rulgannon",
+  "type": "ERC1155",
+  "description": "[Demon | Tank] \"Task Master\" Passive: When Rulgannon is hired to the field, swap all Guardians in play who cost 200 gold or less with Guardians in both Graveyards. ",
+  "image": "https://bafybeifysxtfl2dpvjlxosn6llmcl4wa7i3ib3yaypeupxwwfkpsiumc3i.ipfs.nftstorage.link/Rulgannon.webp",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 228
+    },
+    "name": {
+      "name": "name",
+      "value": "Rulgannon"
+    },
+    "element": {
+      "name": "element",
+      "value": "Fire"
+    },
+    "role": {
+      "name": "role",
+      "value": "Tank"
+    },
+    "race": {
+      "name": "race",
+      "value": "Demon "
+    },
+    "attack": {
+      "name": "attack",
+      "value": 150
+    },
+    "hp": {
+      "name": "hp",
+      "value": 550
+    },
+    "isGuardian": {
+      "name": "isGuardian",
+      "value": true
+    },
+    "gold": {
+      "name": "gold",
+      "value": 600
+    },
+    "description": {
+      "name": "description",
+      "value": "[Demon | Tank] \"Task Master\" Passive: When Rulgannon is hired to the field, swap all Guardians in play who cost 200 gold or less with Guardians in both Graveyards. "
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmctU4b1m9AA77AuSDWcnDPc6GJ4rjkeccB2v81zu7QE2S"
+    },
+    "back": {
+      "name": "back",
+      "value": "https://bafybeif62tm47b5cwjulkojq2s6bsbk4agvnn6zeq4arbjqsjqbrw3xgsa.ipfs.nftstorage.link/legendary.png"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 228
+    },
+    {
+      "trait_type": "name",
+      "value": "Rulgannon"
+    },
+    {
+      "trait_type": "element",
+      "value": "Fire"
+    },
+    {
+      "trait_type": "role",
+      "value": "Tank"
+    },
+    {
+      "trait_type": "race",
+      "value": "Demon "
+    },
+    {
+      "trait_type": "attack",
+      "value": 150
+    },
+    {
+      "trait_type": "hp",
+      "value": 550
+    },
+    {
+      "trait_type": "isGuardian",
+      "value": true
+    },
+    {
+      "trait_type": "gold",
+      "value": 600
+    },
+    {
+      "trait_type": "description",
+      "value": "[Demon | Tank] \"Task Master\" Passive: When Rulgannon is hired to the field, swap all Guardians in play who cost 200 gold or less with Guardians in both Graveyards. "
+    },
+    {
+      "trait_type": "image",
+      "value": "https://bafybeifysxtfl2dpvjlxosn6llmcl4wa7i3ib3yaypeupxwwfkpsiumc3i.ipfs.nftstorage.link/Rulgannon.webp"
+    }
+  ],
+  "typeCard": "legendary"
+}

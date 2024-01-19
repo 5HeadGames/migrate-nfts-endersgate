@@ -1,0 +1,72 @@
+{
+  "name": "Pacifist Incenstive",
+  "type": "ERC1155",
+  "description": "Flip: Pay 100 gold to your opponent then end their attack phase. ",
+  "image": "https://bafybeic5wz24kekfbtotk767hd2a2zdrj5y2t5md32fcorqrzwlr63mts4.ipfs.nftstorage.link/PACIFIST%20INCENTIVE%20FRONT.webp",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 54
+    },
+    "name": {
+      "name": "name",
+      "value": "Pacifist Incentive"
+    },
+    "type": {
+      "name": "type",
+      "value": "Quick Play"
+    },
+    "ADOTurn": {
+      "name": "ADOTurn",
+      "value": "YES"
+    },
+    "rarity": {
+      "name": "rarity",
+      "value": "Uncommon"
+    },
+    "description": {
+      "name": "description",
+      "value": "Flip: Pay 100 gold to your opponent then end their attack phase. "
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmXiqYVoz59V6MhSgHNLCjZJAwGk9dKBF5j7uBiciMzKiv"
+    },
+    "back": {
+      "name": "back",
+      "value": "https://bafybeif62tm47b5cwjulkojq2s6bsbk4agvnn6zeq4arbjqsjqbrw3xgsa.ipfs.nftstorage.link/action.png"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 54
+    },
+    {
+      "trait_type": "name",
+      "value": "Pacifist Incentive"
+    },
+    {
+      "trait_type": "type",
+      "value": "Quick Play"
+    },
+    {
+      "trait_type": "ADOTurn",
+      "value": "YES"
+    },
+    {
+      "trait_type": "rarity",
+      "value": "Uncommon"
+    },
+    {
+      "trait_type": "description",
+      "value": "Flip: Pay 100 gold to your opponent then end their attack phase. "
+    },
+    {
+      "trait_type": "image",
+      "value": "https://bafybeic5wz24kekfbtotk767hd2a2zdrj5y2t5md32fcorqrzwlr63mts4.ipfs.nftstorage.link/PACIFIST%20INCENTIVE%20FRONT.webp"
+    }
+  ],
+  "typeCard": "reaction"
+}

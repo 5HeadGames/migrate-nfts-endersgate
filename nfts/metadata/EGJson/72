@@ -1,0 +1,72 @@
+{
+  "name": "Show of hands",
+  "type": "ERC1155",
+  "description": "Flip: Your opponent chooses 1 of 2 options: \n\n● Reveal their hand to you.\n\n● Pay you 50 gold and discard 1 card to the grave yard.",
+  "image": "https://bafybeianfrlqdneetg2jozzarce3kvw5udjfzvktagwcilw4qfo6tuupkq.ipfs.nftstorage.link/SHOW%20OF%20HANDS%20FRONT.webp",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 72
+    },
+    "name": {
+      "name": "name",
+      "value": "Show of hands"
+    },
+    "type": {
+      "name": "type",
+      "value": "Quick Play"
+    },
+    "ADOTurn": {
+      "name": "ADOTurn",
+      "value": "YES"
+    },
+    "rarity": {
+      "name": "rarity",
+      "value": "Ultra Rare"
+    },
+    "description": {
+      "name": "description",
+      "value": "Flip: Your opponent chooses 1 of 2 options: \n\n● Reveal their hand to you.\n\n● Pay you 50 gold and discard 1 card to the grave yard."
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmYLAUidib51mkdcVTND6cu7QAun9f7Feu9V7KAGGMMBfw"
+    },
+    "back": {
+      "name": "back",
+      "value": "https://bafybeif62tm47b5cwjulkojq2s6bsbk4agvnn6zeq4arbjqsjqbrw3xgsa.ipfs.nftstorage.link/action.png"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 72
+    },
+    {
+      "trait_type": "name",
+      "value": "Show of hands"
+    },
+    {
+      "trait_type": "type",
+      "value": "Quick Play"
+    },
+    {
+      "trait_type": "ADOTurn",
+      "value": "YES"
+    },
+    {
+      "trait_type": "rarity",
+      "value": "Ultra Rare"
+    },
+    {
+      "trait_type": "description",
+      "value": "Flip: Your opponent chooses 1 of 2 options: \n\n● Reveal their hand to you.\n\n● Pay you 50 gold and discard 1 card to the grave yard."
+    },
+    {
+      "trait_type": "image",
+      "value": "https://bafybeianfrlqdneetg2jozzarce3kvw5udjfzvktagwcilw4qfo6tuupkq.ipfs.nftstorage.link/SHOW%20OF%20HANDS%20FRONT.webp"
+    }
+  ],
+  "typeCard": "reaction"
+}

@@ -1,0 +1,104 @@
+{
+  "name": "Undead Turtle",
+  "type": "ERC1155",
+  "description": "[Undead | Support] Passive: When undead turtle is sent to the grave yard as a result of battle, summon 1 undead type guardian worth 100 gold or less from your deck.",
+  "image": "https://bafybeidlaxtwuehbfl6apq7ptkidfyqrzzb2ldjsofjk6qiare5lnitn34.ipfs.nftstorage.link/UNDEAD%20TURTLE%20FRONT.webp",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 139
+    },
+    "name": {
+      "name": "name",
+      "value": "Undead Turtle"
+    },
+    "element": {
+      "name": "element",
+      "value": "Void"
+    },
+    "role": {
+      "name": "role",
+      "value": "Support"
+    },
+    "race": {
+      "name": "race",
+      "value": "Undead"
+    },
+    "attack": {
+      "name": "attack",
+      "value": 120
+    },
+    "hp": {
+      "name": "hp",
+      "value": 120
+    },
+    "isGuardian": {
+      "name": "isGuardian",
+      "value": true
+    },
+    "gold": {
+      "name": "gold",
+      "value": 150
+    },
+    "description": {
+      "name": "description",
+      "value": "[Undead | Support] Passive: When undead turtle is sent to the grave yard as a result of battle, summon 1 undead type guardian worth 100 gold or less from your deck."
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmVV2GoG6y4okHM8tLKmNrcbXPm5XhR2m9DbsDmY9HPYB1"
+    },
+    "back": {
+      "name": "back",
+      "value": "https://bafybeif62tm47b5cwjulkojq2s6bsbk4agvnn6zeq4arbjqsjqbrw3xgsa.ipfs.nftstorage.link/stone.png"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 139
+    },
+    {
+      "trait_type": "name",
+      "value": "Undead Turtle"
+    },
+    {
+      "trait_type": "element",
+      "value": "Void"
+    },
+    {
+      "trait_type": "role",
+      "value": "Support"
+    },
+    {
+      "trait_type": "race",
+      "value": "Undead"
+    },
+    {
+      "trait_type": "attack",
+      "value": 120
+    },
+    {
+      "trait_type": "hp",
+      "value": 120
+    },
+    {
+      "trait_type": "isGuardian",
+      "value": true
+    },
+    {
+      "trait_type": "gold",
+      "value": 150
+    },
+    {
+      "trait_type": "description",
+      "value": "[Undead | Support] Passive: When undead turtle is sent to the grave yard as a result of battle, summon 1 undead type guardian worth 100 gold or less from your deck."
+    },
+    {
+      "trait_type": "image",
+      "value": "https://bafybeidlaxtwuehbfl6apq7ptkidfyqrzzb2ldjsofjk6qiare5lnitn34.ipfs.nftstorage.link/UNDEAD%20TURTLE%20FRONT.webp"
+    }
+  ],
+  "typeCard": "stone"
+}

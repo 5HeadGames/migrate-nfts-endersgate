@@ -1,0 +1,67 @@
+{
+  "name": "Bemular",
+  "type": "ERC1155",
+  "description": "● Giant Light Orb ● Specium Beam. ● Red Orb Beam.",
+  "image": "https://bafkreifvo4adoub5b6qzy7a4fcsypygvllzfef7ypde2x426m7xcy3y5ji.ipfs.nftstorage.link/",
+  "symbol": "GATE",
+  "synergies": [
+    "Pending"
+  ],
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 234
+    },
+    "name": {
+      "name": "name",
+      "value": "Bemular"
+    },
+    "type": {
+      "name": "type",
+      "value": "Void"
+    },
+    "rarity": {
+      "name": "rarity",
+      "value": "Collectors Edition"
+    },
+    "image": {
+      "name": "image",
+      "value": "https://bafkreifvo4adoub5b6qzy7a4fcsypygvllzfef7ypde2x426m7xcy3y5ji.ipfs.nftstorage.link/"
+    },
+    "description": {
+      "name": "description",
+      "value": "● Giant Light Orb ● Specium Beam. ● Red Orb Beam."
+    },
+    "back": {
+      "name": "back",
+      "value": "https://bafybeif62tm47b5cwjulkojq2s6bsbk4agvnn6zeq4arbjqsjqbrw3xgsa.ipfs.nftstorage.link/BemularBack-FinalDraftLightOn.webp"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "name",
+      "value": "Bemular"
+    },
+    {
+      "trait_type": "type",
+      "value": "Void"
+    },
+    {
+      "trait_type": "rarity",
+      "value": "Collectors Edition"
+    },
+    {
+      "trait_type": "description",
+      "value": "● Giant Light Orb ● Specium Beam. ● Red Orb Beam."
+    },
+    {
+      "trait_type": "id",
+      "value": 234
+    },
+    {
+      "trait_type": "image",
+      "value": "https://bafkreifvo4adoub5b6qzy7a4fcsypygvllzfef7ypde2x426m7xcy3y5ji.ipfs.nftstorage.link/"
+    }
+  ],
+  "typeCard": "avatar"
+}

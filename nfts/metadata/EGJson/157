@@ -1,0 +1,104 @@
+{
+  "name": "Oxi The Void Golem",
+  "type": "ERC1155",
+  "description": "[Golem | Tank] \"Shield of Zhilridge\" Activate: During your MP1, Oxi gives him self an Overshield worth 25% HP of its current HP. Uses: 1 ",
+  "image": "https://bafybeiej6zh46obqyeq7ihi3hmngbs5q7cchpyj3y7qfrjgv35vl56meua.ipfs.nftstorage.link/OXI%20THE%20VOID%20GOLEM%20FRONT.webp",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 157
+    },
+    "name": {
+      "name": "name",
+      "value": "Oxi The Void Golem"
+    },
+    "element": {
+      "name": "element",
+      "value": "Void"
+    },
+    "role": {
+      "name": "role",
+      "value": "Tank"
+    },
+    "race": {
+      "name": "race",
+      "value": "Golem "
+    },
+    "attack": {
+      "name": "attack",
+      "value": 50
+    },
+    "hp": {
+      "name": "hp",
+      "value": 150
+    },
+    "isGuardian": {
+      "name": "isGuardian",
+      "value": true
+    },
+    "gold": {
+      "name": "gold",
+      "value": 150
+    },
+    "description": {
+      "name": "description",
+      "value": "[Golem | Tank] \"Shield of Zhilridge\" Activate: During your MP1, Oxi gives him self an Overshield worth 25% HP of its current HP. Uses: 1 "
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmUkZbHgNCSyh2wMQKCkmfPPbYCnGv5AodnRgN9qvTBfK2"
+    },
+    "back": {
+      "name": "back",
+      "value": "https://bafybeif62tm47b5cwjulkojq2s6bsbk4agvnn6zeq4arbjqsjqbrw3xgsa.ipfs.nftstorage.link/stone.png"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 157
+    },
+    {
+      "trait_type": "name",
+      "value": "Oxi The Void Golem"
+    },
+    {
+      "trait_type": "element",
+      "value": "Void"
+    },
+    {
+      "trait_type": "role",
+      "value": "Tank"
+    },
+    {
+      "trait_type": "race",
+      "value": "Golem "
+    },
+    {
+      "trait_type": "attack",
+      "value": 50
+    },
+    {
+      "trait_type": "hp",
+      "value": 150
+    },
+    {
+      "trait_type": "isGuardian",
+      "value": true
+    },
+    {
+      "trait_type": "gold",
+      "value": 150
+    },
+    {
+      "trait_type": "description",
+      "value": "[Golem | Tank] \"Shield of Zhilridge\" Activate: During your MP1, Oxi gives him self an Overshield worth 25% HP of its current HP. Uses: 1 "
+    },
+    {
+      "trait_type": "image",
+      "value": "https://bafybeiej6zh46obqyeq7ihi3hmngbs5q7cchpyj3y7qfrjgv35vl56meua.ipfs.nftstorage.link/OXI%20THE%20VOID%20GOLEM%20FRONT.webp"
+    }
+  ],
+  "typeCard": "stone"
+}

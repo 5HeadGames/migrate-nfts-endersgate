@@ -1,0 +1,72 @@
+{
+  "name": "Achlys Jewelry Box",
+  "type": "ERC1155",
+  "description": "Flip: This card remains on the field for 3 turns; inflict 20 Venom damage to all Guardians your opponent controls for each turn. \n",
+  "image": "https://bafybeibq3ydxezlfmhbkv7qxad3dcv3mucnv5hbrnrx5fbdgvxwdt4jubu.ipfs.nftstorage.link/ACHLYS%20JEWELRY%20BOX%20FRONT.webp",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 64
+    },
+    "name": {
+      "name": "name",
+      "value": "Achlys Jewelry Box"
+    },
+    "type": {
+      "name": "type",
+      "value": "Quick Play"
+    },
+    "ADOTurn": {
+      "name": "ADOTurn",
+      "value": "YES"
+    },
+    "rarity": {
+      "name": "rarity",
+      "value": "Rare"
+    },
+    "description": {
+      "name": "description",
+      "value": "Flip: This card remains on the field for 3 turns; inflict 20 Venom damage to all Guardians your opponent controls for each turn. \n"
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/Qmcf2pDEdjkSXn8JMLbXupfCxA4EMJPgoopjxuwmHjxj6t"
+    },
+    "back": {
+      "name": "back",
+      "value": "https://bafybeif62tm47b5cwjulkojq2s6bsbk4agvnn6zeq4arbjqsjqbrw3xgsa.ipfs.nftstorage.link/action.png"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 64
+    },
+    {
+      "trait_type": "name",
+      "value": "Achlys Jewelry Box"
+    },
+    {
+      "trait_type": "type",
+      "value": "Quick Play"
+    },
+    {
+      "trait_type": "ADOTurn",
+      "value": "YES"
+    },
+    {
+      "trait_type": "rarity",
+      "value": "Rare"
+    },
+    {
+      "trait_type": "description",
+      "value": "Flip: This card remains on the field for 3 turns; inflict 20 Venom damage to all Guardians your opponent controls for each turn. \n"
+    },
+    {
+      "trait_type": "image",
+      "value": "https://bafybeibq3ydxezlfmhbkv7qxad3dcv3mucnv5hbrnrx5fbdgvxwdt4jubu.ipfs.nftstorage.link/ACHLYS%20JEWELRY%20BOX%20FRONT.webp"
+    }
+  ],
+  "typeCard": "reaction"
+}

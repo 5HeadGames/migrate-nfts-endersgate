@@ -1,0 +1,72 @@
+{
+  "name": "Swords of the Open sea",
+  "type": "ERC1155",
+  "description": "Once activated, this card remains on the field for 3 turns. While this card is face-up on the field, only water type Guardians can declare attack & all Fire type Guardians take 25 damage per turn.",
+  "image": "https://bafybeieyo2hell435bxqcvqyuxqyvbmu4s22doytbv35psn7o4vlf7yaae.ipfs.nftstorage.link/SWORDS%20OF%20THE%20OPEN%20SEA%20FRONT.webp",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 27
+    },
+    "name": {
+      "name": "name",
+      "value": "Swords of the Open sea"
+    },
+    "type": {
+      "name": "type",
+      "value": "Quick Play"
+    },
+    "ADOTurn": {
+      "name": "ADOTurn",
+      "value": "YES"
+    },
+    "rarity": {
+      "name": "rarity",
+      "value": "Ultra Rare"
+    },
+    "description": {
+      "name": "description",
+      "value": "Once activated, this card remains on the field for 3 turns. While this card is face-up on the field, only water type Guardians can declare attack & all Fire type Guardians take 25 damage per turn."
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmY7Sp2d18wwgDRWZUDU6y8idwFFuEF864gAc3rqKsfKQr"
+    },
+    "back": {
+      "name": "back",
+      "value": "https://bafybeif62tm47b5cwjulkojq2s6bsbk4agvnn6zeq4arbjqsjqbrw3xgsa.ipfs.nftstorage.link/action.png"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 27
+    },
+    {
+      "trait_type": "name",
+      "value": "Swords of the Open sea"
+    },
+    {
+      "trait_type": "type",
+      "value": "Quick Play"
+    },
+    {
+      "trait_type": "ADOTurn",
+      "value": "YES"
+    },
+    {
+      "trait_type": "rarity",
+      "value": "Ultra Rare"
+    },
+    {
+      "trait_type": "description",
+      "value": "Once activated, this card remains on the field for 3 turns. While this card is face-up on the field, only water type Guardians can declare attack & all Fire type Guardians take 25 damage per turn."
+    },
+    {
+      "trait_type": "image",
+      "value": "https://bafybeieyo2hell435bxqcvqyuxqyvbmu4s22doytbv35psn7o4vlf7yaae.ipfs.nftstorage.link/SWORDS%20OF%20THE%20OPEN%20SEA%20FRONT.webp"
+    }
+  ],
+  "typeCard": "action"
+}

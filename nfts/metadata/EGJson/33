@@ -1,0 +1,72 @@
+{
+  "name": "Warrior's Stand",
+  "type": "ERC1155",
+  "description": "When you control only one Guardian on your side of the field with less ATK than your opponent's Guardian: Increase the ATK of the Guardian you control to match the ATK of the Strongest Guardian your opponent controls.",
+  "image": "https://bafybeibpl6csjneelod6kp6amnayyvaodnyy67rq6ox3rtla2qntjyzt6m.ipfs.nftstorage.link/WARRIORS%20STAND%20FRONT.webp",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 33
+    },
+    "name": {
+      "name": "name",
+      "value": "Warrior's Stand"
+    },
+    "type": {
+      "name": "type",
+      "value": "Equip / Buff"
+    },
+    "ADOTurn": {
+      "name": "ADOTurn",
+      "value": "NO"
+    },
+    "rarity": {
+      "name": "rarity",
+      "value": "Ultra Rare"
+    },
+    "description": {
+      "name": "description",
+      "value": "When you control only one Guardian on your side of the field with less ATK than your opponent's Guardian: Increase the ATK of the Guardian you control to match the ATK of the Strongest Guardian your opponent controls."
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmakZncUG5GA7zkfiSdr8E75N76FVqBZeYFmvtcnTzgwJM"
+    },
+    "back": {
+      "name": "back",
+      "value": "https://bafybeif62tm47b5cwjulkojq2s6bsbk4agvnn6zeq4arbjqsjqbrw3xgsa.ipfs.nftstorage.link/action.png"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 33
+    },
+    {
+      "trait_type": "name",
+      "value": "Warrior's Stand"
+    },
+    {
+      "trait_type": "type",
+      "value": "Equip / Buff"
+    },
+    {
+      "trait_type": "ADOTurn",
+      "value": "NO"
+    },
+    {
+      "trait_type": "rarity",
+      "value": "Ultra Rare"
+    },
+    {
+      "trait_type": "description",
+      "value": "When you control only one Guardian on your side of the field with less ATK than your opponent's Guardian: Increase the ATK of the Guardian you control to match the ATK of the Strongest Guardian your opponent controls."
+    },
+    {
+      "trait_type": "image",
+      "value": "https://bafybeibpl6csjneelod6kp6amnayyvaodnyy67rq6ox3rtla2qntjyzt6m.ipfs.nftstorage.link/WARRIORS%20STAND%20FRONT.webp"
+    }
+  ],
+  "typeCard": "action"
+}

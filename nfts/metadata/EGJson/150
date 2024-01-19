@@ -1,0 +1,104 @@
+{
+  "name": "Maloss",
+  "type": "ERC1155",
+  "description": "[Beast | Tank] Passive: When Maliss is attacked, she gains an Earth shield worth 50% of her current HP.",
+  "image": "https://bafybeieiovck7mjgsfh4nugctqcd6ao67oxuqpovowff3jo3gvkzvdss7a.ipfs.nftstorage.link/MALOSS%20FRONT.webp",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 150
+    },
+    "name": {
+      "name": "name",
+      "value": "Maloss"
+    },
+    "element": {
+      "name": "element",
+      "value": "Earth"
+    },
+    "role": {
+      "name": "role",
+      "value": "Tank"
+    },
+    "race": {
+      "name": "race",
+      "value": "Beast"
+    },
+    "attack": {
+      "name": "attack",
+      "value": 50
+    },
+    "hp": {
+      "name": "hp",
+      "value": 150
+    },
+    "isGuardian": {
+      "name": "isGuardian",
+      "value": true
+    },
+    "gold": {
+      "name": "gold",
+      "value": 150
+    },
+    "description": {
+      "name": "description",
+      "value": "[Beast | Tank] Passive: When Maliss is attacked, she gains an Earth shield worth 50% of her current HP."
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/Qmaaewkotd1Jvm6ZscSuvsQ2WFWxJfjCPCMzxBPqLFJSfj"
+    },
+    "back": {
+      "name": "back",
+      "value": "https://bafybeif62tm47b5cwjulkojq2s6bsbk4agvnn6zeq4arbjqsjqbrw3xgsa.ipfs.nftstorage.link/stone.png"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 150
+    },
+    {
+      "trait_type": "name",
+      "value": "Maloss"
+    },
+    {
+      "trait_type": "element",
+      "value": "Earth"
+    },
+    {
+      "trait_type": "role",
+      "value": "Tank"
+    },
+    {
+      "trait_type": "race",
+      "value": "Beast"
+    },
+    {
+      "trait_type": "attack",
+      "value": 50
+    },
+    {
+      "trait_type": "hp",
+      "value": 150
+    },
+    {
+      "trait_type": "isGuardian",
+      "value": true
+    },
+    {
+      "trait_type": "gold",
+      "value": 150
+    },
+    {
+      "trait_type": "description",
+      "value": "[Beast | Tank] Passive: When Maliss is attacked, she gains an Earth shield worth 50% of her current HP."
+    },
+    {
+      "trait_type": "image",
+      "value": "https://bafybeieiovck7mjgsfh4nugctqcd6ao67oxuqpovowff3jo3gvkzvdss7a.ipfs.nftstorage.link/MALOSS%20FRONT.webp"
+    }
+  ],
+  "typeCard": "stone"
+}

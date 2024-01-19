@@ -1,0 +1,104 @@
+{
+  "name": "Takala",
+  "type": "ERC1155",
+  "description": "[Human | Healer] Activate: Once per turn, heal one ally Guardian for 20 HP; healed Guardian's gain +10 crit chance & damage for 1 turn.",
+  "image": "https://bafybeihut5iox4rgfdj755no22zy44x4oclza455mgripq3ad67spw3fh4.ipfs.nftstorage.link/TAKALA%20FRONT.webp",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 194
+    },
+    "name": {
+      "name": "name",
+      "value": "Takala"
+    },
+    "element": {
+      "name": "element",
+      "value": "Earth"
+    },
+    "role": {
+      "name": "role",
+      "value": "Healer"
+    },
+    "race": {
+      "name": "race",
+      "value": "Human"
+    },
+    "attack": {
+      "name": "attack",
+      "value": 100
+    },
+    "hp": {
+      "name": "hp",
+      "value": 200
+    },
+    "isGuardian": {
+      "name": "isGuardian",
+      "value": true
+    },
+    "gold": {
+      "name": "gold",
+      "value": 300
+    },
+    "description": {
+      "name": "description",
+      "value": "[Human | Healer] Activate: Once per turn, heal one ally Guardian for 20 HP; healed Guardian's gain +10 crit chance & damage for 1 turn."
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmaDpHy1hnTA7cmjjg6ngTPXz13PKAoJz1ZTbnKWxFckjJ"
+    },
+    "back": {
+      "name": "back",
+      "value": "https://bafybeif62tm47b5cwjulkojq2s6bsbk4agvnn6zeq4arbjqsjqbrw3xgsa.ipfs.nftstorage.link/gold.png"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 194
+    },
+    {
+      "trait_type": "name",
+      "value": "Takala"
+    },
+    {
+      "trait_type": "element",
+      "value": "Earth"
+    },
+    {
+      "trait_type": "role",
+      "value": "Healer"
+    },
+    {
+      "trait_type": "race",
+      "value": "Human"
+    },
+    {
+      "trait_type": "attack",
+      "value": 100
+    },
+    {
+      "trait_type": "hp",
+      "value": 200
+    },
+    {
+      "trait_type": "isGuardian",
+      "value": true
+    },
+    {
+      "trait_type": "gold",
+      "value": 300
+    },
+    {
+      "trait_type": "description",
+      "value": "[Human | Healer] Activate: Once per turn, heal one ally Guardian for 20 HP; healed Guardian's gain +10 crit chance & damage for 1 turn."
+    },
+    {
+      "trait_type": "image",
+      "value": "https://bafybeihut5iox4rgfdj755no22zy44x4oclza455mgripq3ad67spw3fh4.ipfs.nftstorage.link/TAKALA%20FRONT.webp"
+    }
+  ],
+  "typeCard": "gold"
+}

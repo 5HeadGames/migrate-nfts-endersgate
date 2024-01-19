@@ -1,0 +1,72 @@
+{
+  "name": "Void Tempest",
+  "type": "ERC1155",
+  "description": "Flip: When a Guardian on your opponent's side of the field successfully preforms an attack, Void Tempest surrounds the Guardian for 3 turns, dealing 25 Void Dmg per turn.",
+  "image": "https://bafybeiglqipymxitau46kilibetpdn42pdbflwnyby7nvjsccrrih732ma.ipfs.nftstorage.link/VOID%20TEMPEST%20FRONT.webp",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 68
+    },
+    "name": {
+      "name": "name",
+      "value": "Void Tempest"
+    },
+    "type": {
+      "name": "type",
+      "value": "Flip Counter"
+    },
+    "ADOTurn": {
+      "name": "ADOTurn",
+      "value": "YES"
+    },
+    "rarity": {
+      "name": "rarity",
+      "value": "Ultra Rare"
+    },
+    "description": {
+      "name": "description",
+      "value": "Flip: When a Guardian on your opponent's side of the field successfully preforms an attack, Void Tempest surrounds the Guardian for 3 turns, dealing 25 Void Dmg per turn."
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmfCrUMxn2TkbuD2nj5oACnSmDFaQmLAuFFdjeP2kzdX7r"
+    },
+    "back": {
+      "name": "back",
+      "value": "https://bafybeif62tm47b5cwjulkojq2s6bsbk4agvnn6zeq4arbjqsjqbrw3xgsa.ipfs.nftstorage.link/action.png"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 68
+    },
+    {
+      "trait_type": "name",
+      "value": "Void Tempest"
+    },
+    {
+      "trait_type": "type",
+      "value": "Flip Counter"
+    },
+    {
+      "trait_type": "ADOTurn",
+      "value": "YES"
+    },
+    {
+      "trait_type": "rarity",
+      "value": "Ultra Rare"
+    },
+    {
+      "trait_type": "description",
+      "value": "Flip: When a Guardian on your opponent's side of the field successfully preforms an attack, Void Tempest surrounds the Guardian for 3 turns, dealing 25 Void Dmg per turn."
+    },
+    {
+      "trait_type": "image",
+      "value": "https://bafybeiglqipymxitau46kilibetpdn42pdbflwnyby7nvjsccrrih732ma.ipfs.nftstorage.link/VOID%20TEMPEST%20FRONT.webp"
+    }
+  ],
+  "typeCard": "reaction"
+}

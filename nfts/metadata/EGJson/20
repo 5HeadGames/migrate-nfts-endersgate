@@ -1,0 +1,72 @@
+{
+  "name": "Void Blast",
+  "type": "ERC1155",
+  "description": "Target One Guardian on your opponent's side of the field; damage them for 100 HP. If under 20% health, execute them.",
+  "image": "https://bafybeihftrxiyvvichvwrexgbrln3tvdvxd3rg65gw2wc55b3x4rngnq64.ipfs.nftstorage.link/VOID%20BLAST%20FRONT.webp",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 20
+    },
+    "name": {
+      "name": "name",
+      "value": "Void Blast"
+    },
+    "type": {
+      "name": "type",
+      "value": "Normal Action"
+    },
+    "ADOTurn": {
+      "name": "ADOTurn",
+      "value": "YES"
+    },
+    "rarity": {
+      "name": "rarity",
+      "value": "Ultra Rare"
+    },
+    "description": {
+      "name": "description",
+      "value": "Target One Guardian on your opponent's side of the field; damage them for 100 HP. If under 20% health, execute them."
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmUvU5uHGpj5DNN1p1ofbZyjNbAJn1sazcQCtbzasS1bXJ"
+    },
+    "back": {
+      "name": "back",
+      "value": "https://bafybeif62tm47b5cwjulkojq2s6bsbk4agvnn6zeq4arbjqsjqbrw3xgsa.ipfs.nftstorage.link/action.png"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 20
+    },
+    {
+      "trait_type": "name",
+      "value": "Void Blast"
+    },
+    {
+      "trait_type": "type",
+      "value": "Normal Action"
+    },
+    {
+      "trait_type": "ADOTurn",
+      "value": "YES"
+    },
+    {
+      "trait_type": "rarity",
+      "value": "Ultra Rare"
+    },
+    {
+      "trait_type": "description",
+      "value": "Target One Guardian on your opponent's side of the field; damage them for 100 HP. If under 20% health, execute them."
+    },
+    {
+      "trait_type": "image",
+      "value": "https://bafybeihftrxiyvvichvwrexgbrln3tvdvxd3rg65gw2wc55b3x4rngnq64.ipfs.nftstorage.link/VOID%20BLAST%20FRONT.webp"
+    }
+  ],
+  "typeCard": "action"
+}

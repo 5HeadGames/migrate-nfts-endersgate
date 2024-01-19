@@ -1,0 +1,72 @@
+{
+  "name": "E-Axe: Void Mode",
+  "type": "ERC1155",
+  "description": "Deal 50 damage to one selected Guardian on the enemy's side of the field. ",
+  "image": "https://bafybeibypwmgtvioiucrjxtazfobqgr6z56zk3btxja7pnm3sq7ezkkrry.ipfs.nftstorage.link/E-AXE%20VOID%20MODE%20FRONT.webp",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 7
+    },
+    "name": {
+      "name": "name",
+      "value": "E-Axe: Void Mode"
+    },
+    "type": {
+      "name": "type",
+      "value": "Normal Action"
+    },
+    "ADOTurn": {
+      "name": "ADOTurn",
+      "value": "NO"
+    },
+    "rarity": {
+      "name": "rarity",
+      "value": "Common"
+    },
+    "description": {
+      "name": "description",
+      "value": "Deal 50 damage to one selected Guardian on the enemy's side of the field. "
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/Qmey4ruaMdtJGdvMEiqaaYJajcrgjBp6iqRWGDMVTQbXuU"
+    },
+    "back": {
+      "name": "back",
+      "value": "https://bafybeif62tm47b5cwjulkojq2s6bsbk4agvnn6zeq4arbjqsjqbrw3xgsa.ipfs.nftstorage.link/action.png"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 7
+    },
+    {
+      "trait_type": "name",
+      "value": "E-Axe: Void Mode"
+    },
+    {
+      "trait_type": "type",
+      "value": "Normal Action"
+    },
+    {
+      "trait_type": "ADOTurn",
+      "value": "NO"
+    },
+    {
+      "trait_type": "rarity",
+      "value": "Common"
+    },
+    {
+      "trait_type": "description",
+      "value": "Deal 50 damage to one selected Guardian on the enemy's side of the field. "
+    },
+    {
+      "trait_type": "image",
+      "value": "https://bafybeibypwmgtvioiucrjxtazfobqgr6z56zk3btxja7pnm3sq7ezkkrry.ipfs.nftstorage.link/E-AXE%20VOID%20MODE%20FRONT.webp"
+    }
+  ],
+  "typeCard": "action"
+}

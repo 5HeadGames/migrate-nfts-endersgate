@@ -1,0 +1,72 @@
+{
+  "name": "Field of Venom",
+  "type": "ERC1155",
+  "description": "The field fills up with Venom Gas causing 5 damage per turn to all non-Venom Type Guardians. If your opponent has no field card in play, this field card effects their side as well. (Upkeep: 5 gold per turn)",
+  "image": "https://bafybeicoxxqh3hfya7sclfhger6qgcgkfmu54okrea4reyipzo2wifgd2a.ipfs.nftstorage.link/FIELD%20OF%20VENOM%20FRONT.webp",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 31
+    },
+    "name": {
+      "name": "name",
+      "value": "Field of Venom"
+    },
+    "type": {
+      "name": "type",
+      "value": "Field Card"
+    },
+    "ADOTurn": {
+      "name": "ADOTurn",
+      "value": "NO"
+    },
+    "rarity": {
+      "name": "rarity",
+      "value": "Ultra Rare"
+    },
+    "description": {
+      "name": "description",
+      "value": "The field fills up with Venom Gas causing 5 damage per turn to all non-Venom Type Guardians. If your opponent has no field card in play, this field card effects their side as well. (Upkeep: 5 gold per turn)"
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmXbjWLDuEfrudtL86HP28SW3oex9DT6PdfboCajBNCTwG"
+    },
+    "back": {
+      "name": "back",
+      "value": "https://bafybeif62tm47b5cwjulkojq2s6bsbk4agvnn6zeq4arbjqsjqbrw3xgsa.ipfs.nftstorage.link/action.png"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 31
+    },
+    {
+      "trait_type": "name",
+      "value": "Field of Venom"
+    },
+    {
+      "trait_type": "type",
+      "value": "Field Card"
+    },
+    {
+      "trait_type": "ADOTurn",
+      "value": "NO"
+    },
+    {
+      "trait_type": "rarity",
+      "value": "Ultra Rare"
+    },
+    {
+      "trait_type": "description",
+      "value": "The field fills up with Venom Gas causing 5 damage per turn to all non-Venom Type Guardians. If your opponent has no field card in play, this field card effects their side as well. (Upkeep: 5 gold per turn)"
+    },
+    {
+      "trait_type": "image",
+      "value": "https://bafybeicoxxqh3hfya7sclfhger6qgcgkfmu54okrea4reyipzo2wifgd2a.ipfs.nftstorage.link/FIELD%20OF%20VENOM%20FRONT.webp"
+    }
+  ],
+  "typeCard": "action"
+}

@@ -1,0 +1,104 @@
+{
+  "name": "Gaiana",
+  "type": "ERC1155",
+  "description": "[Elemental | Mage] \"Land Slide\" Active: Passive: While Gaiana is on the field, all enemy Guardians accuracy drops by 30% ",
+  "image": "https://bafybeic2ksw4uzplijf3atb2ba5wrdqf2u6cdkl7akamj6s6qaos66mso4.ipfs.nftstorage.link/GAIANA%20FRONT.webp",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 211
+    },
+    "name": {
+      "name": "name",
+      "value": "Gaiana"
+    },
+    "element": {
+      "name": "element",
+      "value": "Earth"
+    },
+    "role": {
+      "name": "role",
+      "value": "Mage"
+    },
+    "race": {
+      "name": "race",
+      "value": "Elemental"
+    },
+    "attack": {
+      "name": "attack",
+      "value": 180
+    },
+    "hp": {
+      "name": "hp",
+      "value": 250
+    },
+    "isGuardian": {
+      "name": "isGuardian",
+      "value": true
+    },
+    "gold": {
+      "name": "gold",
+      "value": 300
+    },
+    "description": {
+      "name": "description",
+      "value": "[Elemental | Mage] \"Land Slide\" Active: Passive: While Gaiana is on the field, all enemy Guardians accuracy drops by 30% "
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmbxhWNJJGdTpqxgBKVyFXwBYDeFGQcCQSgMrrvjA5H1Kg"
+    },
+    "back": {
+      "name": "back",
+      "value": "https://bafybeif62tm47b5cwjulkojq2s6bsbk4agvnn6zeq4arbjqsjqbrw3xgsa.ipfs.nftstorage.link/gold.png"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 211
+    },
+    {
+      "trait_type": "name",
+      "value": "Gaiana"
+    },
+    {
+      "trait_type": "element",
+      "value": "Earth"
+    },
+    {
+      "trait_type": "role",
+      "value": "Mage"
+    },
+    {
+      "trait_type": "race",
+      "value": "Elemental"
+    },
+    {
+      "trait_type": "attack",
+      "value": 180
+    },
+    {
+      "trait_type": "hp",
+      "value": 250
+    },
+    {
+      "trait_type": "isGuardian",
+      "value": true
+    },
+    {
+      "trait_type": "gold",
+      "value": 300
+    },
+    {
+      "trait_type": "description",
+      "value": "[Elemental | Mage] \"Land Slide\" Active: Passive: While Gaiana is on the field, all enemy Guardians accuracy drops by 30% "
+    },
+    {
+      "trait_type": "image",
+      "value": "https://bafybeic2ksw4uzplijf3atb2ba5wrdqf2u6cdkl7akamj6s6qaos66mso4.ipfs.nftstorage.link/GAIANA%20FRONT.webp"
+    }
+  ],
+  "typeCard": "gold"
+}

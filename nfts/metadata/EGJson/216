@@ -1,0 +1,109 @@
+{
+  "name": "Lady Rene",
+  "type": "ERC1155",
+  "description": "[Ascended | Fighter] \"Void Expert\" Passive: Lady Rene gains 5 attack for each Guardian on the field.",
+  "image": "https://bafybeieededjantw2ztt3cesmacpxip7vgiu5hrva4uswuuozce6acbxoi.ipfs.nftstorage.link/LADY%20RENE%20FRONT.webp",
+  "symbol": "GATE",
+  "synergies": [
+    "Sir Nex",
+    "Sir Albin",
+    "Lady Selsi"
+  ],
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 216
+    },
+    "name": {
+      "name": "name",
+      "value": "Lady Rene"
+    },
+    "element": {
+      "name": "element",
+      "value": "Void"
+    },
+    "role": {
+      "name": "role",
+      "value": "Fighter / Tank"
+    },
+    "race": {
+      "name": "race",
+      "value": "Ascended"
+    },
+    "attack": {
+      "name": "attack",
+      "value": 190
+    },
+    "hp": {
+      "name": "hp",
+      "value": 420
+    },
+    "isGuardian": {
+      "name": "isGuardian",
+      "value": true
+    },
+    "gold": {
+      "name": "gold",
+      "value": 490
+    },
+    "description": {
+      "name": "description",
+      "value": "[Ascended | Fighter] \"Void Expert\" Passive: Lady Rene gains 5 attack for each Guardian on the field."
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/Qma84o7cxeyRxtP22TT1zRz3JLYSQFMmSnCCxx8XmWqDkL"
+    },
+    "back": {
+      "name": "back",
+      "value": "https://bafybeif62tm47b5cwjulkojq2s6bsbk4agvnn6zeq4arbjqsjqbrw3xgsa.ipfs.nftstorage.link/legendary.png"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 216
+    },
+    {
+      "trait_type": "name",
+      "value": "Lady Rene"
+    },
+    {
+      "trait_type": "element",
+      "value": "Void"
+    },
+    {
+      "trait_type": "role",
+      "value": "Fighter / Tank"
+    },
+    {
+      "trait_type": "race",
+      "value": "Ascended"
+    },
+    {
+      "trait_type": "attack",
+      "value": 190
+    },
+    {
+      "trait_type": "hp",
+      "value": 420
+    },
+    {
+      "trait_type": "isGuardian",
+      "value": true
+    },
+    {
+      "trait_type": "gold",
+      "value": 490
+    },
+    {
+      "trait_type": "description",
+      "value": "[Ascended | Fighter] \"Void Expert\" Passive: Lady Rene gains 5 attack for each Guardian on the field."
+    },
+    {
+      "trait_type": "image",
+      "value": "https://bafybeieededjantw2ztt3cesmacpxip7vgiu5hrva4uswuuozce6acbxoi.ipfs.nftstorage.link/LADY%20RENE%20FRONT.webp"
+    }
+  ],
+  "typeCard": "legendary"
+}

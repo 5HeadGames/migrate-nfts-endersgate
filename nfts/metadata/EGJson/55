@@ -1,0 +1,72 @@
+{
+  "name": "Ignited Bear Trap",
+  "type": "ERC1155",
+  "description": "Flip: Activate when your opponent declares an attack; deal 15 burn damage to the attacking Guardian for 3 turns. ",
+  "image": "https://bafybeictu2yukuckb5mkjfejdegkbvqljlx7ym7w6up3yhjelw6z23e4v4.ipfs.nftstorage.link/IGNITED%20BEAR%20TRAP%20FRONT.webp",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 55
+    },
+    "name": {
+      "name": "name",
+      "value": "Ignited Bear Trap"
+    },
+    "type": {
+      "name": "type",
+      "value": "Flip Counter"
+    },
+    "ADOTurn": {
+      "name": "ADOTurn",
+      "value": "YES"
+    },
+    "rarity": {
+      "name": "rarity",
+      "value": "Rare"
+    },
+    "description": {
+      "name": "description",
+      "value": "Flip: Activate when your opponent declares an attack; deal 15 burn damage to the attacking Guardian for 3 turns. "
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmVY4Mx2NsbNmCYL5zHQz5jgeKF5ZC69rESWwY7DVRm5VV"
+    },
+    "back": {
+      "name": "back",
+      "value": "https://bafybeif62tm47b5cwjulkojq2s6bsbk4agvnn6zeq4arbjqsjqbrw3xgsa.ipfs.nftstorage.link/action.png"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 55
+    },
+    {
+      "trait_type": "name",
+      "value": "Ignited Bear Trap"
+    },
+    {
+      "trait_type": "type",
+      "value": "Flip Counter"
+    },
+    {
+      "trait_type": "ADOTurn",
+      "value": "YES"
+    },
+    {
+      "trait_type": "rarity",
+      "value": "Rare"
+    },
+    {
+      "trait_type": "description",
+      "value": "Flip: Activate when your opponent declares an attack; deal 15 burn damage to the attacking Guardian for 3 turns. "
+    },
+    {
+      "trait_type": "image",
+      "value": "https://bafybeictu2yukuckb5mkjfejdegkbvqljlx7ym7w6up3yhjelw6z23e4v4.ipfs.nftstorage.link/IGNITED%20BEAR%20TRAP%20FRONT.webp"
+    }
+  ],
+  "typeCard": "reaction"
+}

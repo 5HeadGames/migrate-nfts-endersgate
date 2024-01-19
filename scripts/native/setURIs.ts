@@ -13,7 +13,7 @@ const init = async () => {
       .fill(0)
       .map(
         (a, i) =>
-          "https://bafybeiet45o4vajmbtlk4qlmcg6tpymup2mybld2noqlsdegcxmlro6cnu.ipfs.nftstorage.link/" +
+          "https://bafybeieenjajydhpudrrju3dbb74i36s7pcu2egnraqp63eq3lndobx64m.ipfs.nftstorage.link/" +
           i,
       ),
   );

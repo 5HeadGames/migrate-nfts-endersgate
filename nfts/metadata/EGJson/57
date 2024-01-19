@@ -1,0 +1,72 @@
+{
+  "name": "Backfire",
+  "type": "ERC1155",
+  "description": "Flip: Activate when your opponent declares an attack; negate the damage and reflect it back at the attacking Guardian. ",
+  "image": "https://bafybeie5yppj52hm6jxyvneurvrd4p635ke23gveotrzykhbyclhom7ace.ipfs.nftstorage.link/BACKFIRE%20FRONT.webp",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 57
+    },
+    "name": {
+      "name": "name",
+      "value": "Backfire"
+    },
+    "type": {
+      "name": "type",
+      "value": "Flip Counter"
+    },
+    "ADOTurn": {
+      "name": "ADOTurn",
+      "value": "YES"
+    },
+    "rarity": {
+      "name": "rarity",
+      "value": "Rare"
+    },
+    "description": {
+      "name": "description",
+      "value": "Flip: Activate when your opponent declares an attack; negate the damage and reflect it back at the attacking Guardian. "
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmaT2zxvcLA1bFwQ72b3nnbYRWzL8uQGhmu2V5qepNrReX"
+    },
+    "back": {
+      "name": "back",
+      "value": "https://bafybeif62tm47b5cwjulkojq2s6bsbk4agvnn6zeq4arbjqsjqbrw3xgsa.ipfs.nftstorage.link/action.png"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 57
+    },
+    {
+      "trait_type": "name",
+      "value": "Backfire"
+    },
+    {
+      "trait_type": "type",
+      "value": "Flip Counter"
+    },
+    {
+      "trait_type": "ADOTurn",
+      "value": "YES"
+    },
+    {
+      "trait_type": "rarity",
+      "value": "Rare"
+    },
+    {
+      "trait_type": "description",
+      "value": "Flip: Activate when your opponent declares an attack; negate the damage and reflect it back at the attacking Guardian. "
+    },
+    {
+      "trait_type": "image",
+      "value": "https://bafybeie5yppj52hm6jxyvneurvrd4p635ke23gveotrzykhbyclhom7ace.ipfs.nftstorage.link/BACKFIRE%20FRONT.webp"
+    }
+  ],
+  "typeCard": "reaction"
+}

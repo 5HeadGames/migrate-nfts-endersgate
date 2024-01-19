@@ -1,0 +1,72 @@
+{
+  "name": "Trap Disarm",
+  "type": "ERC1155",
+  "description": "Flip: Destory one face down action/reaction card on your opponent's side of the field. ",
+  "image": "https://bafybeigkbfmg2a4ckohdbm3tvkwcfs5z6pkmfkcqdamviz2cdguv5x6are.ipfs.nftstorage.link/TRAP%20DISARM%20FRONT.webp",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 52
+    },
+    "name": {
+      "name": "name",
+      "value": "Trap Disarm"
+    },
+    "type": {
+      "name": "type",
+      "value": "Normal Reaction"
+    },
+    "ADOTurn": {
+      "name": "ADOTurn",
+      "value": "NO"
+    },
+    "rarity": {
+      "name": "rarity",
+      "value": "common"
+    },
+    "description": {
+      "name": "description",
+      "value": "Flip: Destory one face down action/reaction card on your opponent's side of the field. "
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmVj2F2FbYaZ2akmNEj2t4zw5qQWyLvvaGmCDnWaYs3T9h"
+    },
+    "back": {
+      "name": "back",
+      "value": "https://bafybeif62tm47b5cwjulkojq2s6bsbk4agvnn6zeq4arbjqsjqbrw3xgsa.ipfs.nftstorage.link/action.png"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 52
+    },
+    {
+      "trait_type": "name",
+      "value": "Trap Disarm"
+    },
+    {
+      "trait_type": "type",
+      "value": "Normal Reaction"
+    },
+    {
+      "trait_type": "ADOTurn",
+      "value": "NO"
+    },
+    {
+      "trait_type": "rarity",
+      "value": "common"
+    },
+    {
+      "trait_type": "description",
+      "value": "Flip: Destory one face down action/reaction card on your opponent's side of the field. "
+    },
+    {
+      "trait_type": "image",
+      "value": "https://bafybeigkbfmg2a4ckohdbm3tvkwcfs5z6pkmfkcqdamviz2cdguv5x6are.ipfs.nftstorage.link/TRAP%20DISARM%20FRONT.webp"
+    }
+  ],
+  "typeCard": "reaction"
+}

@@ -1,0 +1,67 @@
+{
+  "name": "Ultraman",
+  "type": "ERC1155",
+  "description": "● Specium Beam ● Specium Blade ● Ultra Slash",
+  "image": "https://bafkreieqqultmhvbou4hicsnk6zc7t5ui44y5fqzw6tygqdv2shjalocxy.ipfs.nftstorage.link/",
+  "symbol": "GATE",
+  "synergies": [
+    "Pending"
+  ],
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 233
+    },
+    "name": {
+      "name": "name",
+      "value": "Ultraman"
+    },
+    "type": {
+      "name": "type",
+      "value": "Mystic"
+    },
+    "rarity": {
+      "name": "rarity",
+      "value": "Collectors Edition"
+    },
+    "image": {
+      "name": "image",
+      "value": "https://bafkreieqqultmhvbou4hicsnk6zc7t5ui44y5fqzw6tygqdv2shjalocxy.ipfs.nftstorage.link/"
+    },
+    "description": {
+      "name": "description",
+      "value": "● Specium Beam ● Specium Blade ● Ultra Slash"
+    },
+    "back": {
+      "name": "back",
+      "value": "https://bafybeif62tm47b5cwjulkojq2s6bsbk4agvnn6zeq4arbjqsjqbrw3xgsa.ipfs.nftstorage.link/UltramanBack-FinalDraftLightOn.webp"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "name",
+      "value": "Ultraman"
+    },
+    {
+      "trait_type": "type",
+      "value": "Mystic"
+    },
+    {
+      "trait_type": "rarity",
+      "value": "Collectors Edition"
+    },
+    {
+      "trait_type": "description",
+      "value": "● Specium Beam ● Specium Blade ● Ultra Slash"
+    },
+    {
+      "trait_type": "id",
+      "value": 233
+    },
+    {
+      "trait_type": "image",
+      "value": "https://bafkreieqqultmhvbou4hicsnk6zc7t5ui44y5fqzw6tygqdv2shjalocxy.ipfs.nftstorage.link/"
+    }
+  ],
+  "typeCard": "avatar"
+}

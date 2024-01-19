@@ -1,0 +1,72 @@
+{
+  "name": "Co-Bro",
+  "type": "ERC1155",
+  "description": "Flip: When a Guardian on your opponent's side of the field declares an attack, Co-bro interrupts the attack with a Venom Bite; 20% chance to infect the Guardian with Poison after activation.",
+  "image": "https://bafybeicp332ifwpjqvm7r4wuzcz4cthflmnp334lfi752zvlrc4vxrdcti.ipfs.nftstorage.link/CO-BRO%20FRONT.webp",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 69
+    },
+    "name": {
+      "name": "name",
+      "value": "Co-Bro"
+    },
+    "type": {
+      "name": "type",
+      "value": "Flip Counter"
+    },
+    "ADOTurn": {
+      "name": "ADOTurn",
+      "value": "YES"
+    },
+    "rarity": {
+      "name": "rarity",
+      "value": "Rare"
+    },
+    "description": {
+      "name": "description",
+      "value": "Flip: When a Guardian on your opponent's side of the field declares an attack, Co-bro interrupts the attack with a Venom Bite; 20% chance to infect the Guardian with Poison after activation."
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmWoQqH3Dd5vcjAzU4e9CSRzPq1dQrt7qUMBTXfMmgKB1v"
+    },
+    "back": {
+      "name": "back",
+      "value": "https://bafybeif62tm47b5cwjulkojq2s6bsbk4agvnn6zeq4arbjqsjqbrw3xgsa.ipfs.nftstorage.link/action.png"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 69
+    },
+    {
+      "trait_type": "name",
+      "value": "Co-Bro"
+    },
+    {
+      "trait_type": "type",
+      "value": "Flip Counter"
+    },
+    {
+      "trait_type": "ADOTurn",
+      "value": "YES"
+    },
+    {
+      "trait_type": "rarity",
+      "value": "Rare"
+    },
+    {
+      "trait_type": "description",
+      "value": "Flip: When a Guardian on your opponent's side of the field declares an attack, Co-bro interrupts the attack with a Venom Bite; 20% chance to infect the Guardian with Poison after activation."
+    },
+    {
+      "trait_type": "image",
+      "value": "https://bafybeicp332ifwpjqvm7r4wuzcz4cthflmnp334lfi752zvlrc4vxrdcti.ipfs.nftstorage.link/CO-BRO%20FRONT.webp"
+    }
+  ],
+  "typeCard": "reaction"
+}

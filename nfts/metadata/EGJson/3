@@ -1,0 +1,72 @@
+{
+  "name": "E-Axe: Earth Mode",
+  "type": "ERC1155",
+  "description": "Deal 10 Earth Damage to one selected Enemy Guardian, they cannot declare an attack for 1 turn. ",
+  "image": "https://bafybeie3xg6k336vvzyo5o62gfv7ddazihgnzw2igte6lysgvchceujewm.ipfs.nftstorage.link/E-AXE%20EARTH%20MODE%20FRONT.webp",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 3
+    },
+    "name": {
+      "name": "name",
+      "value": "E-Axe: Earth Mode"
+    },
+    "type": {
+      "name": "type",
+      "value": "Normal Action"
+    },
+    "ADOTurn": {
+      "name": "ADOTurn",
+      "value": "NO"
+    },
+    "rarity": {
+      "name": "rarity",
+      "value": "Common"
+    },
+    "description": {
+      "name": "description",
+      "value": "Deal 10 Earth Damage to one selected Enemy Guardian, they cannot declare an attack for 1 turn. "
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmeTVB4sgWVAD3fntJJJpB56GzhfofnnwSd8DSGmwtQLUs"
+    },
+    "back": {
+      "name": "back",
+      "value": "https://bafybeif62tm47b5cwjulkojq2s6bsbk4agvnn6zeq4arbjqsjqbrw3xgsa.ipfs.nftstorage.link/action.png"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 3
+    },
+    {
+      "trait_type": "name",
+      "value": "E-Axe: Earth Mode"
+    },
+    {
+      "trait_type": "type",
+      "value": "Normal Action"
+    },
+    {
+      "trait_type": "ADOTurn",
+      "value": "NO"
+    },
+    {
+      "trait_type": "rarity",
+      "value": "Common"
+    },
+    {
+      "trait_type": "description",
+      "value": "Deal 10 Earth Damage to one selected Enemy Guardian, they cannot declare an attack for 1 turn. "
+    },
+    {
+      "trait_type": "image",
+      "value": "https://bafybeie3xg6k336vvzyo5o62gfv7ddazihgnzw2igte6lysgvchceujewm.ipfs.nftstorage.link/E-AXE%20EARTH%20MODE%20FRONT.webp"
+    }
+  ],
+  "typeCard": "action"
+}

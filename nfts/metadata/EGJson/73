@@ -1,0 +1,72 @@
+{
+  "name": "Fatal Loan",
+  "type": "ERC1155",
+  "description": "Flip: When an enemy Guardian Declares an attack, your opponent must pay 100 gold to negate the activation of this card; If not, send the attacking Guardian to the grave yard.",
+  "image": "https://bafybeigftdgydkvdhw3bofkhj6fberji565nn22cz72ixzx3m3vs6k3vwi.ipfs.nftstorage.link/fatal%20loan.webp",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 73
+    },
+    "name": {
+      "name": "name",
+      "value": "Fatal Loan"
+    },
+    "type": {
+      "name": "type",
+      "value": "Flip Counter"
+    },
+    "ADOTurn": {
+      "name": "ADOTurn",
+      "value": "YES"
+    },
+    "rarity": {
+      "name": "rarity",
+      "value": "Ultra Rare"
+    },
+    "description": {
+      "name": "description",
+      "value": "Flip: When an enemy Guardian Declares an attack, your opponent must pay 100 gold to negate the activation of this card; If not, send the attacking Guardian to the grave yard."
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmaH5bEx5FTemvJbKwtkDNS2CYXDvfUmfwEfHq3ZKWWHYT"
+    },
+    "back": {
+      "name": "back",
+      "value": "https://bafybeif62tm47b5cwjulkojq2s6bsbk4agvnn6zeq4arbjqsjqbrw3xgsa.ipfs.nftstorage.link/action.png"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 73
+    },
+    {
+      "trait_type": "name",
+      "value": "Fatal Loan"
+    },
+    {
+      "trait_type": "type",
+      "value": "Flip Counter"
+    },
+    {
+      "trait_type": "ADOTurn",
+      "value": "YES"
+    },
+    {
+      "trait_type": "rarity",
+      "value": "Ultra Rare"
+    },
+    {
+      "trait_type": "description",
+      "value": "Flip: When an enemy Guardian Declares an attack, your opponent must pay 100 gold to negate the activation of this card; If not, send the attacking Guardian to the grave yard."
+    },
+    {
+      "trait_type": "image",
+      "value": "https://bafybeigftdgydkvdhw3bofkhj6fberji565nn22cz72ixzx3m3vs6k3vwi.ipfs.nftstorage.link/fatal%20loan.webp"
+    }
+  ],
+  "typeCard": "reaction"
+}

@@ -1,0 +1,67 @@
+{
+  "name": "Dracul",
+  "type": "ERC1155",
+  "description": "+20 attack for all guardians in your deck",
+  "image": "https://bafybeieogbzvgk66wbhzv44seyanz5g3skomt7nmr7vnz5qhkvupc3hzue.ipfs.nftstorage.link/Dracul_front.webp",
+  "symbol": "GATE",
+  "synergies": [
+    "Dominic"
+  ],
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 215
+    },
+    "name": {
+      "name": "name",
+      "value": "Dracul"
+    },
+    "type": {
+      "name": "type",
+      "value": "Fire"
+    },
+    "rarity": {
+      "name": "rarity",
+      "value": "Limited"
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmQ8PAwZtKztvsFnAdp79KyvHkhUYzSkZQwgsHVdMy3Zbp"
+    },
+    "description": {
+      "name": "description",
+      "value": "+20 attack for all guardians in your deck"
+    },
+    "back": {
+      "name": "back",
+      "value": "https://bafybeif62tm47b5cwjulkojq2s6bsbk4agvnn6zeq4arbjqsjqbrw3xgsa.ipfs.nftstorage.link/avatar.png"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "name",
+      "value": "Dracul"
+    },
+    {
+      "trait_type": "type",
+      "value": "Fire"
+    },
+    {
+      "trait_type": "rarity",
+      "value": "Limited"
+    },
+    {
+      "trait_type": "description",
+      "value": "+20 attack for all guardians in your deck"
+    },
+    {
+      "trait_type": "id",
+      "value": 215
+    },
+    {
+      "trait_type": "image",
+      "value": "https://bafybeieogbzvgk66wbhzv44seyanz5g3skomt7nmr7vnz5qhkvupc3hzue.ipfs.nftstorage.link/Dracul_front.webp"
+    }
+  ],
+  "typeCard": "avatar"
+}

@@ -1,0 +1,72 @@
+{
+  "name": "Surprise Entry",
+  "type": "ERC1155",
+  "description": "Flip: If you control no Guardians on your side of the field, pay 100 gold to hire 1 random Guardian from your deck with a cost of 300 gold or less to the field.",
+  "image": "https://bafybeicvcs5jg2jop5ey4yf7plghqarn5rz2rdx2g77knerxhddnrhtf7y.ipfs.nftstorage.link/SURPRISE%20ENTRY%20FRONT.webp",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 81
+    },
+    "name": {
+      "name": "name",
+      "value": "Surprise Entry"
+    },
+    "type": {
+      "name": "type",
+      "value": "Flip Counter"
+    },
+    "ADOTurn": {
+      "name": "ADOTurn",
+      "value": "YES"
+    },
+    "rarity": {
+      "name": "rarity",
+      "value": "Ultra Rare"
+    },
+    "description": {
+      "name": "description",
+      "value": "Flip: If you control no Guardians on your side of the field, pay 100 gold to hire 1 random Guardian from your deck with a cost of 300 gold or less to the field."
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/Qmb32TbkccJXoidd4UuXaScEkr4urGoDbTL5tQiLRket9f"
+    },
+    "back": {
+      "name": "back",
+      "value": "https://bafybeif62tm47b5cwjulkojq2s6bsbk4agvnn6zeq4arbjqsjqbrw3xgsa.ipfs.nftstorage.link/action.png"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 81
+    },
+    {
+      "trait_type": "name",
+      "value": "Surprise Entry"
+    },
+    {
+      "trait_type": "type",
+      "value": "Flip Counter"
+    },
+    {
+      "trait_type": "ADOTurn",
+      "value": "YES"
+    },
+    {
+      "trait_type": "rarity",
+      "value": "Ultra Rare"
+    },
+    {
+      "trait_type": "description",
+      "value": "Flip: If you control no Guardians on your side of the field, pay 100 gold to hire 1 random Guardian from your deck with a cost of 300 gold or less to the field."
+    },
+    {
+      "trait_type": "image",
+      "value": "https://bafybeicvcs5jg2jop5ey4yf7plghqarn5rz2rdx2g77knerxhddnrhtf7y.ipfs.nftstorage.link/SURPRISE%20ENTRY%20FRONT.webp"
+    }
+  ],
+  "typeCard": "reaction"
+}

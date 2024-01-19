@@ -1,0 +1,107 @@
+{
+  "name": "Yoshiko",
+  "type": "ERC1155",
+  "description": "[Beast | Fighter] \"Good boy\" Passive: Attacks targeted towards Yoshiko have a 30% chance of missing. ",
+  "image": "https://bafybeieelr6werej46dofhhtzgnsuynded7bxfweqrq5dpmyj6pzeloti4.ipfs.nftstorage.link/YOSHIKO%20FRONT.webp",
+  "synergies": [
+    "Hanako"
+  ],
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 132
+    },
+    "name": {
+      "name": "name",
+      "value": "Yoshiko"
+    },
+    "element": {
+      "name": "element",
+      "value": "Mystic"
+    },
+    "role": {
+      "name": "role",
+      "value": "Fighter"
+    },
+    "race": {
+      "name": "race",
+      "value": "Beast"
+    },
+    "attack": {
+      "name": "attack",
+      "value": 90
+    },
+    "hp": {
+      "name": "hp",
+      "value": 100
+    },
+    "isGuardian": {
+      "name": "isGuardian",
+      "value": true
+    },
+    "gold": {
+      "name": "gold",
+      "value": 110
+    },
+    "description": {
+      "name": "description",
+      "value": "[Beast | Fighter] \"Good boy\" Passive: Attacks targeted towards Yoshiko have a 30% chance of missing. "
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmRDDELg9dWwtiFT4C8oZ1sTnKBSubDS5qdc76adEZNCy7"
+    },
+    "back": {
+      "name": "back",
+      "value": "https://bafybeif62tm47b5cwjulkojq2s6bsbk4agvnn6zeq4arbjqsjqbrw3xgsa.ipfs.nftstorage.link/stone.png"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 132
+    },
+    {
+      "trait_type": "name",
+      "value": "Yoshiko"
+    },
+    {
+      "trait_type": "element",
+      "value": "Mystic"
+    },
+    {
+      "trait_type": "role",
+      "value": "Fighter"
+    },
+    {
+      "trait_type": "race",
+      "value": "Beast"
+    },
+    {
+      "trait_type": "attack",
+      "value": 90
+    },
+    {
+      "trait_type": "hp",
+      "value": 100
+    },
+    {
+      "trait_type": "isGuardian",
+      "value": true
+    },
+    {
+      "trait_type": "gold",
+      "value": 110
+    },
+    {
+      "trait_type": "description",
+      "value": "[Beast | Fighter] \"Good boy\" Passive: Attacks targeted towards Yoshiko have a 30% chance of missing. "
+    },
+    {
+      "trait_type": "image",
+      "value": "https://bafybeieelr6werej46dofhhtzgnsuynded7bxfweqrq5dpmyj6pzeloti4.ipfs.nftstorage.link/YOSHIKO%20FRONT.webp"
+    }
+  ],
+  "typeCard": "stone"
+}

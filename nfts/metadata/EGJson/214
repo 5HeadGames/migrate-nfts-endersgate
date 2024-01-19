@@ -1,0 +1,104 @@
+{
+  "name": "Zohrela",
+  "type": "ERC1155",
+  "description": "[Human | Mage] \"Fire Dolls\" Activate: During your MP1, select up to 3 enemy Guardians and deal 25 Fire DMG to each of them. Cooldown: 3 turns. ",
+  "image": "https://bafybeicjiino5kb6e3lvioe7ghhjgbz5c3muscooaxdauagaf6z27oeaei.ipfs.nftstorage.link/ZOHRELA%20FRONT.webp",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 214
+    },
+    "name": {
+      "name": "name",
+      "value": "Zohrela"
+    },
+    "element": {
+      "name": "element",
+      "value": "Fire"
+    },
+    "role": {
+      "name": "role",
+      "value": "Mage"
+    },
+    "race": {
+      "name": "race",
+      "value": "Human"
+    },
+    "attack": {
+      "name": "attack",
+      "value": 165
+    },
+    "hp": {
+      "name": "hp",
+      "value": 235
+    },
+    "isGuardian": {
+      "name": "isGuardian",
+      "value": true
+    },
+    "gold": {
+      "name": "gold",
+      "value": 300
+    },
+    "description": {
+      "name": "description",
+      "value": "[Human | Mage] \"Fire Dolls\" Activate: During your MP1, select up to 3 enemy Guardians and deal 25 Fire DMG to each of them. Cooldown: 3 turns. "
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmaADPjosLjpFhQFrddqoQQXSp8RNEt3LzstZmymZrzfDZ"
+    },
+    "back": {
+      "name": "back",
+      "value": "https://bafybeif62tm47b5cwjulkojq2s6bsbk4agvnn6zeq4arbjqsjqbrw3xgsa.ipfs.nftstorage.link/gold.png"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 214
+    },
+    {
+      "trait_type": "name",
+      "value": "Zohrela"
+    },
+    {
+      "trait_type": "element",
+      "value": "Fire"
+    },
+    {
+      "trait_type": "role",
+      "value": "Mage"
+    },
+    {
+      "trait_type": "race",
+      "value": "Human"
+    },
+    {
+      "trait_type": "attack",
+      "value": 165
+    },
+    {
+      "trait_type": "hp",
+      "value": 235
+    },
+    {
+      "trait_type": "isGuardian",
+      "value": true
+    },
+    {
+      "trait_type": "gold",
+      "value": 300
+    },
+    {
+      "trait_type": "description",
+      "value": "[Human | Mage] \"Fire Dolls\" Activate: During your MP1, select up to 3 enemy Guardians and deal 25 Fire DMG to each of them. Cooldown: 3 turns. "
+    },
+    {
+      "trait_type": "image",
+      "value": "https://bafybeicjiino5kb6e3lvioe7ghhjgbz5c3muscooaxdauagaf6z27oeaei.ipfs.nftstorage.link/ZOHRELA%20FRONT.webp"
+    }
+  ],
+  "typeCard": "gold"
+}

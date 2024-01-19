@@ -1,0 +1,108 @@
+{
+  "name": "Sahan",
+  "type": "ERC1155",
+  "description": "[Human | Assassin] \"Nordic\" Passive: Attacks have a 50% chance to cause 5 bleed damage for 1 turn.",
+  "image": "https://bafybeidibuft2igaq6gbdjtwhdmnse3jkl3itqtsucmj6twyevczqhexne.ipfs.nftstorage.link/SAHAN%20FRONT.webp",
+  "symbol": "GATE",
+  "synergies": [
+    "Eydis",
+    "Kara"
+  ],
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 135
+    },
+    "name": {
+      "name": "name",
+      "value": "Sahan"
+    },
+    "element": {
+      "name": "element",
+      "value": "Mystic"
+    },
+    "role": {
+      "name": "role",
+      "value": "Assassin"
+    },
+    "race": {
+      "name": "race",
+      "value": "Human"
+    },
+    "attack": {
+      "name": "attack",
+      "value": 150
+    },
+    "hp": {
+      "name": "hp",
+      "value": 90
+    },
+    "isGuardian": {
+      "name": "isGuardian",
+      "value": true
+    },
+    "gold": {
+      "name": "gold",
+      "value": 130
+    },
+    "description": {
+      "name": "description",
+      "value": "[Human | Assassin] \"Nordic\" Passive: Attacks have a 50% chance to cause 5 bleed damage for 1 turn."
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmUXyKJr5qytprysLc6L2GfFmGmqik5gjH8cg2349qAvFe"
+    },
+    "back": {
+      "name": "back",
+      "value": "https://bafybeif62tm47b5cwjulkojq2s6bsbk4agvnn6zeq4arbjqsjqbrw3xgsa.ipfs.nftstorage.link/stone.png"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 135
+    },
+    {
+      "trait_type": "name",
+      "value": "Sahan"
+    },
+    {
+      "trait_type": "element",
+      "value": "Mystic"
+    },
+    {
+      "trait_type": "role",
+      "value": "Assassin"
+    },
+    {
+      "trait_type": "race",
+      "value": "Human"
+    },
+    {
+      "trait_type": "attack",
+      "value": 150
+    },
+    {
+      "trait_type": "hp",
+      "value": 90
+    },
+    {
+      "trait_type": "isGuardian",
+      "value": true
+    },
+    {
+      "trait_type": "gold",
+      "value": 130
+    },
+    {
+      "trait_type": "description",
+      "value": "[Human | Assassin] \"Nordic\" Passive: Attacks have a 50% chance to cause 5 bleed damage for 1 turn."
+    },
+    {
+      "trait_type": "image",
+      "value": "https://bafybeidibuft2igaq6gbdjtwhdmnse3jkl3itqtsucmj6twyevczqhexne.ipfs.nftstorage.link/SAHAN%20FRONT.webp"
+    }
+  ],
+  "typeCard": "stone"
+}

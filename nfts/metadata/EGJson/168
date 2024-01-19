@@ -1,0 +1,104 @@
+{
+  "name": "Annea ",
+  "type": "ERC1155",
+  "description": "[Human | Healer] \"Aqua Regeneration\" Activate: Once per turn, heal one ally Guardian for 15 HP.",
+  "image": "https://bafybeih5tfdivtes2tvckn34stgotbeyczjndotz5sjgzbxtx72vtemce4.ipfs.nftstorage.link/ANNEA%20FRONT.webp",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 168
+    },
+    "name": {
+      "name": "name",
+      "value": "Annea "
+    },
+    "element": {
+      "name": "element",
+      "value": "Water"
+    },
+    "role": {
+      "name": "role",
+      "value": "Healer"
+    },
+    "race": {
+      "name": "race",
+      "value": "Human"
+    },
+    "attack": {
+      "name": "attack",
+      "value": 100
+    },
+    "hp": {
+      "name": "hp",
+      "value": 150
+    },
+    "isGuardian": {
+      "name": "isGuardian",
+      "value": true
+    },
+    "gold": {
+      "name": "gold",
+      "value": 180
+    },
+    "description": {
+      "name": "description",
+      "value": "[Human | Healer] \"Aqua Regeneration\" Activate: Once per turn, heal one ally Guardian for 15 HP."
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmQCAjzhw12B5vDytiiLQP6T5SeeFv9AJR9TbQepcoh2aB"
+    },
+    "back": {
+      "name": "back",
+      "value": "https://bafybeif62tm47b5cwjulkojq2s6bsbk4agvnn6zeq4arbjqsjqbrw3xgsa.ipfs.nftstorage.link/silver.png"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 168
+    },
+    {
+      "trait_type": "name",
+      "value": "Annea "
+    },
+    {
+      "trait_type": "element",
+      "value": "Water"
+    },
+    {
+      "trait_type": "role",
+      "value": "Healer"
+    },
+    {
+      "trait_type": "race",
+      "value": "Human"
+    },
+    {
+      "trait_type": "attack",
+      "value": 100
+    },
+    {
+      "trait_type": "hp",
+      "value": 150
+    },
+    {
+      "trait_type": "isGuardian",
+      "value": true
+    },
+    {
+      "trait_type": "gold",
+      "value": 180
+    },
+    {
+      "trait_type": "description",
+      "value": "[Human | Healer] \"Aqua Regeneration\" Activate: Once per turn, heal one ally Guardian for 15 HP."
+    },
+    {
+      "trait_type": "image",
+      "value": "https://bafybeih5tfdivtes2tvckn34stgotbeyczjndotz5sjgzbxtx72vtemce4.ipfs.nftstorage.link/ANNEA%20FRONT.webp"
+    }
+  ],
+  "typeCard": "iron"
+}

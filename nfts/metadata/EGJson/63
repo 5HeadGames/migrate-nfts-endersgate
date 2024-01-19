@@ -1,0 +1,72 @@
+{
+  "name": "Practice Dummy",
+  "type": "ERC1155",
+  "description": "Flip: When your opponent declares an attack; Practice Dummy absorbs it instead of the intended Guardian.",
+  "image": "https://bafybeigin65gwsxnspoi7dwpun4ka76cttqezik5nb5omcydiabjz7obee.ipfs.nftstorage.link/PRACTICE%20DUMMY%20FRONT.webp",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 63
+    },
+    "name": {
+      "name": "name",
+      "value": "Practice Dummy"
+    },
+    "type": {
+      "name": "type",
+      "value": "Flip Counter"
+    },
+    "ADOTurn": {
+      "name": "ADOTurn",
+      "value": "YES"
+    },
+    "rarity": {
+      "name": "rarity",
+      "value": "Rare"
+    },
+    "description": {
+      "name": "description",
+      "value": "Flip: When your opponent declares an attack; Practice Dummy absorbs it instead of the intended Guardian."
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/Qma4hzfVe1G2YVehH9wgp5AxswY5Yn11UgdiqXyZyEEGrn"
+    },
+    "back": {
+      "name": "back",
+      "value": "https://bafybeif62tm47b5cwjulkojq2s6bsbk4agvnn6zeq4arbjqsjqbrw3xgsa.ipfs.nftstorage.link/action.png"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 63
+    },
+    {
+      "trait_type": "name",
+      "value": "Practice Dummy"
+    },
+    {
+      "trait_type": "type",
+      "value": "Flip Counter"
+    },
+    {
+      "trait_type": "ADOTurn",
+      "value": "YES"
+    },
+    {
+      "trait_type": "rarity",
+      "value": "Rare"
+    },
+    {
+      "trait_type": "description",
+      "value": "Flip: When your opponent declares an attack; Practice Dummy absorbs it instead of the intended Guardian."
+    },
+    {
+      "trait_type": "image",
+      "value": "https://bafybeigin65gwsxnspoi7dwpun4ka76cttqezik5nb5omcydiabjz7obee.ipfs.nftstorage.link/PRACTICE%20DUMMY%20FRONT.webp"
+    }
+  ],
+  "typeCard": "reaction"
+}

@@ -1,0 +1,72 @@
+{
+  "name": "Reckless Draw",
+  "type": "ERC1155",
+  "description": "Discard 2 cards from your hand; draw 2 cards.",
+  "image": "https://bafybeig7opsoalx4m65k2vo5p65fw6eke77ow2msesd5nlv4ftwiejausq.ipfs.nftstorage.link/RECKLESS%20DRAW%20FRONT.webp",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 11
+    },
+    "name": {
+      "name": "name",
+      "value": "Reckless Draw"
+    },
+    "type": {
+      "name": "type",
+      "value": "Normal Action"
+    },
+    "ADOTurn": {
+      "name": "ADOTurn",
+      "value": "NO"
+    },
+    "rarity": {
+      "name": "rarity",
+      "value": "Rare"
+    },
+    "description": {
+      "name": "description",
+      "value": "Discard 2 cards from your hand; draw 2 cards."
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmNhTtFZRHEtBGAgndEzbvTJnqaefhSY7M3zpFf7KLrwPi"
+    },
+    "back": {
+      "name": "back",
+      "value": "https://bafybeif62tm47b5cwjulkojq2s6bsbk4agvnn6zeq4arbjqsjqbrw3xgsa.ipfs.nftstorage.link/action.png"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 11
+    },
+    {
+      "trait_type": "name",
+      "value": "Reckless Draw"
+    },
+    {
+      "trait_type": "type",
+      "value": "Normal Action"
+    },
+    {
+      "trait_type": "ADOTurn",
+      "value": "NO"
+    },
+    {
+      "trait_type": "rarity",
+      "value": "Rare"
+    },
+    {
+      "trait_type": "description",
+      "value": "Discard 2 cards from your hand; draw 2 cards."
+    },
+    {
+      "trait_type": "image",
+      "value": "https://bafybeig7opsoalx4m65k2vo5p65fw6eke77ow2msesd5nlv4ftwiejausq.ipfs.nftstorage.link/RECKLESS%20DRAW%20FRONT.webp"
+    }
+  ],
+  "typeCard": "action"
+}

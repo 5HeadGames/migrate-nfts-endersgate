@@ -1,0 +1,72 @@
+{
+  "name": "Puppet Master",
+  "type": "ERC1155",
+  "description": "Activate in your main phase 1. Take control of one Guardian on the enemy's side of the field until the end of your turn.",
+  "image": "https://bafybeife3m4ujhos2rrxxjlqwfm3evvgg7pajnr7txungvijtqd5f3vjii.ipfs.nftstorage.link/PUPPET%20MASTER%20FRONT.webp",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 18
+    },
+    "name": {
+      "name": "name",
+      "value": "Puppet Master"
+    },
+    "type": {
+      "name": "type",
+      "value": "Normal Action"
+    },
+    "ADOTurn": {
+      "name": "ADOTurn",
+      "value": "NO"
+    },
+    "rarity": {
+      "name": "rarity",
+      "value": "Rare"
+    },
+    "description": {
+      "name": "description",
+      "value": "Activate in your main phase 1. Take control of one Guardian on the enemy's side of the field until the end of your turn."
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmP3MAS6eBXtzvzgLnMrJRufYnHytyQfK3ewVBL1bJozdg"
+    },
+    "back": {
+      "name": "back",
+      "value": "https://bafybeif62tm47b5cwjulkojq2s6bsbk4agvnn6zeq4arbjqsjqbrw3xgsa.ipfs.nftstorage.link/action.png"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 18
+    },
+    {
+      "trait_type": "name",
+      "value": "Puppet Master"
+    },
+    {
+      "trait_type": "type",
+      "value": "Normal Action"
+    },
+    {
+      "trait_type": "ADOTurn",
+      "value": "NO"
+    },
+    {
+      "trait_type": "rarity",
+      "value": "Rare"
+    },
+    {
+      "trait_type": "description",
+      "value": "Activate in your main phase 1. Take control of one Guardian on the enemy's side of the field until the end of your turn."
+    },
+    {
+      "trait_type": "image",
+      "value": "https://bafybeife3m4ujhos2rrxxjlqwfm3evvgg7pajnr7txungvijtqd5f3vjii.ipfs.nftstorage.link/PUPPET%20MASTER%20FRONT.webp"
+    }
+  ],
+  "typeCard": "action"
+}

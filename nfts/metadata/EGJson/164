@@ -1,0 +1,104 @@
+{
+  "name": "Lhavi The Fire Golem",
+  "type": "ERC1155",
+  "description": "[Golem | Tank] \"Volcanic Activity\" Passive: Once per turn Deal 10 Fire damage to all Earth Type Cards. Deal 5 damage back to enemies who attack Lhavi.",
+  "image": "https://bafybeid75uoobn45zxublrn2rladn5vtext6luckxx2bawucmuj4s5lnb4.ipfs.nftstorage.link/LHAVI%20THE%20FIRE%20GOLEM%20FRONT.webp",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 164
+    },
+    "name": {
+      "name": "name",
+      "value": "Lhavi The Fire Golem"
+    },
+    "element": {
+      "name": "element",
+      "value": "Fire"
+    },
+    "role": {
+      "name": "role",
+      "value": "Tank"
+    },
+    "race": {
+      "name": "race",
+      "value": "Golem"
+    },
+    "attack": {
+      "name": "attack",
+      "value": 65
+    },
+    "hp": {
+      "name": "hp",
+      "value": 220
+    },
+    "isGuardian": {
+      "name": "isGuardian",
+      "value": true
+    },
+    "gold": {
+      "name": "gold",
+      "value": 220
+    },
+    "description": {
+      "name": "description",
+      "value": "[Golem | Tank] \"Volcanic Activity\" Passive: Once per turn Deal 10 Fire damage to all Earth Type Cards. Deal 5 damage back to enemies who attack Lhavi."
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmTjZkd8FBAWhy12acXjiSu7qfW8z7J1XRNDU2Yb1Em7uz"
+    },
+    "back": {
+      "name": "back",
+      "value": "https://bafybeif62tm47b5cwjulkojq2s6bsbk4agvnn6zeq4arbjqsjqbrw3xgsa.ipfs.nftstorage.link/silver.png"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 164
+    },
+    {
+      "trait_type": "name",
+      "value": "Lhavi The Fire Golem"
+    },
+    {
+      "trait_type": "element",
+      "value": "Fire"
+    },
+    {
+      "trait_type": "role",
+      "value": "Tank"
+    },
+    {
+      "trait_type": "race",
+      "value": "Golem"
+    },
+    {
+      "trait_type": "attack",
+      "value": 65
+    },
+    {
+      "trait_type": "hp",
+      "value": 220
+    },
+    {
+      "trait_type": "isGuardian",
+      "value": true
+    },
+    {
+      "trait_type": "gold",
+      "value": 220
+    },
+    {
+      "trait_type": "description",
+      "value": "[Golem | Tank] \"Volcanic Activity\" Passive: Once per turn Deal 10 Fire damage to all Earth Type Cards. Deal 5 damage back to enemies who attack Lhavi."
+    },
+    {
+      "trait_type": "image",
+      "value": "https://bafybeid75uoobn45zxublrn2rladn5vtext6luckxx2bawucmuj4s5lnb4.ipfs.nftstorage.link/LHAVI%20THE%20FIRE%20GOLEM%20FRONT.webp"
+    }
+  ],
+  "typeCard": "iron"
+}

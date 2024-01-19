@@ -1,0 +1,72 @@
+{
+  "name": "Lava World",
+  "type": "ERC1155",
+  "description": "The Field fills with fire causing 5 damage per turn to all non-Fire Type Guardians. All Fire type Guardians gain 10 ATK & HP (Upkeep: 5 gold per turn)",
+  "image": "https://bafybeicdvzxstuigc76bpgs2fxyfgm6kclkyideekaj7akn7uzcphjlrbe.ipfs.nftstorage.link/LAVA%20WORLD%20FRONT.webp",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 42
+    },
+    "name": {
+      "name": "name",
+      "value": "Lava World"
+    },
+    "type": {
+      "name": "type",
+      "value": "Field Card"
+    },
+    "ADOTurn": {
+      "name": "ADOTurn",
+      "value": "NO"
+    },
+    "rarity": {
+      "name": "rarity",
+      "value": "Ultra Rare"
+    },
+    "description": {
+      "name": "description",
+      "value": "The Field fills with fire causing 5 damage per turn to all non-Fire Type Guardians. All Fire type Guardians gain 10 ATK & HP (Upkeep: 5 gold per turn)"
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmYy9k4G7DGAFmixyb2CEzPEgvMQG64joGk6VzGM2ZoGXY"
+    },
+    "back": {
+      "name": "back",
+      "value": "https://bafybeif62tm47b5cwjulkojq2s6bsbk4agvnn6zeq4arbjqsjqbrw3xgsa.ipfs.nftstorage.link/action.png"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 42
+    },
+    {
+      "trait_type": "name",
+      "value": "Lava World"
+    },
+    {
+      "trait_type": "type",
+      "value": "Field Card"
+    },
+    {
+      "trait_type": "ADOTurn",
+      "value": "NO"
+    },
+    {
+      "trait_type": "rarity",
+      "value": "Ultra Rare"
+    },
+    {
+      "trait_type": "description",
+      "value": "The Field fills with fire causing 5 damage per turn to all non-Fire Type Guardians. All Fire type Guardians gain 10 ATK & HP (Upkeep: 5 gold per turn)"
+    },
+    {
+      "trait_type": "image",
+      "value": "https://bafybeicdvzxstuigc76bpgs2fxyfgm6kclkyideekaj7akn7uzcphjlrbe.ipfs.nftstorage.link/LAVA%20WORLD%20FRONT.webp"
+    }
+  ],
+  "typeCard": "action"
+}

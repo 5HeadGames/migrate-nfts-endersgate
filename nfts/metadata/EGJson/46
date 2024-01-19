@@ -1,0 +1,72 @@
+{
+  "name": "Fire Trap",
+  "type": "ERC1155",
+  "description": "Flip: Deal 30 damage to one selected Guardian on the field. ",
+  "image": "https://bafybeia74qx22tywfyqlpprcdhvxum3d373wnbc6r2uu5xyubwnhran4e4.ipfs.nftstorage.link/FIRE-TRAP-FRONT.webp",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 46
+    },
+    "name": {
+      "name": "name",
+      "value": "Fire Trap"
+    },
+    "type": {
+      "name": "type",
+      "value": "Normal Reaction"
+    },
+    "ADOTurn": {
+      "name": "ADOTurn",
+      "value": "NO"
+    },
+    "rarity": {
+      "name": "rarity",
+      "value": "Common"
+    },
+    "description": {
+      "name": "description",
+      "value": "Flip: Deal 30 damage to one selected Guardian on the field. "
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmdKMGAeP2Uv76DRQHPgFUyHcwC9YdpVmxoesrigADFFJe"
+    },
+    "back": {
+      "name": "back",
+      "value": "https://bafybeif62tm47b5cwjulkojq2s6bsbk4agvnn6zeq4arbjqsjqbrw3xgsa.ipfs.nftstorage.link/action.png"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 46
+    },
+    {
+      "trait_type": "name",
+      "value": "Fire Trap"
+    },
+    {
+      "trait_type": "type",
+      "value": "Normal Reaction"
+    },
+    {
+      "trait_type": "ADOTurn",
+      "value": "NO"
+    },
+    {
+      "trait_type": "rarity",
+      "value": "Common"
+    },
+    {
+      "trait_type": "description",
+      "value": "Flip: Deal 30 damage to one selected Guardian on the field. "
+    },
+    {
+      "trait_type": "image",
+      "value": "https://bafybeia74qx22tywfyqlpprcdhvxum3d373wnbc6r2uu5xyubwnhran4e4.ipfs.nftstorage.link/FIRE-TRAP-FRONT.webp"
+    }
+  ],
+  "typeCard": "reaction"
+}

@@ -1,0 +1,72 @@
+{
+  "name": "Call of the Undying",
+  "type": "ERC1155",
+  "description": "Description: Flip: Select 1 Gaurdian from your grave yard and summon them to the field. If this card is destoryed, destory the Guardian. If the Guardian is destoryed, destroy this card.",
+  "image": "https://bafybeibqpyzfcasvvwfrg3lth3baxrmolaavsoiayjqieayofnhisb7joa.ipfs.nftstorage.link/CALL%20OF%20THE%20UNDYING%20FRONT.webp",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 65
+    },
+    "name": {
+      "name": "name",
+      "value": "Call of the Undying"
+    },
+    "type": {
+      "name": "type",
+      "value": "Countinuous"
+    },
+    "ADOTurn": {
+      "name": "ADOTurn",
+      "value": "NO"
+    },
+    "rarity": {
+      "name": "rarity",
+      "value": "Ultra Rare"
+    },
+    "description": {
+      "name": "description",
+      "value": "Description: Flip: Select 1 Gaurdian from your grave yard and summon them to the field. If this card is destoryed, destory the Guardian. If the Guardian is destoryed, destroy this card."
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmTzdH4R7moxtyQW5RG6egrkbpdVG6SjuCoekwJYo34aXa"
+    },
+    "back": {
+      "name": "back",
+      "value": "https://bafybeif62tm47b5cwjulkojq2s6bsbk4agvnn6zeq4arbjqsjqbrw3xgsa.ipfs.nftstorage.link/action.png"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 65
+    },
+    {
+      "trait_type": "name",
+      "value": "Call of the Undying"
+    },
+    {
+      "trait_type": "type",
+      "value": "Countinuous"
+    },
+    {
+      "trait_type": "ADOTurn",
+      "value": "NO"
+    },
+    {
+      "trait_type": "rarity",
+      "value": "Ultra Rare"
+    },
+    {
+      "trait_type": "description",
+      "value": "Description: Flip: Select 1 Gaurdian from your grave yard and summon them to the field. If this card is destoryed, destory the Guardian. If the Guardian is destoryed, destroy this card."
+    },
+    {
+      "trait_type": "image",
+      "value": "https://bafybeibqpyzfcasvvwfrg3lth3baxrmolaavsoiayjqieayofnhisb7joa.ipfs.nftstorage.link/CALL%20OF%20THE%20UNDYING%20FRONT.webp"
+    }
+  ],
+  "typeCard": "reaction"
+}

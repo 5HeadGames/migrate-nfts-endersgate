@@ -1,0 +1,104 @@
+{
+  "name": "Mata Fighter",
+  "type": "ERC1155",
+  "description": "[Squamata | Fighter] \"Cold Blooded\" Passive: Mata Fighter gains 30 ATK for all \"Cold Blooded\" Guardians on your side of the field.",
+  "image": "https://bafybeicaj43pzglaxkbsqs3i4x545yooivethk4uzcigfxjvbfyjq2m2nu.ipfs.nftstorage.link/MATA%20FIGHTER%20FRONT.webp",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 152
+    },
+    "name": {
+      "name": "name",
+      "value": "Mata Fighter"
+    },
+    "element": {
+      "name": "element",
+      "value": "Earth"
+    },
+    "role": {
+      "name": "role",
+      "value": "Fighter"
+    },
+    "race": {
+      "name": "race",
+      "value": "Squamata "
+    },
+    "attack": {
+      "name": "attack",
+      "value": 100
+    },
+    "hp": {
+      "name": "hp",
+      "value": 125
+    },
+    "isGuardian": {
+      "name": "isGuardian",
+      "value": true
+    },
+    "gold": {
+      "name": "gold",
+      "value": 125
+    },
+    "description": {
+      "name": "description",
+      "value": "[Squamata | Fighter] \"Cold Blooded\" Passive: Mata Fighter gains 30 ATK for all \"Cold Blooded\" Guardians on your side of the field."
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/Qmc7ZPry3tLefahz8C5uqjhNeAJ4CFqNWwpcwUoc6HbzWM"
+    },
+    "back": {
+      "name": "back",
+      "value": "https://bafybeif62tm47b5cwjulkojq2s6bsbk4agvnn6zeq4arbjqsjqbrw3xgsa.ipfs.nftstorage.link/stone.png"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 152
+    },
+    {
+      "trait_type": "name",
+      "value": "Mata Fighter"
+    },
+    {
+      "trait_type": "element",
+      "value": "Earth"
+    },
+    {
+      "trait_type": "role",
+      "value": "Fighter"
+    },
+    {
+      "trait_type": "race",
+      "value": "Squamata "
+    },
+    {
+      "trait_type": "attack",
+      "value": 100
+    },
+    {
+      "trait_type": "hp",
+      "value": 125
+    },
+    {
+      "trait_type": "isGuardian",
+      "value": true
+    },
+    {
+      "trait_type": "gold",
+      "value": 125
+    },
+    {
+      "trait_type": "description",
+      "value": "[Squamata | Fighter] \"Cold Blooded\" Passive: Mata Fighter gains 30 ATK for all \"Cold Blooded\" Guardians on your side of the field."
+    },
+    {
+      "trait_type": "image",
+      "value": "https://bafybeicaj43pzglaxkbsqs3i4x545yooivethk4uzcigfxjvbfyjq2m2nu.ipfs.nftstorage.link/MATA%20FIGHTER%20FRONT.webp"
+    }
+  ],
+  "typeCard": "stone"
+}

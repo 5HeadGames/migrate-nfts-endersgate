@@ -9,10 +9,12 @@ const init = async () => {
   ) as any[];
 
   for await (let card of allCards) {
-    writeJsonFile({
-      path: "/nfts/metadata/EndersGate/" + card.properties.id.value,
-      data: card,
-    });
+    if (card?.properties?.id) {
+      writeJsonFile({
+        path: "/nfts/metadata/EGJson/" + card.properties.id.value,
+        data: card,
+      });
+    }
   }
 };
 

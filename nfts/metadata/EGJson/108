@@ -1,0 +1,104 @@
+{
+  "name": "Gargoyle",
+  "type": "ERC1155",
+  "description": "[Vampire | Support] Passive: While Gargoyle is on the field, all Vampire type Guardians gain +10 HP.",
+  "image": "https://bafybeih35yh42myw7ppcuok7qehakznm4k32cqciykktxb4nrfzjrpinwq.ipfs.nftstorage.link/GARGOYLE%20FRONT.webp",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 108
+    },
+    "name": {
+      "name": "name",
+      "value": "Gargoyle"
+    },
+    "element": {
+      "name": "element",
+      "value": "Venom"
+    },
+    "role": {
+      "name": "role",
+      "value": "Support"
+    },
+    "race": {
+      "name": "race",
+      "value": "Vampire "
+    },
+    "attack": {
+      "name": "attack",
+      "value": 50
+    },
+    "hp": {
+      "name": "hp",
+      "value": 70
+    },
+    "isGuardian": {
+      "name": "isGuardian",
+      "value": true
+    },
+    "gold": {
+      "name": "gold",
+      "value": 50
+    },
+    "description": {
+      "name": "description",
+      "value": "[Vampire | Support] Passive: While Gargoyle is on the field, all Vampire type Guardians gain +10 HP."
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmaYLzDmo7RSFwvDdWigRs9BkBmqUECBhjTqbuJniJbVPK"
+    },
+    "back": {
+      "name": "back",
+      "value": "https://bafybeif62tm47b5cwjulkojq2s6bsbk4agvnn6zeq4arbjqsjqbrw3xgsa.ipfs.nftstorage.link/wood.png"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 108
+    },
+    {
+      "trait_type": "name",
+      "value": "Gargoyle"
+    },
+    {
+      "trait_type": "element",
+      "value": "Venom"
+    },
+    {
+      "trait_type": "role",
+      "value": "Support"
+    },
+    {
+      "trait_type": "race",
+      "value": "Vampire "
+    },
+    {
+      "trait_type": "attack",
+      "value": 50
+    },
+    {
+      "trait_type": "hp",
+      "value": 70
+    },
+    {
+      "trait_type": "isGuardian",
+      "value": true
+    },
+    {
+      "trait_type": "gold",
+      "value": 50
+    },
+    {
+      "trait_type": "description",
+      "value": "[Vampire | Support] Passive: While Gargoyle is on the field, all Vampire type Guardians gain +10 HP."
+    },
+    {
+      "trait_type": "image",
+      "value": "https://bafybeih35yh42myw7ppcuok7qehakznm4k32cqciykktxb4nrfzjrpinwq.ipfs.nftstorage.link/GARGOYLE%20FRONT.webp"
+    }
+  ],
+  "typeCard": "wood"
+}

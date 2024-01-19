@@ -1,0 +1,104 @@
+{
+  "name": "Fire Croc",
+  "type": "ERC1155",
+  "description": "[Dragon | Mage] When Fire Croc is destroyed and sent to the graveyard: Target 1 Guardian your opponent controls; deal 50 Fire Damage.",
+  "image": "https://bafybeiecwfrrw2qn4o3lezqrxbsieqtqllpcsdvvgwhlf5txo74p3asgce.ipfs.nftstorage.link/FIRE%20CROC%20FRONT.webp",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 101
+    },
+    "name": {
+      "name": "name",
+      "value": "Fire Croc"
+    },
+    "element": {
+      "name": "element",
+      "value": "Fire"
+    },
+    "role": {
+      "name": "role",
+      "value": "Mage"
+    },
+    "race": {
+      "name": "race",
+      "value": "Dragon"
+    },
+    "attack": {
+      "name": "attack",
+      "value": 80
+    },
+    "hp": {
+      "name": "hp",
+      "value": 70
+    },
+    "isGuardian": {
+      "name": "isGuardian",
+      "value": true
+    },
+    "gold": {
+      "name": "gold",
+      "value": 80
+    },
+    "description": {
+      "name": "description",
+      "value": "[Dragon | Mage] When Fire Croc is destroyed and sent to the graveyard: Target 1 Guardian your opponent controls; deal 50 Fire Damage."
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmTRQEdzE3CuDDfwUnU4o2rNSSXgqYRVvY3wz1djrDfDpH"
+    },
+    "back": {
+      "name": "back",
+      "value": "https://bafybeif62tm47b5cwjulkojq2s6bsbk4agvnn6zeq4arbjqsjqbrw3xgsa.ipfs.nftstorage.link/wood.png"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 101
+    },
+    {
+      "trait_type": "name",
+      "value": "Fire Croc"
+    },
+    {
+      "trait_type": "element",
+      "value": "Fire"
+    },
+    {
+      "trait_type": "role",
+      "value": "Mage"
+    },
+    {
+      "trait_type": "race",
+      "value": "Dragon"
+    },
+    {
+      "trait_type": "attack",
+      "value": 80
+    },
+    {
+      "trait_type": "hp",
+      "value": 70
+    },
+    {
+      "trait_type": "isGuardian",
+      "value": true
+    },
+    {
+      "trait_type": "gold",
+      "value": 80
+    },
+    {
+      "trait_type": "description",
+      "value": "[Dragon | Mage] When Fire Croc is destroyed and sent to the graveyard: Target 1 Guardian your opponent controls; deal 50 Fire Damage."
+    },
+    {
+      "trait_type": "image",
+      "value": "https://bafybeiecwfrrw2qn4o3lezqrxbsieqtqllpcsdvvgwhlf5txo74p3asgce.ipfs.nftstorage.link/FIRE%20CROC%20FRONT.webp"
+    }
+  ],
+  "typeCard": "wood"
+}

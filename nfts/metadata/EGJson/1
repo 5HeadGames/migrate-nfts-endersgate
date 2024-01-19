@@ -1,0 +1,72 @@
+{
+  "name": "Cursed Jian",
+  "type": "ERC1155",
+  "description": "Select One Guardian on your opponent's side of the field; decrease their attack by 50% for 2 turns. ",
+  "image": "https://bafybeignswv4ir4nzqgh3qhjdk4g2pvzt4g73ywtn73ifgkt7f6tf7b6um.ipfs.nftstorage.link/CURSED%20JIAN%20FRONT.webp",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 1
+    },
+    "name": {
+      "name": "name",
+      "value": "Cursed Jian"
+    },
+    "type": {
+      "name": "type",
+      "value": "Debuff"
+    },
+    "ADOTurn": {
+      "name": "ADOTurn",
+      "value": "NO"
+    },
+    "rarity": {
+      "name": "rarity",
+      "value": "Common"
+    },
+    "description": {
+      "name": "description",
+      "value": "Select One Guardian on your opponent's side of the field; decrease their attack by 50% for 2 turns. "
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmPDpg7Cw9hsNPskX2iDQxvVjCgkoCFuwZggqvq6uxvb6U"
+    },
+    "back": {
+      "name": "back",
+      "value": "https://bafybeif62tm47b5cwjulkojq2s6bsbk4agvnn6zeq4arbjqsjqbrw3xgsa.ipfs.nftstorage.link/action.png"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 1
+    },
+    {
+      "trait_type": "name",
+      "value": "Cursed Jian"
+    },
+    {
+      "trait_type": "type",
+      "value": "Debuff"
+    },
+    {
+      "trait_type": "ADOTurn",
+      "value": "NO"
+    },
+    {
+      "trait_type": "rarity",
+      "value": "Common"
+    },
+    {
+      "trait_type": "description",
+      "value": "Select One Guardian on your opponent's side of the field; decrease their attack by 50% for 2 turns. "
+    },
+    {
+      "trait_type": "image",
+      "value": "https://bafybeignswv4ir4nzqgh3qhjdk4g2pvzt4g73ywtn73ifgkt7f6tf7b6um.ipfs.nftstorage.link/CURSED%20JIAN%20FRONT.webp"
+    }
+  ],
+  "typeCard": "action"
+}

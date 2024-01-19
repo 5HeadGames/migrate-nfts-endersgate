@@ -1,0 +1,104 @@
+{
+  "name": "Voidwalker Kek'zin",
+  "type": "ERC1155",
+  "description": "Active: Select one enemy Guardian as your rival; Kek'zin takes 25% less DMG from them.",
+  "image": "https://bafybeicfgc57dxnl3ekrdgloco2o2aerqcsef7goaolt5v5zm5g36yedo4.ipfs.nftstorage.link/Voidwalker_Kekzin_FRONT.webp",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 103
+    },
+    "name": {
+      "name": "name",
+      "value": "Voidwalker Kek'zin"
+    },
+    "element": {
+      "name": "element",
+      "value": "Void"
+    },
+    "role": {
+      "name": "role",
+      "value": "Fighter"
+    },
+    "race": {
+      "name": "race",
+      "value": "Monster "
+    },
+    "attack": {
+      "name": "attack",
+      "value": 100
+    },
+    "hp": {
+      "name": "hp",
+      "value": 100
+    },
+    "isGuardian": {
+      "name": "isGuardian",
+      "value": true
+    },
+    "gold": {
+      "name": "gold",
+      "value": 110
+    },
+    "description": {
+      "name": "description",
+      "value": "Active: Select one enemy Guardian as your rival; Kek'zin takes 25% less DMG from them."
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/Qmb8h7nbPzRKMaazM1W61zLgPWmtvJT9ojNjWtQD29WoXF"
+    },
+    "back": {
+      "name": "back",
+      "value": "https://bafybeif62tm47b5cwjulkojq2s6bsbk4agvnn6zeq4arbjqsjqbrw3xgsa.ipfs.nftstorage.link/wood.png"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 103
+    },
+    {
+      "trait_type": "name",
+      "value": "Voidwalker Kek'zin"
+    },
+    {
+      "trait_type": "element",
+      "value": "Void"
+    },
+    {
+      "trait_type": "role",
+      "value": "Fighter"
+    },
+    {
+      "trait_type": "race",
+      "value": "Monster "
+    },
+    {
+      "trait_type": "attack",
+      "value": 100
+    },
+    {
+      "trait_type": "hp",
+      "value": 100
+    },
+    {
+      "trait_type": "isGuardian",
+      "value": true
+    },
+    {
+      "trait_type": "gold",
+      "value": 110
+    },
+    {
+      "trait_type": "description",
+      "value": "Active: Select one enemy Guardian as your rival; Kek'zin takes 25% less DMG from them."
+    },
+    {
+      "trait_type": "image",
+      "value": "https://bafybeicfgc57dxnl3ekrdgloco2o2aerqcsef7goaolt5v5zm5g36yedo4.ipfs.nftstorage.link/Voidwalker_Kekzin_FRONT.webp"
+    }
+  ],
+  "typeCard": "wood"
+}

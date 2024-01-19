@@ -1,0 +1,104 @@
+{
+  "name": "Sinthia",
+  "type": "ERC1155",
+  "description": "[Demon | Healer] \"Demonic Defiance\" Activate: Once per turn, heal one ally Guardian for 30 HP.",
+  "image": "https://bafybeibecj7txdtd4ahnh2epmkjgb3eh2y4szebu6rr3yxzs7fyyv5xjru.ipfs.nftstorage.link/SINTHIA%20FRONT.webp",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 201
+    },
+    "name": {
+      "name": "name",
+      "value": "Sinthia"
+    },
+    "element": {
+      "name": "element",
+      "value": "Mystic"
+    },
+    "role": {
+      "name": "role",
+      "value": "Healer"
+    },
+    "race": {
+      "name": "race",
+      "value": "Demon"
+    },
+    "attack": {
+      "name": "attack",
+      "value": 110
+    },
+    "hp": {
+      "name": "hp",
+      "value": 190
+    },
+    "isGuardian": {
+      "name": "isGuardian",
+      "value": true
+    },
+    "gold": {
+      "name": "gold",
+      "value": 300
+    },
+    "description": {
+      "name": "description",
+      "value": "[Demon | Healer] \"Demonic Defiance\" Activate: Once per turn, heal one ally Guardian for 30 HP."
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmW7cR6JQzFQSwMrnTaNsRkXZ8Qa4KW4aTYCUQMYgxA6cy"
+    },
+    "back": {
+      "name": "back",
+      "value": "https://bafybeif62tm47b5cwjulkojq2s6bsbk4agvnn6zeq4arbjqsjqbrw3xgsa.ipfs.nftstorage.link/gold.png"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 201
+    },
+    {
+      "trait_type": "name",
+      "value": "Sinthia"
+    },
+    {
+      "trait_type": "element",
+      "value": "Mystic"
+    },
+    {
+      "trait_type": "role",
+      "value": "Healer"
+    },
+    {
+      "trait_type": "race",
+      "value": "Demon"
+    },
+    {
+      "trait_type": "attack",
+      "value": 110
+    },
+    {
+      "trait_type": "hp",
+      "value": 190
+    },
+    {
+      "trait_type": "isGuardian",
+      "value": true
+    },
+    {
+      "trait_type": "gold",
+      "value": 300
+    },
+    {
+      "trait_type": "description",
+      "value": "[Demon | Healer] \"Demonic Defiance\" Activate: Once per turn, heal one ally Guardian for 30 HP."
+    },
+    {
+      "trait_type": "image",
+      "value": "https://bafybeibecj7txdtd4ahnh2epmkjgb3eh2y4szebu6rr3yxzs7fyyv5xjru.ipfs.nftstorage.link/SINTHIA%20FRONT.webp"
+    }
+  ],
+  "typeCard": "gold"
+}

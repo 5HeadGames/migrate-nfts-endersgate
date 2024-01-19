@@ -1,0 +1,72 @@
+{
+  "name": "Shinobi Guardians",
+  "type": "ERC1155",
+  "description": "Flip: If you control no Guardians on your side of the field, Summon 3 Guardians with the following stats:\n\n● 1: (Atk: 50; HP:50)\n● 2: (Atk: 50; HP:50)\n● 3: (Atk: 50; HP:50)\n\nIn each of your standby phases, pay 100 gold, or destroy all 3 guards",
+  "image": "https://bafybeigmmne7ihuaanrh2d7jijflltnvwx2mwnhzw4fvjbjrqaci4ukkvm.ipfs.nftstorage.link/SHINOBI%20GUARDIANS%20FRONT.webp",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 75
+    },
+    "name": {
+      "name": "name",
+      "value": "Shinobi Guardians"
+    },
+    "type": {
+      "name": "type",
+      "value": "Flip Counter"
+    },
+    "ADOTurn": {
+      "name": "ADOTurn",
+      "value": "YES"
+    },
+    "rarity": {
+      "name": "rarity",
+      "value": "Ultra Rare"
+    },
+    "description": {
+      "name": "description",
+      "value": "Flip: If you control no Guardians on your side of the field, Summon 3 Guardians with the following stats:\n\n● 1: (Atk: 50; HP:50)\n● 2: (Atk: 50; HP:50)\n● 3: (Atk: 50; HP:50)\n\nIn each of your standby phases, pay 100 gold, or destroy all 3 guards"
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmV4PXy5bJimhNNb4mK2TGsW965eJ3RudYamzfFmBi62QC"
+    },
+    "back": {
+      "name": "back",
+      "value": "https://bafybeif62tm47b5cwjulkojq2s6bsbk4agvnn6zeq4arbjqsjqbrw3xgsa.ipfs.nftstorage.link/action.png"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 75
+    },
+    {
+      "trait_type": "name",
+      "value": "Shinobi Guardians"
+    },
+    {
+      "trait_type": "type",
+      "value": "Flip Counter"
+    },
+    {
+      "trait_type": "ADOTurn",
+      "value": "YES"
+    },
+    {
+      "trait_type": "rarity",
+      "value": "Ultra Rare"
+    },
+    {
+      "trait_type": "description",
+      "value": "Flip: If you control no Guardians on your side of the field, Summon 3 Guardians with the following stats:\n\n● 1: (Atk: 50; HP:50)\n● 2: (Atk: 50; HP:50)\n● 3: (Atk: 50; HP:50)\n\nIn each of your standby phases, pay 100 gold, or destroy all 3 guards"
+    },
+    {
+      "trait_type": "image",
+      "value": "https://bafybeigmmne7ihuaanrh2d7jijflltnvwx2mwnhzw4fvjbjrqaci4ukkvm.ipfs.nftstorage.link/SHINOBI%20GUARDIANS%20FRONT.webp"
+    }
+  ],
+  "typeCard": "reaction"
+}

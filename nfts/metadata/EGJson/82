@@ -1,0 +1,72 @@
+{
+  "name": "Tsunami",
+  "type": "ERC1155",
+  "description": "Flip: If your opponent destroys a Water type Guardian on your side of the field, Deal 75 Water damage to all Guardians on their side of the field.",
+  "image": "https://bafybeigr6tebi62earopo5bpnlwxlydy7vntas6bblecjw25jgfumfr56e.ipfs.nftstorage.link/TSUNAMI%20FRONT.webp",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 82
+    },
+    "name": {
+      "name": "name",
+      "value": "Tsunami"
+    },
+    "type": {
+      "name": "type",
+      "value": "Flip Counter"
+    },
+    "ADOTurn": {
+      "name": "ADOTurn",
+      "value": "YES"
+    },
+    "rarity": {
+      "name": "rarity",
+      "value": "Uncommon"
+    },
+    "description": {
+      "name": "description",
+      "value": "Flip: If your opponent destroys a Water type Guardian on your side of the field, Deal 75 Water damage to all Guardians on their side of the field."
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmQtYxMh8MDktqHMrAHWHr8PYFxPaQfsEppQynMDwSkPfe"
+    },
+    "back": {
+      "name": "back",
+      "value": "https://bafybeif62tm47b5cwjulkojq2s6bsbk4agvnn6zeq4arbjqsjqbrw3xgsa.ipfs.nftstorage.link/action.png"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 82
+    },
+    {
+      "trait_type": "name",
+      "value": "Tsunami"
+    },
+    {
+      "trait_type": "type",
+      "value": "Flip Counter"
+    },
+    {
+      "trait_type": "ADOTurn",
+      "value": "YES"
+    },
+    {
+      "trait_type": "rarity",
+      "value": "Uncommon"
+    },
+    {
+      "trait_type": "description",
+      "value": "Flip: If your opponent destroys a Water type Guardian on your side of the field, Deal 75 Water damage to all Guardians on their side of the field."
+    },
+    {
+      "trait_type": "image",
+      "value": "https://bafybeigr6tebi62earopo5bpnlwxlydy7vntas6bblecjw25jgfumfr56e.ipfs.nftstorage.link/TSUNAMI%20FRONT.webp"
+    }
+  ],
+  "typeCard": "reaction"
+}

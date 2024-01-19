@@ -1,0 +1,111 @@
+{
+  "name": "Etnor",
+  "type": "ERC1155",
+  "description": "[Beast | Fighter] 'Son of Eross' Active: Pay 100 Gold during your MP1 and Discard One Card from your Hand to the Graveyard; Add Eross from your deck to your hand. Passive: If Etnor is sent to the grave, Hire Eross to the field from your hand. ",
+  "image": "https://bafybeiaeudf3lyefctux5odd2dlflnm7gwgxfxosgl6poe5suu343vrxvm.ipfs.nftstorage.link/ETNOR%20FRONT.webp",
+  "synergies": [
+    "Eross"
+  ],
+  "artist": {
+    "name": "Arya Mahardika",
+    "link": "https://yayamatsumi.artstation.com/"
+  },
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 232
+    },
+    "name": {
+      "name": "name",
+      "value": "Etnor "
+    },
+    "element": {
+      "name": "element",
+      "value": "Venom"
+    },
+    "role": {
+      "name": "role",
+      "value": "Fighter"
+    },
+    "race": {
+      "name": "race",
+      "value": "Beast"
+    },
+    "attack": {
+      "name": "attack",
+      "value": 125
+    },
+    "hp": {
+      "name": "hp",
+      "value": 210
+    },
+    "isGuardian": {
+      "name": "isGuardian",
+      "value": true
+    },
+    "gold": {
+      "name": "gold",
+      "value": 260
+    },
+    "description": {
+      "name": "description",
+      "value": "[Beast | Fighter] 'Son of Eross' Active: Pay 100 Gold during your MP1 and Discard One Card from your Hand to the Graveyard; Add Eross from your deck to your hand. Passive: If Etnor is sent to the grave, Hire Eross to the field from your hand. "
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmQqZa99dSXKTcpxjPJ5ZKXvWM39GgMEG1HrVSvTv8bK1m"
+    },
+    "back": {
+      "name": "back",
+      "value": "https://bafybeif62tm47b5cwjulkojq2s6bsbk4agvnn6zeq4arbjqsjqbrw3xgsa.ipfs.nftstorage.link/silver.png"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 232
+    },
+    {
+      "trait_type": "name",
+      "value": "Etnor "
+    },
+    {
+      "trait_type": "element",
+      "value": "Venom"
+    },
+    {
+      "trait_type": "role",
+      "value": "Fighter"
+    },
+    {
+      "trait_type": "race",
+      "value": "Beast"
+    },
+    {
+      "trait_type": "attack",
+      "value": 125
+    },
+    {
+      "trait_type": "hp",
+      "value": 210
+    },
+    {
+      "trait_type": "isGuardian",
+      "value": true
+    },
+    {
+      "trait_type": "gold",
+      "value": 260
+    },
+    {
+      "trait_type": "description",
+      "value": "[Beast | Fighter] 'Son of Eross' Active: Pay 100 Gold during your MP1 and Discard One Card from your Hand to the Graveyard; Add Eross from your deck to your hand. Passive: If Etnor is sent to the grave, Hire Eross to the field from your hand."
+    },
+    {
+      "trait_type": "image",
+      "value": "https://bafybeiaeudf3lyefctux5odd2dlflnm7gwgxfxosgl6poe5suu343vrxvm.ipfs.nftstorage.link/ETNOR%20FRONT.webp"
+    }
+  ],
+  "typeCard": "iron"
+}

@@ -82,6 +82,11 @@ const config: HardhatUserConfig = {
       accounts: [process.env.PRIVATE_KEY || ""],
       timeout: 120000000,
     },
+    linea: {
+      url: `https://rpc.linea.build`,
+      accounts: [process.env.PRIVATE_KEY || ""],
+      timeout: 120000000,
+    },
     matic: {
       url: "https://polygon-mainnet.g.alchemy.com/v2/kRM3PkCdafzPawH6DziNlah5olIrcNfl",
       accounts: [process.env.PRIVATE_KEY || ""],

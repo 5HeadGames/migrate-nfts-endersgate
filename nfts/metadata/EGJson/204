@@ -1,0 +1,104 @@
+{
+  "name": "Kanga Sage",
+  "type": "ERC1155",
+  "description": "[Beast | Healer] \"Gold Heal\" Activate: Once per turn, pay 10 gold to heal an ally for 25 HP. Healed Guardians gain +10 ATK.",
+  "image": "https://bafybeibmy3qiqlu5det6rgjinrqud4u4k35pky3ooklsmdyp7sblxwx6ry.ipfs.nftstorage.link/KANGA%20SAGE%20FRONT.webp",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 204
+    },
+    "name": {
+      "name": "name",
+      "value": "Kanga Sage"
+    },
+    "element": {
+      "name": "element",
+      "value": "Earth"
+    },
+    "role": {
+      "name": "role",
+      "value": "Healer"
+    },
+    "race": {
+      "name": "race",
+      "value": "Beast"
+    },
+    "attack": {
+      "name": "attack",
+      "value": 125
+    },
+    "hp": {
+      "name": "hp",
+      "value": 225
+    },
+    "isGuardian": {
+      "name": "isGuardian",
+      "value": true
+    },
+    "gold": {
+      "name": "gold",
+      "value": 300
+    },
+    "description": {
+      "name": "description",
+      "value": "[Beast | Healer] \"Gold Heal\" Activate: Once per turn, pay 10 gold to heal an ally for 25 HP. Healed Guardians gain +10 ATK."
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmYpnEqyRVebjeWQMFQGQhAfsFszewy4SoMcEntM2zMh1s"
+    },
+    "back": {
+      "name": "back",
+      "value": "https://bafybeif62tm47b5cwjulkojq2s6bsbk4agvnn6zeq4arbjqsjqbrw3xgsa.ipfs.nftstorage.link/gold.png"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 204
+    },
+    {
+      "trait_type": "name",
+      "value": "Kanga Sage"
+    },
+    {
+      "trait_type": "element",
+      "value": "Earth"
+    },
+    {
+      "trait_type": "role",
+      "value": "Healer"
+    },
+    {
+      "trait_type": "race",
+      "value": "Beast"
+    },
+    {
+      "trait_type": "attack",
+      "value": 125
+    },
+    {
+      "trait_type": "hp",
+      "value": 225
+    },
+    {
+      "trait_type": "isGuardian",
+      "value": true
+    },
+    {
+      "trait_type": "gold",
+      "value": 300
+    },
+    {
+      "trait_type": "description",
+      "value": "[Beast | Healer] \"Gold Heal\" Activate: Once per turn, pay 10 gold to heal an ally for 25 HP. Healed Guardians gain +10 ATK."
+    },
+    {
+      "trait_type": "image",
+      "value": "https://bafybeibmy3qiqlu5det6rgjinrqud4u4k35pky3ooklsmdyp7sblxwx6ry.ipfs.nftstorage.link/KANGA%20SAGE%20FRONT.webp"
+    }
+  ],
+  "typeCard": "gold"
+}

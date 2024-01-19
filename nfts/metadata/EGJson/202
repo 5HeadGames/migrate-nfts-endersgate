@@ -1,0 +1,104 @@
+{
+  "name": "Puppet Master Ari",
+  "type": "ERC1155",
+  "description": "[Demon | Support] \"Puppet Pursuit\" Activate: Select up to 3 Guardian's on your opponent's side of the field; prevent them from declaring an Attack for 2 turns. Cooldown: 3 Turns. ",
+  "image": "https://bafybeia3i2ufuarlxyz265rfte2j3f36cdo7oavkxyavmnvuz2zooy4m64.ipfs.nftstorage.link/PUPPET%20MASTER%20ARI.webp",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 202
+    },
+    "name": {
+      "name": "name",
+      "value": "Puppet Master Ari"
+    },
+    "element": {
+      "name": "element",
+      "value": "Void"
+    },
+    "role": {
+      "name": "role",
+      "value": "Support"
+    },
+    "race": {
+      "name": "race",
+      "value": "Demon"
+    },
+    "attack": {
+      "name": "attack",
+      "value": 100
+    },
+    "hp": {
+      "name": "hp",
+      "value": 225
+    },
+    "isGuardian": {
+      "name": "isGuardian",
+      "value": true
+    },
+    "gold": {
+      "name": "gold",
+      "value": 300
+    },
+    "description": {
+      "name": "description",
+      "value": "[Demon | Support] \"Puppet Pursuit\" Activate: Select up to 3 Guardian's on your opponent's side of the field; prevent them from declaring an Attack for 2 turns. Cooldown: 3 Turns. "
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmdNJGGSMHj9HStHKEAi1cBBgm1oF2bEY8k3qCM2iyoPYF"
+    },
+    "back": {
+      "name": "back",
+      "value": "https://bafybeif62tm47b5cwjulkojq2s6bsbk4agvnn6zeq4arbjqsjqbrw3xgsa.ipfs.nftstorage.link/gold.png"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 202
+    },
+    {
+      "trait_type": "name",
+      "value": "Puppet Master Ari"
+    },
+    {
+      "trait_type": "element",
+      "value": "Void"
+    },
+    {
+      "trait_type": "role",
+      "value": "Support"
+    },
+    {
+      "trait_type": "race",
+      "value": "Demon"
+    },
+    {
+      "trait_type": "attack",
+      "value": 100
+    },
+    {
+      "trait_type": "hp",
+      "value": 225
+    },
+    {
+      "trait_type": "isGuardian",
+      "value": true
+    },
+    {
+      "trait_type": "gold",
+      "value": 300
+    },
+    {
+      "trait_type": "description",
+      "value": "[Demon | Support] \"Puppet Pursuit\" Activate: Select up to 3 Guardian's on your opponent's side of the field; prevent them from declaring an Attack for 2 turns. Cooldown: 3 Turns. "
+    },
+    {
+      "trait_type": "image",
+      "value": "https://bafybeia3i2ufuarlxyz265rfte2j3f36cdo7oavkxyavmnvuz2zooy4m64.ipfs.nftstorage.link/PUPPET%20MASTER%20ARI.webp"
+    }
+  ],
+  "typeCard": "gold"
+}

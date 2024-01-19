@@ -1,0 +1,72 @@
+{
+  "name": "Snake Charmer",
+  "type": "ERC1155",
+  "description": "While this card is face up on the field, All Venom Type Guardians gain +5% ATK. Upkeep cost -25 gold per turn. ",
+  "image": "https://bafybeic2czd7kxngsbgbevuhbu5syi2oo3a6uwq7ryzc24cojq2xd7hw7i.ipfs.nftstorage.link/SNAKE%20CHARMER%20FRONT.webp",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 24
+    },
+    "name": {
+      "name": "name",
+      "value": "Snake Charmer"
+    },
+    "type": {
+      "name": "type",
+      "value": "Continuous"
+    },
+    "ADOTurn": {
+      "name": "ADOTurn",
+      "value": "NO"
+    },
+    "rarity": {
+      "name": "rarity",
+      "value": "Ultra Rare"
+    },
+    "description": {
+      "name": "description",
+      "value": "While this card is face up on the field, All Venom Type Guardians gain +5% ATK. Upkeep cost -25 gold per turn. "
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmRvVF5g8NnN2eAYNciEdLzPgyiwjZjdpjKRf6b8qDKdUz"
+    },
+    "back": {
+      "name": "back",
+      "value": "https://bafybeif62tm47b5cwjulkojq2s6bsbk4agvnn6zeq4arbjqsjqbrw3xgsa.ipfs.nftstorage.link/action.png"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 24
+    },
+    {
+      "trait_type": "name",
+      "value": "Snake Charmer"
+    },
+    {
+      "trait_type": "type",
+      "value": "Continuous"
+    },
+    {
+      "trait_type": "ADOTurn",
+      "value": "NO"
+    },
+    {
+      "trait_type": "rarity",
+      "value": "Ultra Rare"
+    },
+    {
+      "trait_type": "description",
+      "value": "While this card is face up on the field, All Venom Type Guardians gain +5% ATK. Upkeep cost -25 gold per turn. "
+    },
+    {
+      "trait_type": "image",
+      "value": "https://bafybeic2czd7kxngsbgbevuhbu5syi2oo3a6uwq7ryzc24cojq2xd7hw7i.ipfs.nftstorage.link/SNAKE%20CHARMER%20FRONT.webp"
+    }
+  ],
+  "typeCard": "action"
+}

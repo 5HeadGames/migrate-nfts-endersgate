@@ -1,0 +1,104 @@
+{
+  "name": "Xoi'fu",
+  "type": "ERC1155",
+  "description": "[Beast | Support] \"Aqua Soul\" Activate: During your MP, pay 50 gold to send Xoi'fu to the Grave yard and Hire a Water Type Guardian from your deck with 200 HP or less to the field. Uses: 1.",
+  "image": "https://bafybeifaemc6lkipqi3ddkgf4hokqkwq2eaudgqk26jamnlvu7lcep3z5u.ipfs.nftstorage.link/XOIFU%20FRONT.webp",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 125
+    },
+    "name": {
+      "name": "name",
+      "value": "Xoi'fu"
+    },
+    "element": {
+      "name": "element",
+      "value": "Water"
+    },
+    "role": {
+      "name": "role",
+      "value": "Support"
+    },
+    "race": {
+      "name": "race",
+      "value": "Beast"
+    },
+    "attack": {
+      "name": "attack",
+      "value": 75
+    },
+    "hp": {
+      "name": "hp",
+      "value": 75
+    },
+    "isGuardian": {
+      "name": "isGuardian",
+      "value": true
+    },
+    "gold": {
+      "name": "gold",
+      "value": 85
+    },
+    "description": {
+      "name": "description",
+      "value": "[Beast | Support] \"Aqua Soul\" Activate: During your MP, pay 50 gold to send Xoi'fu to the Grave yard and Hire a Water Type Guardian from your deck with 200 HP or less to the field. Uses: 1."
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/Qmd1FSRuLu5W13sj5NVf62PUUEFpCb48HPGmUytdXimGRF"
+    },
+    "back": {
+      "name": "back",
+      "value": "https://bafybeif62tm47b5cwjulkojq2s6bsbk4agvnn6zeq4arbjqsjqbrw3xgsa.ipfs.nftstorage.link/wood.png"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 125
+    },
+    {
+      "trait_type": "name",
+      "value": "Xoi'fu"
+    },
+    {
+      "trait_type": "element",
+      "value": "Water"
+    },
+    {
+      "trait_type": "role",
+      "value": "Support"
+    },
+    {
+      "trait_type": "race",
+      "value": "Beast"
+    },
+    {
+      "trait_type": "attack",
+      "value": 75
+    },
+    {
+      "trait_type": "hp",
+      "value": 75
+    },
+    {
+      "trait_type": "isGuardian",
+      "value": true
+    },
+    {
+      "trait_type": "gold",
+      "value": 85
+    },
+    {
+      "trait_type": "description",
+      "value": "[Beast | Support] \"Aqua Soul\" Activate: During your MP, pay 50 gold to send Xoi'fu to the Grave yard and Hire a Water Type Guardian from your deck with 200 HP or less to the field. Uses: 1."
+    },
+    {
+      "trait_type": "image",
+      "value": "https://bafybeifaemc6lkipqi3ddkgf4hokqkwq2eaudgqk26jamnlvu7lcep3z5u.ipfs.nftstorage.link/XOIFU%20FRONT.webp"
+    }
+  ],
+  "typeCard": "wood"
+}

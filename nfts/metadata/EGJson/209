@@ -1,0 +1,104 @@
+{
+  "name": "Aogaeru",
+  "type": "ERC1155",
+  "description": "[Beast | Assassin] \"Poisonous presence\" Passive: While Aogaeru is on the field, your opponent's side of the field fills with poison smoke which deals 5 Venom damage per turn.",
+  "image": "https://bafybeiekapgzpcuekjwy2ehgubmzvnk3a7plk5yrcv764xkradask7ad2e.ipfs.nftstorage.link/AOGAERU%20FRONT.webp",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 209
+    },
+    "name": {
+      "name": "name",
+      "value": "Aogaeru"
+    },
+    "element": {
+      "name": "element",
+      "value": "Venom"
+    },
+    "role": {
+      "name": "role",
+      "value": "Assassin"
+    },
+    "race": {
+      "name": "race",
+      "value": "Beast"
+    },
+    "attack": {
+      "name": "attack",
+      "value": 150
+    },
+    "hp": {
+      "name": "hp",
+      "value": 225
+    },
+    "isGuardian": {
+      "name": "isGuardian",
+      "value": true
+    },
+    "gold": {
+      "name": "gold",
+      "value": 300
+    },
+    "description": {
+      "name": "description",
+      "value": "[Beast | Assassin] \"Poisonous presence\" Passive: While Aogaeru is on the field, your opponent's side of the field fills with poison smoke which deals 5 Venom damage per turn."
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmbKczAhNXzUStfx4mo325cYnyNdqpDvvSc5qu6VDHkrnV"
+    },
+    "back": {
+      "name": "back",
+      "value": "https://bafybeif62tm47b5cwjulkojq2s6bsbk4agvnn6zeq4arbjqsjqbrw3xgsa.ipfs.nftstorage.link/gold.png"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 209
+    },
+    {
+      "trait_type": "name",
+      "value": "Aogaeru"
+    },
+    {
+      "trait_type": "element",
+      "value": "Venom"
+    },
+    {
+      "trait_type": "role",
+      "value": "Assassin"
+    },
+    {
+      "trait_type": "race",
+      "value": "Beast"
+    },
+    {
+      "trait_type": "attack",
+      "value": 150
+    },
+    {
+      "trait_type": "hp",
+      "value": 225
+    },
+    {
+      "trait_type": "isGuardian",
+      "value": true
+    },
+    {
+      "trait_type": "gold",
+      "value": 300
+    },
+    {
+      "trait_type": "description",
+      "value": "[Beast | Assassin] \"Poisonous presence\" Passive: While Aogaeru is on the field, your opponent's side of the field fills with poison smoke which deals 5 Venom damage per turn."
+    },
+    {
+      "trait_type": "image",
+      "value": "https://bafybeiekapgzpcuekjwy2ehgubmzvnk3a7plk5yrcv764xkradask7ad2e.ipfs.nftstorage.link/AOGAERU%20FRONT.webp"
+    }
+  ],
+  "typeCard": "gold"
+}

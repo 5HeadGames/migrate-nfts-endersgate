@@ -37,7 +37,7 @@ async function main() {
   console.log("setting tokens allowed: marketplace");
   await rent.addToken(
     "0x176211869cA2b568f2A7D4EE941E073a821EE1ff",
-    "0xfE4A8cc5b5B2366C1B58Bea3858e81843581b2F7",
+    "0xAADAa473C1bDF7317ec07c915680Af29DeBfdCb5",
     6,
   );
 

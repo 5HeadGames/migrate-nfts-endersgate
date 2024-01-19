@@ -1,0 +1,72 @@
+{
+  "name": "Earth Blood",
+  "type": "ERC1155",
+  "description": "This card stays face up for 3 turns. Increase the ATK & HP of all Earth Type Guardians on both sides of the field by 50.",
+  "image": "https://bafybeihm2nqatjchrxibdwrh5jgblnycumsnsu42et2kpnqa46sfg5oil4.ipfs.nftstorage.link/EARTH%20FRONT.webp",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 38
+    },
+    "name": {
+      "name": "name",
+      "value": "Earth Blood"
+    },
+    "type": {
+      "name": "type",
+      "value": "Normal Action"
+    },
+    "ADOTurn": {
+      "name": "ADOTurn",
+      "value": "NO"
+    },
+    "rarity": {
+      "name": "rarity",
+      "value": "Ultra Rare"
+    },
+    "description": {
+      "name": "description",
+      "value": "This card stays face up for 3 turns. Increase the ATK & HP of all Earth Type Guardians on both sides of the field by 50."
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmRP1CrMrwgmH1qtXB1PN6rQij5TqTvWbcu47kjdfj2e4B"
+    },
+    "back": {
+      "name": "back",
+      "value": "https://bafybeif62tm47b5cwjulkojq2s6bsbk4agvnn6zeq4arbjqsjqbrw3xgsa.ipfs.nftstorage.link/action.png"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 38
+    },
+    {
+      "trait_type": "name",
+      "value": "Earth Blood"
+    },
+    {
+      "trait_type": "type",
+      "value": "Normal Action"
+    },
+    {
+      "trait_type": "ADOTurn",
+      "value": "NO"
+    },
+    {
+      "trait_type": "rarity",
+      "value": "Ultra Rare"
+    },
+    {
+      "trait_type": "description",
+      "value": "This card stays face up for 3 turns. Increase the ATK & HP of all Earth Type Guardians on both sides of the field by 50."
+    },
+    {
+      "trait_type": "image",
+      "value": "https://bafybeihm2nqatjchrxibdwrh5jgblnycumsnsu42et2kpnqa46sfg5oil4.ipfs.nftstorage.link/EARTH%20FRONT.webp"
+    }
+  ],
+  "typeCard": "action"
+}

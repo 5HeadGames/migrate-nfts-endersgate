@@ -1,0 +1,104 @@
+{
+  "name": "Fire Slasher",
+  "type": "ERC1155",
+  "description": "[Insect | Assassin] \"Fire Ant Colony\" Passive: Attacks from Fire Slasher have a 15% Chance of Dealing +20% Critical Damage.",
+  "image": "https://bafybeih4kekag6cttqa3ev7mqtrpdjbwqvglihiz2ggkc4u4vh74ukf7m4.ipfs.nftstorage.link/FIRE%20SLASHER.webp",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 140
+    },
+    "name": {
+      "name": "name",
+      "value": "Fire Slasher"
+    },
+    "element": {
+      "name": "element",
+      "value": "Fire"
+    },
+    "role": {
+      "name": "role",
+      "value": "Assassin"
+    },
+    "race": {
+      "name": "race",
+      "value": "Insect"
+    },
+    "attack": {
+      "name": "attack",
+      "value": 110
+    },
+    "hp": {
+      "name": "hp",
+      "value": 100
+    },
+    "isGuardian": {
+      "name": "isGuardian",
+      "value": true
+    },
+    "gold": {
+      "name": "gold",
+      "value": 120
+    },
+    "description": {
+      "name": "description",
+      "value": "[Insect | Assassin] \"Fire Ant Colony\" Passive: Attacks from Fire Slasher have a 15% Chance of Dealing +20% Critical Damage."
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmPFdBoje2YNHUJs93k3h2w4PB4dB4rT5VhuQsPNm2mNtM"
+    },
+    "back": {
+      "name": "back",
+      "value": "https://bafybeif62tm47b5cwjulkojq2s6bsbk4agvnn6zeq4arbjqsjqbrw3xgsa.ipfs.nftstorage.link/stone.png"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 140
+    },
+    {
+      "trait_type": "name",
+      "value": "Fire Slasher"
+    },
+    {
+      "trait_type": "element",
+      "value": "Fire"
+    },
+    {
+      "trait_type": "role",
+      "value": "Assassin"
+    },
+    {
+      "trait_type": "race",
+      "value": "Insect"
+    },
+    {
+      "trait_type": "attack",
+      "value": 110
+    },
+    {
+      "trait_type": "hp",
+      "value": 100
+    },
+    {
+      "trait_type": "isGuardian",
+      "value": true
+    },
+    {
+      "trait_type": "gold",
+      "value": 120
+    },
+    {
+      "trait_type": "description",
+      "value": "[Insect | Assassin] \"Fire Ant Colony\" Passive: Attacks from Fire Slasher have a 15% Chance of Dealing +20% Critical Damage."
+    },
+    {
+      "trait_type": "image",
+      "value": "https://bafybeih4kekag6cttqa3ev7mqtrpdjbwqvglihiz2ggkc4u4vh74ukf7m4.ipfs.nftstorage.link/FIRE%20SLASHER.webp"
+    }
+  ],
+  "typeCard": "stone"
+}

@@ -1,0 +1,72 @@
+{
+  "name": "Restful Camp",
+  "type": "ERC1155",
+  "description": "Flip: Select one Guardian on your side of the field; they cannot be attacked for 2 turns & heal 25 HP per turn.",
+  "image": "https://bafybeiaqhhy7fcjmz5bpobuibxjt43jb3hxrgn4d72x6ap5eq4gtlljgoq.ipfs.nftstorage.link/RESTFUL%20CAMP%20FRONT.webp",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 51
+    },
+    "name": {
+      "name": "name",
+      "value": "Restful Camp"
+    },
+    "type": {
+      "name": "type",
+      "value": "Normal Reaction"
+    },
+    "ADOTurn": {
+      "name": "ADOTurn",
+      "value": "NO"
+    },
+    "rarity": {
+      "name": "rarity",
+      "value": "Common"
+    },
+    "description": {
+      "name": "description",
+      "value": "Flip: Select one Guardian on your side of the field; they cannot be attacked for 2 turns & heal 25 HP per turn."
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmcS8UWmYpLFzW1eUAH6Q1hhxXumJ6dveGEULFEXuCKZQT"
+    },
+    "back": {
+      "name": "back",
+      "value": "https://bafybeif62tm47b5cwjulkojq2s6bsbk4agvnn6zeq4arbjqsjqbrw3xgsa.ipfs.nftstorage.link/action.png"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 51
+    },
+    {
+      "trait_type": "name",
+      "value": "Restful Camp"
+    },
+    {
+      "trait_type": "type",
+      "value": "Normal Reaction"
+    },
+    {
+      "trait_type": "ADOTurn",
+      "value": "NO"
+    },
+    {
+      "trait_type": "rarity",
+      "value": "Common"
+    },
+    {
+      "trait_type": "description",
+      "value": "Flip: Select one Guardian on your side of the field; they cannot be attacked for 2 turns & heal 25 HP per turn."
+    },
+    {
+      "trait_type": "image",
+      "value": "https://bafybeiaqhhy7fcjmz5bpobuibxjt43jb3hxrgn4d72x6ap5eq4gtlljgoq.ipfs.nftstorage.link/RESTFUL%20CAMP%20FRONT.webp"
+    }
+  ],
+  "typeCard": "reaction"
+}

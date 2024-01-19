@@ -15,12 +15,8 @@ async function main() {
   const endersGate = EndersGate.attach(fileData.endersGate);
 
   const NFTsToMint = [
-    { balance: 1, id: 8 },
-    { balance: 1, id: 54 },
-    { balance: 1, id: 157 },
-    { balance: 1, id: 172 },
-    { balance: 1, id: 181 },
-    { balance: 1, id: 230 },
+    { balance: 2, id: 215 },
+    { balance: 4, id: 230 },
   ];
 
   const tx = await endersGate.mintBatch(

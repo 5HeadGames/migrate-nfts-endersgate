@@ -1,0 +1,104 @@
+{
+  "name": "Bomber Fauz",
+  "type": "ERC1155",
+  "description": "[Goblin | Support] \"Goblin Crew\" Passive: Fauz gains 25 ATK for all \"Goblin Crew\" Guardians on your side of the field. ",
+  "image": "https://bafybeibrtx5jqsgo5lfiylxtczssq2oa6pdmwwjfwf3pp7gwyg7lolq64a.ipfs.nftstorage.link/BOMBER%20FAUZ%20FRONT.webp",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 115
+    },
+    "name": {
+      "name": "name",
+      "value": "Bomber Fauz"
+    },
+    "element": {
+      "name": "element",
+      "value": "Fire"
+    },
+    "role": {
+      "name": "role",
+      "value": "Support"
+    },
+    "race": {
+      "name": "race",
+      "value": "Goblin "
+    },
+    "attack": {
+      "name": "attack",
+      "value": 75
+    },
+    "hp": {
+      "name": "hp",
+      "value": 55
+    },
+    "isGuardian": {
+      "name": "isGuardian",
+      "value": true
+    },
+    "gold": {
+      "name": "gold",
+      "value": 60
+    },
+    "description": {
+      "name": "description",
+      "value": "[Goblin | Support] \"Goblin Crew\" Passive: Fauz gains 25 ATK for all \"Goblin Crew\" Guardians on your side of the field. "
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/Qmf7WHF7gw5nc8iTMMVZ6KvFBP3TDFnCPqWrkFaLPNXaLL"
+    },
+    "back": {
+      "name": "back",
+      "value": "https://bafybeif62tm47b5cwjulkojq2s6bsbk4agvnn6zeq4arbjqsjqbrw3xgsa.ipfs.nftstorage.link/wood.png"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 115
+    },
+    {
+      "trait_type": "name",
+      "value": "Bomber Fauz"
+    },
+    {
+      "trait_type": "element",
+      "value": "Fire"
+    },
+    {
+      "trait_type": "role",
+      "value": "Support"
+    },
+    {
+      "trait_type": "race",
+      "value": "Goblin "
+    },
+    {
+      "trait_type": "attack",
+      "value": 75
+    },
+    {
+      "trait_type": "hp",
+      "value": 55
+    },
+    {
+      "trait_type": "isGuardian",
+      "value": true
+    },
+    {
+      "trait_type": "gold",
+      "value": 60
+    },
+    {
+      "trait_type": "description",
+      "value": "[Goblin | Support] \"Goblin Crew\" Passive: Fauz gains 25 ATK for all \"Goblin Crew\" Guardians on your side of the field. "
+    },
+    {
+      "trait_type": "image",
+      "value": "https://bafybeibrtx5jqsgo5lfiylxtczssq2oa6pdmwwjfwf3pp7gwyg7lolq64a.ipfs.nftstorage.link/BOMBER%20FAUZ%20FRONT.webp"
+    }
+  ],
+  "typeCard": "wood"
+}

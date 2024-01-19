@@ -1,0 +1,72 @@
+{
+  "name": "Earth World",
+  "type": "ERC1155",
+  "description": "The field rumbles causing 5 damage per turn to all non-Earth Type Guardians. All Earth type Guardians gain 10 ATK & HP (Upkeep: 5 gold per turn)",
+  "image": "https://bafybeiajkz6emk2cae72oaqaj57prurz3s7dvrvfuzotr5mlxouwha5msm.ipfs.nftstorage.link/EARTH%20WORLD%20FRONT.webp",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 40
+    },
+    "name": {
+      "name": "name",
+      "value": "Earth World"
+    },
+    "type": {
+      "name": "type",
+      "value": "Field Card"
+    },
+    "ADOTurn": {
+      "name": "ADOTurn",
+      "value": "NO"
+    },
+    "rarity": {
+      "name": "rarity",
+      "value": "Ultra Rare"
+    },
+    "description": {
+      "name": "description",
+      "value": "The field rumbles causing 5 damage per turn to all non-Earth Type Guardians. All Earth type Guardians gain 10 ATK & HP (Upkeep: 5 gold per turn)"
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/Qmcg1Bu7n7weZHGidgHq1mPPJPRe5VCHjbZKaruz7KskaJ"
+    },
+    "back": {
+      "name": "back",
+      "value": "https://bafybeif62tm47b5cwjulkojq2s6bsbk4agvnn6zeq4arbjqsjqbrw3xgsa.ipfs.nftstorage.link/action.png"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 40
+    },
+    {
+      "trait_type": "name",
+      "value": "Earth World"
+    },
+    {
+      "trait_type": "type",
+      "value": "Field Card"
+    },
+    {
+      "trait_type": "ADOTurn",
+      "value": "NO"
+    },
+    {
+      "trait_type": "rarity",
+      "value": "Ultra Rare"
+    },
+    {
+      "trait_type": "description",
+      "value": "The field rumbles causing 5 damage per turn to all non-Earth Type Guardians. All Earth type Guardians gain 10 ATK & HP (Upkeep: 5 gold per turn)"
+    },
+    {
+      "trait_type": "image",
+      "value": "https://bafybeiajkz6emk2cae72oaqaj57prurz3s7dvrvfuzotr5mlxouwha5msm.ipfs.nftstorage.link/EARTH%20WORLD%20FRONT.webp"
+    }
+  ],
+  "typeCard": "action"
+}

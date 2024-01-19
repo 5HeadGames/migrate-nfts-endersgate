@@ -1,0 +1,104 @@
+{
+  "name": "King Kilrog",
+  "type": "ERC1155",
+  "description": " [Undead | Tank] \"Loyal Subjects\" Passive: While King Kilrog is on the field, all attacks are redirected to him instead. Fire type Guardians gain +15 ATK.",
+  "image": "https://bafybeids5zuhihmvvzw7m3f5lrmdjy45vxvwossmjcgniowfkczkt42ciq.ipfs.nftstorage.link/KING%20KILROG%20FRONT.webp",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 221
+    },
+    "name": {
+      "name": "name",
+      "value": "King Kilrog"
+    },
+    "element": {
+      "name": "element",
+      "value": "Fire"
+    },
+    "role": {
+      "name": "role",
+      "value": "Tank"
+    },
+    "race": {
+      "name": "race",
+      "value": "Undead"
+    },
+    "attack": {
+      "name": "attack",
+      "value": 150
+    },
+    "hp": {
+      "name": "hp",
+      "value": 550
+    },
+    "isGuardian": {
+      "name": "isGuardian",
+      "value": true
+    },
+    "gold": {
+      "name": "gold",
+      "value": 600
+    },
+    "description": {
+      "name": "description",
+      "value": " [Undead | Tank] \"Loyal Subjects\" Passive: While King Kilrog is on the field, all attacks are redirected to him instead. Fire type Guardians gain +15 ATK."
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmZB5qfBr3F1GSv6AQo43GvsYF9JpRDThai6YbdELELZ1F"
+    },
+    "back": {
+      "name": "back",
+      "value": "https://bafybeif62tm47b5cwjulkojq2s6bsbk4agvnn6zeq4arbjqsjqbrw3xgsa.ipfs.nftstorage.link/legendary.png"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 221
+    },
+    {
+      "trait_type": "name",
+      "value": "King Kilrog"
+    },
+    {
+      "trait_type": "element",
+      "value": "Fire"
+    },
+    {
+      "trait_type": "role",
+      "value": "Tank"
+    },
+    {
+      "trait_type": "race",
+      "value": "Undead"
+    },
+    {
+      "trait_type": "attack",
+      "value": 150
+    },
+    {
+      "trait_type": "hp",
+      "value": 550
+    },
+    {
+      "trait_type": "isGuardian",
+      "value": true
+    },
+    {
+      "trait_type": "gold",
+      "value": 600
+    },
+    {
+      "trait_type": "description",
+      "value": " [Undead | Tank] \"Loyal Subjects\" Passive: While King Kilrog is on the field, all attacks are redirected to him instead. Fire type Guardians gain +15 ATK."
+    },
+    {
+      "trait_type": "image",
+      "value": "https://bafybeids5zuhihmvvzw7m3f5lrmdjy45vxvwossmjcgniowfkczkt42ciq.ipfs.nftstorage.link/KING%20KILROG%20FRONT.webp"
+    }
+  ],
+  "typeCard": "legendary"
+}

@@ -1,0 +1,104 @@
+{
+  "name": "Zalla",
+  "type": "ERC1155",
+  "description": "[Human | Support] \"Poison Revenge\" Passive: Zalla cannot be targeted in the Battle Phase while another Guardian is on your side of the field; Deal 5 Venom DMG during each of your Standby Phases to all non-Venom type Guardians on your opponents side of the field. ",
+  "image": "https://bafybeig6c4ozkbbbolquu7iyhc7hqgwxtpmpmuzfhds7ng2tk4njghscp4.ipfs.nftstorage.link/ZALLA%20FRONT.webp",
+  "symbol": "GATE",
+  "properties": {
+    "id": {
+      "name": "id",
+      "value": 120
+    },
+    "name": {
+      "name": "name",
+      "value": "Zalla"
+    },
+    "element": {
+      "name": "element",
+      "value": "Venom"
+    },
+    "role": {
+      "name": "role",
+      "value": "Support"
+    },
+    "race": {
+      "name": "race",
+      "value": "Human"
+    },
+    "attack": {
+      "name": "attack",
+      "value": 30
+    },
+    "hp": {
+      "name": "hp",
+      "value": 30
+    },
+    "isGuardian": {
+      "name": "isGuardian",
+      "value": true
+    },
+    "gold": {
+      "name": "gold",
+      "value": 75
+    },
+    "description": {
+      "name": "description",
+      "value": "[Human | Support] \"Poison Revenge\" Passive: Zalla cannot be targeted in the Battle Phase while another Guardian is on your side of the field; Deal 5 Venom DMG during each of your Standby Phases to all non-Venom type Guardians on your opponents side of the field. "
+    },
+    "image": {
+      "name": "image",
+      "value": "https://ipfs.moralis.io:2053/ipfs/QmPBVUvoBaYAxLXt6k2dw32oLjxV29Af1Qtjg2V4gQicDA"
+    },
+    "back": {
+      "name": "back",
+      "value": "https://bafybeif62tm47b5cwjulkojq2s6bsbk4agvnn6zeq4arbjqsjqbrw3xgsa.ipfs.nftstorage.link/wood.png"
+    }
+  },
+  "attributes": [
+    {
+      "trait_type": "id",
+      "value": 120
+    },
+    {
+      "trait_type": "name",
+      "value": "Zalla"
+    },
+    {
+      "trait_type": "element",
+      "value": "Venom"
+    },
+    {
+      "trait_type": "role",
+      "value": "Support"
+    },
+    {
+      "trait_type": "race",
+      "value": "Human"
+    },
+    {
+      "trait_type": "attack",
+      "value": 30
+    },
+    {
+      "trait_type": "hp",
+      "value": 30
+    },
+    {
+      "trait_type": "isGuardian",
+      "value": true
+    },
+    {
+      "trait_type": "gold",
+      "value": 75
+    },
+    {
+      "trait_type": "description",
+      "value": "[Human | Support] \"Poison Revenge\" Passive: Zalla cannot be targeted in the Battle Phase while another Guardian is on your side of the field; Deal 5 Venom DMG during each of your Standby Phases to all non-Venom type Guardians on your opponents side of the field. "
+    },
+    {
+      "trait_type": "image",
+      "value": "https://bafybeig6c4ozkbbbolquu7iyhc7hqgwxtpmpmuzfhds7ng2tk4njghscp4.ipfs.nftstorage.link/ZALLA%20FRONT.webp"
+    }
+  ],
+  "typeCard": "wood"
+}
