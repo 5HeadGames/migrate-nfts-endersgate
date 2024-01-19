@@ -80,7 +80,7 @@ contract EndersComicsOnlyMultiTokens is
         uint256[] memory tokensId,
         uint256[] memory amounts,
         address tokenToPay
-    ) public payable {
+    ) public {
         require(
             tokensId.length == amounts.length,
             "Array Length must be the same of amount and Ids"
@@ -95,7 +95,7 @@ contract EndersComicsOnlyMultiTokens is
         address tokenToPay,
         uint256 id,
         uint256 amount
-    ) public payable {
+    ) public {
         require(
             comics[id].limit >= totalSupply(comics[id].comicId) + amount,
             "Limit amount of NFTs reached"

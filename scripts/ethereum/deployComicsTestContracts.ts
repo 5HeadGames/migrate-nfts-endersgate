@@ -24,16 +24,17 @@ async function main() {
   console.log(data, _accounts, network.name);
 
   console.log("deploy:Comics");
-  const Comics = await ComicsFactory.attach(
-    "0x9829D1853d077ddDA784a8B8d0e855303231cd40",
-  );
-  // deploy(
-  //   "EndersComicsTest",
-  //   "EGC",
-  //   "0xf3cd27813b5ff6adea3805dcf181053ac62d6ec3",
-  //   "0xd0D5e3DB44DE05E9F294BB0a3bEEaF030DE24Ada",
-  //   18,
-  // );
+  const Comics = await ComicsFactory
+    // .attach(
+    //   "0x9829D1853d077ddDA784a8B8d0e855303231cd40",
+    // );
+    .deploy(
+      "EndersComicsTest",
+      "EGC",
+      "0xf3cd27813b5ff6adea3805dcf181053ac62d6ec3",
+      "0xd0D5e3DB44DE05E9F294BB0a3bEEaF030DE24Ada",
+      18,
+    );
 
   console.log("deployed");
 

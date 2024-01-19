@@ -87,7 +87,6 @@ contract EndersComicsMultiTokensTest is
         uint256[] calldata ids,
         uint256[] calldata amounts
     ) external {
-        lastMinter = msg.sender;
         _mintBatch(_receiver, ids, amounts, "");
     }
 

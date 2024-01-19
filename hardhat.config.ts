@@ -2,6 +2,7 @@ import "@nomiclabs/hardhat-waffle";
 import "@typechain/hardhat";
 import "solidity-coverage";
 import "@openzeppelin/hardhat-upgrades";
+import "hardhat-gas-reporter";
 import "@nomiclabs/hardhat-waffle";
 import "@nomiclabs/hardhat-etherscan";
 import "@nomiclabs/hardhat-web3";
@@ -136,6 +137,15 @@ const config: HardhatUserConfig = {
       },
       {
         version: "0.8.17",
+        settings: {
+          optimizer: {
+            enabled: true,
+            runs: 1000,
+          },
+        },
+      },
+      {
+        version: "0.8.19",
         settings: {
           optimizer: {
             enabled: true,

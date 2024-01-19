@@ -171,7 +171,7 @@ contract ClockSaleOnlyMultiTokens is
         uint256[] memory tokensId,
         uint256[] memory amounts,
         address tokenToPay
-    ) public payable {
+    ) public {
         require(
             tokensId.length == amounts.length,
             "Array Length must be the same of amount and Ids"

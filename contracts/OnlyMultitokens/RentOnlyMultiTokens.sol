@@ -20,7 +20,7 @@ contract EndersRentOnlyMultiTokens is
     ERC1155Holder,
     ReentrancyGuard
 {
-    using Address for address payable;
+    using Address for address;
 
     enum SaleStatus {
         AvailableToRent,
@@ -137,7 +137,7 @@ contract EndersRentOnlyMultiTokens is
         uint256[] memory rentId,
         uint256 daysToRent,
         address tokenToPay
-    ) public payable {
+    ) public {
         uint256 length = rentId.length;
         for (uint256 i = 0; i < length; i++) {
             rent(rentId[i], daysToRent, tokenToPay);
@@ -148,7 +148,7 @@ contract EndersRentOnlyMultiTokens is
         uint256 rentId,
         uint256 daysToRent,
         address tokenToPay
-    ) public payable nonReentrant whenNotPaused {
+    ) public nonReentrant whenNotPaused {
         Rent storage _rent = rents[rentId];
         uint256 cost = 0;
         require(daysToRent > 0, "Rental:RENT TIME MUST BE GREATER THAN 0");
@@ -455,7 +455,6 @@ contract EndersRentOnlyMultiTokens is
         address token,
         address recipient
     ) external onlyOwner {
-        if (token == address(0)) payable(recipient).sendValue(amount);
-        else IERC20(token).transfer(recipient, amount);
+        IERC20(token).transfer(recipient, amount);
     }
 }
