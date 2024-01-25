@@ -85,11 +85,8 @@ contract ClockSaleOwnable is Ownable, Pausable, ERC1155Holder, ReentrancyGuard {
         address _feeReceiver,
         address _wcurrency,
         address _priceFeedW,
-        uint256 _decimals,
-        uint256 _ownerCut
+        uint256 _decimals
     ) {
-        require(_ownerCut <= 10000, "ClockSale:OWNER_CUT"); //less than 100%
-        ownerCut = _ownerCut;
         feeReceiver = _feeReceiver;
         genesisBlock = block.number;
         wcurrency = _wcurrency;
@@ -120,8 +117,6 @@ contract ClockSaleOwnable is Ownable, Pausable, ERC1155Holder, ReentrancyGuard {
         );
         (, int256 price, , , ) = priceFeed.latestRoundData();
         uint256 decimals = priceFeed.decimals();
-        // int256 price = 84679030;
-        // uint256 decimals = 8;
         return
             (quantity *
                 (_auction.priceUSD) *
@@ -216,16 +211,8 @@ contract ClockSaleOwnable is Ownable, Pausable, ERC1155Holder, ReentrancyGuard {
         if (tokenToPay == wcurrency) {
             require(_isOnSale(_auction), "ClockSale:NOT_AVAILABLE");
             require(msg.value >= cost, "ClockSale:NOT_ENOUGH_VALUE");
-            console.log("main currency", msg.value);
-            console.log(tokenToPay, feeReceiver);
-            uint256 ownerAmount = (cost * ownerCut) / 10000;
-            uint256 sellAmount = cost - ownerAmount;
-            address payable seller = payable(_auction.seller);
-            (bool success, ) = seller.call{value: sellAmount}("");
+            (bool success, ) = feeReceiver.call{value: cost}("");
             require(success, "Transfer failed.");
-            (bool success2, ) = feeReceiver.call{value: ownerAmount}("");
-            require(success2, "Transfer failed.");
-            console.log(cost, ownerCut, address(feeReceiver).balance);
         } else {
             require(
                 isTokenAllowed(tokenToPay),
@@ -264,7 +251,6 @@ contract ClockSaleOwnable is Ownable, Pausable, ERC1155Holder, ReentrancyGuard {
     function cancelSale(uint256 _tokenId) external onlyOwner {
         Sale storage _auction = sales[_tokenId];
         require(_saleExists(_auction), "ClockSale:NOT_AVAILABLE");
-        require(_auction.seller == _msgSender(), "ClockSale:NOT_OWNER");
         _cancelSale(_tokenId);
     }
 

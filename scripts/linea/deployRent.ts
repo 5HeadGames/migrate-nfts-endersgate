@@ -22,7 +22,7 @@ async function main() {
     ethers.getSigners(),
   ]);
 
-  console.log("deploy:marketplace");
+  console.log("deploy:rent");
   const rent = await SalesFactory.deploy(
     _accounts[0].address,
     "0xe5D7C2a44FfDDf6b295A15c148167daaAf5Cf34f",
@@ -31,10 +31,10 @@ async function main() {
     OWNER_CUT,
   );
 
-  console.log("setting allowed: marketplace");
+  console.log("setting allowed: rent");
   await rent.setNftAllowed(data.endersGate, true);
 
-  console.log("setting tokens allowed: marketplace");
+  console.log("setting tokens allowed: rent");
   await rent.addToken(
     "0x176211869cA2b568f2A7D4EE941E073a821EE1ff",
     "0xAADAa473C1bDF7317ec07c915680Af29DeBfdCb5",

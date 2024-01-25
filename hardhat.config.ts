@@ -86,6 +86,8 @@ const config: HardhatUserConfig = {
       url: `https://rpc.linea.build`,
       accounts: [process.env.PRIVATE_KEY || ""],
       timeout: 120000000,
+      // gas: 5000000,
+      // gasPrice: 5000000,
     },
     matic: {
       url: "https://polygon-mainnet.g.alchemy.com/v2/kRM3PkCdafzPawH6DziNlah5olIrcNfl",
@@ -238,6 +240,7 @@ const config: HardhatUserConfig = {
       polygonMumbai: process.env.POLYGONSCAN_API_KEY,
       polygon: process.env.POLYGONSCAN_API_KEY,
       sepolia: process.env.ETHEREUM_API_KEY,
+      mainnet: process.env.ETHEREUM_API_KEY,
     },
   } as any,
 };

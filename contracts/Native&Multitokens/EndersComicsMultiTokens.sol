@@ -153,10 +153,10 @@ contract EndersComicsMultiTokens is
         AggregatorV3Interface priceFeed = AggregatorV3Interface(
             priceFeedsByToken[tokenToGet]
         );
-        // (, int256 price, , , ) = priceFeed.latestRoundData();
-        // uint256 decimals = priceFeed.decimals();
-        int256 price = 189037846052;
-        uint256 decimals = 8;
+        (, int256 price, , , ) = priceFeed.latestRoundData();
+        uint256 decimals = priceFeed.decimals();
+        // int256 price = 189037846052;
+        // uint256 decimals = 8;
         return
             (quantity *
                 (_comic.priceUSD) *

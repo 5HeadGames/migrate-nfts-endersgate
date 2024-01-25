@@ -67,7 +67,7 @@ async function main() {
     {
       ...data,
       marketplace: marketplace.address,
-      marketplaceOwnable: marketplaceOwnable.address,
+      shop: marketplaceOwnable.address,
     },
     null,
     2,

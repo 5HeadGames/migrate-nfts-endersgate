@@ -5,19 +5,19 @@ export const getProviderRpcUrl = (network: string) => {
 
   switch (network) {
     case "sepolia":
-      rpcUrl = process.env.ETHEREUM_SEPOLIA_RPC_URL;
+      rpcUrl = process.env.SEPOLIA_PROVIDER;
       break;
     case "optimismGoerli":
       rpcUrl = process.env.OPTIMISM_GOERLI_RPC_URL;
       break;
-    case "arbitrumTestnet":
-      rpcUrl = process.env.ARBITRUM_TESTNET_RPC_URL;
+    case "matic":
+      rpcUrl = process.env.POLYGON_PROVIDER;
       break;
-    case "avalancheFuji":
-      rpcUrl = process.env.AVALANCHE_FUJI_RPC_URL;
+    case "ethereum":
+      rpcUrl = process.env.ETHEREUM_PROVIDER;
       break;
     case "mumbai":
-      rpcUrl = process.env.POLYGON_MUMBAI_RPC_URL;
+      rpcUrl = process.env.MUMBAI_PROVIDER;
       break;
     default:
       throw new Error("Unknown network: " + network);
@@ -46,12 +46,10 @@ export const getRouterConfig = (network: string) => {
   switch (network) {
     case "sepolia":
       return routerConfig.sepolia;
-    case "optimismGoerli":
-      return routerConfig.optimismGoerli;
-    case "arbitrumTestnet":
-      return routerConfig.arbitrumTestnet;
-    case "avalancheFuji":
-      return routerConfig.avalancheFuji;
+    case "ethereum":
+      return routerConfig.ethereum;
+    case "matic":
+      return routerConfig.matic;
     case "mumbai":
       return routerConfig.mumbai;
     default:

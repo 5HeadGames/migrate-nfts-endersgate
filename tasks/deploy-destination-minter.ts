@@ -30,13 +30,12 @@ task(
 
       const spinner: Spinner = new Spinner();
 
-      const appRoot = require("app-root-path");
       const configFileName = `addresses/addresses.${hre.network.name}.json`;
-      const data = loadJsonFile(`${appRoot}/` + configFileName);
+      const data = loadJsonFile(configFileName);
       console.log(data);
 
       console.log(
-        `ℹ️  Attempting to deploy EndersComics smart contract on the ${hre.network.name} blockchain using ${deployer.address} address`,
+        `ℹ️  Attempting to instance EndersComics smart contract on the ${hre.network.name} blockchain using ${data.comics} address`,
       );
       spinner.start();
 
@@ -73,7 +72,7 @@ task(
 
       spinner.stop();
       console.log(
-        `✅ DestinationMinter can now mint EndersComicss. Transaction hash: ${tx.hash}`,
+        `✅ DestinationMinter can now mint EndersComics. Transaction hash: ${tx.hash}`,
       );
     },
   );

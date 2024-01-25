@@ -2,9 +2,10 @@ import { task } from "hardhat/config";
 import { TaskArguments } from "hardhat/types";
 import { getPrivateKey, getProviderRpcUrl, getPayFeesIn } from "./utils";
 import { Wallet, ethers } from "ethers";
-import { IERC20, IERC20__factory } from "../typechain-types";
 import { LINK_ADDRESSES, PayFeesIn } from "./constants";
 import { Spinner } from "../utils/spinner";
+import { IERC20 } from "../types";
+import { IERC20__factory } from "../types/factories/@openzeppelin/contracts/token/ERC20";
 
 task(
   `fill-sender`,
@@ -52,7 +53,7 @@ task(
       );
 
       console.log(
-        `ℹ️  Attempting to send ${amount} of ${link.target} tokens from ${signer.address} to ${senderAddress}`,
+        `ℹ️  Attempting to send ${amount} of ${link.address} tokens from ${signer.address} to ${senderAddress}`,
       );
       spinner.start();
 

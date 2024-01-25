@@ -5,6 +5,7 @@ import {LinkTokenInterface} from "@chainlink/contracts/src/v0.8/shared/interface
 import {IRouterClient} from "@chainlink/contracts-ccip/src/v0.8/ccip/interfaces/IRouterClient.sol";
 import {Client} from "@chainlink/contracts-ccip/src/v0.8/ccip/libraries/Client.sol";
 import {Withdraw} from "./utils/Withdraw.sol";
+import {EndersComicsMultiTokens} from "../Native&Multitokens/EndersComicsMultiTokens.sol";
 
 /**
  * THIS IS AN EXAMPLE CONTRACT THAT USES HARDCODED VALUES FOR CLARITY.
@@ -17,14 +18,16 @@ contract SourceMinter is Withdraw {
         LINK
     }
 
-    address immutable i_router;
-    address immutable i_link;
+    address public i_router;
+    address public i_link;
+    EndersComicsMultiTokens nft;
 
     event MessageSent(bytes32 messageId);
 
-    constructor(address router, address link) {
+    constructor(address router, address link, address nftAddress) {
         i_router = router;
         i_link = link;
+        nft = EndersComicsMultiTokens(nftAddress);
         LinkTokenInterface(i_link).approve(i_router, type(uint256).max);
     }
 
@@ -33,15 +36,17 @@ contract SourceMinter is Withdraw {
     function mint(
         uint64 destinationChainSelector,
         address receiver,
+        address receiverMint,
         uint256[] calldata ids,
         uint256[] calldata amounts,
         PayFeesIn payFeesIn
     ) external {
+        nft.burnBatchFor(msg.sender, ids, amounts);
         Client.EVM2AnyMessage memory message = Client.EVM2AnyMessage({
             receiver: abi.encode(receiver),
             data: abi.encodeWithSignature(
                 "mintBatch(address,uint256[],uint256[],bytes)",
-                msg.sender,
+                receiverMint,
                 ids,
                 amounts,
                 ""
@@ -72,5 +77,13 @@ contract SourceMinter is Withdraw {
         }
 
         emit MessageSent(messageId);
+    }
+
+    function setRouter(address _i_router) external onlyOwner {
+        i_router = _i_router;
+    }
+
+    function setLink(address _i_link) external onlyOwner {
+        i_link = _i_link;
     }
 }

@@ -1,9 +1,7 @@
-import "./balance-of";
 import "./cross-chain-mint";
-import "./cross-chain-mint-edited";
 import "./deploy-destination-minter";
-import "./deploy-destination-minter-edited";
 import "./deploy-source-minter";
-import "./deploy-source-minter-edited";
 import "./fill-sender";
 import "./withdraw";
+import "./addNft";
+import "./uploadFile";

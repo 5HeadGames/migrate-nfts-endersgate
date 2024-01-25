@@ -3,8 +3,10 @@ import { HardhatRuntimeEnvironment, TaskArguments } from "hardhat/types";
 import { getPrivateKey, getProviderRpcUrl, getRouterConfig } from "./utils";
 import { Wallet, ethers } from "ethers";
 import { Spinner } from "../utils/spinner";
-import { LINK_ADDRESSES } from "./constants";
+import { COMICS_ADDRESSES, LINK_ADDRESSES } from "./constants";
 import { SourceMinter, SourceMinter__factory } from "../types";
+import { loadJsonFile } from "../utils";
+import { network } from "hardhat";
 
 task(`deploy-source-minter`, `Deploys SourceMinter.sol smart contract`)
   .addOptionalParam(
@@ -26,6 +28,8 @@ task(`deploy-source-minter`, `Deploys SourceMinter.sol smart contract`)
       const provider = new ethers.providers.JsonRpcProvider(rpcProviderUrl);
       const wallet = new Wallet(privateKey);
       const deployer = wallet.connect(provider);
+      const configFileName = `addresses/addresses.${hre.network.name}.json`;
+      const data = loadJsonFile(configFileName);
 
       const spinner: Spinner = new Spinner();
 
@@ -41,12 +45,33 @@ task(`deploy-source-minter`, `Deploys SourceMinter.sol smart contract`)
       const sourceMinter: SourceMinter = await sourceMinterFactory.deploy(
         routerAddress,
         linkAddress,
+        data.comics,
       );
       await sourceMinter.deployed();
 
       spinner.stop();
       console.log(
         `✅ SourceMinter contract deployed at address ${sourceMinter.address} on the ${hre.network.name} blockchain`,
+      );
+
+      console.log(
+        `ℹ️  Attempting to grant the minter role to the DestinationMinter smart contract`,
+      );
+      spinner.start();
+
+      const EndersComics = (
+        await hre.ethers.getContractFactory("EndersComicsMultiTokens")
+      ).attach(data.comics);
+
+      const tx = await EndersComics.grantRole(
+        await EndersComics.SUPPLY_ROLE(),
+        sourceMinter.address,
+      );
+      await tx.wait();
+
+      spinner.stop();
+      console.log(
+        `✅ DestinationMinter can now burn EndersComics. Transaction hash: ${tx.hash}`,
       );
     },
   );

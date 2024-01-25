@@ -34,11 +34,11 @@ async function main() {
 
   await rent.addToken(fileData.usdc, 6);
 
-  // console.log("SHOP");
+  console.log("SHOP");
 
-  // const shop = Shop.attach(fileData.rent);
+  const shop = Shop.attach(fileData.rent);
 
-  // await shop.addToken(fileData.usdc, 6);
+  await shop.addToken(fileData.usdc, 6);
 }
 
 main()

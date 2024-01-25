@@ -3,7 +3,7 @@ import { TaskArguments } from "hardhat/types";
 import { getPrivateKey, getProviderRpcUrl } from "./utils";
 import { Wallet, ethers } from "ethers";
 import { Spinner } from "../utils/spinner";
-import { Withdraw, Withdraw__factory } from "../typechain-types";
+import { Withdraw, Withdraw__factory } from "../types";
 
 task(
   `withdraw`,
@@ -14,10 +14,9 @@ task(
     `from`,
     `The address of the Withdraw.sol smart contract from which funds should be withdrawn`,
   )
-  .addParam(`beneficiary`, `The address to withdraw to`)
   .addOptionalParam(`tokenAddress`, `The address of a token to withdraw`)
   .setAction(async (taskArguments: TaskArguments) => {
-    const { blockchain, from, beneficiary, tokenAddress } = taskArguments;
+    const { blockchain, from, tokenAddress } = taskArguments;
 
     const privateKey = getPrivateKey();
     const rpcProviderUrl = getProviderRpcUrl(blockchain);
@@ -32,12 +31,12 @@ task(
 
     if (tokenAddress) {
       console.log(
-        `ℹ️  Attempting to withdraw ${tokenAddress} tokens from ${from} to ${beneficiary}`,
+        `ℹ️  Attempting to withdraw ${tokenAddress} tokens from ${from} to ${signer.address}`,
       );
       spinner.start();
 
       const withdrawalTx = await withdraw.withdrawToken(
-        beneficiary,
+        signer.address,
         tokenAddress,
       );
       await withdrawalTx.wait();
@@ -48,11 +47,11 @@ task(
       );
     } else {
       console.log(
-        `ℹ️  Attempting to withdraw coins from ${from} to ${beneficiary}`,
+        `ℹ️  Attempting to withdraw coins from ${from} to ${signer.address}`,
       );
       spinner.start();
 
-      const withdrawalTx = await withdraw.withdraw(beneficiary);
+      const withdrawalTx = await withdraw.withdraw(signer.address);
       await withdrawalTx.wait();
 
       spinner.stop();
