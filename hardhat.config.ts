@@ -72,8 +72,13 @@ const config: HardhatUserConfig = {
       accounts: [process.env.PRIVATE_KEY || ""],
       timeout: 120000000,
     },
-    skale: {
+    nebula_test: {
       url: `https://staging-v3.skalenodes.com/v1/staging-faint-slimy-achird`,
+      accounts: [process.env.PRIVATE_KEY || ""],
+      timeout: 120000000,
+    },
+    nebula: {
+      url: `https://mainnet.skalenodes.com/v1/green-giddy-denebola`,
       accounts: [process.env.PRIVATE_KEY || ""],
       timeout: 120000000,
     },

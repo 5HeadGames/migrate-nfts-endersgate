@@ -37,7 +37,7 @@ async function main() {
     OWNER_CUT,
   );
 
-  await marketplace.addToken("0x717d43399ab3a8aada669CDC9560a6BAfdeA9796", 6);
+  await marketplace.addToken("0xCC205196288B7A26f6D43bBD68AaA98dde97276d", 6);
 
   await marketplace.setNftAllowed(data.endersGate, true);
 
@@ -49,7 +49,7 @@ async function main() {
   await marketplaceOwnable.setNftAllowed(data.pack, true);
 
   await marketplaceOwnable.addToken(
-    "0x717d43399ab3a8aada669CDC9560a6BAfdeA9796",
+    "0xCC205196288B7A26f6D43bBD68AaA98dde97276d",
     6,
   );
 
@@ -57,7 +57,7 @@ async function main() {
     {
       ...data,
       marketplace: marketplace.address,
-      marketplaceOwnable: marketplaceOwnable.address,
+      shop: marketplaceOwnable.address,
     },
     null,
     2,
