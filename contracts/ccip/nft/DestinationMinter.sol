@@ -3,7 +3,7 @@ pragma solidity 0.8.19;
 
 import {CCIPReceiver} from "@chainlink/contracts-ccip/src/v0.8/ccip/applications/CCIPReceiver.sol";
 import {Client} from "@chainlink/contracts-ccip/src/v0.8/ccip/libraries/Client.sol";
-import {EndersComicsMultiTokens} from "../Native&Multitokens/EndersComicsMultiTokens.sol";
+import {EndersComicsMultiTokens} from "../../Native&Multitokens/EndersComicsMultiTokens.sol";
 
 contract DestinationMinter is CCIPReceiver {
     EndersComicsMultiTokens nft;

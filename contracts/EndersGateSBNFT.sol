@@ -4,25 +4,11 @@ pragma solidity ^0.8.10;
 import {AccessControl} from "@openzeppelin/contracts/access/AccessControl.sol";
 import {ERC1155Supply, ERC1155} from "@openzeppelin/contracts/token/ERC1155/extensions/ERC1155Supply.sol";
 import "@openzeppelin/contracts/token/common/ERC2981.sol";
-import {DefaultOperatorFilterer} from "./lib/opensea-filter/src/DefaultOperatorFilterer.sol";
-import {BridgeNFTBatch} from "./interfaces/BridgeNFTBatch.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/utils/Strings.sol";
 
-contract EndersGateSBNFT is
-    ERC1155Supply,
-    BridgeNFTBatch,
-    AccessControl,
-    ERC2981,
-    Ownable,
-    DefaultOperatorFilterer
-{
+contract EndersGateSBNFT is ERC1155Supply, AccessControl, ERC2981, Ownable {
     using Strings for uint256;
-    struct SetRoyalty {
-        address receiver;
-        uint96 feeNumerator; // 10000 == 100%
-    }
-
     bytes32 public constant URI_SETTER_ROLE = keccak256("URI_SETTER_ROLE");
     bytes32 public constant SUPPLY_ROLE = keccak256("SUPPLY_ROLE");
 
@@ -40,20 +26,11 @@ contract EndersGateSBNFT is
         string memory _name,
         string memory _symbol,
         string memory _contractURI,
-        string memory _tokenURIPrefix,
-        SetRoyalty memory setRoyaltyInfo
+        string memory _tokenURIPrefix
     ) ERC1155(_contractURI) {
         _grantRole(DEFAULT_ADMIN_ROLE, msg.sender);
         _grantRole(URI_SETTER_ROLE, msg.sender);
         _grantRole(SUPPLY_ROLE, msg.sender);
-
-        if (setRoyaltyInfo.receiver != address(0)) {
-            _setDefaultRoyalty(
-                setRoyaltyInfo.receiver,
-                setRoyaltyInfo.feeNumerator
-            );
-        }
-
         name = _name;
         symbol = _symbol;
         contractURI = _contractURI;
@@ -73,16 +50,15 @@ contract EndersGateSBNFT is
     function mint(
         address account,
         uint256 id,
-        bytes calldata _data
+        uint256 quantity
     ) external onlyRole(SUPPLY_ROLE) {
-        _mint(account, id, 1, "");
+        _mint(account, id, quantity, "");
     }
 
     function mintBatch(
         address to,
         uint256[] calldata ids,
-        uint256[] calldata amounts,
-        bytes calldata
+        uint256[] calldata amounts
     ) external onlyRole(SUPPLY_ROLE) {
         _mintBatch(to, ids, amounts, "");
     }
@@ -146,7 +122,7 @@ contract EndersGateSBNFT is
         uint256 tokenId,
         uint256 amount,
         bytes memory data
-    ) public override onlyAllowedOperator(from) {
+    ) public override {
         require(false, "SBNFTs can't be transfered.");
         super.safeTransferFrom(from, to, tokenId, amount, data);
     }
@@ -157,7 +133,7 @@ contract EndersGateSBNFT is
         uint256[] memory ids,
         uint256[] memory amounts,
         bytes memory data
-    ) public virtual override onlyAllowedOperator(from) {
+    ) public virtual override {
         require(false, "SBNFTs can't be transfered.");
         super.safeBatchTransferFrom(from, to, ids, amounts, data);
     }

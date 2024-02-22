@@ -5,7 +5,7 @@ import {LinkTokenInterface} from "@chainlink/contracts/src/v0.8/shared/interface
 import {IRouterClient} from "@chainlink/contracts-ccip/src/v0.8/ccip/interfaces/IRouterClient.sol";
 import {Client} from "@chainlink/contracts-ccip/src/v0.8/ccip/libraries/Client.sol";
 import {Withdraw} from "./utils/Withdraw.sol";
-import {EndersComicsMultiTokens} from "../Native&Multitokens/EndersComicsMultiTokens.sol";
+import {EndersComicsMultiTokens} from "../../Native&Multitokens/EndersComicsMultiTokens.sol";
 
 /**
  * THIS IS AN EXAMPLE CONTRACT THAT USES HARDCODED VALUES FOR CLARITY.

@@ -37,7 +37,7 @@ async function main() {
     OWNER_CUT,
   );
 
-  await marketplace.addToken("0xCC205196288B7A26f6D43bBD68AaA98dde97276d", 6);
+  await marketplace.addToken(data.usdc, 6);
 
   await marketplace.setNftAllowed(data.endersGate, true);
 
@@ -48,10 +48,7 @@ async function main() {
 
   await marketplaceOwnable.setNftAllowed(data.pack, true);
 
-  await marketplaceOwnable.addToken(
-    "0xCC205196288B7A26f6D43bBD68AaA98dde97276d",
-    6,
-  );
+  await marketplaceOwnable.addToken(data.usdc, 6);
 
   const configData = JSON.stringify(
     {

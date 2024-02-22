@@ -76,6 +76,7 @@ async function main(): Promise<void> {
 
   console.log("setPacksState");
   await setPacksState({ pack, packsConfig, endersGate });
+  console.log(pack.address, library.address);
 
   writeJsonFile({
     path: `/${fileName}`,

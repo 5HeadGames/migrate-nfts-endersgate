@@ -32,7 +32,7 @@ async function main() {
     OWNER_CUT,
   );
   await rent.setNftAllowed(data.endersGate, true);
-  await rent.addToken("0xCC205196288B7A26f6D43bBD68AaA98dde97276d", 6);
+  await rent.addToken(data.usdc, 6);
 
   const configData = JSON.stringify(
     {

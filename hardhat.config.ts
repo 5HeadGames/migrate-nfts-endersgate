@@ -246,7 +246,27 @@ const config: HardhatUserConfig = {
       polygon: process.env.POLYGONSCAN_API_KEY,
       sepolia: process.env.ETHEREUM_API_KEY,
       mainnet: process.env.ETHEREUM_API_KEY,
+      linea: "DAJRVSW6X79IU2HFTX47NPU53H7WFXNWV5",
+      imx_test: "cc6acd1e-b926-43f8-b0de-9245b44f03d8",
     },
+    customChains: [
+      {
+        network: "linea",
+        chainId: 59144,
+        urls: {
+          apiURL: "https://api.lineascan.build/api",
+          browserURL: "https://lineascan.build/",
+        },
+      },
+      {
+        network: "imx_test",
+        chainId: 13473,
+        urls: {
+          apiURL: "https://explorer.testnet.immutable.com/api",
+          browserURL: "https://explorer.testnet.immutable.com/",
+        },
+      },
+    ],
   } as any,
 };
 

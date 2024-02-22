@@ -5,3 +5,4 @@ import "./fill-sender";
 import "./withdraw";
 import "./addNft";
 import "./uploadFile";
+import "./usdcDeployment";
