@@ -4,6 +4,7 @@ import { TransactionReceipt } from "@ethersproject/providers";
 
 import { ContractReceipt } from "@ethersproject/contracts";
 import { Interface, LogDescription } from "@ethersproject/abi";
+import { ethers } from "ethers";
 
 export const getLogs = (iface: Interface, transaction: ContractReceipt) => {
   const response: LogDescription[] = [];
@@ -63,3 +64,6 @@ export const getUrlHash = (ipfsUrl: string) => ipfsUrl.split("/").reverse()[0];
 
 export const wait = (seconds: number) =>
   new Promise((res) => setTimeout(res, seconds));
+
+export const hash = (msg: string) =>
+  ethers.utils.keccak256(ethers.utils.toUtf8Bytes(msg));

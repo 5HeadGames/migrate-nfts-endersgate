@@ -5,7 +5,7 @@ async function main(): Promise<void> {
   const fileName = `addresses/addresses.${network.name}.json`;
   const fileData = loadJsonFile(fileName);
 
-  const addressToCheck = "0xe96037ce48c688c982365672c3F3B1dc523068C6";
+  const addressToCheck = "0x71bA14e545014899b990bb5Ee36dB47Aebc12b01";
 
   if (network.name === "harmony") {
     const dracul = (await ethers.getContractFactory("ERC1155card")).attach(
@@ -38,9 +38,7 @@ async function main(): Promise<void> {
         return { seller, nftId, amount, status };
       })
       .filter(({ seller, status }) => {
-        return (
-          seller.toLowerCase() == addressToCheck.toLowerCase() && status == 0
-        );
+        return seller.toLowerCase() == addressToCheck.toLowerCase();
       }),
   );
 

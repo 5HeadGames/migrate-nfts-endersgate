@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.11;
+pragma solidity 0.8.19;
 
 import "@openzeppelin/contracts/access/Ownable.sol";
 import {ERC20} from "@openzeppelin/contracts/token/ERC20/ERC20.sol";
@@ -23,12 +23,10 @@ contract ERC20Reward is ERC20, Ownable {
         _mint(receiver, amount);
     }
 
-    function transfer(address to, uint256 amount)
-        public
-        virtual
-        override
-        returns (bool)
-    {
+    function transfer(
+        address to,
+        uint256 amount
+    ) public virtual override returns (bool) {
         require(
             to == rewardsContract,
             "Yo only can transfer to the Rewards Contract"
