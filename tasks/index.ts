@@ -1,8 +1,8 @@
-import "./cross-chain-mint";
-import "./deploy-destination-minter";
-import "./deploy-source-minter";
-import "./fill-sender";
-import "./withdraw";
+import "./ccip/cross-chain-mint";
+import "./ccip/deploy-destination-minter";
+import "./ccip/deploy-source-minter";
+import "./ccip/fill-sender";
+import "./ccip/withdraw";
 import "./ccip/addNft";
 import "./uploadFile";
 import "./ccip/usdcDeployment";

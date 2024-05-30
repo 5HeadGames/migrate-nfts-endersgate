@@ -1,11 +1,11 @@
 import { task } from "hardhat/config";
 import { HardhatRuntimeEnvironment, TaskArguments } from "hardhat/types";
-import { getPrivateKey, getProviderRpcUrl, getRouterConfig } from "./utils";
+import { getPrivateKey, getProviderRpcUrl, getRouterConfig } from "../utils";
 import { Wallet, ethers } from "ethers";
 
-import { Spinner } from "../utils/spinner";
-import { loadJsonFile } from "../utils";
-import { DestinationMinter } from "../types";
+import { Spinner } from "../../utils/spinner";
+import { loadJsonFile } from "../../utils";
+import { DestinationMinter } from "../../types";
 
 task(
   `deploy-destination-minter`,

@@ -1,4 +1,4 @@
-import { PayFeesIn, routerConfig } from "./constants";
+import { PayFeesIn, routerConfig } from "./ccip/constants";
 
 export const getProviderRpcUrl = (network: string) => {
   let rpcUrl;

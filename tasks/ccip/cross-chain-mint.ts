@@ -5,12 +5,12 @@ import {
   getPrivateKey,
   getProviderRpcUrl,
   getRouterConfig,
-} from "./utils";
+} from "../utils";
 import { Wallet, ethers } from "ethers";
-import { Spinner } from "../utils/spinner";
+import { Spinner } from "../../utils/spinner";
 import { getCcipMessageId } from "./helpers";
-import { SourceMinter, SourceMinter__factory } from "../types";
-import { loadJsonFile } from "../utils";
+import { SourceMinter, SourceMinter__factory } from "../../types";
+import { loadJsonFile } from "../../utils";
 import { getContractFactory } from "@nomiclabs/hardhat-ethers/types";
 
 task(`cross-chain-mint`, `Mints the new NFT by sending the Cross-Chain Message`)

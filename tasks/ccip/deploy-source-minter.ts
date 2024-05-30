@@ -1,11 +1,11 @@
 import { task } from "hardhat/config";
 import { HardhatRuntimeEnvironment, TaskArguments } from "hardhat/types";
-import { getPrivateKey, getProviderRpcUrl, getRouterConfig } from "./utils";
+import { getPrivateKey, getProviderRpcUrl, getRouterConfig } from "../utils";
 import { Wallet, ethers } from "ethers";
-import { Spinner } from "../utils/spinner";
+import { Spinner } from "../../utils/spinner";
 import { COMICS_ADDRESSES, LINK_ADDRESSES } from "./constants";
-import { SourceMinter, SourceMinter__factory } from "../types";
-import { loadJsonFile } from "../utils";
+import { SourceMinter, SourceMinter__factory } from "../../types";
+import { loadJsonFile } from "../../utils";
 import { network } from "hardhat";
 
 task(`deploy-source-minter`, `Deploys SourceMinter.sol smart contract`)

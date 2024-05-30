@@ -5,10 +5,10 @@ const {
   uploadIpfsObject,
   writeJsonFile,
   loadJsonFile,
-} = require("../utils");
-const { formatCardData } = require("../utils/cards");
+} = require("../../utils");
+const { formatCardData } = require("../../utils/cards");
 
-const removeUndefined = (object) => {
+const removeUndefined = (object: any) => {
   const keys = Object.keys(object);
   keys.forEach((key) => object[key] === undefined && delete object[key]);
   return object;
@@ -52,7 +52,7 @@ task("create-nft", "Upload image to ipfs")
     });
     writeJsonFile({
       path: "/cards.json",
-      data: (prevData) => ({
+      data: (prevData: any) => ({
         ...prevData,
         ...{
           [group]: prevData[group]
